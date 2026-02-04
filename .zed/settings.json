@@ -1,0 +1,22 @@
+{
+  "lsp": {
+    "pyright": {
+      "settings": {
+        "python.pythonPath": ".venv/bin/python",
+        "python.venvPath": "."
+      }
+    }
+  },
+  "languages": {
+    "Python": {
+      "language_servers": ["pyright"],
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": ".venv/bin/python",
+          "arguments": ["-m", "black", "-"]
+        }
+      }
+    }
+  }
+}
