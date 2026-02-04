@@ -19,7 +19,7 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
-HF_TOKEN=$1
+export HF_TOKEN=$1
 
 echo ""
 echo "[1/9] Updating system packages..."
