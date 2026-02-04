@@ -23,7 +23,16 @@ Complete guide for deploying the MedGemma RAG system on AWS G4 spot instances wi
 
 1. **AWS CLI installed and configured**
    ```bash
-   # Install AWS CLI (if not already)
+   # Install AWS CLI
+
+   # macOS (using Homebrew)
+   brew install awscli
+
+   # macOS (using pkg installer)
+   curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+   sudo installer -pkg AWSCLIV2.pkg -target /
+
+   # Linux
    curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
    unzip awscliv2.zip
    sudo ./aws/install
