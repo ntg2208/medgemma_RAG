@@ -13,7 +13,11 @@ Complete guide for deploying the MedGemma RAG system on AWS G4 spot instances wi
 4. [Install CUDA and Dependencies](#install-cuda-and-dependencies)
 5. [Clone and Setup Project](#clone-and-setup-project)
 6. [Daily Workflow](#daily-workflow)
-7. [Troubleshooting](#troubleshooting)
+7. [VS Code Remote SSH Setup](#vs-code-remote-ssh-setup)
+8. [Zed Editor + Claude Code Setup](#zed-editor--claude-code-setup)
+9. [Handling Spot Interruptions](#handling-spot-interruptions)
+10. [Cost Management](#cost-management)
+11. [Troubleshooting](#troubleshooting)
 
 ---
 
@@ -645,6 +649,117 @@ Install these on the remote instance:
 - Python
 - Pylance
 - Jupyter (if using notebooks)
+
+---
+
+## Zed Editor + Claude Code Setup
+
+### 1. Configure SSH
+
+Ensure your local `~/.ssh/config` is set up (see [Initial Setup](#1-connect-to-instance)):
+
+```bash
+Host medgemma-g4
+    HostName <current-instance-ip>
+    User ubuntu
+    IdentityFile ~/.ssh/medgemma-key.pem
+    ServerAliveInterval 60
+```
+
+### 2. Connect Zed to EC2
+
+Zed has built-in remote development via SSH:
+
+1. Open Zed
+2. Press `Cmd+Shift+P` (macOS) or `Ctrl+Shift+P` (Linux)
+3. Type: "remote: Open Remote Folder"
+4. Select `medgemma-g4` from your SSH hosts
+5. Navigate to `/data/medgemma_RAG`
+6. Zed will install its remote server automatically on first connection
+
+**Tip**: Zed remembers recent remote projects - use `Cmd+O` → "Remote Projects" for quick access.
+
+### 3. Install Claude Code on EC2
+
+Install Claude Code on the EC2 instance to leverage GPU power for AI-assisted development:
+
+```bash
+# SSH into EC2
+ssh medgemma-g4
+
+# Install Node.js if not present
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+sudo apt install -y nodejs
+
+# Install Claude Code globally
+sudo npm install -g @anthropic-ai/claude-code
+
+# Verify installation
+claude --version
+```
+
+### 4. Recommended Workflow
+
+**Terminal 1 (Zed integrated terminal or separate SSH):**
+```bash
+# Navigate to project
+cd /data/medgemma_RAG
+source .venv/bin/activate
+export HF_HOME=/data/models_cache
+
+# Run Claude Code for AI assistance
+claude
+```
+
+**Terminal 2 (for running the app):**
+```bash
+cd /data/medgemma_RAG
+source .venv/bin/activate
+export HF_HOME=/data/models_cache
+
+# Run your application
+uv run app.py
+```
+
+### 5. Zed + Claude Code Tips
+
+1. **Use Zed for editing**: Zed's remote mode handles file editing with low latency
+2. **Use Claude Code for AI tasks**: Run Claude Code in the EC2 terminal for:
+   - Code generation with GPU context
+   - Running tests and builds
+   - Git operations
+   - Debugging with access to GPU resources
+
+3. **Split workflow**:
+   - Zed: File navigation, editing, code review
+   - Claude Code: Complex refactoring, running commands, AI assistance
+
+4. **Keep tmux running**: Use tmux on EC2 so Claude Code sessions persist if SSH disconnects:
+   ```bash
+   # Start tmux session for Claude Code
+   tmux new -s claude
+
+   # Run Claude Code
+   cd /data/medgemma_RAG && source .venv/bin/activate
+   claude
+
+   # Detach: Ctrl+B, then D
+   # Reattach later: tmux attach -t claude
+   ```
+
+### 6. Alternative: Local Claude Code + Remote Files
+
+If you prefer running Claude Code locally while editing remote files:
+
+1. Connect Zed to EC2 (remote mode)
+2. Run Claude Code locally in a separate terminal
+3. Use SSH tunnel for any local testing:
+   ```bash
+   # Forward port 7860 for Gradio UI
+   ssh -L 7860:localhost:7860 medgemma-g4
+   ```
+
+**Note**: This approach means Claude Code can't directly run GPU commands - you'll need to copy/paste commands to an EC2 terminal.
 
 ---
 
