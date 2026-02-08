@@ -57,8 +57,8 @@ def initialize_components():
     try:
         logger.info("Initializing components...")
 
-        # Import config
-        from config import EMBEDDING_DIMENSION
+        # Import config and factory functions
+        from config import EMBEDDING_DIMENSION, get_llm, get_embeddings
 
         # Import modules with numeric prefixes using importlib
         embeddings_mod = import_from_path(
@@ -100,17 +100,17 @@ def initialize_components():
         AgenticRAGGraph = graph_mod.AgenticRAGGraph
         MultiAgentOrchestrator = orchestrator_mod.MultiAgentOrchestrator
 
-        # Initialize embeddings
+        # Initialize embeddings (local or remote based on config)
         logger.info("Loading embeddings model...")
-        _components["embeddings"] = EmbeddingGemmaWrapper(dimension=EMBEDDING_DIMENSION)
+        _components["embeddings"] = get_embeddings()
 
         # Initialize vector store
         logger.info("Initializing vector store...")
         _components["vectorstore"] = CKDVectorStore(_components["embeddings"])
 
-        # Initialize LLM
+        # Initialize LLM (local or remote based on config)
         logger.info("Loading MedGemma LLM...")
-        _components["llm"] = MedGemmaLLM()
+        _components["llm"] = get_llm()
 
         # Initialize PII handler
         logger.info("Initializing PII handler...")

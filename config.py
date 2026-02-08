@@ -26,7 +26,7 @@ for dir_path in [DOCUMENTS_DIR, PROCESSED_DIR, VECTORSTORE_DIR]:
 # Model Configuration
 # =============================================================================
 # MedGemma LLM
-MEDGEMMA_MODEL_ID = "google/medgemma-4b-it"
+MEDGEMMA_MODEL_ID = "google/medgemma-1.5-4b-it"  # Updated to version 1.5
 
 # EmbeddingGemma for text embeddings
 EMBEDDING_MODEL_ID = "google/embeddinggemma-300m"
@@ -168,3 +168,122 @@ Answer:"""
 # =============================================================================
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
 LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# =============================================================================
+# Remote Model Server Configuration
+# =============================================================================
+# Toggle between local and remote models
+USE_REMOTE_MODELS = os.getenv("USE_REMOTE_MODELS", "false").lower() == "true"
+
+# Remote server URLs (only used if USE_REMOTE_MODELS is True)
+MODEL_SERVER_URL = os.getenv("MODEL_SERVER_URL", "http://localhost:8000")
+EMBEDDING_SERVER_URL = os.getenv("EMBEDDING_SERVER_URL", "http://localhost:8001")
+
+# Remote client settings
+REMOTE_CLIENT_TIMEOUT = float(os.getenv("REMOTE_CLIENT_TIMEOUT", "120"))  # seconds
+
+# =============================================================================
+# Factory Functions for Model Selection
+# =============================================================================
+class LLMAdapter:
+    """Adapter to make ChatOpenAI compatible with existing MedGemmaLLM interface.
+
+    This adapter ensures that remote models (via vLLM + OpenAI API) work with
+    existing code that expects MedGemmaLLM's interface (generate() method and
+    as_langchain_llm() method).
+    """
+
+    def __init__(self, chat_model):
+        """Initialize adapter with a ChatOpenAI model.
+
+        Args:
+            chat_model: langchain_openai.ChatOpenAI instance
+        """
+        self._chat = chat_model
+
+    def generate(self, prompt: str) -> str:
+        """Generate text from prompt (matches MedGemmaLLM.generate() interface).
+
+        Args:
+            prompt: Text prompt
+
+        Returns:
+            Generated text
+        """
+        response = self._chat.invoke(prompt)
+        return response.content
+
+    def as_langchain_llm(self):
+        """Return the underlying LangChain model (matches MedGemmaLLM interface).
+
+        Returns:
+            The ChatOpenAI instance for use in LCEL chains
+        """
+        return self._chat
+
+
+def get_llm():
+    """Get LLM instance based on configuration.
+
+    Returns either a remote LLM (via vLLM OpenAI-compatible API) or local
+    MedGemmaLLM based on USE_REMOTE_MODELS environment variable.
+
+    Returns:
+        LLM instance with generate() and as_langchain_llm() methods
+    """
+    if USE_REMOTE_MODELS:
+        try:
+            from langchain_openai import ChatOpenAI
+            chat = ChatOpenAI(
+                base_url=f"{MODEL_SERVER_URL}/v1",
+                api_key="not-needed",  # vLLM doesn't validate API keys
+                model=MEDGEMMA_MODEL_ID,
+                temperature=GENERATION_CONFIG["temperature"],
+                max_tokens=GENERATION_CONFIG["max_new_tokens"],
+                timeout=REMOTE_CLIENT_TIMEOUT,
+            )
+            return LLMAdapter(chat)
+        except ImportError:
+            raise ImportError(
+                "langchain-openai is required for remote models. "
+                "Install with: pip install langchain-openai"
+            )
+    else:
+        # Import here to avoid loading models when using remote
+        from importlib import import_module
+        chain_module = import_module("1_Retrieval_Augmented_Generation.chain")
+        return chain_module.MedGemmaLLM()
+
+
+def get_embeddings(dimension: int = None):
+    """Get embeddings instance based on configuration.
+
+    Returns either a remote embeddings model (via TEI) or local
+    EmbeddingGemmaWrapper based on USE_REMOTE_MODELS environment variable.
+
+    Args:
+        dimension: Embedding dimension (default: EMBEDDING_DIMENSION)
+
+    Returns:
+        Embeddings instance compatible with LangChain
+    """
+    if dimension is None:
+        dimension = EMBEDDING_DIMENSION
+
+    if USE_REMOTE_MODELS:
+        try:
+            from langchain_huggingface import HuggingFaceEndpointEmbeddings
+            return HuggingFaceEndpointEmbeddings(
+                model=EMBEDDING_SERVER_URL,
+                task="feature-extraction",
+            )
+        except ImportError:
+            raise ImportError(
+                "langchain-huggingface is required for remote embeddings. "
+                "Install with: pip install langchain-huggingface"
+            )
+    else:
+        # Import here to avoid loading models when using remote
+        from importlib import import_module
+        embeddings_module = import_module("1_Retrieval_Augmented_Generation.embeddings")
+        return embeddings_module.EmbeddingGemmaWrapper(dimension=dimension)

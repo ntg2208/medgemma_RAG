@@ -1,0 +1,16 @@
+# AWS Configuration
+aws_region = "us-east-1"
+
+# Instance Configuration
+instance_type = "g4dn.xlarge"
+ami_id        = "ami-0c702567ccf8b120a" # Update with latest Deep Learning AMI
+
+# SSH Key
+key_pair_name = "medgemma-key"
+
+# Storage
+root_volume_size = 50
+
+# Security - IMPORTANT: Replace with your IP address
+# Get your IP: curl https://checkip.amazonaws.com
+allowed_cidr_blocks = ["YOUR_IP_ADDRESS/32"]
