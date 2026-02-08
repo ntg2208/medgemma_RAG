@@ -50,16 +50,17 @@ sudo apt install -y \
     tree
 
 echo ""
-echo "[3/10] Mounting data volume..."
-# Check if already mounted
-if mountpoint -q /data; then
-    echo "Data volume already mounted"
+echo "[3/10] Setting up /data directory..."
+# Check if /data exists and is accessible
+if [ -d "/data" ]; then
+    echo "/data directory already exists"
+    sudo chown -R ubuntu:ubuntu /data
 else
-    # Check if volume exists
-    if lsblk | grep -q nvme1n1; then
-        # Check if formatted
-        if ! sudo file -s /dev/nvme1n1 | grep -q "ext4"; then
-            echo "Formatting data volume (first time only)..."
+    # Check if instance storage is available and not already mounted
+    if lsblk | grep -q nvme1n1 && ! mountpoint -q /opt/dlami/nvme; then
+        # Only try to mount if not already mounted elsewhere
+        if ! sudo file -s /dev/nvme1n1 | grep -q "filesystem"; then
+            echo "Formatting instance storage (first time only)..."
             sudo mkfs.ext4 /dev/nvme1n1
         fi
 
@@ -72,9 +73,9 @@ else
             echo '/dev/nvme1n1 /data ext4 defaults,nofail 0 2' | sudo tee -a /etc/fstab
         fi
 
-        echo "Data volume mounted at /data"
+        echo "Instance storage mounted at /data"
     else
-        echo "Warning: No additional volume found. Using root volume."
+        echo "Using /data on root volume"
         sudo mkdir -p /data
         sudo chown -R ubuntu:ubuntu /data
     fi
@@ -84,11 +85,17 @@ echo ""
 echo "[4/10] Installing uv (Python package manager)..."
 if ! command -v uv &> /dev/null; then
     curl -LsSf https://astral.sh/uv/install.sh | sh
-    source $HOME/.cargo/env
-    echo 'source $HOME/.cargo/env' >> ~/.bashrc
+    # Add uv to PATH
+    export PATH="$HOME/.local/bin:$PATH"
+    if ! grep -q '.local/bin' ~/.bashrc; then
+        echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+    fi
 else
     echo "uv already installed"
 fi
+
+# Ensure uv is in PATH for this session
+export PATH="$HOME/.local/bin:$PATH"
 
 echo ""
 echo "[5/10] Installing Python 3.12..."
@@ -118,11 +125,21 @@ source .venv/bin/activate
 echo "Installing dependencies (this may take 5-10 minutes)..."
 uv pip install -r requirements.txt
 
+echo "Installing vLLM (GPU inference server)..."
+uv pip install vllm
+
+echo "Installing Docling (PDF OCR)..."
+uv pip install docling
+
 echo "Installing spaCy model..."
-python -m spacy download en_core_web_sm
+uv run python -m spacy download en_core_web_sm
 
 echo ""
-echo "[8/10] Configuring environment..."
+echo "[8/10] Pulling TEI Docker image..."
+docker pull ghcr.io/huggingface/text-embeddings-inference:latest
+
+echo ""
+echo "[9/10] Configuring environment..."
 # Create .env file
 cat > .env <<EOF
 # HuggingFace Configuration
@@ -149,7 +166,7 @@ fi
 mkdir -p /data/models_cache
 
 echo ""
-echo "[9/10] Pre-downloading models (this will take 10-15 minutes)..."
+echo "[10/11] Pre-downloading models (this will take 10-15 minutes)..."
 export HF_HOME=/data/models_cache
 export HF_TOKEN="$HF_TOKEN"
 
@@ -159,10 +176,10 @@ import os
 
 token = os.getenv('HF_TOKEN')
 
-print('\n[9.1/10] Downloading MedGemma 4B (this is large, ~8GB)...')
+print('\n[10.1/11] Downloading MedGemma 1.5 4B (this is large, ~8GB)...')
 try:
     snapshot_download(
-        'google/medgemma-4b-it',
+        'google/medgemma-1.5-4b-it',
         token=token,
         cache_dir='/data/models_cache'
     )
@@ -171,7 +188,7 @@ except Exception as e:
     print(f'✗ Failed to download MedGemma: {e}')
     print('You may need to request access at: https://huggingface.co/google/medgemma-4b-it')
 
-print('\n[9.2/10] Downloading EmbeddingGemma 300M...')
+print('\n[10.2/11] Downloading EmbeddingGemma 300M...')
 try:
     snapshot_download(
         'google/embeddinggemma-300m',
@@ -187,7 +204,7 @@ print('\nModel downloads complete!')
 PYEOF
 
 echo ""
-echo "[10/10] Final verification..."
+echo "[11/11] Final verification..."
 source .venv/bin/activate
 python -c "
 import torch

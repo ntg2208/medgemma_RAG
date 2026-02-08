@@ -25,6 +25,44 @@ The system helps CKD patients and healthcare providers get evidence-based inform
 └─────────────────────────────────────────────────────────────────┘
 ```
 
+## Deployment Modes
+
+The system supports two deployment modes:
+
+### Local Mode (Default)
+All components run on the local machine:
+```
+MacBook/Local Machine
+├── MedGemma 1.5 4B (MPS/CPU)
+├── EmbeddingGemma 300M
+├── ChromaDB
+└── RAG Logic
+```
+
+### Remote Mode (Optional)
+Models run on GPU server, logic runs locally:
+```
+Local MacBook              EC2 Spot Instance (us-east-2)
+├── RAG Logic       ←─API──→  ├── vLLM (MedGemma 1.5 4B) :8000
+├── ChromaDB                  ├── TEI (EmbeddingGemma)   :8001
+└── Notebooks                 └── Docling OCR
+```
+
+**Infrastructure:**
+- Instance: g4dn.xlarge (Tesla T4, 16GB VRAM)
+- Storage: 75GB EBS (persistent) + 116GB instance storage (ephemeral)
+- Models: `/data/models_cache/` on EBS (~9.3GB, persists across stop/start)
+- Cost: ~$12/month (30 hours usage)
+
+**Enable remote mode:**
+```bash
+export USE_REMOTE_MODELS=true
+export MODEL_SERVER_URL=http://<ec2-ip>:8000
+export EMBEDDING_SERVER_URL=http://<ec2-ip>:8001
+```
+
+See `docs/deployment/remote-model-server.md` for full setup and data persistence details.
+
 ## Key Directories
 
 | Directory | Purpose |
@@ -37,6 +75,7 @@ The system helps CKD patients and healthcare providers get evidence-based inform
 | `Data/vectorstore/` | ChromaDB persistent storage |
 | `docs/deployment/` | AWS deployment guides |
 | `scripts/` | Setup and automation scripts |
+| `infrastructure/terraform/` | EC2 infrastructure as code |
 
 ## Key Files
 
@@ -50,13 +89,23 @@ The system helps CKD patients and healthcare providers get evidence-based inform
 
 ## Tech Stack
 
-- **LLM**: MedGemma 4B (`google/medgemma-4b-it`) - 4-bit quantized
+### Core Models
+- **LLM**: MedGemma 1.5 4B (`google/medgemma-1.5-4b-it`) - 4-bit quantized
 - **Embeddings**: EmbeddingGemma 300M (`google/embeddinggemma-300m`)
+
+### Frameworks
 - **Vector DB**: ChromaDB with persistent storage
 - **Framework**: LangChain + LangGraph
 - **PII Detection**: Microsoft Presidio with custom NHS/medical recognizers
 - **Evaluation**: RAGAS + custom CKD metrics
 - **UI**: Gradio (multi-tab interface)
+
+### Remote Inference (Optional)
+- **vLLM**: v0.15.1, OpenAI-compatible API server for MedGemma
+- **TEI**: HuggingFace Text Embeddings Inference for EmbeddingGemma
+- **Docling**: v2.72.0, IBM document understanding for PDF OCR
+- **Infrastructure**: Terraform for EC2 management (g4dn.xlarge spot instance)
+- **Python**: 3.12 with uv package manager on EC2
 
 ## Code Patterns
 
@@ -90,6 +139,26 @@ from config import (
 )
 ```
 
+### Model Factory Functions (New)
+```python
+from config import get_llm, get_embeddings
+
+# Get LLM (local or remote based on USE_REMOTE_MODELS)
+llm = get_llm()
+response = llm.generate("What is CKD?")
+
+# Get embeddings (local or remote)
+embeddings = get_embeddings()
+vector = embeddings.embed_query("chronic kidney disease")
+
+# Toggle between modes via environment variables
+# Local mode (default):
+USE_REMOTE_MODELS=false
+
+# Remote mode:
+USE_REMOTE_MODELS=true MODEL_SERVER_URL=http://ec2-ip:8000
+```
+
 ## Common Tasks
 
 ### Run the Application
@@ -106,6 +175,30 @@ python -c "from Data.preprocessing import preprocess_documents; preprocess_docum
 ```bash
 python test.py
 python Data/test.py  # Data processing tests
+```
+
+### Remote Model Server (Optional)
+```bash
+# Start EC2 spot instance
+./scripts/ec2-start.sh
+./scripts/ec2-status.sh  # Get new IP (changes on each start)
+
+# SSH and start model servers (~2-3 min startup, models already on disk)
+ssh -i ~/.ssh/medgemma-key.pem ubuntu@<ec2-ip>
+cd /data/medgemma_RAG
+./scripts/start-model-server.sh
+
+# Test endpoints
+curl http://<ec2-ip>:8000/v1/models
+curl http://<ec2-ip>:8001/info
+
+# Process PDFs with Docling OCR
+./scripts/ocr-process.sh
+
+# Stop servers and instance
+./scripts/stop-model-server.sh
+exit
+./scripts/ec2-stop.sh  # Run locally
 ```
 
 ## Environment Variables
@@ -173,8 +266,16 @@ python app.py
 
 ### AWS G4 Spot Instance
 ```bash
+# Deploy infrastructure with Terraform
+cd infrastructure/terraform
+terraform init && terraform apply
+
+# First-time setup on EC2 (~20-30 min for model downloads)
+ssh -i ~/.ssh/medgemma-key.pem ubuntu@<ec2-ip>
+cd /data/medgemma_RAG
+bash scripts/setup-g4-instance.sh YOUR_HF_TOKEN
+
 # See docs/deployment/aws-g4-spot-setup.md for full guide
-curl -s https://raw.githubusercontent.com/.../setup-g4-instance.sh | bash -s YOUR_HF_TOKEN
 ```
 
 ## Competition Context
@@ -199,3 +300,9 @@ curl -s https://raw.githubusercontent.com/.../setup-g4-instance.sh | bash -s YOU
 ### Import Errors
 - Directory names start with numbers, use quotes in imports if needed
 - Ensure __init__.py exists in each package directory
+
+### Remote Mode Issues
+- **IP changed**: Run `./scripts/ec2-status.sh` after each start to get new IP
+- **vLLM won't start**: Gemma3 models require `--dtype bfloat16`, check tmux logs with `tmux attach -t vllm`
+- **Connection timeout**: Update security group with your current IP (`curl https://checkip.amazonaws.com`)
+- **Disk full**: Models should be in `/data/models_cache/` (EBS), not `/opt/dlami/nvme/` (ephemeral)
