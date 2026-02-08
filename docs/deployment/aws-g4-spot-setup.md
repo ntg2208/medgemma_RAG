@@ -2,7 +2,9 @@
 
 Complete guide for deploying the MedGemma RAG system on AWS G4 spot instances with persistent EBS storage.
 
-**Estimated Cost**: ~$25/month (4 hours/day, 20 days/month)
+**Estimated Cost**: ~$12-25/month depending on usage
+
+> **Note**: For local development with remote GPU inference, see [Remote Model Server](./remote-model-server.md) - the recommended approach using Terraform automation.
 
 ---
 
@@ -61,11 +63,22 @@ Complete guide for deploying the MedGemma RAG system on AWS G4 spot instances wi
 3. **Get your HuggingFace Token**
    - Go to https://huggingface.co/settings/tokens
    - Create a token with read access
-   - Request access to `google/medgemma-4b-it` and `google/embeddinggemma-300m`
+   - Request access to `google/medgemma-1.5-4b-it` and `google/embeddinggemma-300m`
 
 ---
 
 ## Launch Spot Instance
+
+### Option 0: Using Terraform (Recommended)
+
+For automated infrastructure deployment, use the Terraform configuration in `infrastructure/terraform/`. See [Remote Model Server](./remote-model-server.md) for details.
+
+```bash
+cd infrastructure/terraform
+cp terraform.tfvars.example terraform.tfvars
+# Edit terraform.tfvars with your IP and settings
+terraform init && terraform apply
+```
 
 ### Option 1: Using AWS Console (Beginner-Friendly)
 
@@ -102,14 +115,11 @@ Complete guide for deploying the MedGemma RAG system on AWS G4 spot instances wi
 
    **Storage (Configure gp3)**:
    - Root volume:
-     - Size: **50 GB**
+     - Size: **75 GB** (enough for system, venv, and models)
      - Volume type: **gp3**
      - **IMPORTANT**: Uncheck "Delete on termination"
-   - Click "Add new volume":
-     - Size: **100 GB**
-     - Volume type: **gp3**
-     - Device: `/dev/sdf`
-     - **IMPORTANT**: Uncheck "Delete on termination"
+
+   > **Note**: 75GB is sufficient for system (~35GB), Python venv (~11GB), and models (~9GB). The instance also has 116GB ephemeral NVMe storage at `/opt/dlami/nvme/` for temporary files.
 
    **Advanced Details**:
    - Scroll to bottom
@@ -173,15 +183,7 @@ cat > spot-config.json <<EOF
     {
       "DeviceName": "/dev/sda1",
       "Ebs": {
-        "VolumeSize": 50,
-        "VolumeType": "gp3",
-        "DeleteOnTermination": false
-      }
-    },
-    {
-      "DeviceName": "/dev/sdf",
-      "Ebs": {
-        "VolumeSize": 100,
+        "VolumeSize": 75,
         "VolumeType": "gp3",
         "DeleteOnTermination": false
       }
@@ -265,35 +267,18 @@ nvidia-smi
 # +-------------------------------+----------------------+----------------------+
 ```
 
-### 3. Mount Data Volume
+### 3. Create Data Directory
 
 ```bash
-# Check if data volume is attached
-lsblk
-
-# Expected output shows nvme1n1 (100GB volume)
-# NAME        MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
-# nvme0n1     259:0    0   50G  0 disk
-# └─nvme0n1p1 259:1    0   50G  0 part /
-# nvme1n1     259:2    0  100G  0 disk
-
-# Format data volume (ONLY FIRST TIME!)
-sudo mkfs.ext4 /dev/nvme1n1
-
-# Create mount point
+# Create data directory on root volume
 sudo mkdir -p /data
-
-# Mount volume
-sudo mount /dev/nvme1n1 /data
-
-# Set ownership
 sudo chown -R ubuntu:ubuntu /data
 
-# Auto-mount on reboot - add to /etc/fstab
-echo '/dev/nvme1n1 /data ext4 defaults,nofail 0 2' | sudo tee -a /etc/fstab
+# Verify disk space (should show ~75GB root volume)
+df -h /
 
-# Verify mount
-df -h /data
+# The instance also has ephemeral NVMe storage (deleted on stop)
+# This is auto-mounted at /opt/dlami/nvme/ - use only for temporary files
 ```
 
 ### 4. Update System
@@ -336,8 +321,9 @@ nvcc --version
 # Install uv
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
-# Restart shell or source
-source $HOME/.cargo/env
+# Add to PATH
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
 
 # Verify
 uv --version
@@ -402,9 +388,12 @@ nano .env
 ### 4. Download Models (First Time Only)
 
 ```bash
-# Create models cache directory
+# Create models cache directory on persistent EBS
 mkdir -p /data/models_cache
 export HF_HOME=/data/models_cache
+
+# Load HF token
+source ~/.bashrc  # or export HF_TOKEN=your_token
 
 # Pre-download models to avoid timeout during first run
 python -c "
@@ -413,9 +402,9 @@ import os
 
 token = os.getenv('HF_TOKEN')
 
-print('Downloading MedGemma 4B...')
+print('Downloading MedGemma 1.5 4B...')
 snapshot_download(
-    'google/medgemma-4b-it',
+    'google/medgemma-1.5-4b-it',
     token=token,
     cache_dir='/data/models_cache'
 )
@@ -430,9 +419,12 @@ snapshot_download(
 print('Models downloaded!')
 "
 
-# Add HF_HOME to .bashrc for persistence
+# Add environment variables to .bashrc for persistence
 echo 'export HF_HOME=/data/models_cache' >> ~/.bashrc
+echo 'export HF_TOKEN=$(cat ~/.hf_token 2>/dev/null)' >> ~/.bashrc
 ```
+
+> **Note**: Models are stored on the persistent EBS volume (~9.3GB total). They survive stop/start cycles - no re-downloading needed.
 
 ### 5. Setup Data
 
@@ -610,9 +602,10 @@ aws ec2 stop-instances --instance-ids $INSTANCE_ID
 ```
 
 **IMPORTANT**:
-- EBS volumes persist (your data is safe!)
-- You only pay for EBS storage (~$12/month)
+- EBS volume persists (your data is safe!)
+- You only pay for EBS storage (~$6/month for 75GB)
 - No compute charges when stopped
+- Instance storage (`/opt/dlami/nvme/`) is wiped on stop - don't store important data there
 
 ---
 
@@ -811,10 +804,9 @@ chmod +x ~/check-spot-interruption.sh
 
 ### After Interruption
 
-1. Request new spot instance (usually available immediately)
-2. EBS volumes automatically reattach
-3. Mount data volume if needed: `sudo mount /dev/nvme1n1 /data`
-4. Continue working
+1. Start the spot instance again (usually available immediately)
+2. EBS root volume automatically reattaches with all your data
+3. Continue working - models and code are preserved in `/data/`
 
 ---
 
@@ -942,7 +934,7 @@ sudo du -h /data | sort -h | tail -20
 # Use HuggingFace CLI for better download resumption
 pip install huggingface-hub[cli]
 
-huggingface-cli download google/medgemma-4b-it \
+huggingface-cli download google/medgemma-1.5-4b-it \
   --token $HF_TOKEN \
   --cache-dir /data/models_cache
 
@@ -951,21 +943,17 @@ huggingface-cli download google/embeddinggemma-300m \
   --cache-dir /data/models_cache
 ```
 
-### Data Volume Not Mounting
+### /data Directory Missing After Restart
 
 ```bash
-# Check if volume is attached
-lsblk
+# The /data directory should persist on the root EBS volume
+# If missing, recreate it:
+sudo mkdir -p /data
+sudo chown -R ubuntu:ubuntu /data
 
-# If not attached, attach manually (get volume ID from AWS console)
-aws ec2 attach-volume \
-  --volume-id vol-xxxxxxxxx \
-  --instance-id $INSTANCE_ID \
-  --device /dev/sdf
-
-# Wait and mount
-sleep 10
-sudo mount /dev/nvme1n1 /data
+# Clone the repo again if needed
+cd /data
+git clone https://github.com/ntg2208/medgemma_RAG.git
 ```
 
 ---
@@ -988,9 +976,6 @@ aws ec2 describe-instances --instance-ids $INSTANCE_ID \
 # SSH connect
 ssh -i ~/.ssh/medgemma-key.pem ubuntu@$INSTANCE_IP
 
-# Mount data volume (if needed)
-sudo mount /dev/nvme1n1 /data
-
 # Navigate and activate
 cd /data/medgemma_RAG
 source .venv/bin/activate
@@ -1004,16 +989,15 @@ uv run app.py
 
 - [ ] Create AWS key pair
 - [ ] Launch g4dn.xlarge spot instance
-- [ ] Configure security group (SSH, port 7860)
-- [ ] Attach 100GB EBS data volume
-- [ ] Set "Delete on termination" = No
+- [ ] Configure security group (SSH, ports 7860, 8000, 8001)
+- [ ] Set 75GB EBS root volume with "Delete on termination" = No
 - [ ] SSH into instance
-- [ ] Mount data volume
+- [ ] Create /data directory
 - [ ] Install uv and Python 3.12
 - [ ] Clone repository
 - [ ] Create virtual environment
-- [ ] Configure .env with HF_TOKEN
-- [ ] Download models
+- [ ] Configure HF_TOKEN
+- [ ] Download models to /data/models_cache
 - [ ] Process documents
 - [ ] Test GPU access
 - [ ] Run application
