@@ -306,3 +306,37 @@ bash scripts/setup-g4-instance.sh YOUR_HF_TOKEN
 - **vLLM won't start**: Gemma3 models require `--dtype bfloat16`, check tmux logs with `tmux attach -t vllm`
 - **Connection timeout**: Update security group with your current IP (`curl https://checkip.amazonaws.com`)
 - **Disk full**: Models should be in `/data/models_cache/` (EBS), not `/opt/dlami/nvme/` (ephemeral)
+
+### AWS Spot Instance Cost Incident (Feb 2026)
+
+**CRITICAL: When spot capacity is unavailable in a region and you switch to another region, ALWAYS cancel the spot request in the original region!**
+
+**What happened:** Tried to launch spot in us-east-1, capacity unavailable, switched to us-east-2. But the persistent spot request in us-east-1 eventually got fulfilled and ran for 13+ hours unnoticed, costing ~$3 extra.
+
+**The problem:** Persistent spot requests keep trying to launch instances until explicitly cancelled. Terminating the instance alone doesn't stop it - a new one will launch.
+
+**Prevention:** When spot capacity fails in a region:
+```bash
+# 1. CANCEL the spot request (not just terminate instance)
+aws ec2 describe-spot-instance-requests --region us-east-1 \
+  --query 'SpotInstanceRequests[*].[SpotInstanceRequestId,State]' --output table
+
+aws ec2 cancel-spot-instance-requests --region us-east-1 \
+  --spot-instance-request-ids <request-id>
+
+# 2. Terminate any instances
+aws ec2 terminate-instances --region us-east-1 --instance-ids <instance-id>
+
+# 3. Delete orphaned EBS volumes
+aws ec2 describe-volumes --region us-east-1 --query 'Volumes[*].[VolumeId,State]' --output table
+aws ec2 delete-volume --region us-east-1 --volume-id <volume-id>
+```
+
+**Quick cleanup all in one region:**
+```bash
+REGION=us-east-1
+# Cancel all spot requests
+aws ec2 describe-spot-instance-requests --region $REGION --query 'SpotInstanceRequests[*].SpotInstanceRequestId' --output text | xargs -r aws ec2 cancel-spot-instance-requests --region $REGION --spot-instance-request-ids
+# Terminate all instances
+aws ec2 describe-instances --region $REGION --filters "Name=instance-state-name,Values=running,pending,stopped" --query 'Reservations[*].Instances[*].InstanceId' --output text | xargs -r aws ec2 terminate-instances --region $REGION --instance-ids
+```
