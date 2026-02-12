@@ -42,17 +42,18 @@ MacBook/Local Machine
 ### Remote Mode (Optional)
 Models run on GPU server, logic runs locally:
 ```
-Local MacBook              EC2 Spot Instance (us-east-2)
+Local MacBook              EC2 Spot Instance (us-west-2)
 ├── RAG Logic       ←─API──→  ├── vLLM (MedGemma 1.5 4B) :8000
 ├── ChromaDB                  ├── TEI (EmbeddingGemma)   :8001
 └── Notebooks                 └── Docling OCR
 ```
 
 **Infrastructure:**
-- Instance: g4dn.xlarge (Tesla T4, 16GB VRAM)
-- Storage: 75GB EBS (persistent) + 116GB instance storage (ephemeral)
+- Instance: g5.xlarge (A10G, 24GB) or g6.xlarge (L4, 24GB) - check availability first
+- Storage: 75GB EBS gp3 (persistent, survives stop/start)
 - Models: `/data/models_cache/` on EBS (~9.3GB, persists across stop/start)
-- Cost: ~$12/month (30 hours usage)
+- Spot Type: One-time (safer, no auto-restart surprises)
+- Cost: ~$15-20/month (30 hours usage @ $0.30-0.40/hr + EBS)
 
 **Enable remote mode:**
 ```bash
@@ -104,7 +105,7 @@ See `docs/deployment/remote-model-server.md` for full setup and data persistence
 - **vLLM**: v0.15.1, OpenAI-compatible API server for MedGemma
 - **TEI**: HuggingFace Text Embeddings Inference for EmbeddingGemma
 - **Docling**: v2.72.0, IBM document understanding for PDF OCR
-- **Infrastructure**: Terraform for EC2 management (g4dn.xlarge spot instance)
+- **Infrastructure**: Terraform for EC2 management (g5.xlarge spot instance)
 - **Python**: 3.12 with uv package manager on EC2
 
 ## Code Patterns
@@ -175,6 +176,16 @@ python -c "from Data.preprocessing import preprocess_documents; preprocess_docum
 ```bash
 python test.py
 python Data/test.py  # Data processing tests
+```
+
+### Check GPU Spot Availability
+```bash
+# Quick check (single region)
+./scripts/check-gpu-spot-availability.sh us-west-2 g6.xlarge
+
+# Comprehensive check (all US regions, both g5/g6)
+./scripts/check-gpu-spot-multi-region.sh
+# Shows best price/region combo and terraform values to use
 ```
 
 ### Remote Model Server (Optional)
@@ -273,9 +284,9 @@ terraform init && terraform apply
 # First-time setup on EC2 (~20-30 min for model downloads)
 ssh -i ~/.ssh/medgemma-key.pem ubuntu@<ec2-ip>
 cd /data/medgemma_RAG
-bash scripts/setup-g4-instance.sh YOUR_HF_TOKEN
+bash scripts/setup-gpu-instance.sh YOUR_HF_TOKEN
 
-# See docs/deployment/aws-g4-spot-setup.md for full guide
+# See docs/deployment/aws-gpu-spot-setup.md for full guide
 ```
 
 ## Competition Context
@@ -306,14 +317,30 @@ bash scripts/setup-g4-instance.sh YOUR_HF_TOKEN
 - **vLLM won't start**: Gemma3 models require `--dtype bfloat16`, check tmux logs with `tmux attach -t vllm`
 - **Connection timeout**: Update security group with your current IP (`curl https://checkip.amazonaws.com`)
 - **Disk full**: Models should be in `/data/models_cache/` (EBS), not `/opt/dlami/nvme/` (ephemeral)
+- **Low spot availability**: See `docs/deployment/gpu-spot-strategy.md` for multi-region/instance strategy
+
+### GPU Instance Options
+- **g5.xlarge**: NVIDIA A10G, 24GB VRAM, $0.30-0.40/hr spot, mature/stable
+- **g6.xlarge**: NVIDIA L4, 24GB VRAM, $0.25-0.35/hr spot, better availability
+- Both support bfloat16 (compute capability ≥8.0) required for MedGemma 1.5
+- Check availability: `./scripts/check-gpu-spot-multi-region.sh`
+- Strategy guide: `docs/deployment/gpu-spot-strategy.md`
+
+### GPU Migration History
+- **g4dn.xlarge (T4) → g5.xlarge (A10G)**: T4 lacks bfloat16 support
+- **Persistent → One-time spots**: Prevents surprise costs (see incident below)
 
 ### AWS Spot Instance Cost Incident (Feb 2026)
 
-**CRITICAL: When spot capacity is unavailable in a region and you switch to another region, ALWAYS cancel the spot request in the original region!**
+**STATUS: RESOLVED - Switched from persistent to one-time spots (infrastructure/terraform/main.tf:70)**
 
 **What happened:** Tried to launch spot in us-east-1, capacity unavailable, switched to us-east-2. But the persistent spot request in us-east-1 eventually got fulfilled and ran for 13+ hours unnoticed, costing ~$3 extra.
 
 **The problem:** Persistent spot requests keep trying to launch instances until explicitly cancelled. Terminating the instance alone doesn't stop it - a new one will launch.
+
+**Current solution:** Using one-time spots prevents auto-fulfillment after cancellation.
+
+**Historical reference (for persistent spots only):**
 
 **Prevention:** When spot capacity fails in a region:
 ```bash

@@ -5,9 +5,14 @@ variable "aws_region" {
 }
 
 variable "instance_type" {
-  description = "EC2 instance type"
+  description = "EC2 instance type (g5.xlarge or g6.xlarge recommended for A10G/L4 GPU)"
   type        = string
-  default     = "g4dn.xlarge"
+  default     = "g5.xlarge"
+
+  validation {
+    condition     = contains(["g5.xlarge", "g6.xlarge", "g5.2xlarge", "g6.2xlarge"], var.instance_type)
+    error_message = "Instance type must support bfloat16 (compute capability ≥8.0). Recommended: g5.xlarge or g6.xlarge"
+  }
 }
 
 variable "ami_id" {
@@ -25,7 +30,7 @@ variable "key_pair_name" {
 variable "root_volume_size" {
   description = "Root EBS volume size in GB"
   type        = number
-  default     = 50
+  default     = 75
 }
 
 variable "allowed_cidr_blocks" {

@@ -1,15 +1,19 @@
 # AWS Configuration
-aws_region = "us-east-1"
+aws_region = "us-west-2"  # Oregon region has spot availability for g5.xlarge
 
 # Instance Configuration
-instance_type = "g4dn.xlarge"
-ami_id        = "ami-0c702567ccf8b120a" # Update with latest Deep Learning AMI
+# Check availability first: ./scripts/check-gpu-spot-availability.sh
+# Recommended options:
+#   g5.xlarge  - NVIDIA A10G, 24GB VRAM, $0.30-0.40/hr spot
+#   g6.xlarge  - NVIDIA L4, 24GB VRAM, $0.25-0.35/hr spot (often better availability)
+instance_type = "g5.xlarge"
+ami_id        = "ami-0b1c3e116f347cc8a" # Deep Learning OSS Nvidia Driver AMI GPU PyTorch 2.6.0 (Ubuntu 22.04) us-west-2
 
 # SSH Key
 key_pair_name = "medgemma-key"
 
 # Storage
-root_volume_size = 50
+root_volume_size = 75
 
 # Security - IMPORTANT: Replace with your IP address
 # Get your IP: curl https://checkip.amazonaws.com
