@@ -20,7 +20,7 @@ Local MacBook (Development)          EC2 Spot Instance (GPU)
 ## Benefits
 
 - **Cool MacBook**: No local GPU/CPU load during inference
-- **Cost Effective**: ~$12/month (30 hours × $0.16/hr spot + 75GB storage)
+- **Cost Effective**: ~$15-21/month (30 hours × $0.30-0.40/hr spot + 75GB storage)
 - **Fast Startup**: ~2-3 minutes (models persist on EBS, no re-downloading)
 - **Flexible**: Easy to start/stop EC2 as needed
 - **Production Ready**: vLLM 0.15.1 and TEI are battle-tested inference servers
@@ -32,7 +32,7 @@ Local MacBook (Development)          EC2 Spot Instance (GPU)
 1. **AWS Account** with configured CLI (`aws configure`)
 2. **Terraform** installed (`brew install terraform` on macOS)
 3. **SSH Key** created (`~/.ssh/medgemma-key.pem`)
-4. **Spot Instance Quota** approved (8 vCPUs for g4dn.xlarge)
+4. **Spot Instance Quota** approved (4 vCPUs for g5.xlarge)
 
 ---
 
@@ -428,8 +428,8 @@ export EMBEDDING_SERVER_URL=http://<new-ip>:8001
 ### Infrastructure
 | Component | Version/Spec |
 |-----------|--------------|
-| Instance | g4dn.xlarge (Tesla T4, 16GB VRAM) |
-| Region | us-east-2 (Ohio) |
+| Instance | g5.xlarge (NVIDIA A10G, 24GB VRAM) |
+| Region | us-west-2 (Oregon) |
 | vLLM | 0.15.1 |
 | TEI | Latest (Docker) |
 | Docling | 2.72.0 |
