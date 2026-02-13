@@ -108,6 +108,9 @@ echo "[7/10] Setting up Python environment..."
 uv venv --python 3.12
 source .venv/bin/activate
 
+echo "Installing pip in virtual environment..."
+uv pip install pip
+
 echo "Installing dependencies (this may take 5-10 minutes)..."
 uv pip install -r requirements.txt
 
@@ -118,7 +121,7 @@ echo "Installing Docling (PDF OCR)..."
 uv pip install docling
 
 echo "Installing spaCy model..."
-uv run python -m spacy download en_core_web_sm
+uv pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
 
 echo ""
 echo "[8/10] Pulling TEI Docker image..."
