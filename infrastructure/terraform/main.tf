@@ -67,8 +67,8 @@ resource "aws_spot_instance_request" "model_server" {
   vpc_security_group_ids = [aws_security_group.model_server.id]
 
   # Spot configuration
-  spot_type                      = "persistent"
-  instance_interruption_behavior = "stop"
+  spot_type                      = "one-time"
+  instance_interruption_behavior = "terminate"
   wait_for_fulfillment           = true
 
   # Root volume
