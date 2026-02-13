@@ -45,7 +45,7 @@ This guide explains the multi-region, multi-instance type strategy for maximizin
 
 When spot capacity is reclaimed:
 - Instance stops (doesn't terminate)
-- EBS volumes persist (models remain in `/data/models_cache/`)
+- EBS volumes persist (models remain in `~/models_cache/`)
 - Can manually restart later
 - One-time request won't auto-restart (need to create new request)
 

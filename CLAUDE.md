@@ -51,7 +51,7 @@ Local MacBook              EC2 Spot Instance (us-west-2)
 **Infrastructure:**
 - Instance: g5.xlarge (A10G, 24GB) or g6.xlarge (L4, 24GB) - check availability first
 - Storage: 75GB EBS gp3 (persistent, survives stop/start)
-- Models: `/data/models_cache/` on EBS (~9.3GB, persists across stop/start)
+- Models: `~/models_cache/` on EBS (~9.3GB, persists across stop/start)
 - Spot Type: One-time (safer, no auto-restart surprises)
 - Cost: ~$15-20/month (30 hours usage @ $0.30-0.40/hr + EBS)
 
@@ -196,7 +196,7 @@ python Data/test.py  # Data processing tests
 
 # SSH and start model servers (~2-3 min startup, models already on disk)
 ssh -i ~/.ssh/medgemma-key.pem ubuntu@<ec2-ip>
-cd /data/medgemma_RAG
+cd ~/medgemma_RAG
 ./scripts/start-model-server.sh
 
 # Test endpoints
@@ -283,7 +283,7 @@ terraform init && terraform apply
 
 # First-time setup on EC2 (~20-30 min for model downloads)
 ssh -i ~/.ssh/medgemma-key.pem ubuntu@<ec2-ip>
-cd /data/medgemma_RAG
+cd ~/medgemma_RAG
 bash scripts/setup-gpu-instance.sh YOUR_HF_TOKEN
 
 # See docs/deployment/aws-gpu-spot-setup.md for full guide
@@ -316,7 +316,7 @@ bash scripts/setup-gpu-instance.sh YOUR_HF_TOKEN
 - **IP changed**: Run `./scripts/ec2-status.sh` after each start to get new IP
 - **vLLM won't start**: Gemma3 models require `--dtype bfloat16`, check tmux logs with `tmux attach -t vllm`
 - **Connection timeout**: Update security group with your current IP (`curl https://checkip.amazonaws.com`)
-- **Disk full**: Models should be in `/data/models_cache/` (EBS), not `/opt/dlami/nvme/` (ephemeral)
+- **Disk full**: Models should be in `~/models_cache/` (EBS home directory), not `/opt/dlami/nvme/` (ephemeral)
 - **Low spot availability**: See `docs/deployment/gpu-spot-strategy.md` for multi-region/instance strategy
 
 ### GPU Instance Options

@@ -113,7 +113,7 @@ bash scripts/setup-g4-instance.sh YOUR_HF_TOKEN
 ssh medgemma-g4
 
 # 4. Start model servers
-cd /data/medgemma_RAG
+cd ~/medgemma_RAG
 ./scripts/start-model-server.sh
 
 # 5. Check logs (optional)
@@ -147,7 +147,7 @@ jupyter notebook
 ```bash
 # 1. Stop model servers (on EC2)
 ssh medgemma-g4
-cd /data/medgemma_RAG
+cd ~/medgemma_RAG
 ./scripts/stop-model-server.sh
 
 # 2. Stop EC2 instance (from local machine)
@@ -163,7 +163,7 @@ Process PDFs with GPU acceleration on EC2:
 ```bash
 # SSH into EC2
 ssh medgemma-g4
-cd /data/medgemma_RAG
+cd ~/medgemma_RAG
 
 # Process all PDFs in documents folder
 ./scripts/ocr-process.sh
@@ -172,7 +172,7 @@ cd /data/medgemma_RAG
 python scripts/ocr-single.py Data/documents/guideline.pdf -o Data/processed_ocr/
 
 # Download processed files to local
-scp -i ~/.ssh/medgemma-key.pem -r ubuntu@<ec2-ip>:/data/medgemma_RAG/Data/processed_ocr ./
+scp -i ~/.ssh/medgemma-key.pem -r ubuntu@<ec2-ip>:~/medgemma_RAG/Data/processed_ocr ./
 ```
 
 ---
@@ -307,7 +307,7 @@ curl https://checkip.amazonaws.com
 
 - System & packages: ~35GB
 - Python venv: ~11GB
-- Models (`/data/models_cache/`): ~9.3GB
+- Models (`~/models_cache/`): ~9.3GB
   - MedGemma 1.5 4B: ~8.1GB
   - EmbeddingGemma 300M: ~1.2GB
 - Available for data/experiments: ~21GB
@@ -355,9 +355,9 @@ Edit `scripts/start-model-server.sh` to customize:
 ### What PERSISTS (EBS Volume - 75GB)
 
 When you stop/start the instance, these survive:
-- ✅ All code: `/data/medgemma_RAG/`
-- ✅ Python venv: `/data/medgemma_RAG/.venv/` (11GB)
-- ✅ All models: `/data/models_cache/` (9.3GB)
+- ✅ All code: `~/medgemma_RAG/`
+- ✅ Python venv: `~/medgemma_RAG/.venv/` (11GB)
+- ✅ All models: `~/models_cache/` (9.3GB)
   - MedGemma 1.5 4B (~8.1GB)
   - EmbeddingGemma 300M (~1.2GB)
 - ✅ Docker images, system configuration
@@ -393,7 +393,7 @@ exit
 
 # SSH to EC2
 ssh -i ~/.ssh/medgemma-key.pem ubuntu@<new-ip>
-cd /data/medgemma_RAG
+cd ~/medgemma_RAG
 ./scripts/start-model-server.sh
 
 # Wait 2-3 minutes, then use locally
