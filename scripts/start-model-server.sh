@@ -5,7 +5,7 @@ set -e
 
 # Get HF token from environment or file
 export HF_TOKEN=${HF_TOKEN:-$(cat ~/.hf_token 2>/dev/null || cat .env 2>/dev/null | grep HF_TOKEN | cut -d '=' -f2)}
-export HF_HOME=/data/models_cache
+export HF_HOME=~/models_cache
 
 if [ -z "$HF_TOKEN" ]; then
   echo "Warning: HF_TOKEN not found. Models may fail to load if they require authentication."
@@ -24,7 +24,7 @@ if tmux has-session -t vllm 2>/dev/null; then
 fi
 
 echo "[1/2] Starting vLLM server for MedGemma 1.5..."
-tmux new-session -d -s vllm "export HF_TOKEN=$HF_TOKEN; export HF_HOME=/data/models_cache; export PATH=\"\$HOME/.local/bin:\$PATH\"; cd /data/medgemma_RAG && source .venv/bin/activate && python -m vllm.entrypoints.openai.api_server \
+tmux new-session -d -s vllm "export HF_TOKEN=$HF_TOKEN; export HF_HOME=~/models_cache; export PATH=\"\$HOME/.local/bin:\$PATH\"; cd ~/medgemma_RAG && source .venv/bin/activate && python -m vllm.entrypoints.openai.api_server \
   --model google/medgemma-1.5-4b-it \
   --host 0.0.0.0 \
   --port 8000 \

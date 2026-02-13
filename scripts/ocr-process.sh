@@ -4,8 +4,8 @@
 
 set -e
 
-INPUT_DIR=${1:-/data/medgemma_RAG/Data/documents}
-OUTPUT_DIR=${2:-/data/medgemma_RAG/Data/processed_ocr}
+INPUT_DIR=${1:-~/medgemma_RAG/Data/documents}
+OUTPUT_DIR=${2:-~/medgemma_RAG/Data/processed_ocr}
 
 mkdir -p "$OUTPUT_DIR"
 
@@ -23,8 +23,8 @@ if [ ! -d "$INPUT_DIR" ]; then
 fi
 
 # Activate environment
-if [ -f "/data/medgemma_RAG/.venv/bin/activate" ]; then
-  source /data/medgemma_RAG/.venv/bin/activate
+if [ -f "~/medgemma_RAG/.venv/bin/activate" ]; then
+  source ~/medgemma_RAG/.venv/bin/activate
 elif [ -f ".venv/bin/activate" ]; then
   source .venv/bin/activate
 else

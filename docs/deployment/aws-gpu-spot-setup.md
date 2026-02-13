@@ -389,8 +389,8 @@ nano .env
 
 ```bash
 # Create models cache directory on persistent EBS
-mkdir -p /data/models_cache
-export HF_HOME=/data/models_cache
+mkdir -p ~/models_cache
+export HF_HOME=~/models_cache
 
 # Load HF token
 source ~/.bashrc  # or export HF_TOKEN=your_token
@@ -406,21 +406,21 @@ print('Downloading MedGemma 1.5 4B...')
 snapshot_download(
     'google/medgemma-1.5-4b-it',
     token=token,
-    cache_dir='/data/models_cache'
+    cache_dir='~/models_cache'
 )
 
 print('Downloading EmbeddingGemma...')
 snapshot_download(
     'google/embeddinggemma-300m',
     token=token,
-    cache_dir='/data/models_cache'
+    cache_dir='~/models_cache'
 )
 
 print('Models downloaded!')
 "
 
 # Add environment variables to .bashrc for persistence
-echo 'export HF_HOME=/data/models_cache' >> ~/.bashrc
+echo 'export HF_HOME=~/models_cache' >> ~/.bashrc
 echo 'export HF_TOKEN=$(cat ~/.hf_token 2>/dev/null)' >> ~/.bashrc
 ```
 
@@ -435,14 +435,14 @@ echo 'export HF_TOKEN=$(cat ~/.hf_token 2>/dev/null)' >> ~/.bashrc
 # On your LOCAL machine:
 scp -i ~/.ssh/medgemma-key.pem \
   Data/documents/*.pdf \
-  ubuntu@$INSTANCE_IP:/data/medgemma_RAG/Data/documents/
+  ubuntu@$INSTANCE_IP:~/medgemma_RAG/Data/documents/
 
 # Back on the GPU instance:
 # Create processed directory
-mkdir -p /data/medgemma_RAG/Data/processed
+mkdir -p ~/medgemma_RAG/Data/processed
 
 # Process documents
-cd /data/medgemma_RAG
+cd ~/medgemma_RAG
 uv run Data/export_chunks.py
 ```
 
@@ -511,13 +511,13 @@ sed -i.bak "s/HostName .*/HostName $INSTANCE_IP/" ~/.ssh/config
 ssh medgemma-g4  # or ssh -i ~/.ssh/medgemma-key.pem ubuntu@$INSTANCE_IP
 
 # Navigate to project
-cd /data/medgemma_RAG
+cd ~/medgemma_RAG
 
 # Activate environment
 source .venv/bin/activate
 
 # Set HuggingFace cache
-export HF_HOME=/data/models_cache
+export HF_HOME=~/models_cache
 
 # Start working!
 ```
@@ -541,7 +541,7 @@ uv run app.py
 ssh -i ~/.ssh/medgemma-key.pem -L 7860:localhost:7860 ubuntu@$INSTANCE_IP
 
 # On the GPU instance (in SSH session):
-cd /data/medgemma_RAG
+cd ~/medgemma_RAG
 source .venv/bin/activate
 uv run app.py
 
@@ -556,7 +556,7 @@ uv run app.py
 tmux new -s medgemma
 
 # Run your app
-cd /data/medgemma_RAG
+cd ~/medgemma_RAG
 source .venv/bin/activate
 uv run app.py
 
@@ -585,7 +585,7 @@ git push
 # Or sync files back to local machine
 # On LOCAL machine:
 scp -i ~/.ssh/medgemma-key.pem -r \
-  ubuntu@$INSTANCE_IP:/data/medgemma_RAG/Data/processed \
+  ubuntu@$INSTANCE_IP:~/medgemma_RAG/Data/processed \
   ./Data/
 ```
 
@@ -634,7 +634,7 @@ Host medgemma-g4
 2. Type: "Remote-SSH: Connect to Host"
 3. Select `medgemma-g4`
 4. Wait for connection
-5. Open folder: `/data/medgemma_RAG`
+5. Open folder: `~/medgemma_RAG`
 
 ### 4. VS Code Extensions on Remote
 
@@ -667,7 +667,7 @@ Zed has built-in remote development via SSH:
 2. Press `Cmd+Shift+P` (macOS) or `Ctrl+Shift+P` (Linux)
 3. Type: "remote: Open Remote Folder"
 4. Select `medgemma-g4` from your SSH hosts
-5. Navigate to `/data/medgemma_RAG`
+5. Navigate to `~/medgemma_RAG`
 6. Zed will install its remote server automatically on first connection
 
 **Tip**: Zed remembers recent remote projects - use `Cmd+O` → "Remote Projects" for quick access.
@@ -696,9 +696,9 @@ claude --version
 **Terminal 1 (Zed integrated terminal or separate SSH):**
 ```bash
 # Navigate to project
-cd /data/medgemma_RAG
+cd ~/medgemma_RAG
 source .venv/bin/activate
-export HF_HOME=/data/models_cache
+export HF_HOME=~/models_cache
 
 # Run Claude Code for AI assistance
 claude
@@ -706,9 +706,9 @@ claude
 
 **Terminal 2 (for running the app):**
 ```bash
-cd /data/medgemma_RAG
+cd ~/medgemma_RAG
 source .venv/bin/activate
-export HF_HOME=/data/models_cache
+export HF_HOME=~/models_cache
 
 # Run your application
 uv run app.py
@@ -733,7 +733,7 @@ uv run app.py
    tmux new -s claude
 
    # Run Claude Code
-   cd /data/medgemma_RAG && source .venv/bin/activate
+   cd ~/medgemma_RAG && source .venv/bin/activate
    claude
 
    # Detach: Ctrl+B, then D
@@ -786,7 +786,7 @@ while true; do
         # aws sns publish --topic-arn arn:aws:sns:region:account:topic --message "Spot interruption!"
 
         # Save work automatically
-        cd /data/medgemma_RAG
+        cd ~/medgemma_RAG
         git add .
         git commit -m "Auto-save before spot interruption $(date)"
 
@@ -936,11 +936,11 @@ pip install huggingface-hub[cli]
 
 huggingface-cli download google/medgemma-1.5-4b-it \
   --token $HF_TOKEN \
-  --cache-dir /data/models_cache
+  --cache-dir ~/models_cache
 
 huggingface-cli download google/embeddinggemma-300m \
   --token $HF_TOKEN \
-  --cache-dir /data/models_cache
+  --cache-dir ~/models_cache
 ```
 
 ### /data Directory Missing After Restart
@@ -977,9 +977,9 @@ aws ec2 describe-instances --instance-ids $INSTANCE_ID \
 ssh -i ~/.ssh/medgemma-key.pem ubuntu@$INSTANCE_IP
 
 # Navigate and activate
-cd /data/medgemma_RAG
+cd ~/medgemma_RAG
 source .venv/bin/activate
-export HF_HOME=/data/models_cache
+export HF_HOME=~/models_cache
 
 # Run app
 uv run app.py
@@ -997,7 +997,7 @@ uv run app.py
 - [ ] Clone repository
 - [ ] Create virtual environment
 - [ ] Configure HF_TOKEN
-- [ ] Download models to /data/models_cache
+- [ ] Download models to ~/models_cache
 - [ ] Process documents
 - [ ] Test GPU access
 - [ ] Run application
@@ -1007,9 +1007,9 @@ uv run app.py
 - [ ] Start instance (AWS console or CLI)
 - [ ] Get new public IP
 - [ ] SSH connect
-- [ ] Navigate to `/data/medgemma_RAG`
+- [ ] Navigate to `~/medgemma_RAG`
 - [ ] Activate venv: `source .venv/bin/activate`
-- [ ] Set cache: `export HF_HOME=/data/models_cache`
+- [ ] Set cache: `export HF_HOME=~/models_cache`
 - [ ] Work on project
 - [ ] Commit changes to git
 - [ ] Stop instance when done

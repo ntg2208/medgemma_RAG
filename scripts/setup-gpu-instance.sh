@@ -60,20 +60,12 @@ sudo apt install -y \
     tree
 
 echo ""
-echo "[3/10] Setting up /data directory..."
-# Check if /data exists and is accessible
-if [ -d "/data" ]; then
-    echo "/data directory already exists"
-    sudo chown -R ubuntu:ubuntu /data
-else
-    # Always use EBS-mounted storage (compatible with g5.xlarge)
-    echo "Creating /data on root volume (EBS)"
-    sudo mkdir -p /data
-    sudo chown -R ubuntu:ubuntu /data
-
-    # Ensure /data is on root volume (not instance storage)
-    echo "/data will persist on root EBS volume"
-fi
+echo "[3/10] Verifying home directory..."
+# Code will be in ~/medgemma_RAG, models in ~/models_cache
+# All on root EBS volume (persists across stop/start)
+echo "Using home directory: $HOME"
+echo "Code location: ~/medgemma_RAG"
+echo "Models cache: ~/models_cache"
 
 echo ""
 echo "[4/10] Installing uv (Python package manager)..."
@@ -100,13 +92,13 @@ else
 fi
 
 echo ""
-echo "[6/10] Cloning MedGemma RAG repository..."
-cd /data
+echo "[6/10] Checking MedGemma RAG repository..."
+cd ~
 if [ -d "medgemma_RAG" ]; then
-    echo "Repository already exists, pulling latest changes..."
+    echo "Repository already exists at ~/medgemma_RAG"
     cd medgemma_RAG
-    git pull
 else
+    echo "Cloning repository..."
     git clone https://github.com/ntg2208/medgemma_RAG.git
     cd medgemma_RAG
 fi
@@ -140,7 +132,7 @@ cat > .env <<EOF
 HF_TOKEN=$HF_TOKEN
 
 # Model Cache
-HF_HOME=/data/models_cache
+HF_HOME=~/models_cache
 
 # LangSmith (Optional - uncomment and add your keys if using)
 # LANGSMITH_API_KEY=your_api_key_here
@@ -153,15 +145,15 @@ EOF
 
 # Add HF_HOME to bashrc
 if ! grep -q "HF_HOME" ~/.bashrc; then
-    echo 'export HF_HOME=/data/models_cache' >> ~/.bashrc
+    echo 'export HF_HOME=~/models_cache' >> ~/.bashrc
 fi
 
 # Create models cache directory
-mkdir -p /data/models_cache
+mkdir -p ~/models_cache
 
 echo ""
 echo "[10/11] Pre-downloading models (this will take 10-15 minutes)..."
-export HF_HOME=/data/models_cache
+export HF_HOME=~/models_cache
 export HF_TOKEN="$HF_TOKEN"
 
 python <<'PYEOF'
@@ -175,7 +167,7 @@ try:
     snapshot_download(
         'google/medgemma-1.5-4b-it',
         token=token,
-        cache_dir='/data/models_cache'
+        cache_dir='~/models_cache'
     )
     print('✓ MedGemma 4B downloaded')
 except Exception as e:
@@ -187,7 +179,7 @@ try:
     snapshot_download(
         'google/embeddinggemma-300m',
         token=token,
-        cache_dir='/data/models_cache'
+        cache_dir='~/models_cache'
     )
     print('✓ EmbeddingGemma downloaded')
 except Exception as e:
@@ -217,12 +209,12 @@ echo "Setup Complete!"
 echo "================================================"
 echo ""
 echo "Next steps:"
-echo "1. Upload PDFs to /data/medgemma_RAG/Data/documents/"
+echo "1. Upload PDFs to ~/medgemma_RAG/Data/documents/"
 echo "   From your LOCAL machine:"
-echo "   scp -i ~/.ssh/medgemma-key.pem Data/documents/*.pdf ubuntu@\$(instance-ip):/data/medgemma_RAG/Data/documents/"
+echo "   scp -i ~/.ssh/medgemma-key.pem Data/documents/*.pdf ubuntu@\$(instance-ip):~/medgemma_RAG/Data/documents/"
 echo ""
 echo "2. Process documents:"
-echo "   cd /data/medgemma_RAG"
+echo "   cd ~/medgemma_RAG"
 echo "   source .venv/bin/activate"
 echo "   uv run Data/export_chunks.py"
 echo ""
@@ -234,7 +226,7 @@ echo "   http://\$(instance-ip):7860"
 echo "   (Make sure port 7860 is open in security group)"
 echo ""
 echo "To resume work later:"
-echo "  cd /data/medgemma_RAG"
+echo "  cd ~/medgemma_RAG"
 echo "  source .venv/bin/activate"
-echo "  export HF_HOME=/data/models_cache"
+echo "  export HF_HOME=~/models_cache"
 echo ""
