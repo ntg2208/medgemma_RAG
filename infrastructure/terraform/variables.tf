@@ -7,7 +7,7 @@ variable "aws_region" {
 variable "instance_type" {
   description = "EC2 instance type (g5.xlarge or g6.xlarge recommended for A10G/L4 GPU)"
   type        = string
-  default     = "g5.xlarge"
+  default     = "g6.xlarge"
 
   validation {
     condition     = contains(["g5.xlarge", "g6.xlarge", "g5.2xlarge", "g6.2xlarge"], var.instance_type)
