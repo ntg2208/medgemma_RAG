@@ -26,6 +26,7 @@ env/
 Data/documents/*.pdf
 Data/processed/
 Data/vectorstore/
+docs/plans/
 
 # Model cache
 .cache/
@@ -37,6 +38,7 @@ models/
 # OS files
 .DS_Store
 Thumbs.db
+tmux.conf.local
 
 # Logs
 *.log
