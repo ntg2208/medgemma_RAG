@@ -3,6 +3,11 @@ output "instance_id" {
   value       = aws_spot_instance_request.model_server.spot_instance_id
 }
 
+output "region" {
+  description = "AWS region where instance is deployed"
+  value       = var.aws_region
+}
+
 output "public_ip" {
   description = "Public IP address (note: changes on stop/start)"
   value       = aws_spot_instance_request.model_server.public_ip
