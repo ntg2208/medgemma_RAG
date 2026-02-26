@@ -1,0 +1,11 @@
+{
+  "original_file": "UKKA_Hyperkalaemia_Management_Guideline.md",
+  "title": "Clinical Practice Guidelines Treatment of Acute Hyperkalaemia in Adults",
+  "summary": "This document provides clinical practice guidelines for treating acute hyperkalemia in adults, focusing on hospital settings. It includes updated recommendations for the use of potassium binders like Sodium Zirconium Cyclosilicate and Patiromer, and clarifies the insulin-glucose regimen and the administration of calcium gluconate, reflecting recent regulatory updates and new evidence. The guidelines also address blood glucose monitoring and the role of calcium resonium.",
+  "cleaned_file": "Clinical_Practice_Guidelines_Treatment_of_Acute_Hyperkalaemia_in_Adults.md",
+  "metadata_file": "Clinical_Practice_Guidelines_Treatment_of_Acute_Hyperkalaemia_in_Adults.json",
+  "stats": {
+    "original_length": 531173,
+    "cleaned_length": 475466
+  }
+}
