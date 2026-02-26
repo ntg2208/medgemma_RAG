@@ -1,0 +1,11 @@
+{
+  "original_file": "NHS_ThinkKidneys_CKD_Nutritional_Guidelines.md",
+  "title": "CKD Nutritional Recommendations for Peritoneal Dialysis",
+  "summary": "This document provides nutritional recommendations for patients undergoing peritoneal dialysis with stage 5 CKD. It advises a daily energy intake of 30-35 Kcal/Kg Ideal Body Weight (IBW) to maintain IBW and nitrogen balance, potentially reduced in the elderly or less active individuals. Protein intake should be 1-1.2 g/Kg IBW daily, with at least 50% High Biological Value protein, to meet increased requirements due to PD. Serum potassium should be maintained between 3.5-5.5 mmol/L, and serum phosphate between 1.1-1.7 mmol/L. Phosphate binders like calcium acetate or calcium carbonate may be needed. The document also outlines the need for regular dietitian assessment and review for all PD patients.",
+  "cleaned_file": "CKD_Nutritional_Recommendations_for_Peritoneal_Dialysis.md",
+  "metadata_file": "CKD_Nutritional_Recommendations_for_Peritoneal_Dialysis.json",
+  "stats": {
+    "original_length": 31282,
+    "cleaned_length": 27635
+  }
+}

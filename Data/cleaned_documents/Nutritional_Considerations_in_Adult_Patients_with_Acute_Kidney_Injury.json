@@ -1,0 +1,11 @@
+{
+  "original_file": "UKKA_AKI_Nutrition_Guide.md",
+  "title": "Nutritional considerations in adult patients with acute kidney injury",
+  "summary": "This document provides nutritional considerations for adult patients with acute kidney injury (AKI). It emphasizes the importance of identifying patients at risk of malnutrition due to AKI, as malnutrition is a predictor of mortality. The document discusses principles of nutrition support tailored to AKI patients, including managing metabolic disturbances, potential nutritional losses during renal replacement therapy (RRT), and fluid retention. It also mentions the need for close monitoring and individualised dietary approaches.",
+  "cleaned_file": "Nutritional_considerations_in_adult_patients_with_acute_kidney_injury.md",
+  "metadata_file": "Nutritional_considerations_in_adult_patients_with_acute_kidney_injury.json",
+  "stats": {
+    "original_length": 60057,
+    "cleaned_length": 47951
+  }
+}

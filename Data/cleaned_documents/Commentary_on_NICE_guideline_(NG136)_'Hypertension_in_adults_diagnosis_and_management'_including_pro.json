@@ -1,0 +1,11 @@
+{
+  "original_file": "UKKA_Commentary_NICE_Hypertension_NG136.md",
+  "title": "Commentary on NICE guideline (NG136) 'Hypertension in adults: diagnosis and management' including proposals for blood pressure management in patients with chronic kidney disease",
+  "summary": "This document, based on NICE guideline NG136, provides recommendations for managing hypertension, including specific considerations for patients with chronic kidney disease. The guideline proposes that blood pressure targets of &lt;130/80 mmHg should be considered for patients with CKD, aiming for shared-decision making with the patient. It also recommends using standardized techniques for blood pressure measurements and suggests objective testing of medication adherence in cases of resistant hypertension. The guideline advocates for lifestyle modifications, including reducing dietary salt intake.",
+  "cleaned_file": "Commentary_on_NICE_guideline_(NG136)_'Hypertension_in_adults_diagnosis_and_management'_including_pro.md",
+  "metadata_file": "Commentary_on_NICE_guideline_(NG136)_'Hypertension_in_adults_diagnosis_and_management'_including_pro.json",
+  "stats": {
+    "original_length": 30803,
+    "cleaned_length": 28561
+  }
+}

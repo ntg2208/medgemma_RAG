@@ -6,7 +6,7 @@ with support for query expansion and reranking.
 """
 
 import logging
-from typing import Optional
+from typing import ClassVar, Optional
 
 from langchain_core.documents import Document
 from langchain_core.retrievers import BaseRetriever
@@ -46,7 +46,7 @@ class CKDRetriever(BaseRetriever):
         arbitrary_types_allowed = True
 
     # Medical term expansions for query enhancement
-    TERM_EXPANSIONS = {
+    TERM_EXPANSIONS: ClassVar[dict[str, list[str]]] = {
         "ckd": ["chronic kidney disease", "kidney disease", "renal disease"],
         "egfr": ["estimated glomerular filtration rate", "gfr", "kidney function"],
         "potassium": ["K+", "hyperkalemia", "hypokalemia"],

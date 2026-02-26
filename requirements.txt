@@ -26,7 +26,8 @@ sentence-transformers>=2.6.0
 # =============================================================================
 # PDF Processing
 # =============================================================================
-PyMuPDF>=1.24.0
+docling>=2.72.0  # IBM document understanding with OCR
+PyMuPDF>=1.24.0  # Fallback PDF parser (kept for compatibility)
 pdfplumber>=0.10.0
 
 # =============================================================================

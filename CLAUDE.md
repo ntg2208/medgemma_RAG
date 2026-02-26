@@ -50,10 +50,16 @@ Local MacBook              EC2 Spot Instance (us-west-2)
 
 **Infrastructure:**
 - Instance: g5.xlarge (A10G, 24GB) or g6.xlarge (L4, 24GB) - check availability first
-- Storage: 75GB EBS gp3 (persistent, survives stop/start)
-- Models: `~/models_cache/` on EBS (~9.3GB, persists across stop/start)
+- Storage: 75GB EBS gp3 (auto-deletes on termination to prevent orphaned volumes)
+- Models: Currently downloaded at boot (~9.3GB, 5-10 min startup)
 - Spot Type: One-time (safer, no auto-restart surprises)
-- Cost: ~$15-20/month (30 hours usage @ $0.30-0.40/hr + EBS)
+- Cost: ~$0.30-0.40/hr spot pricing
+
+**TODO - S3 Model Caching:**
+- Upload pre-downloaded models to S3 bucket (MedGemma 1.5 4B, EmbeddingGemma 300M)
+- Modify `scripts/setup-gpu-instance.sh` to sync from S3 instead of HuggingFace
+- Benefits: Faster instance startup (30s vs 5-10 min), no HuggingFace rate limits
+- Cost: ~$0.21/month for 9.3GB S3 storage (us-east-2)
 
 **Enable remote mode:**
 ```bash

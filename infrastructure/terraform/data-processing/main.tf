@@ -13,10 +13,10 @@ provider "aws" {
   region = var.aws_region
 }
 
-# Security Group
-resource "aws_security_group" "model_server" {
-  name        = "medgemma-model-server-sg"
-  description = "Security group for MedGemma model server"
+# Security Group for Data Processing Instance
+resource "aws_security_group" "data_processing" {
+  name        = "medgemma-data-processing-sg"
+  description = "Security group for MedGemma data processing/coding instance"
 
   # SSH access
   ingress {
@@ -27,20 +27,29 @@ resource "aws_security_group" "model_server" {
     cidr_blocks = var.allowed_cidr_blocks
   }
 
-  # vLLM API
+  # Jupyter Notebook
   ingress {
-    description = "vLLM API"
-    from_port   = 8000
-    to_port     = 8000
+    description = "Jupyter Notebook"
+    from_port   = 8888
+    to_port     = 8888
     protocol    = "tcp"
     cidr_blocks = var.allowed_cidr_blocks
   }
 
-  # TEI Embeddings
+  # Gradio UI
   ingress {
-    description = "TEI Embeddings"
-    from_port   = 8001
-    to_port     = 8001
+    description = "Gradio UI"
+    from_port   = 7860
+    to_port     = 7860
+    protocol    = "tcp"
+    cidr_blocks = var.allowed_cidr_blocks
+  }
+
+  # Docling API (if running as server)
+  ingress {
+    description = "Docling API"
+    from_port   = 5000
+    to_port     = 5000
     protocol    = "tcp"
     cidr_blocks = var.allowed_cidr_blocks
   }
@@ -54,17 +63,17 @@ resource "aws_security_group" "model_server" {
   }
 
   tags = {
-    Name    = "medgemma-model-server-sg"
+    Name    = "medgemma-data-processing-sg"
     Project = "medgemma-rag"
   }
 }
 
-# Spot Instance Request
-resource "aws_spot_instance_request" "model_server" {
+# Spot Instance Request for Data Processing
+resource "aws_spot_instance_request" "data_processing" {
   ami                    = var.ami_id
   instance_type          = var.instance_type
   key_name               = var.key_pair_name
-  vpc_security_group_ids = [aws_security_group.model_server.id]
+  vpc_security_group_ids = [aws_security_group.data_processing.id]
 
   # Spot configuration
   spot_type                      = "one-time"
@@ -75,16 +84,17 @@ resource "aws_spot_instance_request" "model_server" {
   root_block_device {
     volume_size           = var.root_volume_size
     volume_type           = "gp3"
-    delete_on_termination = true
+    delete_on_termination = false
 
     tags = {
-      Name = "medgemma-model-server-root"
+      Name = "medgemma-data-processing-root"
     }
   }
 
   tags = {
-    Name    = "medgemma-model-server"
+    Name    = "medgemma-data-processing"
     Project = "medgemma-rag"
     Type    = "spot-instance"
+    Purpose = "coding-and-ocr"
   }
 }

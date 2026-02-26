@@ -1,0 +1,11 @@
+{
+  "original_file": "UKKA_Anaemia_CKD_Guideline_Sept2024.md",
+  "title": "Clinical Practice Guideline: Anaemia of Chronic Kidney Disease",
+  "summary": "This clinical practice guideline provides recommendations for managing anaemia in chronic kidney disease. It focuses on assessing and treating iron deficiency, managing anaemia in patients without dialysis, and discussing the use of new therapies like HIF-PHI stabilisers, while also providing updated information for transplant recipients.",
+  "cleaned_file": "Clinical_Practice_Guideline_Anaemia_of_Chronic_Kidney_Disease.md",
+  "metadata_file": "Clinical_Practice_Guideline_Anaemia_of_Chronic_Kidney_Disease.json",
+  "stats": {
+    "original_length": 347342,
+    "cleaned_length": 342685
+  }
+}

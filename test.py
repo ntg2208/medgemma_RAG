@@ -4,7 +4,7 @@ Test file for MedGemma RAG System
 Import all modules for separate testing.
 Run specific tests by uncommenting the relevant sections.
 """
-
+# %%
 import sys
 from pathlib import Path
 
@@ -55,13 +55,14 @@ from config import (
     LOG_LEVEL,
     LOG_FORMAT,
 )
+#%%
 
 # =============================================================================
 # Data Processing Module
 # =============================================================================
 from Data import DocumentPreprocessor
 from Data.preprocessing import DocumentPreprocessor as PreprocessorDirect
-
+#%%
 # =============================================================================
 # Level 1: Simple RAG
 # =============================================================================
@@ -81,7 +82,7 @@ except ImportError as e:
     CKDVectorStore = None
     CKDRetriever = None
     SimpleRAGChain = None
-
+#%%
 # =============================================================================
 # Level 2: Agentic RAG
 # =============================================================================

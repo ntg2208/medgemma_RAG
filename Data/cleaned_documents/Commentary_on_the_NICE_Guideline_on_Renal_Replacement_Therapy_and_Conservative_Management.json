@@ -1,0 +1,11 @@
+{
+  "original_file": "Commentary-on-the-NICE-Guideline-on-RRT-and-conservative-management.md",
+  "title": "Commentary on the NICE Guideline on Renal Replacement Therapy and Conservative Management",
+  "summary": "The NICE guideline NG107 provides recommendations for managing Chronic Kidney Disease (CKD) Stages 4 and 5, focusing on renal replacement therapy (RRT) including dialysis, transplant, and conservative care. The guideline aims to guide clinicians in making decisions about initiating RRT based on patient symptoms, biochemical measures, and fluid status, emphasizing shared decision-making. It also stresses the importance of considering non-renal causes for symptoms before starting dialysis. The guideline highlights the challenges in applying eGFR thresholds for initiating dialysis in infants.",
+  "cleaned_file": "Commentary_on_the_NICE_Guideline_on_Renal_Replacement_Therapy_and_Conservative_Management.md",
+  "metadata_file": "Commentary_on_the_NICE_Guideline_on_Renal_Replacement_Therapy_and_Conservative_Management.json",
+  "stats": {
+    "original_length": 58937,
+    "cleaned_length": 57430
+  }
+}
