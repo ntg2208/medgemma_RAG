@@ -7,14 +7,32 @@ Provides kidney-safe medication guidance including:
 - Drug interaction alerts
 """
 
+import importlib.util
 import logging
-from typing import Any, Optional
 from dataclasses import dataclass, field
 from enum import Enum
+from typing import Any, Optional
+from pathlib import Path
 
 import sys
-from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+
+# Import BaseAgent and AgentResponse using importlib (needed for numeric module names)
+# Check sys.modules first to reuse existing base module
+agents_path = Path(__file__).parent
+base_module = sys.modules.get("3_MultiAgent_RAG.agents.base")
+
+if base_module is None:
+    # First load - create and store in sys.modules
+    base_spec = importlib.util.spec_from_file_location(
+        "3_MultiAgent_RAG.agents.base", agents_path / "base.py"
+    )
+    base_module = importlib.util.module_from_spec(base_spec)  # type: ignore[assignment]
+    sys.modules["3_MultiAgent_RAG.agents.base"] = base_module
+    base_spec.loader.exec_module(base_module)  # type: ignore[attr-defined]
+
+BaseAgent = base_module.BaseAgent
+AgentResponse = base_module.AgentResponse
 
 logger = logging.getLogger(__name__)
 
@@ -46,14 +64,10 @@ class MedicationAgentResponse:
     warnings: list[str]
     confidence: float
     agent_name: str = "Medication Agent"
-    disclaimer: str = (
-        "This information is for educational purposes only. "
-        "ALWAYS consult your doctor or pharmacist before starting, stopping, "
-        "or changing any medication. Never adjust doses without medical supervision."
-    )
+    disclaimer: str = field(default_factory=base_module._get_default_disclaimer)
 
 
-class MedicationAgent:
+class MedicationAgent(BaseAgent):
     """
     Medication safety agent for CKD patients.
 
@@ -324,30 +338,34 @@ class MedicationAgent:
     def answer(
         self,
         query: str,
-        ckd_stage: Optional[int] = None,
-    ) -> MedicationAgentResponse:
+        **kwargs,
+    ) -> AgentResponse:
         """
         Answer a medication-related question.
 
         Args:
             query: User question about medications
-            ckd_stage: Patient's CKD stage
+            **kwargs: Additional parameters (ckd_stage, etc.)
 
         Returns:
-            MedicationAgentResponse with guidance
+            AgentResponse with guidance
         """
+        ckd_stage = kwargs.get("ckd_stage")
         query_lower = query.lower()
 
         # Try to extract medication names from query
         for med_name in list(self.MEDICATION_DATABASE.keys()) + list(self.MEDICATION_ALIASES.keys()):
             if med_name in query_lower:
-                return self.check(med_name, ckd_stage)
+                response = self.check(med_name, ckd_stage)
+                return AgentResponse(
+                    answer=response.general_guidance,
+                    confidence=response.confidence,
+                )
 
         # General medication question
-        return MedicationAgentResponse(
-            medications_analyzed=[],
-            general_guidance=self._get_general_medication_guidance(ckd_stage),
-            warnings=[],
+        guidance = self._get_general_medication_guidance(ckd_stage)
+        return AgentResponse(
+            answer=guidance,
             confidence=0.7,
         )
 
