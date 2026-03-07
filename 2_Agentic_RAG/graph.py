@@ -11,13 +11,14 @@ Defines the stateful workflow that orchestrates:
 """
 
 import logging
-from typing import Any, Optional, TypedDict, Annotated
+from typing import Any, Optional, TypedDict, Annotated, Literal
 from operator import add
 
 from langgraph.graph import StateGraph, END
 from langgraph.checkpoint.memory import MemorySaver
 
-from .nodes import RAGNodes, GraphState, QueryIntent, get_route
+# Import from nodes module - use absolute import for compatibility with importlib
+from 2_Agentic_RAG.nodes import RAGNodes, QueryIntent, get_route
 
 import sys
 from pathlib import Path
@@ -115,78 +116,20 @@ class AgenticRAGGraph:
 
         logger.info("AgenticRAGGraph initialized")
 
-    def _state_to_graph_state(self, state: dict) -> GraphState:
-        """Convert TypedDict state to GraphState dataclass."""
-        gs = GraphState(original_query=state.get("original_query", ""))
-
-        # Copy all fields
-        for key in ["ckd_stage", "anonymized_query", "pii_detected",
-                    "context", "raw_response", "final_response", "error"]:
-            if key in state and state[key] is not None:
-                setattr(gs, key, state[key])
-
-        # Handle dict/list fields
-        if "pii_map" in state:
-            gs.pii_map = state["pii_map"] or {}
-        if "query_keywords" in state:
-            gs.query_keywords = state["query_keywords"] or []
-        if "retrieved_documents" in state:
-            gs.retrieved_documents = state["retrieved_documents"] or []
-        if "evaluation_scores" in state:
-            gs.evaluation_scores = state["evaluation_scores"] or {}
-        if "processing_steps" in state:
-            gs.processing_steps = state["processing_steps"] or []
-
-        # Handle enum
-        if "query_intent" in state and state["query_intent"]:
-            try:
-                gs.query_intent = QueryIntent(state["query_intent"])
-            except ValueError:
-                gs.query_intent = QueryIntent.RETRIEVAL
-
-        return gs
-
-    def _graph_state_to_dict(self, gs: GraphState) -> dict:
-        """Convert GraphState dataclass to dict for LangGraph."""
-        return {
-            "original_query": gs.original_query,
-            "ckd_stage": gs.ckd_stage,
-            "anonymized_query": gs.anonymized_query,
-            "pii_detected": gs.pii_detected,
-            "pii_map": gs.pii_map,
-            "query_intent": gs.query_intent.value if isinstance(gs.query_intent, QueryIntent) else gs.query_intent,
-            "query_keywords": gs.query_keywords,
-            "retrieved_documents": gs.retrieved_documents,
-            "context": gs.context,
-            "raw_response": gs.raw_response,
-            "final_response": gs.final_response,
-            "evaluation_scores": gs.evaluation_scores,
-            "error": gs.error,
-            "processing_steps": gs.processing_steps,
-        }
-
-    def _wrap_node(self, node_func):
-        """Wrap a node function to handle state conversion."""
-        def wrapped(state: dict) -> dict:
-            gs = self._state_to_graph_state(state)
-            result_gs = node_func(gs)
-            return self._graph_state_to_dict(result_gs)
-        return wrapped
-
     def _build_graph(self) -> StateGraph:
         """Build the LangGraph state graph."""
         # Create graph with state schema
         graph = StateGraph(AgenticGraphState)
 
-        # Add nodes
-        graph.add_node("pii_check", self._wrap_node(self.nodes.pii_check))
-        graph.add_node("analyze_query", self._wrap_node(self.nodes.analyze_query))
-        graph.add_node("retrieve_documents", self._wrap_node(self.nodes.retrieve_documents))
-        graph.add_node("generate_response", self._wrap_node(self.nodes.generate_response))
-        graph.add_node("generate_direct", self._wrap_node(self.nodes.generate_direct_response))
-        graph.add_node("generate_clarification", self._wrap_node(self.nodes.generate_clarification))
-        graph.add_node("generate_out_of_scope", self._wrap_node(self.nodes.generate_out_of_scope))
-        graph.add_node("evaluate", self._wrap_node(self.nodes.evaluate_response))
+        # Add nodes (state is passed as dict directly)
+        graph.add_node("pii_check", self.nodes.pii_check)
+        graph.add_node("analyze_query", self.nodes.analyze_query)
+        graph.add_node("retrieve_documents", self.nodes.retrieve_documents)
+        graph.add_node("generate_response", self.nodes.generate_response)
+        graph.add_node("generate_direct", self.nodes.generate_direct_response)
+        graph.add_node("generate_clarification", self.nodes.generate_clarification)
+        graph.add_node("generate_out_of_scope", self.nodes.generate_out_of_scope)
+        graph.add_node("evaluate", self.nodes.evaluate_response)
 
         # Set entry point
         graph.set_entry_point("pii_check")
@@ -195,13 +138,14 @@ class AgenticRAGGraph:
         graph.add_edge("pii_check", "analyze_query")
 
         # Conditional routing based on query intent
-        def route_query(state: dict) -> str:
-            intent = state.get("query_intent", "retrieval")
-            if intent == "retrieval":
+        def route_query(state: dict) -> Literal["retrieval", "direct", "clarification", "out_of_scope"]:
+            """Route to appropriate node based on query intent."""
+            intent = state.get("query_intent", QueryIntent.RETRIEVAL)
+            if intent == QueryIntent.RETRIEVAL:
                 return "retrieval"
-            elif intent == "direct":
+            elif intent == QueryIntent.DIRECT:
                 return "direct"
-            elif intent == "clarification":
+            elif intent == QueryIntent.CLARIFICATION:
                 return "clarification"
             else:
                 return "out_of_scope"
