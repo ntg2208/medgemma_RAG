@@ -9,15 +9,33 @@ Provides guidance on:
 - Stress management
 """
 
+import importlib.util
 import logging
-from typing import Any, Optional
 from dataclasses import dataclass, field
 from enum import Enum
+from typing import Any, Optional
+from pathlib import Path
 
 import sys
-from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 from config import CKD_STAGES
+
+# Import BaseAgent and AgentResponse using importlib (needed for numeric module names)
+# Check sys.modules first to reuse existing base module
+agents_path = Path(__file__).parent
+base_module = sys.modules.get("3_MultiAgent_RAG.agents.base")
+
+if base_module is None:
+    # First load - create and store in sys.modules
+    base_spec = importlib.util.spec_from_file_location(
+        "3_MultiAgent_RAG.agents.base", agents_path / "base.py"
+    )
+    base_module = importlib.util.module_from_spec(base_spec)  # type: ignore[assignment]
+    sys.modules["3_MultiAgent_RAG.agents.base"] = base_module
+    base_spec.loader.exec_module(base_module)  # type: ignore[attr-defined]
+
+BaseAgent = base_module.BaseAgent
+AgentResponse = base_module.AgentResponse
 
 logger = logging.getLogger(__name__)
 
@@ -52,14 +70,10 @@ class LifestyleAgentResponse:
     ckd_stage: Optional[int]
     confidence: float
     agent_name: str = "Lifestyle Coach"
-    disclaimer: str = (
-        "These are general lifestyle recommendations. Individual needs vary. "
-        "Consult your healthcare team before starting new exercise programs "
-        "or making significant lifestyle changes."
-    )
+    disclaimer: str = field(default_factory=base_module._get_default_disclaimer)
 
 
-class LifestyleAgent:
+class LifestyleAgent(BaseAgent):
     """
     Lifestyle guidance agent for CKD patients.
 
@@ -367,18 +381,19 @@ class LifestyleAgent:
     def answer(
         self,
         query: str,
-        ckd_stage: Optional[int] = None,
-    ) -> LifestyleAgentResponse:
+        **kwargs,
+    ) -> AgentResponse:
         """
         Answer a lifestyle-related question.
 
         Args:
             query: User question about lifestyle
-            ckd_stage: Patient's CKD stage
+            **kwargs: Additional parameters (ckd_stage, etc.)
 
         Returns:
-            LifestyleAgentResponse with recommendations
+            AgentResponse with recommendations
         """
+        ckd_stage = kwargs.get("ckd_stage")
         category = self._detect_category(query)
         recommendations = []
 
@@ -394,10 +409,8 @@ class LifestyleAgent:
             recommendations.append(rec)
             summary = self._generate_category_summary(category, ckd_stage)
 
-        return LifestyleAgentResponse(
-            recommendations=recommendations,
-            summary=summary,
-            ckd_stage=ckd_stage,
+        return AgentResponse(
+            answer=summary,
             confidence=0.85,
         )
 

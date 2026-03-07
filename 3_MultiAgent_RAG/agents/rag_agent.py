@@ -5,14 +5,32 @@ Handles general knowledge retrieval from NICE guidelines
 and KidneyCareUK documents.
 """
 
+import importlib.util
 import logging
+from dataclasses import dataclass, field
 from typing import Any, Optional
-from dataclasses import dataclass
+from pathlib import Path
 
 import sys
-from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 from config import RAG_SYSTEM_PROMPT
+
+# Import BaseAgent and AgentResponse using importlib (needed for numeric module names)
+# Check sys.modules first to reuse existing base module
+agents_path = Path(__file__).parent
+base_module = sys.modules.get("3_MultiAgent_RAG.agents.base")
+
+if base_module is None:
+    # First load - create and store in sys.modules
+    base_spec = importlib.util.spec_from_file_location(
+        "3_MultiAgent_RAG.agents.base", agents_path / "base.py"
+    )
+    base_module = importlib.util.module_from_spec(base_spec)  # type: ignore[assignment]
+    sys.modules["3_MultiAgent_RAG.agents.base"] = base_module
+    base_spec.loader.exec_module(base_module)  # type: ignore[attr-defined]
+
+BaseAgent = base_module.BaseAgent
+AgentResponse = base_module.AgentResponse
 
 logger = logging.getLogger(__name__)
 
@@ -24,9 +42,10 @@ class RAGAgentResponse:
     sources: list[dict]
     confidence: float
     agent_name: str = "RAG Agent"
+    disclaimer: str = field(default_factory=base_module._get_default_disclaimer)
 
 
-class RAGAgent:
+class RAGAgent(BaseAgent):
     """
     Knowledge retrieval agent for CKD information.
 
@@ -138,23 +157,23 @@ Provide a comprehensive answer with citations:"""
     def answer(
         self,
         query: str,
-        ckd_stage: Optional[int] = None,
-    ) -> RAGAgentResponse:
+        **kwargs,
+    ) -> AgentResponse:
         """
         Answer a query using RAG.
 
         Args:
             query: User question
-            ckd_stage: Optional CKD stage for filtering
+            **kwargs: Additional parameters (ckd_stage, etc.)
 
         Returns:
-            RAGAgentResponse with answer and sources
+            AgentResponse with answer
         """
-        stage = ckd_stage or self.ckd_stage
+        ckd_stage = kwargs.get("ckd_stage", self.ckd_stage)
 
         # Configure retriever for CKD stage if available
-        if stage and hasattr(self.retriever, 'with_config'):
-            retriever = self.retriever.with_config(ckd_stage=stage)
+        if ckd_stage and hasattr(self.retriever, 'with_config'):
+            retriever = self.retriever.with_config(ckd_stage=ckd_stage)
         else:
             retriever = self.retriever
 
@@ -163,17 +182,15 @@ Provide a comprehensive answer with citations:"""
             documents = retriever.invoke(query)
         except Exception as e:
             logger.error(f"Retrieval failed: {e}")
-            return RAGAgentResponse(
+            return AgentResponse(
                 answer="I encountered an error retrieving information. Please try again.",
-                sources=[],
                 confidence=0.0,
             )
 
         if not documents:
-            return RAGAgentResponse(
+            return AgentResponse(
                 answer="I couldn't find relevant information in the guidelines for your question. "
                        "Please try rephrasing or ask about a different aspect of CKD management.",
-                sources=[],
                 confidence=0.2,
             )
 
@@ -185,18 +202,16 @@ Provide a comprehensive answer with citations:"""
             answer = self.llm.generate(prompt)
         except Exception as e:
             logger.error(f"Generation failed: {e}")
-            return RAGAgentResponse(
+            return AgentResponse(
                 answer="I encountered an error generating a response. Please try again.",
-                sources=self._extract_sources(documents),
                 confidence=0.1,
             )
 
         # Calculate confidence based on retrieval quality
         confidence = min(0.9, 0.5 + (len(documents) * 0.1))
 
-        return RAGAgentResponse(
+        return AgentResponse(
             answer=answer,
-            sources=self._extract_sources(documents),
             confidence=confidence,
         )
 
