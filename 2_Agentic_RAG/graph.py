@@ -128,9 +128,12 @@ class AgenticRAGGraph:
         graph = StateGraph(AgenticGraphState)
 
         # Add nodes (state is passed as dict directly)
-        graph.add_node("pii_check", self.nodes.pii_check)
+
+        # API nodes - add RetryPolicy for transient error handling
+        api_retry = RetryPolicy(max_attempts=3, initial_interval=2.0, max_interval=60.0)
+        graph.add_node("pii_check", self.nodes.pii_check, retry_policy=api_retry)
         graph.add_node("analyze_query", self.nodes.analyze_query)
-        graph.add_node("retrieve_documents", self.nodes.retrieve_documents)
+        graph.add_node("retrieve_documents", self.nodes.retrieve_documents, retry_policy=api_retry)
 
         # LLM generation nodes - add RetryPolicy for transient error handling
         llm_retry = RetryPolicy(max_attempts=3, initial_interval=1.0, max_interval=30.0)
@@ -139,7 +142,10 @@ class AgenticRAGGraph:
 
         graph.add_node("generate_clarification", self.nodes.generate_clarification)
         graph.add_node("generate_out_of_scope", self.nodes.generate_out_of_scope)
-        graph.add_node("evaluate", self.nodes.evaluate_response)
+
+        # Evaluator node - minimal retry (best-effort evaluation)
+        eval_retry = RetryPolicy(max_attempts=2, initial_interval=1.0)
+        graph.add_node("evaluate", self.nodes.evaluate_response, retry_policy=eval_retry)
 
         # Set entry point
         graph.set_entry_point("pii_check")
