@@ -10,19 +10,25 @@ Defines the stateful workflow that orchestrates:
 - Evaluation
 """
 
+import importlib
+import importlib.util
 import logging
 from typing import Any, Optional, TypedDict, Annotated, Literal
 from operator import add
 
 from langgraph.graph import StateGraph, END
 from langgraph.checkpoint.memory import MemorySaver
-
-# Import from nodes module - use absolute import for compatibility with importlib
-from 2_Agentic_RAG.nodes import RAGNodes, QueryIntent, get_route
+from langgraph.types import RetryPolicy
 
 import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
+
+# Import from nodes module - use importlib for numeric module names
+_nodes_spec = importlib.import_module("2_Agentic_RAG.nodes")  # type: ignore[call-overload]
+RAGNodes = _nodes_spec.RAGNodes
+QueryIntent = _nodes_spec.QueryIntent
+get_route = _nodes_spec.get_route
 
 logger = logging.getLogger(__name__)
 
@@ -125,8 +131,12 @@ class AgenticRAGGraph:
         graph.add_node("pii_check", self.nodes.pii_check)
         graph.add_node("analyze_query", self.nodes.analyze_query)
         graph.add_node("retrieve_documents", self.nodes.retrieve_documents)
-        graph.add_node("generate_response", self.nodes.generate_response)
-        graph.add_node("generate_direct", self.nodes.generate_direct_response)
+
+        # LLM generation nodes - add RetryPolicy for transient error handling
+        llm_retry = RetryPolicy(max_attempts=3, initial_interval=1.0, max_interval=30.0)
+        graph.add_node("generate_response", self.nodes.generate_response, retry_policy=llm_retry)
+        graph.add_node("generate_direct", self.nodes.generate_direct_response, retry_policy=llm_retry)
+
         graph.add_node("generate_clarification", self.nodes.generate_clarification)
         graph.add_node("generate_out_of_scope", self.nodes.generate_out_of_scope)
         graph.add_node("evaluate", self.nodes.evaluate_response)
