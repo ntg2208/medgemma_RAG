@@ -5,14 +5,32 @@ Provides personalized dietary recommendations based on
 CKD stage, weight, and individual factors.
 """
 
+import importlib.util
 import logging
-from typing import Any, Optional
 from dataclasses import dataclass, field
+from typing import Any, Optional
+from pathlib import Path
 
 import sys
-from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 from config import DIETARY_LIMITS, CKD_STAGES
+
+# Import BaseAgent and AgentResponse using importlib (needed for numeric module names)
+# Check sys.modules first to reuse existing base module
+agents_path = Path(__file__).parent
+base_module = sys.modules.get("3_MultiAgent_RAG.agents.base")
+
+if base_module is None:
+    # First load - create and store in sys.modules
+    base_spec = importlib.util.spec_from_file_location(
+        "3_MultiAgent_RAG.agents.base", agents_path / "base.py"
+    )
+    base_module = importlib.util.module_from_spec(base_spec)  # type: ignore[assignment]
+    sys.modules["3_MultiAgent_RAG.agents.base"] = base_module
+    base_spec.loader.exec_module(base_module)  # type: ignore[attr-defined]
+
+BaseAgent = base_module.BaseAgent
+AgentResponse = base_module.AgentResponse
 
 logger = logging.getLogger(__name__)
 
@@ -44,7 +62,7 @@ class DietAgentResponse:
     )
 
 
-class DietAgent:
+class DietAgent(BaseAgent):
     """
     Dietary recommendation agent for CKD patients.
 
@@ -314,20 +332,21 @@ class DietAgent:
     def answer(
         self,
         query: str,
-        ckd_stage: Optional[int] = None,
-        weight_kg: Optional[float] = None,
-    ) -> DietAgentResponse:
+        **kwargs,
+    ) -> AgentResponse:
         """
         Answer a dietary question.
 
         Args:
             query: User question about diet
-            ckd_stage: CKD stage (required for accurate advice)
-            weight_kg: Body weight for protein calculation
+            **kwargs: Additional parameters (ckd_stage, weight_kg)
 
         Returns:
-            DietAgentResponse with recommendations
+            AgentResponse with recommendations
         """
+        ckd_stage = kwargs.get("ckd_stage", 3)
+        weight_kg = kwargs.get("weight_kg")
+
         if ckd_stage is None:
             ckd_stage = 3  # Default assumption
             logger.info("No CKD stage provided, defaulting to stage 3")
@@ -341,10 +360,17 @@ class DietAgent:
                 specific_nutrient = nutrient
                 break
 
-        return self.calculate(
+        result = self.calculate(
             ckd_stage=ckd_stage,
             weight_kg=weight_kg,
             specific_nutrient=specific_nutrient,
+        )
+
+        # Convert DietAgentResponse to AgentResponse
+        return AgentResponse(
+            answer=result.summary,
+            confidence=result.confidence,
+            disclaimer=result.disclaimer,
         )
 
 
