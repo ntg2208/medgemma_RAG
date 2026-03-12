@@ -17,6 +17,7 @@ DATA_DIR = BASE_DIR / "Data"
 DOCUMENTS_DIR = DATA_DIR / "documents"
 PROCESSED_DIR = DATA_DIR / "processed"
 VECTORSTORE_DIR = DATA_DIR / "vectorstore"
+PROCESSED_WITH_SECTIONS_DIR = DATA_DIR / "processed_with_sections"
 
 # Ensure directories exist
 for dir_path in [DOCUMENTS_DIR, PROCESSED_DIR, VECTORSTORE_DIR]:
@@ -39,8 +40,7 @@ EMBEDDING_DIMENSION = 768  # Full dimension for best quality
 # Chunking Configuration
 # =============================================================================
 CHUNK_SIZE = 800  # tokens
-CHUNK_OVERLAP = 150  # tokens
-MIN_CHUNK_SIZE = 100  # minimum chunk size to keep
+CHUNK_OVERLAP = 1  # number of trailing blocks to repeat (capped at 150 tokens)
 
 # =============================================================================
 # Retrieval Configuration

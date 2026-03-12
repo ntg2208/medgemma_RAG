@@ -29,7 +29,6 @@ from config import (
     # Chunking
     CHUNK_SIZE,
     CHUNK_OVERLAP,
-    MIN_CHUNK_SIZE,
     # Retrieval
     TOP_K_RESULTS,
     SIMILARITY_THRESHOLD,
