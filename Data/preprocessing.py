@@ -141,8 +141,6 @@ def parse_blocks(text: str) -> list[Block]:
     return blocks
 
 
-# ---- Stubs (replaced in Tasks 5 and 6) ----
-
 def _estimate_tokens(text: str) -> int:
     """Rough token estimate: ~4 chars per token."""
     return len(text) // 4
@@ -154,8 +152,87 @@ def pack_chunks(
     chunk_overlap: int = CHUNK_OVERLAP,
     overlap_token_cap: int = 150,
 ) -> list[dict]:
-    """Pack blocks into chunks without splitting any block."""
-    raise NotImplementedError("Implemented in Task 5")
+    """Pack blocks into chunks without splitting any block.
+
+    Args:
+        blocks: List of Block namedtuples from parse_blocks.
+        chunk_size: Maximum tokens per chunk.
+        chunk_overlap: Number of trailing blocks to carry as overlap.
+        overlap_token_cap: Max tokens for overlap blocks.
+
+    Returns:
+        List of dicts with keys: text, section.
+    """
+    if not blocks:
+        return []
+
+    chunks: list[dict] = []
+    acc: list[Block] = []
+    acc_tokens: int = 0
+
+    def emit():
+        """Emit accumulated blocks as a chunk."""
+        nonlocal acc, acc_tokens
+        if not acc:
+            return
+        text = "\n\n".join(b.text for b in acc)
+        section = acc[0].heading_context
+        chunks.append({"text": text, "section": section})
+        acc = []
+        acc_tokens = 0
+
+    def get_overlap_blocks(prev_acc: list[Block]) -> list[Block]:
+        """Get trailing blocks from previous chunk for overlap, respecting token cap."""
+        overlap: list[Block] = []
+        overlap_tokens = 0
+        for block in reversed(prev_acc):
+            # Don't carry a heading as sole overlap
+            if block.type == "heading" and not overlap:
+                continue
+            btokens = _estimate_tokens(block.text)
+            if overlap_tokens + btokens > overlap_token_cap:
+                break
+            overlap.insert(0, block)
+            overlap_tokens += btokens
+            if len(overlap) >= chunk_overlap:
+                break
+        return overlap
+
+    i = 0
+    while i < len(blocks):
+        block = blocks[i]
+        block_tokens = _estimate_tokens(block.text)
+
+        # Heading rule: peek ahead and bind heading to next content block
+        if block.type == "heading" and i + 1 < len(blocks):
+            next_block = blocks[i + 1]
+            combined_tokens = block_tokens + _estimate_tokens(next_block.text)
+
+            if acc_tokens + combined_tokens > chunk_size and acc:
+                prev_acc = list(acc)
+                emit()
+                acc = get_overlap_blocks(prev_acc)
+                acc_tokens = sum(_estimate_tokens(b.text) for b in acc)
+
+            acc.append(block)
+            acc.append(next_block)
+            acc_tokens += combined_tokens
+            i += 2
+            continue
+
+        # Would adding this block exceed the limit?
+        if acc_tokens + block_tokens > chunk_size and acc:
+            prev_acc = list(acc)
+            emit()
+            acc = get_overlap_blocks(prev_acc)
+            acc_tokens = sum(_estimate_tokens(b.text) for b in acc)
+
+        acc.append(block)
+        acc_tokens += block_tokens
+        i += 1
+
+    emit()
+    return chunks
 
 
 class DocumentPreprocessor:

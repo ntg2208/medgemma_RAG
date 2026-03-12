@@ -1,6 +1,6 @@
 """Tests for block-aware markdown chunking."""
 
-from Data.preprocessing import Block, parse_blocks
+from Data.preprocessing import Block, pack_chunks, parse_blocks
 
 
 class TestParseBlocks:
@@ -104,3 +104,78 @@ class TestParseBlocks:
         text = "### Sub-sub heading"
         blocks = parse_blocks(text)
         assert blocks[0].heading_context == "Sub-sub heading"
+
+
+class TestPackChunks:
+    """Tests for the greedy block packer."""
+
+    def _make_block(self, type_="paragraph", text="X" * 400, heading_context="Section"):
+        """Helper to create a Block with controllable size."""
+        return Block(type=type_, text=text, heading_context=heading_context)
+
+    def test_single_small_block(self):
+        blocks = [self._make_block(text="Short text.")]
+        chunks = pack_chunks(blocks, chunk_size=800)
+        assert len(chunks) == 1
+        assert chunks[0]["text"] == "Short text."
+
+    def test_packing_multiple_small_blocks(self):
+        # Each block ~25 tokens (100 chars / 4). 4 blocks = 100 tokens < 800.
+        blocks = [self._make_block(text="A" * 100) for _ in range(4)]
+        chunks = pack_chunks(blocks, chunk_size=800)
+        assert len(chunks) == 1
+
+    def test_split_when_exceeding_limit(self):
+        # Each block ~200 tokens (800 chars). 2 blocks = 400 tokens < 800. 3 blocks = 600 > 500.
+        blocks = [self._make_block(text="A" * 800) for _ in range(3)]
+        chunks = pack_chunks(blocks, chunk_size=500)
+        assert len(chunks) >= 2
+
+    def test_oversized_single_block_not_split(self):
+        big_block = self._make_block(text="A" * 8000)  # 2000 tokens, way over 800
+        chunks = pack_chunks([big_block], chunk_size=800)
+        assert len(chunks) == 1
+        assert chunks[0]["text"] == "A" * 8000
+
+    def test_heading_sticks_to_next_block(self):
+        heading = self._make_block(type_="heading", text="## Title")
+        para = self._make_block(text="Content here.")
+        # Make a preceding block that fills up close to the limit
+        filler = self._make_block(text="F" * 3000)  # 750 tokens
+        chunks = pack_chunks([filler, heading, para], chunk_size=800)
+        # Heading and para should be in the same chunk, not heading alone
+        for chunk in chunks:
+            lines = chunk["text"].split("\n\n")
+            if "## Title" in lines:
+                assert "Content here." in chunk["text"]
+
+    def test_overlap_content_carried_forward(self):
+        b1 = self._make_block(text="B" * 3200)  # 800 tokens, fills chunk alone
+        b2 = self._make_block(text="Overlap block")  # small, under 150 token cap
+        b3 = self._make_block(text="C" * 3200)  # 800 tokens, fills next chunk
+        chunks = pack_chunks([b1, b2, b3], chunk_size=800, chunk_overlap=1)
+        # b2 should appear in its chunk AND as overlap in the next chunk
+        assert len(chunks) >= 2
+        chunks_with_overlap = [c for c in chunks if "Overlap block" in c["text"]]
+        assert len(chunks_with_overlap) >= 2, "Overlap block should appear in two consecutive chunks"
+
+    def test_overlap_respects_token_cap(self):
+        big = self._make_block(text="B" * 3200)  # 800 tokens — over 150 token cap
+        after = self._make_block(text="After content.")
+        chunks = pack_chunks([big, after], chunk_size=800, chunk_overlap=1)
+        # big exceeds 150 token overlap cap, so should NOT be carried as overlap
+        assert len(chunks) == 2
+        assert "B" * 3200 not in chunks[1]["text"]
+
+    def test_section_metadata_from_first_block(self):
+        blocks = [
+            self._make_block(text="Content.", heading_context="Intro"),
+            self._make_block(text="More.", heading_context="Methods"),
+        ]
+        chunks = pack_chunks(blocks, chunk_size=800)
+        if len(chunks) == 1:
+            assert chunks[0]["section"] == "Intro"
+
+    def test_empty_blocks(self):
+        chunks = pack_chunks([], chunk_size=800)
+        assert chunks == []
