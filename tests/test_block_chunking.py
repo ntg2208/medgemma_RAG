@@ -1,6 +1,12 @@
 """Tests for block-aware markdown chunking."""
 
-from Data.preprocessing import Block, pack_chunks, parse_blocks
+from pathlib import Path
+
+import pytest
+
+from Data.preprocessing import Block, DocumentPreprocessor, pack_chunks, parse_blocks
+
+PROCESSED_DIR = Path(__file__).parent.parent / "Data" / "processed_with_sections"
 
 
 class TestParseBlocks:
@@ -179,3 +185,82 @@ class TestPackChunks:
     def test_empty_blocks(self):
         chunks = pack_chunks([], chunk_size=800)
         assert chunks == []
+
+
+class TestIntegration:
+    """Integration tests using real document data."""
+
+    def test_process_single_document(self):
+        """Process one real document directory end-to-end."""
+        doc_dir = PROCESSED_DIR / "Diet_and_Haemodialysis"
+        if not doc_dir.exists():
+            pytest.skip("Test data not available")
+
+        preprocessor = DocumentPreprocessor()
+        docs = preprocessor.process_document(doc_dir)
+
+        assert len(docs) > 0
+        for doc in docs:
+            assert doc.page_content.strip() != ""
+            assert "source" in doc.metadata
+            assert "title" in doc.metadata
+            assert "chunk_id" in doc.metadata
+            assert "total_chunks" in doc.metadata
+            assert "section" in doc.metadata
+            # ckd_stages and page_number should NOT be present
+            assert "ckd_stages" not in doc.metadata
+            assert "page_number" not in doc.metadata
+
+    def test_process_directory(self):
+        """Process all documents and verify stats."""
+        if not PROCESSED_DIR.exists():
+            pytest.skip("Test data not available")
+
+        preprocessor = DocumentPreprocessor()
+        docs = preprocessor.process_directory()
+
+        assert len(docs) > 0
+        stats = preprocessor.get_document_stats(docs)
+        assert stats["unique_sources"] > 1
+        assert stats["avg_chunk_size"] > 0
+
+    def test_tables_not_split(self):
+        """Verify that markdown tables remain intact within chunks."""
+        doc_dir = PROCESSED_DIR / "Chronic_Kidney_Disease_Assessment_and_Management_Guidelines"
+        if not doc_dir.exists():
+            pytest.skip("Test data not available")
+
+        preprocessor = DocumentPreprocessor()
+        docs = preprocessor.process_document(doc_dir)
+
+        for doc in docs:
+            content = doc.page_content
+            lines = content.split("\n")
+            in_table = False
+            for idx, line in enumerate(lines):
+                if line.strip().startswith("|"):
+                    in_table = True
+                elif in_table and line.strip() == "":
+                    in_table = False
+                elif in_table and not line.strip().startswith("|"):
+                    remaining = lines[idx + 1:]
+                    table_continues = any(l.strip().startswith("|") for l in remaining)
+                    assert not table_continues, f"Table appears split in chunk {doc.metadata['chunk_id']}"
+                    in_table = False
+
+    def test_no_chunk_is_only_heading(self):
+        """No chunk should consist of just a heading with no content."""
+        if not PROCESSED_DIR.exists():
+            pytest.skip("Test data not available")
+
+        preprocessor = DocumentPreprocessor()
+        docs = preprocessor.process_directory()
+
+        for doc in docs:
+            lines = [l for l in doc.page_content.split("\n") if l.strip()]
+            all_headings = all(l.strip().startswith("#") for l in lines)
+            if all_headings and len(lines) <= 2:
+                assert False, (
+                    f"Chunk {doc.metadata['chunk_id']} in {doc.metadata['source']} "
+                    f"is only headings: {doc.page_content[:100]}"
+                )
