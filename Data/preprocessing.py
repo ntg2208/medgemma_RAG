@@ -238,18 +238,113 @@ def pack_chunks(
 class DocumentPreprocessor:
     """Preprocessor that reads pre-processed markdown and chunks using block-aware algorithm."""
 
-    def __init__(self, chunk_size: int = CHUNK_SIZE, chunk_overlap: int = CHUNK_OVERLAP):
+    def __init__(
+        self,
+        chunk_size: int = CHUNK_SIZE,
+        chunk_overlap: int = CHUNK_OVERLAP,
+    ):
         self.chunk_size = chunk_size
         self.chunk_overlap = chunk_overlap
 
-    def process_directory(self, input_dir: Optional[Path] = None) -> list[Document]:
-        raise NotImplementedError("Implemented in Task 6")
-
     def process_document(self, doc_dir: Path) -> list[Document]:
-        raise NotImplementedError("Implemented in Task 6")
+        """Process a single document directory into LangChain Documents.
+
+        Args:
+            doc_dir: Path to document directory containing main_text.md and metadata.json.
+
+        Returns:
+            List of LangChain Document objects with metadata.
+        """
+        main_text_path = doc_dir / "main_text.md"
+        metadata_path = doc_dir / "metadata.json"
+
+        if not main_text_path.exists():
+            logger.warning(f"No main_text.md in {doc_dir.name}")
+            return []
+
+        text = main_text_path.read_text(encoding="utf-8")
+        if not text.strip():
+            logger.warning(f"Empty main_text.md in {doc_dir.name}")
+            return []
+
+        # Load metadata
+        doc_metadata = {}
+        if metadata_path.exists():
+            with open(metadata_path, encoding="utf-8") as f:
+                doc_metadata = json.load(f)
+
+        title = doc_metadata.get("title", doc_dir.name)
+        source = doc_metadata.get("source_file", doc_dir.name)
+
+        # Parse and pack
+        blocks = parse_blocks(text)
+        packed = pack_chunks(blocks, self.chunk_size, self.chunk_overlap)
+
+        # Build LangChain Documents
+        documents = []
+        for i, chunk in enumerate(packed):
+            metadata = {
+                "source": source,
+                "title": title,
+                "section": chunk["section"],
+                "chunk_id": i,
+                "total_chunks": len(packed),
+            }
+            documents.append(Document(page_content=chunk["text"], metadata=metadata))
+
+        logger.info(f"Created {len(documents)} chunks from {doc_dir.name}")
+        return documents
+
+    def process_directory(self, input_dir: Optional[Path] = None) -> list[Document]:
+        """Process all document directories.
+
+        Args:
+            input_dir: Directory containing document subdirectories.
+                       Default: PROCESSED_WITH_SECTIONS_DIR.
+
+        Returns:
+            Combined list of all Document objects.
+        """
+        input_dir = Path(input_dir) if input_dir else PROCESSED_WITH_SECTIONS_DIR
+
+        all_documents = []
+        doc_dirs = sorted([
+            d for d in input_dir.iterdir()
+            if d.is_dir() and not d.name.startswith(".")
+        ])
+
+        if not doc_dirs:
+            logger.warning(f"No document directories found in {input_dir}")
+            return []
+
+        logger.info(f"Found {len(doc_dirs)} document directories to process")
+
+        for doc_dir in doc_dirs:
+            try:
+                documents = self.process_document(doc_dir)
+                all_documents.extend(documents)
+            except Exception as e:
+                logger.error(f"Failed to process {doc_dir.name}: {e}")
+                continue
+
+        logger.info(f"Total documents created: {len(all_documents)}")
+        return all_documents
 
     def get_document_stats(self, documents: list[Document]) -> dict:
-        raise NotImplementedError("Implemented in Task 6")
+        """Get statistics about processed documents."""
+        if not documents:
+            return {"total_documents": 0}
+
+        sources = set(d.metadata.get("source", "unknown") for d in documents)
+        total_chars = sum(len(d.page_content) for d in documents)
+
+        return {
+            "total_documents": len(documents),
+            "unique_sources": len(sources),
+            "sources": sorted(sources),
+            "total_characters": total_chars,
+            "avg_chunk_size": total_chars // len(documents) if documents else 0,
+        }
 
 
 def preprocess_documents(
@@ -258,8 +353,19 @@ def preprocess_documents(
     chunk_overlap: int = CHUNK_OVERLAP,
 ) -> list[Document]:
     """Convenience function to preprocess all documents in a directory."""
-    raise NotImplementedError("Implemented in Task 6")
+    preprocessor = DocumentPreprocessor(
+        chunk_size=chunk_size,
+        chunk_overlap=chunk_overlap,
+    )
+    return preprocessor.process_directory(input_dir)
 
 
 if __name__ == "__main__":
-    pass
+    logging.basicConfig(level=logging.INFO)
+    preprocessor = DocumentPreprocessor()
+    documents = preprocessor.process_directory()
+    if documents:
+        stats = preprocessor.get_document_stats(documents)
+        print("\nDocument Statistics:")
+        for key, value in stats.items():
+            print(f"  {key}: {value}")
