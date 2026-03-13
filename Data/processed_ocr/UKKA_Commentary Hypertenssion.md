@@ -1,0 +1,307 @@
+<!-- image -->
+
+UK Kidney Association Updated commentary on NlCE guideline (NG136) Hypertension in adults: diagnosis and management including proposals for blood pressure management in patients with chronic kidney disease, with a brief commentary on KDlGO Clinical Practice Guideline for the Management of Blood Pressure in Chronic Kidney Disease 2021
+
+Final version: December 2022
+
+Review date: December 2027
+
+## Authors
+
+## Dr Richard Fish
+
+University Hospitals of North Midlands NHS Trust
+
+## Dr Laura Ratcliffe
+
+East and North Hertfordshire NHS Trust
+
+## Dr Nihil Chitalia
+
+Dartford and Gravesham NHS Trust
+
+## Dr Timothy Doulton
+
+East Kent Hospitals University NHS Foundation Trust
+
+## Ms Katie Durman
+
+Barts Health NHS Trust &amp; the British Dietetic Association, Renal Nutrition Group
+
+## Ms Elizabeth Lamerton
+
+Salford Royal Foundation Trust &amp; UK Renal Pharmacy Group
+
+## Dr Eirini Lioudaki
+
+King's College Hospital, London
+
+## Dr Adam MacDiarmaid-Gordon
+
+Brighton and Sussex University Hospitals NHS Trust
+
+## Professor Patrick Mark
+
+Queen Elizabeth University Hospital, Glasgow
+
+## Dr Charlie Tomson
+
+Freeman Hospital, Newcastle upon Tyne
+
+## Professor Indranil Dasgupta
+
+University Hospitals Birmingham NHS Foundation Trust
+
+Dr Charlie Tomson and Professor Indranil Dasgupta recused themselves from the commentary on the KDIGO 2021 guideline
+
+<!-- image -->
+
+<!-- image -->
+
+| Method used to arrive at a recommendation......................................................................................................4                        |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Conflicts of Interest Statement ............................................................................................................................4           |
+| Acknowledgements..............................................................................................................................................4         |
+| Summary of UKKA proposals................................................................................................................................5              |
+| Introduction..........................................................................................................................................................6 |
+| Hypertension management for individuals without CKD.................................................................................6                                   |
+| Measurement of BP - translating the evidence into clinical practice..............................................................7                                      |
+| Potential adverse effects associated with intensive BP lowering....................................................................8                                    |
+| Adherence testing ............................................................................................................................................9         |
+| Lifestyle modifications......................................................................................................................................9          |
+| BP targets for individuals with pre-existing CKD........................................................................................... 10                          |
+| Update since publication of KDIGO 2021 Clinical Practice Guideline for the Management of Blood Pressure in                                                              |
+| Chronic Kidney Disease and NICE 2021 Chronic kidney disease: assessment and management (NG203) ....... 12                                                               |
+| Standardised office BP measurement........................................................................................................... 12                        |
+| Blood pressure targets .................................................................................................................................. 13            |
+| Lifestyle modifications................................................................................................................................... 14           |
+| Implementing these proposals in a post-COVID-19 world............................................................................ 14                                    |
+| References......................................................................................................................................................... 15  |
+
+## Method used to arrive at a recommendation
+
+The recommendations for the first draft of this commentary resulted from a collective decision reached by informal discussion by the authors and, whenever necessary, with input from the Chair of the Clinical Practice Guidelines Committee. If no agreement had been reached on the appropriate grading of a recommendation, a vote would have been held and the majority opinion carried. However this was not necessary for this guideline.
+
+## Conflicts of Interest Statement
+
+All authors made declarations of interest in line with the policy in the UK Kidney Association Clinical Practice Guidelines Development Manual.  Further details can be obtained on request from The UK Kidney Association.
+
+## Acknowledgements
+
+The committee would like to thank Mr Bruno Mafrici and Ms Tina Dilloway for their valuable contribution to the section regarding lifestyle management.
+
+<!-- image -->
+
+## Measuring Blood Pressure:
+
+- 1.1 We propose that office-based blood pressure measurements using a standardized technique (e.g. https://bihsoc.org/resources/bp-measurement/measure-blood-pressure) should guide all treatment decisions.
+- 1.2 We propose that non-office blood pressure measurements, taken using a standardised technique and validated monitor (see https://bihsoc.org/bp-monitors/) be considered a pragmatic alternative to office-based measurements.
+
+## Blood Pressure Targets for Individuals Without Chronic Kidney Disease:
+
+- 2.1        We propose adopting a shared-decision making approach when considering blood pressure treatment and targets for any patient whenever possible.
+- 2.2        We propose aiming for a blood pressure target of &lt;130/80 mmHg in patients at elevated cardiovascular risk if, following a shared-decision making discussion, it is tolerated by the individual.
+- 2.3        We propose that there is not enough evidence to inform on a blood pressure target in younger patients and those without cardiovascular risk factors, however if tolerated, aiming &lt;130/80 mmHg is a reasonable goal.
+
+## Adherence Testing:
+
+- 3.1        We propose objective testing of medication adherence in those with resistant hypertension.
+
+## Lifestyle Modifications:
+
+- 4.1        We propose reducing dietary salt intake to a maximum of 6g/day.
+- 4.2        We propose not using salt substitutes in place of dietary salt reduction.
+
+## Blood Pressure Target for Individuals With Chronic Kidney Disease:
+
+- 5.1        We propose aiming for a blood pressure target of &lt;130/80 mmHg for patients with chronic kidney disease to improve cardiovascular outcomes if, following a shared-decision making discussion, it is tolerated by the individual. The shared decision making should be an ongoing and integral process.
+
+<!-- image -->
+
+<!-- image -->
+
+The publication last year of NICE guideline NG136 'Hypertension in adults: diagnosis and management' 1 followed the updated guidance for the management of hypertension from the American College of Cardiology (published in 2017) 2 and the European Society of Cardiology/European Society of Hypertension (published in 2018) 3 . From a 'nephrological' perspective the American and European guidelines both make recommendations specific to the management of hypertension in patients with chronic kidney disease (CKD), whereas this issue was beyond the remit of the 2019 NICE guideline and instead readers are referred back to the (broader) 2014 NICE guideline 4 for the general management of CKD.
+
+Since 2014 a number of important studies have been published pertaining to the management of hypertension, both in general and in the context of CKD. The 'SPRINT' trial 5 has received particular attention and has significantly influenced the guidance issued by both the Americans and the Europeans but impacted much less on the NICE recommendations.
+
+Currently there is no UK guideline which has incorporated this newer evidence to assist those managing patients with CKD. Thus UK clinicians may be left with the dilemma of which guideline to follow. This document therefore has two objectives: first to provide a commentary on NICE guideline NG136 highlighting issues relevant to the renal community, including points of controversy and where the opinions of the UK Kidney Association and NICE differ; secondly we provide (opinion-based) proposals for clinical practice regarding blood pressure (BP) management both in general and also specifically for patients with CKD considering the most recent evidence. We also consider the recent impact of COVID-19.
+
+The UK Kidney Association supports the majority of recommendations in NICE guideline NG136 and considers the document pragmatic and clinically useful. Of the updated recommendations it is perhaps number 1.4.20 that has caused the most controversy:
+
+## 1.4.20 Reduce clinic BP to below 140/90 mmHg and maintain that level in adults with hypertension aged under 80. [NICE, 2019]
+
+This recommendation is in contrast to that in both the American and European guidelines which generally advocate (if tolerated) a BP target of under 130/80 mmHg. The guidance issued by these two bodies has been heavily influenced by the results from the SPRINT trial 5 . It is interesting that SPRINT was also considered in depth by NICE but interpreted differently -ultimately with the conclusion that UK BP targets should not be changed from those recommended in the previous NICE guideline of 2011 6 .
+
+Briefly, SPRINT was a randomised trial of over 9000 patients (without diabetes but with other cardiovascular risk factors) with a baseline SBP of over 130 mmHg. Patients were assigned to intensive BP lowering (target SBP &lt;120 mmHg) or standard treatment (target SBP &lt;140 mmHg). BP was measured using a strict, standardised, office-based protocol (discussed in depth below). The mean achieved BP in the two groups was 121 and 136 mmHg respectively. The composite primary end-point of death from cardiovascular cause or a major cardiovascular event (myocardial infarction, acute coronary syndrome, stroke, or heart failure) was observed in 1.65% per year in the intensive arm vs. 2.19% per year with standard care -a hazard ratio of
+
+<!-- image -->
+
+0.75 in favour of intensive treatment and the trial was terminated early (after 3.3 years instead of the planned 5 years) due to the magnitude of effect.
+
+So why, despite these strongly positive results, did NICE elect not to lower its recommended BP target? In the rationale and impact section of NG136, two main concerns are raised. The NICE committee question the applicability of the technique used to measure BP in SPRINT to everyday UK practice. In addition, the potential adverse effects from intensive BP lowering - in particular adverse renal events -seen in the trial are emphasised. The UK Kidney Association's viewpoint on these two issues differs somewhat from those held by NICE.
+
+In SPRINT, BP was measured using an automated device following five minutes of quiet rest and taking the mean of three readings. The SPRINT protocol did not specify whether BP readings were taken with healthcare workers 'in attendance' or not. The influence of attended vs . unattended BP measurements in SPRINT has been assessed 7 . Interestingly (and perhaps surprisingly) the presence of a healthcare worker during BP measurement did not impact on the reading obtained. In its guideline, NICE has raised concern as to whether this 'standardised' BP measurement technique can be translated into the typical, busy outpatient clinic environment or GP practice. This issue was seemingly a strong influential factor in the decision made by NICE to not lower the recommended BP target despite the SPRINT results. This concern is despite NICE recommendation 1.1.4:
+
+1.1.4 When measuring blood pressure in the clinic or in the home, standardise the environment and provide a relaxed, temperate setting, with the person quiet and seated, and their arm outstretched and supported. Use an appropriate cuff size for th e person's arm [NICE 2011, amended 2019].
+
+All recent informative trials have used standardised BP measurement. The evidence-based approach, therefore, would be to issue clear guidance that casual office BP measurements should never be used to guide therapy, and that standardised office BP measurements (such as those detailed by the British and Irish Hypertension Society - https://bihsoc.org/resources/bp-measurement/measure-blood-pressure) should be offered to all patients in whom BP measurement is undertaken in a clinic setting. Other options, including home and 24 hour ambulatory BP monitoring (ABPM) are obviously available and whilst these have not been widely used in the trial setting to assess BP targets, pragmatically the UK Kidney Association considers them to be reasonable alternatives and likely to provide useful information to guide therapy.
+
+Home monitoring is likely to take on an even more important role in the future given the recently imposed constraints conferred by the COVID-19 pandemic. Therefore, a randomised trial of BP management utilising out-of-office measurements is urgently needed. NICE guideline NG136 does support the use of home monitoring and suggests a target of &lt;135/85 mmHg (compared with the office target of &lt;140/90 mmHg) although the evidence cited to support this recommendation is weak (essentially the mean difference between office and home BPs at population level). The modality of BP monitoring will differ depending on patient choice and circumstances. However, whichever technique is employed, it needs to conform to the standard adopted in the trial setting in order for evidence-based targets to be relevant.
+
+## UK Kidney Association Proposals - Measuring Blood Pressure:
+
+- 1.1        We propose that office-based blood pressure measurements using a standardized technique (e.g. https://bihsoc.org/resources/bp-measurement/measure-blood-pressure) should guide all treatment decisions.
+- 1.2        We propose that non-office blood pressure measurements, taken using a standardised technique and validated monitor (see https://bihsoc.org/bp-monitors/) be considered a pragmatic alternative to office-based measurements.
+
+## Potential adverse effects associated with intensive BP lowering
+
+It is perhaps unsurprising that in SPRINT, intensive BP lowering was associated with a greater risk of syncope, hypokalaemia and acute kidney injury (AKI). The risk of incident CKD (defined as a decline in eGFR &gt;30% to an eGFR &lt;60ml/min) was also increased with intensive BP control (1.21% per year versus 0.35% per year). However, no increase was seen in bradycardia or injurious falls. Interestingly, orthostatic hypotension was seen less frequently in the intensive arm.
+
+The issue of AKI with more intensive BP control has been looked at in a separate sub-analysis of SPRINT participants 8 .  Whilst  AKI  was  more  common  with  intensive  BP  control,  events  were  usually  mild  and reversible - likely reflecting in most cases the haemodynamic consequences of the commonly employed antihypertensive agents. Work demonstrating no increase in biomarkers of tubular damage from those in the more intensive BP lowering arm, despite lower eGFR, gives weight to this theory and is reassuring 9 .
+
+There is very limited evidence relating to how patients may balance the risks versus benefits of aiming for a lower  BP  target.  Shared-decision  making  is  the  key  to  this  issue  and  individualising  treatment  goals  and supplying patients with sufficient information to aid discussions, the optimal strategy.
+
+## UK Kidney Association Proposals - Blood Pressure Targets for Individuals Without CKD:
+
+- 2.1        We propose adopting a shared-decision making approach when considering blood pressure treatment and targets for any patient whenever possible.
+- 2.2        We propose aiming for a blood pressure target of &lt;130/80 mmHg in patients at elevated cardiovascular risk if, following a shared-decision making discussion, it is tolerated by the individual.
+- 2.3        We propose that there is not enough evidence to inform on a blood pressure target in younger patients and those without cardiovascular risk factors, however if tolerated, aiming &lt;130/80 mmHg is a reasonable goal.
+
+<!-- image -->
+
+## Adherence testing
+
+The UK Kidney Association fully supports the emphasis NG136 places on assessment of medicines optimisation and adherence at all stages of hypertension treatment and in particular the reassessment of adherence in those reaching 'step 4' of the treatment pathway:
+
+- 1.4.38 Before considering next step treatment for hypertension discuss with the person if they are taking their medicine as prescribed and support adherence in line with NICE's guideline on medicines adherence. [NICE, 2019]
+- 1.4.45 Before considering further treatment for a person with resistant hypertension:
+- D iscuss adherence (see recommendation 1.4.38). [NICE, 2019]
+
+The NICE guideline references the Medicines Adherence Guideline (CG76), however CG76 lists only generic methods for assessment of adherence such as patient self-reporting, using records of prescription re˗ordering, pharmacy patient medication records, and return of unused medicines.  Given the significant issue of medication non-adherence in patients with hypertension 10 the UK Kidney Association feel it would have been useful for NICE to discuss more objective strategies of direct adherence testing. These include observed pill taking with day case BP/ABPM monitoring, as well as urinary drug metabolite analysis which is now more widely available in the UK (Birmingham Heartlands and Leicester centres are supporting large number of hypertension centres across the country).
+
+## UK Kidney Association Proposal - Adherence Testing:
+
+- 3.1        We propose objective testing of medication adherence in those with resistant hypertension.
+
+## Lifestyle modifications
+
+The lifestyle recommendations in NG136 remain essentially unchanged from the previous NICE guideline. Specifically, in terms of salt intake NICE recommendation 1.4.5 states:
+
+- 1.4.5 Encourage people to keep their dietary sodium intake low, either by reducing or substituting sodium salt, as this can reduce blood pressure [NICE, 2004, amended 2019]
+
+A footnote urges caution about using salt substitutes containing potassium chloride for certain people, including those with diabetes and/or kidney disease and those on blockers of the renin-angiotensin system. Salt reduction in these groups is advised. The guideline may therefore be read as implying that substituting sodium salt is an alternative to reducing dietary sodium (salt).
+
+A number of studies have showed an association between decreased salt intake and lower blood pressure 11,12 and the UK Kidney Association feel that the emphasis should be on reducing dietary salt intake for everyone &lt;6g/day. The terminology 'salt' rather than 'sodium' would be preferable as this is recommended for food labelling and is more easily understood by the public.
+
+Substituting sodium with potassium salts risks perpetuating a salty palate and it would be better to adapt to foods without salt and appreciate th e natural flavours of food.  The 'DASH' diet is not mentioned by NICE but we feel is worthy of note as it can help to lower blood pressure 13 . Black liquorice should be discouraged owing to its BP elevating potential 14 . Providing primary health care professionals with training and/or support on how to provide lifestyle education would be valuable. Registered dietitians are best placed to provide this.
+
+<!-- image -->
+
+## UK Kidney Association Proposals - Lifestyle Modifications:
+
+- 4.1           We propose reducing dietary salt intake to a maximum of 6g/day.
+- 4.2          We propose not using salt substitutes in place of dietary salt reduction.
+
+## BP targets for individuals with pre-existing CKD
+
+NICE guideline NG136 specifically excludes patients with CKD and readers are instead referred back to the 2014 NICE recommendations4 for general CKD management. This 2014 guideline offers two recommendations regarding BP control, namely:
+
+- 1.6.1: In people with CKD aim to keep the systolic BP below 140 mmHg (target range 120 -139 mmHg) and the diastolic BP below 90 mmHg [NICE, 2014].
+- 1.6.2: In people with CKD and diabetes, and also in people with an ACR of 70 mg/mmol or more, aim to keep the systolic BP below 130 mmHg (target range 120 -129 mmHg) and the diastolic BP below 80 mmHg [NICE, 2014].
+
+The 2017 American Guidelines 2 recommend a lower BP target for all adults with CKD:
+
+- 9.3: Adults with hypertension and CKD should be treated to a BP goal of less than 130/80 mmHg.
+
+The 2018 European Hypertension guidelines 3 offer a third alternative to the NICE and American recommendations:
+
+- 8.12: In patients with diabetic or non-diabetic CKD it is recommended to lower SBP to a range of 130 -139 mmHg. Individualized treatment should be considered according to its tolerability and impact on renal function and electrolytes.
+
+The American and European guidelines for CKD have been influenced (to different degrees) by SPRINT and it is anticipated that the eagerly awaited KDIGO hypertension guidelines (presented in part at Kidney Week 2019) will follow suit. SPRINT included over 2500 patients with (non-diabetic) CKD with a mean eGFR of 48ml/min and minimal proteinuria (mean ACR 9mg/mmol). Of note, SPRINT excluded patients with proteinuria &gt;1g/day, diabetes, polycystic kidney disease, and patients with eGFR &lt;20ml/min.
+
+Analysis of the main trial indicated that the presence of CKD did not significantly modify the primary outcome (p value for interaction = 0.36). In addition, a pre-specified subgroup analysis was undertaken for this CKD cohort 15 . Interpretation of the data needs relative caution as the study was not powered for subgroup analysis and was terminated early, however the results are worthy of discussion. The primary composite cardiovascular outcome occurred in 112 of those in the intensive group and 131 in the standard group with a hazard ratio of 0.81 (95% confidence interval 0.63 to 1.05). A lower rate of all-cause death was seen in the intensive arm with a hazard ratio of 0.72 (95% confidence interval 0.53 to 0.99). The proportional reduction in CV events and total mortality was similar in the CKD subgroup and in the main trial (p for interaction 0.30 and 0.95 respectively).
+
+In terms of renal disease progression, the pre-specified composite endpoint of &gt;50% reduction in eGFR or occurrence of ESRD did not differ between groups although the number of events was extremely small (15 vs 16 in the intensive and standard arms respectively). A reduction in eGFR of &gt;30% did occur more frequently with intensive BP lowering (as it did in the main trial) but whether this is clinically relevant given the reduction in 'harder' endpoints remains uncertain. Further analysis has suggested that the magnitude of
+
+<!-- image -->
+
+<!-- image -->
+
+effect in reducing cardiovascular endpoints with intensive BP reduction may be attenuated at lower levels of eGFR and this issue requires further study 16 .
+
+The adverse effects observed in the CKD cohort essentially mirrored those in the main trial with increased risks of potassium disturbances and AKI in the intensive arm. However, no increase in hypotension-related events was seen including syncope and injurious falls. No differences were seen in sodium abnormalities or bradycardia.
+
+Previous studies assessing optimal BP targets in CKD have primarily focussed on renal outcomes 17 . These have differed by design and inclusion criteria and yielded varying results. None have been sufficiently powered to evaluate hard cardiovascular endpoints or mortality. Thus data from SPRINT provide the strongest evidence to date to inform about the effects of intensive BP lowering on cardiovascular events in patients with renal impairment. This is important considering the extremely high burden of cardiovascularrelated morbidity and mortality in individuals with CKD.
+
+Intensive lowering of BP in patients with CKD will undoubtedly lead to adverse sequelae in a minority of patients. Therefore, the importance of adopting a shared-decision making process regarding individualised BP targets cannot be emphasised enough. Monitoring BP using a standardised technique is also vital. Nonetheless the UK Kidney Association considers that on balance, aiming for a BP of &lt;130/80 mmHg is likely to be beneficial in the majority of individuals with CKD and treating to this target should be considered in all patients.
+
+UK Kidney Association Proposal - Blood Pressure Target for Individuals With Chronic KidneyDisease:
+
+- 5.1        We propose aiming for a blood pressure target of &lt;130/80 mmHg for patients with chronic kidney disease to improve cardiovascular outcomes if, following a shared-decision making discussion, it is tolerated by the individual.
+
+<!-- image -->
+
+## Update since publication of KDlGO 202l Clinical Practice Guideline for the Management of Blood Pressure in Chronic Kidney Disease and NiCE 2021 Chronic kidney disease: assessment and management (NG203)
+
+March 2021 saw the publication of the KDIGO 2021 Clinical Practice Guideline for the Management of Blood Pressure in Chronic Kidney Disease 18 . This long-awaited update to the 2012 KDIGO guideline aims for a lower blood pressure target when compared to the NICE guideline NG1361, American College of Cardiology 2 , and European Society of Cardiology/European Society of Hypertension guidelines 3 .
+
+The new KDIGO guideline update highlights two aspects of practice change: emphasising the importance of accurately recording office blood pressure readings, to allow the findings of SPRINT to be implemented as a new, lower SBP target of &lt;120mmHg in CKD patients not receiving dialysis.
+
+## Standardised office l BP measurement
+
+Standardised office BP measurement is recommended in preference to routine office BP measurement.   The checklist for standardised office blood pressure measurement 19 (Figure 1) should be seen as standard operating procedure for any clinician measuring blood pressure. Of note, there is no requirement for the standardised office blood pressure monitoring to be unattended, indeed many sites in the SPRINT study performed attended automated office blood pressure.  This will require clinicians to look at ways to deliver this within the limitations of their clinical environment, but the KDIGO guideline places greater importance on standardised accurate office BP measurement over any potential increased burden to patients and clinicians.
+
+The KDIGO Work Group repeatedly emphasise the importance of standardised BP measurement when applying the BP targets, stressing the risk of both over- and under-treatment through adjusting antihypertensive medication based on 'routine' non -standardised BP readings.
+
+The challenge of implementing standardised BP measurement in an outpatient clinic or GP practice is a concern raised by many, and might have influenced the choice of blood pressure targets in the NICE guidance.  Few clinicians outside of a research setting would be able to guarantee that readings in their clinical service are recorded according to a standardised protocol 21 , but the KDIGO guideline should be a call to review our current practice and develop local solutions to implementation.  Regardless of the blood pressure target we are aiming for, it is imperative that we are able to accurately measure blood pressure in all our patients, not just those participating in clinical trials.
+
+## Figure 1:
+
+<!-- image -->
+
+Standardised blood pressure measurement 18
+
+To recap, NICE guideline NG136 recommends reducing clinic BP to below 140/90mmHg in adults with hypertension aged under 80.  The guideline excludes patients with CKD and refers readers back to the 2014 NICE recommendations 4 for general CKD management; aiming for SBP &lt;140mmHg (target 120-139mmHg) and DBP &lt;90mmHg in people with CKD, and a lower target of SBP&lt;130mmHg (target 120-129mmHg) and DBP &lt;80mmHg in those with CKD and diabetes or CKD and ACR ≥ 70mg/mmol.    Of note, the 2021 update to the CKD guidelines (NG203) 20 no longer distinguishes between those with and without diabetes in terms of recommended BP targets.  NG203 recommends aiming for clinic SBP &lt;140mmHg (target 120-139mmHg) and DBP &lt;90mmHg in people with CKD and ACR &lt;70mg/mmol, and a lower target of SBP&lt;130mmHg (target 120129mmHg) and DBP &lt;80mmHg in those with CKD and ACR ≥ 70mg/mmol.
+
+The rationale given in the KDIGO guidance for targeting a lower SBP of &lt;120mmHg was to offer cardioprotective, survival, and cognitive benefits, whilst acknowledging no significant reno-protective benefit.  The KDIGO guideline recognises that the evidence for 120mmHg was weaker in certain patient groups (including diabetics, CKD stage 4 and 5, those with significant proteinuria, patients with very low DBP, white-coat hypertension, and extremes of age) 21 , and that in those patient groups there is a stronger need f or clinical nuance and shared decision making in determining an individual patient's treatment target.  The guideline makes the Practice Point that patients with very limited life expectancy or symptomatic postural hypotension can be offered less intensive BP lowering therapy.  The KDIGO guideline chose to deliver a clear message in recommending a single SBP target of &lt;120mmHg, with the aim of reducing potential physician treatment inertia that can occur with multiple, sub-group treatment targets within one guideline.
+
+The KDIGO guideline recommends the use of ACE inhibitors (ACEi) or angiotensin receptor blockers (ARB) in patients with CKD and increased albuminuria, with or without diabetes.  It notes that the evidence for ACEi or ARB use in patients with moderately raised albuminuria (albuminuria category A2) is lower in quality when compared to the evidence for use in patients with severely raised albuminuria (albuminuria category A3).  The guideline recommends avoiding any combination of ACEi, ARB, and direct renin inhibitor in patients with CKD for the risk of hyperkalaemia and the absence of evidence for any added benefit.
+
+The KDIGO guidance does not make recommendation for blood pressure targets in patients on dialysis.  It does however recommend a separate target for adult kidney transplant recipients (CKD G1T -G5T) of SBP &lt;130mHg and DBP &lt;80mmHg using standardised office BP measurement.   The KDIGO Work Group chose not to target SBP &lt;120mmHg in this group due to evidence of higher rates of eGFR decline in patients in the intensive BP arm of the SPRINT study.   Given that transplant recipients have a single-functioning, denervated kidney, concern was raised the Work Group regarding potentially higher risk of adverse events with SBP targets of &lt;120mmHg.  The KDIGO guideline also made recommendations on the type of antihypertensive used in renal transplant recipients, recommending either a dihydropyridine calcium channel blocker (CCB) or ARB be used first line.  This recommendation was based upon data showing reduced graft loss in patients taking dihydropyridine CCB compared to placebo, in both normotensive and hypertensive patients.  Similarly, the use of ARB compare to placebo was associated with a reduction in graft loss.   There was no benefit from CCB or ARB in terms of mortality or cardiovascular event rates.  There was no benefit in terms of mortality or graft loss in patients receiving an ACE inhibitor.
+
+<!-- image -->
+
+<!-- image -->
+
+The KDIGO guideline suggests that patients with hypertension and CKD are advised to undertake, where tolerated, at least 150 minutes of moderate intensity physical activity per week.  The KDIGO guideline recommends targeting a salt intake of &lt;5 g per day, and has a Practice Point noting that salt substitutes rich in potassium may not be appropriate for certain groups of patients with CKD.   Although the target intake differs from the NICE recommended target of maximum of 6g/day, the KDIGO level was chosen to provide agreement with existing guidelines to facilitate public health policy decisions.
+
+COVID-19 has thrown us into a clinical environment where the majority of outpatient services had to be reconfigured overnight into virtual clinics.   This model of working was new for many clinicians, and has posed many new challenges in delivering safe patient care.  There is a risk of clinician inertia in treating to lower BP targets that might be heightened by the challenges of virtual clinics being delivered without predesigned pathways for service delivery.  Obtaining reliable and accurate blood pressure readings, monitoring of eGFR and electrolytes following medication changes, and the inability to clinically examine patients in a remote virtual clinic are some of the challenges that we face when addressing hypertension management.
+
+Clinical guidelines provide blood pressure targets based on clinic or office blood pressure readings.   With a move towards virtual outpatient services there is an increasing need for research recommendations based on home blood pressure readings.   It is crucial that home readings are obtained with validated and calibrated machines, in a standardised way, to ensure reliable and clinically meaningful interpretation.  This requires supporting patients in choosing validated monitors (https://bihsoc.org/bp-monitors/for-homeuse/), providing education about correct monitoring techniques through either online resources (https://bihsoc.org/resources/bp-measurement/hbpm/) or delivered during the consultation (e.g. supervised readings in first video consultation), and ability to record that data into the patient record (e.g. patient diaries emailed to clinical services, uploaded via Patient Knows Best, integrated into EPR / primary care record).  There is an opportunity to improve engagement of patients with their hypertension management through home blood pressure readings, but clinicians also need to be mindful of the risk of suboptimal care being delivered for those without the resources (financial, language barriers, technological or telecommunication challenges etc.) to engage with virtual clinics.
+
+<!-- image -->
+
+1. National Institute for Health and Care Excellence: Hypertension in adults diagnosis and management (NG136) [Internet] 2019 August 28th; 1-40
+2. 2017 Guideline for the Prevention, Detection, Evaluation, and Management of High Blood Pressure in Adults. J Am Coll Cardiol. Sep 2017, 23976 ; DOI: 10.1016/j.jacc.2017.07.745
+3. Williams B et al. 2018 ESC/ESH Guidelines for the management of arterial hypertension. European Heart Journal (2018) 39 , 3021 -3104
+4. National Institute for Health and Care Excellence: Chronic Kidney Disease in adults assessment and management (CG182) [Internet] 2014 July 23rd; 1-60
+5. Wright JT Jr., Williamson JD, Whelton PK, et al. SPRINT Research Group: A randomized trial of intensive versus standard blood pressure control. N Engl J Med 373 : 2103 -2116, 2015
+6. National Institute for Health and Care Excellence: Hypertension in adults diagnosis and management (CG127) [Internet] 2011 August 24th
+7. Johnson, KC, Whelton, PK, Cushman, WC et al. Blood Pressure Measurement in SPRINT (Systolic Blood Pressure Intervention Trial). Hypertension 2018; 71 :848-857
+8. Rocco, MV, Sink, KM, Lovato, LC et al.  Effects of Intensive Blood Pressure Treatment on Acute Kidney Injury Events in the Systolic Blood Pressure Intervention Trial (SPRINT) Am J Kidney Dis. 2018 March ; 71 (3): 352 -361.
+9. Malhotra R, Craven T, Ambrosius WT, et al. SPRINT Research Group: Effects of Intensive Blood Pressure Lowering on Kidney Tubule Injury in CKD: A Longitudinal Subgroup Analysis in SPRINT. Am J Kidney Dis pii: S0272-6386 ( 18 )30879-5, 2018,
+10. Hameed MA, Dasgupta I. Medication adherence and treatment resistant hypertension: a review. Drugs in Context 2019; 8 : 212560
+11. He FJ, Li J, Macgregor GA. Effect of longer-term modest salt reduction on blood pressure. Cochrane Database Syst Rev. 2013 Apr 30; 4 :CD004937.
+12. Aburto NJ, Ziolkovska A, Hooper L, et al. Effect of lower sodium intake on health: systematic review and meta-analyses. BMJ. 2013 Apr 3; 346
+13. Bray GA, Vollner WM, Sacks FM, et al; DASH Collaborative Research Group. A further subgroup analysis of the effects of the DASH diet and three dietary sodium levels on blood pressure: results of the DASH-Sodium Trial. Am J Cardiol. 2004 Jul 15; 94 (2):222-7.
+14. Sigurjonsdottir HA, Franzson L, Manhem K et al. Liquorice-induced rise in blood pressure: a linear dose-response relationship. J Hum Hypertens 2001; 15 :549 -52. 10.1038/
+15. Cheung AK, Rahman M, Reboussin DM, et al; SPRINT Research Group: Effects of intensive BP control in CKD. 2017. J Am Soc Nephrol 28 : 2812 -2823
+16. Obi Y, Kalantar-Zadeh K, Shintani A, et al. Estimated glomerular filtration rate and the risk-benefit profile of intensive blood pressure control amongst nondiabetic patients: A post hoc analysis of a randomized clinical trial. 2018 J Intern Med 283 : 314 -327.
+17. Chang AR, Loser M, Malhotra R et al. Blood pressure goals in patients with CKD. A review of evidence and guidelines. Clin J Am Soc Nephrol 2019; 14 : 161 -169.
+18. Kidney Disease: Improving Global Outcomes (KDIGO) Blood Pressure Work Group. KDIGO 2021 Clinical Practice Guideline for the Management of Blood Pressure in Chronic Kidney Disease. Kidney Int. 2021 Mar; 99 (3S):S1-S87. doi: 10.1016/j.kint.2020.11.003. PMID: 33637192.
+
+<!-- image -->
+
+19. Whelton PK, Carey RM, Aronow WS, et al. 2017 ACC/AHA/AAPA/ABC/ACPM/AGS/APhA/ASH/ ASPC/NMA/PCNA Guideline for the prevention, detection, evaluation, and management of high blood pressure in adults: a report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines. J Am Coll Cardiol. 2018; 71 : e127 -e248
+20. National Institute for Health and Care Excellence: Chronic kidney disease: assessment and management (NG203) [Internet] 2021 August 25th, 1-74.
+21. Dasgupta I, Zoccali C. Is the KDIGO Systolic Blood Pressure Target &lt;120 mm Hg for Chronic Kidney Disease Appropriate in Routine Clinical Practice? Hypertension. 2022 Jan; 79 (1):4-11. doi: 10.1161/HYPERTENSIONAHA.121.18434.

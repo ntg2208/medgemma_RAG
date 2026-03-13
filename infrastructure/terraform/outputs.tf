@@ -1,34 +1,24 @@
-output "instance_id" {
-  description = "EC2 spot instance ID"
-  value       = aws_spot_instance_request.model_server.spot_instance_id
-}
-
 output "region" {
-  description = "AWS region where instance is deployed"
+  description = "AWS region where infrastructure is deployed"
   value       = var.aws_region
 }
 
-output "public_ip" {
-  description = "Public IP address (note: changes on stop/start)"
-  value       = aws_spot_instance_request.model_server.public_ip
-}
-
 output "security_group_id" {
-  description = "Security group ID"
+  description = "Security group ID for model server instances"
   value       = aws_security_group.model_server.id
 }
 
-output "ssh_command" {
-  description = "SSH command to connect"
-  value       = "ssh -i ~/.ssh/${var.key_pair_name}.pem ubuntu@${aws_spot_instance_request.model_server.public_ip}"
+output "instance_profile_name" {
+  description = "IAM instance profile name for EC2 to access S3"
+  value       = aws_iam_instance_profile.model_server.name
 }
 
-output "vllm_endpoint" {
-  description = "vLLM API endpoint"
-  value       = "http://${aws_spot_instance_request.model_server.public_ip}:8000/v1"
+output "s3_models_bucket" {
+  description = "S3 bucket for model cache"
+  value       = aws_s3_bucket.models_cache.id
 }
 
-output "tei_endpoint" {
-  description = "TEI embeddings endpoint"
-  value       = "http://${aws_spot_instance_request.model_server.public_ip}:8001"
+output "s3_models_bucket_arn" {
+  description = "S3 bucket ARN"
+  value       = aws_s3_bucket.models_cache.arn
 }

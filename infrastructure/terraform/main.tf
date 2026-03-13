@@ -13,6 +13,99 @@ provider "aws" {
   region = var.aws_region
 }
 
+# Data source for AWS account ID
+data "aws_caller_identity" "current" {}
+
+# S3 Bucket for Model Cache
+resource "aws_s3_bucket" "models_cache" {
+  bucket = var.s3_models_bucket != "" ? var.s3_models_bucket : "medgemma-models-${data.aws_caller_identity.current.account_id}"
+
+  # Prevent accidental deletion of model cache
+  lifecycle {
+    prevent_destroy = true
+  }
+
+  tags = {
+    Name    = "medgemma-models-cache"
+    Project = "medgemma-rag"
+    Purpose = "Cache for MedGemma and EmbeddingGemma models"
+  }
+}
+
+# Enable versioning for safety
+resource "aws_s3_bucket_versioning" "models_cache" {
+  bucket = aws_s3_bucket.models_cache.id
+
+  versioning_configuration {
+    status = "Enabled"
+  }
+}
+
+# Block public access
+resource "aws_s3_bucket_public_access_block" "models_cache" {
+  bucket = aws_s3_bucket.models_cache.id
+
+  block_public_acls       = true
+  block_public_policy     = true
+  ignore_public_acls      = true
+  restrict_public_buckets = true
+}
+
+# IAM Role for EC2 to access S3
+resource "aws_iam_role" "model_server" {
+  name = "medgemma-model-server-role"
+
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Action = "sts:AssumeRole"
+        Effect = "Allow"
+        Principal = {
+          Service = "ec2.amazonaws.com"
+        }
+      }
+    ]
+  })
+
+  tags = {
+    Name    = "medgemma-model-server-role"
+    Project = "medgemma-rag"
+  }
+}
+
+# IAM Policy for S3 access
+resource "aws_iam_role_policy" "s3_models_access" {
+  name = "s3-models-access"
+
+  role = aws_iam_role.model_server.id
+
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Effect = "Allow"
+        Action = [
+          "s3:GetObject",
+          "s3:PutObject",
+          "s3:ListBucket",
+          "s3:GetBucketLocation"
+        ]
+        Resource = [
+          aws_s3_bucket.models_cache.arn,
+          "${aws_s3_bucket.models_cache.arn}/*"
+        ]
+      }
+    ]
+  })
+}
+
+# IAM Instance Profile
+resource "aws_iam_instance_profile" "model_server" {
+  name = "medgemma-model-server-profile"
+  role = aws_iam_role.model_server.name
+}
+
 # Security Group
 resource "aws_security_group" "model_server" {
   name        = "medgemma-model-server-sg"
@@ -59,32 +152,3 @@ resource "aws_security_group" "model_server" {
   }
 }
 
-# Spot Instance Request
-resource "aws_spot_instance_request" "model_server" {
-  ami                    = var.ami_id
-  instance_type          = var.instance_type
-  key_name               = var.key_pair_name
-  vpc_security_group_ids = [aws_security_group.model_server.id]
-
-  # Spot configuration
-  spot_type                      = "one-time"
-  instance_interruption_behavior = "terminate"
-  wait_for_fulfillment           = true
-
-  # Root volume
-  root_block_device {
-    volume_size           = var.root_volume_size
-    volume_type           = "gp3"
-    delete_on_termination = true
-
-    tags = {
-      Name = "medgemma-model-server-root"
-    }
-  }
-
-  tags = {
-    Name    = "medgemma-model-server"
-    Project = "medgemma-rag"
-    Type    = "spot-instance"
-  }
-}

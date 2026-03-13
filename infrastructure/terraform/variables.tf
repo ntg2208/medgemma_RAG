@@ -1,7 +1,7 @@
 variable "aws_region" {
   description = "AWS region"
   type        = string
-  default     = "us-east-1"
+  default     = "us-east-2"
 }
 
 variable "instance_type" {
@@ -18,7 +18,7 @@ variable "instance_type" {
 variable "ami_id" {
   description = "AMI ID for Deep Learning AMI"
   type        = string
-  default     = "ami-0c702567ccf8b120a" # Deep Learning OSS Nvidia Driver AMI GPU PyTorch 2.6.0 (Ubuntu 22.04)
+  default     = "ami-01bc785757b863550" # Deep Learning OSS Nvidia Driver AMI GPU PyTorch 2.6.0 (Ubuntu 22.04) us-east-2
 }
 
 variable "key_pair_name" {
@@ -27,14 +27,14 @@ variable "key_pair_name" {
   default     = "medgemma-key"
 }
 
-variable "root_volume_size" {
-  description = "Root EBS volume size in GB"
-  type        = number
-  default     = 75
-}
-
 variable "allowed_cidr_blocks" {
   description = "CIDR blocks allowed for SSH and API access"
   type        = list(string)
-  default     = ["0.0.0.0/0"] # Override with your IP for security
+  default     = ["31.221.62.58/32"]
+}
+
+variable "s3_models_bucket" {
+  description = "S3 bucket name for cached models (leave empty to create new bucket)"
+  type        = string
+  default     = "" # Will auto-generate if empty
 }

@@ -32,9 +32,9 @@ def mock_retriever():
             self.page_content = "Test document content"
             self.metadata = {
                 "source": "Test Source",
-                "page_number": 1,
                 "section": "Introduction",
-                "ckd_stages": [1, 2, 3],
+                "chunk_id": 0,
+                "total_chunks": 1,
             }
 
     mock.invoke = MagicMock(return_value=[MockDocument()])

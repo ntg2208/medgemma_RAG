@@ -38,8 +38,6 @@ class CKDRetriever(BaseRetriever):
     vectorstore: "CKDVectorStore"  # type: ignore
     k: int = TOP_K_RESULTS
     score_threshold: float = SIMILARITY_THRESHOLD
-    ckd_stage: Optional[int] = None
-    document_type: Optional[str] = None
     expand_queries: bool = True
 
     class Config:
@@ -96,15 +94,7 @@ class CKDRetriever(BaseRetriever):
         Returns:
             Filter dictionary or None
         """
-        filters = {}
-
-        if self.ckd_stage is not None:
-            filters["ckd_stages"] = {"$contains": self.ckd_stage}
-
-        if self.document_type is not None:
-            filters["document_type"] = self.document_type
-
-        return filters if filters else None
+        return None
 
     def _get_relevant_documents(
         self,
@@ -150,17 +140,15 @@ class CKDRetriever(BaseRetriever):
 
     def with_config(
         self,
-        ckd_stage: Optional[int] = None,
-        document_type: Optional[str] = None,
         k: Optional[int] = None,
+        **kwargs,
     ) -> "CKDRetriever":
         """
         Create a new retriever with updated configuration.
 
         Args:
-            ckd_stage: CKD stage to filter by
-            document_type: Document type to filter by
             k: Number of results to return
+            **kwargs: Ignored (kept for backward compatibility)
 
         Returns:
             New CKDRetriever instance with updated config
@@ -169,8 +157,6 @@ class CKDRetriever(BaseRetriever):
             vectorstore=self.vectorstore,
             k=k if k is not None else self.k,
             score_threshold=self.score_threshold,
-            ckd_stage=ckd_stage if ckd_stage is not None else self.ckd_stage,
-            document_type=document_type if document_type is not None else self.document_type,
             expand_queries=self.expand_queries,
         )
 
@@ -242,8 +228,6 @@ class HybridRetriever(BaseRetriever):
 
 def create_retriever(
     vectorstore: "CKDVectorStore",  # type: ignore
-    ckd_stage: Optional[int] = None,
-    document_type: Optional[str] = None,
     k: int = TOP_K_RESULTS,
     use_hybrid: bool = False,
 ) -> BaseRetriever:
@@ -252,8 +236,6 @@ def create_retriever(
 
     Args:
         vectorstore: Vector store to retrieve from
-        ckd_stage: Optional CKD stage filter
-        document_type: Optional document type filter
         k: Number of results to return
         use_hybrid: Whether to use hybrid retrieval
 
@@ -266,6 +248,4 @@ def create_retriever(
     return CKDRetriever(
         vectorstore=vectorstore,
         k=k,
-        ckd_stage=ckd_stage,
-        document_type=document_type,
     )

@@ -6,6 +6,7 @@ with metadata filtering support.
 """
 
 import logging
+import os
 from pathlib import Path
 from typing import Optional
 
@@ -32,7 +33,7 @@ class CKDVectorStore:
     Vector store for CKD guidelines and resources.
 
     Uses ChromaDB for persistent storage with support for:
-    - Metadata filtering (by CKD stage, document type, source)
+    - Metadata filtering (by source, section)
     - Similarity search with score thresholds
     - Batch document insertion
 
@@ -66,11 +67,13 @@ class CKDVectorStore:
         Path(persist_directory).mkdir(parents=True, exist_ok=True)
 
         # Initialize ChromaDB client with persistence
+        # Only allow reset in development/testing environments
+        allow_reset = os.environ.get("ENVIRONMENT", "development") != "production"
         self._client = chromadb.PersistentClient(
             path=persist_directory,
             settings=Settings(
                 anonymized_telemetry=False,
-                allow_reset=True,
+                allow_reset=allow_reset,
             ),
         )
 
@@ -192,52 +195,6 @@ class CKDVectorStore:
             filter=filter_dict,
         )
 
-    def search_by_ckd_stage(
-        self,
-        query: str,
-        ckd_stage: int,
-        k: int = TOP_K_RESULTS,
-    ) -> list[Document]:
-        """
-        Search for documents relevant to a specific CKD stage.
-
-        Args:
-            query: Search query text
-            ckd_stage: CKD stage (1-5)
-            k: Number of results to return
-
-        Returns:
-            List of matching Document objects
-        """
-        if not 1 <= ckd_stage <= 5:
-            raise ValueError(f"Invalid CKD stage: {ckd_stage}. Must be 1-5.")
-
-        # ChromaDB filter for array contains
-        # Note: This checks if ckd_stages array contains the stage
-        filter_dict = {"ckd_stages": {"$contains": ckd_stage}}
-
-        return self.search(query, k=k, filter_dict=filter_dict)
-
-    def search_by_document_type(
-        self,
-        query: str,
-        doc_type: str,
-        k: int = TOP_K_RESULTS,
-    ) -> list[Document]:
-        """
-        Search within a specific document type.
-
-        Args:
-            query: Search query text
-            doc_type: Document type ("guideline", "dietary", "clinical")
-            k: Number of results to return
-
-        Returns:
-            List of matching Document objects
-        """
-        filter_dict = {"document_type": doc_type}
-        return self.search(query, k=k, filter_dict=filter_dict)
-
     def get_collection_stats(self) -> dict:
         """
         Get statistics about the current collection.
@@ -258,13 +215,11 @@ class CKDVectorStore:
                 for meta in sample["metadatas"]:
                     if meta:
                         sources.add(meta.get("source", "unknown"))
-                        doc_types.add(meta.get("document_type", "unknown"))
 
             return {
                 "collection_name": self.collection_name,
                 "document_count": count,
                 "sample_sources": list(sources),
-                "sample_doc_types": list(doc_types),
             }
 
         return {
@@ -366,15 +321,15 @@ if __name__ == "__main__":
     sample_docs = [
         Document(
             page_content="Patients with CKD stage 3 should limit potassium intake to 2000-3000mg per day.",
-            metadata={"source": "nice_guidelines.pdf", "chunk_id": 0, "document_type": "guideline", "ckd_stages": [3]},
+            metadata={"source": "nice_guidelines.pdf", "chunk_id": 0, "section": "Dietary Recommendations"},
         ),
         Document(
             page_content="ACE inhibitors are recommended for CKD patients with proteinuria.",
-            metadata={"source": "nice_guidelines.pdf", "chunk_id": 1, "document_type": "guideline", "ckd_stages": [1, 2, 3, 4, 5]},
+            metadata={"source": "nice_guidelines.pdf", "chunk_id": 1, "section": "Medication"},
         ),
         Document(
             page_content="High potassium foods include bananas, oranges, and potatoes.",
-            metadata={"source": "kidneycareuk_diet.pdf", "chunk_id": 0, "document_type": "dietary", "ckd_stages": [3, 4, 5]},
+            metadata={"source": "kidneycareuk_diet.pdf", "chunk_id": 0, "section": "Diet and Haemodialysis"},
         ),
     ]
 

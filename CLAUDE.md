@@ -51,15 +51,17 @@ Local MacBook              EC2 Spot Instance (us-west-2)
 **Infrastructure:**
 - Instance: g5.xlarge (A10G, 24GB) or g6.xlarge (L4, 24GB) - check availability first
 - Storage: 75GB EBS gp3 (auto-deletes on termination to prevent orphaned volumes)
-- Models: Currently downloaded at boot (~9.3GB, 5-10 min startup)
+- **Models: S3 cached** (~9.3GB, 30-60 sec sync on startup) ⚡
 - Spot Type: One-time (safer, no auto-restart surprises)
-- Cost: ~$0.30-0.40/hr spot pricing
+- Cost: ~$0.30-0.40/hr spot pricing + $0.21/month S3 storage
 
-**TODO - S3 Model Caching:**
-- Upload pre-downloaded models to S3 bucket (MedGemma 1.5 4B, EmbeddingGemma 300M)
-- Modify `scripts/setup-gpu-instance.sh` to sync from S3 instead of HuggingFace
-- Benefits: Faster instance startup (30s vs 5-10 min), no HuggingFace rate limits
-- Cost: ~$0.21/month for 9.3GB S3 storage (us-east-2)
+**S3 Model Caching (Implemented):**
+- ✅ Models cached in persistent S3 bucket (survives EC2 termination)
+- ✅ Fast startup: 30-60 sec S3 sync vs 5-10 min HuggingFace download
+- ✅ One-time upload: `scripts/upload-models-to-s3.sh`
+- ✅ Auto-sync on boot: `scripts/setup-gpu-instance.sh` checks S3 first
+- ✅ S3 bucket protected: `prevent_destroy = true` in Terraform
+- See: `docs/deployment/s3-model-cache-setup.md` for setup guide
 
 **Enable remote mode:**
 ```bash
@@ -194,13 +196,32 @@ python Data/test.py  # Data processing tests
 # Shows best price/region combo and terraform values to use
 ```
 
+### S3 Model Cache (One-Time Setup)
+```bash
+# Upload models to S3 (one-time, ~15-20 min first run, 0 sec after)
+./scripts/upload-models-to-s3.sh medgemma-models-YOUR_ACCOUNT_ID
+
+# Deploy infrastructure with S3 caching
+cd infrastructure/terraform
+terraform apply  # Creates S3 bucket with prevent_destroy=true
+```
+
+### Sync Code Between Local and EC2
+```bash
+# Backup from EC2 to local (excludes models, venv, cache)
+./scripts/backup-from-ec2.sh <ec2-ip>
+
+# Deploy local changes to EC2 (for quick testing)
+./scripts/sync-to-ec2.sh <ec2-ip>
+```
+
 ### Remote Model Server (Optional)
 ```bash
 # Start EC2 spot instance
 ./scripts/ec2-start.sh
 ./scripts/ec2-status.sh  # Get new IP (changes on each start)
 
-# SSH and start model servers (~2-3 min startup, models already on disk)
+# SSH and start model servers (~2-3 min startup, models sync from S3 in 30-60s)
 ssh -i ~/.ssh/medgemma-key.pem ubuntu@<ec2-ip>
 cd ~/medgemma_RAG
 ./scripts/start-model-server.sh
@@ -255,12 +276,52 @@ LOG_LEVEL=INFO
 
 ## Development Guidelines
 
+### Codebase Refactoring (Completed Feb-Mar 2026)
+
+The project has been refactored following LangChain/LangGraph best practices:
+
+**Phase 1: Removed LangGraph State Wrapping**
+- Removed `~56 lines` of wrapper functions (`_state_to_graph_state`, `_graph_state_to_dict`, `_wrap_node`)
+- All nodes now use `dict` directly instead of TypedDict/dataclass conversions
+- Removed `GraphState` dataclass in `2_Agentic_RAG/nodes.py`
+
+**Phase 2: Added RetryPolicy**
+- `RetryPolicy` from `langgraph.types` for error handling
+- LLM nodes: `max_attempts=3, initial_interval=1.0s, max_interval=30.0s`
+- API nodes: `max_attempts=3, initial_interval=2.0s, max_interval=60.0s`
+- Evaluator: `max_attempts=2, initial_interval=1.0s`
+
+**Phase 3: Created BaseAgent Interface**
+- `3_MultiAgent_RAG/agents/base.py` with abstract `BaseAgent` class
+- `AgentResponse` dataclass with `answer`, `confidence`, `disclaimer` fields
+- All agents extend `BaseAgent`: Diet, Lifestyle, Medication, RAG
+- Module loading via `importlib` with `sys.modules` caching
+
+**Phase 4: Added Comprehensive Tests**
+- 12 test files with 36+ passing tests
+- `pytest.ini` and `tests/conftest.py` for configuration
+
+### Testing
+
+Run tests with pytest:
+```bash
+uv run pytest -v  # All tests
+uv run pytest -v tests/test_base_agent.py  # Specific test file
+```
+
+Test patterns established:
+- Agent interface tests (`test_*_agent.py`)
+- BaseAgent contract tests (`test_base_agent.py`)
+- Routing tests (`test_routing.py`)
+- Retry policy tests (`test_retry_policy.py`)
+- State consolidation tests (`test_state_consolidation.py`)
+
 ### When Modifying Code
 1. Follow existing patterns in each level's directory
 2. Update corresponding README.md if adding features
 3. All medical responses must include source citations
 4. All medical responses must include disclaimers
-5. Test with `python test.py` before committing
+5. Test changes with `uv run pytest` before committing
 
 ### When Adding Documents
 1. Place PDFs in `Data/documents/`

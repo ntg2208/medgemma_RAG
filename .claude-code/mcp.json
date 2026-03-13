@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "qwen-search": {
+      "command": "/Users/ntg/Documents/Personal_Projects/local_llm/scripts/mcp-ssh-wrapper.sh",
+      "env": {
+        "MCP_SSH_KEY": "~/.ssh/medgemma-key.pem",
+        "MCP_SSH_HOST": "ec2-3-144-73-241.us-east-2.compute.amazonaws.com",
+        "MCP_SSH_USER": "ubuntu",
+        "MCP_SSH_DIR": "/home/ubuntu/medgemma_RAG"
+      }
+    }
+  }
+}

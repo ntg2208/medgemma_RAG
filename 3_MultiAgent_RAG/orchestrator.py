@@ -10,10 +10,11 @@ from typing import Any, Optional
 from dataclasses import dataclass, field
 from enum import Enum
 
-from .agents.rag_agent import RAGAgent, RAGAgentResponse
-from .agents.diet_agent import DietAgent, DietAgentResponse
-from .agents.medication_agent import MedicationAgent, MedicationAgentResponse
-from .agents.lifestyle_agent import LifestyleAgent, LifestyleAgentResponse
+from .agents.rag_agent import RAGAgent
+from .agents.diet_agent import DietAgent
+from .agents.medication_agent import MedicationAgent
+from .agents.lifestyle_agent import LifestyleAgent
+from .agents.base import AgentResponse
 
 import sys
 from pathlib import Path
@@ -225,9 +226,7 @@ class MultiAgentOrchestrator:
 
     def _synthesize_responses(
         self,
-        query: str,
-        responses: dict[AgentType, Any],
-        ckd_stage: Optional[int] = None,
+        responses: dict[AgentType, AgentResponse],
     ) -> str:
         """Synthesize multiple agent responses into one coherent answer."""
         parts = []
@@ -244,19 +243,7 @@ class MultiAgentOrchestrator:
             }.get(agent_type, agent_type.value.title())
 
             parts.append(f"## {section_title}\n")
-
-            # Extract answer from different response types
-            if isinstance(response, RAGAgentResponse):
-                parts.append(response.answer)
-            elif isinstance(response, DietAgentResponse):
-                parts.append(response.summary)
-                for rec in response.recommendations[:2]:  # Limit to 2
-                    parts.append(f"\n**{rec.nutrient}:** {rec.daily_limit} {rec.unit}")
-            elif isinstance(response, MedicationAgentResponse):
-                parts.append(response.general_guidance)
-            elif isinstance(response, LifestyleAgentResponse):
-                parts.append(response.summary)
-
+            parts.append(response.answer)
             parts.append("\n")
 
         if not parts:
@@ -264,42 +251,12 @@ class MultiAgentOrchestrator:
 
         return "\n".join(parts)
 
-    def _format_single_response(self, response: Any) -> str:
+    def _format_single_response(self, response: AgentResponse) -> str:
         """Format a single agent response."""
-        if isinstance(response, RAGAgentResponse):
-            return response.answer
-        elif isinstance(response, DietAgentResponse):
-            parts = [response.summary, "\n"]
-            for rec in response.recommendations:
-                parts.append(f"\n**{rec.nutrient}:** {rec.daily_limit} {rec.unit}")
-                parts.append(f"\n{rec.guidance}")
-                if rec.foods_to_limit:
-                    parts.append(f"\n*Limit:* {', '.join(rec.foods_to_limit[:5])}")
-                if rec.foods_to_prefer:
-                    parts.append(f"\n*Prefer:* {', '.join(rec.foods_to_prefer[:5])}")
+        parts = [response.answer]
+        if response.disclaimer:
             parts.append(f"\n\n_{response.disclaimer}_")
-            return "\n".join(parts)
-        elif isinstance(response, MedicationAgentResponse):
-            parts = [response.general_guidance]
-            if response.warnings:
-                parts.append("\n**Warnings:**")
-                for warning in response.warnings:
-                    parts.append(f"- {warning}")
-            parts.append(f"\n\n_{response.disclaimer}_")
-            return "\n".join(parts)
-        elif isinstance(response, LifestyleAgentResponse):
-            parts = [response.summary, "\n"]
-            for rec in response.recommendations:
-                parts.append(f"\n**{rec.title}**")
-                parts.append(rec.guidance[:300] + "..." if len(rec.guidance) > 300 else rec.guidance)
-                if rec.tips:
-                    parts.append("\n*Tips:*")
-                    for tip in rec.tips[:3]:
-                        parts.append(f"- {tip}")
-            parts.append(f"\n\n_{response.disclaimer}_")
-            return "\n".join(parts)
-        else:
-            return str(response)
+        return "\n".join(parts)
 
     def process(
         self,
@@ -318,14 +275,34 @@ class MultiAgentOrchestrator:
         Returns:
             OrchestratorResponse with synthesized answer
         """
+        # Validate inputs
+        if not query or not query.strip():
+            raise ValueError("Query must be a non-empty string")
+        if ckd_stage is not None and not (1 <= ckd_stage <= 5):
+            raise ValueError(f"Invalid CKD stage: {ckd_stage}. Must be 1-5.")
+
         # Handle PII if handler available
-        processed_query = query
+        processed_query = query.strip()
         if self.pii_handler:
             try:
                 result = self.pii_handler.anonymize(query)
                 processed_query = result.anonymized_text
             except Exception as e:
-                logger.warning(f"PII handling failed: {e}")
+                logger.error(f"PII handling failed: {e}")
+                # SAFETY: Never pass unredacted text through the pipeline
+                return OrchestratorResponse(
+                    answer=(
+                        "I'm sorry, but I'm unable to process your query at this time "
+                        "due to a privacy safety check failure. Please try again later."
+                    ),
+                    agents_used=[],
+                    routing_decision=RoutingDecision(
+                        primary_agent=AgentType.RAG,
+                        confidence=0.0,
+                        reasoning="PII check failed - query blocked for safety",
+                    ),
+                    confidence=0.0,
+                )
 
         # Route the query
         routing = self.route(processed_query)
@@ -345,9 +322,7 @@ class MultiAgentOrchestrator:
                     agents_used.append(agent_type.value)
 
             # Synthesize responses
-            answer = self._synthesize_responses(
-                processed_query, individual_responses, ckd_stage
-            )
+            answer = self._synthesize_responses(individual_responses)
             confidence = routing.confidence * 0.9  # Slight penalty for multi-agent
         else:
             # Call single agent
