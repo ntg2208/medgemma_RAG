@@ -1,0 +1,20 @@
+{
+  "title": "Nutritional considerations in adult patients with acute kidney injury",
+  "source_file": "Nutritional_Considerations_in_Adult_Patients_with_Acute_Kidney_Injury.md",
+  "original_file": "UKKA_AKI_Nutrition_Guide.md",
+  "summary": "This document provides nutritional considerations for adult patients with acute kidney injury (AKI). It emphasizes the importance of identifying patients at risk of malnutrition due to AKI, as malnutrition is a predictor of mortality. The document discusses principles of nutrition support tailored to AKI patients, including managing metabolic disturbances, potential nutritional losses during renal replacement therapy (RRT), and fluid retention. It also mentions the need for close monitoring and individualised dietary approaches.",
+  "cleaned_file": "Nutritional_considerations_in_adult_patients_with_acute_kidney_injury.md",
+  "metadata_file": "Nutritional_considerations_in_adult_patients_with_acute_kidney_injury.json",
+  "stats": {
+    "original_length": 60057,
+    "cleaned_length": 47951
+  },
+  "front_matter": "## Nutritional considerations in adult patients with acute kidney injury\n\nPublication date January 2024\n\n## Nutritional considerations in adult patients with acute kidney injury\n\nMafrici B 1 , Williams H 2 and Edel J 3\n\nPublication date January 2024 Review date January 2026\n\n1. Clinical Specialist Renal Dietitian, non-medical prescriber, Dietetic and Nutrition Department, Therapy Services, Renal and Transplantation Unit, City Hospital Campus, Nottingham University Hospitals NHS Trust, Nottingham, UK Please email any comments to: bruno.mafrici@nuh.nhs.uk\n2. Head of Dietetics, Betsi Cadwaladr University Health Board, Bangor, Wales, UK\n3. Critical Care Specialist Dietitian\n\n## Table of Contents\n\n| Subject | Subject | Page No |\n|-----------|-------------------------------------------------------|-----------|\n| 1 | Introduction | 2 |\n| 2 | Identifying patients with AKI at risk of malnutrition | 2 |\n| 3 | Principles of nutrition support in patients with AKI | 4 |\n| 4 | Monitoring | 11 |\n| 5 | Conclusion | 11 |\n| 6 | Dietetic aud it measures in AKI | 11 |\n| 7 | References | 11 |\n| 8 | Acknowledgements | 16 |",
+  "processing": {
+    "method": "heuristics",
+    "total_lines": 306,
+    "main_text_lines": 162,
+    "references_lines": 117,
+    "front_matter_lines": 27
+  }
+}

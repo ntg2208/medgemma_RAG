@@ -1,0 +1,20 @@
+{
+  "title": "Clinical Practice Guidelines Treatment of Acute Hyperkalaemia in Adults",
+  "source_file": "Clinical_Practice_Guidelines_Treatment_of_Acute_Hyperkalaemia_in_Adults.md",
+  "original_file": "UKKA_Hyperkalaemia_Management_Guideline.md",
+  "summary": "This document provides clinical practice guidelines for treating acute hyperkalemia in adults, focusing on hospital settings. It includes updated recommendations for the use of potassium binders like Sodium Zirconium Cyclosilicate and Patiromer, and clarifies the insulin-glucose regimen and the administration of calcium gluconate, reflecting recent regulatory updates and new evidence. The guidelines also address blood glucose monitoring and the role of calcium resonium.",
+  "cleaned_file": "Clinical_Practice_Guidelines_Treatment_of_Acute_Hyperkalaemia_in_Adults.md",
+  "metadata_file": "Clinical_Practice_Guidelines_Treatment_of_Acute_Hyperkalaemia_in_Adults.json",
+  "stats": {
+    "original_length": 531173,
+    "cleaned_length": 475466
+  },
+  "front_matter": "## Clinical Practice Guidelines Treatment of Acute Hyperkalaemia in Adults\n\nFinal version:\n\nOctober 2023\n\nReview date:\n\nOctober 2026\n\n## Authors:\n\n## Dr Annette Alfonzo\n\nConsultant Nephrologist. Faculty member of European Resuscitation Council. Victoria Hospital Kirkcaldy, Fife\n\n## Dr Alex Harrison\n\nConsultant in Nephrology and Intensive Care. University Hospitals Sussex NHS Foundation Trust\n\n## Dr Richard Baines\n\nConsultant Nephrologist and Head of Renal and Transplant Service. University Hospitals of Leicester NHS Trust\n\n## Dr Ann Chu\n\nAcademic Clinical Fellow Renal Medicine and Medical Education. Imperial College London\n\n## Mr Simon Mann\n\nRenal Pharmacist. Lancashire Teaching Hospitals NHS Foundation Trust\n\n## Mr Murdoch MacRury\n\nPatient representative\n\nThe National Institute for Health and Care Excellence (NICE) has accredited the process used by the UK Kidney Association to produce its Clinical Practice Guidelines. Accreditation is valid for 7 years from January 2017. More information on accreditation can be viewed at www.nice.org.uk/accreditation\n\n## Method used to arrive at a recommendation\n\nThe recommendations for the first draft of this guideline resulted from a collective decision reached by informal discussion by the authors and, whenever necessary, with input from the Chair of the Clinical Practice Guidelines Committee. If no agreement had been reached on the appropriate grading of a recommendation, a vote would have been held and the majority opinion carried. However this was not necessary for this guideline.\n\n## Conflicts of Interest Statement\n\nAll authors made declarations of interest in line with the policy in the UK Kidney Association Clinical Practice Guidelines Development Manual. Further details can be obtained on request from the UK Kidney Association.\n\n## Contents\n\n| Purpose of Guideline Update 4 |\n|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| Summary of key changes to Hyperkalaemia Guideline - Hospital Section 5 |\n| Lay Summary 6 |\n| Guideline Development 7 |\n| Introduction 8 |\n| Summary of Clinical Practice Guideline for Hyperkalaemia 9 |\n| Tables 16 |\n| Figures 17 |\n| Summary of Audit Measures: 18 |\n| Section I - Management of Hyperkalaemia in the Community and Out-patient Clinic 20 |\n| Section II - Management of Hyperkalaemia in Hospital 58 |\n| Section III - Management of Hyperkalaemia in Resuscitation 126 |\n| Acknowledgements 151 |\n| Conflict of Interest 151 |\n| Appendices 152 |\n| Abbreviations 169 |",
+  "processing": {
+    "method": "heuristics",
+    "total_lines": 4490,
+    "main_text_lines": 3177,
+    "references_lines": 1247,
+    "front_matter_lines": 66
+  }
+}

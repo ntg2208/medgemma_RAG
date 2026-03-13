@@ -1,0 +1,20 @@
+{
+  "title": "Diet and Haemodialysis for Patients on Haemodialysis",
+  "source_file": "Diet_and_Haemodialysis_for_Patients_on_Haemodialysis.md",
+  "original_file": "LN000445.md",
+  "summary": "- This document provides dietary information for patients undergoing haemodialysis. It explains what haemodialysis is and the role of nutrition in managing the condition.\n- The guide outlines the goals of a renal diet, including maintaining nutritional status, controlling blood potassium and phosphate levels, reducing salt intake, and preventing fluid build-up.\n- It details recommended protein sources and discusses the importance of adequate energy intake, outlining sources of carbohydrates and fats. The document also mentions specific foods to avoid and touches on managing weight on dialysis.\n- It emphasizes the need for individualised dietary advice from a renal dietitian, considering factors like blood results, weight, and medications.\n- The document also covers specific dietary requirements for conditions like diabetes and coeliac disease.\n- It highlights the importance of protein replacement during dialysis due to losses and potential muscle wasting.\n- The guide provides examples of high-energy food sources, including starchy foods, sugars, and fats.\n- It explains the concept of a 'target weight' used to monitor fluid balance in dialysis patients.\n- The document stresses the importance of consulting a renal dietitian for personalised dietary advice.",
+  "cleaned_file": "Diet_and_Haemodialysis_for_Patients_on_Haemodialysis.md",
+  "metadata_file": "Diet_and_Haemodialysis_for_Patients_on_Haemodialysis.json",
+  "stats": {
+    "original_length": 17667,
+    "cleaned_length": 13905
+  },
+  "front_matter": "",
+  "processing": {
+    "method": "heuristics",
+    "total_lines": 224,
+    "main_text_lines": 215,
+    "references_lines": 9,
+    "front_matter_lines": 0
+  }
+}

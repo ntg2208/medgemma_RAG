@@ -1,0 +1,20 @@
+{
+  "title": "Commentary on NICE guideline (NG136) 'Hypertension in adults: diagnosis and management' including proposals for blood pressure management in patients with chronic kidney disease",
+  "source_file": "Commentary_on_NICE_guideline_(NG136)_'Hypertension_in_adults_diagnosis_and_management'_including_pro.md",
+  "original_file": "UKKA_Commentary_NICE_Hypertension_NG136.md",
+  "summary": "This document, based on NICE guideline NG136, provides recommendations for managing hypertension, including specific considerations for patients with chronic kidney disease. The guideline proposes that blood pressure targets of &lt;130/80 mmHg should be considered for patients with CKD, aiming for shared-decision making with the patient. It also recommends using standardized techniques for blood pressure measurements and suggests objective testing of medication adherence in cases of resistant hypertension. The guideline advocates for lifestyle modifications, including reducing dietary salt intake.",
+  "cleaned_file": "Commentary_on_NICE_guideline_(NG136)_'Hypertension_in_adults_diagnosis_and_management'_including_pro.md",
+  "metadata_file": "Commentary_on_NICE_guideline_(NG136)_'Hypertension_in_adults_diagnosis_and_management'_including_pro.json",
+  "stats": {
+    "original_length": 30803,
+    "cleaned_length": 28561
+  },
+  "front_matter": "## Commentary on NICE guideline (NG136) 'Hypertension in adults: diagnosis and management'\n\n## including proposals for blood pressure management in patients with chronic kidney disease\n\n| 10 | Final version: |\n|------|------------------------------------------------------------------------|\n| 11 | Review date: |\n| 12 | |\n| 13 | Authors: |\n| 14 | Dr Richard Fish |\n| 15 | University Hospitals of North Midlands NHS Trust |\n| 16 | Dr Nihil Chitalia |\n| 17 | Dartford and Gravesham NHS Trust |\n| 18 | Dr Timothy Doulton |\n| 19 | East Kent Hospitals University NHS Foundation Trust |\n| 20 | Ms Katie Durman |\n| 21 | Barts Health NHS Trust |\n| 22 | (on behalf of the British Dietetic Association, Renal Nutrition Group) |\n| 23 | Ms Elizabeth Lamerton |\n| 24 | Salford Royal Foundation Trust |\n| 25 | (on behalf of the UK Renal Pharmacy Group) |\n| 26 | Dr Eirini Lioudaki |\n| 27 | King's College Hospital, London |\n| 28 | Dr Adam MacDiarmaid-Gordon |\n| 29 | Brighton and Sussex University Hospitals NHS Trust |\n| 30 | Professor Patrick Mark |\n| 31 | Queen Elizabeth University Hospital, Glasgow |\n| 32 | Dr Laura Ratcliffe |\n| 33 | East and North Hertfordshire NHS Trust |\n| 34 | Dr Charlie Tomson |\n| 35 | Freeman Hospital, Newcastle upon Tyne |\n| 36 | Professor Indranil Dasgupta |\n| 37 | University Hospitals Birmingham NHS Foundation Trust |\n| 38 | |\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n\n8\n\n9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n## Contents\n\nConflicts of Interest Statement 3\n\nAcknowledgements 3\n\nSummary of Renal Association Proposals 4\n\nCommentary Document 5\n\nReferences 11\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n\n8\n\n9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n18\n\n19\n\n20\n\n21\n\n22\n\n23\n\n24\n\n25\n\n26\n\n27\n\n28\n\n29\n\n30\n\nMethod used to arrive at a recommendation The recommendations for the first draft of this guideline resulted from a collective decision reached by informal discussion by the authors and, whenever necessary, with input from the Chair of the Clinical Practice Guidelines Committee. If no agreement had been reached on the appropriate grading of a recommendation, a vote would have been held and the majority opinion carried. However this was not necessary for this guideline.",
+  "processing": {
+    "method": "heuristics",
+    "total_lines": 870,
+    "main_text_lines": 645,
+    "references_lines": 88,
+    "front_matter_lines": 137
+  }
+}
