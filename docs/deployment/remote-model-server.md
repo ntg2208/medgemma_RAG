@@ -20,10 +20,10 @@ Local MacBook (Development)          EC2 Spot Instance (GPU)
 ## Benefits
 
 - **Cool MacBook**: No local GPU/CPU load during inference
-- **Cost Effective**: ~$15-21/month (30 hours × $0.30-0.40/hr spot + 75GB storage)
-- **Fast Startup**: ~2-3 minutes (models persist on EBS, no re-downloading)
-- **Flexible**: Easy to start/stop EC2 as needed
-- **Production Ready**: vLLM 0.15.1 and TEI are battle-tested inference servers
+- **Cost Effective**: ~$10/month (30 hours × $0.30/hr spot + $0.21/month S3)
+- **Fast Startup**: ~5-6 min total (instance ~2 min, S3 model sync ~30-60 sec, server load ~2-3 min)
+- **Flexible**: Easy to launch/terminate EC2 as needed
+- **Production Ready**: vLLM and TEI are battle-tested inference servers
 
 ---
 
@@ -64,7 +64,7 @@ terraform output instance_id
 Add to `~/.ssh/config`:
 
 ```
-Host medgemma-g4
+Host medgemma-gpu
     HostName <instance-public-ip>
     User ubuntu
     IdentityFile ~/.ssh/medgemma-key.pem
@@ -78,22 +78,18 @@ Host medgemma-g4
 SSH into the instance and run the setup script:
 
 ```bash
-ssh medgemma-g4
+ssh medgemma-gpu
 
-# Clone repo (if not already done)
-cd /data
-git clone https://github.com/ntg2208/medgemma_RAG.git
-cd medgemma_RAG
-
-# Run setup script
-bash scripts/setup-g4-instance.sh YOUR_HF_TOKEN
+# Run first-time setup (installs deps, syncs models from S3, starts servers)
+cd ~/medgemma_RAG
+bash scripts/startup.sh YOUR_HF_TOKEN
 
 # This will:
-# - Install system dependencies
-# - Install Python 3.12 + vLLM + Docling
+# - Install system dependencies (apt, uv, Python 3.12, pip)
 # - Pull TEI Docker image
-# - Download MedGemma 1.5 4B and EmbeddingGemma models
-# - Takes ~20-30 minutes
+# - Sync models from S3 (~30-60 sec) or download from HuggingFace
+# - Start vLLM + TEI servers
+# - Takes ~5-8 minutes (with S3 cache) or ~20-30 minutes (first time)
 ```
 
 ---
@@ -103,24 +99,20 @@ bash scripts/setup-g4-instance.sh YOUR_HF_TOKEN
 ### Starting Your Work Session
 
 ```bash
-# 1. Start EC2 instance (from local machine)
-./scripts/ec2-start.sh
+# 1. Launch spot instance (from local machine)
+./scripts/start.sh
 
-# 2. Check status and get IP
-./scripts/ec2-status.sh
+# 2. SSH into EC2
+ssh medgemma-gpu
 
-# 3. SSH into EC2
-ssh medgemma-g4
+# 3. Start model servers (syncs models from S3, starts vLLM + TEI)
+bash scripts/startup.sh --start
 
-# 4. Start model servers
-cd ~/medgemma_RAG
-./scripts/start-model-server.sh
-
-# 5. Check logs (optional)
+# 4. Check logs (optional)
 tmux attach -t vllm   # Ctrl+B then D to detach
 tmux attach -t tei
 
-# 6. Test endpoints
+# 5. Test endpoints (wait 2-3 min for servers to load)
 curl http://localhost:8000/v1/models
 curl http://localhost:8001/info
 ```
@@ -146,12 +138,11 @@ jupyter notebook
 
 ```bash
 # 1. Stop model servers (on EC2)
-ssh medgemma-g4
-cd ~/medgemma_RAG
-./scripts/stop-model-server.sh
+bash scripts/startup.sh --stop
+exit
 
-# 2. Stop EC2 instance (from local machine)
-./scripts/ec2-stop.sh
+# 2. Terminate instance (from local machine)
+./scripts/stop.sh
 ```
 
 ---
@@ -162,7 +153,7 @@ Process PDFs with GPU acceleration on EC2:
 
 ```bash
 # SSH into EC2
-ssh medgemma-g4
+ssh medgemma-gpu
 cd ~/medgemma_RAG
 
 # Process all PDFs in documents folder
@@ -238,7 +229,7 @@ nvidia-smi
 tmux attach -t vllm
 
 # Reduce GPU memory utilization
-# Edit scripts/start-model-server.sh
+# Edit the vLLM launch args in scripts/startup.sh
 --gpu-memory-utilization 0.6  # Instead of 0.7
 ```
 
@@ -260,19 +251,16 @@ echo $HF_TOKEN
 docker pull ghcr.io/huggingface/text-embeddings-inference:latest
 ```
 
-### IP address changed after stop/start
+### IP address changed after launch
 
-This is normal - spot instances get new IPs when restarted.
+This is normal - spot instances get new IPs each launch.
 
 **Solution**:
 ```bash
-# Get new IP
-./scripts/ec2-status.sh
+# Get current IP
+./scripts/status.sh
 
-# Update SSH config
-nano ~/.ssh/config
-# Change HostName to new IP
-
+# start.sh automatically updates ~/.ssh/config
 # Update environment variables
 export MODEL_SERVER_URL=http://<new-ip>:8000
 export EMBEDDING_SERVER_URL=http://<new-ip>:8001
@@ -297,26 +285,17 @@ curl https://checkip.amazonaws.com
 
 ## Cost Optimization
 
-### Current Setup (~$12/month for 30 hours)
+### Current Setup (~$10/month for 30 hours)
 
-- EC2 Spot: ~$0.16/hr × 30 hrs = $5
-- EBS Storage: 75GB × $0.08/GB = $6
-- Data Transfer: ~$1
-
-### Storage Breakdown (75GB EBS)
-
-- System & packages: ~35GB
-- Python venv: ~11GB
-- Models (`~/models_cache/`): ~9.3GB
-  - MedGemma 1.5 4B: ~8.1GB
-  - EmbeddingGemma 300M: ~1.2GB
-- Available for data/experiments: ~21GB
+- EC2 Spot: ~$0.30/hr × 30 hrs = $9
+- S3 Storage: 9.3GB × $0.023/GB = $0.21/month
+- Data Transfer (within AWS): Free
 
 ### To Reduce Costs Further
 
 1. **Use fewer hours**: Only start EC2 when needed
-2. **Stop servers when idle**: Models reload from disk in 2-3 minutes
-3. **Consider On-Demand for critical work**: More expensive but no interruptions
+2. **Terminate when done**: `./scripts/stop.sh` — EBS auto-deletes, no idle storage costs
+3. **Use g6 when available**: Usually 10-15% cheaper than g5
 
 ---
 
@@ -333,14 +312,14 @@ export MODEL_SERVER_URL=http://<ec2-ip>:8000
 export EMBEDDING_SERVER_URL=http://<ec2-ip>:8001
 
 # Alias for quick access
-alias ec2-start='cd ~/path/to/medgemma_RAG && ./scripts/ec2-start.sh'
-alias ec2-stop='cd ~/path/to/medgemma_RAG && ./scripts/ec2-stop.sh'
-alias ec2-status='cd ~/path/to/medgemma_RAG && ./scripts/ec2-status.sh'
+alias gpu-start='cd ~/path/to/medgemma_RAG && ./scripts/start.sh'
+alias gpu-stop='cd ~/path/to/medgemma_RAG && ./scripts/stop.sh'
+alias gpu-status='cd ~/path/to/medgemma_RAG && ./scripts/status.sh'
 ```
 
 ### Custom vLLM Configuration
 
-Edit `scripts/start-model-server.sh` to customize:
+Edit the vLLM launch args in `scripts/startup.sh` to customize:
 
 ```bash
 --max-model-len 8192          # Longer context (uses more memory)
@@ -352,51 +331,42 @@ Edit `scripts/start-model-server.sh` to customize:
 
 ## Data Persistence
 
-### What PERSISTS (EBS Volume - 75GB)
+EBS volumes **auto-delete on termination** (to prevent orphaned volumes). Models persist in S3.
 
-When you stop/start the instance, these survive:
-- ✅ All code: `~/medgemma_RAG/`
-- ✅ Python venv: `~/medgemma_RAG/.venv/` (11GB)
-- ✅ All models: `~/models_cache/` (9.3GB)
-  - MedGemma 1.5 4B (~8.1GB)
-  - EmbeddingGemma 300M (~1.2GB)
-- ✅ Docker images, system configuration
-- ✅ Any files in `/data/`, `/home/ubuntu/`, etc.
+### What PERSISTS across instances
+- ✅ Models in S3 (~9.3GB, synced on each startup in 30-60 sec)
+- ✅ Code in git repository
+- ✅ Terraform infrastructure (S3 bucket, IAM, SG)
 
-**Cost**: $6/month (75GB × $0.08/GB)
+### What is DELETED on termination
+- ❌ EBS volume (code, venv, local model cache)
+- ❌ Instance storage (`/opt/dlami/nvme/`)
 
-### What is DELETED (Instance Storage - 116GB)
-
-When you stop the instance, this is wiped:
-- ❌ Anything in `/opt/dlami/nvme/`
-- ❌ Any temporary files or cache stored there
-
-**Note**: Models are stored on EBS, so no re-downloading needed after stop/start.
+**Note**: `start.sh` auto-syncs code to the new instance. `startup.sh --start` syncs models from S3.
 
 ### Quick Reference
 
 **Stop for the night:**
 ```bash
 # On EC2
-./scripts/stop-model-server.sh
+bash scripts/startup.sh --stop
 exit
 
 # Locally
-./scripts/ec2-stop.sh
+./scripts/stop.sh
 ```
 
 **Resume tomorrow:**
 ```bash
-# Locally
-./scripts/ec2-start.sh
-./scripts/ec2-status.sh  # Get new IP
+# Locally — launch new spot instance
+./scripts/start.sh
 
 # SSH to EC2
-ssh -i ~/.ssh/medgemma-key.pem ubuntu@<new-ip>
-cd ~/medgemma_RAG
-./scripts/start-model-server.sh
+ssh medgemma-gpu
+bash scripts/startup.sh --start
 
 # Wait 2-3 minutes, then use locally
+# (start.sh prints the IP; status.sh shows it too)
 export USE_REMOTE_MODELS=true
 export MODEL_SERVER_URL=http://<new-ip>:8000
 export EMBEDDING_SERVER_URL=http://<new-ip>:8001
@@ -406,14 +376,14 @@ export EMBEDDING_SERVER_URL=http://<new-ip>:8001
 
 **If spot instance is reclaimed:**
 ```bash
-./scripts/ec2-start.sh  # Starts instance again
-# All data on EBS preserved, new IP assigned
+./scripts/start.sh  # Launch new spot instance
+# Models persist in S3, synced on next startup
 ```
 
 **If you accidentally terminate instance:**
-- Your EBS volume still exists with all data
-- Create new instance in Terraform and attach this volume
-- Or restore from Terraform state: `terraform apply`
+- Models persist in S3 (not on EBS — EBS auto-deletes on termination)
+- Launch a new instance: `./scripts/start.sh`
+- Run first-time setup again: `bash scripts/startup.sh YOUR_HF_TOKEN`
 
 ---
 
@@ -449,10 +419,10 @@ export EMBEDDING_SERVER_URL=http://<new-ip>:8001
 | Category | Files |
 |----------|-------|
 | Infrastructure | `infrastructure/terraform/{main,variables,outputs}.tf` |
-| EC2 Control | `scripts/ec2-{start,stop,status}.sh` |
-| Model Servers | `scripts/{start,stop}-model-server.sh` |
-| OCR | `scripts/ocr-{process.sh,single.py}` |
-| Setup | `scripts/setup-g4-instance.sh` |
+| EC2 Control | `scripts/{start,stop,status,sync}.sh` |
+| Model Servers | `scripts/startup.sh` (--start / --stop) |
+| Model Cache | `scripts/{download-models,upload-s3,model-upload}.sh` |
+| OCR | `scripts/ocr-process.sh` |
 
 ---
 

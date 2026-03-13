@@ -229,10 +229,9 @@ class SimpleRAGChain:
 
         for i, doc in enumerate(docs, start=1):
             source = doc.metadata.get("source", "Unknown")
-            page = doc.metadata.get("page_number", "?")
             section = doc.metadata.get("section", "")
 
-            citation = f"[{i}] Source: {source}, Page {page}"
+            citation = f"[{i}] Source: {source}"
             if section:
                 citation += f", Section: {section}"
 

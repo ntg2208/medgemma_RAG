@@ -1,0 +1,782 @@
+<!-- image -->
+
+## The initial management of I lgA vasculitis (Henoch Schonlein Purpura) in children and young people
+
+Final version:
+
+December 2022
+
+Review date:
+
+December 2027
+
+## Authors
+
+## Louise Oni (Lead author, Chair of the UK IgAV Clinical Practice Guideline Working Group)
+
+Senior Lecturer in Paediatric Nephrology, Alder Hey Children's Hospital, Liverpool UK
+
+## Shirley Mulvaney
+
+Paediatric Emergency Medicine Consultant, Alder Hey Children's Hospital, Liverpool UK
+
+## Gabrielle Haigh
+
+General paediatric speciality trainee, North West Deanery, UK
+
+## Liza McCann
+
+Paediatric Rheumatology Consultant, Alder Hey Children's Hospital, Liverpool UK
+
+## Thomas Whitby
+
+General Paediatric Consultant with a specialist interest in Gastroenterology, Alder Hey Children's Hospital, Liverpool UK
+
+## Markus Hesseling
+
+General Paediatric Consultant with a specialist interest in Nephrology, Children's Health Ireland, Dublin, Ireland
+
+## Charlotte Melling
+
+Paediatric Surgeon and Urology Consultant, Alder Hey Children's Hospital, Liverpool UK
+
+## Caroline Platt
+
+Paediatric Nephrologist, Bristol Royal Hospital for Children, Bristol, UK
+
+## Sue Protheroe
+
+Consultant Paediatric Gastroenterologist, Birmingham Women's and Children's Hospital, Birmingham, UK
+
+## Jillian Sussens
+
+General paediatric consultant, Nottingham Children's Hospital, Nottingham, UK
+
+## William Simmons
+
+Paediatric histopathology Consultant, Alder Hey Children's Hospital, Liverpool, UK
+
+## Anthony Lander
+
+Consultant Paediatric surgeon, Birmingham Children's Hospital, Birmingham, UK
+
+## Farah M Barakat
+
+Paediatric Gastroenterology trainee, Kings College Hospital NHS Foundation Trust, London, UK
+
+## Christopher NG
+
+Consultant Paediatric Radiologist, Sheffield Children's Hospital, Sheffield, UK
+
+## Alan Salama
+
+Consultant Nephrologist, Royal Free London Hospital, London, UK
+
+## Chee Kay Cheung
+
+Consultant Nephrologist, University Hospitals of Leicester NHS Trust, Leicester, UK
+
+## Reem Al-Jayyousi
+
+Consultant Nephrologist, University Hospitals of Leicester NHS Trust, Leicester, UK
+
+## Julien Marro
+
+Medical Student, University of Liverpool Medical School, Liverpool, UK
+
+## Kerstin Nott
+
+Paediatric Rheumatology Consultant, Southampton Children's Hospital, Southampton, UK
+
+## Elizabeth King
+
+General Practitioner, Woolton House Medical Centre, Liverpool, UK
+
+## Jane Kelly
+
+General Practitioner, Minchinhampton Surgery, Gloucestershire, UK
+
+## Iona Morgan
+
+General paediatric consultant, Royal Hospital for Children, Glasgow, UK
+
+## Amita Sharma
+
+General paediatric consultant, Royal Hospital for Children, Glasgow, UK
+
+<!-- image -->
+
+## Representatives of RCPCH &amp; UKKA Guidelines Committees
+
+## Jan Dudley
+
+RCPCH clinical guideline representative Consultant Paediatric Nephrologist, Bristol Royal Hospital for Children, Bristol, UK
+
+## Hannah Cottis
+
+RCPCH clinical guideline representative General Paediatric Consultant with a special interest in Nephrology, Royal Devon and Exeter NHS Trust, Exeter, UK
+
+## Matko Marlais
+
+UK Kidney Association/BAPN guideline committee representative Consultant Paediatric Nephrologist, Great Ormond Street Hospital NHS Foundation Trust, London, UK
+
+Patient representatives in the Clinical Practice Guideline working group
+
+## Rebecca Grandison
+
+Parent representative
+
+## Leanne Treitl
+
+Parent representative
+
+<!-- image -->
+
+## Endorsements
+
+<!-- image -->
+
+The National Institute for Health and Care Excellence (NICE) has accredited the process used by The UK Kidney Association  to  produce  its  Clinical  Practice  Guidelines.  Accreditation  is  valid  until  December  2023.  More information on accreditation can be viewed at www.nice.org.uk/accreditation
+
+<!-- image -->
+
+## Method used to arrive at a recommendation/Grading the evidence
+
+The  guideline  was  developed  under  the  endorsement  of  lead  organisations  (Appendix  1)  and  followed developmental stages including, forming the multi-speciality IgAV guideline development group (termed the UK IgAV GDG), developing and agreeing the scope, conducting systematic evidence-based literature reviews using  pre-defined  methodology  and  working  in  partnership  with  relevant  stakeholders  during  a  period  of formal external consultation (stakeholders listed in Appendix 2). Clinical recommendations were derived from the topic areas and key questions that were identified by the UK IgAV GDG.
+
+The UK IgAV GDG defined the population, intervention, comparator and outcome (termed 'PICO') to identify eligible evidence (Appendix 3). Search concepts were used to identify the relevant population and the disease in question (Appendix 4) (1) . The process of screening and identifying relevant articles was performed according to pre-defined eligibility criteria (Appendix 5) and aligned with the Cochrane Handbook for Systematic reviews of  interventions,  the  RCPCH  guideline  process  manual  ('Setting  Standards  for  the  Development  of  Clinical Guidelines  in  Paediatrics  and  Child  Health,  2020') (2) ,  the  UK  Kidney  Association  clinical  practice  guideline development manual, the 'Appraisals of Guidelines for research and evaluation II' instrument 3 and supported by a knowledge and exchange librarian (4,5) . The identified articles were summarised and presented to the UK IgAV  GDG  during  the  development  process.  The  papers  were  critically  appraised  for  their  methodological quality  using  the  Critical  Appraisal  Skills  Programme  (CASP)  checklists (6) .  In  cases  of  uncertainty  regarding inclusion of studies, discussion occurred between the two members screening the articles. There were no cases of persisting uncertainty or disagreement where a third member of the UK IgAV GDG was required to assist in decision  making.  Searching  of  reference  lists  was  included.  No  searching  of  grey  literature  and  no  hand searching  of  conference  proceedings  or  journals  took  place.  Three  bibliographic  databases  were  used  to identify potential studies (appendix 6) and aligned with those recommended in the Cochrane Handbook for Systematic reviews of interventions (4) . All searches were conducted on 11th March 2022 and were used for a parallel document 'Clinical practice guideline: The management of complications associated with IgA vasculitis (Henoch  Schönlein  Purpura)  in  children  and  young  people'.  The  key  questions  were  split  into  topic  areas (Appendix 7) and written to facilitate the systematic review (Appendix 8). The screening process to identify and select the articles relevant for this guideline is illustrated in the PRISMA diagram (Appendix 9). The literature review yielded 66 studies for inclusion. The members of the working group were presented with evidence
+
+<!-- image -->
+
+<!-- image -->
+
+summaries of the literature relevant to each topic area. The working group used the synthesised evidence to form and grade the recommendations using the modified GRADE terminology to reflect the strength of the recommendation and the quality of the supporting evidence. The strength of the recommendation was split into two tiers, grade 1 is a strong recommendation where the benefits outweigh the risks for most patients, and grade 2 is a weaker recommendation where the risks and benefits are more balanced or remain uncertain. The strong (grade 1) recommendations use the wording 'we recommend…' whilst the weaker recommendations  (grade  2)  will  use  the  wording  'we  suggest…'.  The  quality  of  evidence  is  graded  using alphabetical domains. Grade A evidence refers to high-quality evidence that is derived from consistent results from randomised controlled trials, or overwhelming evidence of other forms. Grade B is moderate quality evidence from clinical trials that may have some flaws or from other study designs with some strength. Grade C  evidence  is  low-quality  evidence  from  observational  studies  or  trials  with  serious  limitations.  Grade  D evidence  is  based  on  case  studies  alone  or  expert  opinion.  The  quality  of  the  evidence  could  be  revised following discussion after review of the synthesised literature.
+
+All authors made declarations of interest in line with the policy in the UK Kidney Association Clinical Practice Guidelines Development Manual.  Further details can be obtained on request from The UK Kidney Association.
+
+<!-- image -->
+
+| Executive Summary ............................................................................................................................................................... 7       |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Summary of recommendations ............................................................................................................................................ 8                 |
+| Quick reference guide ......................................................................................................................................................... 10        |
+| List of abbreviations ............................................................................................................................................................ 11     |
+| Glossary of terms ................................................................................................................................................................ 12     |
+| Background ......................................................................................................................................................................... 14   |
+| Scope .............................................................................................................................................................................. 14   |
+| Summary and rationale of recommendations .................................................................................................................... 15                          |
+| The classification of IgAV in children and young people ................................................................................................ 15                               |
+| When to seek specialist advice for a child or young person with IgAV .......................................................................... 16                                        |
+| The detection of nephritis in children and young people with IgAV .............................................................................. 18                                       |
+| The management of musculoskeletal involvement in children and young people with IgAV ........................................ 19                                                          |
+| Summary of audit measures ............................................................................................................................................... 20              |
+| Summary of research recommendations ............................................................................................................................ 20                       |
+| Lay Summary ....................................................................................................................................................................... 21    |
+| Lay version of recommendations ................................................................................................................................... 21                     |
+| Lay research recommendations ..................................................................................................................................... 21                     |
+| Acknowledgements ............................................................................................................................................................. 22         |
+| References .......................................................................................................................................................................... 23  |
+| Appendix ............................................................................................................................................................................. 29 |
+| Appendix 1: Lead organisations ...................................................................................................................................... 29                  |
+| Appendix 2: Stakeholders ............................................................................................................................................... 29               |
+| Appendix 3: PICO domains ............................................................................................................................................. 29                 |
+| Appendix 4: Search concepts .......................................................................................................................................... 29                 |
+| Appendix 5: Study eligibility .......................................................................................................................................... 30               |
+| Appendix 6: Bibliographic databases ............................................................................................................................. 31                      |
+| Appendix 7: Topic areas and key questions .................................................................................................................... 31                         |
+| 9: PRISMA diagram of selected studies ......................................................................................................... 32                                        |
+| Appendix 8: Key questions formatted for systematic review ......................................................................................... 31                                    |
+| Appendix                                                                                                                                                                                  |
+| Appendix 10: The EULAR/PRINTO/PRES 2010 Classification criteria .............................................................................. 33                                         |
+| 36                                                                                                                                                                                        |
+| Appendix 13: Summary information poster: recommendations ....................................................................................                                             |
+
+<!-- image -->
+
+IgA vasculitis (IgAV; also known as Henoch Schönlein Purpura) in children and young people is a common condition that typically presents to general practitioners or emergency physicians during the acute phase of the disease. It is a familiar condition to secondary paediatricians and it may require tertiary paediatric input. Despite its fairly frequent presentation, there are discrepancies in the management of patients and this hinders improvements.  Aligning the initial clinical management of IgAV, through the use of nationally agreed best practice recommendations, will hopefully reduce differences in the care patients receive across the UK and improve recognition of features that may warrant more specialist input. The inclusion of a lay translation of the  recommendations  are  designed  to  empower  patients  and  their  families  to  be  involved  in  the  initial management. We offer evidence-based practice guidelines, with research recommendations, covering the recommended initial management of IgAV in children and young people accompanied by suggested audit measures. This document aims to align care and standardise the management of children during the acute phase of the disease and it has been produced in parallel to a complementary document on the best practice guidelines for the complications associated with IgAV in children and young people.
+
+At the time of writing there remains very limited research in this field and the quality of available studies was notably poor. The production and dissemination of these clinical practice recommendations will hopefully facilitate further studies, including well conducted clinical trials, thus strengthening the literature to contribute to evidence-based updates in due course.
+
+Finally, I am enormously grateful to the multi-professional and lay members of the guideline working group for fully  supporting  this  venture  whilst  providing  encouragement  and  motivation  to  assist  me  in  leading  this project. Their dedicated time and effort in developing this guideline has been much appreciated, especially during an era of ever increasing workloads, and I have no doubt that the group have been united in their desire to rapidly improve outcomes for our children and young people.
+
+Dr. Louise Oni
+
+<!-- image -->
+
+Chair of the UK IgAV Clinical Practice Guideline Working Group
+
+<!-- image -->
+
+| RECOMMENDATIONS FOR USE IN CHILDREN AND YOUNG PEOPLE UNDER THE AGE OF 18 YEARS WITH IGA VASCULITIS (HENOCH SCH Ö NLEIN PURPURA)   | RECOMMENDATIONS FOR USE IN CHILDREN AND YOUNG PEOPLE UNDER THE AGE OF 18 YEARS WITH IGA VASCULITIS (HENOCH SCH Ö NLEIN PURPURA)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | RECOMMENDATIONS FOR USE IN CHILDREN AND YOUNG PEOPLE UNDER THE AGE OF 18 YEARS WITH IGA VASCULITIS (HENOCH SCH Ö NLEIN PURPURA)   |
+|-----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| Number                                                                                                                            | RECOMMENDATION                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Grade                                                                                                                             |
+| Section 1: CLASSIFICATION OF IGAV IN CLINICALLY SUSPECTED DISEASE                                                                 | Section 1: CLASSIFICATION OF IGAV IN CLINICALLY SUSPECTED DISEASE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Section 1: CLASSIFICATION OF IGAV IN CLINICALLY SUSPECTED DISEASE                                                                 |
+| 1.1                                                                                                                               | We recommend that professionals follow the EULAR/PRINTO/PRES 2010 classification criteria of IgAV ( (7) ; appendix 10).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | 1B                                                                                                                                |
+| Section 2: SPECIALIST REFERRAL IN IGAV*                                                                                           | Section 2: SPECIALIST REFERRAL IN IGAV*                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Section 2: SPECIALIST REFERRAL IN IGAV*                                                                                           |
+| 2.1                                                                                                                               | We recommend that specialist advice should be sought for children and young people with IgAV and the following clinical presentations (and symptoms or signs): • Severe GI involvement (definition: unremitting abdominal pain, protein losing enteropathy and/or GI bleeding; sub-specialist: paediatric gastroenterology/paediatric rheumatology) • Significant nephritis (definition: proteinuria UP: UC ratio of >250mg/mmol, nephrotic syndrome, nephritic syndrome and/or kidney insufficiency; sub- specialist: paediatric nephrology)) • Central nervous system (CNS) involvement (definition: cerebral vasculitis presenting as neurological symptoms and/or signs; sub-specialist: paediatric neurology/paediatric rheumatology) • Pulmonary haemorrhage (definition: pulmonary vasculitis presenting with acute bleeding from the respiratory tract; sub-specialist: paediatric respiratory/paediatric rheumatology). | 1C                                                                                                                                |
+| 2.2                                                                                                                               | We suggest that specialist advice should be sought for children and young people with IgAV and the following clinical presentations (and symptoms or signs): • Scrotal and/ or testicular involvement (definition: orchiditis; sub-specialist: paediatric surgeon/urology) • Severe skin manifestations (definition: intense subcutaneous oedema, blistering skin and/or necrotic features; sub-specialist: dermatology/paediatric rheumatology) • Severe, unremitting, musculoskeletal involvement (definition: arthropathy that requires hospital admission to assist with symptom management and no signs of improvement; sub-specialist: paediatric rheumatology)                                                                                                                                                                                                                                                            | 2D                                                                                                                                |
+| Section 3: NEPHRITIS SCREENING IN IGAV                                                                                            | Section 3: NEPHRITIS SCREENING IN IGAV                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Section 3: NEPHRITIS SCREENING IN IGAV                                                                                            |
+| 3.1                                                                                                                               | We recommend that children and young people should have urinalysis testing performed frequently over a period of 6 months to detect a diagnosis of nephritis (for example weekly screening for the first 4-6 weeks then monthly thereafter).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | 1B                                                                                                                                |
+
+<!-- image -->
+
+| 3.2                                            | We suggest that blood pressure assessment should be performed in children and young people with IgAV at diagnosis and if there is evidence of nephritis.   | 2C                                             |
+|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
+| Section 4: MUSCULOSKELETAL INVOLVEMENT IN IGAV | Section 4: MUSCULOSKELETAL INVOLVEMENT IN IGAV                                                                                                             | Section 4: MUSCULOSKELETAL INVOLVEMENT IN IGAV |
+| 4.1                                            | Werecommend appropriate analgesia and rest for musculoskeletal involvement in children and young people with IgAV.                                         | 1C                                             |
+
+- We refer readers to the parallel guideline 'The management of complications associated with IgA vasculitis (Henoch Schonlein Purpura) in children and young people'.
+
+## Quick reference guide
+
+SeCtiOn1:CLASSIFICATIONOFIGAVINCLINICALLYSUSPECTEDDISEASE We recommend professionals follow the EULAR/PRINTO/PRES 2O10 classification criteria
+
+## Section 2:SPECIALIST REFERRAL IN IGAV
+
+We recommend discussion with a sub-specialistin:
+
+- Severe, unremitting, Gl involvement
+- Significantnephritis
+- Central nervous system (cNs) involvement
+- Pulmonaryhaemorrhage
+
+We suggest discussion with a sub-specialist in:
+
+- Scrotaland/ortesticularinvolvement
+- Severeskinmanifestations
+- Severemusculoskeletalinvolvement
+
+## Section3:NEPHRITISSCREENINGINIGAV
+
+We recommend urinalysis testing is performed frequently over a period of 6 months. We suggest blood pressure assessment at diagnosis and to support evaluation of significant nephritis.
+
+SeCtiOn4:MUSCULOSKELETALINVOLVEMENTINIGAV
+
+We recommend appropriate analgesia and rest for musculoskeletal involvement.
+
+<!-- image -->
+
+ACEi
+
+Angiotensin converting enzyme inhibitor
+
+ACR
+
+American College of Rheumatology
+
+ARB
+
+Angiotensin receptor blocker
+
+CASP
+
+Critical Appraisal Skills Programme
+
+CKD
+
+Chronic Kidney Disease
+
+CNS
+
+Central nervous system
+
+FOB
+
+Faecal Occult Blood
+
+GDG
+
+Guideline Development Group
+
+GI
+
+Gastrointestinal tract
+
+HSP
+
+Henoch Schönlein Purpura
+
+ICD
+
+International Classification of Diseases
+
+IgA
+
+Immunoglobulin A
+
+IgAV
+
+Immunoglobulin A vasculitis
+
+ISKDC
+
+International study of Kidney Disease in Children
+
+IVIG
+
+Intravenous Immunoglobulin
+
+LMWH
+
+Low molecular weight heparin
+
+MMF
+
+Mycophenolate mofetil
+
+MSK
+
+Musculoskeletal
+
+MRI
+
+Magnetic Resonance Imaging
+
+PICO
+
+Population, intervention, control and outcome
+
+PLEX
+
+Plasma exchange
+
+PRISMA Preferred Reporting Items for Systematic Reviews and Meta-Analyses
+
+RCPCH
+
+Royal College of Paediatrics and Child Health
+
+RCT
+
+Randomised Controlled Trial
+
+SHARE
+
+Single Hub and Access point for paediatric Rheumatology in Europe
+
+UP: UC
+
+Urine protein:creatinine ratio
+
+<!-- image -->
+
+<!-- image -->
+
+| Term                               | Definition                                                                                                                                                                                                                                                                                   |
+|------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Arthritis                          | Joint swelling and/or functional limitation of movement                                                                                                                                                                                                                                      |
+| Arthralgia                         | Joint pain                                                                                                                                                                                                                                                                                   |
+| Arthropathy                        | Arthritis and/or arthralgia                                                                                                                                                                                                                                                                  |
+| CNS involvement                    | Cerebral vasculitis presenting as neurological symptoms and/or signs                                                                                                                                                                                                                         |
+| GI bleeding                        | Haematochezia, melena, haematemesis and/or occult blood in the stool                                                                                                                                                                                                                         |
+| GI involvement                     | GI vasculitis presenting as gastrointestinal symptoms                                                                                                                                                                                                                                        |
+| Haematemesis                       | Vomiting blood                                                                                                                                                                                                                                                                               |
+| Haematochezia                      | The passage of fresh blood often within or alongside stool                                                                                                                                                                                                                                   |
+| Intussusception                    | Prolapse of one part of intestine into the lumen of the adjoining part causes intestinal obstruction                                                                                                                                                                                         |
+| Melena                             | Dark black, tarry stools                                                                                                                                                                                                                                                                     |
+| Nephritis                          | Kidney inflammation presenting with micro or macroscopic changes in the urine and/or kidney insufficiency                                                                                                                                                                                    |
+| Occult blood                       | Blood present in the stools that isn't visible to the eye                                                                                                                                                                                                                                    |
+| Orchiditis                         | Scrotal and/or testicular involvement                                                                                                                                                                                                                                                        |
+| Pulmonary haemorrhage              | Pulmonary vasculitis presenting with acute bleeding from the respiratory tract                                                                                                                                                                                                               |
+| Purpura                            | A rash of red or purple discoloured spots on the skin that do not blanch on applying pressure                                                                                                                                                                                                |
+| Severe GI involvement              | Severe abdominal pain, protein losing enteropathy and/or GI bleeding                                                                                                                                                                                                                         |
+| Severe GI pain                     | Bowel angina presenting as abdominal pain that requires hospital admission to assist with symptom management                                                                                                                                                                                 |
+| Severe musculoskeletal involvement | Arthropathy that requires hospital admission to assist with symptom management                                                                                                                                                                                                               |
+| Severe skin involvement            | Intense subcutaneous oedema, blistering skin and/or necrotic features                                                                                                                                                                                                                        |
+| Significant nephritis              | Heavy proteinuria (equivalent to >2 g/g or urine protein:creatinine ratio of >250mg/mmol), nephrotic syndrome (heavy proteinuria, hypoalbuminaemia <30g/L, oedema), nephritic syndrome (haematuria plus hypertension, impaired kidney function and/or oliguria) and/or kidney insufficiency. |
+
+Vasculitis
+
+Inflammation of the blood vessels
+
+<!-- image -->
+
+<!-- image -->
+
+This  guideline  makes  recommendations  for  the  initial  management  of  children  and  young  people  with Immunoglobulin A vasculitis (IgAV, previously known as Henoch Sch ö nlein Purpura, HSP). This is a small vessel vasculitis and it is the most common form of vasculitis in children, with an incidence of ~20 cases per 100,000 children [8-10] and a median age at presentation of 6 years (9) . IgAV usually presents acutely with a purpuric rash that  predominates  on  the  lower  limbs.  It  also  involves  inflammation  in  the  gastrointestinal  (GI)  tract, musculoskeletal  system  and/or  the  kidneys (7) .  GI  tract  involvement  occurs  in  up  to  72%  of  patients.  GI involvement usually presents with nausea, vomiting and colicky abdominal pain (11) . It can involve GI bleeding manifesting as melaena or haematemesis, that can be severe or life threatening (12) . GI bleeding has been linked to  acute  morbidity  and  the  need  for  a  longer  hospital  admission (13) .  Intussusception  due  to  GI  tract inflammation can occur and testicular inflammation is reported in 14% of male patients 12 .  During the acute presentation, up to 90% of patients will have musculoskeletal involvement with arthralgia and arthritis that mainly affects the lower limb joints [12] . This can be painful and debilitating, and it can last several weeks. Kidney involvement, termed IgAV nephritis, is seen in around 40-50% of patients and it is usually asymptomatic and requires screening for at least 6 months after diagnosis to check for signs of evolving nephritis. Most patients have a mild nephritis that self resolves [12,11] , with microscopic haematuria and/or low grade proteinuria being a common finding. More significant IgAV nephritis, can present as nephrotic or nephritic syndrome and it is a recognised cause of irreversible chronic kidney disease (CKD) in 1-2% of all children with IgAV [14] .  Importantly, IgAV  can  involve  other  systems  such  as  the  respiratory  or  neurological  systems,  although  these  are  very uncommon in children and young people.
+
+There are no current national guidelines to support the best management of this condition and clinical practice varies. The aim of this clinical practice guideline is to reduce unwarranted variation for the initial management of IgAV in children and young people. The complications associated with IgAV, including acute GI complications, are covered within a parallel document.
+
+The audience for this guideline will be healthcare professionals working in primary, secondary and tertiary healthcare settings in the UK in which IgAV in children and young people will be managed.  The population that this guideline relates to is children and young people aged 0-18 years presenting with IgAV.
+
+## Summary and drationaleof recommendations
+
+The classification of lgAV in children and Iyoungpeople
+
+| Number                                                            | RECOMMENDATION                                                                                                          | Grade                                                             |
+|-------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
+| Section 1: CLASSIFICATION OF IGAV IN CLINICALLY SUSPECTED DISEASE | Section 1: CLASSIFICATION OF IGAV IN CLINICALLY SUSPECTED DISEASE                                                       | Section 1: CLASSIFICATION OF IGAV IN CLINICALLY SUSPECTED DISEASE |
+| 1.1                                                               | We recommend that professionals follow the EULAR/PRINTO/PRES 2010 classification criteria of IgAV ( [7] ; appendix 10). | 1B                                                                |
+
+## Rationale
+
+One highly relevant study was the development of the EULAR/PRINTO/PRES classification system [7] . This was a multicentre study to derive classification criteria for childhood vasculitides. This was the largest study included in this evidence-synthesis and involved 860 children with IgAV and demonstrated that the EULAR/PRINTO/PRES classification system had excellent sensitivity and specificity in distinguishing the condition from other forms of vasculitis [7] . A further 55 out of the 66 (83%) included studies in the evidence synthesis mentioned how they defined IgAV [15-32,12,33-36,8,37-59,13,60-66] . Of these 18 (18/55; 33%) used the ACR criteria [67] and 17 (17/55; 31%) used the EULAR/PRINTO/PRES classification criteria [7] . Of those that used the ACR criteria, 8 (8/18; 44%) were published before 2010 prior to the EULAR/PRINTO/PRES classification criteria were reported. The evidence included the article produced by the SHARE consortium that used a systematic review of the literature and professional consensus to derive European recommendations for clinical practice and they concluded that the EULAR/PRINTO/PRES classification  criteria  should  be  used [46] .  The  UK  IgAV  GDG  agreed  that  the  evidence supporting the development of the EULAR/PRINTO/PRES classification criteria was of high quality and further studies were unlikely to improve this topic area. Therefore, these criteria were used in the recommendation.
+
+## Audit measure
+
+- i. The  proportion  of  children  and  young  people  with  clinically  suspected  IgAV  who  have  been appropriately classified using the EULAR/PRINTO/PRES 2010 classification criteria (Appendix 10).
+
+<!-- image -->
+
+<!-- image -->
+
+| Number                                 | RECOMMENDATION                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Grade                                  |
+|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------|
+| Section 2: SPECIALIST REFERRAL IN IGAV | Section 2: SPECIALIST REFERRAL IN IGAV                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Section 2: SPECIALIST REFERRAL IN IGAV |
+| 2.1                                    | We recommend that specialist advice should be sought for children and young people with IgAV and the following clinical presentations (and symptoms or signs): • Severe GI involvement (definition: unremitting abdominal pain, protein losing enteropathy and/or GI bleeding; sub-specialist: paediatric gastroenterology/paediatric rheumatology) • Significant nephritis (definition: proteinuria UP: UC ratio of >250mg/mmol, nephrotic syndrome, nephritic syndrome and/or kidney insufficiency; sub- specialist: paediatric nephrology)) • Central nervous system (CNS) involvement (definition: cerebral vasculitis presenting as neurological symptoms and/or signs; sub-specialist: paediatric neurology/paediatric rheumatology) • Pulmonary haemorrhage (definition: pulmonary vasculitis presenting with acute bleeding from the respiratory tract; sub-specialist: paediatric respiratory/paediatric rheumatology). | 1C                                     |
+| 2.2                                    | We suggest that specialist advice should be sought for children and young people with IgAV and the following clinical presentations (and symptoms or signs): • Scrotaland/ or testicular involvement (definition: orchiditis; sub-specialist: paediatric surgeon/urology) • Severe skin manifestations (definition: intense subcutaneous oedema, blistering skin and/or necrotic features; sub-specialist: dermatology/paediatric rheumatology) • Severe, unremitting, musculoskeletal involvement (definition: arthropathy that requires hospital admission to assist with symptom management and no signs of improvement; sub-specialist: paediatric rheumatology)                                                                                                                                                                                                                                                             | 2D                                     |
+
+## Rationale
+
+There were 16 (16/66; 24%) studies that included the indications for hospital admission and/or the need for acute treatment, with the following indications; severe GI involvement (17 studies), severe nephropathy (10 studies), scrotal/testicular involvement (3 studies), skin manifestations (2 studies), musculoskeletal involvement  (2  studies),  central  nervous  system  involvement  (2  studies)  and  pulmonary  haemorrhage  (1 study). The definitions used within the literature for each of these clinical signs and symptoms varied and are detailed  in  Appendix  11  as  a  reference.  The  majority  of  the  literature,  consisting  of  mostly  observational studies,  relating  to  severe  GI  or  significant  nephritis  causing  acute  or  long-term  complications.  CNS involvement and pulmonary haemorrhage were agreed by the UK IgAV GDG to be so rare and so severe that missing  these  complications  could  be  detrimental  to  the  patient.  There  was  far  less  evidence  to  support
+
+<!-- image -->
+
+detrimental  outcomes  relating  to  testicular,  skin  and  musculoskeletal  involvement  however  it  was  felt important that these symptoms are mentioned as they sometimes require specialist input.
+
+## Audit measure
+
+- i. The proportion of children and young people with IgAV to receive specialist advice who have severe GI involvement, significant nephritis, CNS involvement and/or pulmonary haemorrhage.
+
+## Research recommendation
+
+- i. In children and young people with IgA vasculitis, what baseline demographic or clinical parameters predict an increased risk of complications?
+
+<!-- image -->
+
+| Number                                 | RECOMMENDATION                                                                                                                                                                                                                               | Grade                                  |
+|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------|
+| Section 3: NEPHRITIS SCREENING IN IGAV | Section 3: NEPHRITIS SCREENING IN IGAV                                                                                                                                                                                                       | Section 3: NEPHRITIS SCREENING IN IGAV |
+| 3.1                                    | We recommend that children and young people should have urinalysis testing performed frequently over a period of 6 months to detect a diagnosis of nephritis (for example weekly screening for the first 4-6 weeks then monthly thereafter). | 1B                                     |
+| 3.2                                    | We suggest that blood pressure assessment should be performed in children and young people with IgAV at diagnosis and if there is evidence of nephritis.                                                                                     | 2C                                     |
+
+## Rationale
+
+There were no studies directly comparing different clinical tests to aid in the detection of nephritis. A total of 28 out of the 66 (42%) included studies that utilised clinical tests to detect nephritis in an unselected cohort of patients. Of these studies, the following options were used to detect nephritis;
+
+- Urinalysis  alone  (16  studies);  quantified  proteinuria  and  haematuria  (4  studies);  urinalysis,  kidney function and 24 hour proteinuria (3 studies); urinalysis and blood pressure (2 studies); urinalysis and kidney function (1 study); urinalysis, kidney function, urine microscopy (1 study); and kidney function alone (1 study).
+
+Evidence  suggested  that  urinalysis  was  most  commonly  used  as  a  minimum  test  and  the  UK  IgAV  GDG supported this as a strong recommendation as it is suitable for all clinical environments. The GDG discussed the use of blood pressure measurements to assist in the detection of nephritis and noted that there were very few studies describing the use of blood pressure measurements for this purpose. Due to the importance of detecting nephritis and its impact on long term kidney outcomes, the group concluded that it was important to include a weak recommendation supporting BP measurement at baseline and in cases with nephritis and highlighted it as a research recommendation.
+
+## Audit measures
+
+- i. The proportion of children and young people with IgAV who receive urinalysis testing over a period of 6 months to monitor for nephritis.
+
+## Research recommendations
+
+- i. In children and young people with IgA vasculitis, what is the incidence of hypertension and what are the implications?
+
+<!-- image -->
+
+| Number                                         | RECOMMENDATION                                                                                                     | Grade                                          |
+|------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
+| Section 4: MUSCULOSKELETAL INVOLVEMENT IN IGAV | Section 4: MUSCULOSKELETAL INVOLVEMENT IN IGAV                                                                     | Section 4: MUSCULOSKELETAL INVOLVEMENT IN IGAV |
+| 4.1                                            | Werecommend appropriate analgesia and rest for musculoskeletal involvement in children and young people with IgAV. | 1C                                             |
+
+## Rationale
+
+There were 8 (8/66; 12% of all studies) studies that addressed musculoskeletal involvement in IgAV. Of the treatments suggested these included;
+
+- Analgesia (2 studies), symptomatic support, analgesia, hydration, bed rest (1 study), bed rest (1 study) and prednisolone (1 study that found it was not statistically significant at reducing the duration of musculoskeletal symptoms).
+
+The UK IgAV GDG agreed that there are very rarely consequences from musculoskeletal involvement. Given this finding and that there was one study reporting no benefit from the use of prednisolone, the use of simple analgesia  or  symptomatic  support  seemed  appropriate  as  a  recommendation.  This  also  aligned  with  the recommendations produced by the SHARE consortium.
+
+## Audit measure
+
+- i. The  proportion  of  children  and  young  people  with  IgAV  who  receive  analgesia  and  rest  for musculoskeletal involvement
+
+## audit measures
+
+The audit measures align with the strong recommendations (strength grade 1) suggested in this clinical practice guideline. A summary of the audit measures are as follows;
+
+- i. The  proportion  of  children  and  young  people  with  clinically  suspected  IgAV  who  have  been appropriately classified using the EULAR/PRINTO/PRES 2010 classification criteria (Appendix 10).
+- ii. The proportion of children and young people with IgAV to receive specialist advice who have severe GI involvement, significant nephritis, CNS involvement and/or pulmonary haemorrhage.
+- iii. The proportion of children and young people with IgAV who receive urinalysis testing over a period of 6 months to monitor for nephritis.
+- iv. The  proportion  of  children  and  young  people  with  IgAV  who  receive  analgesia  and  rest  for musculoskeletal involvement
+
+## Summary of research recommendations
+
+The research recommendations covered within this best practice guideline are summarised as follows;
+
+- i. In children and young people with IgA vasculitis, what baseline demographic or clinical parameters predict an increased risk of complications?
+- ii. In children and young people with IgA vasculitis, what are the rates of hypertension and what are the implications?
+
+<!-- image -->
+
+<!-- image -->
+
+The condition called immunoglobulin A vasculitis (known as IgAV) was previously called Henoch Sch ö nlein Purpura. It is a condition where the immune system becomes overactive after a normal childhood illness. It causes a purplish-red rash that is usually on the legs. It can also cause tummy aches, sore joints and kidney problems. The only way to find out about the kidney problems is to test the urine. About half of the children with IgAV will have inflamed kidneys when the urine is tested. The kidneys can get inflamed even after the rash has gone.  The condition is more common in primary school aged children, but it can come on at any age. In most children it lasts a few weeks and then it goes away forever. A few children will get long term problems that are usually due to the kidney problems. The aim of this work was to make a guide for how to look after children when they first get IgAV.
+
+This guideline has been made by a group of specialists in the UK and it includes parents with experience of IgAV. Other associations also helped.  They made a working group called the UK IgAV GDG. The group started by deciding on the most important questions for children with IgAV. They checked the medical studies reported over the past 20 years. Using the medical studies and group discussion, the group made recommendations. These are written below.  A poster is shown in Appendix 12 that shows how they did the work and a poster in Appendix 13 shows the recommendations.
+
+The best practice recommendations are;
+
+1. In children and  young  people  with  IgAV,  the  diagnosis  should  use set criteria (called the 'EULAR/PRINTO/PRES 2010 classification criteria'; Appendix 10).
+2. Children and young people with IgAV should have specialist advice if they have bad gut problems, bad kidney problems, brain involvement or bleeding in the lungs.
+3. In children and young people with IgAV, who have involvement of their testicles, bad skin problems and/or bad joint problems may need input from a specialist.
+4. In children and young people with IgAV, a urine test should be done for 6 months to check for kidney problems. This could be weekly checks at first then move to monthly checks.
+5. In children and young people with IgAV, blood pressure checks should be done at diagnosis and if the urine tests suggest the kidneys may be inflamed.
+6. In children and young people with IgAV who have sore or swollen joints should be given medicines for pain and rest.
+
+The research recommendations are;
+
+- i. In children and young people with IgA vasculitis, are there any ways to predict who may get complications?
+- ii. In children and young people with IgA vasculitis, how many children get high blood pressure and what does this mean?
+
+<!-- image -->
+
+This document has been externally reviewed by key stake holders and during an open consultation process according to the instructions described in the UKKA Clinical Practice Guidelines Development Policy Manual. We would like to acknowledge everyone who has supported this process.
+
+<!-- image -->
+
+1. Luqmani RA, Suppiah R, Grayson PC, Merkel PA, Watts R (2011) Nomenclature and classification of vasculitis - update on the ACR/EULAR diagnosis and classification of vasculitis study (DCVAS). Clin Exp Immunol 164 Suppl 1:11-13. doi:10.1111/j.1365-2249.2011.04358.x
+2. Health RCoPaC Setting standards for the development of clinical guidelines in paediatrics and child health. 5th edition
+3. Brouwers MC, Kho ME, Browman GP, Burgers JS, Cluzeau F, Feder G, Fervers B, Graham ID, Grimshaw J, Hanna SE, Littlejohns P, Makarski J, Zitzelsberger L, Consortium ANS (2010) AGREE II: advancing guideline development, reporting and evaluation in health care. CMAJ 182 (18):E839-842. doi:10.1503/cmaj.090449
+4. Higgins JPT TJ, Chandler J, Cumpston M, Li T, Page MJ, Welch VA (editors) (2021) Cochrane Handbook for Systematic Reviews of Interventions version 6.2 (updated February 2021). Cochrane
+5. UK Kidney Association (2021) Clinical Practice Guideline Development Manual. Accessed 1 st Oct 2021;
+6. https://ukkidney.org/sites/renal.org/files/UK%20Kidney%20Association%20Guideline%20Developm ent%20Manual%20October%202021.pdf
+6. OAP Ltd (2022) Critical Appraisal Skills Programme (CASP) Checklists. Accessed 1 st March 2022; https://casp-uk.net/casp-tools-checklists/
+7. Ozen S, Pistorio A, Iusan SM, Bakkaloglu A, Herlin T, Brik R, Buoncompagni A, Lazar C, Bilge I, Uziel Y, Rigante D, Cantarini L, Hilario MO, Silva CA, Alegria M, Norambuena X, Belot A, Berkun Y, Estrella AI, Olivieri AN, Alpigiani MG, Rumba I, Sztajnbok F, Tambic-Bukovac L, Breda L, Al-Mayouf S, Mihaylova D, Chasnyk V, Sengler C, Klein-Gitelman M, Djeddi D, Nuno L, Pruunsild C, Brunner J, Kondi A, Pagava K, Pederzoli S, Martini A, Ruperto N, Paediatric Rheumatology International Trials O (2010) EULAR/PRINTO/PRES criteria for Henoch-Schonlein purpura, childhood polyarteritis nodosa, childhood Wegener granulomatosis and childhood Takayasu arteritis: Ankara 2008. Part II: Final classification criteria. Ann Rheum Dis 69 (5):798-806. doi:10.1136/ard.2009.116657
+8. Kawasaki Y, Suyama K, Yugeta E, Katayose M, Suzuki S, Sakuma H, Nemoto K, Tsukagoshi A, Nagasawa K, Hosoya M (2010) The incidence and severity of Henoch-Schonlein purpura nephritis over a 22-year period in Fukushima Prefecture, Japan. Int Urol Nephrol 42 (4):1023-1029. doi:10.1007/s11255-009-9701-3
+9. Gardner-Medwin JM, Dolezalova P, Cummins C, Southwood TR (2002) Incidence of HenochSchonlein purpura, Kawasaki disease, and rare vasculitides in children of different ethnic origins. Lancet 360 (9341):1197-1202. doi:10.1016/S0140-6736(02)11279-7
+10. Hwang HH, Lim IS, Choi BS, Yi DY (2018) Analysis of seasonal tendencies in pediatric HenochSchonlein purpura and comparison with outbreak of infectious diseases. Medicine (Baltimore) 97 (36):e12217. doi:10.1097/MD.0000000000012217
+11. Nong BR, Huang YF, Chuang CM, Liu CC, Hsieh KS (2007) Fifteen-year experience of children with Henoch-Schonlein purpura in southern Taiwan, 1991-2005. J Microbiol Immunol Infect 40 (4):371376
+12. Jauhola O, Ronkainen J, Koskimies O, Ala-Houhala M, Arikoski P, Holtta T, Jahnukainen T, Rajantie J, Ormala T, Nuutinen M (2010) Clinical course of extrarenal symptoms in Henoch-Schonlein purpura: a 6-month prospective study. Arch Dis Child 95 (11):871-876. doi:10.1136/adc.2009.167874
+
+<!-- image -->
+
+13. Uehara E, Nagata C, Masuda H, Fujimori K, Kobayashi S, Kubota M, Ishiguro A (2018) Risk factors of long hospital stay for immunoglobulin A vasculitis: Single-center study. Pediatr Int 60 (10):918-922. doi:10.1111/ped.13685
+14. Huang X, Wu X, Le W, Hao Y, Wu J, Zeng C, Liu Z, Tang Z (2018) Renal Prognosis and Related Risk Factors for Henoch-Schonlein Purpura Nephritis: A Chinese Adult Patient Cohort. Sci Rep 8 (1):5585. doi:10.1038/s41598-018-23638-2
+15. Alfredo CS, Nunes NA, Len CA, Barbosa CM, Terreri MT, Hilario MO (2007) Henoch-Schonlein purpura: recurrence and chronicity. J Pediatr (Rio J) 83 (2):177-180. doi:10.2223/JPED.1595
+16. Altugan FS, Ozen S, Aktay-Ayaz N, Gucer S, Topaloglu R, Duzova A, Ozaltin F, Besbas N (2009) Treatment of severe Henoch-Schonlein nephritis: justifying more immunosuppression. Turk J Pediatr 51 (6):551-555
+17. Andersen RF, Rubak S, Jespersen B, Rittig S (2009) Early high-dose immunosuppression in HenochSchonlein nephrotic syndrome may improve outcome. Scand J Urol Nephrol 43 (5):409-415. doi:10.3109/00365590903164480
+18. Calvo-Rio V, Hernandez JL, Ortiz-Sanjuan F, Loricera J, Palmou-Fontana N, Gonzalez-Vela MC, Gonzalez-Lamuno D, Gonzalez-Lopez MA, Armesto S, Blanco R, Gonzalez-Gay MA (2016) Relapses in patients with Henoch-Schonlein purpura: Analysis of 417 patients from a single center. Medicine (Baltimore) 95 (28):e4217. doi:10.1097/MD.0000000000004217
+19. Chan H, Tang YL, Lv XH, Zhang GF, Wang M, Yang HP, Li Q (2016) Risk Factors Associated with Renal Involvement in Childhood Henoch-Schonlein Purpura: A Meta-Analysis. PLoS One 11 (11):e0167346. doi:10.1371/journal.pone.0167346
+20. Delbet JD, Hogan J, Aoun B, Stoica I, Salomon R, Decramer S, Brocheriou I, Deschenes G, Ulinski T (2017) Clinical outcomes in children with Henoch-Schonlein purpura nephritis without crescents. Pediatr Nephrol 32 (7):1193-1199. doi:10.1007/s00467-017-3604-9
+21. Delbet JD, Geslain G, Auger M, Hogan J, Salomon R, Peuchmaur M, Deschenes G, Buob D, Parmentier C, Ulinski T (2020) Histological prognostic factors in children with Henoch-Schonlein purpura nephritis. Pediatr Nephrol 35 (2):313-320. doi:10.1007/s00467-019-04363-y
+22. Demirkaya E, Ozen S, Pistorio A, Galasso R, Ravelli A, Hasija R, Baskin E, Dressler F, Fischbach M, Garcia Consuegra J, Iagaru N, Pasic S, Scarpato S, van Rossum MA, Apaz MT, Barash J, Calcagno G, Gonzalez B, Hoppenreijs E, Ioseliani M, Mazur-Zielinska H, Vougiouka O, Wulffraat N, Luqmani R, Martini A, Ruperto N, Dolezalova P, Paediatric Rheumatology International Trials O (2012) Performance of Birmingham Vasculitis Activity Score and disease extent index in childhood vasculitides. Clin Exp Rheumatol 30 (1 Suppl 70):S162-168
+23. Dolezalova P, Telekesova P, Nemcova D, Hoza J (2004) Incidence of vasculitis in children in the Czech Republic: 2-year prospective epidemiology survey. J Rheumatol 31 (11):2295-2299
+24. Dudley J, Smith G, Llewelyn-Edwards A, Bayliss K, Pike K, Tizard J (2013) Randomised, double-blind, placebo-controlled trial to determine whether steroids reduce the incidence and severity of nephropathy in Henoch-Schonlein Purpura (HSP). Arch Dis Child 98 (10):756-763. doi:10.1136/archdischild-2013-303642
+25. Ekinci RMK, Balci S, Sari Gokay S, Yilmaz HL, Dogruel D, Altintas DU, Yilmaz M (2019) Do practical laboratory indices predict the outcomes of children with Henoch-Schonlein purpura? Postgrad Med 131 (4):295-298. doi:10.1080/00325481.2019.1609814
+
+<!-- image -->
+
+26. Ekinci RMK, Balci S, Melek E, Karabay Bayazit A, Dogruel D, Altintas DU, Yilmaz M (2020) Clinical manifestations and outcomes of 420 children with Henoch Schonlein Purpura from a single referral center from Turkey: A three-year experience. Mod Rheumatol 30 (6):1039-1046. doi:10.1080/14397595.2019.1687074
+27. Fretzayas A, Sionti I, Moustaki M, Papadimitriou A, Nicolaidou P (2008) Henoch-Schonlein purpura: a long-term prospective study in Greek children. J Clin Rheumatol 14 (6):324-331. doi:10.1097/RHU.0b013e31817a240a
+28. Garcia-Porrua C, Calvino MC, Llorca J, Couselo JM, Gonzalez-Gay MA (2002) Henoch-Schonlein purpura in children and adults: clinical differences in a defined population. Semin Arthritis Rheum 32 (3):149-156. doi:10.1053/sarh.2002.33980
+29. Gokce S, Kurugol Z, Koturoglu G, Aslan A (2020) Predictive role of laboratory markers and clinical features for recurrent Henoch-Schonlein Purpura in childhood: A study from Turkey. Mod Rheumatol 30 (6):1047-1052. doi:10.1080/14397595.2019.1690966
+30. Gomez S, Perez M, Pellegrini M, Isern E, Quintana C, Artacho P, Bertolini M, Pomerantz B, Gadda N (2020) Henoch-Schonlein purpura in pediatrics: Ten years of experience at a moderate risk office of a general hospital. Arch Argent Pediatr 118 (1):31-37. doi:10.5546/aap.2020.eng.31
+31. Huber AM, King J, McLaine P, Klassen T, Pothos M (2004) A randomized, placebo-controlled trial of prednisone in early Henoch Schonlein Purpura [ISRCTN85109383]. BMC medicine 2:7. doi:10.1186/1741-7015-2-7
+32. Hung SP, Yang YH, Lin YT, Wang LC, Lee JH, Chiang BL (2009) Clinical manifestations and outcomes of Henoch-Schonlein purpura: comparison between adults and children. Pediatr Neonatol 50 (4):162168. doi:10.1016/S1875-9572(09)60056-5
+33. Jauhola O, Ronkainen J, Koskimies O, Ala-Houhala M, Arikoski P, Holtta T, Jahnukainen T, Rajantie J, Ormala T, Turtinen J, Nuutinen M (2010) Renal manifestations of Henoch-Schonlein purpura in a 6month prospective study of 223 children. Arch Dis Child 95 (11):877-882. doi:10.1136/adc.2009.182394
+34. Karadag SG, Tanatar A, Sonmez HE, Cakmak F, Kiyak A, Yavuz S, Cakan M, Ayaz NA (2019) The clinical spectrum of Henoch-Schonlein purpura in children: a single-center study. Clin Rheumatol 38 (6):1707-1714. doi:10.1007/s10067-019-04460-1
+35. Kawasaki Y, Suzuki J, Suzuki H (2004) Efficacy of methylprednisolone and urokinase pulse therapy combined with or without cyclophosphamide in severe Henoch-Schoenlein nephritis: a clinical and histopathological study. Nephrol Dial Transplant 19 (4):858-864. doi:10.1093/ndt/gfg617
+36. Kawasaki Y, Suzuki J, Nozawa R, Suzuki S, Suzuki H (2003) Efficacy of methylprednisolone and urokinase pulse therapy for severe Henoch-Schonlein nephritis. Pediatrics 111 (4 Pt 1):785-789. doi:10.1542/peds.111.4.785
+37. Lee YH, Kim YB, Koo JW, Chung JY (2016) Henoch-Schonlein Purpura in Children Hospitalized at a Tertiary Hospital during 2004-2015 in Korea: Epidemiology and Clinical Management. Pediatr Gastroenterol Hepatol Nutr 19 (3):175-185. doi:10.5223/pghn.2016.19.3.175
+38. Lee KH, Hong SH, Jun J, Jo Y, Jo W, Choi D, Joo J, Jung G, Ahn S, Kronbichler A, Eisenhut M, Shin JI (2020) Treatment of refractory IgA vasculitis with dapsone: a systematic review. Clin Exp Pediatr 63 (5):158-163. doi:10.3345/kjp.2019.00514
+
+<!-- image -->
+
+39. Lei WT, Tsai PL, Chu SH, Kao YH, Lin CY, Fang LC, Shyur SD, Lin YW, Wu SI (2018) Incidence and risk factors for recurrent Henoch-Schonlein purpura in children from a 16-year nationwide database. Pediatr Rheumatol Online J 16 (1):25. doi:10.1186/s12969-018-0247-8
+40. Li X, Tang M, Yao X, Zhang N, Fan J, Zhou N, Sun Q, Chen Z, Meng Q, Lei L, Zhang H, Ling C, Hua L, Chen X, Liu X (2019) A clinicopathological comparison between IgA nephropathy and HenochSchonlein purpura nephritis in children: use of the Oxford classification. Clin Exp Nephrol 23 (12):1382-1390. doi:10.1007/s10157-019-01777-8
+41. Liao CH, Tsai M, Yang YH, Chiang BL, Wang LC (2020) Onset age is a risk factor for refractory pediatric IgA vasculitis: a retrospective cohort study. Pediatr Rheumatol Online J 18 (1):86. doi:10.1186/s12969-020-00480-3
+42. Ma DQ, Li Y, Han ZG, Zheng M, Xu N, Fan XJ (2017) Analysis on kidney injury-related clinical risk factors and evaluation on the therapeutic effects of hemoperfusion in children with HenochSchonlein purpura. Eur Rev Med Pharmacol Sci 21 (17):3894-3899
+43. Mao S, Xuan X, Sha Y, Zhao S, Zhu C, Zhang A, Huang S (2015) Clinico-pathological association of Henoch-Schoenlein purpura nephritis and IgA nephropathy in children. International journal of clinical and experimental pathology 8 (3):2334-2342
+44. Narchi H (2005) Risk of long term renal impairment and duration of follow up recommended for Henoch-Schonlein purpura with normal or minimal urinary findings: a systematic review. Arch Dis Child 90 (9):916-920. doi:10.1136/adc.2005.074641
+45. Ozdemir ZC, Cetin N, Kar YD, Ocal HO, Bilgin M, Bor O (2020) Hemotologic Indices for Predicting Internal Organ Involvement in Henoch-Schonlein Purpura (IgA vasculitis). J Pediatr Hematol Oncol 42 (1):e46-e49. doi:10.1097/MPH.0000000000001571
+46. Ozen S, Marks SD, Brogan P, Groot N, de Graeff N, Avcin T, Bader-Meunier B, Dolezalova P, Feldman BM, Kone-Paut I, Lahdenne P, McCann L, Pilkington C, Ravelli A, van Royen A, Uziel Y, Vastert B, Wulffraat N, Kamphuis S, Beresford MW (2019) European consensus-based recommendations for diagnosis and treatment of immunoglobulin A vasculitis-the SHARE initiative. Rheumatology (Oxford) 58 (9):1607-1616. doi:10.1093/rheumatology/kez041
+47. Prais D, Amir J, Nussinovitch M (2007) Recurrent Henoch-Schonlein purpura in children. J Clin Rheumatol 13 (1):25-28. doi:10.1097/01.rhu.0000255692.46165.19
+48. Rhim JW, Lee YT, Kang HM, Suh JS, Lee KY (2019) Changes in clinical features in Henoch-Schonlein purpura during three decades: an observational study at a single hospital in Korea. Clin Rheumatol 38 (10):2811-2818. doi:10.1007/s10067-019-04628-9
+49. Rigante D, Candelli M, Federico G, Bartolozzi F, Porri MG, Stabile A (2005) Predictive factors of renal involvement or relapsing disease in children with Henoch-Schonlein purpura. Rheumatol Int 25 (1):45-48. doi:10.1007/s00296-004-0452-2
+50. Ronkainen J, Autio-Harmainen H, Nuutinen M (2003) Cyclosporin A for the treatment of severe Henoch-Schonlein glomerulonephritis. Pediatr Nephrol 18 (11):1138-1142. doi:10.1007/s00467-0031245-7
+51. Ronkainen J, Koskimies O, Ala-Houhala M, Antikainen M, Merenmies J, Rajantie J, Ormala T, Turtinen J, Nuutinen M (2006) Early prednisone therapy in Henoch-Schonlein purpura: a randomized, doubleblind, placebo-controlled trial. J Pediatr 149 (2):241-247. doi:10.1016/j.jpeds.2006.03.024
+
+<!-- image -->
+
+52. Shenoy M, Ognjanovic MV, Coulthard MG (2007) Treating severe Henoch-Schonlein and IgA nephritis with plasmapheresis alone. Pediatr Nephrol 22 (8):1167-1171. doi:10.1007/s00467-007-0498-y
+53. Shi D, Chan H, Yang X, Zhang G, Yang H, Wang M, Li Q (2019) Risk factors associated with IgA vasculitis with nephritis (Henoch-Schonlein purpura nephritis) progressing to unfavorable outcomes: A meta-analysis. PLoS One 14 (10):e0223218. doi:10.1371/journal.pone.0223218
+54. Shin JI, Park JM, Shin YH, Hwang DH, Kim JH, Lee JS (2006) Predictive factors for nephritis, relapse, and significant proteinuria in childhood Henoch-Schonlein purpura. Scand J Rheumatol 35 (1):56-60. doi:10.1080/03009740510026841
+55. Shin JI, Lee SJ, Lee JS, Kim KH (2011) Intravenous dexamethasone followed by oral prednisolone versus oral prednisolone in the treatment of childhood Henoch-Schonlein purpura. Rheumatol Int 31 (11):1429-1432. doi:10.1007/s00296-010-1507-1
+56. Tarshish P , Bernstein J, Edelmann CM, Jr. (2004) Henoch-Schonlein purpura nephritis: course of disease and efficacy of cyclophosphamide. Pediatr Nephrol 19 (1):51-56. doi:10.1007/s00467-0031315-x
+57. Teng MC, Wang LC, Yu HH, Lee JH, Yang YH, Chiang BL (2012) Kawasaki disease and HenochSchonlein purpura - 10 years' experience of childhood vasculitis at a university hospital in Taiwan. J Microbiol Immunol Infect 45 (1):22-30. doi:10.1016/j.jmii.2011.09.024
+58. Tian M, Liu C (2015) Heparin calcium treated Henoch-Schonlein purpura nephritis in children through inhibiting hyperfibrinolysis. Ren Fail 37 (7):1100-1104. doi:10.3109/0886022X.2015.1061668
+59. Trapani S, Micheli A, Grisolia F, Resti M, Chiappini E, Falcini F, De Martino M (2005) Henoch Schonlein purpura in childhood: epidemiological and clinical analysis of 150 cases over a 5-year period and review of literature. Semin Arthritis Rheum 35 (3):143-153. doi:10.1016/j.semarthrit.2005.08.007
+60. Watson L, Richardson AR, Holt RC, Jones CA, Beresford MW (2012) Henoch schonlein purpura--a 5year review and proposed pathway. PLoS One 7 (1):e29512. doi:10.1371/journal.pone.0029512
+61. Weiss PF, Feinstein JA, Luan X, Burnham JM, Feudtner C (2007) Effects of corticosteroid on HenochSchonlein purpura: a systematic review. Pediatrics 120 (5):1079-1087. doi:10.1542/peds.2007-0667
+62. Wu SH, Liao PY, Chen XQ, Yin PL, Dong L (2014) Add-on therapy with montelukast in the treatment of Henoch-Schonlein purpura. Pediatr Int 56 (3):315-322. doi:10.1111/ped.12271
+63. Xia Y, Mao J, Chen Y, Wang D, Cao L, Yao S, Fu H, Du L, Liu A (2011) Clinical outcomes in children with Henoch-Schonlein purpura nephritis grade IIIa or IIIb. Pediatr Nephrol 26 (7):1083-1088. doi:10.1007/s00467-011-1834-9
+64. YIlmaz A, Aytac MB, Ekinci Z (2014) Retrospective Assessment of Children with Henoch-Schonlein Purpura in and around Kocaeli Province and Comparison with Literature. Erciyes Tip Dergisi 36 (2):62-67
+65. Zhang DF, Hao GX, Li CZ, Yang YJ, Liu FJ, Liu L, Yuan XY, Li RH, Dong L, Dong Q, Jacqz-Aigrain E, Zhao W (2018) Off-label use of tacrolimus in children with Henoch-Schonlein purpura nephritis: a pilot study. Arch Dis Child 103 (8):772-775. doi:10.1136/archdischild-2017-313788
+66. Zhao Q, Yang Y, He SW, Wang XT, Liu C (2021) Risk factors for intussusception in children with Henoch-Schonlein purpura: A case-control study. World J Clin Cases 9 (22):6244-6253. doi:10.12998/wjcc.v9.i22.6244
+
+<!-- image -->
+
+67. Mills JA, Michel BA, Bloch DA, Calabrese LH, Hunder GG, Arend WP, Edworthy SM, Fauci AS, Leavitt RY, Lie JT, et al. (1990) The American College of Rheumatology 1990 criteria for the classification of Henoch-Schonlein purpura. Arthritis Rheum 33 (8):1114-1121. doi:10.1002/art.1780330809
+68. Weiss PF, Klink AJ, Localio R, Hall M, Hexem K, Burnham JM, Keren R, Feudtner C (2010) Corticosteroids may improve clinical outcomes during hospitalization for Henoch-Schonlein purpura. Pediatrics 126 (4):674-681. doi:10.1542/peds.2009-3348
+
+## Appendix
+
+## Appendix 1: Lead organisations
+
+| Name                                                  |
+|-------------------------------------------------------|
+| British Association of Paediatric Nephrology (BAPN)   |
+| UK Kidney Association (UKKA)                          |
+| Royal College of Paediatrics and Child Health (RCPCH) |
+
+## Appendix 2: Stakeholders
+
+| Name                                                                                 |
+|--------------------------------------------------------------------------------------|
+| British society of Paediatric gastroenterology, hepatology and nutrition (BSPGHAN)   |
+| British Society of Rheumatology (BSR)                                                |
+| Association of Paediatric Emergency Medicine APEM                                    |
+| Royal College of Emergency Medicine RCEM                                             |
+| Paediatric Emergency Medicine research collaborative for the UK and Ireland (PERUKI) |
+| British Society of Paediatric radiology BSPR                                         |
+| Vasculitis UK                                                                        |
+
+## Appendix 3: PICO domains
+
+| Population                                                                    | Intervention                                                               | Comparison                                                  | Outcome                                                           |
+|-------------------------------------------------------------------------------|----------------------------------------------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------------|
+| Children and young people (aged <18 years) with a confirmed diagnosis of IgAV | Classification tools Clinical signs and symptoms Kidney tests Therapeutics | Any intervention compared with any other or no intervention | Diagnosis Complications Duration of symptoms Severity of symptoms |
+
+## Appendix 4: Search concepts
+
+| Search number   | Search terms   |
+|-----------------|----------------|
+
+<!-- image -->
+
+<!-- image -->
+
+|   1 | pediatric                   |
+|-----|-----------------------------|
+|   2 | paediatric                  |
+|   3 | child*                      |
+|   4 | Adolescen*                  |
+|   5 | 1 OR 2 OR 3 OR 4            |
+|   6 | immunoglobulin A vasculitis |
+|   7 | IgA vasculitis              |
+|   8 | IgAV                        |
+|   9 | Henoch sch ö nlein purpura  |
+|  10 | HSP                         |
+
+| Criteria                     | Inclusion                                                                                                                                                        | Exclusion                                                                                                                                                                                                                                                               |
+|------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Publication date             | Papers published between 2002 to 2022                                                                                                                            | Papers published prior to 2002                                                                                                                                                                                                                                          |
+| Research type                | Primary research                                                                                                                                                 | Secondary research                                                                                                                                                                                                                                                      |
+| Study type                   | Meta-analysis Systematic reviews Randomised controlled trials (RCT) If no RCT available to consider; Cohort studies Case series >5 patients Case control studies | Case reports Editorials Comments Annotations Letters Commentaries Books and book chapters Updated systematic reviews by same methodology eg Cochrane (most recent version will be included) Non-traditional therapies (eg: Chinese medicines) and surgical intervention |
+| Publication and study status | Published Completed                                                                                                                                              | Unpublished Ongoing                                                                                                                                                                                                                                                     |
+
+UK Kidney Association Clinical Practice Guidelines for the Initial Management of IgA vasculitis (Henoch Sch ö nlein Purpura) in children and young people.                                                                                                                                                                                                         30
+
+<!-- image -->
+
+| Language          | English             | Non-English           |
+|-------------------|---------------------|-----------------------|
+| Text availability | Full text available | Full text unavailable |
+
+## Appendix 6: Bibliographic databases
+
+| Bibliographic databases                                  | Access uniform resource locator (URL)   |
+|----------------------------------------------------------|-----------------------------------------|
+| MEDLINE                                                  | https://www.nlm.nih.gov/medline         |
+| EMBASE                                                   | https://www.embase.com                  |
+| Cochrane central register of controlled trials (CENTRAL) | https://www.cochranelibrary.com/central |
+
+## Appendix 7: Topic s and key questions areas
+
+| Topic area                                | Key questions                                                                                                                                                                                                        |
+|-------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Classification of IgAV                    | How do professionals classify IgAV in children and young people?                                                                                                                                                     |
+| Outcome of initial assessment in IgAV     | What are the clinical indicators in children and young people presenting with IgAV that should prompt consideration of referral or discussion with a specialist?                                                     |
+| Nephritis screening in IgAV               | In children and young people with IgAV, what are the best tests to indicate the presence of nephritis?                                                                                                               |
+| Treatment of initial presentation of IgAV | In children and young people with IgAV, what are the indicators for treating musculoskeletal involvement? In children and young people with IgAV, what are the indicators for treating gastrointestinal involvement? |
+
+## Appendix 8: Key questions formatted for systematic review
+
+- 1) In children and young people with IgAV under the age of 18 years, do classification tools allow professionals to classify IgAV to support diagnosis?
+
+<!-- image -->
+
+- 2) In children and young people with IgAV under the age of 18 years, are there clinical signs and symptoms that indicate complications that require a referral to a specialist?
+- 3) In children and young people with IgAV under the age of 18 years, what are the best clinical tests to detect a diagnosis of nephritis?
+- 4) In children and young people with IgAV under the age of 18 years, what clinical signs and symptoms would indicate a need for intervention for musculoskeletal involvement that would reduce the duration and/or severity of symptoms?
+- 5) In children and young people with IgAV under the age of 18 years, what clinical signs and symptoms would indicate a need for intervention for gastrointestinal involvement that would reduce the duration and/or severity of symptoms?
+
+## Appendix 9: PRISMA diagram of selected studies
+
+<!-- image -->
+
+## Appendix 10: The EULAR/PRINTO/PRES 2Ol0 Classification criteria
+
+| Criterion                                      | Glossary                                                                                                                                                                                                                                         | Sensitivity, specificity (%)   |   Area under the curve (%) |
+|------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|----------------------------|
+| Purpura (mandatory)                            | Purpura (commonly palpable and in crops) or petechiae, with lower limb predominance (not related to thrombocytopenia).                                                                                                                           | 89, 86                         |                       87.5 |
+| 1. Abdominal pain                              | Diffuse abdominal colicky pain with acute onset assessed by history and physical examination. May include intussusception and gastrointestinal bleeding.                                                                                         | 61, 64                         |                       62.5 |
+| 2. Histopathology                              | Typically leucocytoclastic vasculitis with predominant IgA deposit or proliferative glomerulonephritis with predominant IgA deposit.                                                                                                             | 93, 89                         |                       91.1 |
+| 3. Arthritis or arthralgias                    | Arthritis of acute onset defined as joint swelling or joint pain with limitation on motion. Arthralgia of acute onset defined as joint pain without joint swelling or limitation on motion.                                                      | 78, 42                         |                       59.9 |
+| 4. Renal involvement                           | Proteinuria >0.3 g/24 hr or >30 mmmol/mg of urine albumin/creatinine ratio on a spot morning sample. Haematuria or red blood cell casts: >5 red blood cells/high power field or red blood cells cases in the urinary sediment or ≥2+ on dipstick | 33, 70                         |                       51.4 |
+| HSPEULAR/PRINTO/PRES classification definition | Purpura or petechiae (mandatory) with lower limb predominance and at least one of the four above criteria.                                                                                                                                       | 100, 87                        |                       93.5 |
+
+## Appendix ll: Definitions of severe clinical signs and symptoms
+
+| Clinical parameter    | Definitions used with the included literature                                                                                                                     |
+|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Severe GI involvement | Severe abdominal pain and/or GI bleeding                                                                                                                          |
+| Severe GI involvement | Severe colicky abdominal pain, bowel oedema in ultrasonography or overt GI bleeding                                                                               |
+| Severe GI involvement | Gross gastrointestinal bleeding                                                                                                                                   |
+| Severe GI involvement | Bowel angina abdominal pain, worse after meals or bowel ischemia including bloody diarrhoea, GI bleeding, melaena, hematochezia or positive occult blood in stool |
+
+<!-- image -->
+
+<!-- image -->
+
+| Bowel angina (diffuse abdominal pain), GI bleeding (melena, hematochezia, or positive stool test), nausea and vomiting                                                                                                                                                                                                                                                                 |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Bowel angina (diffuse abdominal pain), GI bleeding (melena, hematochezia, or positive stool test), nausea and vomiting                                                                                                                                                                                                                                                                 |
+| Severe protein-losing enteropathy in the form of abdominal pain, oedema and low serum albumin                                                                                                                                                                                                                                                                                          |
+| GIS bleeding and/or intussusception                                                                                                                                                                                                                                                                                                                                                    |
+| Abdominal pain: requiring radiological examination to exclude intussusception or appendicitis, confirmation of intussusception, complications requiring surgical or endoscopic intervention, gross hematochezia                                                                                                                                                                        |
+| Abdominal pain, vomiting, or GIS bleeding. GI bleeding was defined as hematochezia, melena, or hematemesis and/ or the presence of occult blood in stool                                                                                                                                                                                                                               |
+| Severe abdominal pain and/or rectal bleeding if intussusception had been excluded                                                                                                                                                                                                                                                                                                      |
+| Severe bowel angina meaning the child couldn't tolerate meals                                                                                                                                                                                                                                                                                                                          |
+| Poor oral intake due to GI symptoms                                                                                                                                                                                                                                                                                                                                                    |
+| GIS involvement was defined as stomach ache and/or FOB positivity and presence of melena, hematemesis, hematochezia, or invagination                                                                                                                                                                                                                                                   |
+| Acute diffuse abdominal pain, intussusception, and GI bleeding                                                                                                                                                                                                                                                                                                                         |
+| Nephrotic syndrome (defined as plasma albumin level 25g/L and either 1g of proteinuria/d perm 2 of body surface area in children or >3.5g of proteinuria/d in adults, with or without the presence of oedema) or acute nephritic syndrome (defined as hematuria with at least 2 of the following features hypertension, elevated plasma urea or creatinine serum levels, and oliguria) |
+| Severe kidney dysfunction as hematuria along with considerable proteinuria (>1 g/m 2 /d) and/or increased urea and creatinine with an abnormal kidney biopsy findings                                                                                                                                                                                                                  |
+| Nephrotic syndrome with proteinuria >40mg/m 2 body surface/hour or >50mg/kg/day or >2g/day proteinuria with albumin <25g/L and/or acute nephritic syndrome (hypertension, raised urea or creatinine or oliguria)                                                                                                                                                                       |
+| Nephrotic syndrome (plasma albumin <25g/L and 1g/day/m 2 proteinuria with or without oedema) or acute nephritic syndrome (haematuria with at least 2 of; hypertension, elevated plasma urea/creatinine, oliguria                                                                                                                                                                       |
+| Any of the following findings: (1) hematuria (> 5 red blood cells/high power field), (2) red blood cell casts in urinary sediment, (3) proteinuria > 4 mg/m2/h urine protein, (4) hypertension (systolic and/or diastolic blood pressures ≥ 95th percentile for gender, age, and height on ≥ 3 occasions), (5) nephrotic proteinuria (> 40 mg/m2/h), and (6) kidney insufficiency      |
+| Kidney involvement was defined as: 1) hematuria-5 red blood cells at high power light microscopy; 2) proteinuria-urine protein:creatinine (UP/UCr) ＞ 0.5 in children under 2 years of age, UP/UCr ＞ 0.2 in children over 2 years of age; 3) simultaneously meeting the criteria for 1) and 2); and 4) proteinuria over 40 mg/m 2                                                     |
+| Kidney involvement was defined as hematuria (>5 red blood cells per high-power microscopic field) and/or proteinuria (protein concentration in spot urine ≥30mg/dL or spot urine protein/creatinine ratio >0.5 in children <2 years of age and > 0.2 in children ≥ 2 years of age).                                                                                                    |
+| A urine protein/creatinine ratio >2 was defined as nephrotic-range proteinuria                                                                                                                                                                                                                                                                                                         |
+
+<!-- image -->
+
+|                                    | Kidney involvement was defined as microscopic (presence of ≥5 erythrocytes in the centrifuged urine at 40x) or macroscopic hematuria and/or proteinuria (presence of protein >4 mg/m 2 /hour or protein/creatinine >0.2 in 24-h urine) and/or impairment in kidney function                                           |
+|------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Scrotal/testicular involvement     | Scrotum swelling with incidental hemorrhage of the testicles                                                                                                                                                                                                                                                          |
+| Scrotal/testicular involvement     | Orchiditis                                                                                                                                                                                                                                                                                                            |
+| Scrotal/testicular involvement     | Testicular sensitivity or scrotal oedema                                                                                                                                                                                                                                                                              |
+| Skin manifestations                | Persisting skin lesions                                                                                                                                                                                                                                                                                               |
+| Skin manifestations                | Intense subcutaneous oedema                                                                                                                                                                                                                                                                                           |
+| Musculoskeletal involvement        | No specific definitions for severe involvement. Definitions used were arthritis and/or arthralgia (2 studies), IgAV associated arthropathy, well defined arthralgia or synovitis, joint swelling and/or limitation of movement, severe or worsening arthralgia, joint swelling and/or functional limitation of joint. |
+| Central nervous system involvement | Convulsion and infarction on MRI was considered as central nervous system (CNS) involvement                                                                                                                                                                                                                           |
+| Central nervous system involvement | The finding of cerebral vasculitis                                                                                                                                                                                                                                                                                    |
+| Pulmonary haemorrhage              | No specific definitions                                                                                                                                                                                                                                                                                               |
+
+## Appendix 12: Summary information poster: outline of methodology
+
+<!-- image -->
+
+Appendix 13: Summary information poster: recommendations
+
+## Best ways to initially look after children and young people with IgAV (HSP)...
+
+<!-- image -->
+
+<!-- image -->

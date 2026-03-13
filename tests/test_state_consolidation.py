@@ -65,10 +65,10 @@ class TestStateConsolidation:
         # Call node with dict state - should not require GraphState
         result = nodes.pii_check(test_state)
 
-        # Verify result is dict, not GraphState
-        assert isinstance(result, dict), "Node should return dict state"
-        assert "original_query" in result
+        # Verify result is a partial update dict (LangGraph best practice)
+        assert isinstance(result, dict), "Node should return dict"
         assert "processing_steps" in result
+        assert "anonymized_query" in result
 
     def test_all_nodes_accept_dict(self):
         """Verify all node methods accept and return dict state."""

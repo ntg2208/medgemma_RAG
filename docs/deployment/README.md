@@ -8,25 +8,24 @@ Documentation for deploying the MedGemma RAG system to various platforms.
 
 **Best for**: Local development with remote GPU inference
 
-**Cost**: ~$15-21/month (2 hours/day, 15 days/month)
+**Cost**: ~$10/month (30 hours spot + S3 model cache)
 
 **What you get**:
 - Code locally on MacBook, inference on EC2
 - vLLM (MedGemma 1.5 4B) + TEI (EmbeddingGemma)
-- Models persist on EBS (~2-3 min startup after stop/start)
+- Models cached in S3 (~30-60 sec sync on startup)
 - Docling OCR for PDF processing
 
 **Quick Start**:
 ```bash
-# Deploy with Terraform
+# Deploy infrastructure with Terraform (one-time)
 cd infrastructure/terraform
 terraform init && terraform apply
 
-# Start and connect
-./scripts/ec2-start.sh
-./scripts/ec2-status.sh  # Get new IP
-ssh -i ~/.ssh/medgemma-key.pem ubuntu@<ip>
-./scripts/start-model-server.sh
+# Launch spot instance and connect
+./scripts/start.sh
+ssh medgemma-gpu
+bash scripts/startup.sh --start
 
 # Use locally
 export USE_REMOTE_MODELS=true
@@ -37,19 +36,13 @@ See the [full guide](./remote-model-server.md) for detailed instructions.
 
 ---
 
-### [AWS GPU Spot Instance Setup (g5.xlarge)](./aws-gpu-spot-setup.md)
+### [EC2 GPU Workflow](./ec2-workflow.md)
 
-**Best for**: Running everything on EC2 (no local development)
+**Best for**: Understanding the full Terraform + scripts workflow
 
-**Cost**: ~$25-35/month (4 hours/day, 20 days/month)
+Explains how Terraform manages persistent infrastructure (S3, IAM, SG) while shell scripts handle ephemeral instances.
 
-**What you get**:
-- NVIDIA A10G GPU (24GB VRAM)
-- 4 vCPUs, 16GB RAM
-- 75GB persistent EBS storage
-- 70% cost savings with spot instances
-
-See the [full guide](./aws-g4-spot-setup.md) for detailed instructions.
+See the [full guide](./ec2-workflow.md) for detailed instructions.
 
 ---
 
@@ -58,26 +51,12 @@ See the [full guide](./aws-g4-spot-setup.md) for detailed instructions.
 | Use Case | Recommended Platform | Estimated Cost |
 |----------|---------------------|----------------|
 | Local dev + remote GPU | Remote Model Server | ~$15-21/month |
-| Full EC2 development | AWS GPU Spot (g5.xlarge) | ~$25-35/month |
-| Production (low traffic) | AWS GPU On-demand (g5.xlarge) + Load Balancer | ~$400/month |
-| Production (high traffic) | AWS SageMaker Endpoint | ~$600+/month |
 | Local-only development | Your GPU machine | Free |
-| Demo video recording | AWS GPU Spot (g5.xlarge) (temporary) | ~$2-5 total |
+| Demo video recording | AWS GPU Spot (temporary) | ~$2-5 total |
 
 ---
 
-## Coming Soon
+## Other Guides
 
-- Docker deployment guide
-- AWS SageMaker deployment
-- Google Cloud GPU setup
-- Local GPU optimization guide
-
----
-
-## Support
-
-For issues or questions:
-1. Check the [troubleshooting section](./remote-model-server.md#troubleshooting) in the guide
-2. Open an issue on GitHub
-3. Refer to AWS documentation
+- [S3 Model Cache Setup](./s3-model-cache-setup.md) — One-time setup for fast model syncing
+- [GPU Spot Strategy](./gpu-spot-strategy.md) — Multi-region, multi-instance type strategy

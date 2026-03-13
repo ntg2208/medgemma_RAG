@@ -51,7 +51,7 @@ def response(system_prompt, prompt, history=None, stream_output=False):
         model="google/medgemma-1.5-4b-it",
         messages=messages,
         stream=True,
-        max_tokens=64000,
+        max_tokens=32000,  # Sufficient for titles and summaries
         temperature=0.7,
     )
 
@@ -128,6 +128,9 @@ def clean_content(content):
     # Remove image placeholders
     text = text.replace("<!-- image -->", "")
 
+    # Remove dash bullet markers at start of lines
+    text = re.sub(r'^\s*-\s+', '', text, flags=re.MULTILINE)
+
     # Remove repetitive dots (3 or more consecutive dots)
     text = re.sub(r'\.{3,}', '', text)
 
@@ -145,105 +148,20 @@ def clean_content(content):
 
     return text
 
-def fix_typos_with_llm(content, system_prompt):
-    """Use LLM to fix OCR typos while preserving medical terminology.
-
-    For large documents (>32k chars), chunks into 20k segments for processing.
-    """
-    CHUNK_SIZE = 20000
-    MAX_SIZE = 32000
-
-    # If content is small enough, process in one go
-    if len(content) <= MAX_SIZE:
-        prompt = f"""Please review the following medical document and fix OCR errors:
-1. Add spaces between words that are incorrectly joined (e.g., "kidneydisease" → "kidney disease")
-2. Fix obvious typos and misspellings
-3. IMPORTANT: Preserve all medical terminology exactly as intended
-4. Keep the original markdown formatting
-5. Do NOT add explanations or comments
-
-Document:
-{content}
-
-Return ONLY the corrected text."""
-
-        return response(system_prompt, prompt)
-
-    # For large documents, chunk and process
-    print(f"   Document is {len(content)} chars, chunking into {CHUNK_SIZE} char segments...")
-
-    chunks = []
-    start = 0
-    chunk_num = 0
-
-    while start < len(content):
-        end = start + CHUNK_SIZE
-
-        # Try to break at a paragraph boundary
-        if end < len(content):
-            # Look for the last paragraph break within the chunk
-            paragraph_break = content.rfind('\n\n', start, end)
-            if paragraph_break > start:
-                end = paragraph_break + 2  # Include the newlines
-
-        chunk = content[start:end]
-        chunks.append((chunk_num, chunk))
-        chunk_num += 1
-        start = end
-
-    print(f"   Split into {len(chunks)} chunks")
-
-    # Process each chunk
-    fixed_chunks = []
-    for i, (chunk_id, chunk) in enumerate(chunks, 1):
-        print(f"   Processing chunk {i}/{len(chunks)} ({len(chunk)} chars)...")
-
-        prompt = f"""Please review the following medical document segment and fix OCR errors:
-1. Add spaces between words that are incorrectly joined (e.g., "kidneydisease" → "kidney disease")
-2. Fix obvious typos and misspellings
-3. IMPORTANT: Preserve all medical terminology exactly as intended
-4. Keep the original markdown formatting
-5. Do NOT add explanations or comments
-6. This is part {i} of {len(chunks)} - preserve continuity
-
-Document segment:
-{chunk}
-
-Return ONLY the corrected text."""
-
-        fixed_chunk = response(system_prompt, prompt)
-        fixed_chunks.append(fixed_chunk)
-
-    # Combine chunks
-    fixed_content = ''.join(fixed_chunks)
-    print(f"   ✓ Combined {len(chunks)} chunks into {len(fixed_content)} chars")
-
-    return fixed_content
-
-def extract_metadata_with_llm(content, system_prompt):
-    """Extract structured metadata from the document."""
-    prompt = f"""Analyze this medical document and extract:
-1. Recommended title (concise, descriptive)
-2. Document type (guideline, patient info, clinical protocol, etc.)
-3. Main topic areas (list)
-4. Target audience (patients, healthcare providers, specialists)
-
-Document:
-{content}
-
-Return as JSON format."""
-
-    return response(system_prompt, prompt)
 
 content = clean_content(content)
 
 # %%
-def process_document(filename, input_dir="processed_ocr"):
+def process_document(filename, input_dir="processed_ocr", output_dir="cleaned_documents"):
     """Complete document processing pipeline."""
     import json
+    import re
 
     print(f"Processing: {filename}")
     print("=" * 80)
+
+    # Create output directory if it doesn't exist
+    os.makedirs(output_dir, exist_ok=True)
 
     # Load document
     filepath = os.path.join(input_dir, filename)
@@ -259,53 +177,87 @@ def process_document(filename, input_dir="processed_ocr"):
     # Initialize LLM
     system_prompt = "You are a helpful medical assistant specializing in chronic kidney disease."
 
-    # Fix typos and OCR errors with LLM
-    print("\n🔧 Fixing typos and OCR errors...")
-    fixed_content = fix_typos_with_llm(cleaned_content, system_prompt)
-    print(f"✅ Fixed: {len(fixed_content)} characters")
-
     # Generate title (ONLY the title, nothing else)
     print("\n📝 Generating title...")
     title_prompt = f"""Read this medical document and provide a concise, descriptive title.
 
-Document:
-{fixed_content}
+IMPORTANT: Return ONLY the title text itself. Do not include:
+- Quotation marks
+- "Title:" or similar labels
+- Any explanatory text
+- Multiple lines
+- Markdown formatting (no ##, no **, no bullets)
 
-Output format: Return ONLY the title text, no quotes, no explanation, no additional text."""
+Examples of correct output:
+Dietary Guidelines for Chronic Kidney Disease Management
+Managing Diabetes in CKD Patients
+Phosphate Binders and Cardiovascular Risk
+Nutritional Recommendations for Stage 3-5 CKD
+KDIGO Clinical Practice Guideline for Anemia in CKD
+Conservative Management Options for End-Stage Renal Disease
+
+Examples of INCORRECT output:
+## Dietary Guidelines for CKD
+**Managing Diabetes in CKD**
+Title: Phosphate Binders
+"KDIGO Guidelines"
+
+Document:
+{cleaned_content[:5000]}"""
 
     title = response(system_prompt, title_prompt).strip()
     # Remove any quotes or extra formatting
     title = title.strip('"\'').strip()
+    # Remove any markdown symbols
+    title = title.lstrip('#').strip()
+    title = title.strip('*').strip()
     # Take only the first line if multiple lines returned
     title = title.split('\n')[0].strip()
     print(f"✅ Title: {title}")
 
     # Generate summary
     print("\n📋 Generating summary...")
+    # Use only first 5000 characters for summary to reduce processing time
+    content_preview = cleaned_content[:5000]
     summary_prompt = f"""Summarize this medical document in 2-3 sentences.
 
+IMPORTANT: Return ONLY the summary text itself. Do not include:
+- Introductory phrases like "Here is the summary:" or "Okay, here is..."
+- Quotation marks around the summary
+- Any meta-commentary about the task
+- Extra line breaks or formatting
+
+Examples of correct output:
+- This guideline provides recommendations for managing chronic kidney disease in adults. It covers screening, diagnosis, and treatment options including dietary modifications and medication management. The document emphasizes early detection and intervention to slow disease progression.
+- The document outlines dietary restrictions for CKD patients, focusing on sodium, potassium, and phosphorus intake. It provides specific food recommendations and meal planning strategies for different CKD stages.
+
 Document:
-{fixed_content}"""
+{content_preview}"""
     summary = response(system_prompt, summary_prompt).strip()
     print(f"✅ Summary: {summary[:200]}...")
 
-    # Save cleaned markdown file
-    cleaned_md_file = os.path.join(input_dir, filename.replace('.md', '_cleaned.md'))
+    # Sanitize title for filename
+    safe_filename = re.sub(r'[<>:"/\\|?*]', '', title)  # Remove invalid characters
+    safe_filename = safe_filename.replace(' ', '_')  # Replace spaces with underscores
+    safe_filename = safe_filename[:100]  # Limit length to avoid filesystem issues
+
+    # Save cleaned markdown file with title-based filename
+    cleaned_md_file = os.path.join(output_dir, f"{safe_filename}.md")
     with open(cleaned_md_file, 'w') as f:
-        f.write(fixed_content)
+        f.write(cleaned_content)
     print(f"\n💾 Saved cleaned content: {cleaned_md_file}")
 
-    # Save metadata JSON (without content)
-    metadata_file = os.path.join(input_dir, filename.replace('.md', '_metadata.json'))
+    # Save metadata JSON with title-based filename
+    metadata_file = os.path.join(output_dir, f"{safe_filename}.json")
     metadata = {
         "original_file": filename,
-        "cleaned_file": filename.replace('.md', '_cleaned.md'),
         "title": title,
         "summary": summary,
+        "cleaned_file": f"{safe_filename}.md",
+        "metadata_file": f"{safe_filename}.json",
         "stats": {
             "original_length": len(raw_content),
             "cleaned_length": len(cleaned_content),
-            "fixed_length": len(fixed_content),
         }
     }
 
@@ -318,31 +270,85 @@ Document:
     return metadata
 
 # %% Batch processing
-def batch_process_documents(input_dir="processed_ocr"):
-    """Process all markdown files in a directory."""
+def batch_process_documents(input_dir="processed_ocr", output_dir="cleaned_documents", max_workers=5):
+    """Process all markdown files in a directory with parallel processing.
+
+    Args:
+        input_dir: Directory containing markdown files to process
+        output_dir: Directory to save cleaned files
+        max_workers: Number of parallel workers (default 5)
+    """
     import glob
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+    from threading import Lock
+
+    # Thread-safe print lock
+    print_lock = Lock()
+
+    def process_with_progress(filename, idx, total):
+        """Wrapper function for thread-safe processing with progress."""
+        try:
+            with print_lock:
+                print(f"\n[{idx}/{total}] 🚀 Starting: {filename}")
+
+            result = process_document(filename, input_dir, output_dir)
+
+            with print_lock:
+                print(f"[{idx}/{total}] ✅ Completed: {filename}")
+
+            return (True, result, filename)
+        except Exception as e:
+            with print_lock:
+                print(f"[{idx}/{total}] ❌ Error processing {filename}: {e}")
+            import traceback
+            with print_lock:
+                traceback.print_exc()
+            return (False, None, filename)
 
     # Find all .md files that are not already cleaned
     md_files = [f for f in glob.glob(os.path.join(input_dir, "*.md"))
                 if not f.endswith('_cleaned.md')]
+
+    print(f"{'='*80}")
     print(f"Found {len(md_files)} markdown files to process")
+    print(f"Output directory: {output_dir}")
+    print(f"Parallel workers: {max_workers}")
+    print(f"{'='*80}")
+
+    if not md_files:
+        print("No files to process!")
+        return []
 
     results = []
-    for i, filepath in enumerate(md_files, 1):
-        filename = os.path.basename(filepath)
-        print(f"\n[{i}/{len(md_files)}] Processing {filename}...")
+    errors = []
 
-        try:
-            result = process_document(filename, input_dir)
-            results.append(result)
-        except Exception as e:
-            print(f"❌ Error processing {filename}: {e}")
-            import traceback
-            traceback.print_exc()
-            continue
+    # Process documents in parallel
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        # Submit all tasks
+        future_to_file = {
+            executor.submit(
+                process_with_progress,
+                os.path.basename(filepath),
+                i,
+                len(md_files)
+            ): os.path.basename(filepath)
+            for i, filepath in enumerate(md_files, 1)
+        }
+
+        # Collect results as they complete
+        for future in as_completed(future_to_file):
+            success, result, filename = future.result()
+            if success:
+                results.append(result)
+            else:
+                errors.append(filename)
 
     print(f"\n{'='*80}")
     print(f"✅ Processed {len(results)}/{len(md_files)} documents successfully")
+    if errors:
+        print(f"❌ Failed: {len(errors)} documents")
+        print(f"   Failed files: {', '.join(errors)}")
+    print(f"Output saved to: {output_dir}")
     print(f"{'='*80}")
     return results
 
@@ -357,7 +363,9 @@ if __name__ == "__main__":
 
 # %% Example: Batch process all documents
 # Uncomment to run batch processing
-print("\n🚀 Batch processing all documents...\n")
-batch_results = batch_process_documents()
+# Adjust max_workers based on your GPU memory and vLLM config
+# Recommended: 3-5 workers for 4B model on 24GB GPU
+print("\n🚀 Batch processing all documents with parallel workers...\n")
+batch_results = batch_process_documents(max_workers=5)
 
 # %%

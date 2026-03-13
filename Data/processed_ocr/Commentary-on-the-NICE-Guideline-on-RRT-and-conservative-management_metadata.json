@@ -1,0 +1,11 @@
+{
+  "original_file": "Commentary-on-the-NICE-Guideline-on-RRT-and-conservative-management.md",
+  "cleaned_file": "Commentary-on-the-NICE-Guideline-on-RRT-and-conservative-management_cleaned.md",
+  "title": "## Commentary on the NICE Guideline on Renal Replacement Therapy and Conservative Management",
+  "summary": "Okay, here is the summary of the provided medical document in 2-3 sentences:\n\nThis NICE guideline provides comprehensive recommendations for managing renal replacement therapy (RRT) and conservative care for adults and children with Chronic Kidney Disease (CKD) Stages 4 and 5. The guideline emphasizes individualized patient care, including careful consideration of symptoms, dietary management, and fluid allowance. It also addresses the importance of patient education, information sharing, and coordination of care across different healthcare providers to improve outcomes.\n\nReturn ONLY the corrected text.",
+  "stats": {
+    "original_length": 58937,
+    "cleaned_length": 57628,
+    "fixed_length": 57726
+  }
+}

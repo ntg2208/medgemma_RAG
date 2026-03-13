@@ -212,8 +212,14 @@ class AgenticRAGGraph:
         Returns:
             Final state dict with response and metadata
         """
+        # Validate inputs
+        if not query or not query.strip():
+            raise ValueError("Query must be a non-empty string")
+        if ckd_stage is not None and not (1 <= ckd_stage <= 5):
+            raise ValueError(f"Invalid CKD stage: {ckd_stage}. Must be 1-5.")
+
         initial_state = {
-            "original_query": query,
+            "original_query": query.strip(),
             "ckd_stage": ckd_stage,
             "processing_steps": [],
         }

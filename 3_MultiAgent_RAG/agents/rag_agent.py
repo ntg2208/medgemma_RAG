@@ -108,10 +108,9 @@ Provide a comprehensive answer with citations:"""
         parts = []
         for i, doc in enumerate(documents, start=1):
             source = doc.metadata.get("source", "Unknown")
-            page = doc.metadata.get("page_number", "?")
             section = doc.metadata.get("section", "")
 
-            header = f"[{i}] Source: {source}, Page {page}"
+            header = f"[{i}] Source: {source}"
             if section:
                 header += f", Section: {section}"
 
@@ -125,9 +124,7 @@ Provide a comprehensive answer with citations:"""
         for doc in documents:
             sources.append({
                 "source": doc.metadata.get("source", "Unknown"),
-                "page": doc.metadata.get("page_number"),
                 "section": doc.metadata.get("section"),
-                "ckd_stages": doc.metadata.get("ckd_stages", []),
             })
         return sources
 
