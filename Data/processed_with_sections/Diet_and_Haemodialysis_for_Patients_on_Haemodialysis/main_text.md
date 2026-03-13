@@ -1,0 +1,215 @@
+## Diet and Haemodialysis
+
+Information for patients
+
+## Introduction
+
+The Leeds Teaching Hospitals Trust has a group of renal dietitians who provide a service to all the patients on haemodialysis. We have a commitment to provide you with the most up-to-date dietary information.
+
+## What is haemodialysis
+
+Haemodialysis is the process of removing waste products and excess fluids which build up in the body when the kidneys have stopped working properly.
+
+Nutrition plays an important role in the treatment of patients on haemodialysis.
+
+By giving individual advice about your diet we are aiming to:
+
+1. Improve or maintain your nutritional status and body weight. Having an adequate energy and protein intake plays an important part in keeping you well which helps you to fight infections and respond better to treatments.
+2. Keep your blood results within a safe level including:
+Potassium to help protect your heart
+Phosphate to help prevent symptoms of itching and longterm complications to your bones, heart and blood vessels
+3. Reduce salt intake to limit symptoms of thirst and help with blood pressure control
+4. Prevent the build-up of fluid between your dialysis sessions
+
+## What is a 'renal diet'?
+
+We are aware that information about the 'renal diet' is available on the internet, from relatives and other patients. There is no single renal diet and the advice offered by the dietitian will be designed to suit your individual needs.
+
+The advice provided will be based on:
+How well you are eating and what you are eating
+Your monthly blood results
+Your body weight
+Medications you take
+Other dietary needs e.g. diabetes
+Whether you still pass urine
+
+The only foods we suggest all dialysis patients avoid are liver, starfruit, liquorice and cod liver oil tablets.
+
+For further information, please ask the dietitian.
+
+## Other dietary requirements
+
+If you have diabetes, coeliac disease, are following a weight reducing diet or have other dietary needs it is important these dietary requirements continue. The dietitian will discuss this with you.
+
+## Protein
+
+Protein is an important nutrient needed for the repair of body tissues and to keep your immune system healthy.
+
+Protein is lost during every dialysis session. It is therefore important to replace these losses in the diet. If you are unable to eat enough protein to replace these losses and meet your body's needs, you are at risk of reducing the muscle in your body. This increases your risk of malnutrition
+
+## Sources of protein
+
+Good sources of protein are meat, poultry, fish, eggs, milk, yoghurt, milk pudding, cheese, Quorn, tofu and some soya products.
+
+## How much protein do I need?
+
+The amount of protein your body needs will be discussed with you by your dietitian.
+
+Aim to eat protein foods at least twice a day.
+
+## Personal notes
+
+## Energy
+
+Getting enough energy from your food is important. It is needed to make good use of the protein from your diet and for maintaining your target weight. The energy content of food is often called the calorie content. The two main sources of energy (we get) from food are fat and carbohydrates (which includes starches and sugars). A sign that you do not have enough energy (calories) in your diet is weight loss. This may be due to a poor appetite, infection or increased activity. Haemodialysis itself is not thought to increase your energy needs.
+
+If you are losing weight without trying, your dietitian can advise you on ways to increase the energy content of your diet or you may be prescribed some nutritional supplement drinks.
+
+## Sources of energy
+
+| Starchy foods | Sugars and sugary foods | Fats and fatty foods |
+|-----------------------------------------------------|--------------------------------------------------------------------|--------------------------------------------------------------------------|
+| Bread Potato Rice Chapati Yam Noodles Pasta Cereals | Sugar Honey Jam and marmalade Fizzy drinks Biscuits Cakes Puddings | Margarine Butter Oils Ghee Biscuits Cakes Pastry Full fat dairy products |
+
+If you have been advised to lose weight then choose the low sugar and reduced fat versions of the foods above.
+
+## Understanding 'weight' on dialysis
+
+A 'target weight' will be set for you within the first few weeks of starting dialysis. Target weight is what your weight is when your body has the right balance of fluid. This is what your weight should be at the end of your dialysis session.
+
+Over time, if you are eating well your flesh (muscle and Fat) weight may increase. Equally, if you are eating poorly your weight may reduce. Should this occur, your target weight will need adjusting. The most accurate way to check this is by using a bedside test called 'BCM' (Body Composition Monitoring).
+
+To help control the amount of fluid weight you gain between each dialysis session, the dietitian will talk to you about salt and fluid.
+
+## Salt
+
+A 'reduced salt diet' plays a vital role in the treatment of people requiring haemodialysis. Too much salt in your diet can increase your thirst and make you drink more. This can lead to more fluid building up in your body between dialysis treatments and increase your blood pressure. Ideally, you should not eat more than 6 grams (1 teaspoon) of salt per day. This advice applies to everyone, not just dialysis patients.
+
+Simple steps such as not adding salt at the table or in cooking will help, but the most effective way to reduce your salt intake is to eat fewer highly processed foods.
+
+## Where does my salt intake come from?
+
+Most salt is 'hidden' in food.
+
+Most of the salt we eat is already added to the food we buy. It is found in canned food, jars, ready-made meals and take-away foods. It is important to be able to understand the labels on foods, so that you can make healthier choices.
+
+## What do the labels mean?
+
+The information about salt content on food labels is very useful. However, labels may list the 'salt', or the 'sodium' content, of the food.
+To convert sodium to salt: multiply by 2.5 (e.g. 0.8 g sodium = 2 g salt)
+To convert salt to sodium: divide by 2.5 (e.g. 1 g salt = 0.4 g sodium)
+
+## Front of pack labelling
+
+## Traffic Light System
+
+This shows at a glance if the food has a high (red), medium (amber/yellow) or low (green) amount of nutrients including salt. Choose foods which are labelled green as much as possible, and keep those labelled red to a minimum.
+
+| | Sugars | Fat | Saturates | SALT |
+|--------------------------|------------------|------------------|---------------------|---------------------|
+| What is high per 100 g | over 15g | over 20g | over 5g | over 1.5g |
+| | Sugars | Fat | Saturates | SALT |
+| What is medium per 100 g | between 5g & 15g | between 3g & 20g | between 1.5g & 5.0g | between 0.3g & 1.5g |
+| | Sugars | Fat | Saturates | SALT |
+| What is low per 100g | 5g & below | 3g & below | 1.5g & below | 0.3g & below |
+
+Based on information supplied by the Food Standards Agency (FSA)
+
+## Guideline Daily Amounts (GDA)
+
+This gives the amount and percentage of nutrients including salt per portion of food of the guideline daily amount (GDA). Use this system for comparing individual foods such as pizzas, breakfast cereals and ready-made meals.
+
+## Nutritional Information
+
+When looking at the labels you need to consider the portion of the food you will be eating. The salt or sodium content of the food will be listed per 100 g of product. Sometimes it may also state the sodium or salt content per serving.
+
+## For example
+
+| | Salt per 100 g | Salt per serving |
+|---------------------|------------------|--------------------|
+| Cornflakes | 2.5 g | 1.0 g |
+| | Salt per 100 g | Salt per serving |
+| Soup: tinned tomato | 1.0 g | 1.0 g |
+For ready meals and sandwiches, aim for a product containing less than 1.25 g salt or 0.5 g sodium per serving.
+For individual foods e.g. sauces, snacks and cereals aim for a product containing less than 0.75 g salt or 0.3 g sodium per serving.
+
+## Tips on lowering your salt intake
+
+1. Cook with fresh foods as often as possible rather than relying on ready-made or processed foods
+2. Cut down on the amount of salty ingredients used in cooking e.g. stock cubes, soy sauce, pre-mixed or all purpose seasonings. Instead use low-salt stock cubes or try making your own stock
+3. Avoid adding salt to your food during cooking and at the table. Instead try black pepper, garlic, herbs, spices, vinegar or lemon juice to add flavour
+4. Try to limit your intake of salty meats and fish e.g. bacon, gammon, corned beef and smoked fish to occasional use
+5. Avoid salty foods such as crisps, nuts and salted biscuits. Instead choose plain and unsalted varieties
+6. Try choosing breakfast cereals which are low in salt or have no added salt such as porridge, Shredded Wheat and Weetabix
+7. Choose fresh and frozen vegetables where possible. If you use tinned vegetables try buying those tinned in water rather than brine
+8. Avoid tinned and packet soups. Instead try homemade soups using onion, garlic, celery and homemade stocks for flavouring. Recipes are available from the dietitian
+9. Use lower salt cheese such as cream cheese or cottage cheese and limit your hard cheese intake to 4 oz (120 g) per week
+10. Salt substitutes are not recommended e.g. LoSalt and supermarket own brands
+
+Homemade gravy: Add a cup full of water or wine to the cooking juices from your meat. Add black pepper (plus some herbs if liked) then thicken with cornflour if required.
+
+## Fluid
+
+When you first start dialysis, you will probably still be passing a normal amount of urine. Over the next few months (or longer), you may notice that you pass much less urine. This isn't the same for everyone and it is therefore important to let the nursing staff on the dialysis unit know if your urine output changes.
+
+If you drink more than you are passing or can be removed by dialysis, the excess fluid will build up in your body causing fluid overload. This excess fluid will make your heart work harder. It may also cause an increase in blood pressure, swelling around the ankles and shortness of breath. To prevent excess fluid building up you will be advised on how much fluid you can drink in a day; this is called a 'fluid allowance'.
+
+In order to work out your fluid allowance the nursing staff will ask you to complete a 24 hour urine collection. Your fluid allowance will be given in either litres (L) or millilitres (mls).
+
+The dietitian will be able to advise you on ways to reduce the amount of fluid you take from drinks and foods, and give practical tips on managing your allowance.
+
+Following a low salt diet will help you to control your fluid intake as a diet high in salt will make you thirsty.
+
+## Potassium
+
+Not every patient on haemodialysis needs to follow a low potassium diet. This is because potassium is easily removed on dialysis. If your potassium level goes too high or too low it can cause an abnormal heart beat. This increases the risk of cardiac arrest.
+
+If you have previously been advised to follow a low potassium diet, continue to do so until told otherwise.
+
+If your potassium level goes too high or too low, the nursing staff or doctors will refer you to the dietitian for individualised dietary advice to assess your potassium intake.
+
+The recommended range for your blood potassium before
+
+dialysis is:
+
+## Phosphate
+
+When you have too much phosphate in your blood it can cause the body to pull calcium from your bones. This makes bones weaker and the calcium can get deposited in your blood vessels, leading to cardiovascular disease.
+
+There are 3 ways of controlling your phosphate, these are known as the 3 D's:
+
+1. Dialysis
+2. Diet
+3. Drugs (phosphate binders)
+
+If your phosphate is high the nursing staff or doctor will refer you to the dietitian for advice on a low phosphate diet. Tablets referred to as phosphate binders may also be
+
+prescribed to help control your phosphate level.
+
+The recommended range for your blood phosphate before
+
+dialysis is:
+
+## Vitamins and minerals
+
+All patients on haemodialysis are prescribed a vitamin supplement. These are given to help replace the vitamins lost during dialysis. You may be given Renavit or a combination of Folic Acid and Vitamin B compound strong .
+
+We do not recommend the purchase of over the counter multivitamins. If you take any vitamin or mineral supplement, herbal remedies or anything else that your doctor does not prescribe, it is important you let your doctor, pharmacist or dietitian know.
+
+If you have any suggestions, comments or queries regarding this leaflet please let your dietitian know.
+
+Information contained in this booklet is correct at the time of production. Manufacturers are continually changing the ingredients of their products and altering portion sizes.
+
+## Dietitian Name:
+
+## Contact Number:
+
+## Personal Notes
+
+## What did you think of your care?
+
+Scan the QR code or visit bit.ly/nhsleedsfft Your views matter
+
+© The Leeds Teaching Hospitals NHS Trust · 4th edition Version 1 Developed by: Renal Dietitians, The Department of Nutrition and Dietetics Produced by: Medical Illustration Services · MID code: 20241218\_013/RC
+
+LN000445 Publication date 02/2025 Review date 02/2028

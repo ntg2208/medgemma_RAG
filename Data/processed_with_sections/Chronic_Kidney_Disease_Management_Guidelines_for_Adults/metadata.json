@@ -1,0 +1,20 @@
+{
+  "title": "Chronic Kidney Disease Management Guidelines for Adults",
+  "source_file": "Chronic_Kidney_Disease_Management_Guidelines_for_Adults.md",
+  "original_file": "Notts_CKD_Management_Guidelines.md",
+  "summary": "This document provides guidelines for managing chronic kidney disease (CKD) in adults. It outlines CKD definitions, screening criteria including urine albumin to creatinine ratio, and methods for categorizing CKD stages and determining monitoring frequency. The guidelines also detail a three-step management solution, rapid titration protocols for RAAS blockade, and information on monitoring blood results.",
+  "cleaned_file": "Chronic_Kidney_Disease_Management_Guidelines_for_Adults.md",
+  "metadata_file": "Chronic_Kidney_Disease_Management_Guidelines_for_Adults.json",
+  "stats": {
+    "original_length": 68959,
+    "cleaned_length": 39067
+  },
+  "front_matter": "",
+  "processing": {
+    "method": "heuristics",
+    "total_lines": 319,
+    "main_text_lines": 275,
+    "references_lines": 44,
+    "front_matter_lines": 0
+  }
+}

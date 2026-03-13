@@ -1,0 +1,20 @@
+{
+  "title": "CKD Nutritional Recommendations for Peritoneal Dialysis",
+  "source_file": "CKD_Nutritional_Recommendations_for_Peritoneal_Dialysis.md",
+  "original_file": "NHS_ThinkKidneys_CKD_Nutritional_Guidelines.md",
+  "summary": "This document provides nutritional recommendations for patients undergoing peritoneal dialysis with stage 5 CKD. It advises a daily energy intake of 30-35 Kcal/Kg Ideal Body Weight (IBW) to maintain IBW and nitrogen balance, potentially reduced in the elderly or less active individuals. Protein intake should be 1-1.2 g/Kg IBW daily, with at least 50% High Biological Value protein, to meet increased requirements due to PD. Serum potassium should be maintained between 3.5-5.5 mmol/L, and serum phosphate between 1.1-1.7 mmol/L. Phosphate binders like calcium acetate or calcium carbonate may be needed. The document also outlines the need for regular dietitian assessment and review for all PD patients.",
+  "cleaned_file": "CKD_Nutritional_Recommendations_for_Peritoneal_Dialysis.md",
+  "metadata_file": "CKD_Nutritional_Recommendations_for_Peritoneal_Dialysis.json",
+  "stats": {
+    "original_length": 31282,
+    "cleaned_length": 27635
+  },
+  "front_matter": "## University Hospitals Coventry &amp; Warwickshire NHS Trust\n\nClinical Guideline (full)\n\n## CHRONIC KIDNEY DISEASE (CKD) NUTRITIONAL RECOMMENDATIONS FOR PERITONEAL DIALYSIS\n\nE-Library Reference\n\nCG1339\n\n| Version: | 5 |\n|-----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|\n| Approving forum (QIPS or equivalent): | Renal Services Group |\n| Specialty Clinical Guideline Lead: | Dr Simon Fletcher Renal Clinical Director |\n| Contributing Author(s) and reviewer(s): | Sarah Wallace Specialist Renal Dietitian sarah.wallace@uhcw.nhs.uk Sharon Huish (nee Parker) Specialist Renal Dietitian sharon.huish@uhcw.nhs.uk |\n| Department(s) / Primary Speciality: | Renal dietetic team |\n\n| Approval Date: | |\n|------------------|-------------------------------|\n| Expiry Date: | June 2019 |\n| Target Audience: | Renal multi-disciplinary team |\n\n| Superseded UHCW Clinical Guideline(s): (if applicable) | Chronic Kidney Disease (CKD) Nutritional Recommendations for Peritoneal Dialysis (Version 4) |\n|----------------------------------------------------------|------------------------------------------------------------------------------------------------|\n| UHCW Associated Records: | |\n| Keywords: | Peritoneal dialysis + nutrition |\n\n| Clinical Operating Procedures relating to this guidance (please list) | |\n|-------------------------------------------------------------------------|----|\n| Summary version available | ☐ |\n\n## Guideline clinical content\n\nClinical Guidelines assist in decision-making; they do not replace clinical judgement. Regardless of the strength of evidence, it remains the responsibility of the clinician to interpret the application of the clinical guidance to local circumstances and the needs and wishes of the individual patient. Where variations of any kind do occur, it is important to document the variations and the reason for them in the patient's health record. If in doubt, seek senior advice.",
+  "processing": {
+    "method": "heuristics",
+    "total_lines": 441,
+    "main_text_lines": 406,
+    "references_lines": 0,
+    "front_matter_lines": 35
+  }
+}

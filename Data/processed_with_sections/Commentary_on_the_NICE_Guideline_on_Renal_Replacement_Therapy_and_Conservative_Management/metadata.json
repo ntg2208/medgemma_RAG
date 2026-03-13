@@ -1,0 +1,20 @@
+{
+  "title": "Commentary on the NICE Guideline on Renal Replacement Therapy and Conservative Management",
+  "source_file": "Commentary_on_the_NICE_Guideline_on_Renal_Replacement_Therapy_and_Conservative_Management.md",
+  "original_file": "Commentary-on-the-NICE-Guideline-on-RRT-and-conservative-management.md",
+  "summary": "The NICE guideline NG107 provides recommendations for managing Chronic Kidney Disease (CKD) Stages 4 and 5, focusing on renal replacement therapy (RRT) including dialysis, transplant, and conservative care. The guideline aims to guide clinicians in making decisions about initiating RRT based on patient symptoms, biochemical measures, and fluid status, emphasizing shared decision-making. It also stresses the importance of considering non-renal causes for symptoms before starting dialysis. The guideline highlights the challenges in applying eGFR thresholds for initiating dialysis in infants.",
+  "cleaned_file": "Commentary_on_the_NICE_Guideline_on_Renal_Replacement_Therapy_and_Conservative_Management.md",
+  "metadata_file": "Commentary_on_the_NICE_Guideline_on_Renal_Replacement_Therapy_and_Conservative_Management.json",
+  "stats": {
+    "original_length": 58937,
+    "cleaned_length": 57430
+  },
+  "front_matter": "## Commentary on the NICE Guideline on Renal Replacement Therapy and Conservative Management\n\nFinal version:\n\nMarch 2020\n\nReview date:\n\nMarch 2025\n\n## Authors:\n\n## Kunaal Kharbanda\n\nBrighton and Sussex University Hospitals NHS Trust Manchester Academic Health Science Centre, The University of Manchester\n\n## Osasuyi Iyasere\n\nJohn Walls Renal unit, Leicester General Hospital\n\n## Fergus Caskey\n\nBristol Medical School: Population Health Sciences, University of Bristol Richard Bright Renal Unit, Southmead Hospital, Bristol\n\n## Matko Marlais\n\nGreat Ormond Street Hospital for Children NHS Foundation Trust, London UCL Great Ormond Street Institute of Child Health\n\n## Sandip Mitra\n\nManchester Academic Health Science Centre, The University of Manchester NIHR Devices for Dignity Healthcare Technology Co-Operative, Royal Hallamshire Hospital, Sheffield\n\n## Method used to arrive at a recommendation\n\nThe recommendations for the first draft of this guideline resulted from a collective decision reached by informal discussion by the authors and, whenever necessary, with input from the Chair of the Clinical Practice Guidelines Committee. If no agreement had been reached on the appropriate grading of a recommendation, a vote would have been held and the majority opinion carried. However this was not necessary for this guideline.\n\n## Conflicts of Interest Statement\n\nAll authors made declarations of interest in line with the policy in the Renal Association Clinical Practice Guidelines Development Manual. Further details can be obtained on request from the Renal Association.\n\n| Contents |\n|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| Introduction 4 |\n| Summary of recommendations 4 |\n| Conclusion 15 |\n| Audit Measures 15 |\n| References 16 |",
+  "processing": {
+    "method": "heuristics",
+    "total_lines": 379,
+    "main_text_lines": 251,
+    "references_lines": 80,
+    "front_matter_lines": 48
+  }
+}
