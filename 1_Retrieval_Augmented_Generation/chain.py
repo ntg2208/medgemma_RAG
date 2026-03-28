@@ -51,7 +51,7 @@ class MedGemmaLLM:
         self,
         model_id: str = MEDGEMMA_MODEL_ID,
         device: Optional[str] = None,
-        load_in_4bit: bool = True,
+        load_in_4bit: bool = False,
         max_new_tokens: int = GENERATION_CONFIG["max_new_tokens"],
         temperature: float = GENERATION_CONFIG["temperature"],
     ):
@@ -313,7 +313,6 @@ class SimpleRAGChain:
 
 def create_rag_chain(
     vectorstore: Any,
-    ckd_stage: Optional[int] = None,
     llm: Optional[MedGemmaLLM] = None,
 ) -> SimpleRAGChain:
     """
@@ -321,7 +320,6 @@ def create_rag_chain(
 
     Args:
         vectorstore: CKDVectorStore instance
-        ckd_stage: Optional CKD stage for filtering
         llm: Optional pre-loaded LLM
 
     Returns:
@@ -331,7 +329,6 @@ def create_rag_chain(
 
     retriever = CKDRetriever(
         vectorstore=vectorstore,
-        ckd_stage=ckd_stage,
     )
 
     return SimpleRAGChain(retriever=retriever, llm=llm)

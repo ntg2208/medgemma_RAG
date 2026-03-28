@@ -6,7 +6,7 @@ with support for query expansion and reranking.
 """
 
 import logging
-from typing import ClassVar, Optional
+from typing import Any, ClassVar, Optional
 
 from langchain_core.documents import Document
 from langchain_core.retrievers import BaseRetriever
@@ -25,17 +25,16 @@ class CKDRetriever(BaseRetriever):
     Custom retriever for CKD-related documents.
 
     Features:
-    - CKD stage-aware retrieval
     - Document type filtering
     - Query expansion for medical terms
     - Configurable similarity thresholds
 
     Example:
         >>> retriever = CKDRetriever(vectorstore)
-        >>> docs = retriever.invoke("dietary restrictions for stage 3")
+        >>> docs = retriever.invoke("dietary restrictions for hypertension")
     """
 
-    vectorstore: "CKDVectorStore"  # type: ignore
+    vectorstore: Any  # CKDVectorStore; Any avoids Pydantic forward-ref issues
     k: int = TOP_K_RESULTS
     score_threshold: float = SIMILARITY_THRESHOLD
     expand_queries: bool = True
@@ -173,7 +172,7 @@ class HybridRetriever(BaseRetriever):
     Uses reciprocal rank fusion to combine results.
     """
 
-    vectorstore: "CKDVectorStore"  # type: ignore
+    vectorstore: Any  # CKDVectorStore; Any avoids Pydantic forward-ref issues
     k: int = TOP_K_RESULTS
     semantic_weight: float = 0.7
     keyword_weight: float = 0.3
@@ -227,7 +226,7 @@ class HybridRetriever(BaseRetriever):
 
 
 def create_retriever(
-    vectorstore: "CKDVectorStore",  # type: ignore
+    vectorstore: Any,
     k: int = TOP_K_RESULTS,
     use_hybrid: bool = False,
 ) -> BaseRetriever:

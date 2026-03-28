@@ -129,15 +129,6 @@ resource "aws_security_group" "model_server" {
     cidr_blocks = var.allowed_cidr_blocks
   }
 
-  # TEI Embeddings
-  ingress {
-    description = "TEI Embeddings"
-    from_port   = 8001
-    to_port     = 8001
-    protocol    = "tcp"
-    cidr_blocks = var.allowed_cidr_blocks
-  }
-
   # Outbound traffic
   egress {
     from_port   = 0

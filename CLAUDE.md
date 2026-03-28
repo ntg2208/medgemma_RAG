@@ -381,7 +381,7 @@ bash scripts/setup-gpu-instance.sh YOUR_HF_TOKEN
 
 ### Remote Mode Issues
 - **IP changed**: Run `./scripts/ec2-status.sh` after each start to get new IP
-- **vLLM won't start**: Gemma3 models require `--dtype bfloat16`, check tmux logs with `tmux attach -t vllm`
+- **llama.cpp won't start**: Check container logs with `docker logs -f llamacpp-server`
 - **Connection timeout**: Update security group with your current IP (`curl https://checkip.amazonaws.com`)
 - **Disk full**: Models should be in `~/models_cache/` (EBS home directory), not `/opt/dlami/nvme/` (ephemeral)
 - **Low spot availability**: See `docs/deployment/gpu-spot-strategy.md` for multi-region/instance strategy

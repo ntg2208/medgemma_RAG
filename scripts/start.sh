@@ -1,10 +1,10 @@
 #!/bin/bash
-# Launch EC2 spot instance for MedGemma model server
-# Usage: ./scripts/start.sh
+# Launch EC2 instance for MedGemma model server
+# Usage: ./scripts/start.sh [--on-demand]
 #
-# Reads SG, IAM profile, S3 bucket, region from Terraform outputs.
-# Override instance config with env vars:
-#   INSTANCE_TYPE=g5.xlarge ./scripts/start.sh
+# Override with env vars:
+#   REGION=ap-northeast-2 ./scripts/start.sh
+#   INSTANCE_TYPE=g6.xlarge ./scripts/start.sh --on-demand
 
 set -e
 
@@ -13,23 +13,90 @@ KEY_FILE="$HOME/.ssh/medgemma-key.pem"
 SSH_HOST="medgemma-gpu"
 SSH_CONFIG="$HOME/.ssh/config"
 
-# Instance config (override with env vars if needed)
+# Instance config (override with env vars)
 INSTANCE_TYPE="${INSTANCE_TYPE:-g6.xlarge}"
-AMI_ID="${AMI_ID:-ami-01bc785757b863550}"   # Deep Learning OSS Nvidia Driver AMI GPU PyTorch 2.6.0 (Ubuntu 22.04) us-east-2
 KEY_PAIR="${KEY_PAIR:-medgemma-key}"
 
-# Read persistent infrastructure from Terraform
+# Parse flags
+ON_DEMAND=false
+if [ "$1" = "--on-demand" ]; then
+  ON_DEMAND=true
+fi
+
+# ---------------------------------------------------------------------------
+# Region + infrastructure resolution
+# ---------------------------------------------------------------------------
+# If REGION is set via env var, use it (multi-region mode).
+# Otherwise read from Terraform (default single-region mode).
 TF_DIR="infrastructure/terraform"
 
-REGION=$(terraform -chdir="$TF_DIR" output -raw region 2>/dev/null)
-SG_ID=$(terraform -chdir="$TF_DIR" output -raw security_group_id 2>/dev/null)
-INSTANCE_PROFILE=$(terraform -chdir="$TF_DIR" output -raw instance_profile_name 2>/dev/null)
-S3_BUCKET=$(terraform -chdir="$TF_DIR" output -raw s3_models_bucket 2>/dev/null)
+if [ -n "$REGION" ]; then
+  echo "Using override region: $REGION"
+  # Multi-region mode: create/find infrastructure on the fly
+  INSTANCE_PROFILE=$(terraform -chdir="$TF_DIR" output -raw instance_profile_name 2>/dev/null || true)
 
-if [ -z "$SG_ID" ] || [ -z "$INSTANCE_PROFILE" ] || [ -z "$S3_BUCKET" ]; then
-  echo "Error: Could not read Terraform outputs."
-  echo "Run once: cd infrastructure/terraform && terraform apply"
-  exit 1
+  # --- AMI: find latest Deep Learning AMI in target region ---
+  AMI_ID=$(aws ec2 describe-images --region "$REGION" \
+    --owners amazon \
+    --filters "Name=name,Values=*Deep Learning OSS Nvidia Driver AMI GPU PyTorch*Ubuntu*22.04*" \
+    --query 'Images | sort_by(@, &CreationDate)[-1].ImageId' --output text 2>/dev/null)
+  if [ -z "$AMI_ID" ] || [ "$AMI_ID" = "None" ]; then
+    echo "Error: No Deep Learning AMI found in $REGION"
+    exit 1
+  fi
+  echo "AMI: $AMI_ID"
+
+  # --- Key Pair: import if missing ---
+  if ! aws ec2 describe-key-pairs --region "$REGION" --key-names "$KEY_PAIR" &>/dev/null; then
+    echo "Importing key pair '$KEY_PAIR' into $REGION..."
+    PUB_KEY="${KEY_FILE%.pem}.pub"
+    if [ ! -f "$PUB_KEY" ]; then
+      # Generate public key from private key
+      ssh-keygen -y -f "$KEY_FILE" > "$PUB_KEY"
+    fi
+    aws ec2 import-key-pair --region "$REGION" \
+      --key-name "$KEY_PAIR" \
+      --public-key-material fileb://"$PUB_KEY"
+    echo "  Key pair imported"
+  fi
+
+  # --- Security Group: create if missing ---
+  SG_ID=$(aws ec2 describe-security-groups --region "$REGION" \
+    --filters "Name=group-name,Values=medgemma-sg" \
+    --query 'SecurityGroups[0].GroupId' --output text 2>/dev/null)
+
+  if [ -z "$SG_ID" ] || [ "$SG_ID" = "None" ]; then
+    echo "Creating security group in $REGION..."
+    SG_ID=$(aws ec2 create-security-group --region "$REGION" \
+      --group-name medgemma-sg \
+      --description "MedGemma model server" \
+      --query 'GroupId' --output text)
+
+    MY_IP=$(curl -s https://checkip.amazonaws.com)
+    aws ec2 authorize-security-group-ingress --region "$REGION" \
+      --group-id "$SG_ID" --protocol tcp --port 22 --cidr "$MY_IP/32"
+    aws ec2 authorize-security-group-ingress --region "$REGION" \
+      --group-id "$SG_ID" --protocol tcp --port 8000-8001 --cidr "$MY_IP/32"
+    aws ec2 authorize-security-group-ingress --region "$REGION" \
+      --group-id "$SG_ID" --protocol tcp --port 7860 --cidr "$MY_IP/32"
+    echo "  SG created: $SG_ID (allowed $MY_IP)"
+  else
+    echo "SG: $SG_ID (existing)"
+  fi
+
+else
+  # Default: read everything from Terraform
+  REGION=$(terraform -chdir="$TF_DIR" output -raw region 2>/dev/null)
+  SG_ID=$(terraform -chdir="$TF_DIR" output -raw security_group_id 2>/dev/null)
+  INSTANCE_PROFILE=$(terraform -chdir="$TF_DIR" output -raw instance_profile_name 2>/dev/null)
+  AMI_ID="${AMI_ID:-ami-01bc785757b863550}"
+
+  if [ -z "$SG_ID" ] || [ -z "$INSTANCE_PROFILE" ]; then
+    echo "Error: Could not read Terraform outputs."
+    echo "Run once: cd infrastructure/terraform && terraform apply"
+    echo "Or use: REGION=ap-northeast-2 ./scripts/start.sh"
+    exit 1
+  fi
 fi
 
 # Check for already-running instance
@@ -46,29 +113,49 @@ if [ -n "$EXISTING" ] && [ "$EXISTING" != "None" ]; then
   exit 0
 fi
 
-# User data: format + mount 100GB data drive, write env vars
+# User data: move Docker/containerd to NVMe instance store for space
 USER_DATA=$(cat <<'USERDATA'
 #!/bin/bash
-DATA_DEV=$(lsblk -rno NAME,SIZE | grep -E "^(nvme[0-9]+n[0-9]+|xvdf)" | grep -v "^nvme0" | awk '{print "/dev/"$1}' | head -1)
-if [ -n "$DATA_DEV" ] && ! blkid "$DATA_DEV" &>/dev/null; then
-  mkfs.ext4 -q "$DATA_DEV"
+NVME=/opt/dlami/nvme
+
+# Move Docker and containerd storage to NVMe (~250GB)
+systemctl stop docker containerd
+mkdir -p $NVME/docker $NVME/containerd
+if [ -d /var/lib/docker ] && [ ! -L /var/lib/docker ]; then
+  rsync -aP /var/lib/docker/ $NVME/docker/
+  rm -rf /var/lib/docker
 fi
-if [ -n "$DATA_DEV" ]; then
-  mkdir -p /data
-  mount "$DATA_DEV" /data
-  echo "$DATA_DEV /data ext4 defaults,nofail 0 2" >> /etc/fstab
-  chown ubuntu:ubuntu /data
+if [ -d /var/lib/containerd ] && [ ! -L /var/lib/containerd ]; then
+  rsync -aP /var/lib/containerd/ $NVME/containerd/
+  rm -rf /var/lib/containerd
 fi
+ln -sf $NVME/docker /var/lib/docker
+ln -sf $NVME/containerd /var/lib/containerd
+systemctl start containerd docker
 USERDATA
 )
-# Append env vars that need interpolation
+# Append env vars
 USER_DATA+="
-echo 'export S3_MODELS_BUCKET=$S3_BUCKET' >> /home/ubuntu/.bashrc
 echo 'export HF_HOME=/opt/dlami/nvme/models_cache' >> /home/ubuntu/.bashrc
-echo 'export DATA_DIR=/data' >> /home/ubuntu/.bashrc
 "
 
-echo "Launching $INSTANCE_TYPE spot instance in $REGION..."
+# Build launch command
+INSTANCE_MODE="spot"
+if [ "$ON_DEMAND" = true ]; then
+  INSTANCE_MODE="on-demand"
+fi
+
+SPOT_FLAG=""
+if [ "$ON_DEMAND" != true ]; then
+  SPOT_FLAG='--instance-market-options {"MarketType":"spot","SpotOptions":{"SpotInstanceType":"one-time","InstanceInterruptionBehavior":"terminate"}}'
+fi
+
+IAM_FLAG=""
+if [ -n "$INSTANCE_PROFILE" ] && [ "$INSTANCE_PROFILE" != "None" ]; then
+  IAM_FLAG="--iam-instance-profile Name=$INSTANCE_PROFILE"
+fi
+
+echo "Launching $INSTANCE_TYPE $INSTANCE_MODE instance in $REGION..."
 
 INSTANCE_ID=$(aws ec2 run-instances \
   --region "$REGION" \
@@ -76,12 +163,12 @@ INSTANCE_ID=$(aws ec2 run-instances \
   --instance-type "$INSTANCE_TYPE" \
   --key-name "$KEY_PAIR" \
   --security-group-ids "$SG_ID" \
-  --iam-instance-profile Name="$INSTANCE_PROFILE" \
-  --instance-market-options 'MarketType=spot,SpotOptions={SpotInstanceType=one-time,InstanceInterruptionBehavior=terminate}' \
-  --block-device-mappings '[{"DeviceName":"/dev/sdf","Ebs":{"VolumeSize":100,"VolumeType":"gp3","DeleteOnTermination":true}}]' \
+  $IAM_FLAG \
+  $SPOT_FLAG \
+  --block-device-mappings '[{"DeviceName":"/dev/sda1","Ebs":{"VolumeSize":150,"VolumeType":"gp3","DeleteOnTermination":true}}]' \
   --user-data "$USER_DATA" \
   --tag-specifications \
-    "ResourceType=instance,Tags=[{Key=Name,Value=$INSTANCE_NAME},{Key=Project,Value=medgemma-rag},{Key=Type,Value=spot-instance}]" \
+    "ResourceType=instance,Tags=[{Key=Name,Value=$INSTANCE_NAME},{Key=Project,Value=medgemma-rag},{Key=Type,Value=$INSTANCE_MODE}]" \
     "ResourceType=volume,Tags=[{Key=Name,Value=$INSTANCE_NAME-volume},{Key=Project,Value=medgemma-rag}]" \
   --query 'Instances[0].InstanceId' \
   --output text)
@@ -113,6 +200,7 @@ Host $SSH_HOST
     HostName $PUBLIC_IP
     User ubuntu
     IdentityFile $KEY_FILE
+    LocalForward 7860 localhost:7860
     ServerAliveInterval 60
     ServerAliveCountMax 3
 EOF
@@ -120,24 +208,11 @@ fi
 
 echo ""
 echo "Instance running!"
-echo "  ID:    $INSTANCE_ID"
-echo "  IP:    $PUBLIC_IP"
-echo "  SSH:   ssh $SSH_HOST"
-echo "  vLLM:  http://$PUBLIC_IP:8000"
-echo "  TEI:   http://$PUBLIC_IP:8001"
+echo "  ID:     $INSTANCE_ID"
+echo "  Region: $REGION"
+echo "  IP:     $PUBLIC_IP"
+echo "  SSH:    ssh $SSH_HOST"
+echo "  LLM:    http://$PUBLIC_IP:8000"
 echo ""
 
-# Wait for SSH to be ready, then sync code
-echo "Waiting for SSH to be ready..."
-for i in $(seq 1 30); do
-  if ssh -o ConnectTimeout=3 -o StrictHostKeyChecking=no "$SSH_HOST" "true" 2>/dev/null; then
-    break
-  fi
-  sleep 2
-done
-
-echo "Syncing code to instance..."
-"$(dirname "$0")/sync.sh" "$PUBLIC_IP"
-
-echo ""
 echo "Next: ssh $SSH_HOST  then  bash scripts/startup.sh --start"
