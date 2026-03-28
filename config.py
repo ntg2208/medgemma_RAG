@@ -46,7 +46,7 @@ CHUNK_OVERLAP = 1  # number of trailing blocks to repeat (capped at 150 tokens)
 # Retrieval Configuration
 # =============================================================================
 TOP_K_RESULTS = 5  # Number of documents to retrieve
-SIMILARITY_THRESHOLD = 0.7  # Minimum similarity score
+SIMILARITY_THRESHOLD = 0.3  # Minimum similarity score
 
 # =============================================================================
 # ChromaDB Configuration
@@ -129,11 +129,13 @@ DIETARY_LIMITS = {
 # Model Generation Parameters
 # =============================================================================
 GENERATION_CONFIG = {
-    "max_new_tokens": 1024,
-    "temperature": 0.3,  # Lower for more factual responses
+    "max_new_tokens": 2048,
+    "temperature": 0.7,
     "top_p": 0.9,
     "do_sample": True,
-    "repetition_penalty": 1.1,
+    "repetition_penalty": 1.3,   # stronger penalty to break repetition loops
+    "frequency_penalty": 0.15,   # vLLM: penalises tokens proportional to how often they've appeared
+    "presence_penalty": 0.1,     # vLLM: flat penalty for any token that has appeared before
 }
 
 # =============================================================================
@@ -174,10 +176,12 @@ LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 # =============================================================================
 # Toggle between local and remote models
 USE_REMOTE_MODELS = os.getenv("USE_REMOTE_MODELS", "false").lower() == "true"
+USE_REMOTE_LLM = os.getenv("USE_REMOTE_LLM", "true").lower() == "true"
 
-# Remote server URLs (only used if USE_REMOTE_MODELS is True)
+# Remote server URL (vLLM)
 MODEL_SERVER_URL = os.getenv("MODEL_SERVER_URL", "http://localhost:8000")
-EMBEDDING_SERVER_URL = os.getenv("EMBEDDING_SERVER_URL", "http://localhost:8001")
+# Model ID to request from the remote server
+REMOTE_MODEL_ID = os.getenv("REMOTE_MODEL_ID", "google/medgemma-1.5-4b-it")
 
 # Remote client settings
 REMOTE_CLIENT_TIMEOUT = float(os.getenv("REMOTE_CLIENT_TIMEOUT", "120"))  # seconds
@@ -231,16 +235,19 @@ def get_llm():
     Returns:
         LLM instance with generate() and as_langchain_llm() methods
     """
-    if USE_REMOTE_MODELS:
+    if USE_REMOTE_LLM:
         try:
             from langchain_openai import ChatOpenAI
             chat = ChatOpenAI(
                 base_url=f"{MODEL_SERVER_URL}/v1",
                 api_key="not-needed",  # vLLM doesn't validate API keys
-                model=MEDGEMMA_MODEL_ID,
+                model=REMOTE_MODEL_ID,
                 temperature=GENERATION_CONFIG["temperature"],
                 max_tokens=GENERATION_CONFIG["max_new_tokens"],
                 timeout=REMOTE_CLIENT_TIMEOUT,
+                streaming=True,
+                frequency_penalty=GENERATION_CONFIG["frequency_penalty"],
+                presence_penalty=GENERATION_CONFIG["presence_penalty"],
             )
             return LLMAdapter(chat)
         except ImportError:
@@ -256,10 +263,7 @@ def get_llm():
 
 
 def get_embeddings(dimension: int = None):
-    """Get embeddings instance based on configuration.
-
-    Returns either a remote embeddings model (via TEI) or local
-    EmbeddingGemmaWrapper based on USE_REMOTE_MODELS environment variable.
+    """Get local embeddings instance (EmbeddingGemmaWrapper).
 
     Args:
         dimension: Embedding dimension (default: EMBEDDING_DIMENSION)
@@ -270,20 +274,7 @@ def get_embeddings(dimension: int = None):
     if dimension is None:
         dimension = EMBEDDING_DIMENSION
 
-    if USE_REMOTE_MODELS:
-        try:
-            from langchain_huggingface import HuggingFaceEndpointEmbeddings
-            return HuggingFaceEndpointEmbeddings(
-                model=EMBEDDING_SERVER_URL,
-                task="feature-extraction",
-            )
-        except ImportError:
-            raise ImportError(
-                "langchain-huggingface is required for remote embeddings. "
-                "Install with: pip install langchain-huggingface"
-            )
-    else:
-        # Import here to avoid loading models when using remote
-        from importlib import import_module
-        embeddings_module = import_module("1_Retrieval_Augmented_Generation.embeddings")
-        return embeddings_module.EmbeddingGemmaWrapper(dimension=dimension)
+    from importlib import import_module
+    embeddings_module = import_module("1_Retrieval_Augmented_Generation.embeddings")
+    device = os.getenv("EMBEDDING_DEVICE", "cpu")
+    return embeddings_module.EmbeddingGemmaWrapper(dimension=dimension, device=device)

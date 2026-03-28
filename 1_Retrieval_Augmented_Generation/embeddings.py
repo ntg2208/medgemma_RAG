@@ -92,7 +92,7 @@ class EmbeddingGemmaWrapper(Embeddings):
             model_id,
             token=HF_TOKEN if HF_TOKEN else None,
             trust_remote_code=True,
-            torch_dtype=torch.float16 if self.device != "cpu" else torch.float32,
+            torch_dtype=torch.float32,
         ).to(self.device)
 
         self.model.eval()

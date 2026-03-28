@@ -71,7 +71,7 @@ Individual node functions for the LangGraph workflow.
 **Nodes:**
 - `pii_check`: Detect and redact PII
 - `analyze_query`: Classify query intent
-- `retrieve_documents`: Get relevant context
+- `retrieve_documents`: Get relevant context (unfiltered)
 - `generate_response`: Create answer with LLM
 - `evaluate_response`: Score with RAGAS
 
@@ -97,7 +97,7 @@ graph = AgenticRAGGraph(
 
 result = graph.invoke(
     query="My name is John, what potassium foods should I avoid?",
-    ckd_stage=3
+    ckd_stage=3  # Used for advice personalization, not metadata filtering
 )
 
 print(result["final_response"])
@@ -139,7 +139,7 @@ Domain-specific quality measures:
 | Metric | Description |
 |--------|-------------|
 | Citation Score | Are sources properly cited? |
-| CKD Stage Appropriateness | Is advice correct for stage? |
+| CKD Stage Appropriateness | Is advice correct for the patient's stage? |
 | Disclaimer Present | Medical disclaimer included? |
 | Actionability Score | Is advice actionable? |
 

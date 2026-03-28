@@ -24,7 +24,7 @@ LangChain-compatible wrapper for Google's EmbeddingGemma model.
 from embeddings import EmbeddingGemmaWrapper
 
 embeddings = EmbeddingGemmaWrapper(dimension=768)
-vector = embeddings.embed_query("What is CKD stage 3?")
+vector = embeddings.embed_query("What is chronic kidney disease?")
 ```
 
 ### vectorstore.py - ChromaDB Vector Store
@@ -34,7 +34,7 @@ Persistent vector storage with metadata filtering.
 **Features:**
 - Document insertion with metadata
 - Similarity search with scores
-- CKD stage filtering
+- Source and title filtering
 - Document type filtering
 
 ```python
@@ -51,14 +51,14 @@ Enhanced retrieval with medical term expansion.
 
 **Features:**
 - Query expansion for medical terms
-- CKD stage-aware retrieval
+- Document type filtering
 - Configurable thresholds
 - Hybrid retrieval option
 
 ```python
 from retriever import CKDRetriever
 
-retriever = CKDRetriever(vectorstore=store, ckd_stage=3)
+retriever = CKDRetriever(vectorstore=store)
 docs = retriever.invoke("dietary restrictions")
 ```
 
@@ -88,7 +88,7 @@ print(response.source_documents)
 ```
 You are a medical assistant specializing in Chronic Kidney Disease (CKD) management.
 Use the following context from NICE guidelines and KidneyCareUK to answer the question.
-Always cite your sources and indicate the CKD stage relevance when applicable.
+Always cite your sources using [Source: document, section].
 
 Context: {context}
 

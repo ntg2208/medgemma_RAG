@@ -174,12 +174,8 @@ class RAGNodes:
         logger.debug("Node: retrieve_documents")
 
         try:
-            # Use CKD stage filter if available
-            ckd_stage = state.get("ckd_stage")
-            if ckd_stage and hasattr(self.retriever, 'with_config'):
-                retriever = self.retriever.with_config(ckd_stage=ckd_stage)
-            else:
-                retriever = self.retriever
+            # Metadata filtering for ckd_stage is no longer supported
+            retriever = self.retriever
 
             docs = retriever.invoke(state["anonymized_query"])
             logger.info(f"Retrieved {len(docs)} documents")

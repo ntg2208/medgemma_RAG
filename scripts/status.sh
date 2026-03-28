@@ -59,6 +59,5 @@ echo ""
 if [ "$PUBLIC_IP" != "N/A" ]; then
   echo "SSH:    ssh medgemma-gpu   (or: ssh -i ~/.ssh/medgemma-key.pem ubuntu@$PUBLIC_IP)"
   echo "vLLM:   http://$PUBLIC_IP:8000"
-  echo "TEI:    http://$PUBLIC_IP:8001"
 fi
 echo ""

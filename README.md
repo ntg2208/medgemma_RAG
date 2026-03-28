@@ -15,7 +15,7 @@ This project provides an AI-powered assistant for CKD patients and healthcare pr
 
 | Level | Description | Key Features |
 |-------|-------------|--------------|
-| **Level 1: Simple RAG** | Basic retrieval and generation | Source citations, CKD stage filtering |
+| **Level 1: Simple RAG** | Basic retrieval and generation | Source citations, Query expansion |
 | **Level 2: Agentic RAG** | LangGraph workflow orchestration | PII detection, query routing, RAGAS evaluation |
 | **Level 3: Multi-Agent** | Specialized domain agents | Diet, Medication, Lifestyle, Knowledge retrieval |
 

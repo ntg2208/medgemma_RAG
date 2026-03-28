@@ -27,10 +27,27 @@ PROJECT_ROOT = Path(__file__).parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 
-def import_from_path(module_name: str, file_path: Path):
-    """Import a module from a file path (handles numeric prefixes)."""
-    spec = importlib.util.spec_from_file_location(module_name, file_path)
+def import_package(package_name: str, package_dir: Path):
+    """Import a package with numeric prefix by registering it as a proper package."""
+    # Register the package so relative imports work
+    spec = importlib.util.spec_from_file_location(
+        package_name,
+        package_dir / "__init__.py",
+        submodule_search_locations=[str(package_dir)],
+    )
     module = importlib.util.module_from_spec(spec)
+    sys.modules[package_name] = module
+    spec.loader.exec_module(module)
+    return module
+
+
+def import_from_path(module_name: str, file_path: Path, package: str = None):
+    """Import a module from a file path (handles numeric prefixes)."""
+    spec = importlib.util.spec_from_file_location(module_name, file_path,
+                                                   submodule_search_locations=[])
+    module = importlib.util.module_from_spec(spec)
+    if package:
+        module.__package__ = package
     sys.modules[module_name] = module
     spec.loader.exec_module(module)
     return module
@@ -60,45 +77,21 @@ def initialize_components():
         # Import config and factory functions
         from config import EMBEDDING_DIMENSION, get_llm, get_embeddings
 
-        # Import modules with numeric prefixes using importlib
-        embeddings_mod = import_from_path(
-            "rag_embeddings",
-            PROJECT_ROOT / "1_Retrieval_Augmented_Generation" / "embeddings.py"
-        )
-        vectorstore_mod = import_from_path(
-            "rag_vectorstore",
-            PROJECT_ROOT / "1_Retrieval_Augmented_Generation" / "vectorstore.py"
-        )
-        chain_mod = import_from_path(
-            "rag_chain",
-            PROJECT_ROOT / "1_Retrieval_Augmented_Generation" / "chain.py"
-        )
-        retriever_mod = import_from_path(
-            "rag_retriever",
-            PROJECT_ROOT / "1_Retrieval_Augmented_Generation" / "retriever.py"
-        )
-        pii_mod = import_from_path(
-            "agentic_pii",
-            PROJECT_ROOT / "2_Agentic_RAG" / "pii_handler.py"
-        )
-        graph_mod = import_from_path(
-            "agentic_graph",
-            PROJECT_ROOT / "2_Agentic_RAG" / "graph.py"
-        )
-        orchestrator_mod = import_from_path(
-            "multi_orchestrator",
-            PROJECT_ROOT / "3_MultiAgent_RAG" / "orchestrator.py"
-        )
+        # Register packages with numeric prefixes so relative imports work
+        rag_pkg = import_package("rag_pkg", PROJECT_ROOT / "1_Retrieval_Augmented_Generation")
+        agentic_pkg = import_package("agentic_pkg", PROJECT_ROOT / "2_Agentic_RAG")
+        multi_pkg = import_package("multi_pkg", PROJECT_ROOT / "3_MultiAgent_RAG")
+        # Register sub-packages
+        import_package("multi_pkg.agents", PROJECT_ROOT / "3_MultiAgent_RAG" / "agents")
 
         # Extract classes
-        EmbeddingGemmaWrapper = embeddings_mod.EmbeddingGemmaWrapper
-        CKDVectorStore = vectorstore_mod.CKDVectorStore
-        MedGemmaLLM = chain_mod.MedGemmaLLM
-        SimpleRAGChain = chain_mod.SimpleRAGChain
-        CKDRetriever = retriever_mod.CKDRetriever
-        PIIHandler = pii_mod.PIIHandler
-        AgenticRAGGraph = graph_mod.AgenticRAGGraph
-        MultiAgentOrchestrator = orchestrator_mod.MultiAgentOrchestrator
+        EmbeddingGemmaWrapper = rag_pkg.EmbeddingGemmaWrapper
+        CKDVectorStore = rag_pkg.CKDVectorStore
+        SimpleRAGChain = rag_pkg.SimpleRAGChain
+        CKDRetriever = rag_pkg.CKDRetriever
+        PIIHandler = agentic_pkg.PIIHandler
+        AgenticRAGGraph = agentic_pkg.AgenticRAGGraph
+        MultiAgentOrchestrator = multi_pkg.MultiAgentOrchestrator
 
         # Initialize embeddings (local or remote based on config)
         logger.info("Loading embeddings model...")
@@ -178,11 +171,12 @@ def simple_rag_query(
 
     # Initialize if needed
     if not _components["initialized"]:
-        history.append((query, "Initializing system... Please wait."))
+        history.append({"role": "user", "content": query})
+        history.append({"role": "assistant", "content": "Initializing system... Please wait."})
         if not initialize_components():
-            history[-1] = (query, "Failed to initialize. Check logs for details.")
+            history[-1] = {"role": "assistant", "content": "Failed to initialize. Check logs for details."}
             return history, ""
-        history[-1] = (query, "System initialized! Processing your query...")
+        history[-1] = {"role": "assistant", "content": "System initialized! Processing your query..."}
 
     try:
         # Process query
@@ -198,11 +192,13 @@ def simple_rag_query(
                 page = doc.metadata.get("page_number", "?")
                 answer += f"{i}. {source}, Page {page}\n"
 
-        history.append((query, answer))
+        history.append({"role": "user", "content": query})
+        history.append({"role": "assistant", "content": answer})
 
     except Exception as e:
         logger.error(f"Simple RAG error: {e}")
-        history.append((query, f"Error: {str(e)}"))
+        history.append({"role": "user", "content": query})
+        history.append({"role": "assistant", "content": f"Error: {str(e)}"})
 
     return history, ""
 
@@ -222,9 +218,10 @@ def agentic_rag_query(
 
     # Initialize if needed
     if not _components["initialized"]:
-        history.append((query, "Initializing system... Please wait."))
+        history.append({"role": "user", "content": query})
+        history.append({"role": "assistant", "content": "Initializing system... Please wait."})
         if not initialize_components():
-            history[-1] = (query, "Failed to initialize.")
+            history[-1] = {"role": "assistant", "content": "Failed to initialize."}
             return history, "", "Error", "N/A"
 
     try:
@@ -248,16 +245,14 @@ def agentic_rag_query(
         else:
             eval_info = "Evaluation not available"
 
-        # Processing steps
-        steps = result.get("processing_steps", [])
-        steps_info = " → ".join(steps) if steps else "N/A"
-
-        history.append((query, answer))
+        history.append({"role": "user", "content": query})
+        history.append({"role": "assistant", "content": answer})
         return history, "", pii_info, eval_info
 
     except Exception as e:
         logger.error(f"Agentic RAG error: {e}")
-        history.append((query, f"Error: {str(e)}"))
+        history.append({"role": "user", "content": query})
+        history.append({"role": "assistant", "content": f"Error: {str(e)}"})
         return history, "", "Error", "N/A"
 
 
@@ -277,9 +272,10 @@ def multi_agent_query(
 
     # Initialize if needed
     if not _components["initialized"]:
-        history.append((query, "Initializing system... Please wait."))
+        history.append({"role": "user", "content": query})
+        history.append({"role": "assistant", "content": "Initializing system... Please wait."})
         if not initialize_components():
-            history[-1] = (query, "Failed to initialize.")
+            history[-1] = {"role": "assistant", "content": "Failed to initialize."}
             return history, "", "Error", ""
 
     try:
@@ -301,12 +297,14 @@ def multi_agent_query(
             f"**Reasoning:** {routing.reasoning}"
         )
 
-        history.append((query, response.answer))
+        history.append({"role": "user", "content": query})
+        history.append({"role": "assistant", "content": response.answer})
         return history, "", agents_info, routing_info
 
     except Exception as e:
         logger.error(f"Multi-Agent error: {e}")
-        history.append((query, f"Error: {str(e)}"))
+        history.append({"role": "user", "content": query})
+        history.append({"role": "assistant", "content": f"Error: {str(e)}"})
         return history, "", "Error", ""
 
 
@@ -319,15 +317,6 @@ def create_app() -> gr.Blocks:
 
     with gr.Blocks(
         title="CKD Management Assistant",
-        theme=gr.themes.Soft(),
-        css="""
-        .disclaimer {
-            background-color: #fff3cd;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-        """
     ) as app:
 
         gr.Markdown(
@@ -362,7 +351,6 @@ def create_app() -> gr.Blocks:
                         simple_chatbot = gr.Chatbot(
                             label="Chat",
                             height=400,
-                            show_copy_button=True,
                         )
                         simple_input = gr.Textbox(
                             label="Your Question",
@@ -413,7 +401,6 @@ def create_app() -> gr.Blocks:
                         agentic_chatbot = gr.Chatbot(
                             label="Chat",
                             height=400,
-                            show_copy_button=True,
                         )
                         agentic_input = gr.Textbox(
                             label="Your Question",
@@ -469,7 +456,6 @@ def create_app() -> gr.Blocks:
                         multi_chatbot = gr.Chatbot(
                             label="Chat",
                             height=400,
-                            show_copy_button=True,
                         )
                         multi_input = gr.Textbox(
                             label="Your Question",
@@ -543,7 +529,7 @@ def create_app() -> gr.Blocks:
                     **Level 1: Simple RAG**
                     - Basic retrieval and generation
                     - Source citations
-                    - CKD stage filtering
+                    - Query expansion support
 
                     **Level 2: Agentic RAG**
                     - PII detection and redaction
@@ -594,4 +580,13 @@ if __name__ == "__main__":
         server_port=7860,
         share=False,
         show_error=True,
+        theme=gr.themes.Soft(),
+        css="""
+        .disclaimer {
+            background-color: #fff3cd;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        """,
     )

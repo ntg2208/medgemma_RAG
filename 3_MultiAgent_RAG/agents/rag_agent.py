@@ -71,7 +71,6 @@ GUIDELINES:
 2. Always cite your sources with [Source: document, section/page]
 3. If the context doesn't contain the answer, say so clearly
 4. Use clear, patient-friendly language
-5. Include relevant CKD stage information when applicable
 
 CONTEXT:
 {context}
@@ -84,7 +83,6 @@ Provide a comprehensive answer with citations:"""
         self,
         retriever: Any,
         llm: Any,
-        ckd_stage: Optional[int] = None,
     ):
         """
         Initialize the RAG Agent.
@@ -92,11 +90,9 @@ Provide a comprehensive answer with citations:"""
         Args:
             retriever: Document retriever
             llm: Language model for generation
-            ckd_stage: Optional default CKD stage for filtering
         """
         self.retriever = retriever
         self.llm = llm
-        self.ckd_stage = ckd_stage
 
         logger.info("RAGAgent initialized")
 
@@ -161,18 +157,13 @@ Provide a comprehensive answer with citations:"""
 
         Args:
             query: User question
-            **kwargs: Additional parameters (ckd_stage, etc.)
+            **kwargs: Additional parameters (e.g., weight_kg)
 
         Returns:
             AgentResponse with answer
         """
-        ckd_stage = kwargs.get("ckd_stage", self.ckd_stage)
-
-        # Configure retriever for CKD stage if available
-        if ckd_stage and hasattr(self.retriever, 'with_config'):
-            retriever = self.retriever.with_config(ckd_stage=ckd_stage)
-        else:
-            retriever = self.retriever
+        # Metadata filtering for ckd_stage is no longer supported
+        retriever = self.retriever
 
         # Retrieve documents
         try:
@@ -216,7 +207,6 @@ Provide a comprehensive answer with citations:"""
 def create_rag_agent(
     retriever: Any,
     llm: Any,
-    ckd_stage: Optional[int] = None,
 ) -> RAGAgent:
     """Factory function to create a RAG agent."""
-    return RAGAgent(retriever=retriever, llm=llm, ckd_stage=ckd_stage)
+    return RAGAgent(retriever=retriever, llm=llm)

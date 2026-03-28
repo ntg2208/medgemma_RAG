@@ -38,12 +38,12 @@ Specialized agents for different CKD management domains with intelligent query r
 
 ### agents/rag_agent.py - Knowledge Retrieval
 
-General CKD knowledge from NICE guidelines and KidneyCareUK.
+General CKD knowledge from NICE guidelines and KidneyCareUK documents.
 
 **Capabilities:**
 - Evidence-based information retrieval
 - Source citation
-- CKD stage filtering
+- Query expansion support
 
 ```python
 from agents.rag_agent import RAGAgent
@@ -216,7 +216,7 @@ print(f"Confidence: {response.confidence:.0%}")
 
 | Agent | Input | Output |
 |-------|-------|--------|
-| RAG | Query, CKD stage | Answer with citations |
+| RAG | Query | Answer with citations |
 | Diet | Query, stage, weight | Nutrient limits, food lists |
 | Medication | Drug name, stage | Risk level, alternatives |
 | Lifestyle | Topic, stage | Recommendations, tips |
