@@ -1654,3 +1654,335 @@ if __name__ == "__main__":
 git add simple_rag/raptor_viz.py tests/test_raptor_viz.py scripts/visualize_raptor.py
 git commit -m "feat: add Pyvis interactive RAPTOR tree visualization"
 ```
+
+---
+
+### Task 8: CLI `--retriever` flag for all levels + show retrieved context
+
+**Files:**
+- Modify: `main.py:102-144` (init_components)
+- Modify: `main.py:406-465` (argparse + main)
+- Modify: `main.py:150-237` (chat_simple — show context)
+- Modify: `main.py:242-328` (chat_agentic — pass selected retriever)
+- Modify: `main.py:330-401` (chat_multi — pass selected retriever)
+
+This task adds a `--retriever` flag to the CLI so the user can choose `flat`, `tree`, `raptor`, or `contextual` for any RAG level. It also adds a `--show-context` flag that prints retrieved chunks before the answer.
+
+- [ ] **Step 1: Update argparse in `main()` (lines 406-428)**
+
+Replace the `main()` function (from `def main():` to `args = parser.parse_args()`) with:
+
+```python
+def main():
+    parser = argparse.ArgumentParser(
+        description="CKD RAG Terminal Chat",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+examples:
+  uv run python main.py simple                        # Level 1, default tree retriever
+  uv run python main.py simple --retriever raptor      # Level 1 with RAPTOR
+  uv run python main.py agentic --retriever contextual # Level 2 with Contextual RAG
+  uv run python main.py multi --retriever flat         # Level 3 with flat retriever
+  uv run python main.py simple --show-context          # Show retrieved chunks
+  uv run python main.py simple -v                      # With debug logging
+        """,
+    )
+    parser.add_argument(
+        "level",
+        choices=["simple", "agentic", "multi"],
+        help="RAG level to use",
+    )
+    parser.add_argument(
+        "--retriever", "-r",
+        choices=["flat", "tree", "raptor", "contextual"],
+        default="tree",
+        help="Retriever strategy (default: tree)",
+    )
+    parser.add_argument(
+        "--show-context", "-c",
+        action="store_true",
+        help="Show retrieved context chunks before the answer",
+    )
+    parser.add_argument(
+        "-v", "--verbose",
+        action="store_true",
+        help="Enable debug logging",
+    )
+    args = parser.parse_args()
+```
+
+- [ ] **Step 2: Update `init_components()` to accept retriever choice (lines 102-144)**
+
+Replace the `init_components()` function with:
+
+```python
+def init_components(retriever_type: str = "tree"):
+    from config import get_llm, get_embeddings
+
+    log_tool("embeddings", "loading embedding model...")
+    embeddings = get_embeddings()
+
+    log_tool("vectorstore", "loading ChromaDB...")
+    rag_pkg = import_package("rag_pkg", PROJECT_ROOT / "simple_rag")
+    vectorstore = rag_pkg.CKDVectorStore(embeddings)
+
+    # If vectorstore is empty, load processed chunks
+    stats = vectorstore.get_collection_stats()
+    if stats["document_count"] == 0:
+        processed_dir = PROJECT_ROOT / "Data" / "processed"
+        log_tool("vectorstore", f"empty collection — loading chunks from {processed_dir}...")
+        docs, n_files = load_processed_chunks(processed_dir)
+        if docs:
+            log_info(f"loaded {len(docs)} chunks from {n_files} files")
+            vectorstore.add_documents(docs)
+            log_info(f"indexed {len(docs)} chunks into ChromaDB")
+        else:
+            log_warn(f"no chunk files found in {processed_dir}")
+    else:
+        log_info(f"vectorstore has {stats['document_count']} documents")
+
+    # Create the selected retriever
+    log_tool("retriever", f"initializing {retriever_type} retriever...")
+    from simple_rag.retriever import create_retriever
+
+    retriever = create_retriever(
+        vectorstore=vectorstore,
+        embedding_function=embeddings,
+        use_tree=(retriever_type == "tree"),
+        use_raptor=(retriever_type == "raptor"),
+        use_contextual=(retriever_type == "contextual"),
+        use_hybrid=False,
+    )
+
+    log_tool("llm", "loading LLM...")
+    llm = get_llm()
+
+    return {
+        "embeddings": embeddings,
+        "vectorstore": vectorstore,
+        "retriever": retriever,
+        "retriever_type": retriever_type,
+        "llm": llm,
+        "rag_pkg": rag_pkg,
+    }
+```
+
+- [ ] **Step 3: Update `chat_simple()` to show retrieved context (lines 150-237)**
+
+Add a `show_context` parameter and context display. Replace the function signature and the section before streaming:
+
+Find this block in `chat_simple` (the function signature and first few lines):
+
+```python
+def chat_simple(comps: dict):
+    rag_pkg = comps["rag_pkg"]
+    log_tool("simple_rag", "building RAG chain...")
+    chain = rag_pkg.SimpleRAGChain(retriever=comps["retriever"], llm=comps["llm"])
+
+    print(f"\n{C.BOLD}=== Simple RAG (Level 1) ==={C.RESET}")
+    print(f"{C.GREY}Type 'quit' to exit.{C.RESET}\n")
+```
+
+Replace with:
+
+```python
+def chat_simple(comps: dict, show_context: bool = False):
+    rag_pkg = comps["rag_pkg"]
+    retriever_type = comps.get("retriever_type", "tree")
+    log_tool("simple_rag", "building RAG chain...")
+    chain = rag_pkg.SimpleRAGChain(retriever=comps["retriever"], llm=comps["llm"])
+
+    print(f"\n{C.BOLD}=== Simple RAG (Level 1) [{retriever_type}] ==={C.RESET}")
+    print(f"{C.GREY}Type 'quit' to exit.{C.RESET}\n")
+```
+
+Then find the line where the query is received and streaming begins. After `query = ...` and before the streaming block, add context display. Find:
+
+```python
+        query = raw
+        log_info(f"query: {query[:80]}")
+```
+
+If that line doesn't exist, find the block right after the user input is captured (after `if not raw or raw.lower() in ...`) and before the streaming. Add context display by inserting after the query is set:
+
+In the `chat_simple` while loop, after the user types their query and before the response is generated, add:
+
+```python
+        # Show retrieved context if requested
+        if show_context:
+            retrieved = comps["retriever"].invoke(query)
+            if retrieved:
+                print(f"\n{C.GREY}{'─' * 60}")
+                print(f"{C.BOLD}Retrieved Context ({len(retrieved)} chunks):{C.RESET}")
+                for i, doc in enumerate(retrieved, 1):
+                    source = doc.metadata.get("source", "?")
+                    section = doc.metadata.get("section", "")
+                    layer = doc.metadata.get("raptor_layer", "")
+                    ctx = doc.metadata.get("contextual_context", "")
+
+                    # Header line
+                    header_parts = [f"{C.CYAN}[{i}]{C.RESET} {C.YELLOW}{source}{C.RESET}"]
+                    if section:
+                        header_parts.append(f"§ {section}")
+                    if layer != "":
+                        header_parts.append(f"(layer {layer})")
+                    print(f"  {'  '.join(header_parts)}")
+
+                    # Contextual RAG context line
+                    if ctx:
+                        print(f"  {C.GREY}Context: {ctx[:100]}{'...' if len(ctx) > 100 else ''}{C.RESET}")
+
+                    # Content preview
+                    preview = doc.page_content[:150].replace("\n", " ")
+                    if len(doc.page_content) > 150:
+                        preview += "..."
+                    print(f"  {C.GREY}{preview}{C.RESET}")
+                    print()
+                print(f"{C.GREY}{'─' * 60}{C.RESET}\n")
+```
+
+- [ ] **Step 4: Update `chat_agentic()` to use selected retriever (line 250)**
+
+Find:
+
+```python
+        retriever=comps["flat_retriever"],
+```
+
+Replace with:
+
+```python
+        retriever=comps["retriever"],
+```
+
+And update the header to show retriever type:
+
+Find:
+
+```python
+    print(f"\n{C.BOLD}=== Agentic RAG (Level 2) ==={C.RESET}")
+```
+
+Replace with:
+
+```python
+    retriever_type = comps.get("retriever_type", "flat")
+    print(f"\n{C.BOLD}=== Agentic RAG (Level 2) [{retriever_type}] ==={C.RESET}")
+```
+
+- [ ] **Step 5: Update `chat_multi()` to use selected retriever (line 340)**
+
+Find:
+
+```python
+        retriever=comps["flat_retriever"],
+```
+
+Replace with:
+
+```python
+        retriever=comps["retriever"],
+```
+
+And update the header:
+
+Find:
+
+```python
+    print(f"\n{C.BOLD}=== Multi-Agent RAG (Level 3) ==={C.RESET}")
+```
+
+Replace with:
+
+```python
+    retriever_type = comps.get("retriever_type", "flat")
+    print(f"\n{C.BOLD}=== Multi-Agent RAG (Level 3) [{retriever_type}] ==={C.RESET}")
+```
+
+- [ ] **Step 6: Wire args into main() (lines 440-460)**
+
+Find the block that calls `init_components()` and the handler dispatch:
+
+```python
+    log_info("initializing components...")
+    try:
+        comps = init_components()
+    except Exception as e:
+        log_error(f"initialization failed: {e}")
+        sys.exit(1)
+
+    log_info("ready!\n")
+
+    handlers = {
+        "simple": chat_simple,
+        "agentic": chat_agentic,
+        "multi": chat_multi,
+    }
+
+    try:
+        handlers[args.level](comps)
+    except KeyboardInterrupt:
+        pass
+```
+
+Replace with:
+
+```python
+    log_info(f"initializing components (retriever={args.retriever})...")
+    try:
+        comps = init_components(retriever_type=args.retriever)
+    except Exception as e:
+        log_error(f"initialization failed: {e}")
+        sys.exit(1)
+
+    log_info("ready!\n")
+
+    if args.level == "simple":
+        try:
+            chat_simple(comps, show_context=args.show_context)
+        except KeyboardInterrupt:
+            pass
+    elif args.level == "agentic":
+        try:
+            chat_agentic(comps)
+        except KeyboardInterrupt:
+            pass
+    elif args.level == "multi":
+        try:
+            chat_multi(comps)
+        except KeyboardInterrupt:
+            pass
+```
+
+- [ ] **Step 7: Verify it parses correctly**
+
+```bash
+uv run python main.py --help
+```
+
+Expected:
+```
+usage: main.py [-h] [--retriever {flat,tree,raptor,contextual}]
+               [--show-context] [-v]
+               {simple,agentic,multi}
+
+CKD RAG Terminal Chat
+
+positional arguments:
+  {simple,agentic,multi}
+                        RAG level to use
+
+options:
+  -h, --help            show this help message and exit
+  --retriever {flat,tree,raptor,contextual}, -r {flat,tree,raptor,contextual}
+                        Retriever strategy (default: tree)
+  --show-context, -c    Show retrieved context chunks before the answer
+  -v, --verbose         Enable debug logging
+```
+
+- [ ] **Step 8: Commit**
+
+```bash
+git add main.py
+git commit -m "feat: add --retriever and --show-context CLI flags for all RAG levels"
+```
