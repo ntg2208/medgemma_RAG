@@ -6,7 +6,7 @@
 
 **Architecture:** Build a tree of summaries bottom-up by clustering leaf chunks with UMAP+GMM, summarizing each cluster via LLM, then recursing. At query time, flatten all layers into one ChromaDB collection and do standard top-k similarity search (collapsed retrieval). The builder runs once at index time; the retriever is zero-cost at query time.
 
-**Tech Stack:** umap-learn, scikit-learn (GaussianMixture), ChromaDB, LangChain BaseRetriever, numpy
+**Tech Stack:** umap-learn, scikit-learn (GaussianMixture), ChromaDB, LangChain BaseRetriever, numpy, pyvis
 
 ---
 
@@ -16,8 +16,10 @@
 |------|--------|---------------|
 | `simple_rag/raptor_builder.py` | Create | Index-time: UMAP+GMM clustering, LLM summarization, recursive tree building |
 | `simple_rag/raptor_retriever.py` | Create | Query-time: collapsed retrieval over RAPTOR ChromaDB collection |
+| `simple_rag/raptor_viz.py` | Create | Pyvis interactive tree visualization |
 | `tests/test_raptor_builder.py` | Create | Unit tests for clustering, summarization, tree construction |
 | `tests/test_raptor_retriever.py` | Create | Unit tests for retrieval |
+| `tests/test_raptor_viz.py` | Create | Unit tests for visualization |
 | `scripts/build_raptor_index.py` | Create | CLI to build RAPTOR index from existing chunks |
 | `config.py` | Modify (line 64) | Add RAPTOR config constants |
 | `simple_rag/retriever.py` | Modify (lines 228-264) | Add `use_raptor` flag to `create_retriever()` |
@@ -1211,3 +1213,444 @@ for d in docs:
 ```
 
 Expected: Mix of leaf chunks (layer 0) and summary nodes (layer 1+) in results.
+
+---
+
+### Task 7: Pyvis interactive tree visualization
+
+**Files:**
+- Create: `simple_rag/raptor_viz.py`
+- Create: `tests/test_raptor_viz.py`
+- Create: `scripts/visualize_raptor.py`
+
+- [ ] **Step 1: Install pyvis**
+
+```bash
+uv pip install pyvis
+```
+
+Expected: Successfully installed pyvis.
+
+- [ ] **Step 2: Write failing tests for visualization**
+
+Create `tests/test_raptor_viz.py`:
+
+```python
+"""Tests for RAPTOR tree Pyvis visualization."""
+
+import pytest
+from pathlib import Path
+from simple_rag.raptor_builder import RaptorNode, RaptorTree
+
+
+def _make_sample_tree() -> RaptorTree:
+    """Build a small tree for testing: 4 leaves, 2 L1 summaries, 1 L2 root."""
+    nodes = {
+        "leaf_0": RaptorNode(
+            "leaf_0", "Potassium limits for CKD stage 3.", [0.1] * 10, 0, [],
+            {"source": "nice.pdf", "section": "Dietary"},
+        ),
+        "leaf_1": RaptorNode(
+            "leaf_1", "Sodium should be limited to 2000mg.", [0.2] * 10, 0, [],
+            {"source": "nice.pdf", "section": "Dietary"},
+        ),
+        "leaf_2": RaptorNode(
+            "leaf_2", "ACE inhibitors for proteinuria.", [0.3] * 10, 0, [],
+            {"source": "kdigo.pdf", "section": "Medication"},
+        ),
+        "leaf_3": RaptorNode(
+            "leaf_3", "eGFR monitoring every 3 months.", [0.4] * 10, 0, [],
+            {"source": "kdigo.pdf", "section": "Monitoring"},
+        ),
+        "summary_L1_C0": RaptorNode(
+            "summary_L1_C0", "Summary: dietary restrictions for CKD.",
+            [0.15] * 10, 1, ["leaf_0", "leaf_1"],
+            {"layer": 1, "cluster_size": 2},
+        ),
+        "summary_L1_C1": RaptorNode(
+            "summary_L1_C1", "Summary: medication and monitoring.",
+            [0.35] * 10, 1, ["leaf_2", "leaf_3"],
+            {"layer": 1, "cluster_size": 2},
+        ),
+        "summary_L2_C0": RaptorNode(
+            "summary_L2_C0", "Summary: CKD management overview.",
+            [0.25] * 10, 2, ["summary_L1_C0", "summary_L1_C1"],
+            {"layer": 2, "cluster_size": 2},
+        ),
+    }
+    return RaptorTree(nodes=nodes, depth=2)
+
+
+class TestVisualize:
+    """Test Pyvis visualization output."""
+
+    def test_generates_html_file(self, tmp_path):
+        from simple_rag.raptor_viz import visualize_tree
+
+        tree = _make_sample_tree()
+        output = tmp_path / "raptor_tree.html"
+        visualize_tree(tree, str(output))
+        assert output.exists()
+        html = output.read_text()
+        assert "<html>" in html.lower() or "<!doctype" in html.lower()
+
+    def test_html_contains_all_nodes(self, tmp_path):
+        from simple_rag.raptor_viz import visualize_tree
+
+        tree = _make_sample_tree()
+        output = tmp_path / "tree.html"
+        visualize_tree(tree, str(output))
+        html = output.read_text()
+        # All 7 node IDs should appear somewhere in the HTML
+        for node_id in tree.nodes:
+            assert node_id in html
+
+    def test_html_contains_edges(self, tmp_path):
+        from simple_rag.raptor_viz import visualize_tree
+
+        tree = _make_sample_tree()
+        output = tmp_path / "tree.html"
+        visualize_tree(tree, str(output))
+        html = output.read_text()
+        # Pyvis encodes edges as JSON — check that parent→child links exist
+        # summary_L2_C0 → summary_L1_C0 and summary_L1_C0 → leaf_0
+        assert "summary_L2_C0" in html
+        assert "leaf_0" in html
+
+    def test_default_output_path(self, tmp_path, monkeypatch):
+        from simple_rag.raptor_viz import visualize_tree
+
+        monkeypatch.chdir(tmp_path)
+        tree = _make_sample_tree()
+        result_path = visualize_tree(tree)
+        assert Path(result_path).exists()
+
+
+class TestHighlightRetrieval:
+    """Test highlighting retrieved nodes in the visualization."""
+
+    def test_highlight_nodes(self, tmp_path):
+        from simple_rag.raptor_viz import visualize_tree
+
+        tree = _make_sample_tree()
+        output = tmp_path / "highlighted.html"
+        visualize_tree(
+            tree,
+            str(output),
+            highlight_nodes=["leaf_0", "summary_L1_C0"],
+        )
+        html = output.read_text()
+        assert output.exists()
+        # Highlighted nodes should have a different color in the HTML
+        # (we use red for highlighted, so check for the color code)
+        assert "#e74c3c" in html or "red" in html.lower()
+```
+
+- [ ] **Step 3: Run tests to verify they fail**
+
+```bash
+uv run pytest tests/test_raptor_viz.py -v --tb=short 2>&1 | tail -10
+```
+
+Expected: FAIL — `raptor_viz` module not found.
+
+- [ ] **Step 4: Implement Pyvis visualization**
+
+Create `simple_rag/raptor_viz.py`:
+
+```python
+"""
+Pyvis interactive visualization for RAPTOR trees.
+
+Generates a standalone HTML file with an interactive network graph.
+Nodes are colored by layer, sized by text length, and show
+text previews on hover. Edges show parent→child relationships.
+
+Usage:
+    from simple_rag.raptor_viz import visualize_tree
+    visualize_tree(tree, "raptor_tree.html")
+    visualize_tree(tree, "debug.html", highlight_nodes=["leaf_0", "leaf_5"])
+"""
+
+import logging
+from pathlib import Path
+from typing import Optional
+
+from pyvis.network import Network
+
+logger = logging.getLogger(__name__)
+
+# Color palette by layer (layer 0 = leaves, higher = summaries)
+LAYER_COLORS = [
+    "#3498db",  # Layer 0 (leaves): blue
+    "#2ecc71",  # Layer 1: green
+    "#f39c12",  # Layer 2: orange
+    "#9b59b6",  # Layer 3: purple
+    "#1abc9c",  # Layer 4+: teal
+]
+HIGHLIGHT_COLOR = "#e74c3c"  # Red for highlighted/retrieved nodes
+
+# Node size range
+MIN_SIZE = 10
+MAX_SIZE = 40
+
+
+def visualize_tree(
+    tree,
+    output_path: str = "raptor_tree.html",
+    highlight_nodes: Optional[list[str]] = None,
+    height: str = "900px",
+    width: str = "100%",
+) -> str:
+    """Generate an interactive Pyvis visualization of a RAPTOR tree.
+
+    Args:
+        tree: RaptorTree instance with nodes and depth.
+        output_path: Path for the output HTML file.
+        highlight_nodes: Optional list of node IDs to highlight (e.g., retrieved nodes).
+        height: Height of the visualization.
+        width: Width of the visualization.
+
+    Returns:
+        Path to the generated HTML file.
+    """
+    highlight_set = set(highlight_nodes or [])
+
+    net = Network(
+        height=height,
+        width=width,
+        directed=True,
+        bgcolor="#ffffff",
+        font_color="#333333",
+    )
+
+    # Physics settings for hierarchical layout
+    net.set_options("""
+    {
+        "layout": {
+            "hierarchical": {
+                "enabled": true,
+                "direction": "UD",
+                "sortMethod": "directed",
+                "levelSeparation": 150,
+                "nodeSpacing": 100
+            }
+        },
+        "physics": {
+            "hierarchicalRepulsion": {
+                "nodeDistance": 150
+            }
+        },
+        "interaction": {
+            "hover": true,
+            "tooltipDelay": 100
+        }
+    }
+    """)
+
+    # Add nodes
+    for node_id, node in tree.nodes.items():
+        layer = node.layer
+        color = HIGHLIGHT_COLOR if node_id in highlight_set else _layer_color(layer)
+
+        # Size based on number of children (summaries bigger) + text length
+        size = MIN_SIZE + min(len(node.text) // 50, MAX_SIZE - MIN_SIZE)
+        if node.children:
+            size = max(size, MIN_SIZE + len(node.children) * 5)
+
+        # Label: short ID
+        label = node_id
+
+        # Title (hover tooltip): text preview + metadata
+        text_preview = node.text[:200].replace("\n", " ")
+        if len(node.text) > 200:
+            text_preview += "..."
+
+        source = node.metadata.get("source", "")
+        section = node.metadata.get("section", "")
+        cluster_size = node.metadata.get("cluster_size", "")
+
+        title_parts = [f"<b>{node_id}</b> (Layer {layer})"]
+        if source:
+            title_parts.append(f"Source: {source}")
+        if section:
+            title_parts.append(f"Section: {section}")
+        if cluster_size:
+            title_parts.append(f"Cluster size: {cluster_size}")
+        title_parts.append(f"<hr>{text_preview}")
+        title = "<br>".join(title_parts)
+
+        net.add_node(
+            node_id,
+            label=label,
+            title=title,
+            color=color,
+            size=size,
+            level=layer,
+            shape="dot" if layer == 0 else "diamond",
+            borderWidth=3 if node_id in highlight_set else 1,
+        )
+
+    # Add edges (parent → child)
+    for node_id, node in tree.nodes.items():
+        for child_id in node.children:
+            if child_id in tree.nodes:
+                net.add_edge(node_id, child_id, color="#cccccc", arrows="to")
+
+    # Write HTML
+    output = Path(output_path)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    net.write_html(str(output))
+
+    n_nodes = len(tree.nodes)
+    n_edges = sum(len(n.children) for n in tree.nodes.values())
+    n_highlighted = len(highlight_set & set(tree.nodes.keys()))
+    logger.info(
+        f"RAPTOR visualization: {n_nodes} nodes, {n_edges} edges, "
+        f"{n_highlighted} highlighted → {output_path}"
+    )
+
+    return str(output)
+
+
+def _layer_color(layer: int) -> str:
+    """Get color for a given tree layer."""
+    if layer < len(LAYER_COLORS):
+        return LAYER_COLORS[layer]
+    return LAYER_COLORS[-1]
+```
+
+- [ ] **Step 5: Run tests**
+
+```bash
+uv run pytest tests/test_raptor_viz.py -v --tb=short 2>&1 | tail -15
+```
+
+Expected: All tests PASS.
+
+- [ ] **Step 6: Create visualization CLI script**
+
+Create `scripts/visualize_raptor.py`:
+
+```python
+#!/usr/bin/env python
+"""Visualize a RAPTOR tree as an interactive HTML graph.
+
+Loads the RAPTOR tree from ChromaDB and generates a Pyvis visualization.
+Optionally highlights nodes that match a query.
+
+Usage:
+    uv run python scripts/visualize_raptor.py
+    uv run python scripts/visualize_raptor.py --output raptor.html
+    uv run python scripts/visualize_raptor.py --query "potassium limits CKD"
+"""
+
+import argparse
+import logging
+import sys
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Visualize RAPTOR tree")
+    parser.add_argument(
+        "--output", "-o",
+        default="raptor_tree.html",
+        help="Output HTML file path (default: raptor_tree.html)",
+    )
+    parser.add_argument(
+        "--query", "-q",
+        default=None,
+        help="Optional query — highlights retrieved nodes in the tree",
+    )
+    parser.add_argument(
+        "--k", type=int, default=5,
+        help="Number of results to highlight when using --query",
+    )
+    args = parser.parse_args()
+
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s %(name)s %(levelname)s %(message)s",
+    )
+    logger = logging.getLogger(__name__)
+
+    from config import get_embeddings, RAPTOR_COLLECTION_NAME
+    from simple_rag.vectorstore import CKDVectorStore
+    from simple_rag.raptor_builder import RaptorNode, RaptorTree
+    from simple_rag.raptor_viz import visualize_tree
+
+    logger.info("Loading embedding model...")
+    embeddings = get_embeddings()
+
+    logger.info(f"Loading RAPTOR collection '{RAPTOR_COLLECTION_NAME}'...")
+    store = CKDVectorStore(
+        embedding_function=embeddings,
+        collection_name=RAPTOR_COLLECTION_NAME,
+    )
+
+    stats = store.get_collection_stats()
+    doc_count = stats["document_count"]
+    if doc_count == 0:
+        logger.error("RAPTOR collection is empty. Run build_raptor_index.py first.")
+        sys.exit(1)
+
+    logger.info(f"Collection has {doc_count} nodes")
+
+    # Reconstruct RaptorTree from ChromaDB metadata
+    collection = store._client.get_collection(RAPTOR_COLLECTION_NAME)
+    all_data = collection.get(include=["documents", "metadatas"])
+
+    nodes = {}
+    for i, (doc_id, text, meta) in enumerate(
+        zip(all_data["ids"], all_data["documents"], all_data["metadatas"])
+    ):
+        meta = meta or {}
+        node_id = meta.get("raptor_node_id", doc_id)
+        children_str = meta.get("raptor_children", "")
+        children = [c for c in children_str.split(",") if c]
+        layer = int(meta.get("raptor_layer", 0))
+
+        nodes[node_id] = RaptorNode(
+            node_id=node_id,
+            text=text or "",
+            embedding=[],  # Not needed for viz
+            layer=layer,
+            children=children,
+            metadata={k: v for k, v in meta.items() if not k.startswith("raptor_")},
+        )
+
+    max_layer = max(n.layer for n in nodes.values()) if nodes else 0
+    tree = RaptorTree(nodes=nodes, depth=max_layer)
+    logger.info(f"Reconstructed tree: {len(nodes)} nodes, depth={max_layer}")
+
+    # Optionally highlight query results
+    highlight = []
+    if args.query:
+        logger.info(f"Running query: '{args.query}'")
+        results = store.search_with_scores(query=args.query, k=args.k)
+        for doc, score in results:
+            nid = doc.metadata.get("raptor_node_id", "")
+            if nid:
+                highlight.append(nid)
+                logger.info(f"  Hit: {nid} (score={score:.3f})")
+
+    # Generate visualization
+    output = visualize_tree(tree, args.output, highlight_nodes=highlight)
+    logger.info(f"Visualization saved to {output}")
+    print(f"\nOpen in browser: file://{Path(output).resolve()}")
+
+
+if __name__ == "__main__":
+    main()
+```
+
+- [ ] **Step 7: Commit**
+
+```bash
+git add simple_rag/raptor_viz.py tests/test_raptor_viz.py scripts/visualize_raptor.py
+git commit -m "feat: add Pyvis interactive RAPTOR tree visualization"
+```
