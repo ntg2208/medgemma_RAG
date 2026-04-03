@@ -1,0 +1,310 @@
+{
+  "doc_name": "Commentary_on_the_NICE_Guideline_on_Renal_Replacement_Therapy_and_Conservative_Management",
+  "total_sections": 26,
+  "total_lines": 251,
+  "tree": [
+    {
+      "heading": "Introduction",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 0,
+      "line_end": 6,
+      "content_preview": "NICE Guideline NG107, 'Renal replacement therapy and conservative management' 1 was published in October 2018 and replaced the existing NICE guideline CG125, 'Chronic Kidney Disease ( Stage 5): perito",
+      "content_token_estimate": 372,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Summary of recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 6,
+      "line_end": 8,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.1: Indications for starting dialysis",
+          "depth": 1,
+          "numbering": "1.1",
+          "line_start": 8,
+          "line_end": 19,
+          "content_preview": "1.1 Indications for starting dialysis\n1.1.1 Follow the recommendations on referral criteria in NICE's guideline on chronic kidney disease in adults\n1.1.2 Consider starting dialysis when indicated by t",
+          "content_token_estimate": 414,
+          "ancestor_path": [
+            "Summary of recommendations"
+          ]
+        },
+        {
+          "heading": "1.2: Preparing for renal replacement therapy or conservative management",
+          "depth": 1,
+          "numbering": "1.2",
+          "line_start": 19,
+          "line_end": 21,
+          "content_preview": "",
+          "content_token_estimate": 0,
+          "ancestor_path": [
+            "Summary of recommendations"
+          ]
+        },
+        {
+          "heading": "1.2. Preparing for renal replacement therapy or conservative management",
+          "depth": 1,
+          "numbering": "1.2",
+          "line_start": 21,
+          "line_end": 40,
+          "content_preview": "1.2.1 Start assessment for renal replacement therapy (RRT) or conservative management 1 year before therapy is likely to be needed, including for those with a failing transplant\n1.2.2 Involve the pers",
+          "content_token_estimate": 418,
+          "ancestor_path": [
+            "Summary of recommendations"
+          ]
+        },
+        {
+          "heading": "1.3: Choosing modalities of renal replacement therapy or conservative management",
+          "depth": 1,
+          "numbering": "1.3",
+          "line_start": 40,
+          "line_end": 52,
+          "content_preview": "1.3 (A) Choosing modalities of renal replacement therapy or conservative management\n1.3.1 Offer a choice of RRT or conservative management to people who are likely to need RRT\n1.3.2 Ensure that decisi",
+          "content_token_estimate": 198,
+          "ancestor_path": [
+            "Summary of recommendations"
+          ]
+        },
+        {
+          "heading": "1.3 (B) Transplantation",
+          "depth": 1,
+          "numbering": "1.3",
+          "line_start": 52,
+          "line_end": 60,
+          "content_preview": "Transplantation\n1.3.4 Discuss the individual factors that affect the risks and benefits of transplantation with all people who are likely to need RRT, and their family members or carers (as appropriat",
+          "content_token_estimate": 143,
+          "ancestor_path": [
+            "Summary of recommendations"
+          ]
+        },
+        {
+          "heading": "1.3 (C) Choice of dialysis modalities",
+          "depth": 1,
+          "numbering": "1.3",
+          "line_start": 60,
+          "line_end": 69,
+          "content_preview": "1.3.8 Offer a choice of dialysis modalities at home or in centre ensuring that the decision is informed by clinical considerations and patient preferences (see recommendation 3.2)\n1.3.9 (NICE) Offer a",
+          "content_token_estimate": 265,
+          "ancestor_path": [
+            "Summary of recommendations"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "i) Peritoneal Dialysis",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 69,
+      "line_end": 79,
+      "content_preview": "The flexibility offered by APD during daytime hours has led to an expansion in its use over time 10 , with 59% of the UK PD population on APD 11 . The current clinical evidence comparing outcomes betw",
+      "content_token_estimate": 766,
+      "ancestor_path": []
+    },
+    {
+      "heading": "ii) Home Haemodialysis",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 79,
+      "line_end": 91,
+      "content_preview": "Home haemodialysis(HHD) remains an under-utilised modality in the UK 22 despite it being a therapy associated with lower costs compared with in-centre haemodialysis 23- 29 . HHD allows greater flexibi",
+      "content_token_estimate": 747,
+      "ancestor_path": []
+    },
+    {
+      "heading": "iii) In-Centre Haemodialysis",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 91,
+      "line_end": 109,
+      "content_preview": "High flux haemodialysis is predominantly a diffusive treatment combined with limited volumes of convective clearances. Haemodiafiltration (HDF), combines both diffusive and high dose convective therap",
+      "content_token_estimate": 1139,
+      "ancestor_path": []
+    },
+    {
+      "heading": "iv) Transplantion",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 109,
+      "line_end": 111,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.3 (B) Transplantation",
+          "depth": 1,
+          "numbering": "1.3",
+          "line_start": 111,
+          "line_end": 125,
+          "content_preview": "Transplantation\n1.3.12 Discuss the individual factors that affect the risks and benefits of transplantation with all people who are likely to need RRT, and their family members or carers (as appropria",
+          "content_token_estimate": 454,
+          "ancestor_path": [
+            "iv) Transplantion"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "v) Conservative management",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 125,
+      "line_end": 131,
+      "content_preview": "There is considerable variability in the uptake of conservative management both within the UK 53 and globally 54,55 and national registry data is lacking for this modality is most countries. When cons",
+      "content_token_estimate": 427,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.4: Planning dialysis access formation",
+          "depth": 1,
+          "numbering": "1.4",
+          "line_start": 131,
+          "line_end": 133,
+          "content_preview": "",
+          "content_token_estimate": 0,
+          "ancestor_path": [
+            "v) Conservative management"
+          ]
+        },
+        {
+          "heading": "1.4 Planning dialysis access formation",
+          "depth": 1,
+          "numbering": "1.4",
+          "line_start": 133,
+          "line_end": 150,
+          "content_preview": "1.4.1 Discuss with the person, their family members and carers (as appropriate) the risk and benefits of the different types of dialysis access, for example, fistula, graft, central venous or peritone",
+          "content_token_estimate": 1110,
+          "ancestor_path": [
+            "v) Conservative management"
+          ]
+        },
+        {
+          "heading": "1.5: Indications for switching or stopping renal replacement therapy",
+          "depth": 1,
+          "numbering": "1.5",
+          "line_start": 150,
+          "line_end": 164,
+          "content_preview": "1.5 Indications for switching or stopping renal replacement therapy\n1.5.1 Offer information on all medically appropriate treatment options when discussing switching RRT modality.\n1.5.2 Consider switch",
+          "content_token_estimate": 693,
+          "ancestor_path": [
+            "v) Conservative management"
+          ]
+        },
+        {
+          "heading": "1.6, 1.7 &amp; 1.8: Recognising symptoms, diet and fluids and information, education and support",
+          "depth": 1,
+          "numbering": "1.6",
+          "line_start": 164,
+          "line_end": 166,
+          "content_preview": "",
+          "content_token_estimate": 0,
+          "ancestor_path": [
+            "v) Conservative management"
+          ]
+        },
+        {
+          "heading": "1.6 Recognising Symptoms",
+          "depth": 1,
+          "numbering": "1.6",
+          "line_start": 166,
+          "line_end": 173,
+          "content_preview": "1.6.1 Recognise that people on RRT or receiving conservative management may have the symptoms in table 1 and that these may affect their day-to-day life.\n1.6.2 Throughout the course of RRT and conserv",
+          "content_token_estimate": 110,
+          "ancestor_path": [
+            "v) Conservative management"
+          ]
+        },
+        {
+          "heading": "1.7 Diet and fluids",
+          "depth": 1,
+          "numbering": "1.7",
+          "line_start": 173,
+          "line_end": 188,
+          "content_preview": "1.7.1 Offer a full dietary assessment by a specialist renal dietitian to people starting dialysis or conservative management. This should include:\nweight history\nfluid intake\nsodium\npotassium\nphosphat",
+          "content_token_estimate": 288,
+          "ancestor_path": [
+            "v) Conservative management"
+          ]
+        },
+        {
+          "heading": "1.8 Information, education and support",
+          "depth": 1,
+          "numbering": "1.8",
+          "line_start": 188,
+          "line_end": 203,
+          "content_preview": "1.8.1 To enable people, and their families and carers (as appropriate), to make informed decisions, offer balanced and accurate information about: all treatments available to them (including RRT modal",
+          "content_token_estimate": 641,
+          "ancestor_path": [
+            "v) Conservative management"
+          ]
+        },
+        {
+          "heading": "1.9: Coordinating care",
+          "depth": 1,
+          "numbering": "1.9",
+          "line_start": 203,
+          "line_end": 205,
+          "content_preview": "",
+          "content_token_estimate": 0,
+          "ancestor_path": [
+            "v) Conservative management"
+          ]
+        },
+        {
+          "heading": "1.9 Coordinating care",
+          "depth": 1,
+          "numbering": "1.9",
+          "line_start": 205,
+          "line_end": 211,
+          "content_preview": "1.9.1 Provide the person with the contact details of the healthcare professional responsible for their overall renal care:\nbefore they start RRT or conservative management\nwhen they switch from one mo",
+          "content_token_estimate": 117,
+          "ancestor_path": [
+            "v) Conservative management"
+          ],
+          "children": [
+            {
+              "heading": "1.9.3 Follow the recommendations on:",
+              "depth": 2,
+              "numbering": "1.9.3",
+              "line_start": 211,
+              "line_end": 221,
+              "content_preview": "delivering an approach to care that takes account of multimorbidity in NICE's guideline on multimorbidity, and\ncontinuity of care and relationships, and enabling patients to actively participate in th",
+              "content_token_estimate": 591,
+              "ancestor_path": [
+                "v) Conservative management",
+                "1.9 Coordinating care"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Conclusion",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 221,
+      "line_end": 225,
+      "content_preview": "The NICE guidance on RRT focusses on the entire life course of the patient with ESKD. The focus is on integrated, multidisciplinary and holistic care improvements to meet the needs of this unique, com",
+      "content_token_estimate": 378,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Audit Measures",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 225,
+      "line_end": 251,
+      "content_preview": "1. Percentage of patients commencing RRT referred &lt;3months and &lt;12months before date of starting RRT\n2. Percentage of incident RRT patients followed up for &gt;3 months in dedicated pre- dialysi",
+      "content_token_estimate": 499,
+      "ancestor_path": []
+    }
+  ]
+}

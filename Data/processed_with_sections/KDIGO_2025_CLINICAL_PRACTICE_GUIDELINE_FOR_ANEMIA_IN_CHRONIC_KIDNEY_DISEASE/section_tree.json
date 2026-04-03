@@ -1,0 +1,1902 @@
+{
+  "doc_name": "KDIGO_2025_CLINICAL_PRACTICE_GUIDELINE_FOR_ANEMIA_IN_CHRONIC_KIDNEY_DISEASE",
+  "total_sections": 172,
+  "total_lines": 1861,
+  "tree": [
+    {
+      "heading": "APPENDIX A. POPULATION-BASED ALGORITHMS FOR THE MANAGEMENT OF",
+      "depth": 0,
+      "numbering": "Appendix A",
+      "line_start": 0,
+      "line_end": 18,
+      "content_preview": "11\n\n22\n\n29\n\n30\n\n| ANEMIA IN CKD | ANEMIA IN CKD |\n|----------------------------------------------------------------------------------------------|------------------------------------------------------",
+      "content_token_estimate": 178,
+      "ancestor_path": []
+    },
+    {
+      "heading": "SUPPLEMENTARY MATERIAL",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 18,
+      "line_end": 93,
+      "content_preview": "| Appendix A. Search strategies | E |\n|-----------------------------------------------------------------------------------------------------------------------------------------------------------------",
+      "content_token_estimate": 2734,
+      "ancestor_path": []
+    },
+    {
+      "heading": "KDIGO EXECUTIVE COMMITTEE",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 93,
+      "line_end": 113,
+      "content_preview": "Garabed Eknoyan, MD Norbert Lameire, MD, PhD\n\nFounding KDIGO Co-Chairs\n\nWolfgang C. Winkelmayer, MD, MPH, ScD Immediate Past Co-Chair\n\nMichel Jadoul, MD KDIGO Co-Chair\n\nMorgan E. Grams, MD, PhD, MHS K",
+      "content_token_estimate": 184,
+      "ancestor_path": []
+    },
+    {
+      "heading": "KDIGO Staff",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 113,
+      "line_end": 117,
+      "content_preview": "John Davis, Chief Executive Officer Emeritus Danielle Green, Chief Executive Officer Melissa Thompson, Chief Operating Officer Michael Cheung, Chief Scientific Officer Amy Earley, Guideline Developmen",
+      "content_token_estimate": 89,
+      "ancestor_path": []
+    },
+    {
+      "heading": "CURRENT CHRONIC KIDNEY DISEASE (CKD) NOMENCLATURE USED BY KDIGO",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 117,
+      "line_end": 137,
+      "content_preview": "CKD is defined as abnormalities of kidney structure or function, present for &gt; 3 months, with implications for health. CKD is classified based on Cause, GFR category (G1-G5), and Albuminuria catego",
+      "content_token_estimate": 382,
+      "ancestor_path": []
+    },
+    {
+      "heading": "CONVERSION FACTORS OF CONVENTIONAL UNITS TO SI UNITS",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 137,
+      "line_end": 149,
+      "content_preview": "| | Conventional unit | Conversion factor | SI Unit |\n|------------|---------------------|---------------------|-----------|\n| Creatinine | mg/dl | 88.4 | µmol/l |\n| Ferritin | ng/ml | 1 | µg/l |\n| He",
+      "content_token_estimate": 88,
+      "ancestor_path": []
+    },
+    {
+      "heading": "EQUIVALENT ALBUMINURIA CATEGORIES IN CKD",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 149,
+      "line_end": 162,
+      "content_preview": "| Category | AER (mg/24 hours) | ACR (approximate equivalent) | ACR (approximate equivalent) | Terms |\n|------------|---------------------|--------------------------------|----------------------------",
+      "content_token_estimate": 143,
+      "ancestor_path": []
+    },
+    {
+      "heading": "ABBREVIATIONS AND ACRONYMS",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 162,
+      "line_end": 408,
+      "content_preview": "AABB\n\nAssociation for the Advancement of Blood &amp; Biotherapies\n\nACEi\n\nangiotensin-converting enzyme inhibitor\n\nAGA\n\nAmerican Gastroenterological Association\n\nARB\n\nangiotensin II receptor blocker\n\nB",
+      "content_token_estimate": 607,
+      "ancestor_path": []
+    },
+    {
+      "heading": "NOTICE",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 408,
+      "line_end": 410,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "SECTION I: USE OF THE CLINICAL PRACTICE GUIDELINE",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 410,
+      "line_end": 414,
+      "content_preview": "This Clinical Practice Guideline document is based upon literature searches last conducted in April 2023. It is designed to assist decision-making. It is not intended to define a standard of care and ",
+      "content_token_estimate": 149,
+      "ancestor_path": []
+    },
+    {
+      "heading": "SECTION II: DISCLOSURE",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 414,
+      "line_end": 418,
+      "content_preview": "Kidney Disease: Improving Global Outcomes (KDIGO) makes every effort to avoid any actual or reasonably perceived conflicts of interest that may arise from an outside relationship or a personal, profes",
+      "content_token_estimate": 173,
+      "ancestor_path": []
+    },
+    {
+      "heading": "WORK GROUP MEMBERSHIP",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 418,
+      "line_end": 420,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Work Group Co-Chairs",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 420,
+      "line_end": 426,
+      "content_preview": "Jodie L. Babitt, MD Massachusetts General Hospital Boston, MA, USA\n\nMarcello Tonelli, MD, SM, MSc, FRCPC University of Calgary Calgary, Alberta, Canada",
+      "content_token_estimate": 37,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Methods Chair",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 426,
+      "line_end": 430,
+      "content_preview": "Elie A. Akl, MD, MPH, PhD American University of Beirut Beirut, Lebanon",
+      "content_token_estimate": 17,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Evidence Review Team",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 430,
+      "line_end": 432,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "The Johns Hopkins University Evidence-based Practice Center",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 432,
+      "line_end": 436,
+      "content_preview": "Karen A. Robinson, PhD, Professor of Medicine Lisa Wilson, ScM, Research Associate Renee F. Wilson, MS, Research Associate Dipal Patel, MD, PhD, Assistant Professor of Medicine Troy Gharibani, BS, Res",
+      "content_token_estimate": 84,
+      "ancestor_path": []
+    },
+    {
+      "heading": "ABSTRACT",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 436,
+      "line_end": 442,
+      "content_preview": "The Kidney Disease: Improving Global Outcomes (KDIGO) 2025 Clinical Practice Guideline for Anemia in Chronic Kidney Disease (CKD) is an update of the KDIGO 2012 guideline on the topic. The guideline i",
+      "content_token_estimate": 429,
+      "ancestor_path": []
+    },
+    {
+      "heading": "SUMMARY OF RECOMMENDATION STATEMENTS AND PRACTICE POINTS",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 442,
+      "line_end": 444,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "CHAPTER 1. DIAGNOSIS AND EVALUATION OF ANEMIA IN CKD",
+      "depth": 0,
+      "numbering": "1",
+      "line_start": 444,
+      "line_end": 472,
+      "content_preview": "Practice Point 1.2.1: In people with CKD, test for anemia at referral, regularly during follow-up, and when anemia is suspected based on symptoms (Figure 5). Test for anemia with the following set: co",
+      "content_token_estimate": 419,
+      "ancestor_path": []
+    },
+    {
+      "heading": "CHAPTER 2. USE OF IRON TO TREAT IRON DEFICIENCY AND ANEMIA IN CKD",
+      "depth": 0,
+      "numbering": "2",
+      "line_start": 472,
+      "line_end": 496,
+      "content_preview": "Recommendation 2.1: In people with anemia and CKD treated with hemodialysis (CKD G5HD), we suggest initiating iron therapy if ferritin ≤500 ng/ml (≤500 µg/l) and TSAT ≤30% ( 2D ).\n\nRecommendation 2.2:",
+      "content_token_estimate": 485,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Table 5 | Circumstances warranting more frequent iron testing",
+          "depth": 1,
+          "numbering": null,
+          "line_start": 496,
+          "line_end": 514,
+          "content_preview": "Initiation of or increase in dose of ESAs or HIF-PHIs\nEpisodes of known blood loss\nRecent hospitalization\nImportant increase in ferritin or TSAT or overshooting target limit\n\nESA, erythropoietin-stimu",
+          "content_token_estimate": 309,
+          "ancestor_path": [
+            "CHAPTER 2. USE OF IRON TO TREAT IRON DEFICIENCY AND ANEMIA IN CKD"
+          ],
+          "children": [
+            {
+              "heading": "Practice Point 2.10: The suggested management of reactions to intravenous iron is presented in Figure 7.",
+              "depth": 2,
+              "numbering": "2.10",
+              "line_start": 514,
+              "line_end": 520,
+              "content_preview": "Figure 7 | Suggested management of reactions to intravenous (i.v.) iron. H1, type 1 histamine\n\nPractice Point 2.11: In people with CKD and profound iron deficiency (ferritin &lt;30 µg/l and TSAT&lt;20",
+              "content_token_estimate": 66,
+              "ancestor_path": [
+                "CHAPTER 2. USE OF IRON TO TREAT IRON DEFICIENCY AND ANEMIA IN CKD",
+                "Table 5 | Circumstances warranting more frequent iron testing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "CHAPTER 3. USE OF ESAs, HIF-PHIs, AND OTHER AGENTS TO TREAT ANEMIA IN CKD",
+      "depth": 0,
+      "numbering": "3",
+      "line_start": 520,
+      "line_end": 522,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "3.1. Treatment initiation",
+          "depth": 1,
+          "numbering": "3.1",
+          "line_start": 522,
+          "line_end": 542,
+          "content_preview": "Practice Point 3.1.1: In people with anemia and CKD (whether treated with dialysis or not), the decision to use erythropoietin- stimulating agents (ESAs) or hypoxia-inducible factor-prolyl hydroxylase",
+          "content_token_estimate": 807,
+          "ancestor_path": [
+            "CHAPTER 3. USE OF ESAs, HIF-PHIs, AND OTHER AGENTS TO TREAT ANEMIA IN CKD"
+          ]
+        },
+        {
+          "heading": "3.2. ESA initiation",
+          "depth": 1,
+          "numbering": "3.2",
+          "line_start": 542,
+          "line_end": 548,
+          "content_preview": "Recommendation 3.2.1: In people with anemia and CKD G5D treated with hemodialysis (HD) or peritoneal dialysis (PD), we suggest initiation of ESA therapy when the Hb concentration is ≤9.0-10.0 g/dl (90",
+          "content_token_estimate": 148,
+          "ancestor_path": [
+            "CHAPTER 3. USE OF ESAs, HIF-PHIs, AND OTHER AGENTS TO TREAT ANEMIA IN CKD"
+          ]
+        },
+        {
+          "heading": "3.3. ESA maintenance therapy",
+          "depth": 1,
+          "numbering": "3.3",
+          "line_start": 548,
+          "line_end": 554,
+          "content_preview": "Recommendation 3.3.1: In adults with anemia and CKD treated with an ESA, we recommend targeting a Hb level below 11.5 g/dl (115 g/l) ( 1D ).\n\nPractice Point 3.3.1: For children with anemia and CKD, th",
+          "content_token_estimate": 105,
+          "ancestor_path": [
+            "CHAPTER 3. USE OF ESAs, HIF-PHIs, AND OTHER AGENTS TO TREAT ANEMIA IN CKD"
+          ]
+        },
+        {
+          "heading": "3.4. ESA dosing, frequency, route of administration, and monitoring",
+          "depth": 1,
+          "numbering": "3.4",
+          "line_start": 554,
+          "line_end": 556,
+          "content_preview": "",
+          "content_token_estimate": 0,
+          "ancestor_path": [
+            "CHAPTER 3. USE OF ESAs, HIF-PHIs, AND OTHER AGENTS TO TREAT ANEMIA IN CKD"
+          ],
+          "children": [
+            {
+              "heading": "3.4.1. ESA dosing",
+              "depth": 2,
+              "numbering": "3.4.1",
+              "line_start": 556,
+              "line_end": 577,
+              "content_preview": "Practice Point 3.4.1.1: In people with anemia and CKD treated with ESA, the initial dose of ESA should be determined by the Hb concentration of the person, their body weight, and clinical circumstance",
+              "content_token_estimate": 894,
+              "ancestor_path": [
+                "CHAPTER 3. USE OF ESAs, HIF-PHIs, AND OTHER AGENTS TO TREAT ANEMIA IN CKD",
+                "3.4. ESA dosing, frequency, route of administration, and monitoring"
+              ]
+            },
+            {
+              "heading": "3.4.2. ESA route of administration",
+              "depth": 2,
+              "numbering": "3.4.2",
+              "line_start": 577,
+              "line_end": 583,
+              "content_preview": "Practice Point 3.4.2.1: In adults and children with anemia and CKD G5HD treated with ESA, choose the ESA administration route (i.v. vs. subcutaneous) based on patient preferences, local practices, and",
+              "content_token_estimate": 101,
+              "ancestor_path": [
+                "CHAPTER 3. USE OF ESAs, HIF-PHIs, AND OTHER AGENTS TO TREAT ANEMIA IN CKD",
+                "3.4. ESA dosing, frequency, route of administration, and monitoring"
+              ]
+            },
+            {
+              "heading": "3.4.3. Frequency of administration and monitoring of ESAs",
+              "depth": 2,
+              "numbering": "3.4.3",
+              "line_start": 583,
+              "line_end": 595,
+              "content_preview": "Practice Point 3.4.3.1: In people with CKD G5 or CKD not receiving dialysis, individualize the frequency of administration of ESA based on patient preferences and type of ESA administered (Table 7).\n\n",
+              "content_token_estimate": 306,
+              "ancestor_path": [
+                "CHAPTER 3. USE OF ESAs, HIF-PHIs, AND OTHER AGENTS TO TREAT ANEMIA IN CKD",
+                "3.4. ESA dosing, frequency, route of administration, and monitoring"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "3.5. HIF-PHI treatment initiation and maintenance",
+          "depth": 1,
+          "numbering": "3.5",
+          "line_start": 595,
+          "line_end": 622,
+          "content_preview": "Practice Point 3.5.1: In people with anemia and CKD, including those with ESA hyporesponsiveness, do not use ESAs and HIF-PHIs in combination.\n\nPractice Point 3.5.2: In people with anemia and CKD, the",
+          "content_token_estimate": 1157,
+          "ancestor_path": [
+            "CHAPTER 3. USE OF ESAs, HIF-PHIs, AND OTHER AGENTS TO TREAT ANEMIA IN CKD"
+          ]
+        },
+        {
+          "heading": "3.6. HIF-PHI monitoring",
+          "depth": 1,
+          "numbering": "3.6",
+          "line_start": 622,
+          "line_end": 632,
+          "content_preview": "Practice Point 3.6.1: In people with anemia and CKD, when dosing HIF-PHIs, monitor the Hb levels 2-4 weeks after initiation or dose changes and subsequently, every 4 weeks during therapy.\n\nPractice Po",
+          "content_token_estimate": 201,
+          "ancestor_path": [
+            "CHAPTER 3. USE OF ESAs, HIF-PHIs, AND OTHER AGENTS TO TREAT ANEMIA IN CKD"
+          ]
+        },
+        {
+          "heading": "3.7. ESA hyporesponsiveness",
+          "depth": 1,
+          "numbering": "3.7",
+          "line_start": 632,
+          "line_end": 646,
+          "content_preview": "Practice Point 3.7.1: In people with anemia and CKD G5D and CKD not receiving dialysis with initial or subsequent ESA hyporesponsiveness, identify and treat the underlying causes of ESA hyporesponsive",
+          "content_token_estimate": 358,
+          "ancestor_path": [
+            "CHAPTER 3. USE OF ESAs, HIF-PHIs, AND OTHER AGENTS TO TREAT ANEMIA IN CKD"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "CHAPTER 4. RED BLOOD CELL TRANSFUSION TO TREAT ANEMIA IN PEOPLE WITH CKD",
+      "depth": 0,
+      "numbering": "4",
+      "line_start": 646,
+      "line_end": 664,
+      "content_preview": "Practice Point 4.1: In people with anemia and CKD, use red blood cell (RBC) transfusion as part of a comprehensive treatment strategy, carefully weighing risks and benefits in a shared decisionmaking ",
+      "content_token_estimate": 358,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Table 11 | Strategies to reduce red blood cells (RBC) transfusions in people with chronic kidney disease (CKD)",
+          "depth": 1,
+          "numbering": null,
+          "line_start": 664,
+          "line_end": 675,
+          "content_preview": "Opt for less invasive procedures in hospitalized patients whenever possible.\nLimit phlebotomy when medically appropriate.\nContinue ESA/HIF-PHI/iron therapy in hospitalized patients unless clinically c",
+          "content_token_estimate": 212,
+          "ancestor_path": [
+            "CHAPTER 4. RED BLOOD CELL TRANSFUSION TO TREAT ANEMIA IN PEOPLE WITH CKD"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "CHAPTER 1. DIAGNOSIS AND EVALUATION OF ANEMIA IN CKD",
+      "depth": 0,
+      "numbering": "1",
+      "line_start": 675,
+      "line_end": 679,
+      "content_preview": "Anemia is a common complication in people with chronic kidney disease (CKD) and is associated with adverse clinical outcomes. The onset or progression of anemia in CKD may herald a new problem that is",
+      "content_token_estimate": 165,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.1. Anemia in CKD",
+          "depth": 1,
+          "numbering": "1.1",
+          "line_start": 679,
+          "line_end": 689,
+          "content_preview": "An overview of anemia in CKD populations can be found in Figure 1, including its definition, prevalence, pathophysiology, and association with clinical outcomes. Each of these topics is discussed belo",
+          "content_token_estimate": 337,
+          "ancestor_path": [
+            "CHAPTER 1. DIAGNOSIS AND EVALUATION OF ANEMIA IN CKD"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Definition of anemia in CKD",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 689,
+      "line_end": 693,
+      "content_preview": "Anemia in adults is typically defined according to the thresholds from the World Health Organization (WHO): hemoglobin (Hb) &lt;12 g/dl (120 g/l) for women, and &lt;13 g/dl (130 g/l) for men 15 (Figur",
+      "content_token_estimate": 176,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Prevalence of anemia in CKD",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 693,
+      "line_end": 711,
+      "content_preview": "The prevalence of anemia in CKD increases at lower levels of estimated glomerular filtration rate (eGFR), reaching a prevalence of &gt;50% at the advanced CKD (CKD G4-G5).4 The prevalence is dispropor",
+      "content_token_estimate": 560,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Pathophysiology of anemia in CKD",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 711,
+      "line_end": 719,
+      "content_preview": "Anemia in CKD is frequently multifactorial. Common causes include relative erythropoietin (EPO) deficiency, shortened RBC survival, iron and other nutritional deficiencies (folate and vitamin B12), bl",
+      "content_token_estimate": 661,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Outcomes associated with anemia in CKD",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 719,
+      "line_end": 729,
+      "content_preview": "Anemia in CKD is associated with several adverse cardiovascular, functional, and kidney outcomes. Studies have shown that anemia is associated with higher risks of coronary artery disease, heart failu",
+      "content_token_estimate": 722,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.2. Iron deficiency in CKD",
+          "depth": 1,
+          "numbering": "1.2",
+          "line_start": 729,
+          "line_end": 733,
+          "content_preview": "An overview of iron deficiency in CKD populations can be found in Figure 3, including its definition, prevalence, pathophysiology, and association with clinical outcomes. Each of these topics are disc",
+          "content_token_estimate": 53,
+          "ancestor_path": [
+            "Outcomes associated with anemia in CKD"
+          ],
+          "children": [
+            {
+              "heading": "Figure 3 | Overview of iron deficiency in CKD with its definitions, prevalence across CKD stages, potential causes, and associated outcomes.",
+              "depth": 2,
+              "numbering": null,
+              "line_start": 733,
+              "line_end": 737,
+              "content_preview": "CKD, chronic kidney disease; CNI, calcineurin inhibitors; EPO, erythropoietin; ESA, erythropoiesis-stimulating agents; GI, gastrointestinal; HD, hemodialysis; KTR, kidney transplant recipient; MACE, m",
+              "content_token_estimate": 116,
+              "ancestor_path": [
+                "Outcomes associated with anemia in CKD",
+                "1.2. Iron deficiency in CKD"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Definition of iron deficiency in CKD",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 737,
+      "line_end": 747,
+      "content_preview": "Iron deficiency is typically defined based on 2 conventional indices, namely transferrin saturation (TSAT), reflecting iron availability in the circulation, and ferritin, reflecting iron storage. In p",
+      "content_token_estimate": 1246,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Prevalence of iron deficiency in CKD",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 747,
+      "line_end": 753,
+      "content_preview": "Iron deficiency is highly prevalent in people with CKD. The high prevalence is present in people with CKD not receiving dialysis, CKD G5HD, people receiving peritoneal dialysis (CKD G5PD), and KTRs. I",
+      "content_token_estimate": 317,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Pathophysiology of iron deficiency in CKD",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 753,
+      "line_end": 761,
+      "content_preview": "Systemic iron deficiency implies a lack of adequate iron stores, which is mainly present due to blood loss, especially in the hemodialysis setting. 29 The frequent phlebotomies, blood remaining in the",
+      "content_token_estimate": 517,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Outcomes associated with iron deficiency in CKD",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 761,
+      "line_end": 799,
+      "content_preview": "Many observational studies show that iron deficiency is associated with an increased risk of mortality and cardiovascular hospitalization in people with CKD. 28-30 In particular, iron deficiency, as c",
+      "content_token_estimate": 1276,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Practice Point 1.2.3: In people with CKD, anemia, and ferritin &lt;45 µg/l, consider referral to gastroenterologists/gynecologists/urologists to identify the cause of blood loss.",
+          "depth": 3,
+          "numbering": "1.2.3",
+          "line_start": 799,
+          "line_end": 803,
+          "content_preview": "When a medical care provider identifies severe iron deficiency, defined by the American Gastroenterological Association (AGA) as ferritin &lt;45 µg/l, or microcytic anemia (MCV &lt;80 fl) in the absen",
+          "content_token_estimate": 141,
+          "ancestor_path": [
+            "Outcomes associated with iron deficiency in CKD"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Research recommendations:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 803,
+      "line_end": 810,
+      "content_preview": "1. Investigate the prevalence and health outcomes of iron deficiency in the absence of anemia. Important outcomes to assess include hard clinical endpoints such as mortality and MACE, patient-reported",
+      "content_token_estimate": 218,
+      "ancestor_path": []
+    },
+    {
+      "heading": "CHAPTER 2. USE OF IRON TO TREAT IRON DEFICIENCY AND ANEMIA IN CKD",
+      "depth": 0,
+      "numbering": "2",
+      "line_start": 810,
+      "line_end": 812,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Recommendation 2.1: In people with anemia and CKD treated with hemodialysis (CKD G5HD), we suggest initiating iron therapy if ferritin ≤500 ng/ml (≤500 µg/l) and TSAT ≤30% ( 2D ).",
+          "depth": 2,
+          "numbering": "2.1",
+          "line_start": 812,
+          "line_end": 816,
+          "content_preview": "This recommendation places high value on the potential benefits of iron for improving life expectancy and symptoms, reducing the required dose of ESAs, and reducing the need for RBC transfusion, and a",
+          "content_token_estimate": 181,
+          "ancestor_path": [
+            "CHAPTER 2. USE OF IRON TO TREAT IRON DEFICIENCY AND ANEMIA IN CKD"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Key information",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 816,
+      "line_end": 818,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Balance of benefits and harms",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 818,
+      "line_end": 820,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Oral or intravenous (i.v.) iron versus no iron",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 820,
+      "line_end": 826,
+      "content_preview": "Nineteen studies have compared oral (8 RCTs 78-85 ) or i.v. iron (13 RCTs 78, 79, 86-97 , including 2 RCTs investigating dialysate iron 90, 91 ) versus placebo in people with CKD G5HD treated with ESA",
+      "content_token_estimate": 265,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Iron status thresholds to initiate iron therapy and treatment targets",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 826,
+      "line_end": 838,
+      "content_preview": "Seven RCTs (11 reports) evaluated cut-off values of ferritin and TSAT at which to initiate iron therapy or to achieve as targets for iron therapy. 98-108 However, studies on longterm safety, cost-effe",
+      "content_token_estimate": 703,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Certainty of the evidence",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 838,
+      "line_end": 842,
+      "content_preview": "The overall certainty of the evidence for iron therapy among people with CKD G5HD is very low (Supplementary Tables S4 and S5). The certainty of the evidence was graded to be very low for several crit",
+      "content_token_estimate": 79,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Values and preferences",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 842,
+      "line_end": 846,
+      "content_preview": "Although there has not been a formal assessment of patient values and preferences regarding iron, the Work Group believes most people with CKD G5HD would want iron if it prolonged life, reduced the ri",
+      "content_token_estimate": 62,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Resource use and costs",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 846,
+      "line_end": 850,
+      "content_preview": "Iron supplementation seems to reduce the requirement for ESA therapy. Given the high cost of ESAs, appropriate use of iron in people with CKD would be expected to reduce overall costs.",
+      "content_token_estimate": 46,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Considerations for implementation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 850,
+      "line_end": 856,
+      "content_preview": "It is difficult to precisely predict the effect iron will have on both Hb and iron status, the assessment of which requires repeated testing. This is particularly important given that results will dri",
+      "content_token_estimate": 208,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 856,
+      "line_end": 874,
+      "content_preview": "Several recent trials evaluated the benefits and harms of various treatment targets. By far the largest of those studies, PIVOTAL, found that compared with a reactive low-dose i.v. iron strategy, a pr",
+      "content_token_estimate": 1424,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Recommendation 2.2: In people with anemia and CKD G5HD in whom iron therapy is being initiated, we suggest using intravenous iron rather than oral iron ( 2D ).",
+          "depth": 2,
+          "numbering": "2.2",
+          "line_start": 874,
+          "line_end": 878,
+          "content_preview": "This recommendation places a high value on the benefits associated with more intensive administration of supplemental iron and the reduction in pill burden associated with i.v. iron. Most people recei",
+          "content_token_estimate": 91,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Key information",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 878,
+      "line_end": 894,
+      "content_preview": "Balance of benefits and harms\n\nEleven studies compared i.v. versus oral iron in 844 people with CKD G5HD treated with ESAs (Supplementary Table S6 and S7). 78, 79, 113, 115-123 Most were designed to e",
+      "content_token_estimate": 712,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Certainty of evidence",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 894,
+      "line_end": 898,
+      "content_preview": "The overall certainty of the evidence for i.v. iron therapy compared with oral iron therapy among people with CKD G5HD is very low for all critical outcomes (Supplementary Table S6 and S7). The certai",
+      "content_token_estimate": 86,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Values and preferences",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 898,
+      "line_end": 916,
+      "content_preview": "The Work Group believes most people with CKD G5HD would prefer i.v. iron over oral iron as it can be administered during dialysis. Those at risk of or particularly worried about hypersensitivity react",
+      "content_token_estimate": 492,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Resource use and costs",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 916,
+      "line_end": 920,
+      "content_preview": "Iron supplementation seems to reduce the requirement for ESA therapy. Given the high cost of ESAs, appropriate use of iron in people with CKD would be expected to reduce overall costs.",
+      "content_token_estimate": 46,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Considerations for implementation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 920,
+      "line_end": 951,
+      "content_preview": "Oral iron is inexpensive and readily available in most parts of the world, which may not necessarily be the case for i.v. iron. Tables 3 and 4 outline the available oral and i.v. iron formulations, re",
+      "content_token_estimate": 862,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 951,
+      "line_end": 955,
+      "content_preview": "The Work Group felt that available data support the administration of i.v. iron to people with CKD treated with in-center HD, aiming to increase iron stores and probably reduce the ESA dose required a",
+      "content_token_estimate": 267,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Practice Point 2.1: In people with CKD G5HD in whom iron therapy is being initiated, administer intravenous iron using a proactive approach to maintain stable iron status.",
+          "depth": 2,
+          "numbering": "2.1",
+          "line_start": 955,
+          "line_end": 961,
+          "content_preview": "Intravenous iron can be administered either proactively at regular intervals to maintain stable iron status or reactively when iron status test values fall below certain thresholds. The Work Group bel",
+          "content_token_estimate": 267,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        },
+        {
+          "heading": "Recommendation 2.3: In people with anemia and CKD not receiving dialysis or treated with peritoneal dialysis (CKD G5PD), we suggest initiating iron if ( 2D ):",
+          "depth": 2,
+          "numbering": "2.3",
+          "line_start": 961,
+          "line_end": 969,
+          "content_preview": "ferritin &lt;100 ng/ml (&lt;100 µg/l) and transferrin saturation (TSAT) &lt;40%, or\nferritin ≥100 ng/ml (≥100 µg/l) and &lt;300 ng/ml (&lt;300 µg/l), and TSAT &lt;25%.\n\nThis recommendation places a hi",
+          "content_token_estimate": 142,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Key information",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 969,
+      "line_end": 973,
+      "content_preview": "Balance of benefits and harms",
+      "content_token_estimate": 7,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Iron versus no iron",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 973,
+      "line_end": 981,
+      "content_preview": "Among people with CKD not receiving dialysis, ESAs or HIF-PHIs, 16 studies (22 publications) of 1768 participants compared either oral iron or i.v. iron to placebo. 127-146 Studies set different thres",
+      "content_token_estimate": 415,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Different iron status targets",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 981,
+      "line_end": 985,
+      "content_preview": "No RCTs assess the benefits and harms for critical outcomes of different treatment targets (Hb or iron indices) among people with CKD not receiving dialysis or CKD G5PD. The Ferinject® assessment in p",
+      "content_token_estimate": 162,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Certainty of the evidence",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 985,
+      "line_end": 987,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "CKD not receiving dialysis",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 987,
+      "line_end": 991,
+      "content_preview": "The overall certainty of the evidence for iron therapy among people with CKD not receiving HD is very low (see Supplementary Table S8 and S9). The certainty of the evidence was determined to be very l",
+      "content_token_estimate": 142,
+      "ancestor_path": []
+    },
+    {
+      "heading": "CKD G5PD",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 991,
+      "line_end": 995,
+      "content_preview": "The overall certainty of the evidence for iron therapy among people with CKD G5PD is very low (Supplementary Table S10 and S11). No trials among people with CKD G5PD reported on critical outcomes, and",
+      "content_token_estimate": 115,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Values and preferences",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 995,
+      "line_end": 999,
+      "content_preview": "Although there has not been a formal assessment of published evidence concerning values and preferences of people with CKD not receiving dialysis regarding iron, the Work Group believes that most woul",
+      "content_token_estimate": 232,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Resource use and costs",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 999,
+      "line_end": 1003,
+      "content_preview": "Iron supplementation is likely to reduce the requirement for ESA therapy. Given the high cost of ESAs, appropriate use of oral iron in people with anemia and CKD would be expected to reduce overall co",
+      "content_token_estimate": 102,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Considerations for implementation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1003,
+      "line_end": 1009,
+      "content_preview": "It is difficult to predict the effect that iron will have on Hb and iron status, the assessment of which requires repeated testing. This is particularly important given that results will drive dose ad",
+      "content_token_estimate": 125,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1009,
+      "line_end": 1029,
+      "content_preview": "For people with anemia and CKD, iron supplementation is aimed at maintaining adequate iron reserves for erythropoiesis or stimulating an erythropoietic response, even in the absence of systemic iron d",
+      "content_token_estimate": 1241,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Key information",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1029,
+      "line_end": 1041,
+      "content_preview": "Balance of benefits and harms\n\nTen studies compared i.v. iron versus oral iron head-to-head in 1868 adults with CKD not receiving dialysis , ESAs, or HIF-PHIs; 150, 152-163 5 RCTs did so in in 800 adu",
+      "content_token_estimate": 549,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Certainty of the evidence",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1041,
+      "line_end": 1045,
+      "content_preview": "The overall certainty of the evidence for i.v. iron therapy compared with oral iron therapy among people with CKD not receiving HD is very low (Supplementary Table S12 and S13). The certainty of the e",
+      "content_token_estimate": 144,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Values and preferences",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1045,
+      "line_end": 1051,
+      "content_preview": "The Work Group believes that patients will have varying preferences for i.v. or oral iron based on their health and mobility status. Oral options may be favored for their convenience, as they eliminat",
+      "content_token_estimate": 192,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Resource use and costs",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1051,
+      "line_end": 1055,
+      "content_preview": "Oral iron is inexpensive and readily available in most parts of the world. Intravenous iron requires facilities and personnel to allow administration which may be more costly to both the person with a",
+      "content_token_estimate": 61,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Considerations for implementation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1055,
+      "line_end": 1059,
+      "content_preview": "While oral iron is the more convenient option, adherence to oral iron may be lower. Several oral iron and i.v. formulations exist. Tables 4 and 5 outline the available and the recommended starting and",
+      "content_token_estimate": 68,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1059,
+      "line_end": 1063,
+      "content_preview": "When compared with oral iron therapy, i.v. iron provided a small additional increase in Hb of about 0.3-0.5 g/dl (30-50 g/l), and increased ferritin and TSAT. However, i.v. iron may cause serious hype",
+      "content_token_estimate": 228,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Practice Point 2.2: In people with CKD treated with iron, it is reasonable to withhold iron if ferritin ≥700 ng/ml (≥700 µg/l) or TSAT ≥40%.",
+          "depth": 2,
+          "numbering": "2.2",
+          "line_start": 1063,
+          "line_end": 1071,
+          "content_preview": "There is little doubt that iron treatment results in higher Hb in people with CKD. However, it is unknown at what levels of iron tests this erythropoietic effect is optimized. The KDIGO 2012 guideline",
+          "content_token_estimate": 624,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        },
+        {
+          "heading": "Practice Point 2.3: In people with CKD treated with oral iron, the choice between different formulations and dosing schedules is guided by cost, individual patient preference, tolerability, and efficacy.",
+          "depth": 2,
+          "numbering": "2.3",
+          "line_start": 1071,
+          "line_end": 1079,
+          "content_preview": "The various oral iron preparations have different bioavailability, dosing strategies, and gastrointestinal side effects (Table 3). If two or three times daily dosing causes gastrointestinal side effec",
+          "content_token_estimate": 414,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        },
+        {
+          "heading": "Practice Point 2.4: In people with CKD treated with intravenous iron, the choice between different formulations is guided by cost, individual preference, and recommended dosing schedules.",
+          "depth": 2,
+          "numbering": "2.4",
+          "line_start": 1079,
+          "line_end": 1085,
+          "content_preview": "Different formulations of i.v. iron differ in the maximum dose which can be administered at a single sitting and the rate of infusion (Table 4). 175 Some i.v. iron preparations, including ferric carbo",
+          "content_token_estimate": 375,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        },
+        {
+          "heading": "Practice Point 2.5: In people with CKD treated with iron, it is reasonable to test hemoglobin, ferritin, and TSAT every 3 months for those not receiving dialysis or CKD G5PD and every month for those with CKD G5HD.",
+          "depth": 2,
+          "numbering": "2.5",
+          "line_start": 1085,
+          "line_end": 1091,
+          "content_preview": "No clinical trials specifically determine the optimal frequency for testing iron status during iron treatment. Consequently, in line with previous guidelines, the Work Group agrees that it is reasonab",
+          "content_token_estimate": 176,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        },
+        {
+          "heading": "Practice Point 2.6: In people with CKD treated with iron, certain circumstances may warrant more frequent iron testing as shown in Table 5.",
+          "depth": 2,
+          "numbering": "2.6",
+          "line_start": 1091,
+          "line_end": 1093,
+          "content_preview": "",
+          "content_token_estimate": 0,
+          "ancestor_path": [
+            "Rationale"
+          ],
+          "children": [
+            {
+              "heading": "Table 5 | Circumstances warranting more frequent iron testing",
+              "depth": 3,
+              "numbering": null,
+              "line_start": 1093,
+              "line_end": 1109,
+              "content_preview": "Initiation of or increase in dose of ESAs or HIF-PHIs\nEpisodes of known blood loss\nRecent hospitalization\nImportant increase in ferritin or TSAT or overshooting target limit\n\nESA, erythropoietin-stimu",
+              "content_token_estimate": 412,
+              "ancestor_path": [
+                "Rationale",
+                "Practice Point 2.6: In people with CKD treated with iron, certain circumstances may warrant more frequent iron testing as shown in Table 5."
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Practice Point 2.7: Switch from oral to intravenous iron if there is an insufficient effect of an optimal oral regimen after 1 to 3 months.",
+          "depth": 2,
+          "numbering": "2.7",
+          "line_start": 1109,
+          "line_end": 1115,
+          "content_preview": "Oral iron is typically prescribed to provide approximately 200 mg of elemental iron daily, with most studies showing its effect on Hb concentration within 1 to 3 months. However, the desired effect ma",
+          "content_token_estimate": 199,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        },
+        {
+          "heading": "Practice Point 2.8: In people with CKD treated with iron, consider temporarily suspending iron therapy during systemic infection.",
+          "depth": 2,
+          "numbering": "2.8",
+          "line_start": 1115,
+          "line_end": 1119,
+          "content_preview": "Iron is essential for the growth and proliferation of most pathogens including many bacteria, viruses, fungi, parasites, and helminths. Iron also exerts subtle effects on immune function and host resp",
+          "content_token_estimate": 220,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        },
+        {
+          "heading": "Practice Point 2.9: In people with CKD treated with intravenous iron, considerations pertaining to hypersensitivity reactions to intravenous iron include the following:",
+          "depth": 2,
+          "numbering": "2.9",
+          "line_start": 1119,
+          "line_end": 1131,
+          "content_preview": "Intravenous iron should only be administered if there is capability to manage acute hypersensitivity and hypotensive reactions,\nIntravenous doses of iron should not exceed the maximum dose/administrat",
+          "content_token_estimate": 580,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        },
+        {
+          "heading": "Practice Point 2.10: The suggested management of reactions to intravenous iron is presented in Figure 7.",
+          "depth": 2,
+          "numbering": "2.10",
+          "line_start": 1131,
+          "line_end": 1139,
+          "content_preview": "Figure 7 | Suggested management of reactions to intravenous (i.v.) iron. H1, type 1 histamine\n\nOptimal clinical treatment of severe anaphylaxis includes adrenaline as an essential antianaphylactic dru",
+          "content_token_estimate": 376,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        },
+        {
+          "heading": "Practice Point 2.11: In people with CKD and profound iron deficiency (ferritin &lt;30 µg/l and TSAT&lt;20%) but no anemia, consider treatment with oral or intravenous iron.",
+          "depth": 2,
+          "numbering": "2.11",
+          "line_start": 1139,
+          "line_end": 1145,
+          "content_preview": "If profound iron deficiency (e.g., ferritin &lt;30 µg/l and TSAT&lt;20%) is present even in the absence of anemia, treatment with oral or i.v. iron could be considered in shared-decisionmaking, especi",
+          "content_token_estimate": 359,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Research recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1145,
+      "line_end": 1158,
+      "content_preview": "Adequately powered pragmatic RCTs are needed to assess the benefits, harms and costs of:\no a proactive high dose i.v. iron regimen - such as used in the PIVOTAL trial - in people with CKD not receivin",
+      "content_token_estimate": 476,
+      "ancestor_path": []
+    },
+    {
+      "heading": "CHAPTER 3. USE OF ESAs, HIF-PHIs, AND OTHER AGENTS TO TREAT ANEMIA IN CKD",
+      "depth": 0,
+      "numbering": "3",
+      "line_start": 1158,
+      "line_end": 1160,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "3.1. Treatment initiation",
+          "depth": 1,
+          "numbering": "3.1",
+          "line_start": 1160,
+          "line_end": 1174,
+          "content_preview": "Practice Point 3.1.1: In people with anemia and CKD (whether treated with dialysis or not), the decision to use erythropoietin- stimulating agents (ESAs) or hypoxia-inducible factor-prolyl hydroxylase",
+          "content_token_estimate": 638,
+          "ancestor_path": [
+            "CHAPTER 3. USE OF ESAs, HIF-PHIs, AND OTHER AGENTS TO TREAT ANEMIA IN CKD"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Key information",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1174,
+      "line_end": 1182,
+      "content_preview": "Balance of benefits and harms\n\nESA increases Hb compared to placebo in people with anemia and CKD regardless of dialysis status. HIF-PHIs increase Hb compared to placebo in people with anemia and CKD ",
+      "content_token_estimate": 524,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Certainty of evidence",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1182,
+      "line_end": 1188,
+      "content_preview": "The overall certainty of evidence comparing ESAs with HIF-PHIs in people with anemia and CKD not receiving dialysis is very low (Supplementary Tables S29-S37) for all of the critical outcomes reported",
+      "content_token_estimate": 227,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Values and preferences",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1188,
+      "line_end": 1192,
+      "content_preview": "In the opinion of the Work Group, most well-informed people with anemia and CKD would choose to receive ESAs as first-line treatment for anemia, based on the long clinical experience with these agents",
+      "content_token_estimate": 130,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Resource use and costs",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1192,
+      "line_end": 1196,
+      "content_preview": "Direct costs of HIF-PHIs are evolving as these agents enter global markets, and the Work Group did not consider their costs or the relative costs of ESAs compared to HIF-PHIs or their administration w",
+      "content_token_estimate": 105,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Considerations for implementation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1196,
+      "line_end": 1200,
+      "content_preview": "This recommendation applies to adults of both sexes and all ethnicities with CKD G5D or CKD not receiving dialysis. There are insufficient data for efficacy and safety regarding the use of HIF-PHIs fo",
+      "content_token_estimate": 112,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1200,
+      "line_end": 1204,
+      "content_preview": "ESAs and HIF-PHIs are both effective for treatment of anemia in adults with CKD G5D or CKD not receiving dialysis. ESAs are effective in children while HIF-PHIs have not been studied in children. Alth",
+      "content_token_estimate": 305,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Practice Point 3.1.3: In people with anemia and CKD, HIF-PHIs should be avoided in those at increased risk of adverse events (Table 6).",
+          "depth": 3,
+          "numbering": "3.1.3",
+          "line_start": 1204,
+          "line_end": 1216,
+          "content_preview": "This practice point is based on theoretical concerns based on mechanism of action, preclinical experimental data, adverse event profiles from clinical trials with HIF-PHIs, and data from people with g",
+          "content_token_estimate": 563,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        },
+        {
+          "heading": "3.2. ESA initiation",
+          "depth": 1,
+          "numbering": "3.2",
+          "line_start": 1216,
+          "line_end": 1224,
+          "content_preview": "Recommendation 3.2.1: In people with anemia and CKD G5D treated with hemodialysis (HD) or peritoneal dialysis (PD), we suggest initiation of ESA therapy when the Hb concentration is ≤9.0-10.0 g/dl (90",
+          "content_token_estimate": 247,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Key information",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1224,
+      "line_end": 1226,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Balance of benefits and harms",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1226,
+      "line_end": 1234,
+      "content_preview": "As compared to placebo or standard of care, ESA therapy may reduce the risk of requiring RBC transfusions and increase QoL, especially when the pre-treatment Hb concentration is &lt;9.0 g/dl (90 g/l).",
+      "content_token_estimate": 689,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Certainty of evidence",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1234,
+      "line_end": 1240,
+      "content_preview": "The overall certainty of evidence comparing the use of ESAs to reach a higher Hb target versus a lower Hb target in a CKD G5D population is very low (Supplementary Tables S40 and S41). The certainty o",
+      "content_token_estimate": 254,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Values and preferences",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1240,
+      "line_end": 1244,
+      "content_preview": "The decision to initiate ESA therapy should balance the potential benefits of reducing anemia-related symptoms and RBC transfusions against the potential risks of harm. The increased risks of mortalit",
+      "content_token_estimate": 337,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Resource use and costs",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1244,
+      "line_end": 1248,
+      "content_preview": "Initiating treatment with ESA at the higher end of the range of Hb levels may lead to greater treatment-related costs and resource utilization, including costs for managing adverse events (e.g., vascu",
+      "content_token_estimate": 120,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Considerations for implementation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1248,
+      "line_end": 1252,
+      "content_preview": "Hb and blood pressure levels should be monitored in people who are treated with ESA or whenever there is a change in the dose of ESAs. The increase in Hb and blood pressure are generally reversible if",
+      "content_token_estimate": 135,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1252,
+      "line_end": 1260,
+      "content_preview": "ESAs effectively raise Hb, which reduces the risk of RBC transfusions and increases QoL for people with CKD G5D and CKD not receiving dialysis and Hb concentrations &lt;9.0 g/dl (&lt;90 g/l). However,",
+      "content_token_estimate": 438,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Key information",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1260,
+      "line_end": 1262,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Balance of benefits and harms",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1262,
+      "line_end": 1272,
+      "content_preview": "RCTs of ESA treatment among in people with CKD not receiving dialysis did not reveal a survival benefit or improvement in cardiovascular outcomes for higher versus lower Hb targets (Supplementary Tabl",
+      "content_token_estimate": 610,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Certainty of evidence",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1272,
+      "line_end": 1278,
+      "content_preview": "The overall certainty of evidence comparing the use of ESAs to reach a higher Hb target versus a lower Hb target in adults with CKD not receiving dialysis is very low (Supplementary Tables S43-S45). T",
+      "content_token_estimate": 240,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Values and preferences",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1278,
+      "line_end": 1282,
+      "content_preview": "Choosing the Hb at which ESA should be initiated in this population must balance the critically important potential risks of stroke, other MACE outcomes , and worsening hypertension against the potent",
+      "content_token_estimate": 231,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Resource use and costs",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1282,
+      "line_end": 1286,
+      "content_preview": "ESA treatment-related costs and resource utilization, including costs for managing adverse cardiovascular events (e.g., stroke) may be higher with initiating ESA at higher Hb levels. However, the cost",
+      "content_token_estimate": 88,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Considerations for implementation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1286,
+      "line_end": 1290,
+      "content_preview": "People with anemia and CKD should be informed about risks and benefits associated with ESA prior to initiation of therapy. If a lower Hb threshold is chosen for ESA initiation, Hb may need to be monit",
+      "content_token_estimate": 91,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1290,
+      "line_end": 1294,
+      "content_preview": "The Hb concentration at which ESA therapy is initiated in people with CKD not receiving dialysis should be individualized to balance the potential QoL benefits of ESA treatment among people with anemi",
+      "content_token_estimate": 119,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "3.3. ESA maintenance therapy",
+          "depth": 1,
+          "numbering": "3.3",
+          "line_start": 1294,
+          "line_end": 1300,
+          "content_preview": "Recommendation 3.3.1: In adults with anemia and CKD treated with an ESA, we recommend targeting a Hb level below 11.5 g/dl (115 g/l) ( 1D ).\n\nThis recommendation places a high value on avoiding the cr",
+          "content_token_estimate": 99,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Key information",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1300,
+      "line_end": 1302,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Balance of benefits and harms",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1302,
+      "line_end": 1316,
+      "content_preview": "Although the systematic review from the ERT did not find a difference in mortality in people with CKD not receiving dialysis treated with ESA to target a high versus a low Hb, several adverse events a",
+      "content_token_estimate": 924,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Certainty of evidence",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1316,
+      "line_end": 1322,
+      "content_preview": "The overall certainty of evidence comparing the use of ESAs to maintain a higher Hb target versus a lower Hb target in adults with CKD not receiving dialysis is very low (Supplementary Tables S43-S47)",
+      "content_token_estimate": 261,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Values and preferences",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1322,
+      "line_end": 1326,
+      "content_preview": "In the opinion of the Work Group, most well-informed people with anemia and CKD not receiving dialysis or CKD G5D would choose not to receive ESA to maintain a Hb level of 11.5 g/dl [115 g/dl] or high",
+      "content_token_estimate": 173,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Resource use and costs",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1326,
+      "line_end": 1330,
+      "content_preview": "Maintaining a higher Hb would result in higher healthcare costs related to the cost of ESA drug, drug administration, and hospitalization for stroke and other adverse cardiovascular events without pot",
+      "content_token_estimate": 66,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Considerations for implementation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1330,
+      "line_end": 1334,
+      "content_preview": "This recommendation applies to adults of both sexes and all ethnicities with CKD G5D or CKD not receiving dialysis with or without a kidney transplant.",
+      "content_token_estimate": 37,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1334,
+      "line_end": 1342,
+      "content_preview": "Maintaining a Hb higher than 11.5 g/dl (115 g/l) with ESA therapy does not improve survival in people with anemia and CKD G5D or CKD not receiving dialysis and may result in adverse cardiovascular out",
+      "content_token_estimate": 553,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "3.4. ESA dosing, frequency, route of administration, and monitoring",
+          "depth": 1,
+          "numbering": "3.4",
+          "line_start": 1342,
+          "line_end": 1344,
+          "content_preview": "",
+          "content_token_estimate": 0,
+          "ancestor_path": [
+            "Rationale"
+          ],
+          "children": [
+            {
+              "heading": "3.4.1. ESA dosing",
+              "depth": 2,
+              "numbering": "3.4.1",
+              "line_start": 1344,
+              "line_end": 1363,
+              "content_preview": "Practice Point 3.4.1.1: In people with anemia and CKD treated with ESA, the initial dose of ESA should be determined by the Hb concentration of the person, their body weight, and clinical circumstance",
+              "content_token_estimate": 817,
+              "ancestor_path": [
+                "Rationale",
+                "3.4. ESA dosing, frequency, route of administration, and monitoring"
+              ],
+              "children": [
+                {
+                  "heading": "Practice Point 3.4.1.3: In people with anemia and CKD treated with ESA, administer ESAs with the lowest dose possible which achieves and maintain treatment goals.",
+                  "depth": 4,
+                  "numbering": "3.4.1.3",
+                  "line_start": 1363,
+                  "line_end": 1367,
+                  "content_preview": "High doses of ESA may contribute to the higher risk of stroke and other cardiovascular events associated with higher Hb targets in people with anemia and CKD treated with ESA. This was shown in the Tr",
+                  "content_token_estimate": 422,
+                  "ancestor_path": [
+                    "Rationale",
+                    "3.4. ESA dosing, frequency, route of administration, and monitoring",
+                    "3.4.1. ESA dosing"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "3.4.2. ESA route of administration",
+              "depth": 2,
+              "numbering": "3.4.2",
+              "line_start": 1367,
+              "line_end": 1377,
+              "content_preview": "Practice Point 3.4.2.1: In adults and children with anemia and CKD G5HD treated with ESA, choose the ESA administration route (i.v. vs. subcutaneous) based on patient preferences, local practices, and",
+              "content_token_estimate": 178,
+              "ancestor_path": [
+                "Rationale",
+                "3.4. ESA dosing, frequency, route of administration, and monitoring"
+              ]
+            },
+            {
+              "heading": "3.4.3. Frequency of administration and monitoring of ESAs",
+              "depth": 2,
+              "numbering": "3.4.3",
+              "line_start": 1377,
+              "line_end": 1401,
+              "content_preview": "Practice Point 3.4.3.1: In people with CKD G5 or CKD not receiving dialysis, individualize the frequency of administration of ESA based on patient preferences and type of ESA administered (Table 7).\n\n",
+              "content_token_estimate": 1151,
+              "ancestor_path": [
+                "Rationale",
+                "3.4. ESA dosing, frequency, route of administration, and monitoring"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "3.5. HIF-PHI treatment initiation and maintenance",
+          "depth": 1,
+          "numbering": "3.5",
+          "line_start": 1401,
+          "line_end": 1432,
+          "content_preview": "Practice Point 3.5.1: In people with anemia and CKD, including those with ESA hyporesponsiveness, do not use ESAs and HIF-PHIs in combination.\n\nNo RCTs have investigated the efficacy or safety of comb",
+          "content_token_estimate": 1313,
+          "ancestor_path": [
+            "Rationale"
+          ],
+          "children": [
+            {
+              "heading": "Practice Point 3.5.5: In people with anemia and CKD, do not escalate HIF-PHI doses beyond the recommended maximum dose.",
+              "depth": 3,
+              "numbering": "3.5.5",
+              "line_start": 1432,
+              "line_end": 1436,
+              "content_preview": "This practice point considers the possibility that, based on mechanism of action, higher HIF-PHI doses may result in adverse events.",
+              "content_token_estimate": 33,
+              "ancestor_path": [
+                "Rationale",
+                "3.5. HIF-PHI treatment initiation and maintenance"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "3.6. HIF-PHI monitoring",
+          "depth": 1,
+          "numbering": "3.6",
+          "line_start": 1436,
+          "line_end": 1454,
+          "content_preview": "Practice Point 3.6.1: In people with anemia and CKD, when dosing HIF-PHIs, monitor the Hb levels 2-4 weeks after initiation or dose changes and subsequently, every 4 weeks during therapy.\n\nThis practi",
+          "content_token_estimate": 664,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        },
+        {
+          "heading": "3.7. ESA hyporesponsiveness",
+          "depth": 1,
+          "numbering": "3.7",
+          "line_start": 1454,
+          "line_end": 1458,
+          "content_preview": "Practice Point 3.7.1: In people with anemia and CKD G5D and CKD not receiving dialysis with initial or subsequent ESA hyporesponsiveness, identify and treat the underlying causes of ESA hyporesponsive",
+          "content_token_estimate": 54,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Hyporesponsiveness to ESA in anemia of CKD",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1458,
+      "line_end": 1462,
+      "content_preview": "People with CKD receiving or not receiving dialysis, who do not achieve target Hb levels despite a significant increase in ESA doses or continue to require high doses to maintain the target are consid",
+      "content_token_estimate": 197,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Table 9 | Causes of erythropoiesis-stimulating agents (ESA) hyporesponsiveness",
+          "depth": 1,
+          "numbering": null,
+          "line_start": 1462,
+          "line_end": 1516,
+          "content_preview": "Iron deficiency\nInflammation (infections, dialysis catheter use, autoimmune disease)\nHyperparathyroidism\nBlood loss (GI tract, dialysis procedure, menses)\nInadequate dialysis\nMalignancy\nHematologic di",
+          "content_token_estimate": 2124,
+          "ancestor_path": [
+            "Hyporesponsiveness to ESA in anemia of CKD"
+          ],
+          "children": [
+            {
+              "heading": "Practice Point 3.7.4: In patients with CKD, anemia, and ESA hyporesponsiveness, if a desired erythropoietic response has not been achieved after 3-4 months of initiating a trial of HIF-PHI, discontinue treatment.",
+              "depth": 3,
+              "numbering": "3.7.4",
+              "line_start": 1516,
+              "line_end": 1520,
+              "content_preview": "No long-term studies evaluate the risks and benefits of HIF-PHI use in people with ESA hyporesponsiveness. The doses of HIF-PHI used in available studies done in this population tended to be higher th",
+              "content_token_estimate": 208,
+              "ancestor_path": [
+                "Hyporesponsiveness to ESA in anemia of CKD",
+                "Table 9 | Causes of erythropoiesis-stimulating agents (ESA) hyporesponsiveness"
+              ]
+            },
+            {
+              "heading": "Practice Point 3.7.5: In people with anemia and CKD not receiving dialysis or with CKD G5D who have active malignancy, a recent cardiovascular event, or recent vascular thrombosis do not use HIF-PHI.",
+              "depth": 3,
+              "numbering": "3.7.5",
+              "line_start": 1520,
+              "line_end": 1524,
+              "content_preview": "HIF PHIs are associated with an increased risk of death, myocardial infarction, stroke, venous thromboembolism, and vascular assess thrombosis. There is theoretical risk that they may exacerbate or en",
+              "content_token_estimate": 103,
+              "ancestor_path": [
+                "Hyporesponsiveness to ESA in anemia of CKD",
+                "Table 9 | Causes of erythropoiesis-stimulating agents (ESA) hyporesponsiveness"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Research recommendations:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1524,
+      "line_end": 1530,
+      "content_preview": "Conduct RCTs to investigate the use of ESA to reach a specific Hb target or compare ESA with placebo for critical (all-cause mortality, MACE) and important outcomes (QoL, fatigue, vascular access thro",
+      "content_token_estimate": 208,
+      "ancestor_path": []
+    },
+    {
+      "heading": "CHAPTER 4. RED BLOOD CELL TRANSFUSION TO TREAT ANEMIA IN PEOPLE WITH CKD",
+      "depth": 0,
+      "numbering": "4",
+      "line_start": 1530,
+      "line_end": 1534,
+      "content_preview": "Red blood cell transfusions are a treatment option for anemia in people with CKD. The choice between RBC transfusions and other anemia therapies depends on their relative benefits and harms, which var",
+      "content_token_estimate": 99,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Practice Point 4.1: In people with anemia and CKD, use red blood cell (RBC) transfusion as part of a comprehensive treatment strategy, carefully weighing risks and benefits in a shared decision-making process.",
+          "depth": 2,
+          "numbering": "4.1",
+          "line_start": 1534,
+          "line_end": 1540,
+          "content_preview": "The decision to transfuse RBCs to people with anemia and CKD is often challenging. Healthcare providers must carefully balance the potential benefits and harms on a case-by-case basis, involving peopl",
+          "content_token_estimate": 446,
+          "ancestor_path": [
+            "CHAPTER 4. RED BLOOD CELL TRANSFUSION TO TREAT ANEMIA IN PEOPLE WITH CKD"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Potential harms of RBC transfusions",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1540,
+      "line_end": 1554,
+      "content_preview": "Potential harms of RBC transfusions are infrequent and encompass transfusion errors, infections, transfusion-related acute lung injury [TRALI], transfusion-associated circulatory overload [TACO], hemo",
+      "content_token_estimate": 841,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Practice Point 4.2: In people with anemia and CKD eligible for organ transplantation, avoid, when possible, RBC transfusions to minimize the risk of allosensitization.",
+          "depth": 2,
+          "numbering": "4.2",
+          "line_start": 1554,
+          "line_end": 1568,
+          "content_preview": "The risk of sensitization after RBC transfusion has probably decreased over time, at least partly due to changes in blood transfusion practices and the use of more precise methods to measure allosensi",
+          "content_token_estimate": 883,
+          "ancestor_path": [
+            "Potential harms of RBC transfusions"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Effect of leukocyte-reduced RBC transfusions on allosensitization",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1568,
+      "line_end": 1572,
+      "content_preview": "Many countries and institutions have introduced universal pre- or post-storage leukocyte filtration. Leukocytes may be a contributor to, if not the cause of, a number of adverse consequences of RBC tr",
+      "content_token_estimate": 222,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Effect of allosensitization on time to transplantation and outcomes",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1572,
+      "line_end": 1584,
+      "content_preview": "Previously, allosensitization has been linked with longer wait times compared to nonallosensitized patients. 317 Data from the 2010 USRDS Annual Report suggested an increase in median wait time to tra",
+      "content_token_estimate": 802,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Practice Point 4.3: In people with CKD and chronic anemia, consider that the benefits of RBC transfusions may outweigh its harms in people in whom:",
+          "depth": 2,
+          "numbering": "4.3",
+          "line_start": 1584,
+          "line_end": 1602,
+          "content_preview": "ESA or HIF-PHI therapy is ineffective (e.g., hemoglobinopathies, bone marrow failure, ESA or HIF-PHI resistance)\nESA or HIF-PHI therapy is harmful (e.g., previous or current malignancy, previous strok",
+          "content_token_estimate": 1231,
+          "ancestor_path": [
+            "Effect of allosensitization on time to transplantation and outcomes"
+          ]
+        },
+        {
+          "heading": "Practice Point 4.5: In people with CKD and acute anemia consider RBC transfusion when the benefits outweigh the risks, including:",
+          "depth": 2,
+          "numbering": "4.5",
+          "line_start": 1602,
+          "line_end": 1622,
+          "content_preview": "When rapid correction of anemia is required to stabilize the patient's condition (e.g., acute hemorrhage, unstable coronary artery disease), and\nWhen rapid preoperative Hb correction is required.\n\nIn ",
+          "content_token_estimate": 958,
+          "ancestor_path": [
+            "Effect of allosensitization on time to transplantation and outcomes"
+          ],
+          "children": [
+            {
+              "heading": "Table 11 | Strategies to reduce red blood cells (RBC) transfusions in people with chronic kidney disease (CKD)",
+              "depth": 3,
+              "numbering": null,
+              "line_start": 1622,
+              "line_end": 1633,
+              "content_preview": "Opt for less invasive procedures in hospitalized patients whenever possible.\nLimit phlebotomy when medically appropriate.\nContinue ESA/HIF-PHI/iron therapy in hospitalized patients unless clinically c",
+              "content_token_estimate": 212,
+              "ancestor_path": [
+                "Effect of allosensitization on time to transplantation and outcomes",
+                "Practice Point 4.5: In people with CKD and acute anemia consider RBC transfusion when the benefits outweigh the risks, including:"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Research recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1633,
+      "line_end": 1643,
+      "content_preview": "There is a lack of RCTs on the use of RBC transfusions as a primary intervention in people with anemia and CKD. Given the logistical difficulties in conducting such trials, it is likely that observati",
+      "content_token_estimate": 305,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Aim",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1643,
+      "line_end": 1647,
+      "content_preview": "The aim of this project was to update the KDIGO 2012 Clinical Practice Guideline for Anemia in Chronic Kidney Disease . 151 The guideline development methods are described below.",
+      "content_token_estimate": 44,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Overview of the Process",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1647,
+      "line_end": 1666,
+      "content_preview": "This guideline adhered to international best practices for guideline development (Appendix B: Supplementary Table S2 and Table S3) 333, 334 and have been reported in accordance with the AGREE II repor",
+      "content_token_estimate": 324,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Commissioning of Work Group and ERT",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1666,
+      "line_end": 1670,
+      "content_preview": "KDIGO and the Co-Chairs assembled and engaged a Work Group with expertise in pediatric and adult nephrology, including both dialysis and transplant specialists; cardiology; hematology; clinical trials",
+      "content_token_estimate": 142,
+      "ancestor_path": []
+    },
+    {
+      "heading": "METHODS FOR GUIDELINE DEVELOPMENT",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1670,
+      "line_end": 1674,
+      "content_preview": "extraction, risk of bias assessment, evidence synthesis and meta-analysis, grading the certainty of the evidence of each critical and important outcome, and grading the overall certainty of the eviden",
+      "content_token_estimate": 99,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Defining scope and topics and formulating key clinical questions",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1674,
+      "line_end": 1742,
+      "content_preview": "The KDIGO 2012 Anemia guideline was reviewed by the Co-Chairs to identify topics to be included in the 2025 guideline. Scoping reviews of these topics were conducted by the ERT to provide an overview ",
+      "content_token_estimate": 3408,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Literature searches and article selection",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1742,
+      "line_end": 1754,
+      "content_preview": "Searches for RCTs were conducted on PubMed, Embase, and the Cochrane Central Register of Controlled Trials (CENTRAL). The search strategies are provided in Appendix A: Supplementary Table Sl. Because ",
+      "content_token_estimate": 564,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Data extraction",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1754,
+      "line_end": 1758,
+      "content_preview": "Data extraction, from studies and existing systematic reviews, was performed by a member and confirmed by a second member of the ERT. Any differences among members of the ERT were resolved through dis",
+      "content_token_estimate": 68,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Risk of bias of studies and systematic reviews",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1758,
+      "line_end": 1764,
+      "content_preview": "The Cochrane Risk of Bias tool was used to assess risk of bias for RCTs based on the randomization process, deviations from the intended interventions, missing outcome data, measurement of the outcome",
+      "content_token_estimate": 108,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Evidence synthesis and meta-analysis",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1764,
+      "line_end": 1774,
+      "content_preview": "Measures of treatment effect - For dichotomous outcomes, a pooled effect estimate was calculated of the relative risk between the trial arms of RCTs, with each study weighted by the inverse variance, ",
+      "content_token_estimate": 380,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Grading the certainty of the evidence and the strength of a guideline recommendation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1774,
+      "line_end": 1797,
+      "content_preview": "The certainty of evidence for each critical and important outcome was assessed by the ERT using the GRADE approach. 342, 343 For RCTs, the initial grade for the certainty of the evidence is considered",
+      "content_token_estimate": 737,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Summary of findings (SoF) tables",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1797,
+      "line_end": 1803,
+      "content_preview": "Summary of findings tables were developed using GRADEpro (https://www.gradepro.org/). The SoF tables include a description of the population, intervention, and comparator and, where applicable, the re",
+      "content_token_estimate": 140,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Updating and developing the recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1803,
+      "line_end": 1807,
+      "content_preview": "Recommendations from the KDIGO 2012 Clinical Practice Guideline for Anemia in Chronic Kidney Disease were considered in the context of new evidence by the Work Group Co-Chairs and Work Group members, ",
+      "content_token_estimate": 201,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Grading the strength of the recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1807,
+      "line_end": 1838,
+      "content_preview": "The strength of a recommendation was classified by the Work Group as Level 1 or Level 2 (Table 15). The strength of a recommendation was determined by the balance of benefits and harms across all crit",
+      "content_token_estimate": 1200,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Practice points",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1838,
+      "line_end": 1842,
+      "content_preview": "In addition to graded recommendations, KDIGO guidelines now include 'practice points' to help healthcare providers better evaluate and implement the guidance from the expert Work Group. Practice point",
+      "content_token_estimate": 174,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Format for guideline recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1842,
+      "line_end": 1846,
+      "content_preview": "Each guideline recommendation provides an assessment of the strength of the recommendation (Level 1, 'we recommend' or Level 2, 'we suggest') and the overall certainty of the evidence (A, B, C, D). Th",
+      "content_token_estimate": 132,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Limitations of the guideline development process",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1846,
+      "line_end": 1850,
+      "content_preview": "Each guideline recommendation provides an assessment of the strength of the recommendation (Level 1, 'we recommend' or Level 2, 'we suggest') and the overall certainty of the evidence (A, B, C, D). Th",
+      "content_token_estimate": 132,
+      "ancestor_path": []
+    },
+    {
+      "heading": "APPENDIX A. POPULATION-BASED ALGORITHMS FOR THE MANAGEMENT OF ANEMIA IN CKD",
+      "depth": 0,
+      "numbering": "Appendix A",
+      "line_start": 1850,
+      "line_end": 1852,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix Figure 1. Management of anemia in CKD G5HD",
+      "depth": 0,
+      "numbering": "Appendix F",
+      "line_start": 1852,
+      "line_end": 1856,
+      "content_preview": "Appendix Figure 2. Management of anemia in CKD G1-G5 not receiving dialysis",
+      "content_token_estimate": 18,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix Figure 3. Management of anemia in CKD G5PD",
+      "depth": 0,
+      "numbering": "Appendix F",
+      "line_start": 1856,
+      "line_end": 1861,
+      "content_preview": "Appendix Figure 4. Management of anemia and CKD in kidney transplant recipients\n\nAppendix Figure 5. Management of anemia and CKD in children",
+      "content_token_estimate": 35,
+      "ancestor_path": []
+    }
+  ]
+}

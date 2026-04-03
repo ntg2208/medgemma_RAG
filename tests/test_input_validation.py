@@ -13,7 +13,7 @@ class TestGraphInputValidation:
 
     def _make_graph(self):
         import importlib
-        graph_module = importlib.import_module("2_Agentic_RAG.graph")
+        graph_module = importlib.import_module("agentic_rag.graph")
 
         pii_handler = MagicMock()
         pii_handler.anonymize.return_value = MagicMock(
@@ -74,7 +74,7 @@ class TestOrchestratorInputValidation:
 
     def _make_orchestrator(self):
         import importlib
-        orch_module = importlib.import_module("3_MultiAgent_RAG.orchestrator")
+        orch_module = importlib.import_module("multi_agent_rag.orchestrator")
         return orch_module.MultiAgentOrchestrator(
             retriever=MagicMock(),
             llm=MagicMock(generate=MagicMock(return_value="response")),

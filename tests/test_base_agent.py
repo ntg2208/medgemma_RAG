@@ -8,7 +8,7 @@ from pathlib import Path
 
 def test_base_agent_is_abstract():
     """Verify BaseAgent is an abstract class."""
-    agents_path = Path(__file__).parent.parent / "3_MultiAgent_RAG" / "agents"
+    agents_path = Path(__file__).parent.parent / "multi_agent_rag" / "agents"
     base_path = agents_path / "base.py"
 
     spec = importlib.util.spec_from_file_location("base", base_path)
@@ -23,7 +23,7 @@ def test_base_agent_is_abstract():
 
 def test_agent_response_has_default_fields():
     """Verify AgentResponse has sensible defaults."""
-    agents_path = Path(__file__).parent.parent / "3_MultiAgent_RAG" / "agents"
+    agents_path = Path(__file__).parent.parent / "multi_agent_rag" / "agents"
     base_path = agents_path / "base.py"
 
     spec = importlib.util.spec_from_file_location("base", base_path)

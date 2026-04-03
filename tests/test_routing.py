@@ -11,10 +11,10 @@ import importlib.util
 from pathlib import Path
 from typing import Literal
 
-# Dynamically load 2_Agentic_RAG.nodes module (contains get_route)
+# Dynamically load agentic_rag.nodes module (contains get_route)
 spec = importlib.util.spec_from_file_location(
     "nodes",
-    Path(__file__).parent.parent / "2_Agentic_RAG" / "nodes.py"
+    Path(__file__).parent.parent / "agentic_rag" / "nodes.py"
 )
 nodes_module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(nodes_module)

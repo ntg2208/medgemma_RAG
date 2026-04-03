@@ -75,7 +75,7 @@ graph TB
 
 ## 2. Level 1 — Simple RAG
 
-**File:** `1_Retrieval_Augmented_Generation/`
+**File:** `simple_rag/`
 
 Straightforward retrieve-then-generate pipeline. Best for direct clinical questions.
 
@@ -117,7 +117,7 @@ flowchart LR
 
 ## 3. Level 2 — Agentic RAG (LangGraph)
 
-**File:** `2_Agentic_RAG/`
+**File:** `agentic_rag/`
 
 Stateful LangGraph workflow with PII protection, intent routing, and RAGAS evaluation.
 
@@ -225,7 +225,7 @@ classDiagram
 
 ## 4. Level 3 — Multi-Agent Orchestration
 
-**File:** `3_MultiAgent_RAG/`
+**File:** `multi_agent_rag/`
 
 Keyword-scored routing dispatches to one or more specialized agents. Responses are synthesized into a unified answer.
 

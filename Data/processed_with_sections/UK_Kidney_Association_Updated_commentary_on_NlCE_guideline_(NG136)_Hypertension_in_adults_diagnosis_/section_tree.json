@@ -1,0 +1,185 @@
+{
+  "doc_name": "UK_Kidney_Association_Updated_commentary_on_NlCE_guideline_(NG136)_Hypertension_in_adults_diagnosis_",
+  "total_sections": 17,
+  "total_lines": 172,
+  "tree": [
+    {
+      "heading": "Measuring Blood Pressure:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 0,
+      "line_end": 4,
+      "content_preview": "1.1 We propose that office-based blood pressure measurements using a standardized technique (e.g. https://bihsoc.org/resources/bp-measurement/measure-blood-pressure) should guide all treatment decisio",
+      "content_token_estimate": 107,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Blood Pressure Targets for Individuals Without Chronic Kidney Disease:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 4,
+      "line_end": 9,
+      "content_preview": "2.1 We propose adopting a shared-decision making approach when considering blood pressure treatment and targets for any patient whenever possible.\n2.2 We propose aiming for a blood pressure target of ",
+      "content_token_estimate": 141,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Adherence Testing:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 9,
+      "line_end": 12,
+      "content_preview": "3.1 We propose objective testing of medication adherence in those with resistant hypertension.",
+      "content_token_estimate": 23,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Lifestyle Modifications:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 12,
+      "line_end": 16,
+      "content_preview": "4.1 We propose reducing dietary salt intake to a maximum of 6g/day.\n4.2 We propose not using salt substitutes in place of dietary salt reduction.",
+      "content_token_estimate": 36,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Blood Pressure Target for Individuals With Chronic Kidney Disease:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 16,
+      "line_end": 27,
+      "content_preview": "5.1 We propose aiming for a blood pressure target of &lt;130/80 mmHg for patients with chronic kidney disease to improve cardiovascular outcomes if, following a shared-decision making discussion, it i",
+      "content_token_estimate": 575,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.4.20 Reduce clinic BP to below 140/90 mmHg and maintain that level in adults with hypertension aged under 80. [NICE, 2019]",
+          "depth": 2,
+          "numbering": "1.4.20",
+          "line_start": 27,
+          "line_end": 45,
+          "content_preview": "This recommendation is in contrast to that in both the American and European guidelines which generally advocate (if tolerated) a BP target of under 130/80 mmHg. The guidance issued by these two bodie",
+          "content_token_estimate": 1181,
+          "ancestor_path": [
+            "Blood Pressure Target for Individuals With Chronic Kidney Disease:"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "UK Kidney Association Proposals - Measuring Blood Pressure:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 45,
+      "line_end": 49,
+      "content_preview": "1.1 We propose that office-based blood pressure measurements using a standardized technique (e.g. https://bihsoc.org/resources/bp-measurement/measure-blood-pressure) should guide all treatment decisio",
+      "content_token_estimate": 107,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Potential adverse effects associated with intensive BP lowering",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 49,
+      "line_end": 57,
+      "content_preview": "It is perhaps unsurprising that in SPRINT, intensive BP lowering was associated with a greater risk of syncope, hypokalaemia and acute kidney injury (AKI). The risk of incident CKD (defined as a decli",
+      "content_token_estimate": 324,
+      "ancestor_path": []
+    },
+    {
+      "heading": "UK Kidney Association Proposals - Blood Pressure Targets for Individuals Without CKD:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 57,
+      "line_end": 62,
+      "content_preview": "2.1 We propose adopting a shared-decision making approach when considering blood pressure treatment and targets for any patient whenever possible.\n2.2 We propose aiming for a blood pressure target of ",
+      "content_token_estimate": 141,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Adherence testing",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 62,
+      "line_end": 71,
+      "content_preview": "The UK Kidney Association fully supports the emphasis NG136 places on assessment of medicines optimisation and adherence at all stages of hypertension treatment and in particular the reassessment of a",
+      "content_token_estimate": 353,
+      "ancestor_path": []
+    },
+    {
+      "heading": "UK Kidney Association Proposal - Adherence Testing:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 71,
+      "line_end": 74,
+      "content_preview": "3.1 We propose objective testing of medication adherence in those with resistant hypertension.",
+      "content_token_estimate": 23,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Lifestyle modifications",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 74,
+      "line_end": 85,
+      "content_preview": "The lifestyle recommendations in NG136 remain essentially unchanged from the previous NICE guideline. Specifically, in terms of salt intake NICE recommendation 1.4.5 states:\n1.4.5 Encourage people to ",
+      "content_token_estimate": 416,
+      "ancestor_path": []
+    },
+    {
+      "heading": "UK Kidney Association Proposals - Lifestyle Modifications:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 85,
+      "line_end": 89,
+      "content_preview": "4.1 We propose reducing dietary salt intake to a maximum of 6g/day.\n4.2 We propose not using salt substitutes in place of dietary salt reduction.",
+      "content_token_estimate": 36,
+      "ancestor_path": []
+    },
+    {
+      "heading": "BP targets for individuals with pre-existing CKD",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 89,
+      "line_end": 118,
+      "content_preview": "NICE guideline NG136 specifically excludes patients with CKD and readers are instead referred back to the 2014 NICE recommendations4 for general CKD management. This 2014 guideline offers two recommen",
+      "content_token_estimate": 1251,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Update since publication of KDlGO 202l Clinical Practice Guideline for the Management of Blood Pressure in Chronic Kidney Disease and NiCE 2021 Chronic kidney disease: assessment and management (NG203)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 118,
+      "line_end": 124,
+      "content_preview": "March 2021 saw the publication of the KDIGO 2021 Clinical Practice Guideline for the Management of Blood Pressure in Chronic Kidney Disease 18 . This long-awaited update to the 2012 KDIGO guideline ai",
+      "content_token_estimate": 172,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Standardised office l BP measurement",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 124,
+      "line_end": 132,
+      "content_preview": "Standardised office BP measurement is recommended in preference to routine office BP measurement. The checklist for standardised office blood pressure measurement 19 (Figure 1) should be seen as stand",
+      "content_token_estimate": 426,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Figure 1:",
+          "depth": 1,
+          "numbering": null,
+          "line_start": 132,
+          "line_end": 172,
+          "content_preview": "Standardised blood pressure measurement 18\n\nTo recap, NICE guideline NG136 recommends reducing clinic BP to below 140/90mmHg in adults with hypertension aged under 80. The guideline excludes patients ",
+          "content_token_estimate": 2646,
+          "ancestor_path": [
+            "Standardised office l BP measurement"
+          ]
+        }
+      ]
+    }
+  ]
+}

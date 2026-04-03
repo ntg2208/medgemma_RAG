@@ -1,0 +1,297 @@
+{
+  "doc_name": "The_initial_management_of_IgA_vasculitis_(Henoch_Schonlein_Purpura)_in_children_and_young_people",
+  "total_sections": 29,
+  "total_lines": 478,
+  "tree": [
+    {
+      "heading": "Quick reference guide",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 0,
+      "line_end": 4,
+      "content_preview": "SeCtiOn1:CLASSIFICATIONOFIGAVINCLINICALLYSUSPECTEDDISEASE We recommend professionals follow the EULAR/PRINTO/PRES 2O10 classification criteria",
+      "content_token_estimate": 35,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Section 2:SPECIALIST REFERRAL IN IGAV",
+      "depth": 0,
+      "numbering": "2",
+      "line_start": 4,
+      "line_end": 17,
+      "content_preview": "We recommend discussion with a sub-specialistin:\nSevere, unremitting, Gl involvement\nSignificantnephritis\nCentral nervous system (cNs) involvement\nPulmonaryhaemorrhage\n\nWe suggest discussion with a su",
+      "content_token_estimate": 77,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Section3:NEPHRITISSCREENINGINIGAV",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 17,
+      "line_end": 160,
+      "content_preview": "We recommend urinalysis testing is performed frequently over a period of 6 months. We suggest blood pressure assessment at diagnosis and to support evaluation of significant nephritis.\n\nSeCtiOn4:MUSCU",
+      "content_token_estimate": 1581,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Summary and drationaleof recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 160,
+      "line_end": 169,
+      "content_preview": "The classification of lgAV in children and Iyoungpeople\n\n| Number | RECOMMENDATION | Grade |\n|-------------------------------------------------------------------|--------------------------------------",
+      "content_token_estimate": 173,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 169,
+      "line_end": 173,
+      "content_preview": "One highly relevant study was the development of the EULAR/PRINTO/PRES classification system [7] . This was a multicentre study to derive classification criteria for childhood vasculitides. This was t",
+      "content_token_estimate": 358,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Audit measure",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 173,
+      "line_end": 182,
+      "content_preview": "i. The proportion of children and young people with clinically suspected IgAV who have been appropriately classified using the EULAR/PRINTO/PRES 2010 classification criteria (Appendix 10).\n\n| Number |",
+      "content_token_estimate": 726,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 182,
+      "line_end": 188,
+      "content_preview": "There were 16 (16/66; 24%) studies that included the indications for hospital admission and/or the need for acute treatment, with the following indications; severe GI involvement (17 studies), severe ",
+      "content_token_estimate": 284,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Audit measure",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 188,
+      "line_end": 191,
+      "content_preview": "i. The proportion of children and young people with IgAV to receive specialist advice who have severe GI involvement, significant nephritis, CNS involvement and/or pulmonary haemorrhage.",
+      "content_token_estimate": 46,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Research recommendation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 191,
+      "line_end": 200,
+      "content_preview": "i. In children and young people with IgA vasculitis, what baseline demographic or clinical parameters predict an increased risk of complications?\n\n| Number | RECOMMENDATION | Grade |\n|----------------",
+      "content_token_estimate": 262,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 200,
+      "line_end": 207,
+      "content_preview": "There were no studies directly comparing different clinical tests to aid in the detection of nephritis. A total of 28 out of the 66 (42%) included studies that utilised clinical tests to detect nephri",
+      "content_token_estimate": 328,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Audit measures",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 207,
+      "line_end": 210,
+      "content_preview": "i. The proportion of children and young people with IgAV who receive urinalysis testing over a period of 6 months to monitor for nephritis.",
+      "content_token_estimate": 34,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Research recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 210,
+      "line_end": 218,
+      "content_preview": "i. In children and young people with IgA vasculitis, what is the incidence of hypertension and what are the implications?\n\n| Number | RECOMMENDATION | Grade |\n|----------------------------------------",
+      "content_token_estimate": 163,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 218,
+      "line_end": 225,
+      "content_preview": "There were 8 (8/66; 12% of all studies) studies that addressed musculoskeletal involvement in IgAV. Of the treatments suggested these included;\nAnalgesia (2 studies), symptomatic support, analgesia, h",
+      "content_token_estimate": 185,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Audit measure",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 225,
+      "line_end": 228,
+      "content_preview": "i. The proportion of children and young people with IgAV who receive analgesia and rest for musculoskeletal involvement",
+      "content_token_estimate": 29,
+      "ancestor_path": []
+    },
+    {
+      "heading": "audit measures",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 228,
+      "line_end": 236,
+      "content_preview": "The audit measures align with the strong recommendations (strength grade 1) suggested in this clinical practice guideline. A summary of the audit measures are as follows;\ni. The proportion of children",
+      "content_token_estimate": 202,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Summary of research recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 236,
+      "line_end": 336,
+      "content_preview": "The research recommendations covered within this best practice guideline are summarised as follows;\ni. In children and young people with IgA vasculitis, what baseline demographic or clinical parameter",
+      "content_token_estimate": 5191,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 336,
+      "line_end": 338,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix 1: Lead organisations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 338,
+      "line_end": 346,
+      "content_preview": "| Name |\n|-------------------------------------------------------|\n| British Association of Paediatric Nephrology (BAPN) |\n| UK Kidney Association (UKKA) |\n| Royal College of Paediatrics and Child Hea",
+      "content_token_estimate": 53,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix 2: Stakeholders",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 346,
+      "line_end": 358,
+      "content_preview": "| Name |\n|--------------------------------------------------------------------------------------|\n| British society of Paediatric gastroenterology, hepatology and nutrition (BSPGHAN) |\n| British Socie",
+      "content_token_estimate": 120,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix 3: PICO domains",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 358,
+      "line_end": 364,
+      "content_preview": "| Population | Intervention | Comparison | Outcome |\n|-------------------------------------------------------------------------------|------------------------------------------------------------------",
+      "content_token_estimate": 157,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix 4: Search concepts",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 364,
+      "line_end": 394,
+      "content_preview": "| Search number | Search terms |\n|-----------------|----------------|\n\n| 1 | pediatric |\n|-----|-----------------------------|\n| 2 | paediatric |\n| 3 | child* |\n| 4 | Adolescen* |\n| 5 | 1 OR 2 OR 3 OR",
+      "content_token_estimate": 457,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix 6: Bibliographic databases",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 394,
+      "line_end": 402,
+      "content_preview": "| Bibliographic databases | Access uniform resource locator (URL) |\n|----------------------------------------------------------|-----------------------------------------|\n| MEDLINE | https://www.nlm.n",
+      "content_token_estimate": 88,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix 7: Topic s and key questions areas",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 402,
+      "line_end": 411,
+      "content_preview": "| Topic area | Key questions |\n|-------------------------------------------|----------------------------------------------------------------------------------------------------------------------------",
+      "content_token_estimate": 247,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix 8: Key questions formatted for systematic review",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 411,
+      "line_end": 418,
+      "content_preview": "1) In children and young people with IgAV under the age of 18 years, do classification tools allow professionals to classify IgAV to support diagnosis?\n2) In children and young people with IgAV under ",
+      "content_token_estimate": 233,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix 9: PRISMA diagram of selected studies",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 418,
+      "line_end": 420,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix 10: The EULAR/PRINTO/PRES 2Ol0 Classification criteria",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 420,
+      "line_end": 431,
+      "content_preview": "| Criterion | Glossary | Sensitivity, specificity (%) | Area under the curve (%) |\n|------------------------------------------------|-------------------------------------------------------------------",
+      "content_token_estimate": 416,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix ll: Definitions of severe clinical signs and symptoms",
+      "depth": 0,
+      "numbering": "Appendix l",
+      "line_start": 431,
+      "line_end": 473,
+      "content_preview": "| Clinical parameter | Definitions used with the included literature |\n|-----------------------|--------------------------------------------------------------------------------------------------------",
+      "content_token_estimate": 1454,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix 12: Summary information poster: outline of methodology",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 473,
+      "line_end": 477,
+      "content_preview": "Appendix 13: Summary information poster: recommendations",
+      "content_token_estimate": 14,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Best ways to initially look after children and young people with IgAV (HSP)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 477,
+      "line_end": 478,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    }
+  ]
+}

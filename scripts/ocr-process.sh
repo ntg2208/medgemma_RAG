@@ -1,5 +1,5 @@
 #!/bin/bash
-# Process PDFs with Docling OCR
+# Process PDFs with PaddleOCR-VL
 # Usage: ./ocr-process.sh [input_dir] [output_dir]
 
 set -e
@@ -10,7 +10,7 @@ OUTPUT_DIR=${2:-~/medgemma_RAG/Data/processed_ocr}
 mkdir -p "$OUTPUT_DIR"
 
 echo "═══════════════════════════════════════"
-echo "Docling PDF OCR Processing"
+echo "PaddleOCR-VL PDF Processing"
 echo "═══════════════════════════════════════"
 echo "Input:  $INPUT_DIR"
 echo "Output: $OUTPUT_DIR"
@@ -31,9 +31,9 @@ else
   echo "Warning: Virtual environment not found. Using system Python."
 fi
 
-# Check if docling is installed
-if ! python -c "import docling" 2>/dev/null; then
-  echo "Error: docling not installed. Run: pip install docling"
+# Check if paddleocr is installed
+if ! python -c "from paddleocr import PaddleOCRVL" 2>/dev/null; then
+  echo "Error: paddleocr not installed. Run: pip install \"paddleocr[doc-parser]\""
   exit 1
 fi
 
@@ -51,32 +51,75 @@ for pdf in "$INPUT_DIR"/*.pdf; do
     echo "[$counter/$pdf_count] Processing: $filename"
 
     python << EOF
-from docling.document_converter import DocumentConverter
-from pathlib import Path
 import json
+from pathlib import Path
+from paddleocr import PaddleOCRVL
 
 try:
-    converter = DocumentConverter()
-    result = converter.convert("$pdf")
+    pipeline = PaddleOCRVL()
+    page_results = list(pipeline.predict("$pdf"))
 
-    # Export as markdown
-    md_path = Path("$OUTPUT_DIR") / "${filename}.md"
-    md_path.write_text(result.document.export_to_markdown())
+    # Restructure: merge tables across pages, fix heading levels, concatenate
+    merged = pipeline.restructure_pages(
+        page_results,
+        merge_tables=True,
+        relevel_titles=True,
+        concatenate_pages=True,
+    )
 
-    # Export as JSON (structured)
-    json_path = Path("$OUTPUT_DIR") / "${filename}.json"
-    json_path.write_text(json.dumps(result.document.export_to_dict(), indent=2))
+    out_dir = Path("$OUTPUT_DIR")
 
-    print(f"  ✓ {md_path.name}")
-    print(f"  ✓ {json_path.name}")
+    md_parts = []
+    json_parts = []
+    for res in merged:
+        md_data = res.markdown
+        if isinstance(md_data, dict):
+            md_parts.append(md_data.get("markdown_texts", str(md_data)))
+        else:
+            md_parts.append(str(md_data))
+
+        json_data = res.json
+        if isinstance(json_data, dict):
+            json_parts.append(json_data)
+        elif isinstance(json_data, str):
+            try:
+                json_parts.append(json.loads(json_data))
+            except json.JSONDecodeError:
+                json_parts.append({"raw": json_data})
+        else:
+            json_parts.append({"raw": str(json_data)})
+
+    full_md = "\n\n".join(md_parts)
+
+    # Extract title from first heading
+    title = "${filename}"
+    for line in full_md.splitlines():
+        stripped = line.strip()
+        if stripped.startswith("# "):
+            title = stripped.lstrip("#").strip()
+            break
+
+    # Write markdown
+    md_path = out_dir / "${filename}.md"
+    md_path.write_text(full_md, encoding="utf-8")
+    print(f"    {md_path.name}")
+
+    # Write JSON
+    json_path = out_dir / "${filename}.json"
+    json_path.write_text(
+        json.dumps({"title": title, "source_file": "$(basename "$pdf")", "pages": json_parts}, indent=2, ensure_ascii=False),
+        encoding="utf-8",
+    )
+    print(f"    {json_path.name}")
+
 except Exception as e:
-    print(f"  ✗ Error: {e}")
+    print(f"    Error: {e}")
 EOF
     echo ""
   fi
 done
 
 echo "═══════════════════════════════════════"
-echo "✓ OCR processing complete!"
+echo "PaddleOCR-VL processing complete!"
 echo "Output files in: $OUTPUT_DIR"
 echo "═══════════════════════════════════════"

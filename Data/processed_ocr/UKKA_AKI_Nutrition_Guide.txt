@@ -1,0 +1,300 @@
+Nutritional considerations in adult patients with acute kidney injury
+
+Publication date January 2024
+
+Nutritional considerations in adult patients with acute kidney injury
+
+Mafrici B $ ^{1} $, Williams H $ ^{2} $ and Edel J $ ^{3} $
+
+Publication date January 2024
+
+Review date January 2026
+
+1. Clinical Specialist Renal Dietitian, non-medical prescriber, Dietetic and Nutrition Department, Therapy Services, Renal and Transplantation Unit, City Hospital Campus, Nottingham University Hospitals NHS Trust, Nottingham, UK Please email any comments to:  $ \underline{\text{bruno.mafrici@nuh.nhs.uk}} $
+
+2. Head of Dietetics, Betsi Cadwaladr University Health Board, Bangor, Wales, UK
+
+3. Critical Care Specialist Dietitian
+
+Table of Contents
+
+Page No
+
+2
+
+Disclaimer
+
+To the best of our knowledge, the contents of this publication are in line with National Institute for Health and Care Excellence guidance relating to the management and treatment of acute kidney injury (NICE 2023).
+
+Professional advice should be sought before taking, or refraining from taking, any action on the basis of the content of this publication. We cannot be held responsible for any errors or omissions therein, nor for the consequences of these or for any loss or damage suffered by readers or any third party informed of its contents. The UK Kidney Association disclaims all liability and responsibility arising from any reliance placed on the information contained in this publication by you or any third party who may be informed of its contents.
+
+1. Introduction
+
+Acute Kidney Injury (AKI) is characterised by a rapid reduction in kidney function resulting in a failure to maintain fluid, electrolyte and acid-base homeostasis (Segaran et al, 2015). The term AKI encompasses a spectrum of injury from moderate to severe deterioration of kidney function where patients may require renal replacement therapy (RRT) (NICE 2023). Patients with AKI represent a heterogeneous group rarely presenting with an isolated disease process and as such the clinical status and treatment of patients with AKI can vary greatly. As a result, nutritional requirements of a patient can vary significantly depending on the degree of AKI, underlying clinical condition, metabolic state, inflammatory status and treatment employed. AKI is often present when there is sepsis and multi-organ failure (Kanagasundaram et al, 2019). Patients require an individualised dietetic approach with close monitoring and review, especially if they require RRT (Kopple et al, 2013; Fiaccadori et al 2021).
+
+Malnutrition, specifically protein energy wasting (PEW), is an important predictor of in-hospital mortality in patients with AKI, independent of complications and co-morbidities (Fiaccadori et al., 2021; Li et al. 2012, Meyer et al., 2020). Between 24 and 60% of all hospitalised patients with AKI present with a degree of malnutrition (Meyer et al., 2020) with up to 42% presenting with signs of severe malnutrition on admission (Cano et al., 2009; Sabatino et al., 2017). In the critical care setting the prevalence of malnutrition increases to as high as 73% (Oh et al., 2019). Moreover, patients with malnutrition and AKI who survive to hospital discharge have poor clinical outcomes (Meyer et al., 2020). It is therefore important that patients with AKI at risk of malnutrition are identified and where appropriate, referred to the dietitian so that nutritional support and/or dietary electrolyte manipulation can be tailored to meet individual needs.
+
+Nutritional support for patients with AKI must take into account not only the specific metabolic disturbances associated with the kidney injury but also the underlying disease process, inflammatory markers, the potential nutritional losses and gains during RRT, fluid retention (including gut oedema) and retention of uraemic toxins(Mercado et al, 2019; Ostermann et al, 2019; Fiaccadori et al 2021). The aim of this document is to provide an overview of nutritional considerations with patients affected by AKI. It is not intended to replace the role of health care professionals. To date there are no randomised controlled trials on nutrition and AKI, which remains an under-researched area. In view of the lack of systematic reviews and high-quality studies in the current literature, the recommendations provided are limited to current guidelines and the expert opinions of the authors of this document.
+
+2. Identifying patients with AKI at risk of malnutrition
+
+There is currently no validated screening tool to identify malnutrition in people with AKI. However, the Renal Nutrition Screening Tool, RNST (Xia et al, 2016) and the Renal Inpatient Nutrition Screening Tool “Renal iNUT” (Jackson et al, 2019) are validated tools for use in people with kidney disease that are more sensitive than many other widely used generic tools. The Malnutrition Universal Screening Tool (MUST) is fairly specific and correlates well with other nutritional markers but lacks sensitivity when used with people with kidney impairment because weight and weight changes may be masked.
+
+by fluid changes (Lawson et al, 2012). In clinical practice, independently of the tool used, health care professionals caring for patients with AKI should use their clinical judgment to refer the patients to the dietitian if concerned about their nutritional status and/or intake.
+
+Screening tools are often not appropriate in the critical care setting. Instead, the specialist critical care dietitian should routinely undertake nutritional assessment to determine patients' nutritional risk and thereby those who will benefit the most from nutrition support (Segaran & Bear 2015). In clinical practice AKI may be defined by severity (stage 1, 2 and 3) (NICE 2023) and cause of the injury - pre-renal, intra-renal and post-renal AKI (Rahman et al, 2012). The nutritional relevance of the cause of AKI is summarised in Table 1.
+
+<div style="text-align: center;">Table 1. AKI terminology and nutritional relevance</div>
+
+
+
+<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>Cause</td><td style='text-align: center; word-wrap: break-word;'>Description</td><td style='text-align: center; word-wrap: break-word;'>Nutritional relevance</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Pre-renal AKI</td><td style='text-align: center; word-wrap: break-word;'>Pre-renal injuries refer to anything which obstructs the flow of blood to the kidneys. Causes include reduced cardiac output; hypovolaemia; vascular emboli; heart failure; liver failure or drugs which affect the blood supply. Pre-renal injuries are often reversed within a couple of days once normal blood flow is restored. However, if the cause of the pre- renal injury is not reversed or treated effectively it may lead to an intra- renal injury.</td><td style='text-align: center; word-wrap: break-word;'>There is typically no change in the nutritional requirements of patients with a pre-renal AKI.</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Intra-renal AKI</td><td style='text-align: center; word-wrap: break-word;'>Intra-renal injuries refer to anything which damages the cells of the kidney. Causes include nephrotoxic agents; infections or systemic diseases, e.g. lupus or sarcoidosis; acute tubular necrosis; glomerulonephrites.</td><td style='text-align: center; word-wrap: break-word;'>This is a more severe form of injury and is likely to alter nutritional requirements.</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Post-renal AKI</td><td style='text-align: center; word-wrap: break-word;'>Post-renal injuries refer to anything, which obstructs the flow of urine from the kidneys. This often results in hydronephrosis (“water on the kidneys”). Causes include kidney stones; enlarged prostate; cervical cancer or tumours. Post-renal injuries are often reversed within a couple of days once the urinary obstruction is cleared.</td><td style='text-align: center; word-wrap: break-word;'>There is typically no change in the nutritional requirements of patients with a post-renal AKI.</td></tr></table>
+
+Patients with pre-existing chronic kidney disease (CKD) may present with AKI. Acute illness in addition to underlying CKD is more likely to impact on and alter nutritional needs. These patients have an increased risk of worsening of their nutritional status when admitted with AKI and should be monitored closely (Meyer et al, 2020; Fiaccadori et al, 2021).
+
+3. Principles of nutrition support in patients with AKI
+
+The general aim of nutrition support is to maintain nutritional status whilst limiting the complications of AKI. This includes preventing or minimising PEW, preserving lean body mass, avoiding further metabolic derangements, improving wound healing, supporting immune function and thus reducing risk of mortality (Fiaccadori et al, 2021; Meyer et al 2020).
+
+A number of different factors will influence the patient’s nutritional needs (Fiaccadori et al, 2021). For those patients identified as being at high risk of malnutrition, an individualised assessment undertaken by a dietitian is recommended (Kanagasundaram et al, 2019).
+
+3.1 Dietetic classification of AKI
+
+From a nutritional point of view patients can be divided into two groups:
+
+• Patients with AKI in the non-catabolic state
+
+• Patients with AKI in the catabolic state
+
+Within nutritional assessment is important to assess the presence of a catabolic state. There is no universal definition of how to identify the degree of catabolism, however, the following factors should be considered; the underlying condition, clinical status, objective measurements of inflammatory markers, biochemistry and clinical observation.
+
+AKI in the non-catabolic state
+
+Typically, patients with pre-renal or post-renal injuries present in a non-catabolic state. Common causes of AKI in a non-catabolic state include dehydration, certain medications and urinary obstruction. Generally, these patients are stable and where required any renal replacement therapy (RRT) will usually be provided by conventional haemodialysis (HD). Although they could have any stage of AKI, these are likely to be predominantly patients with stage 1 and 2 AKI. Oral diet alone, or the addition of nutritionally-dense supplementary sip feeds will frequently be sufficient to meet the patients' needs; if not artificial nutrition support should be established.
+
+AKI in the catabolic state
+
+Typically, patients with an intra-renal injury present in a catabolic state. Causes of AKI in a catabolic state include sepsis, acidosis and trauma. Patients often have multi-organ failure and are likely to be managed on an intensive care unit. Although they could have any stage of AKI, these are likely to be predominantly patients with stage 2 and 3 AKI. AKI is seen in approximately 50% patients on ICU (Hostle et al, 2015), of whom 5-10% will require continuous renal replacement therapy (CRRT) (Tandukar and Palevsky 2019).
+
+PEW is often present in this group of patients and is associated with poorer patient outcomes in terms of length of hospital stay, complications and mortality rates (Fiaccadori et al, 2021). Protein turnover rates are increased resulting in negative nitrogen balance. Nitrogen requirements are increased above normal and are influenced by the mode of RRT undertaken. Nutrition support can
+
+only improve protein and energy balance and possibly protein synthesis but cannot suppress critical illness-induced catabolism (Ostermann et al, 2019).
+
+Patients will usually require artificial nutrition support, particularly if intubated and sedated. Wherever possible, this should be provided via the enteral route (Singer et al, 2019). Standard formulae can be used, but nutritionally-dense feeds with or without reduced electrolyte content are useful where the control of fluid balance and/or serum phosphate and potassium levels are raised.
+
+3.2 The impact of Renal Replacement Therapy (RRT) on nutritional requirements
+
+For patients receiving RRT as a treatment in AKI, nutritional requirements will be affected. All patients with AKI requiring RRT should be referred to the dietitian (Kanagasundaram et al, 2019).
+
+Intermittent haemodialysis (IHD) may be used with stable patients. Fluid removal may be limited and therefore it can be challenging to fully meet nutritional requirements within fluid allowances. Nutrient-dense and low electrolyte feed can be useful. Alternatively, discussion with the medical team to adapt dialysis prescriptions may be necessary to allow a greater volume of feed to be delivered.
+
+Sustained low-efficiency diafiltration (SLED-F) may be used with some patients. Preliminary data showed that unadjusted losses of free amino acids and 18 trace elements in IHD and SLED-F appear to be similar, despite theoretical concerns that the extended hybrid treatment might confer increased risk of micronutrient loss (Oh et al, 2019).
+
+Continuous Renal Replacement Therapy (CRRT) can be used with patients who have cardio-vascular instability, and therefore is the method of choice for critically ill patients. Care is needed to examine in detail the types and volumes of replacement and dialysis solutions that are used, since these may contain 'hidden' calories. The anticoagulant citrate contains calories whereas heparin does not contain calories.
+
+Where lactate-containing solutions are being used, energy will be derived from its metabolism. Each millimole of lactate provides 0.32kcal (Casaer et al, 2008). In practice it is often difficult to estimate exact net energy gains but it should be taken into account. In newer replacement solutions, bicarbonate has replaced lactate as a buffer and consequently there will be no calorie gain.
+
+Citrate is an anticoagulant commonly used in CRRT to prevent clotting (sometimes used instead of heparin) within the circuit by binding with calcium, providing a calorific value is 0.59 kcal/mmol (Oudemans et al, 2012; Balik et al, 2013). Citrate absorption during CRRT depends on the citrate dose, pump rate of the filter and the amount filtered out and lost in effluent. In practice, opinions differ whether to include the calorie provision of citrate due to uncertainty around its utilisation within the krebs cycle. The theoretical calorie provision (figure 1) is likely to be most significant and should be borne in mind with individuals where there is particular concern around overfeeding and or those at risk of refeeding syndrome.
+
+Calorie gains will be significantly higher if using glucose and/or lactate containing dialysate solution. and as such caution should be taken to avoid calories gained during CRRT leading to overfeeding in
+
+critically ill patients (Rogers et al, 2021). Similarly it is important to account for calorie provision from other medications, primarily propofol, used as a sedative in the critical care setting. Each millilitre of propofol provides 1.1 kcal/ml, which is usually taken into consideration when a patient is receiving at least 10ml/hr.
+
+CRRT also has a negative influence on nutrient balance. Extra-corporal losses of amino acids are significant with estimated amino acid losses between 10 and 15g a day (Davies et al, 1991, Frankenfield et al, 1993, Patel et al, 2017 Oh et al 2019). Total amino acid losses have been shown to be lower in IHD vs SLED-F vs CRRT (Oh et al 2019). In CRRT protein provision should be increased to compensate for these losses and catabolism (Brown & Compher 2010) with caution (Heyland et al 2023; Stoppe et al 2023). To achieve these high protein intakes in enterally fed patients without providing excessive amounts of energy, the use of high protein, moderate energy feeds or the addition of modular protein supplements is recommended to increase the nitrogen to calorie ratio (authors opinion).
+
+CRRT allows feed volumes and electrolyte intake to be liberalised. Hyperphosphataemia is rapidly corrected, and since most current replacement solutions currently contain no phosphate, intravenous supplementation with phosphate will usually be required if hypophosphatemia is to be avoided (Bellomo & Boyce 1993).
+
+3.3 Estimation of Nutritional Requirements in AKI
+
+Nutritional requirements in AKI are summarised in Table 2. These guidelines are based on low grade evidence and expert opinion, therefore their implementation in clinical practice requires an individualized and patient centred approach.
+
+<div style="text-align: center;">Table 2. Nutritional requirements in AKI. BW= Body weight refers to actual body weight. Use ideal body weight in extremes of BMI (less than 18.5 or more than 25kg/m²) (https://www.peng.org.uk/pdfs/pocket-guide/statement-on-ideal-body-weight.pdf).</div>
+
+
+
+<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>AKI</td><td colspan="3">Non-Catabolic State</td><td colspan="3">Catabolic state</td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>No RRT</td><td style='text-align: center; word-wrap: break-word;'>On IHD</td><td style='text-align: center; word-wrap: break-word;'>On CRRT</td><td style='text-align: center; word-wrap: break-word;'>No RRT</td><td style='text-align: center; word-wrap: break-word;'>On IHD</td><td style='text-align: center; word-wrap: break-word;'>On CRRT</td></tr><tr><td rowspan="2">Protein (g/kg/BW/Day)</td><td rowspan="2">0.8-1.0 (KIDIGO 2012; Fiaccadori et al, 2021)</td><td rowspan="2">Min 1.1 (Naylor et al, 2013) Min 1.2 (Fiaccadori et al, 2021)</td><td rowspan="2">1.2-1.5 (expert opinion) $ ^{*} $</td><td style='text-align: center; word-wrap: break-word;'>Catabolic (no RRT) not on a ventilator Start with 1.0 gradually increase to 1.3 If appropriate (Singer et al, 2019; Fiaccadori et al, 2021)</td><td rowspan="2">Up to 1.3g/kg - 1.5g/kg (Fiaccadori et al, 2021) On ICU 1.2-1.5g/kg (Singer et al, 2019) whilst on HD However close monitoring and proceed with caution in ventilated patients (Heyland et al 2023; Stoppe et al 2023)</td><td rowspan="2"></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Catabolic (no RRT) Ventilated Start with 1.0 - 1.2 and aim to achieve 80% of estimated protein requirements (Heyland et al 2023; Stoppe et al 2023)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Energy</td><td colspan="6">Tailor provision to individual requirements, clinical state, catabolic state and, nutritional status. When indirect calorimetry (IC) is not possible use predictive equations (where predictive equations are used the patient should be monitored closely including biochemistry, clinical condition and weight). Non-ICU: 20-30kcal/kg/day (KIDGO 2012); 27 kcal/kg/day (Gomes et al 2018; Fiaccadori et al 2021). On ICU: IC, Penn State University (PENN) equations (Frankenfield et al 2009) or weight</td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>based equation 20-25kcal/kg/day (Singer et al, 2019). In acutely unwell patients with AKI on ICU, administer hypocaloric (up to 70% of estimated energy expenditure (EE) for the first 3 days of ICU admission (Singer et al, 2019)).</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Fluid</td><td style='text-align: center; word-wrap: break-word;'>Fluid requirements require individual medical assessment. Standard fluid equations are unlikely to be helpful. Fluid balance and daily weights should be monitored closely.</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Electrolytes</td><td style='text-align: center; word-wrap: break-word;'>Monitor and adjust intake as required. These will vary depending on disease state and type of treatment.</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Micronutrients</td><td style='text-align: center; word-wrap: break-word;'>Requirements are not well documented. Lipid soluble vitamin levels and antioxidant status are low. CRRT has negative effect on balance of some water-soluble vitamins (such as thiamine, folate and vitamin C) and trace elements (copper, zinc, selenium. Whether micronutrient supplementation improves outcomes remain unknown (Oh et al, 2019)</td></tr></table>
+
+
+
+
+$ ^{*} $There is currently no evidence to support these protein requirements and values are provided based on the expert opinion of the authors. If protein provision is increased further close monitoring of kidney function, patient condition and nitrogen balance will be required. Please note caution in interpreting this general guidance e.g; patients who require CRRT may not be always catabolic or require ICU admission but may be admitted to ICU for CRRT because IHD may not be available.
+
+Energy
+
+AKI itself has no effect on the patient's energy requirements. Even in individuals with AKI and multi-organ failure, measured energy requirements are only 20%-30% above the estimated basal metabolic rate values (KDIGO 2012). KDIGO guidelines for AKI (2012) suggest achieving a total energy intake of 20–30 kcal/kg/day in patients with any stage of AKI.
+
+Within ICU settings indirect calorimetry is considered the gold standard to estimate energy requirements. It can be used for those undergoing CRRT (Johnkheer et al, 2020) but has not been studied for patients undergoing SLED or those receiving IHD who are not in a clinically'steady state'.
+
+An alternative approach to estimating energy requirements on ICU is to use critical care specific equations that aim to avoid risks of over and underfeeding (Fiaccadori et al 2021). These include weight based equations (20-25kcal/kg/day) (Singer et al, 2019) or the PENN state equation (Frankenfield et al 2009). Whilst these are the most widely available options in the absence of indirect calorimetry, predictive formulas may frequently lead to incorrect energy need estimation and close monitoring to avoid underfeeding and overfeeding is needed (Sabatino et al, 2017). Energy intake should be based on Ideal Body Weight for those with a BMI over 26 kg/m2 (Singer et al, 2019). In acutely unwell patients with AKI on ICU, hypocaloric feeding (not exceeding 70% of energy expenditure) should be administered for the first 3 days of ICU admission (Singer et al, 2019). After day 3, caloric delivery can be increased up to 80-100% of measured REE (Singer et al, 2019, Fiaccadori et al, 2021).
+
+In those receiving CRRT, the energy contribution from solutions that use lactate as a substrate or citrate as an anticoagulant should be considered, as previously discussed.
+
+Protein
+
+Protein requirements are influenced by the patient's clinical condition, severity of AKI, presence of absence of a catabolic state and any RRT they may receive (Table 2). Recommendations for protein requirements vary in the literature. It is essential that attention is given to individual natic condition and treatment goals, when considering the protein requirements as suggested in Table 2. For stable patients who are not receiving RRT, protein turnover is not increased; a protein intake of 0.8–1.0 g/kg/day has been suggested (Gervaso et al, 2011; KDIGO 2012; Fiaccadori et al 2021). In contrast, patients receiving RRT may require a higher protein intake, with a suggested range from 1.5-1.7g/kg/day, depending on RRT treatment (McClave et al, 2016; Patel et al, 2017; Singer et al 2019; Meyer et al 2020; Fiaccadori et al, 2021). Recently, the EFFORT trial (Hayland et al 2023) showed that patients who were mechanically ventilated, critically unwell, with AKI and high SOFA score at baseline, not on RRT and receiving high protein dose (prescribed 2.0g/kg; on average received 1.6g/kg) were associated with higher harm than those having less protein 1.2 or less (Heyland et al 2023; Stoppe et al 2023). The subgroup analysis suggested an interaction between protein dose and ventilated unwell patients with an AKI (Stage 1-3) and a high sequential organ failure assessment (SOFA) score ( $ >= $9) on both time to discharge alive and 60 day mortality (Hayland et al 2023; Stoppe et al 2023). A secondary analysis indicated that mechanically ventilated patients with AKI are harmed by higher protein dosing, particularly in patients who did not receive RRT (Stoppe et al 2023). As a result a more cautious approach has been suggested in ventilated patients with AKI not on RRT, see Table 2 (Heyland et al 2023; Stoppe et al 2023).
+
+For patients receiving CRRT who are metabolically stressed 1.5- 1.7g/kg/BW (with caution) is a realistic target (KDIGO 2012; Patel et al, 2017; Singer et al, 2020; Fiaccadori et al, 2021) (Stoppe et al, 2023).
+
+Ideal body weight should be used for patients who are obese with a BMI over 26kg/m² in critical care (Singer et al, 2019).
+
+Electrolytes
+
+AKI may be associated with significant electrolyte changes such as elevated potassium and phosphate levels. Electrolyte intake should be individualised according to the patient's blood biochemistry, clinical condition and dietary provision. Frequent monitoring of blood biochemistry is essential. Patients requiring dietary electrolyte manipulation should be referred to the Dietitian regardless of their risk of malnutrition. Low potassium and low phosphate diets can be implemented where serum levels are high.
+
+Avoidance of hyperkalaemia is a clinical priority in AKI, however not all patients with AKI and hyperkalaemia require dietary potassium restriction. Health care professionals should consider the cause of hyperkalaemia; the presence of metabolic acidosis and other non-dietary related causes as well as the contribution of potassium from dietary intake and provision via enteral and parenteral solutions where applicable. Recently, there has been an increased use of gastrointestinal cation-exchange resins to support in the emergency management of acute life-threatening hyperkalaemia (Meyer et al, 2020; Selby et al, 2020).
+
+Dietary restriction of phosphate may limit an individual's food choice. Allowing more liberal phosphate consumption to help promote food intake is a better approach. In the short-term, maintaining a good nutritional intake is of greater priority than achieving phosphate control. If and
+
+when kidney function recovers and serum potassium and phosphate levels normalise any restrictions can be relaxed.
+
+In the polyuric phase if low electrolyte levels occur, oral or intravenous supplementation may be required.
+
+Persistent hypophosphatemia may present in critically ill patients and has been correlated with increased mortality (Meyer et al, 2020). Hypophosphatemia may be an effect of the RRT employed, particularly in CRRT in which case the treatment is likely to be pharmacological. The nutritional intake of patients with hypophosphatemia, particularly in those who are not undergoing RRT, should be scrutinised to ensure that a deficiency in protein intake is not present.
+
+Fluid
+
+The medical team should advise on fluid provision taking into account clinical condition, stage of AKI and current treatment. Equations to estimate fluid requirements may be not useful in AKI. Instead, a multidisciplinary team approach is needed to establish the optimal fluid intake for the patient as well as the volume within which nutrition support can be given if required. Daily weights, strict fluid balance and medical assessment are key tools to assess optimal fluid requirements. In oliguric and fluid overloaded patients, fluid intake may be restricted. Limiting sodium intake will help control thirst and aid adherence with fluid restriction. During recovery patients may become polyuric. An increased fluid intake (adequate to cover the large urine volumes and insensible losses) must then be maintained.
+
+Micronutrients
+
+Requirements for micronutrients are not well defined. Caution should be taken when interpreting serum micronutrient levels; many patients with AKI present in the acute phase response, which will itself alter blood levels (Gervasio et al, 2011). Plasma levels of vitamins A, D, E (Druml et al, 1998) and vitamin C (Story et al 1999) together with selenium and zinc (Story et al, 1999; Berger et al, 2004; Oh WC et al, 2019) are lower in AKI than in normal subjects. However, this may be related to inflammatory processes, RRT or medication rather than true nutritional deficiencies. Micronutrient losses on CRRT may also be significant. Documented daily ultrafiltrate losses include 100mg vitamin C (Bellomo & Boyce 1993), 290g folate (Fortin et al, 1999) and 4mg thiamine (Berger et al, 2004), with some authors suggesting supplementation (Gervasio et al, 2011). Mega doses of vitamin C (>250mg/day) are potentially toxic due to the risk of secondary oxalosis in kidney failure, although ensuring adequate ascorbic acid status may confer some benefit (Honore et al, 2020). Vitamin A toxicity has been reported in patients with AKI receiving parenteral nutrition; some authors suggest monitoring Vitamin A levels (Gervasio et al, 2011).
+
+Trace elements circulate mainly bound to protein and therefore are generally unaffected by CRRT but may be affected by the acute phase response. Selenium is affected by CRRT with reported daily losses of 0.97μmol (Berger et al, 2004) some authors suggest a need for its supplementation (Gervaso et al, 2011).
+
+Since the provision of micronutrients from commonly used parenteral sources and enteral feeds may be insufficient to replace some of these losses to meet requirements, there is some suggestion that selective supplementation should be considered (Gervasio et al, 2011). However, demonstrating
+
+deficiency of micronutrients in patients with AKI does not equate to demonstrating a clinical benefit from supplementation; it is not known whether micronutrient supplementation to compensate for RRT losses improves outcomes (Oh et al, 2019; Meyer et al, 2020). Current guidelines lack specific recommendations on specific micronutrient doses and duration.
+
+4. Monitoring
+
+Where patients present with nutritional concerns it is important that they receive regular dietetic review throughout the course of treatment and during recovery. Energy, protein and fluid requirements will require review as kidney function changes. Where kidney function recovers and electrolyte and fluid balance normalise, patients should be supported to relax restrictions and return to a normal balanced diet.
+
+5. Conclusion
+
+Nutritional management plays an important role in the care of patients with AKI. Since different disease types and AKI stages can affect patients in a variety of ways, nutrition is best tailored to individual needs, taking account AKI stage, clinical condition and treatment whilst using clinical judgement. Whilst there is some guidance on energy and protein requirements based on the limited evidence available, data is lacking on the optimal intake of a variety of nutrients. Individualised assessment enables the nutritional prescription to be matched to the various needs of patients. It is recommended that this be undertaken by a dietitian.
+
+6. Dietetic audit measures in AKI
+
+All patients should be screened for risk of malnutrition within 24 hours of admission (NICE 2006) The Renal Association guidelines for AKI (Kanagasundaram et al, 2019) recommend that patients with AKI receiving renal replacement therapy should be referred to a dietitian for individual assessment of patients undergoing dietetic review by the calendar day after initiation of renal
+
+support (applies even if no longer RRT-dependent)
+
+- Proportion of patients meeting at least 80% of their estimated energy and protein requirements by the  $ 2^{nd} $ calendar day after initiation of renal support (applies even if no longer RRT-dependent).
+
+7. References
+
+Balik M, Zakharchenko M, Leden P, Otahal M, Hruby J, Polak F, Rusinova K, Stach Z, Tokarik M, Vavrova J, Jabor A and Oudemans-van Straaten HM. (2013). Bioenergetic gain of citrate anticoagulated continuous hemodiafiltration—a comparison between 2 citrate modalities and unfractionated heparin Journal of Critical Care 28, 87–95
+
+Bellomo R and Boyce N. (1993) Acute continuous hemodialfiltration: a prospective study of 110 patients and a review of the literature. Am J Kidney Dis. 21:508-518
+
+Brown RO and Compher C. (2010) American Society for Parenteral and Enteral Nutrition Board of Directors. A.S.P.E.N clinical guidelines: nutrition support in adult acute and chronic renal failure JPEN 34:366-377
+
+Canadian Clinical Guidelines Committee (2015) Canadian Critical Care Nutrition Clinical Practice Guideline. Available at: http://criticalcarenutrition.com/index.php?option=com_content&view=category&layout=blog&id=25&Itemid=109 [Accessed on 10.11.23]
+
+Cano NJ, Aparicio M, Brunori G, Carrero JJ, Cianciaruso B, Fiaccadori E, Lindholm B, Teplan V, Fouque D, and Guarnieri G; ESPEN. (2009) ESPEN Guidelines on Parenteral Nutrition: adult renal failure. Clin Nutr. 28(4):401-14
+
+Casaer MP, Mesotten D and Schetz MR. (2008) Bench-to-bedside review: metabolism and nutrition. Crit Care 12:222
+
+Davies SP, Reaveley DA, Brown EA and Kox WJ.(1991) Amino acid clearances and daily losses in patients with acute renal failure treated by continuous arteriovenous hemodialysis. Critical Care 19:1510-1515
+
+Druml W, Schwarzenhofer M, Apsner R and Horl WH. (1998) Fat soluble vitamins in patients with acute renal failure. Miner Electrolyte Metab 24:220-226
+
+Fiaccadori E. (2010) Specific nutritional problems in AKI, treated with non-dialysis and dialysis modalities Nephrol Dial Trans 3:1-7
+
+Fiaccadori E, Sabatino A, Barazzoni R, Carrero JJ, Cupisti A, De Waele E, Jonckheer J, Singer P, Cuerda C. (2021) ESPEN guideline on clinical nutrition in hospitalized patients with acute or chronic kidney disease. Clin Nutr. 2021 Feb 9:S0261-5614(21)00052-2
+
+Fortin MC, Amyot SL and Geadah D. (1999) Serum concentrations and clearances of folic acid and pyridoxal-5-phosphate during venovenous continuous renal replacement therapy. Intensive Care Med 25:594-598
+
+Frankenfield DC, Badellino MM, Reynolds HN, Wiles CE, Siegel JH and Goodarzi S. (1993) Amino acid loss and plasma concentration during continuous hemodiafiltration. JPEN 17:551-561
+
+Frankenfield D, Smith JS and Cooney RN. (2004) Validation of 2 approaches to predicting resting metabolic rate in critically ill patients. JPEN 28:259-264
+
+Frankenfield, D, Coleman, A, Alam, S, Cooney, R (2009) Analysis of estimation methods for resting metabolic rate in critically ill adults. JPEN 33 (1): 27-36
+
+Gervasion JM, Garmon WP and Holowatyj MR. (2011) Nutrition Support in Acute Kidney Injury Nutrition in Clinical Practice 26 (4): 374-381
+
+Goes CR, Sanches AC, Balbi A, and Ponce D. (2017) Daily variability of resting energy expenditure in acute kidney injury patients on dialysis. J Bras Nefr 39 (1):15-22
+
+Gomes F, Schuetz P, Bounoure L, Austin P, Ballesteros-Pomar M, Cederholm T, Fletcher J, Laviano A, Norman K, Poulia KA, Ravasco P, Schneider SM, Stanga Z, Weekes CE, Bischoff SC. ESPEN guidelines on nutritional support for polymorbid internal medicine patients. Clin Nutr. 2018 Feb;37(1):336-353
+
+Heyland DK, Patel J, Compher C, Rice TW, Bear DE, Lee ZY, González VC, O'Reilly K, Regala R, Wedemire C, Ibarra-Estrada M, Stoppe C, Ortiz-Reyes L, Jiang X, Day AG; EFFORT Protein Trial team. The effect of higher protein dosing in critically ill patients with high nutritional risk (EFFORT Protein): an international, multicentre, pragmatic, registry-based randomised trial. Lancet. 2023 Feb 18;401(10376):568-576
+
+Hoste EA, Bagshaw SM, Bellomo R, Cely CM, Colman R, Cruz DN, Edipidis K, Forni LG, Gomersall CD, Govil D, Honoré PM, Joannes-Boyau O, Joannidis M, Korhonen AM, Lavrentieva A, Mehta RL, Palevsky P, Roessler E, Ronco C, Uchino S, Vazquez JA, Vidal Andrade E, Webb S, Kellum JA (2015) Epidemiology of acute kidney injury in critically ill patients: the multinational AKI-EPI study. Intensive Care Medicine 41: 1411-1423
+
+Jackson HS, MacLaughlin HL, Vidal-Diez A, Banerjee D (2019) A new renal inpatient nutrition screening tool (Renal iNUT): a multicenter validation study. Clinical Nutrition 38 (5):2297-2303T
+
+Jonckheer, J., Demol, J., Lanckmans, K., Malbrain, M.L.N.G., Spapen, H. and De Waele, E. (2020). MECCIAS trial: Metabolic consequences of continuous veno-venous hemofiltration on indirect calorimetry. Clinical Nutrition, 39(12):3797–3803
+
+Kanagasundaram S, Ashley C, Bhojani, Caldwell A, Ellam T, Kaur A, Mildford D, Mulgrew C and Ostermann M. (2019) Renal Association: Clinical Practice Guidelines Acute kidney injury. Available at: https://renal.org/sites/renal.org/files/FINAL-AKI-Guideline.pdf [Accessed on 10.11.23]
+
+KDIGO. (2012) Clinical practice guidelines for acute kidney injury Kidney International Supplements 2, 1. Available at http://www.kdigo.org/clinical_practice_guidelines/pdf/KDIGO%20AKI%20Guideline.pdf [Accessed on 10.11.23]
+
+Kopple JD, Massry SG and Kalanta-Zadeh K. (2013) Nutritional Management of Renal Disease: Nutritional management of Acute Kidney Injury Chapter 36: 605-627. Third Edition Academic Press Elsevier
+
+Lawson CS, Campbell KL, Dimakopoulos I and Dockrell ME. (2012) Assessing the validity and reliability of the MUST and MST nutrition screening tools in renal inpatients. J Ren Nutr. 22(5):499-506
+
+Li Y, Tang X, Zhang J, Wu T. Nutritional support for acute kidney injury. Cochrane Database Syst Rev. 2012 Aug 15;(8):CD005426
+
+Mercado MG, Smith DK and Guard EL. (2019) Acute Kidney Injury: Diagnosis and Management. Am Fam Physician. 100 (11): 687-694
+
+Honore PM, Spapen HD, Marik P, Boer W and Oudemans-van Straaten H. (2020) Dosing vitamin C in critically ill patients with special attention to renal replacement therapy: a narrative review. Annals of intensive care 10(1):23
+
+Mafrici B, Ward K, Terblanche E and White R. (2020) Nutritional considerations whe using acute peritoneal dialysis for the treatment of acute kidney Injury. Available at: https://www.bda.uk.com/resource/nutritional-considerations-when-using-acute-peritoneal-dialysis-for-the-treatment-of-acute-kidney-injury.html [Accessed on the 23.1.21]
+
+Meyer D, Mohan A, Subev E, Sarav M and Sturgill D. (2020) Acute Kidney Injury Incidence in Hospitalized Patients and Implications for Nutrition Support. Nutr Clin Pract 35(6): 987-1000
+
+Minnelli N, Gibbs L, Larrivee J, Sahu KK. (2020) Challenges of Maintaining Optimal Nutrition Status in COVID-19 Patients in Intensive Care Settings. J Parenter Enteral Nutr. 44(8):1439-1446
+
+Murphy MH, Alaka KJ, Miller ME and Macias WL. (1993) Assessment of urea appearance rated and net nitrogen deficits in patients with acute renal failure receiving continuous venovenous hemofiltration. J Renal Nutr 3: 67-74
+
+McClave SA, Taylor BE, Martindale RG, Warren MM, Johnson DR, Braunschweig C, McCarthy MS, Davanos E, Rice TW, Cresci GA, Gervasio JM, Sacks GS, Roberts PR, Compher C; Society of Critical Care Medicine (2016) American Society for Parenteral and Enteral Nutrition. Guidelines for the Provision and Assessment of Nutrition Support Therapy in the Adult Critically Ill Patient: Society of Critical Care Medicine (SCCM) and American Society for Parenteral and Enteral Nutrition (A.S.P.E.N.). J Parenter Enteral Nutr. 40(2):159-211
+
+Nadim MK, Forni LG, Mehta RL, Connor MJ Jr, Liu KD, Ostermann M, Rimmelé T, Zarbock A, Bell S, Bihorac A, Cantaluppi V, Hoste E, Husain-Syed F, Germain MJ, Goldstein SL, Gupta S, Joannidis M, Kashani K, Koyner JL, Legrand M, Lumlertgul N, Mohan S, Pannu N, Peng Z, Perez-Fernandez XL, Pickkers P, Prowle J, Reis T, Srisawat N, Tolwani A, Vijayan A, Villa G, Yang L, Ronco C, and Kellum JA. (2020) COVID-19-associated acute kidney injury: consensus report of the 25th Acute Disease Quality Initiative (ADQI) Workgroup. Nat Rev Nephrol. 16(12): 747-764
+
+Naylor HL, Jackson H, Walker GH, Macafee S, Magee S, Hooper L, Stewart L and MacLaughlin HL. (2013) British Dietetic Association evidence-based guidelines for the protein requirements of adults undergoing maintenance haemodialysis or peritoneal dialysis. J Hum Nutr Diet 26: 315-328
+
+NICE 2023 Acute kidney injury: prevention, detection and management. Available at: https://ukkidney.org/health-professionals/guidelines/guidelines-commentaries [Accessed on the 10.11.23]
+
+Oh WC, Mafrici B, Rigby M, Harvey D, Sharman A, Allen JC, Mahajan R, Gardner DS and Devonald MAJ. (2019) Micronutrient and Amino Acid Losses During Renal Replacement Therapy for Acute Kidney Injury. Kidney Int Rep. 4(8):1094-1108
+
+Ostermann M, Macedo E and Oudemans-van Straaten H. (2019) How to feed a patient with acute kidney injury. Intensive Care Med. 45(7):1006-1008
+
+Oudemans-van Straten HM and Ostermann M. (2012) Bench-to bedside review: Citrate for continuous renal replacement therapy. From science to practice Crit Care. 2012; 16(6): 249
+
+Patel JJ, McClain CJ, Sarav M, Hamilton-Reeves J and Hurt RT (2017) Protein requirements for critically ill patients with renal and liver failure. Nutr Clin Pract. 32 (1 suppl) 101s-111s
+
+Rahman M, Shad F and Smith MC. (2012) Acute kidney injury: a guide to diagnosis and management. American family physician 1;86(7): 631-639
+
+Rogers A, Jenkins B. (2021) Calorie provision from citrate anticoagulation in continuous renal replacement therapy in critical care. Journal of the Intensive Care Society 22 (3) 183-186
+
+Sabatino A, Theilla M, Hellerman M, Singer P, Maggiore U, Barbagallo M, Regolisti G and Fiaccadori E. (2017) Energy and Protein in Critically Ill Patients with AKI: A Prospective, Multicenter Observational Study Using Indirect Calorimetry and Protein Catabolic Rate. Nutrients 26;9(8):802
+
+Segaran and Bear. (2015) Guidelines for the Provision of Intensive Care Services. Intensive Care Medicine and Intensive Care Society: 2.2.7 Dietetics. Available at: http://www.ics.ac.uk/ics-homepage/latest-news/guidelines-for-the-provision-of-intensive-care-services/ [Accessed on 10.11.23]
+
+Selby NM, Forni LG, Laing CM, Horne KL, Evans RD, Lucas BJ and Fluck RJ. (2020) Covid-19 and acute kidney injury in hospital: summary of NICE guidelines. BMJ. 369
+
+Singer P, Blaser AR, Berger MM, Alhazzani W, Calder PC, Casaer MP, Hiesmayr M, Mayer K, Montejo JC, Pichard C, Preiser JC, van Zanten ARH, Oczkowski S, Szczeklik W, Bischoff SC. ESPEN guideline on clinical nutrition in the intensive care unit. Clin Nutr. 2019 Feb;38(1):48-79
+
+Singer P. (2020) Protein metabolism and requirements in the ICU. Clin Nutr ESPEN. 38:3-8
+
+Singer P, Blaser AR, Berger MM, Alhazzani W, Calder PC, Casaer MP, Hiesmayr M, Mayer K, Montejo JC, Pichard C, Preiser JC, van Zanten ARH, Oczkowski S, Szczeklik W and Bischoff SC. (2019) ESPEN guideline on clinical nutrition in the intensive care unit. Clin Nutr. 38(1): 48-79
+
+Stoppe C, Patel JJ, Zarbock A, Lee ZY, Rice TW, Mafrici B, Wehner R, Chan MHM, Lai PCK, MacEachern K, Myrianthefs P, Tsigou E, Ortiz-Reyes L, Jiang X, Day AG, Hasan MS, Meybohm P, Ke L, Heyland DK. The impact of higher protein dosing on outcomes in critically ill patients with
+
+acute kidney injury: a post hoc analysis of the EFFORT protein trial. Crit Care. 2023 Oct 18;27(1):399
+
+Story DA, Ronco C and Bellomo R. (1999) Trace element and vitamin concentrations and losses in critically ill patients treated with continuous venovenous hemofiltration. Crit Care Med. 27: 220-223
+
+Tandukar MD and Palevsky PM (2019) Continuous renal replacement therapy: who, when, why and how. Chest 155 (3): 626-638
+
+Todorovic VE and Mafrici B. (2018) A pocket guide to clinical nutrition, Section 14 Fifth Edition
+
+Xia YA, Healy A and Kruger R. (2016) Developing and Validating a Renal Nutrition Screening Tool to Effectively Identify Undernutrition Risk Among Renal Inpatients. J Ren Nutr 26(5): 299-307
+
+8. Acknowledgements
+
+Thank you to the Parenteral and Enteral Nutrition Group (PENG) specialist group of the British Dietetic Association (BDA) for allowing use and adaptation of extracts from the “Pocket Guide for Clinical Nutrition”
+
+Thank you to the Renal Nutrition Group and Critical Care specialist groups of the BDA for their participation and comments.
+
+Thank you to Maria Barrett for her input in the previous editions.

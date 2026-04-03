@@ -1,0 +1,1045 @@
+{
+  "doc_name": "Haemodialysis_Clinical_Practice_Guideline",
+  "total_sections": 93,
+  "total_lines": 1119,
+  "tree": [
+    {
+      "heading": "1. Introduction",
+      "depth": 0,
+      "numbering": "1",
+      "line_start": 0,
+      "line_end": 31,
+      "content_preview": "Haemodialysis continues to expand in the UK with over 25 000 patients now being treated, representing a 10% increase since publication of the previous Renal Association guideline for haemodialysis. In",
+      "content_token_estimate": 1002,
+      "ancestor_path": []
+    },
+    {
+      "heading": "2. Summary of clinical practice guidelines",
+      "depth": 0,
+      "numbering": "2",
+      "line_start": 31,
+      "line_end": 33,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "1. Dialysis dose in thrice weekly dialysis schedules",
+      "depth": 0,
+      "numbering": "1",
+      "line_start": 33,
+      "line_end": 41,
+      "content_preview": "We recommend eKt/V as the most clinically valid small-solute measure of dialysis dose, and recommend monitoring of dialysis dose on a monthly basis for the majority of centre-based dialysis patients. ",
+      "content_token_estimate": 128,
+      "ancestor_path": []
+    },
+    {
+      "heading": "2. Non-standard schedules (Guidelines 2.1 - 2.4)",
+      "depth": 0,
+      "numbering": "2",
+      "line_start": 41,
+      "line_end": 43,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 2.1 Augmented schedules",
+          "depth": 2,
+          "numbering": "2.1",
+          "line_start": 43,
+          "line_end": 49,
+          "content_preview": "We suggest offering an augmented schedule to patients who are unable to achieve adequacy targets or fluid control on a standard thrice weekly schedule. [2B]\n\nWe suggest that relative contraindications",
+          "content_token_estimate": 79,
+          "ancestor_path": [
+            "2. Non-standard schedules (Guidelines 2.1 - 2.4)"
+          ]
+        },
+        {
+          "heading": "Guideline 2.2 Incremental schedules",
+          "depth": 2,
+          "numbering": "2.2",
+          "line_start": 49,
+          "line_end": 55,
+          "content_preview": "We suggest that lower haemodialysis dose targets may be optimal in patients with significant residual renal function. [2D]\n\nWe recommend that residual renal function should be quantified intermittentl",
+          "content_token_estimate": 63,
+          "ancestor_path": [
+            "2. Non-standard schedules (Guidelines 2.1 - 2.4)"
+          ]
+        },
+        {
+          "heading": "Guideline 2.3 Conservative schedules",
+          "depth": 2,
+          "numbering": "2.3",
+          "line_start": 55,
+          "line_end": 59,
+          "content_preview": "We suggest that lower haemodialysis dose targets may be optimal when quality of life is the primary goal of treatment, rather than longevity. [2D]",
+          "content_token_estimate": 36,
+          "ancestor_path": [
+            "2. Non-standard schedules (Guidelines 2.1 - 2.4)"
+          ]
+        },
+        {
+          "heading": "Guideline 2.4 Paediatric schedules",
+          "depth": 2,
+          "numbering": "2.4",
+          "line_start": 59,
+          "line_end": 71,
+          "content_preview": "In children and adolescents we recommend an approach to the assessment of dialysis adequacy which goes beyond biochemical targets, incorporating clinical goals such as growth, bone health, cardiac fun",
+          "content_token_estimate": 184,
+          "ancestor_path": [
+            "2. Non-standard schedules (Guidelines 2.1 - 2.4)"
+          ]
+        },
+        {
+          "heading": "Guideline 2.5 Schedules during pregnancy",
+          "depth": 2,
+          "numbering": "2.5",
+          "line_start": 71,
+          "line_end": 81,
+          "content_preview": "We recommend counselling women of reproductive age who are receiving or anticipating dialysis, so that they are aware of the interactions between renal replacement therapies and pregnancy which may im",
+          "content_token_estimate": 238,
+          "ancestor_path": [
+            "2. Non-standard schedules (Guidelines 2.1 - 2.4)"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "3. Membrane flux and haemodiafiltration",
+      "depth": 0,
+      "numbering": "3",
+      "line_start": 81,
+      "line_end": 87,
+      "content_preview": "We recommend that patients with minimal residual function should be treated with high-flux dialysers. [1B]\n\nWe suggest that haemodiafiltration may be considered as a treatment for intra-dialytic hypot",
+      "content_token_estimate": 85,
+      "ancestor_path": []
+    },
+    {
+      "heading": "4. Fluid in haemodialysis (Guidelines 4.1 - 4.2)",
+      "depth": 0,
+      "numbering": "4",
+      "line_start": 87,
+      "line_end": 107,
+      "content_preview": "Guideline 4.1 Fluid assessment and management in adults\n\nWe recommend assessment of fluid status when prompted by clinical circumstances, and on a quarterly basis for stable patients. [1C]\n\n8\n\nWe sugg",
+      "content_token_estimate": 292,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 4.2 Paediatric fluid considerations",
+          "depth": 2,
+          "numbering": "4.2",
+          "line_start": 107,
+          "line_end": 115,
+          "content_preview": "In growing children we recommend clinical assessment of fluid status and target weight, and dietetic assessment, at least monthly. [1C]\n\nWe suggest supplementing clinical assessment with a validated o",
+          "content_token_estimate": 117,
+          "ancestor_path": [
+            "4. Fluid in haemodialysis (Guidelines 4.1 - 4.2)"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "5. Dialysate (Guidelines 5.1 - 5.4)",
+      "depth": 0,
+      "numbering": "5",
+      "line_start": 115,
+      "line_end": 117,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 5.1 Selection of dialysate potassium",
+          "depth": 2,
+          "numbering": "5.1",
+          "line_start": 117,
+          "line_end": 127,
+          "content_preview": "We recommend an optimal pre-dialysis serum potassium in the range 4.0-6.0mmol/L, remembering to consider measurement errors (e.g. due to haemolysis) when interpreting levels. [1B]\n\nWe suggest choosing",
+          "content_token_estimate": 159,
+          "ancestor_path": [
+            "5. Dialysate (Guidelines 5.1 - 5.4)"
+          ]
+        },
+        {
+          "heading": "Guideline 5.2 Selection of dialysate buffer",
+          "depth": 2,
+          "numbering": "5.2",
+          "line_start": 127,
+          "line_end": 137,
+          "content_preview": "We recommend an optimal pre-dialysis serum bicarbonate in the range 18.0-26.0mmo/L, remembering to consider measurement errors (e.g. due to exposure to air) when interpreting levels. [1C]\n\nWe suggest ",
+          "content_token_estimate": 173,
+          "ancestor_path": [
+            "5. Dialysate (Guidelines 5.1 - 5.4)"
+          ]
+        },
+        {
+          "heading": "Guideline 5.3 Supplementation of dialysate with phosphate",
+          "depth": 2,
+          "numbering": "5.3",
+          "line_start": 137,
+          "line_end": 141,
+          "content_preview": "We suggest considering supplementation of the dialysate with phosphate in patients on augmented dialysis schedules. [2D]",
+          "content_token_estimate": 30,
+          "ancestor_path": [
+            "5. Dialysate (Guidelines 5.1 - 5.4)"
+          ]
+        },
+        {
+          "heading": "Guideline 5.4 Paediatric dialysate considerations",
+          "depth": 2,
+          "numbering": "5.4",
+          "line_start": 141,
+          "line_end": 147,
+          "content_preview": "We recommend individualisation of dialysate electrolyte concentrations, including potassium, buffer and calcium. [1C]\n\nWe suggest an individualised dialysate temperature, between core temperature and ",
+          "content_token_estimate": 75,
+          "ancestor_path": [
+            "5. Dialysate (Guidelines 5.1 - 5.4)"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "6. Anticoagulation",
+      "depth": 0,
+      "numbering": "6",
+      "line_start": 147,
+      "line_end": 157,
+      "content_preview": "We recommend that patients without increased bleeding risk should be given unfractionated or lowmolecular-weight heparin during dialysis to reduce clotting of the extracorporeal system. [1A]\n\nWe recom",
+      "content_token_estimate": 108,
+      "ancestor_path": []
+    },
+    {
+      "heading": "7. Adverse events during dialysis (Guidelines 7.1 - 7.3)",
+      "depth": 0,
+      "numbering": "7",
+      "line_start": 157,
+      "line_end": 159,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 7.1 Routine blood loss",
+          "depth": 2,
+          "numbering": "7.1",
+          "line_start": 159,
+          "line_end": 163,
+          "content_preview": "We suggest that during washback, dialysis lines and dialyser are observed to ensure residual blood loss is kept to a minimum. [2C]",
+          "content_token_estimate": 32,
+          "ancestor_path": [
+            "7. Adverse events during dialysis (Guidelines 7.1 - 7.3)"
+          ]
+        },
+        {
+          "heading": "Guideline 7.2 Disconnection haemorrhage",
+          "depth": 2,
+          "numbering": "7.2",
+          "line_start": 163,
+          "line_end": 169,
+          "content_preview": "We recommend maintaining awareness of the risk of disconnection, the limitations of pressure alarms, and importance of direct observation, through a program of education, including patients and carers",
+          "content_token_estimate": 89,
+          "ancestor_path": [
+            "7. Adverse events during dialysis (Guidelines 7.1 - 7.3)"
+          ]
+        },
+        {
+          "heading": "Guideline 7.3 Immune reactions during dialysis",
+          "depth": 2,
+          "numbering": "7.3",
+          "line_start": 169,
+          "line_end": 173,
+          "content_preview": "We recommend that dialysis staff should be aware of the features and management of dialysis reactions, and should have access to a range of dialyser types. [1C]",
+          "content_token_estimate": 40,
+          "ancestor_path": [
+            "7. Adverse events during dialysis (Guidelines 7.1 - 7.3)"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "8. Patient experience of dialysis (Guidelines 8.1 - 8.4)",
+      "depth": 0,
+      "numbering": "8",
+      "line_start": 173,
+      "line_end": 175,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 8.1 Home haemodialysis",
+          "depth": 2,
+          "numbering": "8.1",
+          "line_start": 175,
+          "line_end": 191,
+          "content_preview": "We recommend that home haemodialysis should be available in all units as part of a comprehensive renal replacement therapy programme. [1A]\n\nWe suggest training patients and/or care partners to achieve",
+          "content_token_estimate": 263,
+          "ancestor_path": [
+            "8. Patient experience of dialysis (Guidelines 8.1 - 8.4)"
+          ]
+        },
+        {
+          "heading": "Guideline 8.2 Shared haemodialysis care",
+          "depth": 2,
+          "numbering": "8.2",
+          "line_start": 191,
+          "line_end": 195,
+          "content_preview": "We suggest that all centre-based haemodialysis patients should have opportunity and encouragement to learn aspects of their dialysis treatment, and take an active role in their care. [2D]",
+          "content_token_estimate": 46,
+          "ancestor_path": [
+            "8. Patient experience of dialysis (Guidelines 8.1 - 8.4)"
+          ]
+        },
+        {
+          "heading": "Guideline 8.3 Intradialytic exercise",
+          "depth": 2,
+          "numbering": "8.3",
+          "line_start": 195,
+          "line_end": 203,
+          "content_preview": "We recommend that intradialytic exercise should be available in all units, as a treatment for enhancing physical functioning, in patients without contraindications. [1B]\n\nWe suggest that intradialytic",
+          "content_token_estimate": 88,
+          "ancestor_path": [
+            "8. Patient experience of dialysis (Guidelines 8.1 - 8.4)"
+          ]
+        },
+        {
+          "heading": "Guideline 8.4 Dialysis experience for children and adolescents",
+          "depth": 2,
+          "numbering": "8.4",
+          "line_start": 203,
+          "line_end": 211,
+          "content_preview": "We recommend that haemodialysis for children and adolescents should be delivered in a dedicated paediatric dialysis centre or at home, with the involvement of a paediatric multidisciplinary team. [1C]",
+          "content_token_estimate": 89,
+          "ancestor_path": [
+            "8. Patient experience of dialysis (Guidelines 8.1 - 8.4)"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "3. Summary of audit measures",
+      "depth": 0,
+      "numbering": "3",
+      "line_start": 211,
+      "line_end": 245,
+      "content_preview": "Audit Measure 1: Amongst thrice-weekly patients on dialysis for more than a year, the median eKt/V, and proportion achieving eKt/V at least 1.2.\n\nAudit Measure 2: Amongst thrice-weekly patients on dia",
+      "content_token_estimate": 546,
+      "ancestor_path": []
+    },
+    {
+      "heading": "4. Rationale for Clinical Practice Guidelines",
+      "depth": 0,
+      "numbering": "4",
+      "line_start": 245,
+      "line_end": 247,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "1. Dialysis dose in thrice weekly dialysis schedules",
+      "depth": 0,
+      "numbering": "1",
+      "line_start": 247,
+      "line_end": 255,
+      "content_preview": "We recommend eKt/V as the most clinically valid small-solute measure of dialysis dose, and recommend monitoring of dialysis dose on a monthly basis for the majority of centre-based dialysis patients. ",
+      "content_token_estimate": 151,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 255,
+      "line_end": 279,
+      "content_preview": "Dialysis adequacy encompasses concepts including the clinical assessment of general wellbeing, fluid status, and control of laboratory parameters, along with quantification of the dose of dialysis pro",
+      "content_token_estimate": 1305,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Dialysis time",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 279,
+      "line_end": 291,
+      "content_preview": "The optimum treatment duration for thrice weekly haemodialysis is slightly less clear, since it is difficult to separate the effect of treatment time from dialysis dose [16].\n\nThe evolution of dialysi",
+      "content_token_estimate": 526,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Summary",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 291,
+      "line_end": 299,
+      "content_preview": "Optimal outcomes in patients on thrice weekly dialysis are achieved with sessions of at least 4 hours, providing eKt/V at least 1.2. Regular monitoring is strongly recommended, and this occurs monthly",
+      "content_token_estimate": 229,
+      "ancestor_path": []
+    },
+    {
+      "heading": "2. Non-standard schedules (Guidelines 2.1 - 2.4)",
+      "depth": 0,
+      "numbering": "2",
+      "line_start": 299,
+      "line_end": 301,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 2.1 Augmented schedules",
+          "depth": 2,
+          "numbering": "2.1",
+          "line_start": 301,
+          "line_end": 307,
+          "content_preview": "We suggest offering an augmented schedule to patients who are unable to achieve adequacy targets or fluid control on a standard thrice weekly schedule. [2B]\n\nWe suggest that relative contraindications",
+          "content_token_estimate": 79,
+          "ancestor_path": [
+            "2. Non-standard schedules (Guidelines 2.1 - 2.4)"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 307,
+      "line_end": 353,
+      "content_preview": "Dialysis dose on a thrice weekly schedule is limited by patient tolerance and the necessity to utilise 'slots' efficiently, so that sessions over 5 hours are very uncommon. 'Augmented' in this guideli",
+      "content_token_estimate": 1473,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 2.2 Incremental schedules",
+          "depth": 2,
+          "numbering": "2.2",
+          "line_start": 353,
+          "line_end": 361,
+          "content_preview": "We suggest that lower haemodialysis dose targets may be optimal in patients with significant residual renal function. [2D]\n\nWe recommend that residual renal function should be quantified intermittentl",
+          "content_token_estimate": 64,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 361,
+      "line_end": 383,
+      "content_preview": "Incremental haemodialysis is based on the common sense concept that the amount of dialysis required for optimal outcome differs between those with significant residual function and those without. The ",
+      "content_token_estimate": 1211,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 2.3 Conservative schedules",
+          "depth": 2,
+          "numbering": "2.3",
+          "line_start": 383,
+          "line_end": 387,
+          "content_preview": "We suggest that lower haemodialysis dose targets may be optimal when quality of life is the primary goal of treatment, rather than longevity. [2D]",
+          "content_token_estimate": 36,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 387,
+      "line_end": 403,
+      "content_preview": "Whilst concepts of dialysis dose have been developed over the last two decades, the dialysis population has been changing, with the median age of the prevalent dialysis population increasing by nearly",
+      "content_token_estimate": 867,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 2.4 Paediatric schedules",
+          "depth": 2,
+          "numbering": "2.4",
+          "line_start": 403,
+          "line_end": 415,
+          "content_preview": "In children and adolescents we recommend an approach to the assessment of dialysis adequacy which goes beyond biochemical targets, incorporating clinical goals such as growth, bone health, cardiac fun",
+          "content_token_estimate": 184,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 415,
+      "line_end": 425,
+      "content_preview": "The low incidence of dialysis-requiring kidney disease in childhood, means that many treatment decisions are informed by observational data and studies carried out in adults. The small-solute dose tar",
+      "content_token_estimate": 728,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 2.5 Schedules during pregnancy",
+          "depth": 2,
+          "numbering": "2.5",
+          "line_start": 425,
+          "line_end": 435,
+          "content_preview": "We recommend counselling women of reproductive age who are receiving or anticipating dialysis, so that they are aware of the interactions between renal replacement therapies and pregnancy which may im",
+          "content_token_estimate": 238,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 435,
+      "line_end": 451,
+      "content_preview": "Successful pregnancies in women on haemodialysis are becoming more common: prior to 1995 data from the USA suggested only 40% infant survival, but outcomes in the current era are substantially better ",
+      "content_token_estimate": 849,
+      "ancestor_path": []
+    },
+    {
+      "heading": "3. Membrane flux and haemodiafiltration",
+      "depth": 0,
+      "numbering": "3",
+      "line_start": 451,
+      "line_end": 459,
+      "content_preview": "We recommend that patients with minimal residual function should be treated with high-flux dialysers. [1B]\n\nWe suggest that haemodiafiltration may be considered as a treatment for intra-dialytic hypot",
+      "content_token_estimate": 86,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 459,
+      "line_end": 461,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Convective clearance",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 461,
+      "line_end": 473,
+      "content_preview": "Haemodialysis removes uraemic toxins by two very different physical processes: diffusion and convection.\n\nDiffusion is the movement of solutes independent of solvent when the concentration differs bet",
+      "content_token_estimate": 684,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Membrane flux",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 473,
+      "line_end": 485,
+      "content_preview": "Several interventional studies give insight into the impact of membrane flux on dialysis outcomes, for example in the other part of its 2x2 design, the HEMO study group compared high-flux with low-flu",
+      "content_token_estimate": 481,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Haemodiafiltration",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 485,
+      "line_end": 506,
+      "content_preview": "The effect of haemodiafiltration has been informed by four randomised controlled studies, summarised in the table below. In three of these, marginal but non-significant advantages were seen in the hae",
+      "content_token_estimate": 701,
+      "ancestor_path": []
+    },
+    {
+      "heading": "4. Fluid in haemodialysis (Guidelines 4.1 - 4.2)",
+      "depth": 0,
+      "numbering": "4",
+      "line_start": 506,
+      "line_end": 522,
+      "content_preview": "Guideline 4.1 Fluid assessment and management in adults\n\nWe recommend assessment of fluid status when prompted by clinical circumstances, and on a quarterly basis for stable patients. [1C]\n\nWe suggest",
+      "content_token_estimate": 265,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 522,
+      "line_end": 568,
+      "content_preview": "Fluid control is an essential clinical goal of maintenance haemodialysis, but correct fluid management requires clinicians to steer between the two competing / overlapping problems of fluid overload a",
+      "content_token_estimate": 3248,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 4.2 Paediatric fluid considerations",
+          "depth": 2,
+          "numbering": "4.2",
+          "line_start": 568,
+          "line_end": 576,
+          "content_preview": "In growing children we recommend clinical assessment of fluid status and target weight, and dietetic assessment, at least monthly. [1C]\n\nWe suggest supplementing clinical assessment with a validated o",
+          "content_token_estimate": 117,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 576,
+      "line_end": 580,
+      "content_preview": "Assessment of target weight in children and adolescents is particularly challenging as it needs frequent adjustment in line with growth or periods of illness. This is particularly true for infants and",
+      "content_token_estimate": 206,
+      "ancestor_path": []
+    },
+    {
+      "heading": "5. Dialysate (Guidelines 5.1 - 5.4)",
+      "depth": 0,
+      "numbering": "5",
+      "line_start": 580,
+      "line_end": 590,
+      "content_preview": "When the 2 nd edition of the RA Guidelines was published in 1997, the only recommendation relating to the composition of the dialysate was that renal units phase out the use of acetate in favour of bi",
+      "content_token_estimate": 532,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 5.1 Selection of dialysate potassium",
+          "depth": 2,
+          "numbering": "5.1",
+          "line_start": 590,
+          "line_end": 598,
+          "content_preview": "We recommend an optimal pre-dialysis serum potassium in the range 4.0-6.0mmol/L, remembering to consider measurement errors (e.g. due to haemolysis) when interpreting levels. [1B]\n\nWe suggest choosing",
+          "content_token_estimate": 158,
+          "ancestor_path": [
+            "5. Dialysate (Guidelines 5.1 - 5.4)"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 598,
+      "line_end": 624,
+      "content_preview": "Historically, it was often difficult to remove the potassium accumulated between dialysis sessions, so dialysate potassium between zero and 2mmol/L was common. The requirement for dialysate with potas",
+      "content_token_estimate": 1305,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 5.2 Selection of dialysate buffer",
+          "depth": 2,
+          "numbering": "5.2",
+          "line_start": 624,
+          "line_end": 634,
+          "content_preview": "We recommend an optimal pre-dialysis serum bicarbonate in the range 18.0-26.0mmo/L, remembering to consider measurement errors (e.g. due to exposure to air) when interpreting levels. [1C]\n\nWe suggest ",
+          "content_token_estimate": 173,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 634,
+      "line_end": 674,
+      "content_preview": "We suggest a combined approach to abnormal pre-dialysis serum bicarbonate, which may include increasing dialysis dose, oral bicarbonate, nutritional support, or individualising dialysate buffer. [2D]\n",
+      "content_token_estimate": 1692,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 674,
+      "line_end": 690,
+      "content_preview": "The conventional haemodialysis patient struggles to achieve sufficient phosphate removal, and historically dialysate has always been phosphate-free. Guidelines usually focus more on the upper limit th",
+      "content_token_estimate": 893,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 5.4 Paediatric dialysate considerations",
+          "depth": 2,
+          "numbering": "5.4",
+          "line_start": 690,
+          "line_end": 696,
+          "content_preview": "We recommend individualisation of dialysate electrolyte concentrations, including potassium, buffer and calcium. [1C]\n\nWe suggest an individualised dialysate temperature, between core temperature and ",
+          "content_token_estimate": 75,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 696,
+      "line_end": 704,
+      "content_preview": "Adult guidelines for dialysate composition (sections 5.1 - 5.3) are generally applicable to children, though there are a number of additional considerations.\n\nIn children with residual kidney function",
+      "content_token_estimate": 350,
+      "ancestor_path": []
+    },
+    {
+      "heading": "6. Anticoagulation",
+      "depth": 0,
+      "numbering": "6",
+      "line_start": 704,
+      "line_end": 712,
+      "content_preview": "We recommend that patients without increased bleeding risk should be given unfractionated or lowmolecular-weight heparin during dialysis to reduce clotting of the extracorporeal system. [1A]\n\nWe recom",
+      "content_token_estimate": 107,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 712,
+      "line_end": 728,
+      "content_preview": "Platelet activation in the extracorporeal circuit accelerates thrombin generation via the intrinsic coagulation pathway, so that anticoagulation is usually required to prevent thrombosis. Unfractionat",
+      "content_token_estimate": 1160,
+      "ancestor_path": []
+    },
+    {
+      "heading": "7. Adverse events during dialysis (Guidelines 7.1 - 7.3)",
+      "depth": 0,
+      "numbering": "7",
+      "line_start": 728,
+      "line_end": 730,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 7.1 Routine blood loss",
+          "depth": 2,
+          "numbering": "7.1",
+          "line_start": 730,
+          "line_end": 734,
+          "content_preview": "We suggest that during washback, dialysis lines and dialyser are observed to ensure residual blood loss is kept to a minimum. [2C]",
+          "content_token_estimate": 32,
+          "ancestor_path": [
+            "7. Adverse events during dialysis (Guidelines 7.1 - 7.3)"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 734,
+      "line_end": 748,
+      "content_preview": "A small amount of blood loss occurs during normal haemodialysis, for example due to blood retained in the dialyser and circuit after washback, and bleeding into the dressing over needling sites, but t",
+      "content_token_estimate": 698,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 7.2 Disconnection haemorrhage",
+          "depth": 2,
+          "numbering": "7.2",
+          "line_start": 748,
+          "line_end": 754,
+          "content_preview": "We recommend maintaining awareness of the risk of disconnection, the limitations of pressure alarms, and importance of direct observation, through a program of education, including patients and carers",
+          "content_token_estimate": 89,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 754,
+      "line_end": 770,
+      "content_preview": "Disconnection leading to haemorrhage may occur at any part of the dialysis circuit, though venous needle dislodgement may be the most frequent and serious, with rapid blood loss occuring at the rate o",
+      "content_token_estimate": 646,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 7.3 Immune reactions during dialysis",
+          "depth": 2,
+          "numbering": "7.3",
+          "line_start": 770,
+          "line_end": 774,
+          "content_preview": "We recommend that dialysis staff should be aware of the features and management of dialysis reactions, and should have access to a range of dialyser types. [1C]",
+          "content_token_estimate": 40,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 774,
+      "line_end": 794,
+      "content_preview": "From the early 1980s reports appeared describing abrupt clinical reactions occurring soon after the onset of dialysis [1]. These have traditionally been classified into two types.\n\nType A reactions we",
+      "content_token_estimate": 929,
+      "ancestor_path": []
+    },
+    {
+      "heading": "8. Patient experience of dialysis (Guidelines 8.1 - 8.4)",
+      "depth": 0,
+      "numbering": "8",
+      "line_start": 794,
+      "line_end": 796,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 8.1 Home haemodialysis",
+          "depth": 2,
+          "numbering": "8.1",
+          "line_start": 796,
+          "line_end": 810,
+          "content_preview": "We recommend that home haemodialysis should be available in all units as part of a comprehensive renal replacement therapy programme. [1A]\n\nWe suggest training patients and/or care partners to achieve",
+          "content_token_estimate": 262,
+          "ancestor_path": [
+            "8. Patient experience of dialysis (Guidelines 8.1 - 8.4)"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 810,
+      "line_end": 834,
+      "content_preview": "There is increasing evidence of the benefits of augmented haemodialysis schedules, in terms of both outcome and health-related quality of life, but providing more frequent dialysis in-centre is a chal",
+      "content_token_estimate": 1158,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 8.2 Shared haemodialysis care",
+          "depth": 2,
+          "numbering": "8.2",
+          "line_start": 834,
+          "line_end": 838,
+          "content_preview": "We suggest that all centre-based haemodialysis patients should have opportunity and encouragement to learn aspects of their dialysis treatment, and take an active role in their care. [2D]",
+          "content_token_estimate": 46,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 838,
+      "line_end": 848,
+      "content_preview": "There is little research that has been directly conducted into shared haemodialysis care, however there is considerable evidence of the benefits of supported self-care in other long term conditions (1",
+      "content_token_estimate": 527,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 8.3 Intradialytic exercise",
+          "depth": 2,
+          "numbering": "8.3",
+          "line_start": 848,
+          "line_end": 858,
+          "content_preview": "We recommend that intradialytic exercise should be available in all units, as a treatment for enhancing physical functioning, in patients without contraindications. [1B]\n\nWe suggest that intradialytic",
+          "content_token_estimate": 89,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 858,
+      "line_end": 877,
+      "content_preview": "Whilst cardiovascular disease remains the principal causes of death in dialysis patients (1), there is a significant interaction with body composition, with muscle wasting in particular exacerbating m",
+      "content_token_estimate": 869,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 8.4 Dialysis experience for children and adolescents",
+          "depth": 2,
+          "numbering": "8.4",
+          "line_start": 877,
+          "line_end": 883,
+          "content_preview": "We recommend that haemodialysis for children and adolescents should be delivered in a dedicated paediatric dialysis centre or at home, with the involvement of a paediatric multidisciplinary team. [1C]",
+          "content_token_estimate": 88,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 883,
+      "line_end": 891,
+      "content_preview": "Haemodialysis sessions are associated with physical symptoms, social restriction, and loss of control, which for children and adolescents may be particularly depersonalising and unpleasant. These effe",
+      "content_token_estimate": 482,
+      "ancestor_path": []
+    },
+    {
+      "heading": "5. Lay Summary",
+      "depth": 0,
+      "numbering": "5",
+      "line_start": 891,
+      "line_end": 915,
+      "content_preview": "This guideline is written primarily for doctors and nurses working in dialysis units and related areas of medicine in the UK, and is an update of a previous version written in 2009. It aims to provide",
+      "content_token_estimate": 1054,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix A - Simplified mathematics of urea clearance",
+      "depth": 0,
+      "numbering": "Appendix A",
+      "line_start": 915,
+      "line_end": 917,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Urea Kinetic Modelling and Kt/V",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 917,
+      "line_end": 927,
+      "content_preview": "In the design of the NCDS study, 'dose' of dialysis was defined as a target for time-averaged urea (low urea = high dose group). However, urea level in dialysed patients depends as much on protein int",
+      "content_token_estimate": 450,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Log-Ratio and Urea Reduction Ratio",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 927,
+      "line_end": 947,
+      "content_preview": "If the basic model above is used, ignoring other factors, with urea assumed to be distributed evenly in body water, then Kt/V is given by the log ratio:\n\n<!-- formula-not-decoded -->\n\nThis simple form",
+      "content_token_estimate": 258,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Single-pool Kt/V (spKt/V)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 947,
+      "line_end": 955,
+      "content_preview": "Although the above is technically also a single-pool method, the term 'single pool Kt/V' usually refers to the method proposed by Daugirdas, which calculates Kt/V by a formula taking account of the ef",
+      "content_token_estimate": 114,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Equilibrated Kt/V (eKt/V)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 955,
+      "line_end": 988,
+      "content_preview": "The dynamic interaction between urea concentrations in intra- and extra-cellular pools, results in reduced effectiveness of treatment because dialysis removes urea only from the extracellular pool, wh",
+      "content_token_estimate": 763,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix B - Adjusting dialysis for residual function",
+      "depth": 0,
+      "numbering": "Appendix B",
+      "line_start": 988,
+      "line_end": 992,
+      "content_preview": "Since residual renal clearance (Kru) is continuous, and dialysis clearance is intermittent (with Kt/V referring to clearance during a single dialysis session), the quantities of both cannot simply be ",
+      "content_token_estimate": 116,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Converting Kru to an equivalent eKt/V (Combined eKt/V)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 992,
+      "line_end": 1004,
+      "content_preview": "In this method, residual kidney function is converted to an equivalent per-session eKt/V, by multiplying by a factor F, which empirically inflates the time over which residual clearance is measured, t",
+      "content_token_estimate": 182,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Converting Kt/V to an equivalent renal clearance (EKRc)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1004,
+      "line_end": 1012,
+      "content_preview": "An alternative method is to convert per-session Kt/V into an equivalent continuous renal clearance and then add it to Kru. Casino and Lopez computed kinetic estimates of combined dialysis and kidney u",
+      "content_token_estimate": 144,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Converting both eKt/V and Kru to a weekly dialysis dose (stdKt/V)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1012,
+      "line_end": 1016,
+      "content_preview": "Dialysis schedule and dose can be converted to an equivalent weekly clearance, 'Standard Kt/V' (stdKt/V) proposed by Gotch, based on kinetic models which relate urea generation to average weekly pre-d",
+      "content_token_estimate": 127,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix C - Quantifying convection",
+      "depth": 0,
+      "numbering": "Appendix C",
+      "line_start": 1016,
+      "line_end": 1040,
+      "content_preview": "Convective clearance of a toxin depends firstly on the sieving coefficient. Seiving coefficient (SC) is a measure of the ease with which a solute passes through the membrane relative to solvent, so th",
+      "content_token_estimate": 552,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix D - Adding phosphate to dialysate",
+      "depth": 0,
+      "numbering": "Appendix D",
+      "line_start": 1040,
+      "line_end": 1060,
+      "content_preview": "Cleen Ready-To-Use enema comes in a 133ml pack costing 68p (March 2017). The pack is designed to deliver a 118ml dose containing 21.4g of sodium acid phosphate (sodium dihydrogen phosphate dihydrate N",
+      "content_token_estimate": 471,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix E - Haemodialysis tasks for shared care",
+      "depth": 0,
+      "numbering": "Appendix E",
+      "line_start": 1060,
+      "line_end": 1081,
+      "content_preview": "List of dialysis-related tasks that an individual may choose to learn to perform, as part of shared care:\n\n1. Washing your hands prior to all procedures and arm (as appropriate) if fistula or graft is",
+      "content_token_estimate": 193,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix F - Implementing intradialytic exercise",
+      "depth": 0,
+      "numbering": "Appendix F",
+      "line_start": 1081,
+      "line_end": 1119,
+      "content_preview": "We suggest the following guidance for implementation of intradialytic exercise:\na. Exercise should be supervised for greatest compliance and efficacy by an appropriately trained individual (e.g. physi",
+      "content_token_estimate": 1319,
+      "ancestor_path": []
+    }
+  ]
+}

@@ -1,0 +1,1791 @@
+{
+  "doc_name": "Chronic_Kidney_Disease_Assessment_and_Management_Guidelines",
+  "total_sections": 172,
+  "total_lines": 1220,
+  "tree": [
+    {
+      "heading": "Overview",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 0,
+      "line_end": 4,
+      "content_preview": "This guideline covers care and treatment for people with, or at risk of, chronic kidney disease (CKD). It aims to prevent or delay the progression, and reduce the risk of complications and cardiovascu",
+      "content_token_estimate": 72,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Who is it for?",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 4,
+      "line_end": 9,
+      "content_preview": "Healthcare professionals\nCommissioners and providers\nPeople with CKD, their families and carers",
+      "content_token_estimate": 23,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 9,
+      "line_end": 15,
+      "content_preview": "People have the right to be involved in discussions and make informed decisions about their care, as described in NICE's information on making decisions about your care.\n\nMaking decisions using NICE g",
+      "content_token_estimate": 119,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Adults, children and young people",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 15,
+      "line_end": 19,
+      "content_preview": "Some recommendations in this guideline apply to adults only, and we have specified 'adults' in these individual recommendations. When a recommendation applies to children and young people only, we hav",
+      "content_token_estimate": 133,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.1 Investigations for chronic kidney disease",
+          "depth": 1,
+          "numbering": "1.1",
+          "line_start": 19,
+          "line_end": 21,
+          "content_preview": "",
+          "content_token_estimate": 0,
+          "ancestor_path": [
+            "Adults, children and young people"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Measuring kidney function",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 21,
+      "line_end": 23,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Creatinine-based estimate of glomerular filtration rate",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 23,
+      "line_end": 30,
+      "content_preview": "1.1.1 Whenever a request for serum creatinine measurement is made, clinical laboratories should report an estimate of (eGFRcreatinine) using a prediction equation (see recommendation 1.1.2) in additio",
+      "content_token_estimate": 167,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.1.2 Clinical laboratories should:",
+          "depth": 2,
+          "numbering": "1.1.2",
+          "line_start": 30,
+          "line_end": 41,
+          "content_preview": "use the Chronic Kidney Disease Epidemiology Collaboration (CKD-EPI) creatinine equation to estimate GFRcreatinine for adults, using creatinine assays with calibration traceable to standardised referen",
+          "content_token_estimate": 370,
+          "ancestor_path": [
+            "Creatinine-based estimate of glomerular filtration rate"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Reporting and interpreting GFR values",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 41,
+      "line_end": 47,
+      "content_preview": "1.1.5 Clinical laboratories should report eGFR either as a whole number if it is 90 ml/ min/1.73 m 2 or less, or as 'greater than 90 ml/min/1.73 m 2 ' . [2014]\n1.1.6 If eGFR is greater than 90 ml/min/",
+      "content_token_estimate": 187,
+      "ancestor_path": []
+    },
+    {
+      "heading": "When highly accurate measures of GFR are needed",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 47,
+      "line_end": 50,
+      "content_preview": "1.1.9 If a highly accurate measure of GFR is needed, for example, during monitoring of chemotherapy and in the evaluation of kidney function in potential living donors, consider a reference standard m",
+      "content_token_estimate": 65,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Investigations for proteinuria",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 50,
+      "line_end": 71,
+      "content_preview": "1.1.10 Do not use reagent strips to identify proteinuria in children and young people. [2021]\n1.1.11 Do not use reagent strips to identify proteinuria in adults unless they are capable of specifically",
+      "content_token_estimate": 423,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Incidental finding of proteinuria on reagent strips",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 71,
+      "line_end": 74,
+      "content_preview": "1.1.15 If unexplained proteinuria is an incidental finding on a reagent strip, offer testing for CKD using eGFRcreatinine and ACR. [2021]",
+      "content_token_estimate": 34,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Haematuria",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 74,
+      "line_end": 83,
+      "content_preview": "1.1.16 Use reagent strips to test for haematuria in adults, children and young people (see recommendation 1.1.14 for people who should be tested for haematuria):\nEvaluate further for results of 1+ or ",
+      "content_token_estimate": 165,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Managing isolated invisible haematuria",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 83,
+      "line_end": 88,
+      "content_preview": "1.1.17 When there is the need to differentiate persistent invisible haematuria in the absence of proteinuria from transient haematuria, regard 2 out of 3 positive reagent strip tests as confirmation o",
+      "content_token_estimate": 187,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Who should be tested for CKD",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 88,
+      "line_end": 128,
+      "content_preview": "1.1.20 Monitor GFR at least annually in adults, children and young people who are taking\n\nmedicines that can adversely affect kidney function, such as calcineurin inhibitors (for example, ciclosporin ",
+      "content_token_estimate": 678,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.2 Classification of CKD in adults",
+          "depth": 1,
+          "numbering": "1.2",
+          "line_start": 128,
+          "line_end": 153,
+          "content_preview": "1.2.1 Classify CKD in adults using a combination of GFR and ACR categories (as described in table 1). Be aware that:\nincreased ACR is associated with increased risk of adverse outcomes\ndecreased GFR i",
+          "content_token_estimate": 615,
+          "ancestor_path": [
+            "Who should be tested for CKD"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Investigating the cause of CKD and determining the risk of adverse outcomes",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 153,
+      "line_end": 157,
+      "content_preview": "1.2.3 Agree a plan to establish the cause of CKD during an informed discussion with the person with CKD, particularly if the cause may be treatable (for example, urinary tract obstruction, medicines t",
+      "content_token_estimate": 127,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Indications for renal ultrasound in adults",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 157,
+      "line_end": 167,
+      "content_preview": "1.2.5 Offer a renal ultrasound scan to all adults with CKD who:\nhave accelerated progression of CKD (see recommendation 1.3.5)\nhave visible or persistent invisible haematuria\nhave symptoms of urinary ",
+      "content_token_estimate": 152,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.3 Frequency of monitoring",
+          "depth": 1,
+          "numbering": "1.3",
+          "line_start": 167,
+          "line_end": 200,
+          "content_preview": "1.3.1 If an adult, child or young person has CKD, or is at risk of it, agree the frequency of monitoring (eGFRcreatinine and ACR) with them (and their family members or carers, as appropriate), bearin",
+          "content_token_estimate": 768,
+          "ancestor_path": [
+            "Indications for renal ultrasound in adults"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Defining progression in adults",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 200,
+      "line_end": 204,
+      "content_preview": "1.3.5 Define accelerated progression of CKD in adults as:\na sustained decrease in GFR of 25% or more and a change in GFR category",
+      "content_token_estimate": 32,
+      "ancestor_path": []
+    },
+    {
+      "heading": "within 12 months or",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 204,
+      "line_end": 214,
+      "content_preview": "a sustained decrease in GFR of 15 ml/min/1.73 m 2 per year. [2014]\n1.3.6 Take the following steps to identify the rate of progression of CKD:\nObtain a minimum of 3 GFR estimations over a period of not",
+      "content_token_estimate": 255,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Risk factors associated with CKD progression in adults",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 214,
+      "line_end": 227,
+      "content_preview": "1.3.9 Work with adults who have any of the following risk factors for CKD progression to optimise their health:\ncardiovascular disease\nproteinuria\nprevious episode of acute kidney injury\nhypertension\n",
+      "content_token_estimate": 178,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.4 Information and education for people with CKD",
+          "depth": 1,
+          "numbering": "1.4",
+          "line_start": 227,
+          "line_end": 247,
+          "content_preview": "1.4.1 Offer people with CKD (and their family members or carers, as appropriate) education and information tailored to the severity and cause of CKD, the associated complications and the risk of progr",
+          "content_token_estimate": 590,
+          "ancestor_path": [
+            "Risk factors associated with CKD progression in adults"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Lifestyle advice",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 247,
+      "line_end": 250,
+      "content_preview": "1.4.6 Encourage adults with CKD to take exercise, achieve a healthy weight and stop smoking. [2008]",
+      "content_token_estimate": 24,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Dietary interventions",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 250,
+      "line_end": 254,
+      "content_preview": "1.4.7 Offer dietary advice about potassium, phosphate, calorie and salt intake appropriate to the severity of CKD. [2008, amended 2014]\n1.4.8 If dietary intervention is agreed, provide it alongside ed",
+      "content_token_estimate": 74,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Low-protein diets",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 254,
+      "line_end": 257,
+      "content_preview": "1.4.9 Do not offer low-protein diets (dietary protein intake less than 0.6 to 0.8 g/kg/ day) to adults with CKD. [2014]",
+      "content_token_estimate": 29,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Self-management",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 257,
+      "line_end": 264,
+      "content_preview": "1.4.10 Ensure that systems are in place to:\ninform adults with CKD (and their family members or carers, as appropriate) of their diagnosis\nenable adults with CKD (and their family members or carers, a",
+      "content_token_estimate": 174,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.5 Risk assessment, referral criteria and shared care",
+          "depth": 1,
+          "numbering": "1.5",
+          "line_start": 264,
+          "line_end": 266,
+          "content_preview": "",
+          "content_token_estimate": 0,
+          "ancestor_path": [
+            "Self-management"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Risk assessment",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 266,
+      "line_end": 274,
+      "content_preview": "1.5.1 Give adults with CKD and their family members or carers (as appropriate) information about their 5-year risk of needing renal replacement therapy (measured using the 4-variable Kidney Failure Ri",
+      "content_token_estimate": 182,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Referral criteria",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 274,
+      "line_end": 295,
+      "content_preview": "1.5.5 Refer adults with CKD for specialist assessment (taking into account their wishes and comorbidities) if they have any of the following:\na 5-year risk of needing renal replacement therapy of grea",
+      "content_token_estimate": 422,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Shared care",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 295,
+      "line_end": 297,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.5.9 After referral:",
+          "depth": 2,
+          "numbering": "1.5.9",
+          "line_start": 297,
+          "line_end": 308,
+          "content_preview": "Agree, document and date a care plan with the person with CKD or their family member or carer (as appropriate). Follow:\n－ the recommendations on patient views and preferences in NICE's guideline on pa",
+          "content_token_estimate": 246,
+          "ancestor_path": [
+            "Shared care"
+          ]
+        },
+        {
+          "heading": "1.6 Pharmacotherapy",
+          "depth": 1,
+          "numbering": "1.6",
+          "line_start": 308,
+          "line_end": 310,
+          "content_preview": "",
+          "content_token_estimate": 0,
+          "ancestor_path": [
+            "Shared care"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Blood pressure control",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 310,
+      "line_end": 323,
+      "content_preview": "See NICE's guideline on hypertension in adults for advice on blood pressure control in people with frailty and multimorbidity.\n\nNICE's guideline on hypertension in adults recommends using clinic blood",
+      "content_token_estimate": 296,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Treating hypertension",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 323,
+      "line_end": 327,
+      "content_preview": "1.6.4 Follow the recommendations on treating hypertension in NICE's guideline on hypertension for adults with CKD, hypertension and an ACR of 30 mg/mmol or less (ACR categories A1 and A2). [2014, amen",
+      "content_token_estimate": 127,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Treating CKD in adults, children, and young people with related persistent proteinuria",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 327,
+      "line_end": 329,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "See also:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 329,
+      "line_end": 334,
+      "content_preview": "NICE's guideline on type 1 diabetes in adults\nNICE's guideline on type 2 diabetes in adults\nNICE's guideline on type 1 and type 2 diabetes in children and young people.",
+      "content_token_estimate": 42,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Adults",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 334,
+      "line_end": 344,
+      "content_preview": "1.6.6 For adults with CKD and diabetes (type 1 or type 2) offer an ARB or an ACE inhibitor (titrated to the highest licensed dose that the person can tolerate) if ACR is 3 mg/mmol or more. [2021]\n1.6.",
+      "content_token_estimate": 275,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Children and young people",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 344,
+      "line_end": 347,
+      "content_preview": "1.6.10 For children and young people with CKD and diabetes (type 1 or 2), offer an ARB or an ACE inhibitor (titrated to the highest licensed dose that they can tolerate) if ACR is 3 mg/mmol or more. [",
+      "content_token_estimate": 51,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.6.11 For children and young people with CKD but without diabetes:",
+          "depth": 2,
+          "numbering": "1.6.11",
+          "line_start": 347,
+          "line_end": 351,
+          "content_preview": "offer an ARB or an ACE inhibitor if ACR (titrated to the highest licensed dose that they can tolerate) is 70 mg/mol or more\nmonitor in line with recommendations 1.3.1 and 1.3.4 if ACR is above 30 but ",
+          "content_token_estimate": 74,
+          "ancestor_path": [
+            "Children and young people"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Medicines optimisation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 351,
+      "line_end": 358,
+      "content_preview": "1.6.12 When offering medicines to lower proteinuria to people with frailty or comorbidities, or who are taking many other prescribed medicines, follow the recommendations in NICE's guideline on medici",
+      "content_token_estimate": 190,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Renin-angiotensin system antagonists for adults",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 358,
+      "line_end": 381,
+      "content_preview": "1.6.13 Do not offer a combination of renin-angiotensin system antagonists to adults with CKD. [2014]\n1.6.14 Explain to adults with CKD (and their family members or carers, as appropriate) who are pres",
+      "content_token_estimate": 731,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Statins for adults",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 381,
+      "line_end": 384,
+      "content_preview": "1.6.24 Follow the recommendations in NICE's guideline on cardiovascular disease: risk assessment and reduction, including lipid modification for the use of statins in adults with CKD. [2014]",
+      "content_token_estimate": 47,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Oral antiplatelets and anticoagulants for adults",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 384,
+      "line_end": 388,
+      "content_preview": "1.6.25 Offer antiplatelet medicines to adults with CKD for the secondary prevention of cardiovascular disease, but be aware of the increased risk of bleeding. [2014]\n1.6.26 For guidance on oral antico",
+      "content_token_estimate": 82,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.7 Diagnosing and assessing anaemia",
+          "depth": 1,
+          "numbering": "1.7",
+          "line_start": 388,
+          "line_end": 390,
+          "content_preview": "",
+          "content_token_estimate": 0,
+          "ancestor_path": [
+            "Oral antiplatelets and anticoagulants for adults"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Diagnostic role of haemoglobin levels",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 390,
+      "line_end": 395,
+      "content_preview": "1.7.1 Consider investigating and managing anaemia in adults, children and young people with CKD if:\ntheir haemoglobin (Hb) level falls to 110 g/litre or less (or 105 g/litre or less if younger than 2 ",
+      "content_token_estimate": 82,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Diagnostic role of glomerular filtration rate",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 395,
+      "line_end": 407,
+      "content_preview": "1.7.2 In adults, children and young people with anaemia (see recommendation 1.7.3):\nIf eGFR is above 60 ml/min/1.73 m 2 , investigate other causes of anaemia as it is unlikely to be caused by CKD.\nIf ",
+      "content_token_estimate": 219,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Diagnostic tests to determine iron status and predict response to iron therapy",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 407,
+      "line_end": 415,
+      "content_preview": "1.7.3 Carry out testing to diagnose iron deficiency and determine potential responsiveness to iron therapy and long-term iron requirements every 3 months (every 1 to 3 months for people having haemodi",
+      "content_token_estimate": 257,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.8 Managing anaemia",
+          "depth": 1,
+          "numbering": "1.8",
+          "line_start": 415,
+          "line_end": 417,
+          "content_preview": "",
+          "content_token_estimate": 0,
+          "ancestor_path": [
+            "Diagnostic tests to determine iron status and predict response to iron therapy"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Starting erythropoietic stimulating agent therapy in iron deficiency",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 417,
+      "line_end": 420,
+      "content_preview": "1.8.1 ESA (erythropoietic stimulating agent) therapy should not be started in the presence of absolute iron deficiency without also managing the iron deficiency. [2006]",
+      "content_token_estimate": 42,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Maximum iron levels in people with anaemia of CKD",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 420,
+      "line_end": 423,
+      "content_preview": "1.8.2 In adults, children and young people treated with iron, serum ferritin levels should not rise above 800 micrograms/litre. In order to prevent this, review the dose of iron when serum ferritin le",
+      "content_token_estimate": 59,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Clinical utility of ESA therapy in people with sufficient iron",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 423,
+      "line_end": 430,
+      "content_preview": "1.8.3 Discuss the pros and cons of a trial of anaemia management with the person with anaemia of CKD, and their families and carers if agreed. [2006]\n1.8.4 ESAs need not be administered if the presenc",
+      "content_token_estimate": 222,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Hypoxia-inducible factor prolyl-hydroxylase inhibitors",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 430,
+      "line_end": 434,
+      "content_preview": "1.8.8 Roxadustat is recommended as an option in NICE technology appraisal guidance for treating symptomatic anaemia in adults with stage 3 to 5 CKD and no iron deficiency who are not on dialysis. For ",
+      "content_token_estimate": 123,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Nutritional supplements",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 434,
+      "line_end": 437,
+      "content_preview": "1.8.10 Do not prescribe supplements of vitamin C, folic acid or carnitine as adjuvants specifically for the treatment of anaemia of CKD. [2006]",
+      "content_token_estimate": 35,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Androgens",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 437,
+      "line_end": 440,
+      "content_preview": "1.8.11 Do not use androgens to treat anaemia in people with anaemia of CKD. [2006]",
+      "content_token_estimate": 20,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Secondary hyperparathyroidism",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 440,
+      "line_end": 445,
+      "content_preview": "1.8.12 Treat clinically relevant secondary hyperparathyroidism in adults, children and young people with CKD to improve the management of the anaemia. [2006]\n1.8.13 Cinacalcet is recommended as an opt",
+      "content_token_estimate": 184,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Person-centred care and ESAs",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 445,
+      "line_end": 452,
+      "content_preview": "1.8.15 Give adults, children and young people offered ESA therapy and their GPs information about why ESA therapy is needed, how it works and what benefits and side effects may be experienced. [2006]\n",
+      "content_token_estimate": 232,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Patient education programmes",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 452,
+      "line_end": 460,
+      "content_preview": "1.8.20 Offer culturally and age-appropriate patient education programmes to all adults, children and young people diagnosed with anaemia of CKD (and their families and carers). These should be repeate",
+      "content_token_estimate": 216,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.9 Assessing and optimising erythropoiesis in people with anaemia",
+          "depth": 1,
+          "numbering": "1.9",
+          "line_start": 460,
+          "line_end": 462,
+          "content_preview": "",
+          "content_token_estimate": 0,
+          "ancestor_path": [
+            "Patient education programmes"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Benefits of treatment with ESAs",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 462,
+      "line_end": 465,
+      "content_preview": "1.9.1 Offer treatment with ESAs to adults, children and young people with anaemia of CKD who are likely to benefit in terms of quality of life and physical function. [2006]",
+      "content_token_estimate": 43,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Blood transfusions",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 465,
+      "line_end": 469,
+      "content_preview": "1.9.2 Avoid blood transfusions if possible in people with anaemia of CKD in whom kidney transplant is a treatment option. [2006]\n1.9.3 If a transfusion is indicated clinically in a person with anaemia",
+      "content_token_estimate": 68,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Comparisons of ESAs",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 469,
+      "line_end": 476,
+      "content_preview": "1.9.4 Discuss the choice of ESA with the person with anaemia of CKD when starting treatment and at subsequent review, taking into account:\nthe person's dialysis status\nthe route of administration\nthe ",
+      "content_token_estimate": 71,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Coordinating care",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 476,
+      "line_end": 485,
+      "content_preview": "1.9.5 Ensure people with anaemia of CKD have access to a designated contact person or people who have principal responsibility for their anaemia management and\n\nwho have skills in the following activi",
+      "content_token_estimate": 175,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Providing ESAs",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 485,
+      "line_end": 494,
+      "content_preview": "1.9.6 Agree a treatment plan between the prescriber and the person with anaemia of CKD that ensures ESA therapy is clinically effective, consistent and safe. The plan should be person-centred and incl",
+      "content_token_estimate": 114,
+      "ancestor_path": []
+    },
+    {
+      "heading": "ESAs: optimal route of administration",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 494,
+      "line_end": 504,
+      "content_preview": "1.9.7 Agree the route of administration of ESAs between the person with anaemia of CKD and the prescriber, and revise as appropriate. Take into account the following factors:\npatient population (for e",
+      "content_token_estimate": 168,
+      "ancestor_path": []
+    },
+    {
+      "heading": "ESAs: dose and frequency",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 504,
+      "line_end": 509,
+      "content_preview": "1.9.9 When correcting anaemia of CKD, the dose and frequency of ESA should be:\ndetermined by the duration of action and route of administration of the ESA\nadjusted to keep the rate of Hb increase betw",
+      "content_token_estimate": 58,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Optimal Hb levels",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 509,
+      "line_end": 524,
+      "content_preview": "1.9.10 When determining individual aspirational Hb ranges for people with anaemia of CKD, take into account:\ntheir preferences\nsymptoms and comorbidities\nthe necessary treatment. [2011]\n1.9.11 Do not ",
+      "content_token_estimate": 373,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.9.12 Consider accepting Hb levels below the agreed aspirational range if:",
+          "depth": 2,
+          "numbering": "1.9.12",
+          "line_start": 524,
+          "line_end": 530,
+          "content_preview": "high doses of ESAs are needed to achieve the aspirational range or\nthe aspirational range is not achieved despite escalating ESA doses.\n\nHigh doses are more than 175 IU/kg per week for people having h",
+          "content_token_estimate": 87,
+          "ancestor_path": [
+            "Optimal Hb levels"
+          ]
+        },
+        {
+          "heading": "1.9.13 Do not use age alone to determine treatment of anaemia of CKD. [2006]",
+          "depth": 2,
+          "numbering": "1.9.13",
+          "line_start": 530,
+          "line_end": 532,
+          "content_preview": "",
+          "content_token_estimate": 0,
+          "ancestor_path": [
+            "Optimal Hb levels"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Adjusting ESA treatment",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 532,
+      "line_end": 539,
+      "content_preview": "1.9.14 Optimise iron status before or at the same time as starting ESAs and during maintenance treatment with ESAs. [2006, amended 2011]\n1.9.15 Use of ACE inhibitors or angiotensin type II receptor an",
+      "content_token_estimate": 212,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Correcting iron deficiency",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 539,
+      "line_end": 571,
+      "content_preview": "1.9.17 Offer iron therapy to adults, children and young people with anaemia of CKD who are receiving ESAs to achieve:\npercentage of hypochromic red blood cells less than 6% (unless ferritin is greater",
+      "content_token_estimate": 740,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Maintaining iron levels after a deficiency is corrected",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 571,
+      "line_end": 578,
+      "content_preview": "1.9.19 Once the percentage of hypochromic red blood cells is less than 6%, reticulocyte Hb count or equivalent tests are above 29 pg, or transferrin saturation is greater than 20% and serum ferritin l",
+      "content_token_estimate": 173,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Monitoring iron status during ESA treatment",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 578,
+      "line_end": 592,
+      "content_preview": "1.9.20 Offer iron therapy to adults, children and young people receiving ESA maintenance therapy to keep their:\npercentage of hypochromic red blood cells less than 6% (unless serum ferritin is greater",
+      "content_token_estimate": 244,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Iron therapy for people who are iron deficient and not on ESA therapy",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 592,
+      "line_end": 600,
+      "content_preview": "1.9.21 Offer iron therapy to adults, children and young people with anaemia of CKD who are iron deficient and who are not receiving ESA therapy, before discussing ESA therapy. (In August 2021, this wa",
+      "content_token_estimate": 261,
+      "ancestor_path": []
+    },
+    {
+      "heading": "[2015]",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 600,
+      "line_end": 603,
+      "content_preview": "1.9.22 Discuss the results of the iron therapy with the person or, if appropriate, with their family or carers and offer ESA therapy if needed (see recommendation 1.9.1). [2015]",
+      "content_token_estimate": 44,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Iron therapy for people who are iron deficient and receiving ESA therapy",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 603,
+      "line_end": 622,
+      "content_preview": "1.9.23 Offer iron therapy to adults, children and young people with anaemia of CKD who are iron deficient and who are receiving ESA therapy. (In August 2021, this was an off-label use of intravenous i",
+      "content_token_estimate": 482,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.10 Monitoring anaemia treatment",
+          "depth": 1,
+          "numbering": "1.10",
+          "line_start": 622,
+          "line_end": 624,
+          "content_preview": "",
+          "content_token_estimate": 0,
+          "ancestor_path": [
+            "Iron therapy for people who are iron deficient and receiving ESA therapy"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Monitoring iron status",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 624,
+      "line_end": 628,
+      "content_preview": "1.10.1 Do not check iron levels earlier than 1 week after administering intravenous iron in adults, children and young people with anaemia of CKD. The length of time to monitoring of iron status is de",
+      "content_token_estimate": 103,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Monitoring Hb levels",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 628,
+      "line_end": 635,
+      "content_preview": "1.10.3 In adults, children and young people with anaemia of CKD, monitor Hb:\nevery 2 to 4 weeks in the induction phase of ESA therapy\nevery 1 to 3 months in the maintenance phase of ESA therapy\nmore f",
+      "content_token_estimate": 93,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Detecting ESA resistance",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 635,
+      "line_end": 642,
+      "content_preview": "1.10.4 After other causes of anaemia, such as intercurrent illness or chronic blood loss have been excluded, regard people with anaemia of CKD as resistant to ESAs when:\nan aspirational Hb range is no",
+      "content_token_estimate": 257,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Managing ESA resistance",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 642,
+      "line_end": 646,
+      "content_preview": "1.10.7 If aluminium toxicity is suspected in an adult, child or young person with anaemia of CKD having haemodialysis, perform a desferrioxamine test and review the management of their condition accor",
+      "content_token_estimate": 74,
+      "ancestor_path": []
+    },
+    {
+      "heading": "2011]",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 646,
+      "line_end": 648,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Role of blood transfusion in managing ESA resistance",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 648,
+      "line_end": 659,
+      "content_preview": "1.10.9 Consider referring adults, children and young people with ESA resistance to a haematology service, particularly if an underlying haematological disorder is suspected. [2015]\n1.10.10 Evaluate an",
+      "content_token_estimate": 294,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.11 Hyperphosphataemia in people with CKD stage 4 or 5",
+          "depth": 1,
+          "numbering": "1.11",
+          "line_start": 659,
+          "line_end": 661,
+          "content_preview": "",
+          "content_token_estimate": 0,
+          "ancestor_path": [
+            "Role of blood transfusion in managing ESA resistance"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Dietary management for adults, children and young people",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 661,
+      "line_end": 667,
+      "content_preview": "1.11.1 A specialist renal dietitian, supported by healthcare professionals with the necessary skills and competencies, should carry out a dietary assessment and give individualised information and adv",
+      "content_token_estimate": 281,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Before starting phosphate binders for adults, children and young people",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 667,
+      "line_end": 679,
+      "content_preview": "1.11.5 Before starting phosphate binders for adults, children and young people with CKD stage 4 or 5, optimise:\ndiet (see recommendations 1.4.7 to 1.4.9 for adults)\ndialysis, for people who are having",
+      "content_token_estimate": 232,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Phosphate binders for children and young people",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 679,
+      "line_end": 690,
+      "content_preview": "1.11.9 Offer children and young people with CKD stage 4 or 5 and hyperphosphataemia a calcium-based phosphate binder to control serum phosphate levels. [2021]\n\nIn August 2021, this was an off-label us",
+      "content_token_estimate": 241,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Phosphate binders for adults",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 690,
+      "line_end": 692,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "First phosphate binder for adults",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 692,
+      "line_end": 710,
+      "content_preview": "1.11.12 Offer adults with CKD stage 4 or 5 and hyperphosphataemia calcium acetate to control serum phosphate levels. [2021]\n\nIn August 2021, this was an off-label use of calcium acetate in people not ",
+      "content_token_estimate": 322,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Combinations of phosphate binders for adults",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 710,
+      "line_end": 716,
+      "content_preview": "1.11.16 If adults with CKD stage 4 or 5 remain hyperphosphataemic after taking the maximum dose recommended in the BNF (or the maximum dose they can tolerate if that is lower), of a calcium-based phos",
+      "content_token_estimate": 142,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Review of treatments in adults, children and young people",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 716,
+      "line_end": 726,
+      "content_preview": "1.11.18 At every routine clinical review, assess the person's serum phosphate control, taking into account:\ndiet\nwhether they are taking the phosphate binders as prescribed\nother relevant factors, suc",
+      "content_token_estimate": 169,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.12 Other complications in adults",
+          "depth": 1,
+          "numbering": "1.12",
+          "line_start": 726,
+          "line_end": 728,
+          "content_preview": "",
+          "content_token_estimate": 0,
+          "ancestor_path": [
+            "Review of treatments in adults, children and young people"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Bone metabolism and osteoporosis",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 728,
+      "line_end": 733,
+      "content_preview": "1.12.1 Do not routinely measure calcium, phosphate, parathyroid hormone and vitamin D levels in adults with a GFR of 30 ml/min/1.73 m 2 or more (GFR category G1, G2 or G3). [2008]\n1.12.2 Measure serum",
+      "content_token_estimate": 166,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Vitamin D supplements in the management of CKD-mineral and bone disorders",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 733,
+      "line_end": 741,
+      "content_preview": "Detailed advice on the management of CKD-mineral and bone disorders is beyond the scope of this guideline. If uncertain, seek advice from your local renal service.\n1.12.4 Do not routinely offer vitami",
+      "content_token_estimate": 205,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Oral bicarbonate supplements in the management of metabolic acidosis",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 741,
+      "line_end": 748,
+      "content_preview": "Detailed advice on the management of metabolic acidosis is beyond the scope of this guideline. If uncertain, seek advice from your local renal service.\n1.12.8 Consider oral sodium bicarbonate suppleme",
+      "content_token_estimate": 90,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Terms used in this guideline",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 748,
+      "line_end": 752,
+      "content_preview": "This section defines terms that have been used in a particular way for this guideline. For other definitions see the NICE glossary.",
+      "content_token_estimate": 32,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Chronic kidney disease (CKD)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 752,
+      "line_end": 756,
+      "content_preview": "Abnormalities of kidney function or structure present for more than 3 months, with implications for health. This includes all people with markers of kidney damage and those with a glomerular filtratio",
+      "content_token_estimate": 88,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Classification of CKD",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 756,
+      "line_end": 765,
+      "content_preview": "CKD is classified according to estimated GFR (eGFR) and albumin:creatinine ratio (ACR)\n\n(see table 1), using 'G' to denote the GFR category (G1 to G5, which have the same GFR thresholds as the CKD sta",
+      "content_token_estimate": 136,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Glomerular filtration rate (GFR)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 765,
+      "line_end": 772,
+      "content_preview": "This is abbreviated in the following way in this guideline:\nGFR: either a measured or an estimated GFR\neGFR: estimated GFR (without indicating the method of estimation)\neGFRcreatinine: an estimation o",
+      "content_token_estimate": 57,
+      "ancestor_path": []
+    },
+    {
+      "heading": "4-variable Kidney Failure Risk Equation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 772,
+      "line_end": 782,
+      "content_preview": "A person's 5-year risk of needing renal replacement therapy (defined as the need for dialysis or transplant) is estimated, as in Major 2019, as:\n\n<!-- formula-not-decoded -->\n\n<!-- formula-not-decoded",
+      "content_token_estimate": 140,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Markers of kidney damage",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 782,
+      "line_end": 786,
+      "content_preview": "These include albuminuria (ACR more than 3 mg/mmol), urine sediment abnormalities, electrolyte and other abnormalities due to tubular disorders, abnormalities detected by histology, structural abnorma",
+      "content_token_estimate": 67,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Pre-dialysis",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 786,
+      "line_end": 790,
+      "content_preview": "Usually regarded to be CKD stages 4 and 5, although there is no accepted definition. Predialysis includes people with a failing transplant and people having conservative management.",
+      "content_token_estimate": 45,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Renal replacement therapy (RRT)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 790,
+      "line_end": 794,
+      "content_preview": "Life-supporting treatments for severe acute kidney injury or stage 5 CKD. This includes haemodialysis, haemofiltration, haemodiafiltration, peritoneal dialysis and kidney transplantation.",
+      "content_token_estimate": 46,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Renin-angiotensin-aldosterone system antagonist",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 794,
+      "line_end": 798,
+      "content_preview": "A medicine that blocks or inhibits the renin-angiotensin-aldosterone system, including angiotensin-converting enzyme (ACE) inhibitors, angiotensin-receptor blockers (ARBs), direct renin inhibitors and",
+      "content_token_estimate": 56,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Renin-angiotensin system antagonist",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 798,
+      "line_end": 802,
+      "content_preview": "A medicine that blocks or inhibits the renin-angiotensin system, including ACE inhibitors, ARBs and direct renin inhibitors. This group of medicines does not include aldosterone antagonists.",
+      "content_token_estimate": 47,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Recommendations for research",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 802,
+      "line_end": 806,
+      "content_preview": "As part of the 2021 update, the guideline committee made 18 recommendations for research on chronic kidney disease (CKD). They prioritised 5 key recommendations for research. They also retained some r",
+      "content_token_estimate": 63,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Key recommendations for research",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 806,
+      "line_end": 808,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "1 Creatinine-based estimate of eGFR - existing calculations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 808,
+      "line_end": 812,
+      "content_preview": "In adults, children and young people from black, Asian and other minority ethnic groups with CKD living in the UK, which existing eGFR calculations are the most accurate? [2021]",
+      "content_token_estimate": 44,
+      "ancestor_path": []
+    },
+    {
+      "heading": "2 Creatinine-based estimate of eGFR - improving accuracy of calculations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 812,
+      "line_end": 820,
+      "content_preview": "In adults, children and young people from black, Asian and other minority ethnic groups with CKD living in the UK, what biomarkers or factors, other than ethnicity, improve the diagnostic accuracy of ",
+      "content_token_estimate": 148,
+      "ancestor_path": []
+    },
+    {
+      "heading": "3 Risk assessment for black, Asian and minority ethnic groups",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 820,
+      "line_end": 828,
+      "content_preview": "What is the accuracy of the 4-variable Kidney Failure Risk Equation in adults, children and young people with CKD from black, Asian and minority ethnic groups living in the UK? [2021]\n\nFor a short exp",
+      "content_token_estimate": 135,
+      "ancestor_path": []
+    },
+    {
+      "heading": "4 Managing anaemia - optimal Hb levels for children and young people",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 828,
+      "line_end": 836,
+      "content_preview": "What is the efficacy and safety of different aspirational haemoglobin (Hb) targets for children and young people with CKD undergoing treatment for anaemia? [2021]\n\nFor a short explanation of why the c",
+      "content_token_estimate": 113,
+      "ancestor_path": []
+    },
+    {
+      "heading": "5 Hyperphosphatemia in people with CKD stage 4 or 5",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 836,
+      "line_end": 844,
+      "content_preview": "What are people with CKD and their family members and carers views and beliefs about taking oral phosphate binders? [2021]\n\nFor a short explanation of why the committee made this recommendation for re",
+      "content_token_estimate": 98,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Other recommendations for research",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 844,
+      "line_end": 846,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "6 Cystatin-C equations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 846,
+      "line_end": 850,
+      "content_preview": "What is the diagnostic accuracy of cystatin-C equations to estimate GFR as a measurement of kidney function in adults, young people and children in the UK? [2021]",
+      "content_token_estimate": 40,
+      "ancestor_path": []
+    },
+    {
+      "heading": "7 Investigations for proteinuria",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 850,
+      "line_end": 856,
+      "content_preview": "In children and young people, what is the accuracy of reagent strips for detecting albumin in urine? [2021]\n\nWhat is the effect of measuring proteinuria with albumin:creatinine ratio compared with pro",
+      "content_token_estimate": 75,
+      "ancestor_path": []
+    },
+    {
+      "heading": "8 Frequency of monitoring",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 856,
+      "line_end": 860,
+      "content_preview": "For adults, children and young people with CKD, what is the optimal monitoring frequency for albumin:creatinine ratio? [2021]",
+      "content_token_estimate": 31,
+      "ancestor_path": []
+    },
+    {
+      "heading": "9 Risk assessment, referral criteria and shared care",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 860,
+      "line_end": 866,
+      "content_preview": "What is the association between risk factors and CKD outcomes in children and young people? [2021]\n\nWhat is the accuracy of the 4-variable Kidney Failure Risk Equation in children and young people liv",
+      "content_token_estimate": 55,
+      "ancestor_path": []
+    },
+    {
+      "heading": "10 Frequency of review",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 866,
+      "line_end": 870,
+      "content_preview": "What is the most clinical and cost-effective frequency of review for children and young people with CKD? [2021]",
+      "content_token_estimate": 27,
+      "ancestor_path": []
+    },
+    {
+      "heading": "11 Managing anaemia",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 870,
+      "line_end": 880,
+      "content_preview": "For adults, children and young people with CKD and anaemia, what is the diagnostic\n\naccuracy of eGFR thresholds of 60, 45, and 30 ml/min/1.73 m 2 for determining whether the anaemia is due to CKD? [20",
+      "content_token_estimate": 147,
+      "ancestor_path": []
+    },
+    {
+      "heading": "12 Phosphate binders",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 880,
+      "line_end": 886,
+      "content_preview": "Which binders are the most clinically and cost effective in controlling serum phosphate in adults, children and young people with stage 4 or 5 CKD who are not on dialysis? [2021]\n\nIn adults with stage",
+      "content_token_estimate": 99,
+      "ancestor_path": []
+    },
+    {
+      "heading": "13 Self-management of CKD",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 886,
+      "line_end": 890,
+      "content_preview": "Does the provision of educational and supportive interventions to people with CKD by healthcare professionals increase the person's skills and confidence in managing their conditions and improve clini",
+      "content_token_estimate": 55,
+      "ancestor_path": []
+    },
+    {
+      "heading": "14 Antiplatelet therapy",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 890,
+      "line_end": 894,
+      "content_preview": "For people with CKD at the highest risk of cardiovascular disease, what is the clinical effectiveness of low-dose aspirin compared with placebo for primary prevention of cardiovascular disease? [2014]",
+      "content_token_estimate": 50,
+      "ancestor_path": []
+    },
+    {
+      "heading": "15 Renin-angiotensin-aldosterone system antagonists",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 894,
+      "line_end": 898,
+      "content_preview": "For people aged over 75 years with CKD, what is the clinical effectiveness of renin-angiotensin-aldosterone system (RAAS) antagonists? [2014]",
+      "content_token_estimate": 35,
+      "ancestor_path": []
+    },
+    {
+      "heading": "16 Vitamin D supplements in the management of CKD-mineral",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 898,
+      "line_end": 900,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "and bone disorders",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 900,
+      "line_end": 904,
+      "content_preview": "In people with hyperparathyroidism secondary to CKD, does treatment with vitamin D or vitamin D analogues improve patient-related outcomes? [2014]",
+      "content_token_estimate": 36,
+      "ancestor_path": []
+    },
+    {
+      "heading": "17 Management of anaemia of CKD with concurrent illness",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 904,
+      "line_end": 908,
+      "content_preview": "What is the optimal management (in terms of clinical and cost effectiveness) of anaemia of CKD in people who are receiving erythropoietic stimulating agents (ESAs) and have a significant concurrent ac",
+      "content_token_estimate": 57,
+      "ancestor_path": []
+    },
+    {
+      "heading": "18 Treatment of ESA resistance in people on haemodialysis",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 908,
+      "line_end": 912,
+      "content_preview": "What is the most effective type of intervention to treat people on haemodialysis with ESA-resistant anaemia? [2015]",
+      "content_token_estimate": 28,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale and impact",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 912,
+      "line_end": 916,
+      "content_preview": "These sections briefly explain why the committee made the recommendations and how they might affect practice.",
+      "content_token_estimate": 27,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Creatinine-based estimate of glomerular filtration rate (GFR)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 916,
+      "line_end": 918,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Why the committee did not make recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 918,
+      "line_end": 926,
+      "content_preview": "Evidence on the specific eGFR equations or ethnicity adjustments seen by the committee was not from UK studies so may not be applicable to UK black, Asian and minority ethnic groups. None of the studi",
+      "content_token_estimate": 590,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Impact on practice",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 926,
+      "line_end": 932,
+      "content_preview": "There will be an impact on practice, as the adjustment of the CKD-EPI creatinine equation for adults of African-Caribbean or African family origin has been removed from the guideline. Only a small num",
+      "content_token_estimate": 94,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Investigations for proteinuria",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 932,
+      "line_end": 936,
+      "content_preview": "Recommendations 1.1.10 to 1.1.14",
+      "content_token_estimate": 8,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Why the committee made the recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 936,
+      "line_end": 946,
+      "content_preview": "For children and young people with CKD, there was no evidence for the accuracy of measuring albumin:creatinine ratio (ACR) compared with protein:creatinine ratio (PCR) to quantify proteinuria. The com",
+      "content_token_estimate": 280,
+      "ancestor_path": []
+    },
+    {
+      "heading": "How the recommendations might affect practice",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 946,
+      "line_end": 952,
+      "content_preview": "The recommendations are in line with current practice, so no additional resources should be needed.\n\nReturn to recommendations",
+      "content_token_estimate": 31,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Reagent strips for proteinuria and haematuria",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 952,
+      "line_end": 956,
+      "content_preview": "Recommendations 1.1.15 to 1.1.16",
+      "content_token_estimate": 8,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Why the committee made the recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 956,
+      "line_end": 964,
+      "content_preview": "The evidence showed that reagent strips were less useful to rule out than to rule in proteinuria. The committee highlighted that ruling out proteinuria with confidence was the main goal when using rea",
+      "content_token_estimate": 406,
+      "ancestor_path": []
+    },
+    {
+      "heading": "How the recommendations might affect practice",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 964,
+      "line_end": 970,
+      "content_preview": "The recommendations are in line with current practice, so no additional resources should be needed. The committee noted that if all dipstick tests are confirmed by laboratory testing anyway, there wou",
+      "content_token_estimate": 82,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Who should be tested for CKD",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 970,
+      "line_end": 974,
+      "content_preview": "Recommendations 1.1.20 to 1.1.25",
+      "content_token_estimate": 8,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Why the committee made the recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 974,
+      "line_end": 984,
+      "content_preview": "For children and young people, the evidence showed that acute kidney injury and solitary functioning kidney were clinically significant risk factors for developing CKD. The committee highlighted that ",
+      "content_token_estimate": 292,
+      "ancestor_path": []
+    },
+    {
+      "heading": "How the recommendations might affect practice",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 984,
+      "line_end": 988,
+      "content_preview": "The recommendations are in line with current practice, so no additional resources should be needed.",
+      "content_token_estimate": 24,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Return to recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 988,
+      "line_end": 990,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Frequency of monitoring",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 990,
+      "line_end": 994,
+      "content_preview": "Recommendations 1.3.1 to 1.3.4",
+      "content_token_estimate": 7,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Why the committee made the recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 994,
+      "line_end": 1004,
+      "content_preview": "Most of the evidence showed that with eGFR decline, the risk of kidney disease progression and mortality increases, and this risk increases with the rate of eGFR decline. The committee agreed this is ",
+      "content_token_estimate": 344,
+      "ancestor_path": []
+    },
+    {
+      "heading": "How the recommendations might affect practice",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1004,
+      "line_end": 1008,
+      "content_preview": "The committee noted that no changes had been made to the previous suggested monitoring schedule, and they believed it was relatively well implemented in clinical practice. Therefore, they were confide",
+      "content_token_estimate": 71,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Return to recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1008,
+      "line_end": 1010,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Risk assessment, referral criteria and shared care",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1010,
+      "line_end": 1014,
+      "content_preview": "Recommendation 1.5.1 to 1.5.9",
+      "content_token_estimate": 7,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Why the committee made the recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1014,
+      "line_end": 1024,
+      "content_preview": "New evidence found a UK validation of the 4-variable Kidney Failure Risk Equation for adults, which can be used as one of the referral criteria (5-year risk of needing renal replacement therapy greate",
+      "content_token_estimate": 469,
+      "ancestor_path": []
+    },
+    {
+      "heading": "How the recommendations might affect practice",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1024,
+      "line_end": 1034,
+      "content_preview": "If the 4-variable Kidney Failure Risk Equation can be built into laboratory computer systems, as part of how eGFR and ACR results are returned to GPs, there should be no difficulty in implementing the",
+      "content_token_estimate": 384,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Pharmacotherapy for blood pressure control",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1034,
+      "line_end": 1038,
+      "content_preview": "Recommendations 1.6.1 to 1.6.3",
+      "content_token_estimate": 7,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Why the committee made the recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1038,
+      "line_end": 1050,
+      "content_preview": "Results from a meta-analysis (including the SPRINT trial) showed no meaningful difference between standard and more intensive blood pressure targets for adults with CKD. The 2014 guideline recommended",
+      "content_token_estimate": 352,
+      "ancestor_path": []
+    },
+    {
+      "heading": "How the recommendations might affect practice",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1050,
+      "line_end": 1056,
+      "content_preview": "The recommendations for adults are consistent with current practice and should not have an impact on resources. The recommendation for blood pressure targets in children and young people may have some",
+      "content_token_estimate": 77,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Pharmacotherapy for proteinuria and choice of antihypertensive agent",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1056,
+      "line_end": 1060,
+      "content_preview": "Recommendations 1.6.5 to 1.6.12",
+      "content_token_estimate": 7,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Why the committee made the recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1060,
+      "line_end": 1066,
+      "content_preview": "The interventions recommended are intended to improve a range of outcomes, including rates of progression to end-stage renal disease. There was evidence for adults, but not for children and young peop",
+      "content_token_estimate": 194,
+      "ancestor_path": []
+    },
+    {
+      "heading": "People without diabetes",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1066,
+      "line_end": 1070,
+      "content_preview": "The evidence showed that, compared with placebo, ACE inhibitors reduced the risk of end-stage renal disease in people without diabetes. ARBs did not show the same effect. However, the committee did no",
+      "content_token_estimate": 142,
+      "ancestor_path": []
+    },
+    {
+      "heading": "People with type 2 diabetes",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1070,
+      "line_end": 1083,
+      "content_preview": "For people with type 2 diabetes, ARBs reduced the risk of end-stage renal disease and heart failure. The committee also recommended ACE inhibitors because the evidence did not show a clear difference ",
+      "content_token_estimate": 186,
+      "ancestor_path": []
+    },
+    {
+      "heading": "How the recommendations might affect practice",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1083,
+      "line_end": 1089,
+      "content_preview": "The recommendations reflect current practice, so no additional resources should be needed.\n\nReturn to recommendations",
+      "content_token_estimate": 29,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Diagnostic role of glomerular filtration rate",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1089,
+      "line_end": 1093,
+      "content_preview": "Recommendation 1.7.2",
+      "content_token_estimate": 5,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Why the committee made the recommendation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1093,
+      "line_end": 1113,
+      "content_preview": "There was limited evidence showing that eGFR thresholds below 60 ml/min/1.73 m 2 could be used to identify anaemia as being due to CKD. The committee questioned the applicability of this evidence beca",
+      "content_token_estimate": 549,
+      "ancestor_path": []
+    },
+    {
+      "heading": "How the recommendations might affect practice",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1113,
+      "line_end": 1119,
+      "content_preview": "These recommendations should not increase the cost to primary care, because they reflect current practice and act as cautions for healthcare professionals to explore the cause of anaemia. They may red",
+      "content_token_estimate": 85,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Optimal Hb levels",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1119,
+      "line_end": 1123,
+      "content_preview": "Recommendation 1.9.11",
+      "content_token_estimate": 5,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Why the committee made the recommendation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1123,
+      "line_end": 1131,
+      "content_preview": "In the 2015 guideline, an aspirational Hb range between 100 and 120 g/litre was recommended for adults, young people and children aged 2 years and over. For children under 2 years, the Hb range was be",
+      "content_token_estimate": 328,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Correcting iron deficiency",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1131,
+      "line_end": 1135,
+      "content_preview": "Recommendation 1.9.18",
+      "content_token_estimate": 5,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Why the committee made the recommendation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1135,
+      "line_end": 1139,
+      "content_preview": "For people with stage 5 CKD who are on in-centre haemodialysis, the evidence showed that high-dose intravenous iron was better than a low-dose regimen at increasing levels of serum ferritin and haemog",
+      "content_token_estimate": 243,
+      "ancestor_path": []
+    },
+    {
+      "heading": "The committee was aware of a MHRA alert on intravenous iron and serious",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1139,
+      "line_end": 1147,
+      "content_preview": "hypersensitivity reactions. The alert states that 'intravenous iron products should only be administered when staff trained to evaluate and manage anaphylactic or anaphylactoid reactions - as well as ",
+      "content_token_estimate": 160,
+      "ancestor_path": []
+    },
+    {
+      "heading": "How the recommendations might affect practice",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1147,
+      "line_end": 1153,
+      "content_preview": "The recommendations are unlikely to lead to a substantial change in costs, as intravenous iron is relatively inexpensive, and there was evidence found in adults that use of high-dose iron leads to low",
+      "content_token_estimate": 80,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Hyperphosphataemia in people with CKD stage 4 or 5",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1153,
+      "line_end": 1157,
+      "content_preview": "Recommendations 1.11.5 to 1.11.18",
+      "content_token_estimate": 8,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Why the committee made the recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1157,
+      "line_end": 1165,
+      "content_preview": "There was a significant amount of evidence (of varying quality) for adults with stage 5 CKD who are having dialysis. However, evidence was limited for adults not on dialysis, and for children and youn",
+      "content_token_estimate": 298,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Which phosphate binders to use for children and young people",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1165,
+      "line_end": 1169,
+      "content_preview": "The committee reviewed the recommendations from the 2013 guideline in the light of limited new evidence. For children and young people with high serum calcium, they agreed to recommend sevelamer carbo",
+      "content_token_estimate": 137,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Which phosphate binders to use for adults",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1169,
+      "line_end": 1180,
+      "content_preview": "The committee reviewed the evidence for phosphate binders both in adults on dialysis and adults not having dialysis. Although the evidence for those not on dialysis was limited, it did reflect the evi",
+      "content_token_estimate": 377,
+      "ancestor_path": []
+    },
+    {
+      "heading": "carbonate",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1180,
+      "line_end": 1189,
+      "content_preview": "lanthanum carbonate is much more expensive than calcium acetate and sevelamer carbonate and may provide less benefit than other non-calcium-based phosphate binders.\n\nBased on this evidence, the commit",
+      "content_token_estimate": 165,
+      "ancestor_path": []
+    },
+    {
+      "heading": "How the recommendations might affect practice",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1189,
+      "line_end": 1197,
+      "content_preview": "Replacing sevelamer hydrochloride with sevelamer carbonate may result in lower resource use, because there is a cheap generic version of sevelamer carbonate available.\n\nThere is currently variation ac",
+      "content_token_estimate": 117,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Context",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1197,
+      "line_end": 1220,
+      "content_preview": "Chronic kidney disease (CKD) describes abnormal kidney function or structure. It is common and often occurs with other conditions (such as cardiovascular disease and diabetes). Moderate to severe CKD ",
+      "content_token_estimate": 707,
+      "ancestor_path": []
+    }
+  ]
+}

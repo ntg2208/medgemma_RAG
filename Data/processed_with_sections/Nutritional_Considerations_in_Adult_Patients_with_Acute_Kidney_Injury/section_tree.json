@@ -1,0 +1,187 @@
+{
+  "doc_name": "Nutritional_Considerations_in_Adult_Patients_with_Acute_Kidney_Injury",
+  "total_sections": 17,
+  "total_lines": 162,
+  "tree": [
+    {
+      "heading": "Disclaimer",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 0,
+      "line_end": 6,
+      "content_preview": "To the best of our knowledge, the contents of this publication are in line with National Institute for Health and Care Excellence guidance relating to the management and treatment of acute kidney inju",
+      "content_token_estimate": 190,
+      "ancestor_path": []
+    },
+    {
+      "heading": "1. Introduction",
+      "depth": 0,
+      "numbering": "1",
+      "line_start": 6,
+      "line_end": 14,
+      "content_preview": "Acute Kidney Injury (AKI) is characterised by a rapid reduction in kidney function resulting in a failure to maintain fluid, electrolyte and acid-base homeostasis (Segaran et al, 2015). The term AKI e",
+      "content_token_estimate": 715,
+      "ancestor_path": []
+    },
+    {
+      "heading": "2. Identifying patients with AKI at risk of malnutrition",
+      "depth": 0,
+      "numbering": "2",
+      "line_start": 14,
+      "line_end": 32,
+      "content_preview": "There is currently no validated screening tool to identify malnutrition in people with AKI. However, the Renal Nutrition Screening Tool, RNST (Xia et al, 2016) and the Renal Inpatient Nutrition Screen",
+      "content_token_estimate": 952,
+      "ancestor_path": []
+    },
+    {
+      "heading": "3. Principles of nutrition support in patients with AKI",
+      "depth": 0,
+      "numbering": "3",
+      "line_start": 32,
+      "line_end": 38,
+      "content_preview": "The general aim of nutrition support is to maintain nutritional status whilst limiting the complications of AKI. This includes preventing or minimising PEW, preserving lean body mass, avoiding further",
+      "content_token_estimate": 157,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "3.1 Dietetic classification of AKI",
+          "depth": 1,
+          "numbering": "3.1",
+          "line_start": 38,
+          "line_end": 46,
+          "content_preview": "From a nutritional point of view patients can be divided into two groups:\n Patients with AKI in the non-catabolic state\n Patients with AKI in the catabolic state\n\nWithin nutritional assessment is im",
+          "content_token_estimate": 128,
+          "ancestor_path": [
+            "3. Principles of nutrition support in patients with AKI"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "AKI in the non-catabolic state",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 46,
+      "line_end": 50,
+      "content_preview": "Typically, patients with pre-renal or post-renal injuries present in a non-catabolic state. Common causes of AKI in a non-catabolic state include dehydration, certain medications and urinary obstructi",
+      "content_token_estimate": 166,
+      "ancestor_path": []
+    },
+    {
+      "heading": "AKI in the catabolic state",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 50,
+      "line_end": 60,
+      "content_preview": "Typically, patients with an intra-renal injury present in a catabolic state. Causes of AKI in a catabolic state include sepsis, acidosis and trauma. Patients often have multi-organ failure and are lik",
+      "content_token_estimate": 366,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "3.2 The impact of Renal Replacement Therapy (RRT) on nutritional requirements",
+          "depth": 1,
+          "numbering": "3.2",
+          "line_start": 60,
+          "line_end": 82,
+          "content_preview": "For patients receiving RRT as a treatment in AKI, nutritional requirements will be affected. All patients with AKI requiring RRT should be referred to the dietitian (Kanagasundaram et al, 2019).\n\nInte",
+          "content_token_estimate": 1036,
+          "ancestor_path": [
+            "AKI in the catabolic state"
+          ]
+        },
+        {
+          "heading": "3.3 Estimation of Nutritional Requirements in AKI",
+          "depth": 1,
+          "numbering": "3.3",
+          "line_start": 82,
+          "line_end": 101,
+          "content_preview": "Nutritional requirements in AKI are summarised in Table 2. These guidelines are based on low grade evidence and expert opinion, therefore their implementation in clinical practice requires an individu",
+          "content_token_estimate": 2042,
+          "ancestor_path": [
+            "AKI in the catabolic state"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Energy",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 101,
+      "line_end": 111,
+      "content_preview": "AKI itself has no effect on the patient's energy requirements. Even in individuals with AKI and multiorgan failure, measured energy requirements are only 20%-30% above the estimated basal metabolic ra",
+      "content_token_estimate": 453,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Protein",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 111,
+      "line_end": 121,
+      "content_preview": "Protein requirements are influenced by the patient's clinical condition, severity of AKI, presence or absence of a catabolic state and any RRT they may receive (Table 2). Recommendations for protein r",
+      "content_token_estimate": 543,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Electrolytes",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 121,
+      "line_end": 135,
+      "content_preview": "AKI may be associated with significant electrolyte changes such as elevated potassium and phosphate levels. Electrolyte intake should be individualised according to the patient's blood biochemistry, c",
+      "content_token_estimate": 529,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Fluid",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 135,
+      "line_end": 139,
+      "content_preview": "The medical team should advise on fluid provision taking into account clinical condition, stage of AKI and current treatment. Equations to estimate fluid requirements may be not useful in AKI. Instead",
+      "content_token_estimate": 204,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Micronutrients",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 139,
+      "line_end": 149,
+      "content_preview": "Requirements for micronutrients are not well defined. Caution should be taken when interpreting serum micronutrient levels; many patients with AKI present in the acute phase response, which will itsel",
+      "content_token_estimate": 550,
+      "ancestor_path": []
+    },
+    {
+      "heading": "4. Monitoring",
+      "depth": 0,
+      "numbering": "4",
+      "line_start": 149,
+      "line_end": 153,
+      "content_preview": "Where patients present with nutritional concerns it is important that they receive regular dietetic review throughout the course of treatment and during recovery. Energy, protein and fluid requirement",
+      "content_token_estimate": 103,
+      "ancestor_path": []
+    },
+    {
+      "heading": "5. Conclusion",
+      "depth": 0,
+      "numbering": "5",
+      "line_start": 153,
+      "line_end": 157,
+      "content_preview": "Nutritional management plays an important role in the care of patients with AKI. Since different disease types and AKI stages can affect patients in a variety of ways, nutrition is best tailored to in",
+      "content_token_estimate": 161,
+      "ancestor_path": []
+    },
+    {
+      "heading": "6. Dietetic audit measures in AKI",
+      "depth": 0,
+      "numbering": "6",
+      "line_start": 157,
+      "line_end": 162,
+      "content_preview": "All patients should be screened for risk of malnutrition within 24 hours of admission (NICE 2006) The Renal Association guidelines for AKI (Kanagasundaram et al, 2019) recommend that patients with AKI",
+      "content_token_estimate": 161,
+      "ancestor_path": []
+    }
+  ]
+}

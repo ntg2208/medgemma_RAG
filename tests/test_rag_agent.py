@@ -6,28 +6,28 @@ from pathlib import Path
 
 def test_rag_agent_extends_base_agent():
     """Verify RAGAgent extends BaseAgent."""
-    agents_path = Path(__file__).parent.parent / "3_MultiAgent_RAG" / "agents"
+    agents_path = Path(__file__).parent.parent / "multi_agent_rag" / "agents"
     diet_path = agents_path / "diet_agent.py"
 
     # Clean start - remove from sys.modules
     import sys
-    sys.modules.pop("3_MultiAgent_RAG.agents.base", None)
-    sys.modules.pop("3_MultiAgent_RAG.agents.diet_agent", None)
-    sys.modules.pop("3_MultiAgent_RAG.agents.rag_agent", None)
+    sys.modules.pop("multi_agent_rag.agents.base", None)
+    sys.modules.pop("multi_agent_rag.agents.diet_agent", None)
+    sys.modules.pop("multi_agent_rag.agents.rag_agent", None)
 
     # Load diet_agent first (to prime base module)
-    diet_spec = importlib.util.spec_from_file_location("3_MultiAgent_RAG.agents.diet_agent", diet_path)
+    diet_spec = importlib.util.spec_from_file_location("multi_agent_rag.agents.diet_agent", diet_path)
     diet_module = importlib.util.module_from_spec(diet_spec)  # type: ignore[assignment]
-    sys.modules["3_MultiAgent_RAG.agents.diet_agent"] = diet_module
+    sys.modules["multi_agent_rag.agents.diet_agent"] = diet_module
     diet_spec.loader.exec_module(diet_module)  # type: ignore[attr-defined]
 
     # Now load rag_agent
     rag_path = agents_path / "rag_agent.py"
-    rag_spec = importlib.util.spec_from_file_location("3_MultiAgent_RAG.agents.rag_agent", rag_path)
+    rag_spec = importlib.util.spec_from_file_location("multi_agent_rag.agents.rag_agent", rag_path)
     if rag_spec is None or rag_spec.loader is None:
         raise RuntimeError("Failed to load rag_agent module")
     rag_module = importlib.util.module_from_spec(rag_spec)  # type: ignore[assignment]
-    sys.modules["3_MultiAgent_RAG.agents.rag_agent"] = rag_module
+    sys.modules["multi_agent_rag.agents.rag_agent"] = rag_module
     rag_spec.loader.exec_module(rag_module)  # type: ignore[attr-defined]
     RAGAgent = rag_module.RAGAgent
     BaseAgent = rag_module.BaseAgent
@@ -37,19 +37,19 @@ def test_rag_agent_extends_base_agent():
 
 def test_rag_agent_has_can_handle():
     """Verify RAGAgent implements can_handle method."""
-    agents_path = Path(__file__).parent.parent / "3_MultiAgent_RAG" / "agents"
+    agents_path = Path(__file__).parent.parent / "multi_agent_rag" / "agents"
     rag_path = agents_path / "rag_agent.py"
 
     # Clean start
     import sys
-    sys.modules.pop("3_MultiAgent_RAG.agents.base", None)
-    sys.modules.pop("3_MultiAgent_RAG.agents.diet_agent", None)
-    sys.modules.pop("3_MultiAgent_RAG.agents.rag_agent", None)
+    sys.modules.pop("multi_agent_rag.agents.base", None)
+    sys.modules.pop("multi_agent_rag.agents.diet_agent", None)
+    sys.modules.pop("multi_agent_rag.agents.rag_agent", None)
 
     # Load rag_agent
-    rag_spec = importlib.util.spec_from_file_location("3_MultiAgent_RAG.agents.rag_agent", rag_path)
+    rag_spec = importlib.util.spec_from_file_location("multi_agent_rag.agents.rag_agent", rag_path)
     rag_module = importlib.util.module_from_spec(rag_spec)  # type: ignore[assignment]
-    sys.modules["3_MultiAgent_RAG.agents.rag_agent"] = rag_module
+    sys.modules["multi_agent_rag.agents.rag_agent"] = rag_module
     rag_spec.loader.exec_module(rag_module)  # type: ignore[attr-defined]
     RAGAgent = rag_module.RAGAgent
 
@@ -76,19 +76,19 @@ def test_rag_agent_has_can_handle():
 
 def test_rag_agent_answer_returns_agent_response():
     """Verify answer() returns AgentResponse with correct fields."""
-    agents_path = Path(__file__).parent.parent / "3_MultiAgent_RAG" / "agents"
+    agents_path = Path(__file__).parent.parent / "multi_agent_rag" / "agents"
     rag_path = agents_path / "rag_agent.py"
 
     # Clean start
     import sys
-    sys.modules.pop("3_MultiAgent_RAG.agents.base", None)
-    sys.modules.pop("3_MultiAgent_RAG.agents.diet_agent", None)
-    sys.modules.pop("3_MultiAgent_RAG.agents.rag_agent", None)
+    sys.modules.pop("multi_agent_rag.agents.base", None)
+    sys.modules.pop("multi_agent_rag.agents.diet_agent", None)
+    sys.modules.pop("multi_agent_rag.agents.rag_agent", None)
 
     # Load rag_agent
-    rag_spec = importlib.util.spec_from_file_location("3_MultiAgent_RAG.agents.rag_agent", rag_path)
+    rag_spec = importlib.util.spec_from_file_location("multi_agent_rag.agents.rag_agent", rag_path)
     rag_module = importlib.util.module_from_spec(rag_spec)  # type: ignore[assignment]
-    sys.modules["3_MultiAgent_RAG.agents.rag_agent"] = rag_module
+    sys.modules["multi_agent_rag.agents.rag_agent"] = rag_module
     rag_spec.loader.exec_module(rag_module)  # type: ignore[attr-defined]
     RAGAgent = rag_module.RAGAgent
     AgentResponse = rag_module.AgentResponse
@@ -116,19 +116,19 @@ def test_rag_agent_answer_returns_agent_response():
 
 def test_rag_agent_answer_with_retrieval():
     """Verify answer() works with mocked retrieval."""
-    agents_path = Path(__file__).parent.parent / "3_MultiAgent_RAG" / "agents"
+    agents_path = Path(__file__).parent.parent / "multi_agent_rag" / "agents"
     rag_path = agents_path / "rag_agent.py"
 
     # Clean start
     import sys
-    sys.modules.pop("3_MultiAgent_RAG.agents.base", None)
-    sys.modules.pop("3_MultiAgent_RAG.agents.diet_agent", None)
-    sys.modules.pop("3_MultiAgent_RAG.agents.rag_agent", None)
+    sys.modules.pop("multi_agent_rag.agents.base", None)
+    sys.modules.pop("multi_agent_rag.agents.diet_agent", None)
+    sys.modules.pop("multi_agent_rag.agents.rag_agent", None)
 
     # Load rag_agent
-    rag_spec = importlib.util.spec_from_file_location("3_MultiAgent_RAG.agents.rag_agent", rag_path)
+    rag_spec = importlib.util.spec_from_file_location("multi_agent_rag.agents.rag_agent", rag_path)
     rag_module = importlib.util.module_from_spec(rag_spec)  # type: ignore[assignment]
-    sys.modules["3_MultiAgent_RAG.agents.rag_agent"] = rag_module
+    sys.modules["multi_agent_rag.agents.rag_agent"] = rag_module
     rag_spec.loader.exec_module(rag_module)  # type: ignore[attr-defined]
     RAGAgent = rag_module.RAGAgent
     AgentResponse = rag_module.AgentResponse

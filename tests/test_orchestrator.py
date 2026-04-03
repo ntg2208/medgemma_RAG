@@ -8,7 +8,7 @@ import pytest
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import importlib
-orch_module = importlib.import_module("3_MultiAgent_RAG.orchestrator")
+orch_module = importlib.import_module("multi_agent_rag.orchestrator")
 MultiAgentOrchestrator = orch_module.MultiAgentOrchestrator
 AgentType = orch_module.AgentType
 

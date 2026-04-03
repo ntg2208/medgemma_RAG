@@ -62,17 +62,17 @@ def diet_agent(mock_llm):
     from pathlib import Path
 
     # Clean sys.modules for fresh load
-    sys.modules.pop("3_MultiAgent_RAG.agents.base", None)
-    sys.modules.pop("3_MultiAgent_RAG.agents.diet_agent", None)
+    sys.modules.pop("multi_agent_rag.agents.base", None)
+    sys.modules.pop("multi_agent_rag.agents.diet_agent", None)
 
-    agents_path = Path(__file__).parent.parent / "3_MultiAgent_RAG" / "agents"
+    agents_path = Path(__file__).parent.parent / "multi_agent_rag" / "agents"
     diet_path = agents_path / "diet_agent.py"
 
     diet_spec = importlib.util.spec_from_file_location(
-        "3_MultiAgent_RAG.agents.diet_agent", diet_path
+        "multi_agent_rag.agents.diet_agent", diet_path
     )
     diet_module = importlib.util.module_from_spec(diet_spec)  # type: ignore[assignment]
-    sys.modules["3_MultiAgent_RAG.agents.diet_agent"] = diet_module
+    sys.modules["multi_agent_rag.agents.diet_agent"] = diet_module
     diet_spec.loader.exec_module(diet_module)  # type: ignore[attr-defined]
 
     return diet_module.DietAgent(mock_llm)
@@ -85,17 +85,17 @@ def lifestyle_agent(mock_llm):
     from pathlib import Path
 
     # Clean sys.modules
-    sys.modules.pop("3_MultiAgent_RAG.agents.base", None)
-    sys.modules.pop("3_MultiAgent_RAG.agents.lifestyle_agent", None)
+    sys.modules.pop("multi_agent_rag.agents.base", None)
+    sys.modules.pop("multi_agent_rag.agents.lifestyle_agent", None)
 
-    agents_path = Path(__file__).parent.parent / "3_MultiAgent_RAG" / "agents"
+    agents_path = Path(__file__).parent.parent / "multi_agent_rag" / "agents"
     lifestyle_path = agents_path / "lifestyle_agent.py"
 
     lifestyle_spec = importlib.util.spec_from_file_location(
-        "3_MultiAgent_RAG.agents.lifestyle_agent", lifestyle_path
+        "multi_agent_rag.agents.lifestyle_agent", lifestyle_path
     )
     lifestyle_module = importlib.util.module_from_spec(lifestyle_spec)  # type: ignore[assignment]
-    sys.modules["3_MultiAgent_RAG.agents.lifestyle_agent"] = lifestyle_module
+    sys.modules["multi_agent_rag.agents.lifestyle_agent"] = lifestyle_module
     lifestyle_spec.loader.exec_module(lifestyle_module)  # type: ignore[attr-defined]
 
     return lifestyle_module.LifestyleAgent(mock_llm)
@@ -108,17 +108,17 @@ def medication_agent(mock_llm):
     from pathlib import Path
 
     # Clean sys.modules
-    sys.modules.pop("3_MultiAgent_RAG.agents.base", None)
-    sys.modules.pop("3_MultiAgent_RAG.agents.medication_agent", None)
+    sys.modules.pop("multi_agent_rag.agents.base", None)
+    sys.modules.pop("multi_agent_rag.agents.medication_agent", None)
 
-    agents_path = Path(__file__).parent.parent / "3_MultiAgent_RAG" / "agents"
+    agents_path = Path(__file__).parent.parent / "multi_agent_rag" / "agents"
     medication_path = agents_path / "medication_agent.py"
 
     medication_spec = importlib.util.spec_from_file_location(
-        "3_MultiAgent_RAG.agents.medication_agent", medication_path
+        "multi_agent_rag.agents.medication_agent", medication_path
     )
     medication_module = importlib.util.module_from_spec(medication_spec)  # type: ignore[assignment]
-    sys.modules["3_MultiAgent_RAG.agents.medication_agent"] = medication_module
+    sys.modules["multi_agent_rag.agents.medication_agent"] = medication_module
     medication_spec.loader.exec_module(medication_module)  # type: ignore[attr-defined]
 
     return medication_module.MedicationAgent(mock_llm)
@@ -131,17 +131,17 @@ def rag_agent(mock_retriever, mock_llm):
     from pathlib import Path
 
     # Clean sys.modules
-    sys.modules.pop("3_MultiAgent_RAG.agents.base", None)
-    sys.modules.pop("3_MultiAgent_RAG.agents.rag_agent", None)
+    sys.modules.pop("multi_agent_rag.agents.base", None)
+    sys.modules.pop("multi_agent_rag.agents.rag_agent", None)
 
-    agents_path = Path(__file__).parent.parent / "3_MultiAgent_RAG" / "agents"
+    agents_path = Path(__file__).parent.parent / "multi_agent_rag" / "agents"
     rag_path = agents_path / "rag_agent.py"
 
     rag_spec = importlib.util.spec_from_file_location(
-        "3_MultiAgent_RAG.agents.rag_agent", rag_path
+        "multi_agent_rag.agents.rag_agent", rag_path
     )
     rag_module = importlib.util.module_from_spec(rag_spec)  # type: ignore[assignment]
-    sys.modules["3_MultiAgent_RAG.agents.rag_agent"] = rag_module
+    sys.modules["multi_agent_rag.agents.rag_agent"] = rag_module
     rag_spec.loader.exec_module(rag_module)  # type: ignore[attr-defined]
 
     return rag_module.RAGAgent(

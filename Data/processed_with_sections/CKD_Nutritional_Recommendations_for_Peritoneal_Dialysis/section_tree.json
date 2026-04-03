@@ -1,0 +1,557 @@
+{
+  "doc_name": "CKD_Nutritional_Recommendations_for_Peritoneal_Dialysis",
+  "total_sections": 55,
+  "total_lines": 406,
+  "tree": [
+    {
+      "heading": "Introduction",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 0,
+      "line_end": 8,
+      "content_preview": "This document is for renal dietitians and other healthcare professionals who care for people with stage 5 CKD who need renal replacement therapy, specifically peritoneal dialysis (PD).\n All patients ",
+      "content_token_estimate": 224,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Summary",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 8,
+      "line_end": 10,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Recommendations for guideline content",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 10,
+      "line_end": 14,
+      "content_preview": "Ideal Body Weight (IBW) should be calculated to determine nutritional requirements. Appendix C (i) gives guidance on this.",
+      "content_token_estimate": 30,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Energy: 30 - 35 Kcal/Kg IBW/day",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 14,
+      "line_end": 18,
+      "content_preview": "Patients should be advised to consume 30 - 35 Kcal /Kg IBW/day in order to achieve and/or maintain IBW as well as appropriate nitrogen balance. Consideration should be given to energy gained through P",
+      "content_token_estimate": 89,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Protein: 1 - 1.2 g protein/Kg IBW/day",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 18,
+      "line_end": 22,
+      "content_preview": "Patients should be advised to have a minimum protein intake of 1 - 1.2g protein/Kg IBW/day in order to meet increased requirements associated with PD (increase in basic requirements in addition to PD ",
+      "content_token_estimate": 134,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Potassium: Maintain serum potassium between 3.5 - 5.5 mmol/L",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 22,
+      "line_end": 26,
+      "content_preview": "All PD patients should maintain their serum potassium between 3.5 - 5.5 mmol/L. Any pre-existing dietary restrictions should be reviewed on commencement of dialysis. Reduced potassium diets may compro",
+      "content_token_estimate": 114,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Phosphate: Maintain serum phosphate between 1.1 and 1.7 mmol/L",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 26,
+      "line_end": 30,
+      "content_preview": "All PD patients should maintain their serum phosphate between 1.1 - 1.7 mmol/L (RA 2010). Dietary restriction and/or phosphate binders may be required. The phosphate binders used locally are: Calcium ",
+      "content_token_estimate": 113,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Calcium: Maintain between 2.2 - 2.5 mmol/L (corrected for serum albumin)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 30,
+      "line_end": 34,
+      "content_preview": "Calcium should be managed in line with PTH (see below). In the presence of hypercalcaemia all calcium therapies should be reviewed (agreed best practice).",
+      "content_token_estimate": 38,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Intact Parathyroid Hormone (iPTH): 8 - 38 pmol/L (2 - 9 times the upper laboratory target)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 34,
+      "line_end": 38,
+      "content_preview": "Treatment should be based on trends; patients with levels of iPTH above the target range should be assessed for hyperphosphatemia and hypocalcaemia (KDIGO 2009). Active vitamin D analogues calcitriol ",
+      "content_token_estimate": 161,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Sodium: Aim &lt;100 mmol sodium (&lt;6g salt/d)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 38,
+      "line_end": 42,
+      "content_preview": "This should help to improve blood pressure control and minimise fluid gains. Salt substitutes that contain potassium salts should be avoided unless advised otherwise by your dietitian (Sign 2008).",
+      "content_token_estimate": 49,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Fluid: Aim 750ml + previous days urine output",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 42,
+      "line_end": 46,
+      "content_preview": "Individual capacity for ultrafiltration must be considered. Sodium restriction will help to minimise fluid gains (RA 2010).",
+      "content_token_estimate": 30,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Vitamins &amp; Minerals:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 46,
+      "line_end": 50,
+      "content_preview": "No specific criteria set. Consider water soluble vitamin supplementation, particularly vitamin C and folate for patients on restricted diets or those who have been identified as being nutritionally co",
+      "content_token_estimate": 105,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Definitions",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 50,
+      "line_end": 72,
+      "content_preview": "BMI = Body Mass Index\n\nCKD = Chronic Kidney Disease\n\nFR = Fluid Restriction\n\nIBW = Ideal Body Weight iPTH = Intact Parathyroid Hormone\n\nPPI = Proton Pump Inhibitors\n\nPD = Peritoneal Dialysis\n\nPTH = Pa",
+      "content_token_estimate": 85,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Guideline details",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 72,
+      "line_end": 74,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Assessment",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 74,
+      "line_end": 85,
+      "content_preview": " All patients should be reviewed when they commence PD and followed up within two months. Thereafter, patients should be reviewed every six months. More frequent review may be necessary dependant on ",
+      "content_token_estimate": 222,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Nutrient intakes",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 85,
+      "line_end": 89,
+      "content_preview": "For the following nutrient requirements Ideal Body Weight (IBW) should be calculated using a BMI of 20kg/m² if the patient's BMI is &lt;20kg/m², a BMI of 25kg/m² if the patient's BMI is above 25kg/m² ",
+      "content_token_estimate": 68,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Energy",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 89,
+      "line_end": 97,
+      "content_preview": " 30-35 kcal/kg IBW/day for all patients depending upon age and physical activity (RA 2010).\n Additional calories gained from peritoneal absorption of dialysate glucose should be included when estima",
+      "content_token_estimate": 212,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Protein",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 97,
+      "line_end": 104,
+      "content_preview": " Adequate dietary protein is required to meet basic requirements, to compensate for dialysis induced catabolism, and to replace peritoneal losses (4 - 12 g/d). Peritoneal losses can increase by up to",
+      "content_token_estimate": 201,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Potassium",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 104,
+      "line_end": 112,
+      "content_preview": " Maintain serum potassium levels at 3.5 - 5.5 mmol/L.\n Patients should be reviewed by a dietitian on commencement of PD and given dietary advice.\n Reduced potassium diets may compromise nutrient in",
+      "content_token_estimate": 133,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Phosphate",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 112,
+      "line_end": 126,
+      "content_preview": " Maintain serum phosphate levels at 1.1 - 1.7 mmol/L.\n Dietary restriction and/or phosphate binders may be required.\n The phosphate binders used locally are: Renacet, Phosex, Calcichew, Fosrenol, R",
+      "content_token_estimate": 271,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Calcium",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 126,
+      "line_end": 132,
+      "content_preview": " Maintain serum calcium levels at 2.2 - 2.5 mmol/L (corrected for serum albumin).\n If calcium levels are &gt;2.5 mmol/L then all calcium based therapies should be reviewed.\n If a patient's serum ca",
+      "content_token_estimate": 89,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Intact Parathyroid Hormone",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 132,
+      "line_end": 138,
+      "content_preview": " Treatment should be based on trends; patients with levels of iPTH above the target range should be assessed for hyperphosphatemia and hypocalcaemia (KDIGO 2009).\n Abnormalities should be addressed ",
+      "content_token_estimate": 187,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Sodium",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 138,
+      "line_end": 144,
+      "content_preview": " Dietary salt intakes &gt;6g/d precipitate hypertension.\n All patients (with the exception of 'salt losers') should be advised on achieving a sodium intake of &lt;100 mmol (6g salt) a day (SIGN 2008",
+      "content_token_estimate": 140,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Fluid",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 144,
+      "line_end": 151,
+      "content_preview": " Patients should be given advice to help them adhere to their fluid restriction (FR).\n Recommendations for FR are made by the medical team.\n As a general guideline FR = 750ml + PDUO (Previous days ",
+      "content_token_estimate": 174,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Vitamins and Minerals",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 151,
+      "line_end": 160,
+      "content_preview": " Little is known about the specific vitamin and mineral requirements of PD patients.\n Dietary restrictions, early satiety, and periods of illness all impact on intake of some micronutrients.\n Water",
+      "content_token_estimate": 258,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Additional Considerations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 160,
+      "line_end": 166,
+      "content_preview": " Changes to dialysis regimen need to be considered with regards to calories gained from the dialysate.\n Nutrineal solution is generally used by diabetic patients; this exchange needs to be undertake",
+      "content_token_estimate": 188,
+      "ancestor_path": []
+    },
+    {
+      "heading": "End of clinical content",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 166,
+      "line_end": 168,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Guideline Governance",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 168,
+      "line_end": 170,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Implementation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 170,
+      "line_end": 174,
+      "content_preview": "These guidelines have been disseminated and implemented through the dietetic and renal multidisciplinary meetings, and are on the e-library so that all members of the renal multidisciplinary team have",
+      "content_token_estimate": 54,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Training",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 174,
+      "line_end": 178,
+      "content_preview": "All new renal dietitians have an introduction and training programme. Included within this is training on the implementation of the renal dietetic guidelines.",
+      "content_token_estimate": 39,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Patient Information",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 178,
+      "line_end": 192,
+      "content_preview": " Everything I need to know about CAPD associated peritonitis; Reference No HIC/LFT/596/07\n Renal Disease: Peritoneal Dialysis and Diet; Reference No HIC/LFT/848/09\n Renal Disease: Peritonitis and D",
+      "content_token_estimate": 373,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Guideline References",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 192,
+      "line_end": 194,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "CEBIS Evidence Summary",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 194,
+      "line_end": 224,
+      "content_preview": "British Dietetic Association evidence-based guidelines for the protein requirements of adults undergoing maintenance haemodialysis or peritoneal dialysis. Journal of Renal Nutrition (2013); 26 (4); 31",
+      "content_token_estimate": 709,
+      "ancestor_path": []
+    },
+    {
+      "heading": "*Grade:- The references are graded through the CEBIS process according to the criteria outlined below.",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 224,
+      "line_end": 234,
+      "content_preview": "| Grade of evidence | Based on |\n|---------------------|--------------------------------------------------------------------------------------------------------------------|\n| 1 | Systematic review or",
+      "content_token_estimate": 119,
+      "ancestor_path": []
+    },
+    {
+      "heading": "APPENDICES",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 234,
+      "line_end": 236,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix A",
+      "depth": 0,
+      "numbering": "Appendix A",
+      "line_start": 236,
+      "line_end": 238,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Estimation of Energy Gains from CAPD Dialysis Fluid*",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 238,
+      "line_end": 248,
+      "content_preview": "| %Glucose | Volume (ml) | Kcal Content | Kcals Absorbed | |\n|------------------------|---------------|----------------|------------------|--------------------------------------------|\n| 1.36 | 2000 |",
+      "content_token_estimate": 129,
+      "ancestor_path": []
+    },
+    {
+      "heading": "*Baxter Dialysis Fluids",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 248,
+      "line_end": 252,
+      "content_preview": "Calculations based on information from Baxter Healthcare Ltd.",
+      "content_token_estimate": 15,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix B:",
+      "depth": 0,
+      "numbering": "Appendix B",
+      "line_start": 252,
+      "line_end": 254,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Factors affecting serum potassium levels in renal failure",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 254,
+      "line_end": 266,
+      "content_preview": "Normal serum potassium levels:\n\nPre-dialysis: 3.7 - 5.5 mmol/l\n\nHD patients: 3.5 - 6.0 mmol/l\n\nPD patients : 3.5 - 5.5 mmol/l\n\nAn INCREASE in serum potassium could be due to :-",
+      "content_token_estimate": 44,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Diet",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 266,
+      "line_end": 268,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Drugs",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 268,
+      "line_end": 270,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Metabolic",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 270,
+      "line_end": 272,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Catabolic",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 272,
+      "line_end": 274,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Other",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 274,
+      "line_end": 301,
+      "content_preview": " High potassium foods\n Erythropoetin (EPO) therapy.\n Regulan treatment - Original flavour version contains 6 - 7 mmol k+ per sachet, the orange and lemon/lime flavour versions contains &lt; 1 mmol ",
+      "content_token_estimate": 298,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Treatment for high potassium:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 301,
+      "line_end": 334,
+      "content_preview": "Medical Management (managed by the medical team)\n Calcium gluconate\n Sodium Bicarbonate\n Dextrose and insulin\n Dialysis - haemodialysis, haemofiltration\n Ion exchange resins e.g. calcium resonium",
+      "content_token_estimate": 209,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix C:",
+      "depth": 0,
+      "numbering": "Appendix C",
+      "line_start": 334,
+      "line_end": 336,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "UHCW renal dietitian's outpatient referral criteria for renal dietetic review",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 336,
+      "line_end": 349,
+      "content_preview": "Please refer the following patients for dietetic review:-\n\nPeritoneal Dialysis Patients with any of the following:\n Phosphate &gt; 1.70mmol/l on 2 or more consecutive results, or patients commencing ",
+      "content_token_estimate": 125,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix Ci:",
+      "depth": 0,
+      "numbering": "Appendix C",
+      "line_start": 349,
+      "line_end": 351,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Nutritional screening:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 351,
+      "line_end": 371,
+      "content_preview": "Subjective assessment\n\nHeight (m) (first contact only)\n\nWeight (Kg) (this is the weight including the fluid from the bag)\n\nBody mass index (BMI)\n\nIdeal body weight (IBW) is equivalent to:\n\nActual BMI ",
+      "content_token_estimate": 91,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Biochemistry Monitoring;",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 371,
+      "line_end": 383,
+      "content_preview": "Routine; Urea and Electrolytes, Bone, Phosphate, Albumin, iPTH, Haemoglobin, Ferritin,\n\nThe following additional bloods may also be appropriate; Magnesium, C-Reactive Protein, Cholesterol, Triglycerid",
+      "content_token_estimate": 79,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix Cii:",
+      "depth": 0,
+      "numbering": "Appendix C",
+      "line_start": 383,
+      "line_end": 385,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Renal Association Guidelines 2010; Screening for undernutrition in CKD",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 385,
+      "line_end": 387,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Screening methods for undernutrition in CKD",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 387,
+      "line_end": 397,
+      "content_preview": "We recommend that all patients with stage 4-5 CKD should have the following parameters measured as a minimum in order to identify undernutrition (1C):\n Actual Body Weight (ABW) (&lt; 85% of Ideal Bod",
+      "content_token_estimate": 128,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Phosphate Binders used in UHCW NHS Trust",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 397,
+      "line_end": 406,
+      "content_preview": "| Phosphate Binder | Administration |\n|----------------------------------------------------------------------------------------------------------|------------------------------------------------------",
+      "content_token_estimate": 202,
+      "ancestor_path": []
+    }
+  ]
+}

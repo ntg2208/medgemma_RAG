@@ -69,7 +69,7 @@ from importlib import import_module
 
 # Import from package
 try:
-    RAG_L1 = import_module("1_Retrieval_Augmented_Generation")
+    RAG_L1 = import_module("simple_rag")
     EmbeddingGemmaWrapper = RAG_L1.EmbeddingGemmaWrapper
     CKDVectorStore = RAG_L1.CKDVectorStore
     CKDRetriever = RAG_L1.CKDRetriever
@@ -86,7 +86,7 @@ except ImportError as e:
 # Level 2: Agentic RAG
 # =============================================================================
 try:
-    RAG_L2 = import_module("2_Agentic_RAG")
+    RAG_L2 = import_module("agentic_rag")
     PIIHandler = RAG_L2.PIIHandler
     AgenticRAGGraph = RAG_L2.AgenticRAGGraph
     RAGNodes = RAG_L2.RAGNodes
@@ -99,7 +99,7 @@ except ImportError as e:
 
 # Level 2: Evaluation submodule
 try:
-    RAG_L2_Eval = import_module("2_Agentic_RAG.evaluation")
+    RAG_L2_Eval = import_module("agentic_rag.evaluation")
     RAGASEvaluator = RAG_L2_Eval.RAGASEvaluator
     CKDMetrics = RAG_L2_Eval.CKDMetrics
     setup_langsmith = RAG_L2_Eval.setup_langsmith
@@ -114,7 +114,7 @@ except ImportError as e:
 # Level 3: Multi-Agent RAG
 # =============================================================================
 try:
-    RAG_L3 = import_module("3_MultiAgent_RAG")
+    RAG_L3 = import_module("multi_agent_rag")
     MultiAgentOrchestrator = RAG_L3.MultiAgentOrchestrator
     print("[OK] Level 3 Multi-Agent RAG orchestrator imported")
 except ImportError as e:
@@ -123,7 +123,7 @@ except ImportError as e:
 
 # Level 3: Individual Agents
 try:
-    RAG_L3_Agents = import_module("3_MultiAgent_RAG.agents")
+    RAG_L3_Agents = import_module("multi_agent_rag.agents")
     RAGAgent = RAG_L3_Agents.RAGAgent
     DietAgent = RAG_L3_Agents.DietAgent
     MedicationAgent = RAG_L3_Agents.MedicationAgent

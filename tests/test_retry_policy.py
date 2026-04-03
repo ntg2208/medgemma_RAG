@@ -55,7 +55,7 @@ def test_graph_compiles_with_retry_policy_import():
     """Verify the graph module can be imported and compiled with RetryPolicy imported."""
     # This test ensures the graph.py file has RetryPolicy imported
     # and the graph can be compiled successfully
-    graph_path = Path(__file__).parent.parent / "2_Agentic_RAG" / "graph.py"
+    graph_path = Path(__file__).parent.parent / "agentic_rag" / "graph.py"
 
     spec = importlib.util.spec_from_file_location("graph", graph_path)
     if spec is None or spec.loader is None:

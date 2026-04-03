@@ -62,7 +62,7 @@ if [ "$1" = "--start" ]; then
     vllm/vllm-openai:latest \
     --model google/medgemma-1.5-4b-it \
     --dtype bfloat16 \
-    --max-model-len 8192 \
+    --max-model-len 65536 \
     --max-num-seqs 8 \
     --gpu-memory-utilization 0.90 \
     --trust-remote-code \

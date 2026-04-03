@@ -1,0 +1,297 @@
+{
+  "doc_name": "Diet_and_Haemodialysis",
+  "total_sections": 29,
+  "total_lines": 215,
+  "tree": [
+    {
+      "heading": "Diet and Haemodialysis",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 0,
+      "line_end": 4,
+      "content_preview": "Information for patients",
+      "content_token_estimate": 6,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Introduction",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 4,
+      "line_end": 8,
+      "content_preview": "The Leeds Teaching Hospitals Trust has a group of renal dietitians who provide a service to all the patients on haemodialysis. We have a commitment to provide you with the most up-to-date dietary info",
+      "content_token_estimate": 52,
+      "ancestor_path": []
+    },
+    {
+      "heading": "What is haemodialysis",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 8,
+      "line_end": 23,
+      "content_preview": "Haemodialysis is the process of removing waste products and excess fluids which build up in the body when the kidneys have stopped working properly.\n\nNutrition plays an important role in the treatment",
+      "content_token_estimate": 218,
+      "ancestor_path": []
+    },
+    {
+      "heading": "What is a 'renal diet'?",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 23,
+      "line_end": 39,
+      "content_preview": "We are aware that information about the 'renal diet' is available on the internet, from relatives and other patients. There is no single renal diet and the advice offered by the dietitian will be desi",
+      "content_token_estimate": 154,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Other dietary requirements",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 39,
+      "line_end": 43,
+      "content_preview": "If you have diabetes, coeliac disease, are following a weight reducing diet or have other dietary needs it is important these dietary requirements continue. The dietitian will discuss this with you.",
+      "content_token_estimate": 49,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Protein",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 43,
+      "line_end": 49,
+      "content_preview": "Protein is an important nutrient needed for the repair of body tissues and to keep your immune system healthy.\n\nProtein is lost during every dialysis session. It is therefore important to replace thes",
+      "content_token_estimate": 101,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Sources of protein",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 49,
+      "line_end": 53,
+      "content_preview": "Good sources of protein are meat, poultry, fish, eggs, milk, yoghurt, milk pudding, cheese, Quorn, tofu and some soya products.",
+      "content_token_estimate": 31,
+      "ancestor_path": []
+    },
+    {
+      "heading": "How much protein do I need?",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 53,
+      "line_end": 59,
+      "content_preview": "The amount of protein your body needs will be discussed with you by your dietitian.\n\nAim to eat protein foods at least twice a day.",
+      "content_token_estimate": 32,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Personal notes",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 59,
+      "line_end": 61,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Energy",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 61,
+      "line_end": 67,
+      "content_preview": "Getting enough energy from your food is important. It is needed to make good use of the protein from your diet and for maintaining your target weight. The energy content of food is often called the ca",
+      "content_token_estimate": 182,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Sources of energy",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 67,
+      "line_end": 75,
+      "content_preview": "| Starchy foods | Sugars and sugary foods | Fats and fatty foods |\n|-----------------------------------------------------|--------------------------------------------------------------------|---------",
+      "content_token_estimate": 144,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Understanding 'weight' on dialysis",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 75,
+      "line_end": 83,
+      "content_preview": "A 'target weight' will be set for you within the first few weeks of starting dialysis. Target weight is what your weight is when your body has the right balance of fluid. This is what your weight shou",
+      "content_token_estimate": 171,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Salt",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 83,
+      "line_end": 89,
+      "content_preview": "A 'reduced salt diet' plays a vital role in the treatment of people requiring haemodialysis. Too much salt in your diet can increase your thirst and make you drink more. This can lead to more fluid bu",
+      "content_token_estimate": 147,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Where does my salt intake come from?",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 89,
+      "line_end": 95,
+      "content_preview": "Most salt is 'hidden' in food.\n\nMost of the salt we eat is already added to the food we buy. It is found in canned food, jars, ready-made meals and take-away foods. It is important to be able to under",
+      "content_token_estimate": 66,
+      "ancestor_path": []
+    },
+    {
+      "heading": "What do the labels mean?",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 95,
+      "line_end": 101,
+      "content_preview": "The information about salt content on food labels is very useful. However, labels may list the 'salt', or the 'sodium' content, of the food.\nTo convert sodium to salt: multiply by 2.5 (e.g. 0.8 g sodi",
+      "content_token_estimate": 71,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Front of pack labelling",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 101,
+      "line_end": 103,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Traffic Light System",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 103,
+      "line_end": 117,
+      "content_preview": "This shows at a glance if the food has a high (red), medium (amber/yellow) or low (green) amount of nutrients including salt. Choose foods which are labelled green as much as possible, and keep those ",
+      "content_token_estimate": 195,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Guideline Daily Amounts (GDA)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 117,
+      "line_end": 121,
+      "content_preview": "This gives the amount and percentage of nutrients including salt per portion of food of the guideline daily amount (GDA). Use this system for comparing individual foods such as pizzas, breakfast cerea",
+      "content_token_estimate": 56,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Nutritional Information",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 121,
+      "line_end": 125,
+      "content_preview": "When looking at the labels you need to consider the portion of the food you will be eating. The salt or sodium content of the food will be listed per 100 g of product. Sometimes it may also state the ",
+      "content_token_estimate": 58,
+      "ancestor_path": []
+    },
+    {
+      "heading": "For example",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 125,
+      "line_end": 135,
+      "content_preview": "| | Salt per 100 g | Salt per serving |\n|---------------------|------------------|--------------------|\n| Cornflakes | 2.5 g | 1.0 g |\n| | Salt per 100 g | Salt per serving |\n| Soup: tinned tomato | 1",
+      "content_token_estimate": 114,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Tips on lowering your salt intake",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 135,
+      "line_end": 150,
+      "content_preview": "1. Cook with fresh foods as often as possible rather than relying on ready-made or processed foods\n2. Cut down on the amount of salty ingredients used in cooking e.g. stock cubes, soy sauce, pre-mixed",
+      "content_token_estimate": 366,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Fluid",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 150,
+      "line_end": 162,
+      "content_preview": "When you first start dialysis, you will probably still be passing a normal amount of urine. Over the next few months (or longer), you may notice that you pass much less urine. This isn't the same for ",
+      "content_token_estimate": 304,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Potassium",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 162,
+      "line_end": 174,
+      "content_preview": "Not every patient on haemodialysis needs to follow a low potassium diet. This is because potassium is easily removed on dialysis. If your potassium level goes too high or too low it can cause an abnor",
+      "content_token_estimate": 153,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Phosphate",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 174,
+      "line_end": 192,
+      "content_preview": "When you have too much phosphate in your blood it can cause the body to pull calcium from your bones. This makes bones weaker and the calcium can get deposited in your blood vessels, leading to cardio",
+      "content_token_estimate": 160,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Vitamins and minerals",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 192,
+      "line_end": 202,
+      "content_preview": "All patients on haemodialysis are prescribed a vitamin supplement. These are given to help replace the vitamins lost during dialysis. You may be given Renavit or a combination of Folic Acid and Vitami",
+      "content_token_estimate": 189,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Dietitian Name:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 202,
+      "line_end": 204,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Contact Number:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 204,
+      "line_end": 206,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Personal Notes",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 206,
+      "line_end": 208,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "What did you think of your care?",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 208,
+      "line_end": 215,
+      "content_preview": "Scan the QR code or visit bit.ly/nhsleedsfft Your views matter\n\n© The Leeds Teaching Hospitals NHS Trust · 4th edition Version 1 Developed by: Renal Dietitians, The Department of Nutrition and Dieteti",
+      "content_token_estimate": 82,
+      "ancestor_path": []
+    }
+  ]
+}

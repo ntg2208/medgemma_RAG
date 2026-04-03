@@ -54,6 +54,15 @@ SIMILARITY_THRESHOLD = 0.3  # Minimum similarity score
 CHROMA_COLLECTION_NAME = "ckd_guidelines"
 CHROMA_PERSIST_DIRECTORY = str(VECTORSTORE_DIR)
 
+# Section heading collection for tree-based retrieval
+SECTION_COLLECTION_NAME = "ckd_section_headings"
+
+# =============================================================================
+# Tree-Based Retrieval Configuration
+# =============================================================================
+SECTION_K = 8               # Number of section headings to match in phase 1
+CHUNKS_PER_SECTION = 3       # Max chunks to retrieve per matched section
+
 # =============================================================================
 # API Keys and External Services
 # =============================================================================
@@ -129,14 +138,27 @@ DIETARY_LIMITS = {
 # Model Generation Parameters
 # =============================================================================
 GENERATION_CONFIG = {
-    "max_new_tokens": 2048,
+    "max_new_tokens": 32768,
     "temperature": 0.7,
     "top_p": 0.9,
     "do_sample": True,
-    "repetition_penalty": 1.3,   # stronger penalty to break repetition loops
-    "frequency_penalty": 0.15,   # vLLM: penalises tokens proportional to how often they've appeared
-    "presence_penalty": 0.1,     # vLLM: flat penalty for any token that has appeared before
+    "repetition_penalty": 1.5,   # stronger penalty to break repetition loops
+    "frequency_penalty": 0.4,    # vLLM: penalises tokens proportional to how often they've appeared
+    "presence_penalty": 0.3,     # vLLM: flat penalty for any token that has appeared before
 }
+
+# =============================================================================
+# Patient Context Configuration
+# =============================================================================
+PATIENT_CONTEXT_PATH = BASE_DIR / "personal_context.txt"
+
+
+def load_patient_context() -> str:
+    """Load patient context from file, returning empty string if not found."""
+    if PATIENT_CONTEXT_PATH.exists():
+        return PATIENT_CONTEXT_PATH.read_text().strip()
+    return ""
+
 
 # =============================================================================
 # Prompt Templates
@@ -146,14 +168,38 @@ You provide evidence-based information from NICE guidelines and KidneyCareUK res
 
 IMPORTANT GUIDELINES:
 1. Always cite your sources using [Source: document name, section/page]
-2. Indicate CKD stage relevance when applicable
-3. Include appropriate medical disclaimers
-4. Never provide specific dosing without recommending healthcare provider consultation
-5. Be clear about what is general guidance vs. individualized medical advice
+2. Include appropriate medical disclaimers
+3. Never provide specific dosing without recommending healthcare provider consultation
+4. Be clear about what is general guidance vs. individualized medical advice
 
 DISCLAIMER: This information is for educational purposes only and should not replace
 professional medical advice. Always consult with your healthcare provider for
 personalized recommendations."""
+
+
+def build_system_prompt(patient_context: str = "") -> str:
+    """Build system prompt, optionally injecting patient-specific context.
+
+    Args:
+        patient_context: Patient health context string (e.g. from load_patient_context()).
+                         Pass empty string to get the base prompt without personalisation.
+
+    Returns:
+        System prompt string with patient context appended when provided.
+    """
+    if not patient_context:
+        return RAG_SYSTEM_PROMPT
+    return (
+        RAG_SYSTEM_PROMPT
+        + "\n\n## PATIENT CONTEXT\n"
+        + "The following is this patient's personal health context. "
+        + "Use it to tailor your responses to their specific situation, "
+        + "current medications, lab values, and clinical priorities. "
+        + "Where your answer differs from the general guideline due to patient-specific factors, "
+        + "explain why.\n\n"
+        + patient_context
+    )
+
 
 RAG_PROMPT_TEMPLATE = """Use the following context from NICE guidelines and KidneyCareUK to answer the question.
 If you cannot find the answer in the context, say so clearly.
@@ -258,8 +304,25 @@ def get_llm():
     else:
         # Import here to avoid loading models when using remote
         from importlib import import_module
-        chain_module = import_module("1_Retrieval_Augmented_Generation.chain")
+        chain_module = import_module("simple_rag.chain")
         return chain_module.MedGemmaLLM()
+
+
+# =============================================================================
+# RAGAS Evaluation Configuration
+# =============================================================================
+# Judge LLM for RAGAS metrics (Faithfulness, Relevancy, etc.)
+# Supports any OpenAI-compatible API: OpenAI, Gemini, OpenRouter, local vLLM
+RAGAS_JUDGE_MODEL = os.getenv("RAGAS_JUDGE_MODEL", "google/gemini-2.0-flash-001")
+RAGAS_JUDGE_API_KEY = os.getenv("RAGAS_JUDGE_API_KEY", "")
+RAGAS_JUDGE_BASE_URL = os.getenv(
+    "RAGAS_JUDGE_BASE_URL",
+    "https://openrouter.ai/api/v1",  # Default to OpenRouter (free tier available)
+)
+
+# Embeddings for RAGAS answer relevancy metric
+# Uses the same judge provider by default
+RAGAS_EMBEDDINGS_MODEL = os.getenv("RAGAS_EMBEDDINGS_MODEL", "text-embedding-3-small")
 
 
 def get_embeddings(dimension: int = None):
@@ -275,6 +338,6 @@ def get_embeddings(dimension: int = None):
         dimension = EMBEDDING_DIMENSION
 
     from importlib import import_module
-    embeddings_module = import_module("1_Retrieval_Augmented_Generation.embeddings")
+    embeddings_module = import_module("simple_rag.embeddings")
     device = os.getenv("EMBEDDING_DEVICE", "cpu")
     return embeddings_module.EmbeddingGemmaWrapper(dimension=dimension, device=device)

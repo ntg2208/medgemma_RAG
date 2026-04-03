@@ -43,7 +43,7 @@ def test_evaluator_retry_policy():
 
 def test_graph_compiles_with_api_nodes():
     """Verify graph with API nodes compiles successfully."""
-    graph_path = Path(__file__).parent.parent / "2_Agentic_RAG" / "graph.py"
+    graph_path = Path(__file__).parent.parent / "agentic_rag" / "graph.py"
 
     spec = importlib.util.spec_from_file_location("graph", graph_path)
     if spec is None or spec.loader is None:

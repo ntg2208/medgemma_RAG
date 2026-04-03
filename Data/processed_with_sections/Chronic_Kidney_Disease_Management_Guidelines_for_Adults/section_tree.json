@@ -1,0 +1,229 @@
+{
+  "doc_name": "Chronic_Kidney_Disease_Management_Guidelines_for_Adults",
+  "total_sections": 21,
+  "total_lines": 275,
+  "tree": [
+    {
+      "heading": "Guidelines for the Management of Chronic Kidney Disease (CKD) for Adults",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 0,
+      "line_end": 20,
+      "content_preview": "| Contents | Page |\n|-----------------------------------------------------------------------------------|--------|\n| CKD definition | 2 |\n| Who to test | 2 |\n| Urine Albumin: Creatinine Ratio (UACR) a",
+      "content_token_estimate": 198,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Guidelines for the Management of Chronic Kidney Disease (CKD) for Adults",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 20,
+      "line_end": 28,
+      "content_preview": "| What is CKD? CKD is the presence of one of the following for>3 months.                                                                                                                                ",
+      "content_token_estimate": 5083,
+      "ancestor_path": []
+    },
+    {
+      "heading": "How do we categorise CKD, how often should we test and when should we refer/seek advice?",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 28,
+      "line_end": 44,
+      "content_preview": "When reviewing results, place the test results in clinical context including consideration of why the blood tests were taken. If history of acute illness, then assess and manage accordingly. Consider ",
+      "content_token_estimate": 1234,
+      "ancestor_path": []
+    },
+    {
+      "heading": "WHEN TO REFER",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 44,
+      "line_end": 63,
+      "content_preview": "Where referral required, this should be to renal services if the patient does not have diabetes, or to combined diabetes/renal clinic for patient with diabetes (unless suspected or known non-diabetic ",
+      "content_token_estimate": 365,
+      "ancestor_path": []
+    },
+    {
+      "heading": "3 Step Solutions for the Management of Chronic Kidney Disease (CKD)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 63,
+      "line_end": 81,
+      "content_preview": "(ideally do in every patient with eGFR&lt;60 or UACR ≥ 3 mg/mmol)\n\n| Month 1 | Month 2 | Month 2 | Month 3 |\n|------------------------------------------------------------------------------------------",
+      "content_token_estimate": 2315,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Finerenone",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 81,
+      "line_end": 89,
+      "content_preview": "At month 4 onwards consider Finerenone for people with Type 2 Diabetes and who also has:\nstage 3 or 4 CKD (eGFR ≥25 -&lt;60 ml/min with albuminuria (UACR ≥3mg/mmol) and\nbeen optimised on standard care",
+      "content_token_estimate": 85,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Treatment initiation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 89,
+      "line_end": 102,
+      "content_preview": "| Serum potassium level (mmol/L) | Serum potassium level (mmol/L) | |\n|----------------------------------|----------------------------------------------------------------------------------------------",
+      "content_token_estimate": 309,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Blood Results and Monitoring",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 102,
+      "line_end": 104,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "ACE inhibitor and ARB",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 104,
+      "line_end": 106,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "eGFR and Serum Creatinine",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 106,
+      "line_end": 112,
+      "content_preview": "Accept a serum creatinine rise &lt; 30% or eGFR fall of &lt; 25% from baseline: after ACEi/ARB initiation or dose increase. Avoid initiating ACEI/ARB and SGLT2 inhibitors together as it can have a cum",
+      "content_token_estimate": 128,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Potassium (K+)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 112,
+      "line_end": 144,
+      "content_preview": "If K + &gt;6.0 mmol/L -would need urgent repeat U&amp;E (please follow local guidance and ideally this would be a same day repeat) and if 6.5 mmol/L or greater or if there are symptoms consistent with",
+      "content_token_estimate": 1139,
+      "ancestor_path": []
+    },
+    {
+      "heading": "NottinghamshireAreaPrescribingCommittee",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 144,
+      "line_end": 146,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "3 Step Solution for the Management of Chronic Kidney Disease (CKD)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 146,
+      "line_end": 157,
+      "content_preview": "Step 1\nEARLY diagnosis and identification of patients\n\nStep 2\nMedicines Optimisation\n\nStep 3\n·TIMELY REFERRAL to secondary care of those at risk of progression to end stage renal disease",
+      "content_token_estimate": 46,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Step 1: Early Diagnosis &amp; ldentification",
+          "depth": 1,
+          "numbering": null,
+          "line_start": 157,
+          "line_end": 163,
+          "content_preview": "Failuretoidentifyand treatCKDdoublesmortality accessinterventionssuchaslifestyleadviceand pharmacotherapytoreducetheriskofCkDprogressing DiagnosingandcodingCKDearlyenablespeopleto andofsignificantcard",
+          "content_token_estimate": 77,
+          "ancestor_path": [
+            "3 Step Solution for the Management of Chronic Kidney Disease (CKD)"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "WhatisCKD?",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 163,
+      "line_end": 169,
+      "content_preview": "GFR&lt;60ml/min/1.73m2for&gt;3months OR\n\nKidneydamagedefinedby: Markersofdamage Pathologicalabnormalities Bloodtests creatinineratio&gt;3mg/mmol) Albuminuria(urinealbuminto Haemoproteinuriainabsenceof",
+      "content_token_estimate": 57,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Step 2: Medicines Optimisation",
+          "depth": 1,
+          "numbering": null,
+          "line_start": 169,
+          "line_end": 184,
+          "content_preview": "•CKD with DM &amp; urine ACR &gt;3mg/mmol or\n•CKD with hypertension\n•Titrate to highest tolerated dose\n•Statin: Atorvastatin 20mg OD for primary and secondary prevention of CVD\n·T2DM only: Dapaglifloz",
+          "content_token_estimate": 198,
+          "ancestor_path": [
+            "WhatisCKD?"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Who totest?",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 184,
+      "line_end": 198,
+      "content_preview": "·Diabetes\n·Hypertension\n·AcuteKidneyInjury\nCardiovasculardisease\nStructuralrenaltractdisease:renalcalculior prostatichypertrophy\nMultisystemdiseaseswithpotentialkidney involvement\nSystemiclupuserythem",
+      "content_token_estimate": 96,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Step 3: Timely referral to secondary care of at-risk groups",
+          "depth": 1,
+          "numbering": null,
+          "line_start": 198,
+          "line_end": 208,
+          "content_preview": "KFRE 5 year risk of ESKD &gt;5% (www.kfre.co.uk)\nHigher levels of proteinuria (uACR ≥ 70mg/mmol, uPCR ≥ 100mg/mmol) unless known to be due to diabetes and already appropriately treated\nProteinuria (uA",
+          "content_token_estimate": 151,
+          "ancestor_path": [
+            "Who totest?"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Chronic Kidney Disease In Primary Care",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 208,
+      "line_end": 241,
+      "content_preview": "or\n\neGFR &lt; 60 ml/min/1.73m 2 2 consecutive tests at least 3 months apart\n\nAND\n\nHaemoproteinuria uACR &gt; 3 mg/mmol\n\nOffer blood and urine testing for adults with high risk for CKD: diabetes, hyper",
+      "content_token_estimate": 225,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Dapagliflozin OR Empagliflozin 10mg OD if :",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 241,
+      "line_end": 253,
+      "content_preview": "T2DM and eGFR 20-90ml/min\nCKD if eGFR ≥ 20 - 44 OR eGFR ≥ 45 and uACR ≥ 22.6 mg/mmol\n\nOffer Atorvastatin 20mg OD for primary and secondary prevention of CVD.\n\nStop nephrotoxins , for instance NSAIDs.\n",
+      "content_token_estimate": 105,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Refer for specialist assessment if:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 253,
+      "line_end": 275,
+      "content_preview": "5-year KFRE risk &gt; 5%\nuACR ≥ 70 mg/mmol, unless known to be caused by diabetes and already appropriately treated\nuACR &gt; 30 mg/mmol, together with haematuria\nA sustained decrease in eGFR of 25% o",
+      "content_token_estimate": 225,
+      "ancestor_path": []
+    }
+  ]
+}

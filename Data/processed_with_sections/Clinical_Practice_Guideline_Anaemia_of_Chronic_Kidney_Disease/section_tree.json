@@ -1,0 +1,3327 @@
+{
+  "doc_name": "Clinical_Practice_Guideline_Anaemia_of_Chronic_Kidney_Disease",
+  "total_sections": 272,
+  "total_lines": 1867,
+  "tree": [
+    {
+      "heading": "Executive Summary",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 0,
+      "line_end": 16,
+      "content_preview": "Anaemia is common in chronic kidney disease (CKD) encompassing non-dialysis dependent CKD (NDD-CKD) and dialysis dependent CKD (DD-CKD); people on peritoneal dialysis (PD) and haemodialysis (HD); and ",
+      "content_token_estimate": 501,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Prof Sunil Bhandari",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 16,
+      "line_end": 20,
+      "content_preview": "Chair of Guideline Working Group",
+      "content_token_estimate": 8,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Introduction",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 20,
+      "line_end": 75,
+      "content_preview": "This 2024 clinical pracTce guideline provides updated recommendaTons on the management of Anaemia of Chronic Kidney Disease (ACKD) including people receiving kidney replacement therapy and serves to s",
+      "content_token_estimate": 890,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Background",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 75,
+      "line_end": 87,
+      "content_preview": "Anaemia is a common complicaTon of CKD. It is associated with leV ventricular dysfuncTon and heart failure, in addiTon to a reducTon in exercise capacity and quality of life.\n\nThe recent 25 th UK Rena",
+      "content_token_estimate": 316,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Summary of Clinical Practice Guidelines on Anaemia of Chronic Kidney Disease",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 87,
+      "line_end": 89,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "1. Assessment for Anaemia of CKD (Guidelines 1.1 - 1.5)",
+      "depth": 0,
+      "numbering": "1",
+      "line_start": 89,
+      "line_end": 91,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 1.1 - Evalua9on of Chronic Anaemia - Screening for Anaemia:",
+          "depth": 2,
+          "numbering": "1.1",
+          "line_start": 91,
+          "line_end": 97,
+          "content_preview": "We suggest that haemoglobin (Hb) levels should be rouTnely measured to screen for anaemia:\nAt least annually in people with CKD G3\nAt least twice a year in people with CKD G4-5 not on kidney replaceme",
+          "content_token_estimate": 53,
+          "ancestor_path": [
+            "1. Assessment for Anaemia of CKD (Guidelines 1.1 - 1.5)"
+          ]
+        },
+        {
+          "heading": "Guideline 1.2 - Evalua9on of Anaemia - Haemoglobin Level:",
+          "depth": 2,
+          "numbering": "1.2",
+          "line_start": 97,
+          "line_end": 102,
+          "content_preview": "We recommend that all people with anaemia associated with chronic kidney disease should be invesTgated for the cause and possible treatment, irrespecTve of the grade of kidney disease or requirement f",
+          "content_token_estimate": 112,
+          "ancestor_path": [
+            "1. Assessment for Anaemia of CKD (Guidelines 1.1 - 1.5)"
+          ]
+        },
+        {
+          "heading": "Guideline 1.3 - Evalua9on of Anaemia - Kidney Func9on:",
+          "depth": 2,
+          "numbering": "1.3",
+          "line_start": 102,
+          "line_end": 106,
+          "content_preview": "We suggest that CKD should be considered as a possible cause of anaemia when the glomerular filtraTon rate (GFR) is &lt; 60 ml/min/1.73m 2 . It is more likely to be the cause if the GFR is &lt;30ml/mi",
+          "content_token_estimate": 88,
+          "ancestor_path": [
+            "1. Assessment for Anaemia of CKD (Guidelines 1.1 - 1.5)"
+          ]
+        },
+        {
+          "heading": "Guideline 1.4 - Evalua9on of Anaemia - Erythropoie9n Measurement:",
+          "depth": 2,
+          "numbering": "1.4",
+          "line_start": 106,
+          "line_end": 110,
+          "content_preview": "We recommend that measurement of erythropoieTn levels should NOT rouTnely be considered for the diagnosis or management of anaemia for people with CKD. (1A)",
+          "content_token_estimate": 39,
+          "ancestor_path": [
+            "1. Assessment for Anaemia of CKD (Guidelines 1.1 - 1.5)"
+          ]
+        },
+        {
+          "heading": "Guideline 1.5 - Evalua9on of Anaemia - Baseline Inves9ga9ons:",
+          "depth": 2,
+          "numbering": "1.5",
+          "line_start": 110,
+          "line_end": 114,
+          "content_preview": "We recommend that iniTal clinical and laboratory evaluaTon of anaemia should be performed prior to iniTaTon of treatment for anaemia in people with CKD. (1A)",
+          "content_token_estimate": 39,
+          "ancestor_path": [
+            "1. Assessment for Anaemia of CKD (Guidelines 1.1 - 1.5)"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 1.5.1",
+              "depth": 3,
+              "numbering": "1.5.1",
+              "line_start": 114,
+              "line_end": 126,
+              "content_preview": "We recommend that laboratory evaluaTon should include the following tests (1B):\nFull blood count (FBC) in addiTon to the Hb concentraTon\nRed blood cell indices:\nMean corpuscular haemoglobin [MCH]\nMean",
+              "content_token_estimate": 103,
+              "ancestor_path": [
+                "1. Assessment for Anaemia of CKD (Guidelines 1.1 - 1.5)",
+                "Guideline 1.5 - Evalua9on of Anaemia - Baseline Inves9ga9ons:"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Tests to Determine Iron Status:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 126,
+      "line_end": 133,
+      "content_preview": "Percentage of hypochromic red blood cells (% HRC), but only if processing of blood sample is possible within 6 hours or\nReTculocyte Hb count (CHr) or equivalent tests e.g., reTculocyte Hb equivalent (",
+      "content_token_estimate": 115,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Guidelines 1.5.2",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 133,
+      "line_end": 142,
+      "content_preview": "Based on iniTal assessment, we recommend the following tests to diagnose the cause of anaemia in selected cases (1B):\nSerum B12 and serum folate concentraTons\nTests for haemolysis (plasma/serum levels",
+      "content_token_estimate": 94,
+      "ancestor_path": []
+    },
+    {
+      "heading": "2. Treatment of Anaemia of CKD with Iron (Guidelines 2.1 - 2.7)",
+      "depth": 0,
+      "numbering": "2",
+      "line_start": 142,
+      "line_end": 144,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 2.1 - Treatment of Anaemia with Iron therapy - Iron Reple9on:",
+          "depth": 2,
+          "numbering": "2.1",
+          "line_start": 144,
+          "line_end": 148,
+          "content_preview": "We recommend that people should be iron replete to achieve and aim to maintain target Hb range, whether receiving ESA or HIF-PHI or not. (1B)",
+          "content_token_estimate": 35,
+          "ancestor_path": [
+            "2. Treatment of Anaemia of CKD with Iron (Guidelines 2.1 - 2.7)"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Iron repleTon is usually defined as:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 148,
+      "line_end": 153,
+      "content_preview": "%HRC &lt;6% / CHr or RET-He &gt;31 pg / ferriTn and TSAT (&gt;100 microgram/L and &gt;20%) in people with non-dialysis dependent CKD (NDD-CKD) or on PD and &gt;200 microgram/L in people on HD. (2B)\nA ",
+      "content_token_estimate": 116,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 2.2 - Treatment of Anaemia with Iron Therapy - Ini9a9on of ESA/HIF-PHI and Iron Status:",
+          "depth": 2,
+          "numbering": "2.2",
+          "line_start": 153,
+          "line_end": 157,
+          "content_preview": "We recommend that people on ESA or HIF-PHI therapy should remain iron replete before and during therapy either with oral iron or intravenous iron. (1B)",
+          "content_token_estimate": 37,
+          "ancestor_path": [
+            "Iron repleTon is usually defined as:"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 2.2.1",
+              "depth": 3,
+              "numbering": "2.2.1",
+              "line_start": 157,
+              "line_end": 161,
+              "content_preview": "We recommend that ESA or HIF-PHI therapy should not be iniTated in the presence of absolute iron deficiency (ferriTn &lt;100 mcg/L in NDD-CKD and &lt;200 mcg/L in DD-CKD) or funcTonal Iron deficiency ",
+              "content_token_estimate": 96,
+              "ancestor_path": [
+                "Iron repleTon is usually defined as:",
+                "Guideline 2.2 - Treatment of Anaemia with Iron Therapy - Ini9a9on of ESA/HIF-PHI and Iron Status:"
+              ]
+            },
+            {
+              "heading": "Guideline 2.2.2",
+              "depth": 3,
+              "numbering": "2.2.2",
+              "line_start": 161,
+              "line_end": 165,
+              "content_preview": "We suggest that to define funcTonal iron deficiency (FID) ('iron restricted erythropoiesis'), a TSAT &lt;20% and a normal or elevated ferriTn in people with NDD-CKD or maintained on PD and in those re",
+              "content_token_estimate": 90,
+              "ancestor_path": [
+                "Iron repleTon is usually defined as:",
+                "Guideline 2.2 - Treatment of Anaemia with Iron Therapy - Ini9a9on of ESA/HIF-PHI and Iron Status:"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Guideline 2.3 - Treatment of Anaemia with Iron Therapy - Route of Administra9on:",
+          "depth": 2,
+          "numbering": "2.3",
+          "line_start": 165,
+          "line_end": 169,
+          "content_preview": "We suggest that for people with CKD not requiring HD, or people currently receiving PD who are being considered for ESA therapy, intravenous iron should be considered to reduce ESA dose requirements. ",
+          "content_token_estimate": 51,
+          "ancestor_path": [
+            "Iron repleTon is usually defined as:"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 2.3.1",
+              "depth": 3,
+              "numbering": "2.3.1",
+              "line_start": 169,
+              "line_end": 175,
+              "content_preview": "We suggest for people with NDD-CKD or maintained on PD (i.e. not requiring HD), the choice between oral vs. parenteral iron depends on a shared decision and should include the impact of the\n\nseverity ",
+              "content_token_estimate": 86,
+              "ancestor_path": [
+                "Iron repleTon is usually defined as:",
+                "Guideline 2.3 - Treatment of Anaemia with Iron Therapy - Route of Administra9on:"
+              ]
+            },
+            {
+              "heading": "Guideline 2.3.2",
+              "depth": 3,
+              "numbering": "2.3.2",
+              "line_start": 175,
+              "line_end": 179,
+              "content_preview": "We recommend that most people receiving haemodialysis will require IV iron. (1A)",
+              "content_token_estimate": 20,
+              "ancestor_path": [
+                "Iron repleTon is usually defined as:",
+                "Guideline 2.3 - Treatment of Anaemia with Iron Therapy - Route of Administra9on:"
+              ]
+            },
+            {
+              "heading": "Guideline 2.3.3",
+              "depth": 3,
+              "numbering": "2.3.3",
+              "line_start": 179,
+              "line_end": 188,
+              "content_preview": "We suggest when offering IV iron therapy to people not receiving in-centre HD, consider high dose, low frequency (HiD/LF) IV iron as the treatment of choice for adults and young people when trying to ",
+              "content_token_estimate": 119,
+              "ancestor_path": [
+                "Iron repleTon is usually defined as:",
+                "Guideline 2.3 - Treatment of Anaemia with Iron Therapy - Route of Administra9on:"
+              ]
+            },
+            {
+              "heading": "Guideline 2.3.4",
+              "depth": 3,
+              "numbering": "2.3.4",
+              "line_start": 188,
+              "line_end": 192,
+              "content_preview": "We suggest the frequency of administraTon of HiD/LF IV iron for people with CKD not requiring HD and for people receiving PD needs to be tailored for each person as there are no clear data. (not grade",
+              "content_token_estimate": 50,
+              "ancestor_path": [
+                "Iron repleTon is usually defined as:",
+                "Guideline 2.3 - Treatment of Anaemia with Iron Therapy - Route of Administra9on:"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Guideline 2.4 - Treatment of Anaemia with Iron Therapy - Upper Limit for Iron Therapy:",
+          "depth": 2,
+          "numbering": "2.4",
+          "line_start": 192,
+          "line_end": 196,
+          "content_preview": "For people not on HD, we recommend that serum ferriTn should not exceed 600 mcg/L in those treated with iron. To achieve this, iron management should be reviewed when ferriTn is &gt;500 mcg/L, recogni",
+          "content_token_estimate": 66,
+          "ancestor_path": [
+            "Iron repleTon is usually defined as:"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 2.4.1",
+              "depth": 3,
+              "numbering": "2.4.1",
+              "line_start": 196,
+              "line_end": 200,
+              "content_preview": "For people receiving HD, we recommend that proacTve high-dose IV iron, iniTally 600 mg in divided doses in the first month and then 400 mg every month (or equivalent), should be given unless ferriTn &",
+              "content_token_estimate": 58,
+              "ancestor_path": [
+                "Iron repleTon is usually defined as:",
+                "Guideline 2.4 - Treatment of Anaemia with Iron Therapy - Upper Limit for Iron Therapy:"
+              ]
+            },
+            {
+              "heading": "Guideline 2.4.2",
+              "depth": 3,
+              "numbering": "2.4.2",
+              "line_start": 200,
+              "line_end": 204,
+              "content_preview": "We suggest a tailored approach by clinicians to assess the risk and benefit of starTng a proacTve IV iron protocol in people who have been established on HD for &gt;12 months. (2B)",
+              "content_token_estimate": 45,
+              "ancestor_path": [
+                "Iron repleTon is usually defined as:",
+                "Guideline 2.4 - Treatment of Anaemia with Iron Therapy - Upper Limit for Iron Therapy:"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Guideline 2.5 - Treatment of Iron Deficiency without Anaemia:",
+          "depth": 2,
+          "numbering": "2.5",
+          "line_start": 204,
+          "line_end": 208,
+          "content_preview": "We recommend for people with CKD with iron deficiency without anaemia and concomitant heart failure, administraTon of IV iron to improve well-being, physical funcTon and to reduce heart failure admiss",
+          "content_token_estimate": 52,
+          "ancestor_path": [
+            "Iron repleTon is usually defined as:"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 2.5.1",
+              "depth": 3,
+              "numbering": "2.5.1",
+              "line_start": 208,
+              "line_end": 212,
+              "content_preview": "We suggest for people with CKD with iron deficiency but without anaemia and no concomitant heart failure, a trial of oral or IV iron for improvement in clinical symptoms such as restless legs. (2B)",
+              "content_token_estimate": 49,
+              "ancestor_path": [
+                "Iron repleTon is usually defined as:",
+                "Guideline 2.5 - Treatment of Iron Deficiency without Anaemia:"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Guideline 2.6 - Administra9on of IV Iron - Safety Recommenda9ons:",
+          "depth": 2,
+          "numbering": "2.6",
+          "line_start": 212,
+          "line_end": 216,
+          "content_preview": "We recommend that resuscitaTve medicaTon and personnel trained to evaluate and resuscitate be present in the event of anaphylaxis at each administraTon of intravenous iron. (1A)",
+          "content_token_estimate": 44,
+          "ancestor_path": [
+            "Iron repleTon is usually defined as:"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 2.6.1",
+              "depth": 3,
+              "numbering": "2.6.1",
+              "line_start": 216,
+              "line_end": 228,
+              "content_preview": "We recommend avoiding parenteral iron therapy in people with acTve infecTon. (1C)\n\nGuideline 2.6.2 We suggest avoiding iron therapy in people with the following condiTons (not graded):\nHepaTTs C virus",
+              "content_token_estimate": 119,
+              "ancestor_path": [
+                "Iron repleTon is usually defined as:",
+                "Guideline 2.6 - Administra9on of IV Iron - Safety Recommenda9ons:"
+              ]
+            },
+            {
+              "heading": "Guideline 2.6.4",
+              "depth": 3,
+              "numbering": "2.6.4",
+              "line_start": 228,
+              "line_end": 232,
+              "content_preview": "We suggest choice of parenteral iron be tailored, considering the benefits and risks associated with available iron preparaTons. (2C)",
+              "content_token_estimate": 33,
+              "ancestor_path": [
+                "Iron repleTon is usually defined as:",
+                "Guideline 2.6 - Administra9on of IV Iron - Safety Recommenda9ons:"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Guideline 2.7 - Monitoring of Treatment - Iron Therapy:",
+          "depth": 2,
+          "numbering": "2.7",
+          "line_start": 232,
+          "line_end": 236,
+          "content_preview": "We recommend regular monitoring of iron status (every 1-3 months) in people receiving intravenous iron to avoid toxicity (defined as a serum ferriTn of &gt; 800 mcg/L or TSAT &gt;40%). (1B)",
+          "content_token_estimate": 47,
+          "ancestor_path": [
+            "Iron repleTon is usually defined as:"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 2.7.1",
+              "depth": 3,
+              "numbering": "2.7.1",
+              "line_start": 236,
+              "line_end": 240,
+              "content_preview": "We recommend that a serum ferriTn consistently &gt;800 mcg/L with no evidence of inflammaTon (normal CRP) is suggesTve of iron overload or potenTal toxicty. (1B)",
+              "content_token_estimate": 40,
+              "ancestor_path": [
+                "Iron repleTon is usually defined as:",
+                "Guideline 2.7 - Monitoring of Treatment - Iron Therapy:"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "3. Treatment of Anaemia with Erythropoiesis Stimulating Agents (Guidelines 3.13.17)",
+      "depth": 0,
+      "numbering": "3",
+      "line_start": 240,
+      "line_end": 242,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 3.1- Inves9ga9ons Before Ini9a9ng ESA Therapy:",
+          "depth": 2,
+          "numbering": "3.1",
+          "line_start": 242,
+          "line_end": 246,
+          "content_preview": "We recommend that all correctable causes of anaemia should be ruled out before considering treatment with ESAs . (1B)",
+          "content_token_estimate": 29,
+          "ancestor_path": [
+            "3. Treatment of Anaemia with Erythropoiesis Stimulating Agents (Guidelines 3.13.17)"
+          ]
+        },
+        {
+          "heading": "Guideline 3.2 - Treatment of Anaemia with Iron Therapy - Ini9a9on of ESA and Iron Status:",
+          "depth": 2,
+          "numbering": "3.2",
+          "line_start": 246,
+          "line_end": 250,
+          "content_preview": "We recommend that ESA therapy should NOT be iniTated in the presence of absolute iron deficiency, (ferriTn &lt;100 mcg/L in people with non-dialysis dependent CKD (NDD-CKD) and &lt;200 mcg/L in people",
+          "content_token_estimate": 123,
+          "ancestor_path": [
+            "3. Treatment of Anaemia with Erythropoiesis Stimulating Agents (Guidelines 3.13.17)"
+          ]
+        },
+        {
+          "heading": "Guideline 3.3 - Treatment of Anaemia - Erythropoiesis S9mula9ng Agents:",
+          "depth": 2,
+          "numbering": "3.3",
+          "line_start": 250,
+          "line_end": 254,
+          "content_preview": "We recommend that treatment with ESAs should be offered to people with anaemia of CKD, in conjuncTon to a shared decision of the advantages and risks, who are likely to benefit in terms of quality of ",
+          "content_token_estimate": 80,
+          "ancestor_path": [
+            "3. Treatment of Anaemia with Erythropoiesis Stimulating Agents (Guidelines 3.13.17)"
+          ]
+        },
+        {
+          "heading": "Guideline 3.4 - Treatment of Anaemia with ESA therapy - Target Haemoglobin Range:",
+          "depth": 2,
+          "numbering": "3.4",
+          "line_start": 254,
+          "line_end": 260,
+          "content_preview": "We recommend that people with non-dialysis dependent CKD (NDD-CKD) or those receiving dialysis, who are on ESA therapy, should achieve Hb between:\n100 and 120 g/L in adults, young people and children ",
+          "content_token_estimate": 84,
+          "ancestor_path": [
+            "3. Treatment of Anaemia with Erythropoiesis Stimulating Agents (Guidelines 3.13.17)"
+          ]
+        },
+        {
+          "heading": "Guideline 3.5 - Treatment of Anaemia without ESA Therapy - Target Haemoglobin Range:",
+          "depth": 2,
+          "numbering": "3.5",
+          "line_start": 260,
+          "line_end": 264,
+          "content_preview": "We suggest that this Hb target range applies exclusively to people with CKD receiving ESAs and is not intended to apply to the treatment of iron deficiency in people receiving iron therapy without the",
+          "content_token_estimate": 54,
+          "ancestor_path": [
+            "3. Treatment of Anaemia with Erythropoiesis Stimulating Agents (Guidelines 3.13.17)"
+          ]
+        },
+        {
+          "heading": "Guideline 3.6 - Treatment of Anaemia - Choice of ESA:",
+          "depth": 2,
+          "numbering": "3.6",
+          "line_start": 264,
+          "line_end": 268,
+          "content_preview": "We recommend that the choice of ESA is based on local availability and cost of ESAs. (1B)",
+          "content_token_estimate": 22,
+          "ancestor_path": [
+            "3. Treatment of Anaemia with Erythropoiesis Stimulating Agents (Guidelines 3.13.17)"
+          ]
+        },
+        {
+          "heading": "Guideline 3.7 - Treatment of Anaemia - Ini9al ESA Dose:",
+          "depth": 2,
+          "numbering": "3.7",
+          "line_start": 268,
+          "line_end": 272,
+          "content_preview": "We suggest that the iniTal ESA dose should be determined by the individual's Hb level, the desired target Hb range, the observed rate of increase in Hb level and clinical circumstances. (2B)",
+          "content_token_estimate": 47,
+          "ancestor_path": [
+            "3. Treatment of Anaemia with Erythropoiesis Stimulating Agents (Guidelines 3.13.17)"
+          ]
+        },
+        {
+          "heading": "Guideline 3.8 - Treatment of Anaemia with ESA Therapy - Route of Administra9on:",
+          "depth": 2,
+          "numbering": "3.8",
+          "line_start": 272,
+          "line_end": 276,
+          "content_preview": "We suggest that the route of ESA administraTon should be determined by the CKD grade, individual recipient preference, treatment seLng, efficacy, safety and class of ESA used. Subcutaneous (SC) use is",
+          "content_token_estimate": 144,
+          "ancestor_path": [
+            "3. Treatment of Anaemia with Erythropoiesis Stimulating Agents (Guidelines 3.13.17)"
+          ]
+        },
+        {
+          "heading": "Guideline 3.9 - Treatment of Anaemia with ESA Therapy - Frequency of Administra9on:",
+          "depth": 2,
+          "numbering": "3.9",
+          "line_start": 276,
+          "line_end": 280,
+          "content_preview": "We suggest that the frequency of administraTon should be determined by the CKD grade, person preference, treatment seLng and class of ESA. Less frequent administraTon using long-acTng ESAs may be the ",
+          "content_token_estimate": 66,
+          "ancestor_path": [
+            "3. Treatment of Anaemia with Erythropoiesis Stimulating Agents (Guidelines 3.13.17)"
+          ]
+        },
+        {
+          "heading": "Guideline 3.10 - Treatment of Anaemia with ESA Therapy - ESA Dose Adjustments:",
+          "depth": 2,
+          "numbering": "3.10",
+          "line_start": 280,
+          "line_end": 284,
+          "content_preview": "We recommend that adjustments to ESA doses should be considered when Hb is &lt;105 or &gt;115 g/L in adults, young people and children aged 2 years and older (1A)",
+          "content_token_estimate": 40,
+          "ancestor_path": [
+            "3. Treatment of Anaemia with Erythropoiesis Stimulating Agents (Guidelines 3.13.17)"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 3.10.1",
+              "depth": 3,
+              "numbering": "3.10.1",
+              "line_start": 284,
+              "line_end": 288,
+              "content_preview": "We suggest these thresholds for intervenTon should achieve a populaTon distribuTon centered on a mean of 110 g/L with a range of 100-120 g/L. (2B)",
+              "content_token_estimate": 36,
+              "ancestor_path": [
+                "3. Treatment of Anaemia with Erythropoiesis Stimulating Agents (Guidelines 3.13.17)",
+                "Guideline 3.10 - Treatment of Anaemia with ESA Therapy - ESA Dose Adjustments:"
+              ]
+            },
+            {
+              "heading": "Guideline 3.10.2",
+              "depth": 3,
+              "numbering": "3.10.2",
+              "line_start": 288,
+              "line_end": 292,
+              "content_preview": "We suggest in children younger than 2 years to keep the Hb level within the aspiraTonal range, do not wait unTl Hb levels are outside the aspiraTonal range before adjusTng treatment (for example, take",
+              "content_token_estimate": 68,
+              "ancestor_path": [
+                "3. Treatment of Anaemia with Erythropoiesis Stimulating Agents (Guidelines 3.13.17)",
+                "Guideline 3.10 - Treatment of Anaemia with ESA Therapy - ESA Dose Adjustments:"
+              ]
+            },
+            {
+              "heading": "Guideline 3.10.3",
+              "depth": 3,
+              "numbering": "3.10.3",
+              "line_start": 292,
+              "line_end": 296,
+              "content_preview": "We suggest that ESA doses should ideally be decreased rather than withheld when a downward adjustment of Hb level is desirable. (2B)",
+              "content_token_estimate": 33,
+              "ancestor_path": [
+                "3. Treatment of Anaemia with Erythropoiesis Stimulating Agents (Guidelines 3.13.17)",
+                "Guideline 3.10 - Treatment of Anaemia with ESA Therapy - ESA Dose Adjustments:"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Guideline 3.11 - Treatment of Anaemia with ESA Therapy - Specific Situa9ons:",
+          "depth": 2,
+          "numbering": "3.11",
+          "line_start": 296,
+          "line_end": 300,
+          "content_preview": "We suggest that ESA administraTon in ESA-dependent people should conTnue during acute illness, surgical procedure or any other cause of hospitalisaTon, unless there is a clear contra-indicaTon (for ex",
+          "content_token_estimate": 64,
+          "ancestor_path": [
+            "3. Treatment of Anaemia with Erythropoiesis Stimulating Agents (Guidelines 3.13.17)"
+          ]
+        },
+        {
+          "heading": "Guideline 3.12 - Cau9on in Prescribing ESA in Certain People with CKD:",
+          "depth": 2,
+          "numbering": "3.12",
+          "line_start": 300,
+          "line_end": 304,
+          "content_preview": "We suggest exerTng cauTon while prescribing ESA therapy in people with CKD with a history of stroke, or malignancy, parTcularly in those with acTve malignancy when cure is the anTcipated outcome. (2C)",
+          "content_token_estimate": 50,
+          "ancestor_path": [
+            "3. Treatment of Anaemia with Erythropoiesis Stimulating Agents (Guidelines 3.13.17)"
+          ]
+        },
+        {
+          "heading": "Guideline 3.13 - Monitoring of ESA Treatment - Haemoglobin during ESA Therapy:",
+          "depth": 2,
+          "numbering": "3.13",
+          "line_start": 304,
+          "line_end": 308,
+          "content_preview": "We suggest that Hb concentraTon should be monitored every 2-4 weeks in the correcTon phase or aVer a dose adjustment and every 1-3 months for stable individuals in the maintenance phase of ESA treatme",
+          "content_token_estimate": 68,
+          "ancestor_path": [
+            "3. Treatment of Anaemia with Erythropoiesis Stimulating Agents (Guidelines 3.13.17)"
+          ]
+        },
+        {
+          "heading": "Guideline 3.14 - Monitoring of ESA Treatment - Resistance to ESA Therapy:",
+          "depth": 2,
+          "numbering": "3.14",
+          "line_start": 308,
+          "line_end": 312,
+          "content_preview": "We recommend that inadequate response ('resistance') to ESA therapy is defined as failure to reach the target Hb range despite SC epoeTn dose &gt;300 IU/kg/week (450 IU/kg/week IV epoeTn), or darbepoe",
+          "content_token_estimate": 86,
+          "ancestor_path": [
+            "3. Treatment of Anaemia with Erythropoiesis Stimulating Agents (Guidelines 3.13.17)"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 3.14.1",
+              "depth": 3,
+              "numbering": "3.14.1",
+              "line_start": 312,
+              "line_end": 316,
+              "content_preview": "We suggest that clinicians consider accepTng lower aspiraTonal haemoglobin target ranges in those on high, escalaTng ESA doses with inadequate response, or consider alternaTve therapy such as a trial ",
+              "content_token_estimate": 55,
+              "ancestor_path": [
+                "3. Treatment of Anaemia with Erythropoiesis Stimulating Agents (Guidelines 3.13.17)",
+                "Guideline 3.14 - Monitoring of ESA Treatment - Resistance to ESA Therapy:"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Guideline 3.15 - Monitoring of ESA Treatment - Evalua9on for ESA Induced Pure Red Cell Aplasia:",
+          "depth": 2,
+          "numbering": "3.15",
+          "line_start": 316,
+          "line_end": 324,
+          "content_preview": "We recommend that a diagnosis of ESA induced pure red cell aplasia (PRCA) should be considered whenever a person receiving long term ESA therapy (&gt;8 weeks) develops all the following (1A):\nA sudden",
+          "content_token_estimate": 112,
+          "ancestor_path": [
+            "3. Treatment of Anaemia with Erythropoiesis Stimulating Agents (Guidelines 3.13.17)"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 3.15.1",
+              "depth": 3,
+              "numbering": "3.15.1",
+              "line_start": 324,
+              "line_end": 328,
+              "content_preview": "We recommend that all ESA therapy should be stopped in people who develop ESA-induced PRCA. (1A)",
+              "content_token_estimate": 24,
+              "ancestor_path": [
+                "3. Treatment of Anaemia with Erythropoiesis Stimulating Agents (Guidelines 3.13.17)",
+                "Guideline 3.15 - Monitoring of ESA Treatment - Evalua9on for ESA Induced Pure Red Cell Aplasia:"
+              ]
+            },
+            {
+              "heading": "Guideline 3.15.2",
+              "depth": 3,
+              "numbering": "3.15.2",
+              "line_start": 328,
+              "line_end": 332,
+              "content_preview": "We recommend that individuals who remain transfusion dependent aVer withdrawing ESA therapy should be treated with immunosuppressant medicaTons guided by the level of anT EPO anTbodies. (1B)",
+              "content_token_estimate": 47,
+              "ancestor_path": [
+                "3. Treatment of Anaemia with Erythropoiesis Stimulating Agents (Guidelines 3.13.17)",
+                "Guideline 3.15 - Monitoring of ESA Treatment - Evalua9on for ESA Induced Pure Red Cell Aplasia:"
+              ]
+            },
+            {
+              "heading": "Guideline 3.15.3",
+              "depth": 3,
+              "numbering": "3.15.3",
+              "line_start": 332,
+              "line_end": 336,
+              "content_preview": "We do not recommend rouTne screening for anT-erythropoieTn anTbodies among people with CKD regularly treated with ESAs. (1B)",
+              "content_token_estimate": 31,
+              "ancestor_path": [
+                "3. Treatment of Anaemia with Erythropoiesis Stimulating Agents (Guidelines 3.13.17)",
+                "Guideline 3.15 - Monitoring of ESA Treatment - Evalua9on for ESA Induced Pure Red Cell Aplasia:"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Guideline 3.16 - Monitoring of ESA treatment - Hypertension during ESA therapy:",
+          "depth": 2,
+          "numbering": "3.16",
+          "line_start": 336,
+          "line_end": 340,
+          "content_preview": "We recommend that blood pressure should be monitored in all people receiving ESAs and, if present, hypertension be treated by volume removal and/or anThypertensive drugs. (1A)",
+          "content_token_estimate": 43,
+          "ancestor_path": [
+            "3. Treatment of Anaemia with Erythropoiesis Stimulating Agents (Guidelines 3.13.17)"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "4. Treatment of Anaemia with HIF-PHI Agents (Guidelines 4.1-4.9)",
+      "depth": 0,
+      "numbering": "4",
+      "line_start": 340,
+      "line_end": 342,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 4.1 - Treatment of Anaemia - HIF-PHI Agents",
+          "depth": 2,
+          "numbering": "4.1",
+          "line_start": 342,
+          "line_end": 348,
+          "content_preview": "We recommend that treatment with HIF-PHI agents should be offered aVer iron repleTon, to people with symptomaTc anaemia (Hb &lt;105 g/L) of CKD (stages 3-5 (eGFR &lt;60 ml/min/1.73m 2 )) who are not r",
+          "content_token_estimate": 104,
+          "ancestor_path": [
+            "4. Treatment of Anaemia with HIF-PHI Agents (Guidelines 4.1-4.9)"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 4.1.1 - Treatment of Anaemia - DD-CKD and HIF-PHI Agents",
+              "depth": 3,
+              "numbering": "4.1.1",
+              "line_start": 348,
+              "line_end": 352,
+              "content_preview": "We suggest that that treatment with HIF-PHI agents should be considered aVer iron repleTon, to people with DD-CKD and symptomaTc anaemia (Hb &lt;105 g/L) who are likely to benefit in terms of quality ",
+              "content_token_estimate": 81,
+              "ancestor_path": [
+                "4. Treatment of Anaemia with HIF-PHI Agents (Guidelines 4.1-4.9)",
+                "Guideline 4.1 - Treatment of Anaemia - HIF-PHI Agents"
+              ]
+            },
+            {
+              "heading": "Guideline 4.1.2 - Treatment of Anaemia - People intolerant to ESA",
+              "depth": 3,
+              "numbering": "4.1.2",
+              "line_start": 352,
+              "line_end": 356,
+              "content_preview": "We suggest that that treatment with HIF-PHI agents should be considered, aVer iron repleTon, to people who are intolerant to ESA therapy. (2C)",
+              "content_token_estimate": 35,
+              "ancestor_path": [
+                "4. Treatment of Anaemia with HIF-PHI Agents (Guidelines 4.1-4.9)",
+                "Guideline 4.1 - Treatment of Anaemia - HIF-PHI Agents"
+              ]
+            },
+            {
+              "heading": "Guideline 4.1.3 - Choosing between ESA and HIF-PHI therapy for people with non-dialysis dependent CKD and DD-CKD",
+              "depth": 3,
+              "numbering": "4.1.3",
+              "line_start": 356,
+              "line_end": 360,
+              "content_preview": "We suggest, when deciding between ESA and HIF-PHI therapy for people with non-dialysis dependent CKD or DD-CKD, consideraTons include the preference of the person with anaemia of CKD, or, where approp",
+              "content_token_estimate": 85,
+              "ancestor_path": [
+                "4. Treatment of Anaemia with HIF-PHI Agents (Guidelines 4.1-4.9)",
+                "Guideline 4.1 - Treatment of Anaemia - HIF-PHI Agents"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Guideline 4.2 - Treatment of Anaemia",
+          "depth": 2,
+          "numbering": "4.2",
+          "line_start": 360,
+          "line_end": 364,
+          "content_preview": "We suggest that HIF-PHI administraTon in HIF-PHI-dependent people should conTnue during acute illness, surgical procedures or any other cause of hospitalisaTon, unless there is a clear contraindicaTon",
+          "content_token_estimate": 63,
+          "ancestor_path": [
+            "4. Treatment of Anaemia with HIF-PHI Agents (Guidelines 4.1-4.9)"
+          ]
+        },
+        {
+          "heading": "Guideline 4.3 - Treatment of Anaemia with HIF- PHI therapy - Target Haemoglobin:",
+          "depth": 2,
+          "numbering": "4.3",
+          "line_start": 364,
+          "line_end": 370,
+          "content_preview": "We suggest that people over the age of 18 years with NDD-CKD on HIF-PHI therapy should achieve a Hb between:\n100 and 120 g/L in adults and young people, similar to ESA therapy (2B)\nIn children and tho",
+          "content_token_estimate": 68,
+          "ancestor_path": [
+            "4. Treatment of Anaemia with HIF-PHI Agents (Guidelines 4.1-4.9)"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 4.3.1",
+              "depth": 3,
+              "numbering": "4.3.1",
+              "line_start": 370,
+              "line_end": 376,
+              "content_preview": "We suggest that people over the age of 18 years with DD-CKD on HIF-PHI therapy should achieve a Hb between:\n100 and 120 g/L in adults and young people similar to ESA therapy but this may depend on the",
+              "content_token_estimate": 86,
+              "ancestor_path": [
+                "4. Treatment of Anaemia with HIF-PHI Agents (Guidelines 4.1-4.9)",
+                "Guideline 4.3 - Treatment of Anaemia with HIF- PHI therapy - Target Haemoglobin:"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Guideline 4.4 - Treatment of Anaemia - Ini9al HIF-PHI dose",
+          "depth": 2,
+          "numbering": "4.4",
+          "line_start": 376,
+          "line_end": 380,
+          "content_preview": "We recommend that the iniTal HIF-PHI dose should be based on the person's weight, Hb level and the observed rate of increase in Hb level, and clinical circumstances. The appropriate dose should follow",
+          "content_token_estimate": 64,
+          "ancestor_path": [
+            "4. Treatment of Anaemia with HIF-PHI Agents (Guidelines 4.1-4.9)"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 4.4.1",
+              "depth": 3,
+              "numbering": "4.4.1",
+              "line_start": 380,
+              "line_end": 384,
+              "content_preview": "We suggest that the starTng HIF PHI dose should be lower for those who are ESA-naïve versus those who are not. (2B)",
+              "content_token_estimate": 28,
+              "ancestor_path": [
+                "4. Treatment of Anaemia with HIF-PHI Agents (Guidelines 4.1-4.9)",
+                "Guideline 4.4 - Treatment of Anaemia - Ini9al HIF-PHI dose"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Guideline 4.5 - Treatment of Anaemia with HIF-PHI therapy - Frequency of Administra9on:",
+          "depth": 2,
+          "numbering": "4.5",
+          "line_start": 384,
+          "line_end": 388,
+          "content_preview": "We suggest that the frequency of administraTon should be determined by the response to therapy to maintain the desired Hb target range of 100-120 g/L. (2B)",
+          "content_token_estimate": 38,
+          "ancestor_path": [
+            "4. Treatment of Anaemia with HIF-PHI Agents (Guidelines 4.1-4.9)"
+          ]
+        },
+        {
+          "heading": "Guideline 4.6 - Treatment of Anaemia with HIF-PHI Therapy - Dose Adjustments:",
+          "depth": 2,
+          "numbering": "4.6",
+          "line_start": 388,
+          "line_end": 392,
+          "content_preview": "We suggest that adjustments to HIF-PHI doses should be considered when Hb is &lt;105 or &gt;115 g/L in adults to balance the benefit and safety to people given the current evidence base. (2B)",
+          "content_token_estimate": 47,
+          "ancestor_path": [
+            "4. Treatment of Anaemia with HIF-PHI Agents (Guidelines 4.1-4.9)"
+          ]
+        },
+        {
+          "heading": "Guideline 4.7 - Prescribing HIF-PHI in Sub-Groups of People with CKD:",
+          "depth": 2,
+          "numbering": "4.7",
+          "line_start": 392,
+          "line_end": 396,
+          "content_preview": "We recommend that HIF-PHI should be avoided or used cauTously in people with acTve malignancy. (1B)",
+          "content_token_estimate": 24,
+          "ancestor_path": [
+            "4. Treatment of Anaemia with HIF-PHI Agents (Guidelines 4.1-4.9)"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 4.7.1",
+              "depth": 3,
+              "numbering": "4.7.1",
+              "line_start": 396,
+              "line_end": 400,
+              "content_preview": "We recommend that HIF-PHI should be avoided or used cauTously in people with autosomal dominant polycysTc kidney disease unTl further data are available. (1D)",
+              "content_token_estimate": 39,
+              "ancestor_path": [
+                "4. Treatment of Anaemia with HIF-PHI Agents (Guidelines 4.1-4.9)",
+                "Guideline 4.7 - Prescribing HIF-PHI in Sub-Groups of People with CKD:"
+              ]
+            },
+            {
+              "heading": "Guideline 4.7.2",
+              "depth": 3,
+              "numbering": "4.7.2",
+              "line_start": 400,
+              "line_end": 404,
+              "content_preview": "We recommend that HIF-PHI should be avoided or used cauTously in people with a history of seizures. (1B)",
+              "content_token_estimate": 26,
+              "ancestor_path": [
+                "4. Treatment of Anaemia with HIF-PHI Agents (Guidelines 4.1-4.9)",
+                "Guideline 4.7 - Prescribing HIF-PHI in Sub-Groups of People with CKD:"
+              ]
+            },
+            {
+              "heading": "Guideline 4.7.3",
+              "depth": 3,
+              "numbering": "4.7.3",
+              "line_start": 404,
+              "line_end": 408,
+              "content_preview": "We recommend cauTon in using HIF-PHI in people with uncontrolled hypertension . (1B)",
+              "content_token_estimate": 21,
+              "ancestor_path": [
+                "4. Treatment of Anaemia with HIF-PHI Agents (Guidelines 4.1-4.9)",
+                "Guideline 4.7 - Prescribing HIF-PHI in Sub-Groups of People with CKD:"
+              ]
+            },
+            {
+              "heading": "Guideline 4.7.4",
+              "depth": 3,
+              "numbering": "4.7.4",
+              "line_start": 408,
+              "line_end": 412,
+              "content_preview": "We recommend cauTon in using HIF-PHI therapy in people with reTnopathy. (1D)",
+              "content_token_estimate": 19,
+              "ancestor_path": [
+                "4. Treatment of Anaemia with HIF-PHI Agents (Guidelines 4.1-4.9)",
+                "Guideline 4.7 - Prescribing HIF-PHI in Sub-Groups of People with CKD:"
+              ]
+            },
+            {
+              "heading": "Guideline 4.7.5",
+              "depth": 3,
+              "numbering": "4.7.5",
+              "line_start": 412,
+              "line_end": 416,
+              "content_preview": "We recommend cauTon in people with a history of thromboTc events following the SmPC for contraindicaTons. (1A)",
+              "content_token_estimate": 27,
+              "ancestor_path": [
+                "4. Treatment of Anaemia with HIF-PHI Agents (Guidelines 4.1-4.9)",
+                "Guideline 4.7 - Prescribing HIF-PHI in Sub-Groups of People with CKD:"
+              ]
+            },
+            {
+              "heading": "Guideline 4.7.6",
+              "depth": 3,
+              "numbering": "4.7.6",
+              "line_start": 416,
+              "line_end": 420,
+              "content_preview": "We suggest that HIF-PHI may be considered in people with hyporesponsiveness to ESA therapy or underlying inflammaTon, but further high-quality randomised trials are needed to confirm its effecTveness.",
+              "content_token_estimate": 51,
+              "ancestor_path": [
+                "4. Treatment of Anaemia with HIF-PHI Agents (Guidelines 4.1-4.9)",
+                "Guideline 4.7 - Prescribing HIF-PHI in Sub-Groups of People with CKD:"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Guideline 4.8 - Safety of HIF-PHI:",
+          "depth": 2,
+          "numbering": "4.8",
+          "line_start": 420,
+          "line_end": 424,
+          "content_preview": "We suggest the cauTous use of HIF-PHI in people with CKD and either known CVD or thromboTc events and consideraTon of lower dose regimes to reduce rapid rises in Hb. (2C)",
+          "content_token_estimate": 42,
+          "ancestor_path": [
+            "4. Treatment of Anaemia with HIF-PHI Agents (Guidelines 4.1-4.9)"
+          ]
+        },
+        {
+          "heading": "Guideline 4.9 - Monitoring Response to HIF-PHI:",
+          "depth": 2,
+          "numbering": "4.9",
+          "line_start": 424,
+          "line_end": 428,
+          "content_preview": "We recommend that Hb levels should be monitored every two weeks unTl the desired Hb target range of 100 to 120 g/L is achieved and stabilised, and every 4 weeks thereaVer, or as clinically indicated. ",
+          "content_token_estimate": 51,
+          "ancestor_path": [
+            "4. Treatment of Anaemia with HIF-PHI Agents (Guidelines 4.1-4.9)"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "5. Treatment of Anaemia of CKD with Blood Transfusions (Guidelines 5.1 - 5.1.3)",
+      "depth": 0,
+      "numbering": "5",
+      "line_start": 428,
+      "line_end": 430,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 5.1 Blood Transfusion in People with Anaemia of CKD:",
+          "depth": 2,
+          "numbering": "5.1",
+          "line_start": 430,
+          "line_end": 434,
+          "content_preview": "We recommend that in people with anaemia of CKD, especially those in whom kidney transplantaTon is an opTon, red blood cell transfusion should be avoided if possible, to minimise the risk of allosensi",
+          "content_token_estimate": 53,
+          "ancestor_path": [
+            "5. Treatment of Anaemia of CKD with Blood Transfusions (Guidelines 5.1 - 5.1.3)"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 5.1.1",
+              "depth": 3,
+              "numbering": "5.1.1",
+              "line_start": 434,
+              "line_end": 438,
+              "content_preview": "We recommend that if red blood cell transfusion becomes essenTal (usually in the seLng of acute blood loss, acute haemolysis or severe sepsis), transfusion should be based on policies set by local tra",
+              "content_token_estimate": 71,
+              "ancestor_path": [
+                "5. Treatment of Anaemia of CKD with Blood Transfusions (Guidelines 5.1 - 5.1.3)",
+                "Guideline 5.1 Blood Transfusion in People with Anaemia of CKD:"
+              ]
+            },
+            {
+              "heading": "Guideline 5.1.2",
+              "depth": 3,
+              "numbering": "5.1.2",
+              "line_start": 438,
+              "line_end": 442,
+              "content_preview": "We suggest using single unit transfusion, where possible, for stable non-bleeding people with CKD who clinically require transfusion. (2B)",
+              "content_token_estimate": 34,
+              "ancestor_path": [
+                "5. Treatment of Anaemia of CKD with Blood Transfusions (Guidelines 5.1 - 5.1.3)",
+                "Guideline 5.1 Blood Transfusion in People with Anaemia of CKD:"
+              ]
+            },
+            {
+              "heading": "Guideline 5.1.3",
+              "depth": 3,
+              "numbering": "5.1.3",
+              "line_start": 442,
+              "line_end": 446,
+              "content_preview": "We suggest that kidney transplant recipients, those on the transplant waiTng list or people on immunosuppressive therapy should receive only hepaTTs E negaTve blood components (all UK blood components",
+              "content_token_estimate": 69,
+              "ancestor_path": [
+                "5. Treatment of Anaemia of CKD with Blood Transfusions (Guidelines 5.1 - 5.1.3)",
+                "Guideline 5.1 Blood Transfusion in People with Anaemia of CKD:"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "6. Management of Peri-Transplant and Post-Transplant Anaemia (Guidelines 6.16.3.3)",
+      "depth": 0,
+      "numbering": "6",
+      "line_start": 446,
+      "line_end": 448,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 6.1 - Peri-Transplant Anaemia:",
+          "depth": 2,
+          "numbering": "6.1",
+          "line_start": 448,
+          "line_end": 452,
+          "content_preview": "We suggest that anaemia management should be opTmal pre-transplant in all people with CKD on the transplant wait-list, to minimise the risk of a post-transplant transfusion. (2B)",
+          "content_token_estimate": 44,
+          "ancestor_path": [
+            "6. Management of Peri-Transplant and Post-Transplant Anaemia (Guidelines 6.16.3.3)"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 6.1.1",
+              "depth": 3,
+              "numbering": "6.1.1",
+              "line_start": 452,
+              "line_end": 456,
+              "content_preview": "We suggest that for people with CKD undergoing kidney transplantaTon, ESA therapy may be conTnued, aVer a shared decision with the paTent taking account of risks and benefits, unTl endogenous EPO prod",
+              "content_token_estimate": 83,
+              "ancestor_path": [
+                "6. Management of Peri-Transplant and Post-Transplant Anaemia (Guidelines 6.16.3.3)",
+                "Guideline 6.1 - Peri-Transplant Anaemia:"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Guideline 6.2 - Blood Transfusion:",
+          "depth": 2,
+          "numbering": "6.2",
+          "line_start": 456,
+          "line_end": 460,
+          "content_preview": "We suggest for stable non-bleeding individuals who clinically require a red cell transfusion, use single unit transfusion, where possible. (2B)",
+          "content_token_estimate": 35,
+          "ancestor_path": [
+            "6. Management of Peri-Transplant and Post-Transplant Anaemia (Guidelines 6.16.3.3)"
+          ]
+        },
+        {
+          "heading": "Guideline 6.3 - Post-Transplant Anaemia:",
+          "depth": 2,
+          "numbering": "6.3",
+          "line_start": 460,
+          "line_end": 464,
+          "content_preview": "We suggest that consideraTon is given to idenTfy (and correct) reversible transplant-specific causes of anaemia. (2B)",
+          "content_token_estimate": 29,
+          "ancestor_path": [
+            "6. Management of Peri-Transplant and Post-Transplant Anaemia (Guidelines 6.16.3.3)"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 6.3.1",
+              "depth": 3,
+              "numbering": "6.3.1",
+              "line_start": 464,
+              "line_end": 468,
+              "content_preview": "We recommend that the treatment guidelines for anaemia in kidney transplant recipients should be similar to those for people with CKD not on dialysis (NDD-CKD). (1B)",
+              "content_token_estimate": 41,
+              "ancestor_path": [
+                "6. Management of Peri-Transplant and Post-Transplant Anaemia (Guidelines 6.16.3.3)",
+                "Guideline 6.3 - Post-Transplant Anaemia:"
+              ]
+            },
+            {
+              "heading": "Guideline 6.3.2",
+              "depth": 3,
+              "numbering": "6.3.2",
+              "line_start": 468,
+              "line_end": 472,
+              "content_preview": "We suggest for stable non-bleeding individuals who clinically require a red cell transfusion, use single unit transfusion, where possible. (2B)",
+              "content_token_estimate": 35,
+              "ancestor_path": [
+                "6. Management of Peri-Transplant and Post-Transplant Anaemia (Guidelines 6.16.3.3)",
+                "Guideline 6.3 - Post-Transplant Anaemia:"
+              ]
+            },
+            {
+              "heading": "Guideline 6.3.3",
+              "depth": 3,
+              "numbering": "6.3.3",
+              "line_start": 472,
+              "line_end": 476,
+              "content_preview": "We suggest the use of HIF-PHI therapy in transplant recipients should be as in people with NDD-CKD. (2B)",
+              "content_token_estimate": 26,
+              "ancestor_path": [
+                "6. Management of Peri-Transplant and Post-Transplant Anaemia (Guidelines 6.16.3.3)",
+                "Guideline 6.3 - Post-Transplant Anaemia:"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "7. Special Populations (Guidelines 7.1-7.3)",
+      "depth": 0,
+      "numbering": "7",
+      "line_start": 476,
+      "line_end": 478,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 7.1 - Malignancy:",
+          "depth": 2,
+          "numbering": "7.1",
+          "line_start": 478,
+          "line_end": 482,
+          "content_preview": "We suggest treaTng symptomaTc anaemia in people with CKD and cancer when Hb &lt;100 g/L. (2B)",
+          "content_token_estimate": 23,
+          "ancestor_path": [
+            "7. Special Populations (Guidelines 7.1-7.3)"
+          ]
+        },
+        {
+          "heading": "Guideline 7.2 - Haematological Disease:",
+          "depth": 2,
+          "numbering": "7.2",
+          "line_start": 482,
+          "line_end": 486,
+          "content_preview": "We suggest ESA therapy be considered in people with myelodysplasTc syndrome (MDS), myeloma and others with CKD and haematological disease. We make no recommendaTons on HIF-PHI therapy. (not graded)",
+          "content_token_estimate": 49,
+          "ancestor_path": [
+            "7. Special Populations (Guidelines 7.1-7.3)"
+          ]
+        },
+        {
+          "heading": "Guideline 7.3 - Pregnancy:",
+          "depth": 2,
+          "numbering": "7.3",
+          "line_start": 486,
+          "line_end": 490,
+          "content_preview": "We recommend that pregnant and post-partum women with CKD are given parenteral iron, if indicated, from the second trimester onwards, if the benefit is judged to outweigh the potenTal risk for the mot",
+          "content_token_estimate": 62,
+          "ancestor_path": [
+            "7. Special Populations (Guidelines 7.1-7.3)"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 7.3.1",
+              "depth": 3,
+              "numbering": "7.3.1",
+              "line_start": 490,
+              "line_end": 494,
+              "content_preview": "We recommend that ESA therapy during pregnancy be conTnued unless there is a major contraindicaTon (e.g., hypertension or thrombosis risk). (2C)",
+              "content_token_estimate": 36,
+              "ancestor_path": [
+                "7. Special Populations (Guidelines 7.1-7.3)",
+                "Guideline 7.3 - Pregnancy:"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Summary of Audit Measures on Anaemia of Chronic Kidney Disease",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 494,
+      "line_end": 518,
+      "content_preview": "1. ProporTon of people starTng an ESA without prior measurement of serum ferriTn and TSAT (or % HRC or CHr or Ret-He).\n2. ProporTon of people with non-dialysis dependent CKD with an eGFR &lt; 30 ml/mi",
+      "content_token_estimate": 591,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Summary of Research Recomendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 518,
+      "line_end": 541,
+      "content_preview": "We recommend the following further research including, wherever possible, randomised trials:\n\n1. RCT to evaluate the impact of IV versus oral iron in people on peritoneal dialysis.\n2. RCT of IV iron o",
+      "content_token_estimate": 500,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale for Clinical Practice Guidelines on Anaemia of Chronic Kidney Disease",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 541,
+      "line_end": 543,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "1. Assessment for Anaemia of CKD (Guidelines 1.1 - 1.5)",
+      "depth": 0,
+      "numbering": "1",
+      "line_start": 543,
+      "line_end": 545,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 1.1 - Evalua9on of Chronic Anaemia - Screening for Anaemia:",
+          "depth": 2,
+          "numbering": "1.1",
+          "line_start": 545,
+          "line_end": 551,
+          "content_preview": "We suggest that haemoglobin (Hb) levels should be rouTnely measured to screen for anaemia:\nAt least annually in people with CKD G3\nAt least twice a year in people with CKD G4-5 not on kidney replaceme",
+          "content_token_estimate": 53,
+          "ancestor_path": [
+            "1. Assessment for Anaemia of CKD (Guidelines 1.1 - 1.5)"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 551,
+      "line_end": 557,
+      "content_preview": "There is insufficient literature to suggest the ideal frequency of Hb tesTng in people with CKD who are not on ESA therapy. AlternaTvely, data from clinical trials have shown that the rate of Hb decli",
+      "content_token_estimate": 339,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 1.2 - Evalua9on of Anaemia - Haemoglobin Level:",
+          "depth": 2,
+          "numbering": "1.2",
+          "line_start": 557,
+          "line_end": 562,
+          "content_preview": "We recommend that all people with chronic anaemia associated with chronic kidney disease should be invesTgated for the cause and possible treatment, irrespecTve of the grade of kidney disease or requi",
+          "content_token_estimate": 114,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 562,
+      "line_end": 577,
+      "content_preview": "The UK Kidney AssociaTon (UKKA) and Royal College of Physicians endorse the NICE Guidelines for Chronic Kidney Disease: Managing Anaemia (1) . The reader is referred to these guidelines as well as the",
+      "content_token_estimate": 577,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 1.3 - Evalua9on of Anaemia - Kidney Func9on:",
+          "depth": 2,
+          "numbering": "1.3",
+          "line_start": 577,
+          "line_end": 581,
+          "content_preview": "We suggest that CKD should be considered as a possible cause of anaemia when the glomerular filtraTon rate (GFR) is &lt; 60 ml/min/1.73m 2 . It is more likely to be the cause if the GFR is &lt;30ml/mi",
+          "content_token_estimate": 88,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 581,
+      "line_end": 587,
+      "content_preview": "The prevalence of anaemia in people with NDD-CKD increases as the GFR progressively falls (1) . NHANES III data demonstrate a prevalence of anaemia of 1%, 9% and 33% in people with NDD-CKD with an eGF",
+      "content_token_estimate": 218,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 1.4 - Evalua9on of Anaemia - Erythropoie9n Measurement:",
+          "depth": 2,
+          "numbering": "1.4",
+          "line_start": 587,
+          "line_end": 591,
+          "content_preview": "We recommend that measurement of erythropoieTn levels should NOT rouTnely be considered for the diagnosis or management of anaemia for people with CKD. (1A)",
+          "content_token_estimate": 39,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 591,
+      "line_end": 595,
+      "content_preview": "In kidney anaemia, serum erythropoieTn (EPO) levels are lower than appropriate for the degree of anaemia. In people with CKD and anaemia, erythropoieTn Ttres are not lower but may be equal to or even ",
+      "content_token_estimate": 78,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 1.5 - Evalua9on of Anaemia - Baseline Inves9ga9ons:",
+          "depth": 2,
+          "numbering": "1.5",
+          "line_start": 595,
+          "line_end": 599,
+          "content_preview": "We recommend that iniTal clinical and laboratory evaluaTon of anaemia should be performed prior to iniTaTon of treatment for anaemia in people with CKD. (1A)",
+          "content_token_estimate": 39,
+          "ancestor_path": [
+            "Rationale"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 1.5.1",
+              "depth": 3,
+              "numbering": "1.5.1",
+              "line_start": 599,
+              "line_end": 611,
+              "content_preview": "We recommend that laboratory evaluaTon should include the following tests (1B):\nFull blood count (FBC) including-in addiTon to the Hb concentraTon:\nRed blood cell indices:\nMean corpuscular haemoglobin",
+              "content_token_estimate": 106,
+              "ancestor_path": [
+                "Rationale",
+                "Guideline 1.5 - Evalua9on of Anaemia - Baseline Inves9ga9ons:"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Tests to Determine Iron Status:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 611,
+      "line_end": 618,
+      "content_preview": "Percentage of hypochromic red blood cells (% HRC), but only if processing of blood sample is possible within 6 hours or\nReTculocyte Hb count (CHr) or equivalent tests e.g., reTculocyte Hb equivalent (",
+      "content_token_estimate": 115,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Guidelines 1.5.2",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 618,
+      "line_end": 627,
+      "content_preview": "Based on the iniTal assessment we recommend in selected cases; the following tests may be useful to diagnose the cause of anaemia (1B):\nSerum B12 and serum folate concentraTons\nTests for haemolysis (p",
+      "content_token_estimate": 99,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 627,
+      "line_end": 640,
+      "content_preview": "Although relaTve erythropoieTn deficiency is common among people with anaemia and CKD, other potenTal causes should be idenTfied or excluded. A clinical and laboratory evaluaTon of the cause of anaemi",
+      "content_token_estimate": 187,
+      "ancestor_path": []
+    },
+    {
+      "heading": "a) Assessment of anaemia severity",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 640,
+      "line_end": 648,
+      "content_preview": "In people with CKD not yet requiring dialysis and in those on peritoneal dialysis (PD), the Tming of the blood sample draw is not criTcal because plasma volume in these people remains relaTvely consta",
+      "content_token_estimate": 449,
+      "ancestor_path": []
+    },
+    {
+      "heading": "b) Assessment of Bone Marrow Responsiveness",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 648,
+      "line_end": 658,
+      "content_preview": "In general, anaemia of CKD (anaemia of chronic disease) is normochromic and normocyTc and is morphologically indisTnguishable from the anaemia of chronic illness. IniTal assessment of anaemia in peopl",
+      "content_token_estimate": 329,
+      "ancestor_path": []
+    },
+    {
+      "heading": "c) Evalua9ng Iron Status in Anaemic People with CKD",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 658,
+      "line_end": 667,
+      "content_preview": "The aim of evaluaTng iron status is to assess:\n\n1. Iron level in Tssue stores and\n2. The adequacy of iron uTlisaTon for erythropoiesis.\n\nSerum ferriTn level is the only available blood marker of stora",
+      "content_token_estimate": 112,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Tests limita9ons",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 667,
+      "line_end": 683,
+      "content_preview": "HRC esTmaTon is a useful test for assessment of iron availability but is limited by the effect of sample storage Tme and need for special analysers. Long sample storage Tme (&gt; 6 hours) may spurious",
+      "content_token_estimate": 827,
+      "ancestor_path": []
+    },
+    {
+      "heading": "2. Treatment of Anaemia of CKD with Iron (Guidelines 2.1 - 2.7)",
+      "depth": 0,
+      "numbering": "2",
+      "line_start": 683,
+      "line_end": 685,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 2.1 - Treatment of Anaemia with Iron therapy - Iron Reple9on:",
+          "depth": 2,
+          "numbering": "2.1",
+          "line_start": 685,
+          "line_end": 689,
+          "content_preview": "We recommend that people should be iron replete to achieve and aim to maintain target Hb range whether receiving ESA or HIF PHI or not. (1B)",
+          "content_token_estimate": 35,
+          "ancestor_path": [
+            "2. Treatment of Anaemia of CKD with Iron (Guidelines 2.1 - 2.7)"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Iron repleTon is usually defined as:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 689,
+      "line_end": 694,
+      "content_preview": "%HRC &lt;6% / CHr or RET-He &gt;31 pg / ferriTn and TSAT (&gt;100 microgram/L and &gt;20%) in people with non-dialysis dependent CKD (NDD-CKD) or on PD and &gt;200 microgram/L in people receiving HD. ",
+      "content_token_estimate": 124,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 694,
+      "line_end": 735,
+      "content_preview": "The definiTon of 'adequate' iron status (1) is:\nSerum ferriTn\no 200-700 microgram/L in people receiving HD\no 100-600 microgram/L in people with NDD-CKD and\nHRC &lt;6%, or CHr/RET-He &gt;31 pg\nTSAT 20%",
+      "content_token_estimate": 1981,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 2.2.1",
+          "depth": 3,
+          "numbering": "2.2.1",
+          "line_start": 735,
+          "line_end": 739,
+          "content_preview": "We recommend that ESA or HIF-PHI therapy should not be iniTated in the presence of absolute iron deficiency (ferriTn &lt;100 mcg/L in NDD-CKD and &lt;200 mcg/L in DD-CKD) or funcTonal Iron deficiency ",
+          "content_token_estimate": 96,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        },
+        {
+          "heading": "Guideline 2.2.2",
+          "depth": 3,
+          "numbering": "2.2.2",
+          "line_start": 739,
+          "line_end": 743,
+          "content_preview": "We suggest that to define funcTonal iron deficiency (FID) ('iron restricted erythropoiesis'), a TSAT &lt;20% in people with NDD-CKD or maintained on PD, and in those receiving HD be used. Normal or hi",
+          "content_token_estimate": 82,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 743,
+      "line_end": 755,
+      "content_preview": "Iron is required for producTon of new red cells. Iron must be supplied to the erythropoieTc Tssue at an adequate rate, parTcularly if sTmulated by ESA or HIF-PHI therapy.\nFor people with CKD on dialys",
+      "content_token_estimate": 603,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 2.3 - Treatment of Anaemia with Iron Therapy - Route of Administra9on:",
+          "depth": 2,
+          "numbering": "2.3",
+          "line_start": 755,
+          "line_end": 759,
+          "content_preview": "We suggest that for people with CKD not requiring HD, or people currently receiving PD who are being considered for ESA therapy, intravenous iron should be considered to reduce ESA dose requirements. ",
+          "content_token_estimate": 51,
+          "ancestor_path": [
+            "Rationale"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 2.3.1",
+              "depth": 3,
+              "numbering": "2.3.1",
+              "line_start": 759,
+              "line_end": 763,
+              "content_preview": "We suggest for people with NDD-CKD or maintained on PD (i.e. not requiring HD), the choice between oral vs. parenteral iron depends on a shared decision and should include the impact of the severity o",
+              "content_token_estimate": 86,
+              "ancestor_path": [
+                "Rationale",
+                "Guideline 2.3 - Treatment of Anaemia with Iron Therapy - Route of Administra9on:"
+              ]
+            },
+            {
+              "heading": "Guideline 2.3.2",
+              "depth": 3,
+              "numbering": "2.3.2",
+              "line_start": 763,
+              "line_end": 767,
+              "content_preview": "We recommend that most people on haemodialysis will require IV iron. (1A)",
+              "content_token_estimate": 18,
+              "ancestor_path": [
+                "Rationale",
+                "Guideline 2.3 - Treatment of Anaemia with Iron Therapy - Route of Administra9on:"
+              ]
+            },
+            {
+              "heading": "Guideline 2.3.3",
+              "depth": 3,
+              "numbering": "2.3.3",
+              "line_start": 767,
+              "line_end": 776,
+              "content_preview": "We suggest when offering IV iron therapy to people not receiving in-centre HD, to consider high dose, low frequency (HiD/LF) IV iron as the treatment of choice for adults and young people when trying ",
+              "content_token_estimate": 120,
+              "ancestor_path": [
+                "Rationale",
+                "Guideline 2.3 - Treatment of Anaemia with Iron Therapy - Route of Administra9on:"
+              ]
+            },
+            {
+              "heading": "Guideline 2.3.4",
+              "depth": 3,
+              "numbering": "2.3.4",
+              "line_start": 776,
+              "line_end": 780,
+              "content_preview": "We suggest the frequency of administraTon of HiD/LF IV iron for people with CKD not requiring HD and for people receiving PD needs to be tailored for each person as there is no clear data. (not graded",
+              "content_token_estimate": 50,
+              "ancestor_path": [
+                "Rationale",
+                "Guideline 2.3 - Treatment of Anaemia with Iron Therapy - Route of Administra9on:"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 780,
+      "line_end": 817,
+      "content_preview": "The evidence base for IV iron over oral iron in people with CKD who are pre-dialysis or maintained on PD is limited. Oral iron, if tolerated, appears to be adequate in most people parTcularly in combi",
+      "content_token_estimate": 2359,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 2.4 - Treatment of Anaemia with Iron Therapy - Upper Limit for Iron Therapy:",
+          "depth": 2,
+          "numbering": "2.4",
+          "line_start": 817,
+          "line_end": 821,
+          "content_preview": "For people not on HD, we recommend that serum ferriTn should not exceed 600 mcg/L in those treated with iron. To achieve this, iron management should be reviewed when ferriTn is &gt;500 mcg/L, recogni",
+          "content_token_estimate": 66,
+          "ancestor_path": [
+            "Rationale"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 2.4.1",
+              "depth": 3,
+              "numbering": "2.4.1",
+              "line_start": 821,
+              "line_end": 825,
+              "content_preview": "For people receiving HD, we recommend that proacTve high-dose IV iron, iniTally 600 mg in divided doses in the first month and then 400 mg every month (or equivalent) should be given unless ferriTn &g",
+              "content_token_estimate": 58,
+              "ancestor_path": [
+                "Rationale",
+                "Guideline 2.4 - Treatment of Anaemia with Iron Therapy - Upper Limit for Iron Therapy:"
+              ]
+            },
+            {
+              "heading": "Guideline 2.4.2",
+              "depth": 3,
+              "numbering": "2.4.2",
+              "line_start": 825,
+              "line_end": 829,
+              "content_preview": "We suggest a tailored approach by clinicians to assess the risk and benefit of starTng a proacTve IV iron protocol in people who have been established on HD for &gt;12 months. (2B)",
+              "content_token_estimate": 45,
+              "ancestor_path": [
+                "Rationale",
+                "Guideline 2.4 - Treatment of Anaemia with Iron Therapy - Upper Limit for Iron Therapy:"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 829,
+      "line_end": 856,
+      "content_preview": "Iron overload is defined as increased total body iron content with the possible risk of organ dysfuncTon (1) . There is no clinically available method that accurately determines total body iron conten",
+      "content_token_estimate": 1512,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 2.5 - Treatment of Iron Deficiency without Anaemia:",
+          "depth": 2,
+          "numbering": "2.5",
+          "line_start": 856,
+          "line_end": 860,
+          "content_preview": "We recommend for people with chronic kidney disease with iron deficiency without anaemia and concomitant heart failure administraTon of IV iron to improve well-being, physical funcTon, and to reduce h",
+          "content_token_estimate": 57,
+          "ancestor_path": [
+            "Rationale"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 2.5.1",
+              "depth": 3,
+              "numbering": "2.5.1",
+              "line_start": 860,
+              "line_end": 864,
+              "content_preview": "We suggest for people with CKD with iron deficiency but without anaemia and no concomitant heart failure, a trial of oral or IV iron for improvement in clinical symptoms such as restless legs. (2B)",
+              "content_token_estimate": 49,
+              "ancestor_path": [
+                "Rationale",
+                "Guideline 2.5 - Treatment of Iron Deficiency without Anaemia:"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 864,
+      "line_end": 866,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Iron Deficiency and no Anaemia",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 866,
+      "line_end": 888,
+      "content_preview": "It is not known whether treatment of people with CKD and Hb values &gt;120 g/L in the presence of iron deficiency is beneficial. The Iron and Heart mulTcentre double-blinded randomised controlled clin",
+      "content_token_estimate": 1605,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 2.6 - Administra9on of IV Iron - Safety Recommenda9ons:",
+          "depth": 2,
+          "numbering": "2.6",
+          "line_start": 888,
+          "line_end": 892,
+          "content_preview": "We recommend that resuscitaTve medicaTon and personnel trained to evaluate and resuscitate be present in the event of anaphylaxis at each administraTon of intravenous iron. (1A)",
+          "content_token_estimate": 44,
+          "ancestor_path": [
+            "Iron Deficiency and no Anaemia"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 2.6.1",
+              "depth": 3,
+              "numbering": "2.6.1",
+              "line_start": 892,
+              "line_end": 896,
+              "content_preview": "We recommend avoiding parenteral iron therapy in people with acTve infecTon. (1C)",
+              "content_token_estimate": 20,
+              "ancestor_path": [
+                "Iron Deficiency and no Anaemia",
+                "Guideline 2.6 - Administra9on of IV Iron - Safety Recommenda9ons:"
+              ]
+            },
+            {
+              "heading": "Guideline 2.6.2",
+              "depth": 3,
+              "numbering": "2.6.2",
+              "line_start": 896,
+              "line_end": 902,
+              "content_preview": "We suggest avoiding iron therapy in people with the following condiTons (not graded):\nHepaTTs C virus infecTon (PosiTve PCR test)\nHaemochromatosis",
+              "content_token_estimate": 36,
+              "ancestor_path": [
+                "Iron Deficiency and no Anaemia",
+                "Guideline 2.6 - Administra9on of IV Iron - Safety Recommenda9ons:"
+              ]
+            },
+            {
+              "heading": "Guideline 2.6.3",
+              "depth": 3,
+              "numbering": "2.6.3",
+              "line_start": 902,
+              "line_end": 908,
+              "content_preview": "We suggest cauTon in prescribing parenteral iron in people with (not graded):\nChronic liver disease\nHeterozygous for any of the haemochromatosis genes (C282Y (c.845G&gt;A), H63D (c.187C&gt;G) and S65C",
+              "content_token_estimate": 53,
+              "ancestor_path": [
+                "Iron Deficiency and no Anaemia",
+                "Guideline 2.6 - Administra9on of IV Iron - Safety Recommenda9ons:"
+              ]
+            },
+            {
+              "heading": "Guideline 2.6.4",
+              "depth": 3,
+              "numbering": "2.6.4",
+              "line_start": 908,
+              "line_end": 912,
+              "content_preview": "We suggest choice of parenteral iron be tailored, considering the benefits and risks associated with available iron preparaTons. (2C)",
+              "content_token_estimate": 33,
+              "ancestor_path": [
+                "Iron Deficiency and no Anaemia",
+                "Guideline 2.6 - Administra9on of IV Iron - Safety Recommenda9ons:"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 912,
+      "line_end": 929,
+      "content_preview": "All forms of IV iron may be associated with acute adverse events (AEs). Immune mechanisms (including IgE-mediated responses or complement acTvaTon-related pseudo-allergy) may have a role in some cases",
+      "content_token_estimate": 1046,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 929,
+      "line_end": 967,
+      "content_preview": "Parenteral iron administraTon to people receiving haemodialysis has been shown to result in a reducTon of circulaTng TNFα levels (1) . In addiTon, chronic iron loading has been associated with an impa",
+      "content_token_estimate": 2679,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 967,
+      "line_end": 977,
+      "content_preview": "The most commonly used oral treatments for iron deficiency anaemia oVen cause gastrointesTnal side effects, leading to disconTnuaTon of treatment. GastrointesTnal side effects most oVen occur due to t",
+      "content_token_estimate": 401,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Alterna9ve Prepara9ons:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 977,
+      "line_end": 979,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Ferric Citrate",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 979,
+      "line_end": 1001,
+      "content_preview": "Ferric citrate is used in people with CKD undergoing dialysis primarily for phosphate binding but is also employed off-label as an iron supplement.\n\nThere have been two meta-analyses of ferric citrate",
+      "content_token_estimate": 878,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Ferric Maltol",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1001,
+      "line_end": 1007,
+      "content_preview": "Ferric maltol is a compound composed of ferric iron and maltol, a naturally occurring sugar derivaTve commonly found in various food products. This complex remains Tghtly bound in the intesTnal tract ",
+      "content_token_estimate": 413,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Ferric Pyrophosphate (FPC)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1007,
+      "line_end": 1013,
+      "content_preview": "FPC is a complex iron salt which is administered along with dialysate. Two phase 3 trials, CRUISE 1 and 2, involving 599 iron-replete parTcipants receiving chronic haemodialysis having been performed ",
+      "content_token_estimate": 274,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Sucrosomial Iron",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1013,
+      "line_end": 1019,
+      "content_preview": "Sucrosomial iron comprises ferric pyrophosphate enclosed within a membrane made of phospholipids and sucrose esters of faXy acids.\n\nIn a randomised trial of 99 parTcipants with CKD and iron deficiency",
+      "content_token_estimate": 224,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Hypophosphataemia",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1019,
+      "line_end": 1041,
+      "content_preview": "Hypophosphataemia is a known side effect of intravenous iron preparaTons as listed in the SmPCs of IV iron products. It is a common side effect with ferric carboxymaltose (FCM) (15) . As detailed in t",
+      "content_token_estimate": 1401,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 2.7 - Monitoring of Treatment - Iron Therapy:",
+          "depth": 2,
+          "numbering": "2.7",
+          "line_start": 1041,
+          "line_end": 1045,
+          "content_preview": "We recommend regular monitoring of iron status (every 1-3 months) in people receiving intravenous iron to avoid toxicity. (defined as a serum ferriTn &gt;800 mcg/L or TSAT &gt;40%) (1B)",
+          "content_token_estimate": 46,
+          "ancestor_path": [
+            "Hypophosphataemia"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 2.7.1",
+              "depth": 3,
+              "numbering": "2.7.1",
+              "line_start": 1045,
+              "line_end": 1049,
+              "content_preview": "We recommend that a serum ferriTn consistently &gt;800 mcg/L with no evidence of inflammaTon (normal CRP) is suggesTve of iron overload or potenTal iron toxicity. (1B)",
+              "content_token_estimate": 41,
+              "ancestor_path": [
+                "Hypophosphataemia",
+                "Guideline 2.7 - Monitoring of Treatment - Iron Therapy:"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1049,
+      "line_end": 1065,
+      "content_preview": "Intravenous iron therapy has potenTal risks as well as benefits. Toxicity associated with high ferriTn outcomes was originally reported in the context of mulTple transfusions in the pre-ESA era. The r",
+      "content_token_estimate": 527,
+      "ancestor_path": []
+    },
+    {
+      "heading": "3. Treatment of Anaemia with Erythropoiesis Stimulating Agents (Guidelines 3.13.17)",
+      "depth": 0,
+      "numbering": "3",
+      "line_start": 1065,
+      "line_end": 1067,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 3.1- Inves9ga9ons Before Ini9a9ng ESA Therapy:",
+          "depth": 2,
+          "numbering": "3.1",
+          "line_start": 1067,
+          "line_end": 1071,
+          "content_preview": "We recommend that all correctable causes of anaemia should be ruled out before considering treatment with ESAs. (1B)",
+          "content_token_estimate": 29,
+          "ancestor_path": [
+            "3. Treatment of Anaemia with Erythropoiesis Stimulating Agents (Guidelines 3.13.17)"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1071,
+      "line_end": 1075,
+      "content_preview": "InvesTgaTons for iron deficiency, folate and B12 deficiency, hyperparathyroidism, inflammatory states as well as gastro-intesTnal blood losses should be invesTgated and addressed before iniTaTng ESA t",
+      "content_token_estimate": 124,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 3.2 - Treatment of Anaemia with Iron Therapy - Ini9a9on of ESA and Iron Status:",
+          "depth": 2,
+          "numbering": "3.2",
+          "line_start": 1075,
+          "line_end": 1079,
+          "content_preview": "We recommend that ESA therapy should NOT be iniTated in the presence of absolute iron deficiency, (ferriTn &lt;100 mcg/L in people with non-dialysis dependent CKD (NDD-CKD) and &lt;200 mcg/L in people",
+          "content_token_estimate": 122,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1079,
+      "line_end": 1091,
+      "content_preview": "Iron is required for producTon of new red cells. Iron must be supplied to the erythropoieTc Tssue at an adequate rate, parTcularly if sTmulated by ESA therapy. If iron stores are low ESAs can sTll be ",
+      "content_token_estimate": 702,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 3.3 - Treatment of Anaemia - Erythropoiesis S9mula9ng Agents:",
+          "depth": 2,
+          "numbering": "3.3",
+          "line_start": 1091,
+          "line_end": 1095,
+          "content_preview": "We recommend that treatment with Erythropoiesis STmulaTng Agents (ESAs) should be offered to people with anaemia of CKD, who are likely to benefit in terms of quality of life and physical funcTon and ",
+          "content_token_estimate": 73,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1095,
+      "line_end": 1101,
+      "content_preview": "Treatment of anaemia in CKD with ESA can be expensive (1) , takes Tme to work and carries a small but significant risk to the paTent. It is therefore reasonable, as with any therapy, to treat only tho",
+      "content_token_estimate": 172,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 3.4 - Treatment of Anaemia with ESA therapy - Target Haemoglobin Range:",
+          "depth": 2,
+          "numbering": "3.4",
+          "line_start": 1101,
+          "line_end": 1107,
+          "content_preview": "We recommend that people with non-dialysis dependent CKD (NDD-CKD) or those receiving dialysis, who are on ESA therapy, should achieve Hb between:\n100 and 120 g/L in adults, young people and children ",
+          "content_token_estimate": 84,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        },
+        {
+          "heading": "Guideline 3.5 - Treatment of Anaemia without ESA Therapy - Target Haemoglobin Range:",
+          "depth": 2,
+          "numbering": "3.5",
+          "line_start": 1107,
+          "line_end": 1111,
+          "content_preview": "We suggest that this Hb target range applies exclusively to people with CKD receiving ESAs and is not intended to apply to the treatment of iron deficiency in people receiving iron therapy without the",
+          "content_token_estimate": 54,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale for Guidelines 3.4 and 3.5",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1111,
+      "line_end": 1160,
+      "content_preview": "In determining target Hb guidelines it is important to assess potenTal benefits (in terms of possible improved survival, improvement in health-related quality of life (HRQoL) and avoidance of transfus",
+      "content_token_estimate": 3699,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 3.6 - Treatment of Anaemia - Choice of ESA:",
+          "depth": 2,
+          "numbering": "3.6",
+          "line_start": 1160,
+          "line_end": 1164,
+          "content_preview": "We recommend that the choice of ESA is based on local availability and cost of ESAs. (1B)",
+          "content_token_estimate": 22,
+          "ancestor_path": [
+            "Rationale for Guidelines 3.4 and 3.5"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1164,
+      "line_end": 1168,
+      "content_preview": "Many studies have been published comparing different ESA products against each other when used at different dosing intervals, by different routes of administraTon and in different paTent groups. (1, 2",
+      "content_token_estimate": 110,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 3.7 - Treatment of Anaemia - Ini9al ESA Dose:",
+          "depth": 2,
+          "numbering": "3.7",
+          "line_start": 1168,
+          "line_end": 1172,
+          "content_preview": "We suggest that the iniTal ESA dose should be determined by the individual's Hb level, the desired target Hb range, the observed rate of increase in Hb level and clinical circumstances. (2B)",
+          "content_token_estimate": 47,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1172,
+      "line_end": 1184,
+      "content_preview": "For iniTaTon of ESA therapy, several points are to be considered:\nType(s) of licensed ESAs available\nIniTal ESA dose\nESA dose adjustment: dose required for Hb correcTon vs. maintenance.\nRoute of ESA a",
+      "content_token_estimate": 244,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 3.8 - Treatment of Anaemia with ESA Therapy - Route of Administra9on:",
+          "depth": 2,
+          "numbering": "3.8",
+          "line_start": 1184,
+          "line_end": 1188,
+          "content_preview": "We suggest that the route of ESA administraTon should be determined by the CKD grade, paTent preference, treatment seLng, efficacy, safety, and class of ESA used. Subcutaneous (SC) use is preferable i",
+          "content_token_estimate": 141,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1188,
+      "line_end": 1192,
+      "content_preview": "In the outpaTent seLng, SC administraTon is the only rouTnely feasible route of administraTon for non-HD CKD paTents. For HD paTents, either SC or IV administraTon is feasible. Among short-acTng ESAs,",
+      "content_token_estimate": 322,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 3.9 - Treatment of Anaemia with ESA Therapy - Frequency of Administra9on:",
+          "depth": 2,
+          "numbering": "3.9",
+          "line_start": 1192,
+          "line_end": 1196,
+          "content_preview": "We suggest that the frequency of administraTon should be determined by the CKD grade, preferences of treated populaTon, treatment seLng and class of ESA. Less frequent administraTon using long-acTng E",
+          "content_token_estimate": 70,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1196,
+      "line_end": 1200,
+      "content_preview": "The frequency of ESA administraTon should be determined by the CKD treatment seLng and the class of ESA. Maximum efficacy is achieved by using the dosing intervals that are ESA class specific. In peop",
+      "content_token_estimate": 187,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 3.10 - Treatment of Anaemia with ESA Therapy - ESA Dose Adjustments:",
+          "depth": 2,
+          "numbering": "3.10",
+          "line_start": 1200,
+          "line_end": 1204,
+          "content_preview": "We recommend that adjustments to ESA doses should be considered when Hb is &lt;105 or &gt;115 g/L in adults, young people and children aged 2 years and older. (1A)",
+          "content_token_estimate": 40,
+          "ancestor_path": [
+            "Rationale"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 3.10.1",
+              "depth": 3,
+              "numbering": "3.10.1",
+              "line_start": 1204,
+              "line_end": 1208,
+              "content_preview": "We suggest these thresholds for intervenTon should achieve a populaTon distribuTon centered on a mean of 110 g/L with a range of 100-120 g/L. (2B)",
+              "content_token_estimate": 36,
+              "ancestor_path": [
+                "Rationale",
+                "Guideline 3.10 - Treatment of Anaemia with ESA Therapy - ESA Dose Adjustments:"
+              ]
+            },
+            {
+              "heading": "Guideline 3.10.2",
+              "depth": 3,
+              "numbering": "3.10.2",
+              "line_start": 1208,
+              "line_end": 1212,
+              "content_preview": "We suggest in children younger than 2 years to keep the Hb level within the aspiraTonal range, do not wait unTl Hb levels are outside the aspiraTonal range before adjusTng treatment (for example, take",
+              "content_token_estimate": 68,
+              "ancestor_path": [
+                "Rationale",
+                "Guideline 3.10 - Treatment of Anaemia with ESA Therapy - ESA Dose Adjustments:"
+              ]
+            },
+            {
+              "heading": "Guideline 3.10.3",
+              "depth": 3,
+              "numbering": "3.10.3",
+              "line_start": 1212,
+              "line_end": 1216,
+              "content_preview": "We suggest that ESA doses should ideally be decreased rather than withheld when a downward adjustment of Hb level is desirable. (2B)",
+              "content_token_estimate": 33,
+              "ancestor_path": [
+                "Rationale",
+                "Guideline 3.10 - Treatment of Anaemia with ESA Therapy - ESA Dose Adjustments:"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Guideline 3.11 - Treatment of Anaemia with ESA Therapy - Specific Situa9ons:",
+          "depth": 2,
+          "numbering": "3.11",
+          "line_start": 1216,
+          "line_end": 1220,
+          "content_preview": "We suggest that ESA administraTon in ESA-dependent people should conTnue during acute illness, surgical procedures or any other cause of hospitalisaTon, unless there is a clear contra-indicaTon (for e",
+          "content_token_estimate": 64,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale for Guidelines 3.10 and 3.11",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1220,
+      "line_end": 1228,
+      "content_preview": "The NICE Guidelines for anaemia management in chronic kidney disease recommend an 'aspiraTonal' Hb of 100-120 g/L. It is anTcipated that if a populaTon Hb distribuTon is centred on this outcome with a",
+      "content_token_estimate": 360,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 3.12 - Cau9on in Prescribing ESA in Certain People with CKD:",
+          "depth": 2,
+          "numbering": "3.12",
+          "line_start": 1228,
+          "line_end": 1232,
+          "content_preview": "We suggest exerTng cauTon while prescribing ESA therapy in people with CKD with a history of stroke, or malignancy, parTcularly in those with acTve malignancy when cure is the anTcipated outcome. (2C)",
+          "content_token_estimate": 50,
+          "ancestor_path": [
+            "Rationale for Guidelines 3.10 and 3.11"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1232,
+      "line_end": 1250,
+      "content_preview": "In the TREAT trial, there was an increased risk of stroke in the high ESA group (HR 1.92; 95% CI 1.382.68): 5.0% of the high Hb group had a stroke compared to 2.6% in the placebo group (P&lt;0.001).\n\n",
+      "content_token_estimate": 735,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 3.13 - Monitoring of ESA Treatment - Haemoglobin during ESA Therapy:",
+          "depth": 2,
+          "numbering": "3.13",
+          "line_start": 1250,
+          "line_end": 1254,
+          "content_preview": "We suggest that Hb concentraTon should be monitored every 2-4 weeks in the correcTon phase or aVer a dose adjustment and every 1-3 months for stable individuals in the maintenance phase of ESA treatme",
+          "content_token_estimate": 68,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1254,
+      "line_end": 1258,
+      "content_preview": "It is important to closely monitor Hb response to treatment to monitor for possible adverse events and plan ESA dose modificaTon. More frequent Hb monitoring may be needed for people with unstable Hb,",
+      "content_token_estimate": 197,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 3.14 - Monitoring of ESA Treatment - Resistance to ESA Therapy:",
+          "depth": 2,
+          "numbering": "3.14",
+          "line_start": 1258,
+          "line_end": 1262,
+          "content_preview": "We recommend that inadequate response ('resistance') to ESA therapy is defined as failure to reach the target Hb range despite SC epoeTn dose &gt;300 IU/kg/week (450 IU/kg/week IV epoeTn), or darbepoe",
+          "content_token_estimate": 86,
+          "ancestor_path": [
+            "Rationale"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 3.14.1",
+              "depth": 3,
+              "numbering": "3.14.1",
+              "line_start": 1262,
+              "line_end": 1266,
+              "content_preview": "We suggest clinicians consider accepTng lower aspiraTonal haemoglobin target range in those on high, escalaTng ESA doses with inadequate response or consider alternaTve therapy such as a trial use of ",
+              "content_token_estimate": 63,
+              "ancestor_path": [
+                "Rationale",
+                "Guideline 3.14 - Monitoring of ESA Treatment - Resistance to ESA Therapy:"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1266,
+      "line_end": 1290,
+      "content_preview": "Extensive publicaTons are available on the topic of resistance to ESA therapy including the Revised European Best PracTce Guidelines (1) which defines ESA resistance as above. Failure to respond at an",
+      "content_token_estimate": 505,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 3.15 - Monitoring of ESA Treatment - Evalua9on for ESA Induced Pure Red Cell Aplasia:",
+          "depth": 2,
+          "numbering": "3.15",
+          "line_start": 1290,
+          "line_end": 1298,
+          "content_preview": "We recommend that a diagnosis of ESA induced pure red cell aplasia (PRCA) should be considered whenever a person receiving long term ESA therapy (&gt;8 weeks) develops all the following (1A):\nA sudden",
+          "content_token_estimate": 111,
+          "ancestor_path": [
+            "Rationale"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 3.15.1",
+              "depth": 3,
+              "numbering": "3.15.1",
+              "line_start": 1298,
+              "line_end": 1302,
+              "content_preview": "We recommend that all ESA therapy should be stopped in people who develop ESA induced PRCA. (1A)",
+              "content_token_estimate": 24,
+              "ancestor_path": [
+                "Rationale",
+                "Guideline 3.15 - Monitoring of ESA Treatment - Evalua9on for ESA Induced Pure Red Cell Aplasia:"
+              ]
+            },
+            {
+              "heading": "Guideline 3.15.2",
+              "depth": 3,
+              "numbering": "3.15.2",
+              "line_start": 1302,
+              "line_end": 1306,
+              "content_preview": "We recommend that individuals who remain transfusion dependent aVer withdrawing ESA therapy should be treated with immunosuppressant medicaTons guided by the level of anT EPO anTbodies. (1B)",
+              "content_token_estimate": 47,
+              "ancestor_path": [
+                "Rationale",
+                "Guideline 3.15 - Monitoring of ESA Treatment - Evalua9on for ESA Induced Pure Red Cell Aplasia:"
+              ]
+            },
+            {
+              "heading": "Guideline 3.15.3",
+              "depth": 3,
+              "numbering": "3.15.3",
+              "line_start": 1306,
+              "line_end": 1310,
+              "content_preview": "We do not recommend rouTne screening for anT-erythropoieTn anTbodies among people with CKD regularly treated with erythropoiesis sTmulaTng agents. (1B)",
+              "content_token_estimate": 37,
+              "ancestor_path": [
+                "Rationale",
+                "Guideline 3.15 - Monitoring of ESA Treatment - Evalua9on for ESA Induced Pure Red Cell Aplasia:"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1310,
+      "line_end": 1331,
+      "content_preview": "AnT-erythropoieTn anTbody associated pure red cell aplasia (PRCA) is a very rare cause of resistance characterised by\ntransfusion dependency\nlow reTculocyte count (&lt;1%)\nlack of proerythroid progeni",
+      "content_token_estimate": 368,
+      "ancestor_path": []
+    },
+    {
+      "heading": "The diagnosis of PRCA is established by:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1331,
+      "line_end": 1337,
+      "content_preview": "Bone marrow examinaTon: which confirms severe hypoplasia of erythroid precursors (&lt;5%).\nThe presence of anT-erythropoieTn anTbodies:\no There are several available tests to detect anTbodies to eryth",
+      "content_token_estimate": 108,
+      "ancestor_path": []
+    },
+    {
+      "heading": "There are several tests that can be used. These include:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1337,
+      "line_end": 1352,
+      "content_preview": "radioimmunoprecipitation assay\nelectrochemiluminescence bridging enzyme-linked immunosorbent assay\nsurface plasmon resonance-based immunoassay.\n\nThe most validated test is the radioimmunoprecipitation",
+      "content_token_estimate": 487,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 3.16 - Monitoring of ESA treatment - Hypertension during ESA therapy:",
+          "depth": 2,
+          "numbering": "3.16",
+          "line_start": 1352,
+          "line_end": 1356,
+          "content_preview": "We recommend that blood pressure should be monitored in all people receiving ESAs and, if present, hypertension be treated by volume removal and/or hypotensive drugs. (1A)",
+          "content_token_estimate": 42,
+          "ancestor_path": [
+            "There are several tests that can be used. These include:"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1356,
+      "line_end": 1362,
+      "content_preview": "Hypertension is the most common complicaTon in CKD and can be aggravated by ESA treatment (1) . Earlier studies demonstrated higher incidence rates of hypertension though ESA doses used were higher an",
+      "content_token_estimate": 212,
+      "ancestor_path": []
+    },
+    {
+      "heading": "4. Treatment of Anaemia with HIF-PHI Agents (Guidelines 4.1-4.9)",
+      "depth": 0,
+      "numbering": "4",
+      "line_start": 1362,
+      "line_end": 1364,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 4.1 - Treatment of Anaemia - HIF-PHI Agents",
+          "depth": 2,
+          "numbering": "4.1",
+          "line_start": 1364,
+          "line_end": 1368,
+          "content_preview": "We recommend that treatment with HIF-PHI agents should be offered aVer iron repleTon, to people with symptomaTc anaemia (Hb &lt;105 g/L) of CKD (stages 3-5 (eGFR &lt;60 ml/min/1.73m 2 )) who are not r",
+          "content_token_estimate": 104,
+          "ancestor_path": [
+            "4. Treatment of Anaemia with HIF-PHI Agents (Guidelines 4.1-4.9)"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 4.1.1 - Treatment of Anaemia - DD-CKD and HIF-PHI Agents",
+              "depth": 3,
+              "numbering": "4.1.1",
+              "line_start": 1368,
+              "line_end": 1372,
+              "content_preview": "We suggest that that treatment with HIF-PHI agents should be considered aVer iron repleTon, to people with DD-CKD and symptomaTc anaemia (Hb &lt;105 g/L) who are likely to benefit in terms of quality ",
+              "content_token_estimate": 81,
+              "ancestor_path": [
+                "4. Treatment of Anaemia with HIF-PHI Agents (Guidelines 4.1-4.9)",
+                "Guideline 4.1 - Treatment of Anaemia - HIF-PHI Agents"
+              ]
+            },
+            {
+              "heading": "Guideline 4.1.2 - Treatment of Anaemia - Pa9ents intolerant to ESA",
+              "depth": 3,
+              "numbering": "4.1.2",
+              "line_start": 1372,
+              "line_end": 1376,
+              "content_preview": "We suggest that that treatment with HIF-PHI agents should be considered as an opTon, aVer iron repleTon, to people who are intolerant to ESA therapy. (2C)",
+              "content_token_estimate": 38,
+              "ancestor_path": [
+                "4. Treatment of Anaemia with HIF-PHI Agents (Guidelines 4.1-4.9)",
+                "Guideline 4.1 - Treatment of Anaemia - HIF-PHI Agents"
+              ]
+            },
+            {
+              "heading": "Guideline 4.1.3 - Choosing between ESA and HIF-PHI therapy for people with non-dialysis dependent CKD and DD-CKD",
+              "depth": 3,
+              "numbering": "4.1.3",
+              "line_start": 1376,
+              "line_end": 1380,
+              "content_preview": "We suggest, when deciding between ESA and HIF-PHI therapy for people with non-dialysis dependent CKD or DD-CKD, considering the preference of the person with anaemia of CKD, or, where appropriate, the",
+              "content_token_estimate": 83,
+              "ancestor_path": [
+                "4. Treatment of Anaemia with HIF-PHI Agents (Guidelines 4.1-4.9)",
+                "Guideline 4.1 - Treatment of Anaemia - HIF-PHI Agents"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Guideline 4.2 - Treatment of Anaemia",
+          "depth": 2,
+          "numbering": "4.2",
+          "line_start": 1380,
+          "line_end": 1384,
+          "content_preview": "We suggest that HIF-PHI administraTon in HIF-PHI-dependent people should conTnue during acute illness, surgical procedures or any other cause of hospitalisaTon, unless there is a clear contraindicaTon",
+          "content_token_estimate": 63,
+          "ancestor_path": [
+            "4. Treatment of Anaemia with HIF-PHI Agents (Guidelines 4.1-4.9)"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1384,
+      "line_end": 1407,
+      "content_preview": "Hypoxia-inducible factor-prolyl hydroxylase inhibitors (HIF-PHI therapy) also known as HIF stabilisers have emerged as a groundbreaking class of compounds that play a pivotal role in regulaTng various",
+      "content_token_estimate": 1184,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale for Treatment with HIF-PHI Agents (Guidelines 4.1-4.9)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1407,
+      "line_end": 1417,
+      "content_preview": "Published trials confirm that the six HIF-PHI agents with data are superior to placebo and noninferior to ESAs in increasing and maintaining haemoglobin (Hb) concentraTon among people with NDD-CKD and",
+      "content_token_estimate": 634,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 4.3 - Treatment of Anaemia with HIF- PHI therapy - Target Haemoglobin:",
+          "depth": 2,
+          "numbering": "4.3",
+          "line_start": 1417,
+          "line_end": 1423,
+          "content_preview": "We suggest that people over the age of 18 years with NDD-CKD on HIF-PHI therapy should achieve a Hb between:\n100 and 120 g/L in adults and young people similar to ESA therapy (2B)\nIn children and thos",
+          "content_token_estimate": 68,
+          "ancestor_path": [
+            "Rationale for Treatment with HIF-PHI Agents (Guidelines 4.1-4.9)"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 4.3.1",
+              "depth": 3,
+              "numbering": "4.3.1",
+              "line_start": 1423,
+              "line_end": 1429,
+              "content_preview": "We suggest that people over the age of 18 years with DD-CKD on HIF-PHI therapy should achieve a Hb between:\n100 and 120 g/L in adults and young people similar to ESA therapy but this may depend on the",
+              "content_token_estimate": 86,
+              "ancestor_path": [
+                "Rationale for Treatment with HIF-PHI Agents (Guidelines 4.1-4.9)",
+                "Guideline 4.3 - Treatment of Anaemia with HIF- PHI therapy - Target Haemoglobin:"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1429,
+      "line_end": 1449,
+      "content_preview": "Current targets which aim for parTal correcTon of Hb are based on clinical trials conducted more than a decade ago (1-3) . These landmark trials compared higher versus lower Hb targets achieved using ",
+      "content_token_estimate": 944,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 4.4.1",
+          "depth": 3,
+          "numbering": "4.4.1",
+          "line_start": 1449,
+          "line_end": 1453,
+          "content_preview": "We suggest that the starTng HIF PHI dose should be lower for those who are ESA-naïve versus those who are not. (2B)",
+          "content_token_estimate": 28,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        },
+        {
+          "heading": "Guideline 4.5 - Treatment of Anaemia with HIF-PHI therapy - Frequency of Administra9on:",
+          "depth": 2,
+          "numbering": "4.5",
+          "line_start": 1453,
+          "line_end": 1457,
+          "content_preview": "We suggest that the frequency of administraTon should be determined by the response to therapy to maintain the desired Hb target range of 100-120g/L . (2B)",
+          "content_token_estimate": 38,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        },
+        {
+          "heading": "Guideline 4.6 - Treatment of Anaemia with HIF-PHI Therapy - Dose Adjustments:",
+          "depth": 2,
+          "numbering": "4.6",
+          "line_start": 1457,
+          "line_end": 1461,
+          "content_preview": "We suggest that adjustments to HIF-PHI doses should be considered when Hb is &lt;105 or &gt;115 g/L in adults to balance the benefit and safety to people given the current evidence base. (2B)",
+          "content_token_estimate": 47,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale for Guidelines 4.4-4.6",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1461,
+      "line_end": 1473,
+      "content_preview": "Currently only 1 HIF-PHI has been recommended in the UK by NICE for people who have stage 3 to 5 CKD with no iron deficiency and are not on dialysis at the start of HIF-PHI treatment. Compared with ES",
+      "content_token_estimate": 683,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 4.7 - Prescribing HIF-PHI in Sub-Groups of People with CKD:",
+          "depth": 2,
+          "numbering": "4.7",
+          "line_start": 1473,
+          "line_end": 1477,
+          "content_preview": "We recommend that HIF-PHI should be avoided or used cauTously in people with acTve malignancy. (1B)",
+          "content_token_estimate": 24,
+          "ancestor_path": [
+            "Rationale for Guidelines 4.4-4.6"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 4.7.1",
+              "depth": 3,
+              "numbering": "4.7.1",
+              "line_start": 1477,
+              "line_end": 1481,
+              "content_preview": "We recommend that HIF-PHI should be avoided or used cauTously in people with autosomal dominant polycysTc kidney disease unTl further data is available. (1D)",
+              "content_token_estimate": 39,
+              "ancestor_path": [
+                "Rationale for Guidelines 4.4-4.6",
+                "Guideline 4.7 - Prescribing HIF-PHI in Sub-Groups of People with CKD:"
+              ]
+            },
+            {
+              "heading": "Guideline 4.7.2",
+              "depth": 3,
+              "numbering": "4.7.2",
+              "line_start": 1481,
+              "line_end": 1485,
+              "content_preview": "We recommend that HIF-PHI should be avoided or used cauTously in people with a history of seizures. (1B)",
+              "content_token_estimate": 26,
+              "ancestor_path": [
+                "Rationale for Guidelines 4.4-4.6",
+                "Guideline 4.7 - Prescribing HIF-PHI in Sub-Groups of People with CKD:"
+              ]
+            },
+            {
+              "heading": "Guideline 4.7.3",
+              "depth": 3,
+              "numbering": "4.7.3",
+              "line_start": 1485,
+              "line_end": 1489,
+              "content_preview": "We recommend cauTon in using HIF-PHI in people with uncontrolled hypertension . (1B)",
+              "content_token_estimate": 21,
+              "ancestor_path": [
+                "Rationale for Guidelines 4.4-4.6",
+                "Guideline 4.7 - Prescribing HIF-PHI in Sub-Groups of People with CKD:"
+              ]
+            },
+            {
+              "heading": "Guideline 4.7.4",
+              "depth": 3,
+              "numbering": "4.7.4",
+              "line_start": 1489,
+              "line_end": 1493,
+              "content_preview": "We recommend cauTon in using HIF-PHI therapy in people with reTnopathy. (1D)",
+              "content_token_estimate": 19,
+              "ancestor_path": [
+                "Rationale for Guidelines 4.4-4.6",
+                "Guideline 4.7 - Prescribing HIF-PHI in Sub-Groups of People with CKD:"
+              ]
+            },
+            {
+              "heading": "Guideline 4.7.5",
+              "depth": 3,
+              "numbering": "4.7.5",
+              "line_start": 1493,
+              "line_end": 1497,
+              "content_preview": "We recommend cauTon in people with a history of thromboTc events following the SmPC for contraindicaTons. (1A)",
+              "content_token_estimate": 27,
+              "ancestor_path": [
+                "Rationale for Guidelines 4.4-4.6",
+                "Guideline 4.7 - Prescribing HIF-PHI in Sub-Groups of People with CKD:"
+              ]
+            },
+            {
+              "heading": "Guideline 4.7.6",
+              "depth": 3,
+              "numbering": "4.7.6",
+              "line_start": 1497,
+              "line_end": 1501,
+              "content_preview": "We suggest consideraTon of use of HIF-PHI in people with hyporesponsiveness to ESA therapy or underlying inflammaTon, but further high-quality randomised trials are needed to confirm its effecTveness.",
+              "content_token_estimate": 51,
+              "ancestor_path": [
+                "Rationale for Guidelines 4.4-4.6",
+                "Guideline 4.7 - Prescribing HIF-PHI in Sub-Groups of People with CKD:"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale for certain specific groups (Guidelines 4.7)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1501,
+      "line_end": 1503,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Malignancy",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1503,
+      "line_end": 1511,
+      "content_preview": "Hypoxia inducible factor-1 alpha (HIF-1α) is a key transcripTon factor in tumour progression (1) . HIF1α inhibitors are currently used in cancer treatment (1) . GeneTc HIF acTvaTon is a central mechan",
+      "content_token_estimate": 470,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Polycys9c Kidney Disease",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1511,
+      "line_end": 1515,
+      "content_preview": "People with CKD who have underlying PolycysTc Kidney Disease were excluded from trials using HIF PHI's because of the potenTal risk of malignant transformaTon of cysts. HIF acTvaTon occurs in polycysT",
+      "content_token_estimate": 140,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Hypertension",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1515,
+      "line_end": 1519,
+      "content_preview": "Pre-clinical studies in healthy rats and rats with CKD demonstrated that HIF-PHI therapy generate significant dose-dependent blood-pressure lowering effects (7, 8) . However, so far, no significant bl",
+      "content_token_estimate": 70,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Re9nopathy",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1519,
+      "line_end": 1525,
+      "content_preview": "DiabeTc reTnopathy may be exacerbated potenTally by the effect of HIF-PHI therapy on neovascularisaTon (9) . There were few parTcipants with significant reTnopathy recruited to the current published p",
+      "content_token_estimate": 258,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Thromboembolic events",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1525,
+      "line_end": 1533,
+      "content_preview": "AdministraTon of HIF-PHI therapy has been associated with a higher risk of thromboTc events, including dialysis vascular access thrombosis compared with ESAs or placebo (8, 18) . The underlying mechan",
+      "content_token_estimate": 367,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Pa9ents hyporesponsive to ESAs",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1533,
+      "line_end": 1539,
+      "content_preview": "By lowering hepcidin levels, HIF-PHI therapy may theoreTcally be more effecTve in treaTng people who are hyporesponsive to ESAs because of chronic inflammaTon or funcTonal iron deficiency. Preliminary",
+      "content_token_estimate": 278,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Children",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1539,
+      "line_end": 1543,
+      "content_preview": "There are insufficient data supporTng the use of HIF-PHI therapy in paediatric paTents with anaemia of CKD because people under the age of 18 years were excluded from all Phase 3 trials.",
+      "content_token_estimate": 46,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Cardiovascular Disease",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1543,
+      "line_end": 1571,
+      "content_preview": "For MACE outcomes, all trials with a HIF-PHI met the non-inferiority margin set by the regulator except Vadadustat in people with NDD-CKD. However, there is bias in these trials due to the withdrawal ",
+      "content_token_estimate": 2201,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 4.8 - Safety of HIF-PHI:",
+          "depth": 2,
+          "numbering": "4.8",
+          "line_start": 1571,
+          "line_end": 1575,
+          "content_preview": "We suggest that cauTous use of HIF-PHI in people with CKD and either known CVD or thromboTc events and consideraTon of lower dose regimes to reduce rapid rises in Hb. (2C)",
+          "content_token_estimate": 42,
+          "ancestor_path": [
+            "Cardiovascular Disease"
+          ]
+        },
+        {
+          "heading": "Guideline 4.9 - Monitoring Response to HIF-PHI:",
+          "depth": 2,
+          "numbering": "4.9",
+          "line_start": 1575,
+          "line_end": 1579,
+          "content_preview": "We recommend that Hb levels should be monitored every two weeks unTl the desired Hb target range of 100 to 120 g/L is achieved and stabilised, and every 4 weeks thereaVer, or as clinically indicated. ",
+          "content_token_estimate": 51,
+          "ancestor_path": [
+            "Cardiovascular Disease"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1579,
+      "line_end": 1583,
+      "content_preview": "The recommendaTons are based on current SMPC guidance and the protocols from RCTs.",
+      "content_token_estimate": 20,
+      "ancestor_path": []
+    },
+    {
+      "heading": "5. Treatment of Anaemia of CKD with Blood Transfusions (Guidelines 5.1 - 5.1.3)",
+      "depth": 0,
+      "numbering": "5",
+      "line_start": 1583,
+      "line_end": 1585,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 5.1 Blood Transfusion in People with Anaemia of CKD",
+          "depth": 2,
+          "numbering": "5.1",
+          "line_start": 1585,
+          "line_end": 1589,
+          "content_preview": "We recommend that in people with anaemia of CKD, especially those in whom kidney transplantaTon is an opTon, red blood cell transfusion should be avoided, if possible, to minimise the risk of allosens",
+          "content_token_estimate": 53,
+          "ancestor_path": [
+            "5. Treatment of Anaemia of CKD with Blood Transfusions (Guidelines 5.1 - 5.1.3)"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 5.1.1",
+              "depth": 3,
+              "numbering": "5.1.1",
+              "line_start": 1589,
+              "line_end": 1593,
+              "content_preview": "We recommend if red blood cell transfusion becomes essenTal (usually in the seLng of acute blood loss, acute haemolysis or severe sepsis) transfusion should be based on policies set by local transfusi",
+              "content_token_estimate": 72,
+              "ancestor_path": [
+                "5. Treatment of Anaemia of CKD with Blood Transfusions (Guidelines 5.1 - 5.1.3)",
+                "Guideline 5.1 Blood Transfusion in People with Anaemia of CKD"
+              ]
+            },
+            {
+              "heading": "Guideline 5.1.2",
+              "depth": 3,
+              "numbering": "5.1.2",
+              "line_start": 1593,
+              "line_end": 1597,
+              "content_preview": "We suggest using single unit transfusion, where possible for stable non-bleeding people with CKD who clinically require transfusion. (2C)",
+              "content_token_estimate": 34,
+              "ancestor_path": [
+                "5. Treatment of Anaemia of CKD with Blood Transfusions (Guidelines 5.1 - 5.1.3)",
+                "Guideline 5.1 Blood Transfusion in People with Anaemia of CKD"
+              ]
+            },
+            {
+              "heading": "Guideline 5.1.3",
+              "depth": 3,
+              "numbering": "5.1.3",
+              "line_start": 1597,
+              "line_end": 1601,
+              "content_preview": "We suggest that kidney transplant recipients, those on the transplant waiTng list or people on immunosuppressive therapy should receive only hepaTTs E negaTve blood components (all UK blood components",
+              "content_token_estimate": 69,
+              "ancestor_path": [
+                "5. Treatment of Anaemia of CKD with Blood Transfusions (Guidelines 5.1 - 5.1.3)",
+                "Guideline 5.1 Blood Transfusion in People with Anaemia of CKD"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale for Guideline 5.1",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1601,
+      "line_end": 1611,
+      "content_preview": "CKD results in chronic anaemia, the degree of which usually reflects the severity of CKD. As with any chronic anaemia, paTents tend to deal with this by various compensatory mechanisms. Blood transfus",
+      "content_token_estimate": 1073,
+      "ancestor_path": []
+    },
+    {
+      "heading": "6. Management of Peri-Transplant and Post-Transplant Anaemia (Guidelines 6.16.3.3)",
+      "depth": 0,
+      "numbering": "6",
+      "line_start": 1611,
+      "line_end": 1613,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 6.1 - Peri-Transplant Anaemia:",
+          "depth": 2,
+          "numbering": "6.1",
+          "line_start": 1613,
+          "line_end": 1617,
+          "content_preview": "We suggest that anaemia management should be opTmal pre-transplant in all people with CKD on the transplant wait-list, to minimise the risk of a post-transplant transfusion. (2B)",
+          "content_token_estimate": 44,
+          "ancestor_path": [
+            "6. Management of Peri-Transplant and Post-Transplant Anaemia (Guidelines 6.16.3.3)"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 6.1.1",
+              "depth": 3,
+              "numbering": "6.1.1",
+              "line_start": 1617,
+              "line_end": 1621,
+              "content_preview": "We suggest for people with CKD undergoing kidney transplantaTon, that recombinant EPO maybe conTnued, aVer a shared decision of the risks and benefits with the paTent, unTl endogenous EPO producTon is",
+              "content_token_estimate": 80,
+              "ancestor_path": [
+                "6. Management of Peri-Transplant and Post-Transplant Anaemia (Guidelines 6.16.3.3)",
+                "Guideline 6.1 - Peri-Transplant Anaemia:"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Guideline 6.2 - Blood Transfusion:",
+          "depth": 2,
+          "numbering": "6.2",
+          "line_start": 1621,
+          "line_end": 1625,
+          "content_preview": "We suggest for stable non-bleeding individuals who clinically require a red cell transfusion, using single unit transfusion, where possible. (2B)",
+          "content_token_estimate": 36,
+          "ancestor_path": [
+            "6. Management of Peri-Transplant and Post-Transplant Anaemia (Guidelines 6.16.3.3)"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale (Guideline 6.1-6.2)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1625,
+      "line_end": 1668,
+      "content_preview": "Anaemia post-transplant is extremely common; the aeTology of which is mulT-factorial and influenced by the Tming post-transplant (Table 1) (1-3) .\n\nApart from the usual causes of anaemia due to CKD, k",
+      "content_token_estimate": 1706,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Safety of ESA in transplant pa9ents",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1668,
+      "line_end": 1678,
+      "content_preview": "A few early retrospecTve studies suggested increased incidence of delayed graV funcTon in people on ESA prior to transplantaTon (37, 38) . However, Registry data has since shown reduced incidence of d",
+      "content_token_estimate": 600,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Efficacy of ESA in people with a kidney transplant",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1678,
+      "line_end": 1686,
+      "content_preview": "Studies in the early post-transplant period have shown that ESA is effecTve in these people, although the dose required may be higher than in pre-transplant period (41, 42) . Similarly, studies in lat",
+      "content_token_estimate": 234,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 6.3 - Post-Transplant Anaemia:",
+          "depth": 2,
+          "numbering": "6.3",
+          "line_start": 1686,
+          "line_end": 1690,
+          "content_preview": "We suggest that consideraTon is given to idenTfying (and correcTng) reversible transplant specific causes of anaemia. (2B)",
+          "content_token_estimate": 30,
+          "ancestor_path": [
+            "Efficacy of ESA in people with a kidney transplant"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 6.3.1",
+              "depth": 3,
+              "numbering": "6.3.1",
+              "line_start": 1690,
+              "line_end": 1694,
+              "content_preview": "We recommend that the treatment guidelines for anaemia in kidney transplant recipients should be similar to those for people with CKD not receiving dialysis (NDD-CKD). (1B)",
+              "content_token_estimate": 43,
+              "ancestor_path": [
+                "Efficacy of ESA in people with a kidney transplant",
+                "Guideline 6.3 - Post-Transplant Anaemia:"
+              ]
+            },
+            {
+              "heading": "Guideline 6.3.2",
+              "depth": 3,
+              "numbering": "6.3.2",
+              "line_start": 1694,
+              "line_end": 1698,
+              "content_preview": "We suggest for stable non-bleeding individuals who clinically require a red cell transfusion, using single unit transfusion, where possible. (2B)",
+              "content_token_estimate": 36,
+              "ancestor_path": [
+                "Efficacy of ESA in people with a kidney transplant",
+                "Guideline 6.3 - Post-Transplant Anaemia:"
+              ]
+            },
+            {
+              "heading": "Guideline 6.3.3",
+              "depth": 3,
+              "numbering": "6.3.3",
+              "line_start": 1698,
+              "line_end": 1702,
+              "content_preview": "We suggest the use of HIF-PHI therapy in transplant recipients should be as in people with NDD-CKD. (2B)",
+              "content_token_estimate": 26,
+              "ancestor_path": [
+                "Efficacy of ESA in people with a kidney transplant",
+                "Guideline 6.3 - Post-Transplant Anaemia:"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1702,
+      "line_end": 1706,
+      "content_preview": "Data on the use of HIF-PHI therapy in kidney transplant recipients are limited to small case series and non-randomised real-world evidence. In the randomised controlled trials transplant paTents were ",
+      "content_token_estimate": 236,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Special Populations (Guidelines 7.1-7.3)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1706,
+      "line_end": 1708,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 7.1 - Malignancy:",
+          "depth": 2,
+          "numbering": "7.1",
+          "line_start": 1708,
+          "line_end": 1712,
+          "content_preview": "We suggest treaTng symptomaTc anaemia in people with CKD and cancer in those with a Hb &lt;100 g/L. (2B)",
+          "content_token_estimate": 26,
+          "ancestor_path": [
+            "Special Populations (Guidelines 7.1-7.3)"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1712,
+      "line_end": 1718,
+      "content_preview": "Iron replacement may be used to improve haemoglobin response, and reduce RBC transfusions, for paTents receiving ESA with or without iron deficiency. If paTents are receiving cardiotoxic chemotherapy,",
+      "content_token_estimate": 138,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 7.2 - Haematological Disease:",
+          "depth": 2,
+          "numbering": "7.2",
+          "line_start": 1718,
+          "line_end": 1722,
+          "content_preview": "We suggest ESA therapy be considered in people with myelodysplasTc syndrome (MDS), myeloma and others with CKD and haematological disease. We make no recommendaTon on HIF-PHI therapy. (not graded)",
+          "content_token_estimate": 49,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1722,
+      "line_end": 1726,
+      "content_preview": "ESA should be considered in people with MDS with low risk MDS and symptomaTc anaemia and Hb &lt;100g/L. If a person with MDS does not respond to ESA therapy within 8-12 weeks then Haematologists shoul",
+      "content_token_estimate": 57,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 7.3 - Pregnancy:",
+          "depth": 2,
+          "numbering": "7.3",
+          "line_start": 1726,
+          "line_end": 1730,
+          "content_preview": "We recommend that pregnant and post-partum women with CKD are given parenteral iron, if indicated, from the second trimester onwards and if the benefit is judged to outweigh the potenTal risk for both",
+          "content_token_estimate": 64,
+          "ancestor_path": [
+            "Rationale"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 7.3.1",
+              "depth": 3,
+              "numbering": "7.3.1",
+              "line_start": 1730,
+              "line_end": 1734,
+              "content_preview": "We recommend that ESA therapy during pregnancy may be conTnued unless there is a major contraindicaTon (e.g., hypertension or thrombosis risks). (2C)",
+              "content_token_estimate": 37,
+              "ancestor_path": [
+                "Rationale",
+                "Guideline 7.3 - Pregnancy:"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1734,
+      "line_end": 1746,
+      "content_preview": "During pregnancy, plasma volumes become higher than the increase in red blood cell mass, which leads to lower observed haemoglobin levels. The lower reference limit for haemoglobin concentraTons in pr",
+      "content_token_estimate": 557,
+      "ancestor_path": []
+    },
+    {
+      "heading": "New Therapies for Consideration in the future",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1746,
+      "line_end": 1768,
+      "content_preview": "Several new areas of drug development are ongoing including inhibitors of hepcidin producTon or acTon, anT-interleukin-6 specific anTbodies (ZilTvekimab), anT-inflammatory biologicals, and acTvin rece",
+      "content_token_estimate": 1398,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Lay Summary",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1768,
+      "line_end": 1776,
+      "content_preview": "Anaemia is a commonly diagnosed complicaTon among people suffering with chronic kidney disease. If leV untreated, it may affect quality of life. There are several causes for anaemia in this populaTon.",
+      "content_token_estimate": 475,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Patient Information leaflet for Anaemia of Chronic Kidney Disease (CKD)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1776,
+      "line_end": 1778,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Pa9ent Informa9on Sheet:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1778,
+      "line_end": 1790,
+      "content_preview": "One of the kidney's main jobs is to help make red blood cells. The kidneys make a hormone called erythropoieTn that is a signal for the body to make red blood cells.\n\nIf your kidneys don't work as wel",
+      "content_token_estimate": 209,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 1 - Evalua9on of anaemia - Baseline inves9ga9ons",
+          "depth": 1,
+          "numbering": "1",
+          "line_start": 1790,
+          "line_end": 1797,
+          "content_preview": "Subjects with chronic kidney (CKD) disease who develop anaemia need iniTal invesTgaTons in the form of blood tests to:\n\n1. Assess the severity of anaemia\n2. Assess the cause of anaemia: some subjects ",
+          "content_token_estimate": 110,
+          "ancestor_path": [
+            "Pa9ent Informa9on Sheet:"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 2.1 - Treatment of Anaemia with Iron therapy:",
+              "depth": 2,
+              "numbering": "2.1",
+              "line_start": 1797,
+              "line_end": 1801,
+              "content_preview": "Iron is one of the building blocks of red cell formaTon by the body. Therefore correcTon of iron deficiency is an important iniTal step in the treatment of anaemia of CKD.",
+              "content_token_estimate": 42,
+              "ancestor_path": [
+                "Pa9ent Informa9on Sheet:",
+                "Guideline 1 - Evalua9on of anaemia - Baseline inves9ga9ons"
+              ]
+            },
+            {
+              "heading": "Guideline 2.2 - Treatment of Anaemia with Iron Therapy - Ini9a9on of ESA/HIF-PHI and Iron Status:",
+              "depth": 2,
+              "numbering": "2.2",
+              "line_start": 1801,
+              "line_end": 1806,
+              "content_preview": "There are several specific blood tests arranged regularly through the kidney clinic to ensure the adequacy of iron stores in the body of subjects with CKD, and to assess how easily these iron stores a",
+              "content_token_estimate": 119,
+              "ancestor_path": [
+                "Pa9ent Informa9on Sheet:",
+                "Guideline 1 - Evalua9on of anaemia - Baseline inves9ga9ons"
+              ]
+            },
+            {
+              "heading": "Guideline 2.3 - Treatment of Anaemia with Iron therapy - Route of Administra9on",
+              "depth": 2,
+              "numbering": "2.3",
+              "line_start": 1806,
+              "line_end": 1810,
+              "content_preview": "Oral iron tablets are effecTve in correcTng iron deficiency in the majority of CKD subjects with anaemia.",
+              "content_token_estimate": 26,
+              "ancestor_path": [
+                "Pa9ent Informa9on Sheet:",
+                "Guideline 1 - Evalua9on of anaemia - Baseline inves9ga9ons"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Intravenous iron:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1810,
+      "line_end": 1818,
+      "content_preview": "Intravenous iron (Iron injecTon given by a drip into the vein, IV iron), is usually needed when iron tablets are not effecTve or not tolerated by subjects with CKD.\nIV iron is widely used to correct i",
+      "content_token_estimate": 223,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Guideline 2.4 - Treatment of Anaemia with Iron therapy - safety and Upper limit for iron therapy.",
+          "depth": 2,
+          "numbering": "2.4",
+          "line_start": 1818,
+          "line_end": 1826,
+          "content_preview": "Iron treatment, parTcularly IV iron, is not without risks, they are administered guided by the value of iron level in the blood.\nThere are several tests available to assess iron level in the blood and",
+          "content_token_estimate": 180,
+          "ancestor_path": [
+            "Intravenous iron:"
+          ]
+        },
+        {
+          "heading": "Guideline 3. Treatment with Erythropoiesis S9mula9ng Agents",
+          "depth": 1,
+          "numbering": "3",
+          "line_start": 1826,
+          "line_end": 1840,
+          "content_preview": "The aim of treatment of CKD with ESA preparaTons is to improve quality of life and reduce/avoid the need for blood transfusion.\nLike intravenous iron, ESA therapy is not without risks. The doctor will",
+          "content_token_estimate": 574,
+          "ancestor_path": [
+            "Intravenous iron:"
+          ]
+        },
+        {
+          "heading": "Guideline 4 - Treatment of Anaemia - HIF-PHI Agents",
+          "depth": 1,
+          "numbering": "4",
+          "line_start": 1840,
+          "line_end": 1853,
+          "content_preview": "HIF-PHI are newly introduced medicaTons that are now licensed to treat anaemia in CKD subjects. They are administered in the form of oral tablets. They act on a system in the body that is acTvated whe",
+          "content_token_estimate": 512,
+          "ancestor_path": [
+            "Intravenous iron:"
+          ]
+        },
+        {
+          "heading": "Guideline 5: Blood Transfusion in people with Anaemia of CKD",
+          "depth": 1,
+          "numbering": "5",
+          "line_start": 1853,
+          "line_end": 1858,
+          "content_preview": "Whenever possible, people on the transplant waiTng list should avoid receiving blood transfusions to avoid/ reduce the risks of rejecTon when they receive their transplant.\nBlood transfusion, if neede",
+          "content_token_estimate": 126,
+          "ancestor_path": [
+            "Intravenous iron:"
+          ],
+          "children": [
+            {
+              "heading": "Guideline 6.0 Peri-transplant and Post Transplant Anaemia",
+              "depth": 2,
+              "numbering": "6.0",
+              "line_start": 1858,
+              "line_end": 1863,
+              "content_preview": "Kidney transplant recipients may develop anaemia due to a variety of causes.\nIt is important to invesTgate and idenTfy the cause of anaemia prior to considering treatment with iron, ESA or HIF-PHI.\nIf",
+              "content_token_estimate": 83,
+              "ancestor_path": [
+                "Intravenous iron:",
+                "Guideline 5: Blood Transfusion in people with Anaemia of CKD"
+              ]
+            },
+            {
+              "heading": "Guideline 7.0 Special Popula9ons",
+              "depth": 2,
+              "numbering": "7.0",
+              "line_start": 1863,
+              "line_end": 1867,
+              "content_preview": "SymptomaTc people with CKD and cancer may be treated with Iron &amp; ESA therapy as per the guidelines for people with CKD not on dialysis.\nPregnant subjects with CKD who develop anaemia may be treate",
+              "content_token_estimate": 84,
+              "ancestor_path": [
+                "Intravenous iron:",
+                "Guideline 5: Blood Transfusion in people with Anaemia of CKD"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

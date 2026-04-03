@@ -12,10 +12,10 @@ from pathlib import Path
 from typing import Any
 from unittest.mock import MagicMock
 
-# Dynamically load 2_Agentic_RAG.nodes module
+# Dynamically load agentic_rag.nodes module
 spec = importlib.util.spec_from_file_location(
     "nodes",
-    Path(__file__).parent.parent / "2_Agentic_RAG" / "nodes.py",
+    Path(__file__).parent.parent / "agentic_rag" / "nodes.py",
 )
 if spec is None or spec.loader is None:
     raise RuntimeError("Failed to load nodes module")
@@ -134,7 +134,7 @@ class TestStateConsolidation:
     def test_agentic_graph_typeddict_exists(self):
         """Verify AgenticGraphState TypedDict exists and is dict-compatible."""
         # Read graph.py source to verify AgenticGraphState exists
-        graph_path = Path(__file__).parent.parent / "2_Agentic_RAG" / "graph.py"
+        graph_path = Path(__file__).parent.parent / "agentic_rag" / "graph.py"
         source = graph_path.read_text()
 
         # Verify AgenticGraphState TypedDict is defined

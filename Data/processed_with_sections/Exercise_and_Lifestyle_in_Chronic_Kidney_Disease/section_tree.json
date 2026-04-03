@@ -1,0 +1,1341 @@
+{
+  "doc_name": "Exercise_and_Lifestyle_in_Chronic_Kidney_Disease",
+  "total_sections": 133,
+  "total_lines": 1145,
+  "tree": [
+    {
+      "heading": "Introduction",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 0,
+      "line_end": 12,
+      "content_preview": "The statement that 'if exercise were a pill it would be one of the most widely prescribed and costeffective drugs ever invented' has been used many times, with many slightly different iterations and w",
+      "content_token_estimate": 455,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Non-dialysis CKD section",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 12,
+      "line_end": 14,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Objective",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 14,
+      "line_end": 18,
+      "content_preview": "To perform a search for randomized control clinical trials (RCTs), systematic reviews and metaanalyses that will subsequently inform the writing of the new Renal Association Guidelines for physical ac",
+      "content_token_estimate": 67,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Study eligibility and criteria",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 18,
+      "line_end": 28,
+      "content_preview": "Publications were considered for inclusion if they were RCTs that involved allocation of participants at an individual or cluster level, or via quasi-randomised method. Systematic reviews alone or sys",
+      "content_token_estimate": 359,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Data collection and extraction",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 28,
+      "line_end": 34,
+      "content_preview": "Searches of systematic review databases was conducted, Cochrane and PROSPERO. MEDLINE was searched which includes the National Centre for Biotechnology Information (NCBI) PubMed. One author independen",
+      "content_token_estimate": 347,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Haemodialysis section",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 34,
+      "line_end": 38,
+      "content_preview": "A systematic review of recent systematic reviews, meta-analyses and randomised controlled trial data pertaining to physical activity and exercise studies for individuals with end-stage kidney disease ",
+      "content_token_estimate": 89,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Transplantation section",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 38,
+      "line_end": 46,
+      "content_preview": "We first reviewed and summarised current evidence that has investigated epidemiological evidence on either physical activity and exercise levels in Kidney Transplant Recipients (KTRs) and/or the assoc",
+      "content_token_estimate": 670,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Summary of recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 46,
+      "line_end": 48,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Non-dialysis CKD (stages 1-5)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 48,
+      "line_end": 50,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Physical activity and exercise",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 50,
+      "line_end": 65,
+      "content_preview": "1.1 We recommend physical activity should be encouraged in the non-dialysis CKD population without contraindications and with stable, controlled comorbidities (1B).\n1.2 We recommend non-dialysis CKD p",
+      "content_token_estimate": 424,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Weight management",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 65,
+      "line_end": 69,
+      "content_preview": "1.6 We recommend that anthropometrics should be measured and monitored (self-monitored if necessary) at regular intervals in individuals with non-dialysis CKD (1B).\n1.7 We recommend that multi-profess",
+      "content_token_estimate": 112,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Other lifestyle considerations (smoking, alcohol intake, drug use)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 69,
+      "line_end": 74,
+      "content_preview": "1.8 We recommend that individuals diagnosed with non-dialysis CKD (stages 1-4) stop smoking (1A).\n1.9 We recommend alcohol consumption should be within national guidelines (1B).\n1.10 We recommend that",
+      "content_token_estimate": 62,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Haemodialysis",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 74,
+      "line_end": 76,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Physical activity and exercise",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 76,
+      "line_end": 91,
+      "content_preview": "2.1 We recommend that physical activity and exercise should be encouraged in the haemodialysis population where there are no contraindications (1C)\n2.2 We recommend that haemodialysis patients should ",
+      "content_token_estimate": 375,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Weight management",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 91,
+      "line_end": 97,
+      "content_preview": "2.6 We recommend that regular anthropometric measurements should be taken to assess changes in body composition [1B]\n2.7 We recommend that all individuals receiving haemodialysis maintain a BMI of bet",
+      "content_token_estimate": 165,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Other lifestyle considerations (smoking, alcohol intake, drug use)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 97,
+      "line_end": 102,
+      "content_preview": "2.10 We recommend that individuals receiving haemodialysis stop smoking (1A).\n2.11 We recommend alcohol consumption should be within national guidelines (1B).\n2.12 We recommend that individuals receiv",
+      "content_token_estimate": 63,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Transplantation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 102,
+      "line_end": 104,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Physical activity and exercise",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 104,
+      "line_end": 118,
+      "content_preview": "3.1 We recommend that general physical activity should be encouraged in KTRs without contraindications [1B]\n3.2 We suggest sufficient physical activity, pre- and post-transplant, can reduce all-cause ",
+      "content_token_estimate": 436,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Prehabilitation for transplantation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 118,
+      "line_end": 121,
+      "content_preview": "3.13 We suggest that exercise interventions prior to surgery (prehabilitation) may help increase pre-transplant physical activity levels and aid recovery post-transplant [2C]",
+      "content_token_estimate": 43,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Immediate post-transplantation period",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 121,
+      "line_end": 124,
+      "content_preview": "3.14 We suggest that exercise interventions consisting of intensive physiotherapy and movement encouragement administered immediately post-transplantation i.e. &lt;1-2 days is not beneficial in increa",
+      "content_token_estimate": 81,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Safety and contraindications",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 124,
+      "line_end": 128,
+      "content_preview": "3.15 We suggest that KTRs avoid traumatic damage to the transplanted kidney and participation in contact sports (e.g., rugby, American football, martial arts, ice hockey, boxing) and/or prolonged extr",
+      "content_token_estimate": 120,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Weight management",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 128,
+      "line_end": 137,
+      "content_preview": "3.17 We recommend that regular anthropometric measurements should be taken to assess changes in body composition [1B]\n3.18 We recommend candidates and KTRs have their body mass (and body mass index, B",
+      "content_token_estimate": 217,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Other lifestyle considerations (smoking, alcohol intake, drug use)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 137,
+      "line_end": 142,
+      "content_preview": "3.24 We recommend that smoking should be strongly discouraged in transplant recipients [1A]\n3.25 We suggest alcohol consumption should be within national guidelines [1B]\n3.26 We suggest that KTRs avoi",
+      "content_token_estimate": 58,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Non-dialysis CKD (stages 1-5)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 142,
+      "line_end": 144,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Introduction",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 144,
+      "line_end": 152,
+      "content_preview": "Regular physical activity and exercise is associated with numerous physical and mental health benefits in the general population. 2 All-cause mortality is delayed through the regular undertaking of ph",
+      "content_token_estimate": 652,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Physical activity and exercise",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 152,
+      "line_end": 156,
+      "content_preview": "The following section provides a synthesis of the current evidence in order to make informed recommendations in regard to the effect of physical activity and exercise in non-dialysis CKD patients (sta",
+      "content_token_estimate": 82,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 156,
+      "line_end": 171,
+      "content_preview": "1.1 We recommend physical activity should be encouraged in the non-dialysis CKD population without contraindications and with stable, controlled comorbidities (1B).\n1.2 We recommend non-dialysis CKD p",
+      "content_token_estimate": 428,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Audit measures",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 171,
+      "line_end": 175,
+      "content_preview": "1. Physical activity should be monitored through the use of a validated physical activity questionnaire: such as the General Practice Physical Activity Questionnaire (GPPAQ) - a NICE recommended surve",
+      "content_token_estimate": 97,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Points for implementation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 175,
+      "line_end": 183,
+      "content_preview": " Health care professionals in renal settings should be aware of local exercise prescription policies and other localised physical activity referral programmes to be able to refer patients to these se",
+      "content_token_estimate": 349,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 183,
+      "line_end": 185,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Mortality and disease progression",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 185,
+      "line_end": 197,
+      "content_preview": "Research to date regarding the beneficial effects between physical activity/exercise and mortality, hospitalisations and disease progression is limited in its consistency. As such, we are currently un",
+      "content_token_estimate": 1093,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Physical activity",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 197,
+      "line_end": 203,
+      "content_preview": "It has long been hypothesised that participation in physical activity may have beneficial effects on long term outcomes in people living with chronic kidney disease. However, in contrast to the genera",
+      "content_token_estimate": 743,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Physical function, physical capacity and muscle mass",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 203,
+      "line_end": 213,
+      "content_preview": "It is well documented that patients with CKD suffer from a reduced exercise capacity and poor levels of physical functioning which leads to a cyclic reduction in physical activity levels and consequen",
+      "content_token_estimate": 1181,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Metabolic risk factors",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 213,
+      "line_end": 221,
+      "content_preview": "Blood pressure\n\nThere are four recent high-quality systematic reviews with meta-analyses of RCTs on the effects of exercise on blood pressure. Zhang and colleagues 42 included 9 studies including 14 d",
+      "content_token_estimate": 680,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Blood lipids",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 221,
+      "line_end": 225,
+      "content_preview": "The effects of physical activity and exercise on blood lipids has been examined in 5 systematic reviews. Of these, two also included ESRD patients and showed no significant changes in total cholestero",
+      "content_token_estimate": 382,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Glycaemic control",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 225,
+      "line_end": 231,
+      "content_preview": "There are currently no published systematic reviews which have examined the effects of exercise or physical activity interventions on fasting blood sugar levels or HbA1C in non-dialysis CKD patients. ",
+      "content_token_estimate": 327,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Inflammation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 231,
+      "line_end": 235,
+      "content_preview": "There are currently no published systematic reviews or meta-analyses in regard to the effects of exercise on inflammation. A review of the current research base identified 15 studies that measured at ",
+      "content_token_estimate": 362,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Cognitive function",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 235,
+      "line_end": 239,
+      "content_preview": "The physiological effects of exercise are commonly described and reported at length in the general population and more recently in CKD populations. However, the potential of exercise to affect cogniti",
+      "content_token_estimate": 355,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Health related quality of life",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 239,
+      "line_end": 245,
+      "content_preview": "A significant amount of research has sought to determine whether exercise is able to increase health related quality of life (QoL) in ND-CKD patients. On review of the currently available literature, ",
+      "content_token_estimate": 463,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Weight management",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 245,
+      "line_end": 249,
+      "content_preview": "The following section provides a synthesis of the current evidence in order to make informed recommendations in regard to the effect of physical activity and exercise in non-dialysis CKD patients (sta",
+      "content_token_estimate": 91,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 249,
+      "line_end": 253,
+      "content_preview": "1.6 We recommend that anthropometrics should be measured and monitored (self-monitored if necessary) at regular intervals in individuals with non-dialysis CKD (1B).\n1.7 We recommend that multi-profess",
+      "content_token_estimate": 112,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Audit measures",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 253,
+      "line_end": 257,
+      "content_preview": "1. Anthropometrics should be recorded and monitored during clinical visits. (*For guidance on which anthropometric measures should be utilised, see the indicated link in the rationale)",
+      "content_token_estimate": 46,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 257,
+      "line_end": 273,
+      "content_preview": "Obesity is a major risk factor for cardiovascular disease and death in the general population. 65 Data from observational based studies have shown repeatedly that obesity is an independent risk factor",
+      "content_token_estimate": 1760,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Other lifestyle considerations (smoking, alcohol intake, drug use)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 273,
+      "line_end": 275,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 275,
+      "line_end": 280,
+      "content_preview": "1.8 We recommend that individuals diagnosed with non-dialysis CKD (stages 1-4) stop smoking (1A).\n1.9 We recommend alcohol consumption should be within national guidelines (1B).\n1.10 We recommend that",
+      "content_token_estimate": 62,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Audit measures",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 280,
+      "line_end": 287,
+      "content_preview": "1. Track the proportion of non-dialysis CKD patients who smoke.\n2. Track the number of non-dialysis CKD patients who are referred to the smoking cessation support programme.\n3. Track the proportion of",
+      "content_token_estimate": 91,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 287,
+      "line_end": 291,
+      "content_preview": "There is no doubt that smoking induced disease states are one of the leading causes of mortality in many countries. The Multiple Risk Factor Intervention Trial (MRFIT) was able to document that smokin",
+      "content_token_estimate": 261,
+      "ancestor_path": []
+    },
+    {
+      "heading": "https://cks.nice.org.uk/smoking-cessation and https://cks.nice.org.uk/smokingcessation#!scenario:1.",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 291,
+      "line_end": 295,
+      "content_preview": "The effect of alcohol misuse in a non-dialysis population is more difficult to define. The current evidence base looks to break alcohol consumption down into two categories, those that suffer from exc",
+      "content_token_estimate": 252,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Haemodialysis",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 295,
+      "line_end": 297,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Introduction",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 297,
+      "line_end": 301,
+      "content_preview": "Physical activity and exercise recommendations for individuals with end-stage kidney disease receiving haemodialysis. The strengths of the recommendations and the level of supporting evidence are code",
+      "content_token_estimate": 74,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Physical activity and exercise",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 301,
+      "line_end": 303,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 303,
+      "line_end": 318,
+      "content_preview": "2.1 We recommend that physical activity and exercise should be encouraged in the haemodialysis population where there are no contraindications (1C)\n2.2 We recommend that haemodialysis patients should ",
+      "content_token_estimate": 375,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Audit measure",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 318,
+      "line_end": 322,
+      "content_preview": "1. The availability of a programme for intradialytic exercise, the resource available (equipment, physiotherapist time), and the proportion of in-centre patients engaging with and maintaining regular ",
+      "content_token_estimate": 55,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 322,
+      "line_end": 342,
+      "content_preview": "Physical activity levels are low in haemodialysis patients. 2 Data from the Dialysis Outcomes and Practice Patterns Study (DOPPS) has reported that 43.9% ( n =9176) of haemodialysis patients perform n",
+      "content_token_estimate": 3249,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Evidence for the safety of exercise",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 342,
+      "line_end": 348,
+      "content_preview": "Systematic review data has reported no significant serious adverse events due to exercise training, citing this as evidence of safety. 33,48,49 However, a previous systematic review 24 has highlighted",
+      "content_token_estimate": 851,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Implementing intradialytic exercise",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 348,
+      "line_end": 374,
+      "content_preview": "We suggest the following guidance for implementing intradialytic exercise at haemodialysis units. These are modified from the guidelines for implementing intradialytic exercise provided in the Renal A",
+      "content_token_estimate": 969,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Weight management",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 374,
+      "line_end": 376,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 376,
+      "line_end": 382,
+      "content_preview": "2.6 We recommend that regular anthropometric measurements should be taken to assess changes in body composition [1B]\n2.7 We recommend that all individuals receiving haemodialysis maintain a BMI of bet",
+      "content_token_estimate": 165,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Audit measure",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 382,
+      "line_end": 386,
+      "content_preview": "1. Regular monthly assessment of accurate body mass and BMI via appropriate methods (clinical judgement can be used to identify the appropriate method).",
+      "content_token_estimate": 38,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 386,
+      "line_end": 410,
+      "content_preview": "Data from observational studies indicate that obesity is an independent risk factor for chronic kidney disease. 56,57 Moreover, in the general population and in kidney transplant recipient's obesity i",
+      "content_token_estimate": 2876,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Implementing weight loss in the haemodialysis population",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 410,
+      "line_end": 420,
+      "content_preview": "We suggest the following guidance for encouraging and monitoring weight loss in haemodialysis patients:\n In individuals receiving haemodialysis it is reasonable for a registered dietitian to use clin",
+      "content_token_estimate": 409,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Other lifestyle considerations (smoking, alcohol intake, drug use)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 420,
+      "line_end": 422,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 422,
+      "line_end": 427,
+      "content_preview": "2.10 We recommend that individuals receiving haemodialysis stop smoking (1A).\n2.11 We recommend alcohol consumption should be within national guidelines (1B).\n2.12 We recommend that individuals receiv",
+      "content_token_estimate": 63,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Audit measures",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 427,
+      "line_end": 433,
+      "content_preview": "1. Proportion of individuals receiving haemodialysis who smoke.\n2. Proportion of individuals referred (including self-referral) to a smoking cessation programme.\n3. Number of individuals receiving hae",
+      "content_token_estimate": 68,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 433,
+      "line_end": 439,
+      "content_preview": "Individuals with established cardiovascular disease at haemodialysis inception are more likely to be former smokers. A large database study in individuals receiving haemodialysis has shown that curren",
+      "content_token_estimate": 414,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Implementing smoking cessation and alcohol intake guidance in the haemodialysis population",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 439,
+      "line_end": 445,
+      "content_preview": "We suggest the following guidance for encouraging smoking cessation in the haemodialysis population:\n Appropriate guidance on smoking cessation is available from NICE https://cks.nice.org.uk/smoking-",
+      "content_token_estimate": 95,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendices relevant to Haemodialysis section",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 445,
+      "line_end": 449,
+      "content_preview": " Appendix HD1 . Full search strategies for a review of recent systematic reviews and randomised controlled trial data. Physical activity and exercise guidelines for individuals with end-stage kidney ",
+      "content_token_estimate": 71,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Transplantation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 449,
+      "line_end": 451,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Introduction",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 451,
+      "line_end": 465,
+      "content_preview": "Kidney transplantation is the preferred form of renal replacement therapy (RRT) for patients with end-stage renal disease (ESRD). 1 Kidney transplantation often results in beneficial effects on qualit",
+      "content_token_estimate": 1191,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Physical activity and exercise",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 465,
+      "line_end": 467,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 467,
+      "line_end": 481,
+      "content_preview": "3.1 We recommend that general physical activity should be encouraged in KTRs without contraindications [1B]\n3.2 We suggest sufficient physical activity, pre- and post-transplant, can reduce all-cause ",
+      "content_token_estimate": 436,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Audit measures",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 481,
+      "line_end": 492,
+      "content_preview": "1. Healthcare professionals should take the opportunity, whenever possible, to identify inactive patients and levels of physical activity should be routinely checked. This could be by simply asking th",
+      "content_token_estimate": 442,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Implementing physical activity and exercise guidance",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 492,
+      "line_end": 507,
+      "content_preview": "We suggest the following guidance for implementation of physical activity and exercise in KTRs:\n KTRs should be encouraged to follow current UK general physical activity guidelines (150 minutes (2.5 ",
+      "content_token_estimate": 605,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 507,
+      "line_end": 511,
+      "content_preview": "Physical activity is defined as any bodily movement produced by skeletal muscles that requires energy expenditure. The term \"physical activity\" should not be mistaken with \"exercise\". Exercise is a su",
+      "content_token_estimate": 151,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Physical activity",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 511,
+      "line_end": 531,
+      "content_preview": "To measure physical activity in KTRs, recipients have been compared to the general population, other patients with CKD, and patients with other chronic diseases. The prevalence of physical activity di",
+      "content_token_estimate": 1438,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Structured exercise",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 531,
+      "line_end": 545,
+      "content_preview": "With regard to structured exercise, evidence from RCTs (including the new meta-analysis conducted in the development of these guidelines) suggests that appropriate exercise interventions can improve c",
+      "content_token_estimate": 1010,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Prehabilitation for Transplantation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 545,
+      "line_end": 547,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 547,
+      "line_end": 550,
+      "content_preview": "3.13 We suggest that exercise interventions prior to surgery (prehabilitation) may help increase pre-transplant physical activity levels and aid recovery post-transplant [2C]",
+      "content_token_estimate": 43,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 550,
+      "line_end": 554,
+      "content_preview": "Prehabilitation is the process of enhancing patient functional capacity prior to surgery to improve tolerance for the upcoming physiologic stressor. 55,56 In our meta-analysis, we were unable to ident",
+      "content_token_estimate": 255,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Immediate post-transplantation period",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 554,
+      "line_end": 556,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 556,
+      "line_end": 559,
+      "content_preview": "3.14 We suggest that exercise interventions consisting of intensive physiotherapy and movement encouragement administered immediately post-transplantation i.e. &lt;1-2 days is not beneficial in increa",
+      "content_token_estimate": 81,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 559,
+      "line_end": 563,
+      "content_preview": "In exercise-based RCT studies 58,59 involving patients with 'new' transplant (i.e. &lt;2-3 days posttransplant), no additional benefits of exercise were reported, and in the case of Onofre et al. , 59",
+      "content_token_estimate": 164,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Safety and contraindications",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 563,
+      "line_end": 565,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 565,
+      "line_end": 569,
+      "content_preview": "3.15 We suggest that KTRs avoid traumatic damage to the transplanted kidney and participation in contact sports (e.g., rugby, American football, martial arts, ice hockey, boxing) and/or prolonged extr",
+      "content_token_estimate": 120,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Implementing physical activity and exercise guidance",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 569,
+      "line_end": 573,
+      "content_preview": "If a KTR is thinking of returning to contact sports, intense prolonged exercise, or taking sports performance-enhancing supplements, they should seek appropriate input from a transplant surgeon, renal",
+      "content_token_estimate": 68,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 573,
+      "line_end": 585,
+      "content_preview": "Sport, or exercise involving significant contact, may be an appropriate means for an individual to engage in physical activity. Whilst the risk of traumatic damage to transplanted kidneys is low, 60 r",
+      "content_token_estimate": 1420,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Weight management",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 585,
+      "line_end": 587,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 587,
+      "line_end": 596,
+      "content_preview": "3.17 We recommend that regular anthropometric measurements should be taken to assess changes in body composition [1B]\n3.18 We recommend candidates and KTRs have their body mass (and body mass index, B",
+      "content_token_estimate": 217,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Audit measures",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 596,
+      "line_end": 603,
+      "content_preview": "1. Assessment of accurate body mass and BMI via appropriate SOPs (e.g., calibrated scales, no shoes and heavy clothing) at the time of evaluation and while on the waiting list\n2. Availability of a mul",
+      "content_token_estimate": 100,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 603,
+      "line_end": 617,
+      "content_preview": "The impact of obesity on kidney transplant outcomes is complex although study has shown that, irrespective of BMI , compared to dialysis treatment patient survival is improved if transplanted. 68 Howe",
+      "content_token_estimate": 1272,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.3.7. 'Do not exclude people from receiving a kidney transplant based on BMI alone'",
+          "depth": 2,
+          "numbering": "1.3.7",
+          "line_start": 617,
+          "line_end": 633,
+          "content_preview": "Other than relying on BMI alone, assessing body composition, such as skeletal muscle and fat mass separately, may provide greater insight into an individual's risk of outcome, survival, and posttransp",
+          "content_token_estimate": 752,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Other lifestyle considerations (smoking, alcohol intake, drug use)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 633,
+      "line_end": 637,
+      "content_preview": "The following is summarised from the Renal Association Clinical Practice Guidelines 'Post-Operative Care in the Kidney Transplant Recipient'. 42 There is no evidence to suggest that these recommendati",
+      "content_token_estimate": 54,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 637,
+      "line_end": 642,
+      "content_preview": "3.24 We recommend that smoking should be strongly discouraged in transplant recipients [1A]\n3.25 We suggest alcohol consumption should be within national guidelines [1B]\n3.26 We suggest that KTRs avoi",
+      "content_token_estimate": 58,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Audit measures (taken from Baker et al . 42 )",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 642,
+      "line_end": 647,
+      "content_preview": "1. Proportion of KTRs who smoke\n2. Proportion of cigarette smoking KTRs who have been given formal advice or offered help with cessation",
+      "content_token_estimate": 34,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 647,
+      "line_end": 655,
+      "content_preview": "Cigarette smoking is strongly associated with reduced life expectancy, several forms of malignancy, respiratory disease and premature cardiovascular disease in the general population. Whilst the evide",
+      "content_token_estimate": 385,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendices relevant to transplantation section",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 655,
+      "line_end": 665,
+      "content_preview": " Appendix TX1. Full search strategies for a review of reviews reporting on the importance of physical activity and exercise in renal transplant recipients\n Appendix TX2. Full search strategies for m",
+      "content_token_estimate": 160,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendices - Non-dialysis CKD (stages 1-5)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 665,
+      "line_end": 667,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix ND-CKD1.",
+      "depth": 0,
+      "numbering": "Appendix N",
+      "line_start": 667,
+      "line_end": 674,
+      "content_preview": "Example search strategies for a review of recent systematic reviews and randomised controlled trial data. Physical activity and exercise guidelines for individuals with non-dialysis CKD (stages 15)\na)",
+      "content_token_estimate": 451,
+      "ancestor_path": []
+    },
+    {
+      "heading": "b) Final Medline search (Exercise capacity, muscle mass and function)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 674,
+      "line_end": 692,
+      "content_preview": "((\"Renal Insufficiency, Chronic\"[Mesh]) OR (\"Kidney Failure, Chronic\"[Mesh]) OR (\"Diabetic Nephropathies\"[Mesh]) OR (\"Nephrotic syndrome, idiopathic, steroid-resistant\" [Supplementary Concept]) OR (\"G",
+      "content_token_estimate": 399,
+      "ancestor_path": []
+    },
+    {
+      "heading": "c) Final Medline search (Metabolic risk factors)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 692,
+      "line_end": 697,
+      "content_preview": "((\"Renal Insufficiency, Chronic\"[Mesh]) OR (chronic kidney disease) OR CKD) AND( \"Exercise\"[Mesh] OR\"Rehabilitation\"[Mesh] OR \"exercise therapy\"[MeSH] OR \"Exercise Movement Techniques\"[Mesh] OR exerci",
+      "content_token_estimate": 183,
+      "ancestor_path": []
+    },
+    {
+      "heading": "d) Final Medline search (Cognitive function)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 697,
+      "line_end": 703,
+      "content_preview": "( (\"Renal Insufficiency, Chronic\"[Mesh]) OR ( \"Kidney Failure, Chronic\"[Mesh]) OR (\"Diabetic Nephropathies\"[Mesh] ) OR (\"Nephrotic syndrome, idiopathic, steroid-resistant\" [Supplementary Concept]) OR ",
+      "content_token_estimate": 105,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix ND-CKD2.",
+      "depth": 0,
+      "numbering": "Appendix N",
+      "line_start": 703,
+      "line_end": 705,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Flow diagrams of systematic search of literature and included studies (until July 2020) a)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 705,
+      "line_end": 709,
+      "content_preview": "d)",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendices - Haemodialysis",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 709,
+      "line_end": 711,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix HD1.",
+      "depth": 0,
+      "numbering": "Appendix H",
+      "line_start": 711,
+      "line_end": 717,
+      "content_preview": "Full search strategies for a review of recent systematic reviews and randomised controlled trial data. Physical activity and exercise guidelines for individuals with end-stage kidney disease (ESKD) re",
+      "content_token_estimate": 101,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Objective",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 717,
+      "line_end": 721,
+      "content_preview": "To perform a search for clinical trials and systematic reviews (and meta analyses), that will inform the writing of the new Renal Association Guidelines for physical activity and lifestyle in the haem",
+      "content_token_estimate": 55,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Methods",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 721,
+      "line_end": 817,
+      "content_preview": "| Study eligibility criteria | Study eligibility criteria |\n|------------------------------|------------------------------------------------------------------------------------------------------------",
+      "content_token_estimate": 2144,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix HD2.",
+      "depth": 0,
+      "numbering": "Appendix H",
+      "line_start": 817,
+      "line_end": 819,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Flow diagram of search results",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 819,
+      "line_end": 821,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendices - Transplantation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 821,
+      "line_end": 823,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix TX1.",
+      "depth": 0,
+      "numbering": "Appendix T",
+      "line_start": 823,
+      "line_end": 827,
+      "content_preview": "Full search strategies for a review of reviews reporting on the importance of physical activity and exercise in renal transplant recipients",
+      "content_token_estimate": 34,
+      "ancestor_path": []
+    },
+    {
+      "heading": "MEDLINE (1966-present day)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 827,
+      "line_end": 829,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Final search details:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 829,
+      "line_end": 837,
+      "content_preview": "(\"review\"[Publication Type] OR \"review literature as topic\"[MeSH Terms] OR \"review\"[All Fields]) AND ((((\"exercise\"[MeSH Terms] OR \"exercise\"[All Fields]) OR (\"exercise therapy\"[MeSH Terms] OR (\"exerc",
+      "content_token_estimate": 247,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Strategy structure and breakdown of search returns:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 837,
+      "line_end": 871,
+      "content_preview": "| Search term | Items returned |\n|----------------------------------------------------------------------------------------------------------------------------------------------------------------------",
+      "content_token_estimate": 411,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix TX2.",
+      "depth": 0,
+      "numbering": "Appendix T",
+      "line_start": 871,
+      "line_end": 875,
+      "content_preview": "Full search strategies for meta-analysis investigating the evidence for the effect of exercise training interventions in adult kidney transplant recipients",
+      "content_token_estimate": 38,
+      "ancestor_path": []
+    },
+    {
+      "heading": "MEDLINE (1966-present day)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 875,
+      "line_end": 877,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Final search details:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 877,
+      "line_end": 885,
+      "content_preview": "((((\"exercise\"[MeSH Terms] OR \"exercise\"[All Fields]) OR (\"exercise therapy\"[MeSH Terms] OR (\"exercise\"[All Fields] AND \"therapy\"[All Fields]) OR \"exercise therapy\"[All Fields])) OR (\"exercise\"[MeSH T",
+      "content_token_estimate": 272,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Strategy structure and breakdown of search returns:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 885,
+      "line_end": 904,
+      "content_preview": "| Search term | Items returned |\n|----------------------------------------------------------------------------------------------------------------------------------|------------------|\n| 1. Renal Tran",
+      "content_token_estimate": 310,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Search retuned: #115 studies",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 904,
+      "line_end": 906,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "#102 studies were removed",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 906,
+      "line_end": 923,
+      "content_preview": "| Reason | Number excluded after abstract review |\n|---------------------------|-----------------------------------------|\n| Review paper | #4 |\n| Dialysis | #20 |\n| Non-dialysis CKD | #5 |\n| Non-KD |",
+      "content_token_estimate": 207,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Cochrane Central Register of Controlled Trials (includes EMBASE, ICTRP) Final search details:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 923,
+      "line_end": 933,
+      "content_preview": "'exercise therapy' 'physical activity' 'kidney transplantation' 'renal transplant recipients' 'randomized controlled trial'\n\nLatest search date:\n\n16th January 2020\n\nSearch retuned: #4 studies",
+      "content_token_estimate": 47,
+      "ancestor_path": []
+    },
+    {
+      "heading": "#4 studies were removed",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 933,
+      "line_end": 943,
+      "content_preview": "| Reason | Number excluded after abstract review |\n|---------------------|-----------------------------------------|\n| Duplicate | #1 |\n| Protocol paper | #2 |\n| Conference abstract | #1 |\n\nRemaining ",
+      "content_token_estimate": 66,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix TX3.",
+      "depth": 0,
+      "numbering": "Appendix T",
+      "line_start": 943,
+      "line_end": 947,
+      "content_preview": "Flow diagram of systematic search of literature and included studies (until January 2020)",
+      "content_token_estimate": 22,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix TX4.",
+      "depth": 0,
+      "numbering": "Appendix T",
+      "line_start": 947,
+      "line_end": 949,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Table of characteristics of included studies",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 949,
+      "line_end": 990,
+      "content_preview": "| Reference and country of origin | Mean age, years | Mean duration after transplant, years | Sampl e size, n a | Duration | Exercise intervention summary | Control group (comparator) | Summary of mai",
+      "content_token_estimate": 3182,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix TX5.",
+      "depth": 0,
+      "numbering": "Appendix T",
+      "line_start": 990,
+      "line_end": 992,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Forest plots",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 992,
+      "line_end": 1084,
+      "content_preview": "| | Exercise | Exercise | Exercise | Control | Control | Control | | | MeanDifference | MeanDifference |\n|-------------------------------------------------------------|--------------------------------",
+      "content_token_estimate": 4011,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix TX6.",
+      "depth": 0,
+      "numbering": "Appendix T",
+      "line_start": 1084,
+      "line_end": 1086,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Risk of bias summary",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1086,
+      "line_end": 1088,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix TX7.",
+      "depth": 0,
+      "numbering": "Appendix T",
+      "line_start": 1088,
+      "line_end": 1090,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "'Leave-one-out' sensitivity analysis",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1090,
+      "line_end": 1140,
+      "content_preview": "We employed a 'leave-one-out' sensitivity analysis to all outcomes that were included in the quantitative analysis. Leave-one-out meta-analysis involves performing a meta-analysis on each subset of th",
+      "content_token_estimate": 756,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix TX8.",
+      "depth": 0,
+      "numbering": "Appendix T",
+      "line_start": 1140,
+      "line_end": 1142,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Funnel plots",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1142,
+      "line_end": 1145,
+      "content_preview": "Fasting glucose",
+      "content_token_estimate": 3,
+      "ancestor_path": []
+    }
+  ]
+}

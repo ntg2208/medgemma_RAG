@@ -6,25 +6,25 @@ from pathlib import Path
 
 def test_diet_agent_extends_base_agent():
     """Verify DietAgent extends BaseAgent."""
-    agents_path = Path(__file__).parent.parent / "3_MultiAgent_RAG" / "agents"
+    agents_path = Path(__file__).parent.parent / "multi_agent_rag" / "agents"
     diet_path = agents_path / "diet_agent.py"
 
     # Clean start - remove from sys.modules to simulate fresh import
     import sys
-    sys.modules.pop("3_MultiAgent_RAG.agents.base", None)
-    sys.modules.pop("3_MultiAgent_RAG.agents.diet_agent", None)
+    sys.modules.pop("multi_agent_rag.agents.base", None)
+    sys.modules.pop("multi_agent_rag.agents.diet_agent", None)
 
     # Load diet_agent which should also load base
-    diet_spec = importlib.util.spec_from_file_location("3_MultiAgent_RAG.agents.diet_agent", diet_path)
+    diet_spec = importlib.util.spec_from_file_location("multi_agent_rag.agents.diet_agent", diet_path)
     if diet_spec is None or diet_spec.loader is None:
         raise RuntimeError("Failed to load diet_agent module")
     diet_module = importlib.util.module_from_spec(diet_spec)  # type: ignore[assignment]
-    sys.modules["3_MultiAgent_RAG.agents.diet_agent"] = diet_module
+    sys.modules["multi_agent_rag.agents.diet_agent"] = diet_module
     diet_spec.loader.exec_module(diet_module)  # type: ignore[attr-defined]
     DietAgent = diet_module.DietAgent
 
     # Now load base separately and compare
-    base_module = sys.modules.get("3_MultiAgent_RAG.agents.base")
+    base_module = sys.modules.get("multi_agent_rag.agents.base")
     if base_module is None:
         raise RuntimeError("base module should be loaded")
     BaseAgent = base_module.BaseAgent
@@ -34,20 +34,20 @@ def test_diet_agent_extends_base_agent():
 
 def test_diet_agent_has_can_handle():
     """Verify DietAgent implements can_handle method."""
-    agents_path = Path(__file__).parent.parent / "3_MultiAgent_RAG" / "agents"
+    agents_path = Path(__file__).parent.parent / "multi_agent_rag" / "agents"
     diet_path = agents_path / "diet_agent.py"
 
     # Clean start - remove from sys.modules
     import sys
-    sys.modules.pop("3_MultiAgent_RAG.agents.base", None)
-    sys.modules.pop("3_MultiAgent_RAG.agents.diet_agent", None)
+    sys.modules.pop("multi_agent_rag.agents.base", None)
+    sys.modules.pop("multi_agent_rag.agents.diet_agent", None)
 
     # Load diet_agent which should also load base
-    diet_spec = importlib.util.spec_from_file_location("3_MultiAgent_RAG.agents.diet_agent", diet_path)
+    diet_spec = importlib.util.spec_from_file_location("multi_agent_rag.agents.diet_agent", diet_path)
     if diet_spec is None or diet_spec.loader is None:
         raise RuntimeError("Failed to load diet_agent module")
     diet_module = importlib.util.module_from_spec(diet_spec)  # type: ignore[assignment]
-    sys.modules["3_MultiAgent_RAG.agents.diet_agent"] = diet_module
+    sys.modules["multi_agent_rag.agents.diet_agent"] = diet_module
     diet_spec.loader.exec_module(diet_module)  # type: ignore[attr-defined]
     DietAgent = diet_module.DietAgent
 
@@ -63,20 +63,20 @@ def test_diet_agent_has_can_handle():
 
 def test_diet_agent_answer_returns_agent_response():
     """Verify answer() returns AgentResponse with correct fields."""
-    agents_path = Path(__file__).parent.parent / "3_MultiAgent_RAG" / "agents"
+    agents_path = Path(__file__).parent.parent / "multi_agent_rag" / "agents"
     diet_path = agents_path / "diet_agent.py"
 
     # Clean start - remove from sys.modules
     import sys
-    sys.modules.pop("3_MultiAgent_RAG.agents.base", None)
-    sys.modules.pop("3_MultiAgent_RAG.agents.diet_agent", None)
+    sys.modules.pop("multi_agent_rag.agents.base", None)
+    sys.modules.pop("multi_agent_rag.agents.diet_agent", None)
 
     # Load diet_agent which should also load base
-    diet_spec = importlib.util.spec_from_file_location("3_MultiAgent_RAG.agents.diet_agent", diet_path)
+    diet_spec = importlib.util.spec_from_file_location("multi_agent_rag.agents.diet_agent", diet_path)
     if diet_spec is None or diet_spec.loader is None:
         raise RuntimeError("Failed to load diet_agent module")
     diet_module = importlib.util.module_from_spec(diet_spec)  # type: ignore[assignment]
-    sys.modules["3_MultiAgent_RAG.agents.diet_agent"] = diet_module
+    sys.modules["multi_agent_rag.agents.diet_agent"] = diet_module
     diet_spec.loader.exec_module(diet_module)  # type: ignore[attr-defined]
     DietAgent = diet_module.DietAgent
     AgentResponse = diet_module.AgentResponse
@@ -93,20 +93,20 @@ def test_diet_agent_answer_returns_agent_response():
 
 def test_diet_agent_calculate_preserved():
     """Verify calculate() method is preserved for direct access."""
-    agents_path = Path(__file__).parent.parent / "3_MultiAgent_RAG" / "agents"
+    agents_path = Path(__file__).parent.parent / "multi_agent_rag" / "agents"
     diet_path = agents_path / "diet_agent.py"
 
     # Clean start - remove from sys.modules
     import sys
-    sys.modules.pop("3_MultiAgent_RAG.agents.base", None)
-    sys.modules.pop("3_MultiAgent_RAG.agents.diet_agent", None)
+    sys.modules.pop("multi_agent_rag.agents.base", None)
+    sys.modules.pop("multi_agent_rag.agents.diet_agent", None)
 
     # Load diet_agent which should also load base
-    diet_spec = importlib.util.spec_from_file_location("3_MultiAgent_RAG.agents.diet_agent", diet_path)
+    diet_spec = importlib.util.spec_from_file_location("multi_agent_rag.agents.diet_agent", diet_path)
     if diet_spec is None or diet_spec.loader is None:
         raise RuntimeError("Failed to load diet_agent module")
     diet_module = importlib.util.module_from_spec(diet_spec)  # type: ignore[assignment]
-    sys.modules["3_MultiAgent_RAG.agents.diet_agent"] = diet_module
+    sys.modules["multi_agent_rag.agents.diet_agent"] = diet_module
     diet_spec.loader.exec_module(diet_module)  # type: ignore[attr-defined]
     DietAgent = diet_module.DietAgent
 

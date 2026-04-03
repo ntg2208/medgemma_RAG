@@ -280,20 +280,65 @@ class DocumentPreprocessor:
         blocks = parse_blocks(text)
         packed = pack_chunks(blocks, self.chunk_size, self.chunk_overlap)
 
+        # Load section tree for hierarchy metadata (if available)
+        heading_to_tree_node = self._build_heading_lookup(doc_dir)
+
         # Build LangChain Documents
         documents = []
         for i, chunk in enumerate(packed):
+            section_heading = chunk["section"]
+            section_path = ""
+            section_numbering = ""
+
+            if section_heading and section_heading in heading_to_tree_node:
+                node = heading_to_tree_node[section_heading]
+                section_path = "|".join(node.ancestor_path + [node.heading])
+                section_numbering = node.numbering if node.numbering else node.heading
+
             metadata = {
                 "source": source,
                 "title": title,
-                "section": chunk["section"],
+                "section": section_heading,
                 "chunk_id": i,
                 "total_chunks": len(packed),
+                "section_path": section_path,
+                "section_numbering": section_numbering,
+                "doc_name": doc_dir.name,
             }
             documents.append(Document(page_content=chunk["text"], metadata=metadata))
 
         logger.info(f"Created {len(documents)} chunks from {doc_dir.name}")
         return documents
+
+    @staticmethod
+    def _build_heading_lookup(doc_dir: Path) -> dict:
+        """Build a mapping from heading text to SectionNode.
+
+        Uses the section_tree.json if available.
+
+        Args:
+            doc_dir: Path to document directory.
+
+        Returns:
+            Dict mapping heading text to SectionNode.
+        """
+        try:
+            from Data.tree_builder import load_tree
+        except ImportError:
+            try:
+                from tree_builder import load_tree
+            except ImportError:
+                return {}
+
+        roots = load_tree(doc_dir)
+        if not roots:
+            return {}
+
+        lookup = {}
+        for root in roots:
+            for node in root.flatten():
+                lookup[node.heading] = node
+        return lookup
 
     def process_directory(self, input_dir: Optional[Path] = None) -> list[Document]:
         """Process all document directories.

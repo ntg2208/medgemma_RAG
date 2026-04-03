@@ -1,0 +1,565 @@
+University Hospitals Coventry and Warwickshire
+
+NHS Trust
+
+
+<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td colspan="2">CHRONIC KIDNEY DISEASE - HAEMODIALYSIS DIETETIC GUIDELINE</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Record Type</td><td style='text-align: center; word-wrap: break-word;'>Clinical Guideline</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>eLibrary ID Reference No:</td><td style='text-align: center; word-wrap: break-word;'>CG 1750</td></tr><tr><td colspan="2">Newly developed and approved Trust-wide Clinical Guidelines will be allocated an eLibrary reference number following submission to relevant eLibrary administrator. Reviewed Clinical Guidelines must retain the original eLibrary reference id number.</td></tr></table>
+
+
+<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>Version:</td><td style='text-align: center; word-wrap: break-word;'>3</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Name of Approving Trust Committee / Forum / Body / Group</td><td style='text-align: center; word-wrap: break-word;'>Renal Guidelines Guideline and Procedure Approval Group</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Date of Approval</td><td style='text-align: center; word-wrap: break-word;'>2 $ ^{nd} $ September 2015</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Review Date</td><td style='text-align: center; word-wrap: break-word;'>September 2018</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Expiry Date</td><td style='text-align: center; word-wrap: break-word;'>December 2018</td></tr><tr><td rowspan="3">Author's Name, Title &amp; email address:</td><td style='text-align: center; word-wrap: break-word;'>Caroline Bird</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Renal Dietetic Team Leader</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>caroline.bird@uhcw.nhs.uk</td></tr><tr><td rowspan="2">Reviewer's Name, Title &amp; email address:</td><td style='text-align: center; word-wrap: break-word;'>Andrew Morris</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Senior Specialist renal dietitian</td></tr><tr><td rowspan="2">Responsible Director's Name &amp; Title:</td><td style='text-align: center; word-wrap: break-word;'>Dr Simon Fletcher</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Renal Clinical Director</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Department / Specialty:</td><td style='text-align: center; word-wrap: break-word;'>Renal Dietetics</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Target audience:</td><td style='text-align: center; word-wrap: break-word;'>Renal multi-disciplinary team</td></tr><tr><td colspan="2">If printed, copied or otherwise transferred from eLibrary, Trust -wide Clinical Guidelines will be considered ‘uncontrolled copies’. Staff must always consult the most up to date PDF version which is registered on eLibrary.</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Purpose of Record</td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Key search words for eLibrary</td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>To be read in conjunction with:</td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Location of  $ \underline{\text{Clinical Guideline}} $: (please state no more than 3 eLibrary directories / subdirectories to be saved in).</td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Superseded Trust-wide Clinical Guideline (if applicable): (Should this document completely override a previously approved Trust-wide Clinical guideline, please state full title and eLibrary reference number and the document will be removed from eLibrary)</td><td style='text-align: center; word-wrap: break-word;'></td></tr></table>
+
+
+
+
+
+<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>Version</td><td style='text-align: center; word-wrap: break-word;'>Title of Trust Committee/Forum/Body/Group consulted during the development stages of this Trust-wide Clinical Guideline</td><td style='text-align: center; word-wrap: break-word;'>Date</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>V1</td><td style='text-align: center; word-wrap: break-word;'>Renal Guidelines Guideline and Procedure Approval Group</td><td style='text-align: center; word-wrap: break-word;'>May 2011</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>V2</td><td style='text-align: center; word-wrap: break-word;'>Renal Guidelines Guideline and Procedure Approval Group</td><td style='text-align: center; word-wrap: break-word;'>13\textsuperscript{th} September 2013</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>V3</td><td style='text-align: center; word-wrap: break-word;'>Renal Guidelines Guideline and Procedure Approval Group</td><td style='text-align: center; word-wrap: break-word;'>2\textsuperscript{nd} September 2015</td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td></tr></table>
+
+Contents
+
+1. SCOPE..... 3
+2. INTRODUCTION..... 3
+3. STATEMENT OF INTENT..... 4
+4. DEFINITIONS..... 5
+5. DUTIES / RESPONSIBILITIES..... 6
+6. DETAILS OF THE DOCUMENT..... 6
+7. DISSEMINATION AND IMPLEMENTATION..... 6
+8. TRAINING..... 12
+9. MONITORING COMPLIANCE..... 13
+10. STAFF COMPLIANCE STATEMENT..... 13
+11. EQUALITY & DIVERSITY STATEMENT..... 14
+12. UHCW ASSOCIATED RECORDS..... 14
+13. REFERENCES AND BIBLIOGRAPHY..... 15
+14. EVIDENCE BASED REFERENCES..... 15
+15. APPENDICES..... Error! Bookmark not defined.
+
+University Hospitals Coventry and Warwickshire NHS Trust
+
+1. SCOPE
+
+This guideline is intended for the renal multidisciplinary team (MDT) including consultant nephrologists, specialist registrars, specialist nurses, dietitians and pharmacists. This is a locally adapted guideline based on national recommendations and applies to patients with chronic kidney disease Stage 5 on haemodialysis (HD).
+
+2. INTRODUCTION
+
+All patients should be reviewed within one month of starting HD by a renal dietitian (Renal Association, 2010). All HD patients should have a nutritional review at least every three-six months, and patients who are highlighted as being nutritional at risk may need a review more frequently. The patient may have a review at their haemodialysis QA review or a referral may be made by the nursing team. The renal referral criteria (Appendix A) should be used by the MDT to highlight HD patients requiring review (K/DOQI, 2000; Renal Workforce planning, 2002).
+
+Nutritional assessment should not rely on a single marker e.g. weight (K/DOQI, 2000) (Appendix B and C).
+
+The renal dietitian will participate in the HD quality assurance (QA) sessions and HD QA clinics. These will help facilitate dietetic input and discussions surrounding patient care and treatment plans.
+
+3. STATEMENT OF INTENT
+
+
+<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>Energy:</td><td style='text-align: center; word-wrap: break-word;'>Aim 30-35Kcal /Kg/ IBW/d</td><td style='text-align: center; word-wrap: break-word;'>(EDTNA, 2002;K/DOQI, 2002)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Protein:</td><td style='text-align: center; word-wrap: break-word;'>Aim minimum 1.1g /Kg/ IBW/d</td><td style='text-align: center; word-wrap: break-word;'>(RNG, 2011)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Potassium:</td><td style='text-align: center; word-wrap: break-word;'>Aim 1 mmol /Kg/IBW/d</td><td style='text-align: center; word-wrap: break-word;'>(EDTNA, 2002)</td></tr></table>
+
+The pre-dialysis potassium level should be maintained between 4-6mmol/l (Renal Association, 2010). Dietary potassium intake should be assessed and recommendations made to help maintain this serum potassium level.
+
+Phosphate: Aim for a phosphate intake of 1000-1400mg (EDTNA, 2002)
+
+Maintain pre-dialysis serum phosphate between 1.1-1.7mmol/l (Renal Association, 2010). Dietary phosphate intake should be assessed and recommendations made to help maintain this serum phosphate level without compromising protein intake.
+
+Calcium levels should be maintained at 2.10-2.5 mmol/l (corrected for serum albumin). The following phosphate binding medication is used: Calcium acetate (Renacet and Phosex), Calcium carbonate (Calcichew), Lanthanum (Fosrenol), Sevelemer hydrochloride (Renagel) and Sevelemer carbonate (Renvela). Calcium acetate should be used as first line where appropriate (NICE, 2013). Other non-dietary causes of high phosphate should be considered i.e. adequate HD.
+
+Intact Parathyroid Hormone: 8 – 38 pmol/L (2-9 times the upper laboratory target)
+
+Treatment should be based on trends; patients with levels of iPTH above the target range should be assessed for hyperphosphataemia and hypocalcaemia (KDIGO, 2009).
+
+Sodium: Aim &lt;100mmol Na(&lt;6g salt)/d (British Hypertension Society, 2002)
+
+This should help to improve blood pressure control and minimise fluid gains. Salt substitutes that contain potassium salts should be avoided unless advised otherwise by the dietitian (SIGN, 2008).
+
+Patients should be advised on a maximum weight gain of 2Kg or 4% of dry weight.
+
+Vitamin and mineral intake:
+
+The dietitian will advise on ways to achieve an adequate intake of vitamins and minerals.
+
+4. DEFINITIONS
+
+CKD- Chronic Kidney Disease
+
+HD- Haemodialysis
+
+IBW- Ideal body weight
+
+iPTH- Intact Parathyroid hormone
+
+MAC- Mid-arm circumference
+
+TSF- Tricep skinfold thickness
+
+IDWG- Intra-dialytic weight gain
+
+JVP - Jugular venous pressure
+
+SGA - Subjective globular assessment
+
+Kt/v – marker of dialysis adequacy
+
+5. DUTIES / RESPONSIBILITIES
+
+All renal dietitians should be aware and understand this guideline to assist with its implementation. This will ensure that all CKD HD patients that are referred to a renal dietitian are given dietary advice that is evidence based.
+
+6. DETAILS OF THE DOCUMENT
+
+Assessment
+
+The prioritisation and frequency of dietetic review will be decided by the patient's renal dietitian (NHS Commissioning Board, 2013). The frequency of monitoring may need to increase to monthly in patients who have a very poor appetite and a significant weight loss. Those stable on dialysis (stable weight and stable diet related electrolytes) may need a review every six months.
+
+Nutrient intakes
+
+(i) Energy
+
+Aim: To achieve/maintain an IBW and nitrogen balance To minimise morbidity and mortality risk associated with malnutrition
+
+Energy requirement are increased in HD and CKD due to the activation of the complement cascade and cytokine release from the HD process and uraemia. This can often be complicated by a reduced appetite or nausea.
+
+• 30-35kcal/kg IBW is recommended for renal patients (Renal Association, 2010)
+
+• During acute illness energy requirements will increase further (K/DOQI, 2000)
+
+(ii) Protein
+
+Aim: To maintain nitrogen balance To minimize morbidity and mortality risk associated with malnutrition
+
+Protein requirements in HD are increased due to the activation of cytokine release and complement cascade. High flux dialysis reduces this problem but increases the removal of higher molecular weight molecules such as peptides. Consequently protein requirements are increased to compensate for losses.
+
+- A minimum of 1.1g protein/Kg IBW is recommended for maintenance HD patients (British Dietetic Association Renal Nutrition Group, 2011)
+
+- Catabolic and patients who are acutely unwell will have increased protein requirements
+
+- Adequate energy intake is required to achieve positive nitrogen balance (EDTNA, 2002)
+
+- At least 50% of the recommended protein intake should be of a HBV (High Biological Value) (K/DOQI, 2000)
+
+(iii) Potassium
+
+Aim: Renal Association standards recommend pre-dialysis serum potassium levels are maintained between 4-6 mmol/l
+
+- Where serum potassium levels are elevated non dietary causes of raised potassium should be considered before dietary restriction (Appendix D)
+
+• Aim for a normal range of serum bicarbonate (22-29mmol/l)
+
+- Where the serum potassium is elevated and catabolism has been excluded, the patient should be advised on a potassium intake of 1mmol/Kg/BW (EDTNA, 2002)
+
+- Where pre-dialysis serum potassium levels are consistently <3.7 mmol/l an increased potassium diet should be advised (agreed best practice). The option of using dialysis fluid higher in potassium can be discussed with the medical/nursing team
+
+- Where pre dialysis serum potassium levels are continuously <4.5mmol/l relaxation of dietary restriction may be advised with caution (agreed best practice)
+
+- Patients referred with hyperkalaemia, who have not previously been advised on a low potassium diet, should be reviewed within one working day of referral (departmental standards) or when they next dialyse.
+
+(iv) Phosphate:
+
+Aim: To maintain serum phosphate levels between 1.1-1.7mmol/l (Renal Association, 2010)
+
+• Calcium levels should be maintained at 2.10-2.5 mmol/l (corrected for serum albumin)
+
+- The dose of calcium based phosphate binders and/or vitamin D analogues should be restricted in the presence or persistent or recurrent hypercalemia (KDIGO, 2009)
+
+- Where serum phosphate levels exceeds 1.7mmol/l, other non-dietary causes will be taken into account such as dialysis adequacy, Urea reduction ratio(URR), and medications prescribed, calcium and iPTH results
+
+- Unless serum phosphate is low the patient should be advised on how to achieve a phosphate intake of 1000-1400mg (agreed best practice). It may be difficult in some patients, especially vegetarians, to achieve an adequate protein intake on a low phosphate diet and this must be taken into account
+
+- Patients should be advised on the appropriate timing of phosphate binders with protein foods. Oral iron tablets should not be taken at the same time as phosphate binders as this reduces their effectiveness (Refer to phosphate binders diet sheet on the e-library)
+
+- The phosphate binders used locally are initially calcium acetate (Renacet and Phosex), Calcium carbonate (Calcicchew), Lanthanum (Fosrenol), Sevelemer hydrochloride (Renagel) and Sevelamer Carbonate (Renvela). Calcium acetate should be used as first line where appropriate (NICE, 2013)
+
+(v) Intact Parathyroid Hormone: 8 – 38 pmol/L (2-9 times the upper laboratory target)
+
+Treatment should be based on trends; patients with levels of iPTH above the target range should be assessed for hyperphosphataemia and hypocalcaemia (KDIGO, 2009). Active vitamin D analogues calcitriol and alfacalcidol should be used to down regulate the iPTH (KDIGO, 2009; RA, 2010). Patients with an iPTH above the target range despite appropriate use of calcitrol or alfacalcidol should be prescribed paricalcitol. Patients with a iPTH above 85pmol/L who are refractory to standard therapy (calcitriol, alfacalcidol and paricalcitol) should be considered for cinacalcet or if appropriate partial or total parathyroidectomy (NICE, 2009).
+
+(v) Sodium
+
+Aim: Control of Hypertension
+
+Support of fluid management
+
+• Dietary salt intakes >6g/d precipitate hypertension. Aim 100mmol/6g salt a day
+
+- Reducing dietary salt intake and sodium dialysate concentration has been shown to reduce blood pressure (McMahon et al, 2015)
+
+- High salt intakes are associated with an increase in thirst, which can make it very difficult to follow a fluid restriction
+
+- Where patient’s nutritional intake is poor, sodium restriction may compound the problem and is not advised (agreed best practice)
+
+(vi) Fluid and interdialytic weight gains (IDWG)
+
+Aim: To help maintain an even fluid balance and control IDWG's
+
+- Patients should be advised on an appropriate level of IDWG. Large fluid weight gains are associated with symptomatic dialysis sessions and left ventricular hypertrophy (LVH)
+
+• Patients should be advised to have a fluid intake of 500mls plus the equivalent of the previous day's urine output
+
+• Maximum of 2kg or no more than 4% of dry weight/IBW (whichever is the lowest weight)
+
+(vii) Dry Weight
+
+- Changes in dry weight are an important consideration in the review of HD patients. Such changes are often subtle and difficult to identify. The dietitian should be informed if patients are losing dry weight since intervention is required.
+
+• Methods of monitoring dry weight include:
+
+• Medical/ nursing assessment: JVP, chest x-ray, pre and post dialysis blood pressure,
+
+haematocrit monitoring, assessing for oedema and Crit-line on HD
+
+(viii) Vitamin and mineral intake
+
+Aim: To improve intake of vitamins and minerals
+
+The dietitian will advise on ways to achieve an adequate intake of vitamins and minerals is adequate.
+
+- Water-soluble vitamins are routinely given to HD patients on the renal unit post dialysis, 2-3 x/week. These are: ascorbic acid (100mg), vitamin B compound strong (containing 20mg nicotinamide, 2mg pyridoxine, 2mg riboflavin and 4.85mg thiamine) and folic acid 5mg. This level of supplementation is designed to make up any shortfalls from a low potassium diet, and replace any potential losses on dialysis. There is insufficient research to set a definitive reference nutrient intake (RNI) for dialysis patients
+
+- The Renal Association (2010) recommend that HD patients are prescribed water soluble vitamins. However no guidance is given on dose or frequency of water soluble vitamins prescribed
+
+- As in all renal patients it is recommended that HD patients do not have supplements containing fat soluble vitamins, or take fish liver oil supplements due to risks of hypervitaminosis with fat soluble vitamins (Floege et al, 2010). Suitable multivitamin preparations include Renavit and also standard pregnancy multivitamins
+
+Vitamin D
+
+NICE (2014) recommend the diagnosis and treatment of native vitamin D deficiency and insufficiency in those with a GFR &lt;30 mls/min. This follows on from European guideline recommendations which recommend baseline measurement of vitamin D levels, and repletion if required, in all stages of chronic kidney disease (KDIGO, 2009). It aids management of hyperparathyroidism, promotes bone mineralisation and plays an important role in muscle function (Holick, 2007; Bischoff-Ferrari, 2012).
+
+• Vitamin D supplementation to maintain serum 25(OH)D ≥75nmol/L is recommended for all haemodialysis patients. The supplementation protocol is outlined in the separate guideline ‘Vitamin D Supplementation in Haemodialysis Patients’ available on the e-library
+
+(ix) Dialysis adequacy and changes in regime.
+
+• Aim URR >65% for those patients dialysing three times per week (Renal Association, 2009)
+
+- Aim URR >85% for those patients dialysing two times per week. Twice weekly HD is not recommended unless there is good preservation of residual renal function (Renal Association, 2007)
+
+• Aim equilibrated Kt/V > 1.2 (Renal Association, 2009)
+
+- Some patients dialyse at home on NX stage dialysis. This is more frequent dialysis for approximately 3 hours five times a week. Adequate clearance on NX stage dialysis is Kt/V > 2.2
+
+- Inadequate dialysis leads to poor appetite, malnutrition and increased morbidity and mortality (Renal Association, 2010)
+
+- Dialysis adequacy is affected by the following: kidney size, pump speeds, access type, effective needle spacing (to minimize the problem of'recirculation') and hours on dialysis. Discuss with nursing & medical staff if patient appears to be under dialysed
+
+(x) Undernutrition
+
+- Nutritional support should be considered where patients are not achieving adequate nutrition (K/DOQI, 2000)
+
+• Dietitians should ensure patients are not following any unnecessary dietary restrictions
+
+- Where it is not possible to achieve adequate nutrition through food fortification, supplements should be considered
+
+- The composition of supplements should be assessed on an individual basis
+
+- Giving nutrition supplements on dialysis, and at home if needed, has been shown to be beneficial due to the catabolic nature of the process. These patients should be monitored regularly (at least once every three months)
+
+- Anthropometric markers such as; hand grip, MAC and TSF are useful markers of nutrition. They should be performed regularly in HD patients particularly those considered to be at risk nutritionally (see Appendix B)
+
+- HD patients should be screened for undernutrition initially, and at 12 months using the SGA assessment tool (Renal Association, 2010)
+
+- Nasogastric or gastrostomy feeding may be suitable in some cases, and patients should be monitored at least once a month
+
+(xi) Documentation of dietary review
+
+- When patients are reviewed outcomes should be discussed with the relevant nurse and documented in the nursing kardex in the nutritional care plan or medical notes for inpatients
+
+7. DISSEMINATION AND IMPLEMENTATION
+
+These guidelines have been disseminated and implemented through the dietetic and renal QIPPS meetings, and are the e-library so that all members of the renal multi-disciplinary team has assess to them.
+
+8. TRAINING
+
+All new renal dietitians have an introduction and training programme. Included within this training is the implementation of the renal dietetic guidelines.
+
+9. MONITORING COMPLIANCE
+
+(I make a short statement about monitoring and insert the'monitoring table' to detail how the implementation and effectiveness of the clinical guideline will be monitored. For additional guidance on monitoring refer to page 27.) (Delete upon insertion of text)
+
+9.1 Monitoring Table (Do not delete this table - Must be Completed)
+
+
+<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>Aspect of compliance or effectiveness being monitored</td><td style='text-align: center; word-wrap: break-word;'>Monitoring method</td><td style='text-align: center; word-wrap: break-word;'>Individual department responsible for the monitoring</td><td style='text-align: center; word-wrap: break-word;'>Frequency of the monitoring activity</td><td style='text-align: center; word-wrap: break-word;'>Group / committee which will receive the findings / monitoring report</td><td style='text-align: center; word-wrap: break-word;'>Group / committee / individual responsible for ensuring that the actions are completed</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>All new HD patients seen within 4 weeks</td><td style='text-align: center; word-wrap: break-word;'>Database &amp; Audit</td><td style='text-align: center; word-wrap: break-word;'>Renal Dietetic team</td><td style='text-align: center; word-wrap: break-word;'>Annually</td><td style='text-align: center; word-wrap: break-word;'>Renal &amp; Dietetic QIPPS meetings</td><td style='text-align: center; word-wrap: break-word;'>Renal dietetic team.</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Six monthly nutritional review of HD patients</td><td style='text-align: center; word-wrap: break-word;'>Audit</td><td style='text-align: center; word-wrap: break-word;'>Renal Dietetic team</td><td style='text-align: center; word-wrap: break-word;'>Annually</td><td style='text-align: center; word-wrap: break-word;'>Renal &amp; Dietetic QIPPS meetings</td><td style='text-align: center; word-wrap: break-word;'>Renal dietetic team.</td></tr></table>
+
+4. STAFF COMPLIANCE STATEMENT
+
+(Do not delete)
+
+Clinical Guidelines assist in decision making; they do not replace clinical judgement. Regardless of the strength of evidence, it remains the responsibility of the clinician to interpret the application of the clinical guidance to local circumstances and the needs and wishes of the individual patient. Where variations of any kind do occur, it is important to document the variations and the reason for them in the patient's health record.
+
+5. EQUALITY & DIVERSITY STATEMENT
+
+(Do not delete)
+
+Throughout its activities, the Trust will seek to treat all people equally and fairly. This includes those seeking and using the services, employees and potential employees. No-one will receive less favourable treatment on the grounds of sex/gender (including Trans People), disability, marital status, race/colour/ethnicity/nationally, sexual orientation, age, social status, their trade union activities, religion/beliefs or caring responsibilities nor will they be disadvantaged by conditions or requirements which cannot be shown to be justifiable. All staff, whether part time, full-time, temporary, job share or volunteer; service users and partners will be treated fairly and with dignity and respect.
+
+6. UHCW ASSOCIATED RECORDS
+
+(List all UHCW referenced strategies, policies, procedures and Clinical Guidelines) (Delete upon insertion of text)
+
+7. REFERENCES AND BIBLIOGRAPHY
+
+Properly reference sources of evidence that underpin the procedural document e.g. statute, NHS, other relevant guidance, information or a professional body and insert bibliography where relevant.) (Delete upon insertion of text)
+
+1.1 References
+
+1.2 Bibliography
+
+1.3 Further reading
+
+8. EVIDENCE BASED REFERENCES
+
+(If there are none, write NONE)
+
+Properly reference sources of evidence that underpin the procedural document) (Delete upon insertion of text)
+
+14.1
+
+
+<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>References</td><td style='text-align: center; word-wrap: break-word;'>Grade of evidence (See Table 1.)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>KDOQI (2000) Clinical Practice Guidelines for Nutrition in Chronic Renal Failure. Available at http://www2.kidney.org/professionals/KDOQI/guidelines_nutrition/dogi_nut.html [accessed 24.8.15]</td><td style='text-align: center; word-wrap: break-word;'>3-5</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>KDOQI (2002) Clinical Practice Guidelines for Bone Metabolism and Disease in Chronic Kidney Disease. Available at http://www2.kidney.org/professionals/KDOQI/guidelines_bone/ [accessed 24.8.15]</td><td style='text-align: center; word-wrap: break-word;'>3-5</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Renal Association (2010) Nutrition in CKD. Available at http://www.renal.org/guidelines/modules/nutrition-in-ckd#sthash.fHglYhA2.dpbs [accessed 24.8.15]</td><td style='text-align: center; word-wrap: break-word;'>3-5</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>EDTNA (2002) European Guidelines for the Nutritional Care of Adult Renal Patients http://www.eesc.europa.eu/self-and-coregulation/documents/codes/private/086-private-act.pdf [accessed 24.8.15]</td><td style='text-align: center; word-wrap: break-word;'>3-5</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>KDIGO (2009) Clinical Practice Guidelines for the Diagnosis, Evaluation, Prevention &amp; Treatment of Chronic kidney disease and mineral and bone disorders (CKD-MBD). Available at http://www.kdigo.org/pdf/KDIGO%20CKD-MBD%20GL%20KI%20Suppl%20113.pdf [accessed 24.8.15]</td><td style='text-align: center; word-wrap: break-word;'>3-5</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>British Dietetic Association Renal Nutrition Group (2011) Evidence based dietetic guidelines protein requirements of adults on Haemodialysis and Peritoneal dialysis. Available at https://www.bda.uk.com/publications/professional/rng_protein_executive_summary [accessed 24.8.15]</td><td style='text-align: center; word-wrap: break-word;'>3-5</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Holick MF (2007) Vitamin D deficiency. New England Journal of Medicine, 357(3):266-</td><td style='text-align: center; word-wrap: break-word;'>3-5</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>281</td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Bischoff-Ferrari H A, Dawson-Hughes B, Stocklin E et al.(2012) Oral Supplementation with 25(OH)D3 Versus Vitamin D3: Effects on 25(OH)D Levels, Lower Extremity Function, Blood Pressure, and Markers of Innate Immunity. Journal of Bone and Mineral Research; 27 (1): 160-169</td><td style='text-align: center; word-wrap: break-word;'>3-5</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>National Institute for Health and Care Excellence (NICE)(2014) Chronic Kidney Disease: early identification and management of chronic kidney disease in adults in primary and secondary care - CG182. Available from: https://www.nice.org.uk/guidance/CG182 [ Accessed on 21/10/14]</td><td style='text-align: center; word-wrap: break-word;'></td></tr><tr><td style='text-align: center; word-wrap: break-word;'>NICE (2013) Hyperphosphatemia in chronic kidney disease: Management of hyperphosphatemia in patients with stage 4 or 5 chronic kidney disease. Available at https://www.nice.org.uk/guidance/cg157/ifp/chapter/phosphate-binders-for-adults [ Accessed on 21/10/14]</td><td style='text-align: center; word-wrap: break-word;'>3-5</td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>3-5</td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>3-5</td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>3-5</td></tr></table>
+
+
+
+
+<div style="text-align: center;">Table 1</div>
+
+
+
+<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>Grade of evidence</td><td style='text-align: center; word-wrap: break-word;'>Based on</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>1</td><td style='text-align: center; word-wrap: break-word;'>Systematic review or meta-analysis</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>2</td><td style='text-align: center; word-wrap: break-word;'>Randomised controlled trial/s</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>3</td><td style='text-align: center; word-wrap: break-word;'>Controlled study without randomisation (e.g. case controlled) or quasi-experimental study, such as a cohort study</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>4</td><td style='text-align: center; word-wrap: break-word;'>Descriptive studies such as case series and reports.</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>5</td><td style='text-align: center; word-wrap: break-word;'>Expert opinion, narrative review</td></tr></table>
+
+Adapted from: Oxford Centre for Evidence Based Medicine, 2009. Levels of evidence. [online]
+
+Available at: http://www.cebm.net/index.aspx?o=1025 [Accessed 25 $ ^{th} $ August 2011].
+
+<div style="text-align: center;">14.2</div>
+
+
+
+<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td colspan="3">Evidence supporting recommendations</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Are there any relevant Cochrane Reviews related to this topic area?</td><td style='text-align: center; word-wrap: break-word;'>Yes ☑</td><td style='text-align: center; word-wrap: break-word;'>No ☐</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Has this been fully incorporated?</td><td style='text-align: center; word-wrap: break-word;'>Yes ☑</td><td style='text-align: center; word-wrap: break-word;'>No ☐</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Is there any relevant NICE guidance related to this topic area?</td><td style='text-align: center; word-wrap: break-word;'>Yes ☑</td><td style='text-align: center; word-wrap: break-word;'>No ☐</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Has this been fully incorporated?</td><td style='text-align: center; word-wrap: break-word;'>Yes ☑</td><td style='text-align: center; word-wrap: break-word;'>No ☐</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Is there any relevant Royal College guidance related to this topic area?</td><td style='text-align: center; word-wrap: break-word;'>Yes ☑</td><td style='text-align: center; word-wrap: break-word;'>No ☐</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Has this been fully incorporated?</td><td style='text-align: center; word-wrap: break-word;'>☐</td><td style='text-align: center; word-wrap: break-word;'>☐</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Is there any other relevant national guidance related to this topic area?</td><td style='text-align: center; word-wrap: break-word;'>☑</td><td style='text-align: center; word-wrap: break-word;'>☐</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Has this been fully incorporated?</td><td style='text-align: center; word-wrap: break-word;'>☑</td><td style='text-align: center; word-wrap: break-word;'>☐</td></tr></table>
+
+
+
+
+9. APPENDICES
+
+Appendix A
+
+Coventry renal dietitians
+
+Out patient referral criteria for renal dietetic review
+
+Please refer the following patients for dietetic review:
+
+Dialysis patients:
+
+If patients have not been seen by a dietitian since starting dialysis.
+
+If blood results are outside of the following and this is not a longstanding problem:
+
+
+<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>HD</td><td style='text-align: center; word-wrap: break-word;'>PD</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Potassium</td><td style='text-align: center; word-wrap: break-word;'>&lt;3.7 &gt;6.0</td><td style='text-align: center; word-wrap: break-word;'>&lt;3.7 &gt;5.5</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Phosphate</td><td style='text-align: center; word-wrap: break-word;'>&lt;0.8 &gt;1.7</td><td style='text-align: center; word-wrap: break-word;'>&lt;0.8 &gt;1.7</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Fluid</td><td style='text-align: center; word-wrap: break-word;'>Fluid gains &gt;2Kg</td><td style='text-align: center; word-wrap: break-word;'>Increasing fluid weight</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>HbA1c</td><td style='text-align: center; word-wrap: break-word;'>&gt;64 mmol/mol</td><td style='text-align: center; word-wrap: break-word;'>&gt;64 mmol/mol</td></tr></table>
+
+Poor appetite, i.e. eating less than half of normal intake
+
+Undesirable weight loss
+
+Excessive weight gain/ needs to lose weight for transplant
+
+Any questions about diet
+
+Attending clinic with family or carers who also need to be present during consultation.
+
+Home HD patients at clinic appointment
+
+Transplant patients:
+
+Patients have gained unwanted extra weight – BMI >30
+
+Newly diagnosed diabetics
+
+Raised cholesterol - > 5.5mmol/l
+
+Pre-Dialysis patients:
+
+Stage 4-5 CKD, and any of the following:
+
+Phosphate > 1.40mmol/l
+
+Potassium > 5.5mmol/l with a normal bicarbonate
+
+Uraemic symptoms, including poor appetite or weight loss
+
+Any questions about diet
+
+Attending clinic with family or carers who also need to be present during consultation
+
+Poor diabetic control HbA1c >64mmol/mol
+
+Hypertensive
+
+Contact us on 024 7696 6151, or ext 26151 at UHCW NHS Trust
+
+Appendix B:
+
+Nutritional screening:
+
+Subjective assessment
+
+Height (m) (first contact only)
+
+Weight (Kg)/
+
+Dry weight
+
+(For peritoneal dialysis patients (PD) at UHCW NHS Trust this is the weight including the fluid from the bag)
+
+(For HD patients this is the weight set by medical staff where JVP and chest x-ray are clear and the patient has no oedema)
+
+Body mass index (BMI)
+
+Ideal body weight (IBW) is equivalent to:
+
+Actual BMI if BMI between 20-25
+
+BMI of 20 if BMI is less than 20
+
+BMI of 25 if BMI is greater than 25
+
+(Renal Association Guidelines, 2010 - Screening for undernutrition in CKD)
+
+Mid-arm-circumference (MAC), grip strength and skin fold thickness. This should be used in those patients felt to be nutritionally at risk, assessment of dry weight for those with oedema/ on dialysis. Repeat measurements on a 3 monthly basis to highlight any changes
+
+Remember to document this on the appropriate yellow card inside the record card and record which arm is measured
+
+Relevant Biochemistry (i.e those specified on blood card), and cholesterol, triglycerides, HbA1C, glucose, CRP and magnesium when available.
+
+Diet history/ food diary
+
+Estimated nutritional requirements
+
+Estimated calorie and protein intake
+
+Appendix C:
+
+Renal Association Guidelines 2010; Screening for undernutrition in CKD
+
+Screening methods for undernutrition in CKD
+
+We recommend that all patients with stage 4-5 CKD should have the following parameters measured as a minimum in order to identify undernutrition (1C):
+
+• Actual Body Weight (ABW) (< 85% of Ideal Body Weight (IBW))
+
+• Reduction in oedema free body weight (of 5% or more in 3 months or 10% or more in 6 months)
+
+• BMI (<20Kg/m2)
+
+• Subjective Global Assessment (SGA) (B/C on 3 point scale or 1-5 on 7 point scale)
+
+The above simple audit measures have been linked to increased mortality and other adverse outcomes.
+
+Appendix D: Factors affecting serum potassium levels in renal failure
+
+Normal serum potassium levels: 3.5 – 5.5 mmol/l
+
+HD patients: 3.5 – 6.0 mmol/l
+
+PD patients : 3.5 – 5.5 mmol/l
+
+An  $ \underline{\text{INCREASE}} $ in serum potassium could be due to :
+
+• Diet
+
+High potassium foods
+
+• Drugs
+
+○ Erythropoetin (EPO) therapy
+
+
+
+o Regular treatment - Original flavour version contains 6 - 7 mmol k+ per sachet, the orange and lemon/lime flavour versions contains < 1 mmol k+ per sachet
+
+○ Fybogel – The original flavour contains approximately 2.5mmol k+ per sachget, the orange flavour contains 0.7mmol k+ per sachet
+
+○ ACE inhibitors, for example; Captopril, Enalopril,
+
+o ARBs, for example losartan, candesartan, irbesarta
+
+○ Potassium salts for example Slow K (occasionally used where levels are low. Renal function changes and someone forgets to stop them)
+
+○ Potassium sparing diuretics, eg. Spironolactone etc. (Not usually used in renal failure for this reason)
+
+• Metabolic
+
+○ Poor diabetic control / Insulin deficiency
+
+☐ Dehydration
+
+☐ Acidosis
+
+○ Hypoaldosteronism.]
+
+• Catabolic
+
+☐ Infection / sepsis.]
+
+○ Rapid catabolism / weight loss.]
+
+○ Burns
+
+○ Crush injuries / rhabdomyolysis / ischaemia
+
+• Other
+
+o Constipation (more potassium is generally excreted in the stools of renal patients)
+
+○ A small temporary increase in potassium of 0.5 mmol/l is usual following exercise
+
+○ Blood transfusion
+
+o Haemolysed blood sample.
+
+• In HD patients, other factors to consider
+
+☐ Inadequate dialysis
+
+☐ Incorrect dialysate used
+
+○ Recirculation
+
+Treatment for high potassium:
+
+1. Calcium gluconate
+
+2. Dextrose and insulin. This works by moving potassium into the cells; temporary measure
+
+3. Dialysis – haemodialysis, haemofiltration
+
+4. Ion exchanges resins e.g. calcium resonium. This binds potassium in the gut and removes it via the stools. The usual dose is 15g orally 3 or 4 times daily in water or 30g rectally
+
+5. Dietary potassium restriction
+
+A DECREASE in serum potassium could be due to:
+
+• Diet
+
+○ Over enthusiastic dietary restriction
+
+• Drugs
+
+Diuretics that cause potassium loss e.g. frusemide (note: potassium levels will rise when patient ceases these)
+
+○ Salbutamol – orally or high dose inhaled
+
+o Amphotericin – damages the renal tubule and causes potassium loss from the body
+
+○ Sodium bicarbonate treatment lowers potassium
+
+☐ Laxative abuse
+
+• Increased potassium losses
+
+Recovery of renal function while maintaining reduced dietary intake
+
+☐ Vomiting
+
+○ Fistula/wound losses
+
+Diarrhoea
+
+○ Ileostomy
+
+• Metabolic
+
+○ Alkalosis

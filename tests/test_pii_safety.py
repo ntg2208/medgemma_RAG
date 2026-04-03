@@ -14,7 +14,7 @@ class TestPIINodeSafety:
     def _get_nodes(self, pii_handler):
         """Create RAGNodes with given PII handler."""
         import importlib
-        nodes_module = importlib.import_module("2_Agentic_RAG.nodes")
+        nodes_module = importlib.import_module("agentic_rag.nodes")
         return nodes_module.RAGNodes(
             pii_handler=pii_handler,
             retriever=MagicMock(),
@@ -77,7 +77,7 @@ class TestOrchestratorPIISafety:
         import importlib
 
         # Import orchestrator
-        orch_module = importlib.import_module("3_MultiAgent_RAG.orchestrator")
+        orch_module = importlib.import_module("multi_agent_rag.orchestrator")
 
         pii_handler = MagicMock()
         pii_handler.anonymize.side_effect = RuntimeError("PII service down")

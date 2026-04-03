@@ -1,0 +1,407 @@
+{
+  "doc_name": "Managing_your_food_and_fluid_intake_when_on_haemodialysis",
+  "total_sections": 40,
+  "total_lines": 315,
+  "tree": [
+    {
+      "heading": "Managing your food and fluid intake when on haemodialysis",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 0,
+      "line_end": 14,
+      "content_preview": "If you are on haemodialysis this leaflet will help you manage your food and fluid intake. Your dietitian will also be able to answer any questions or concerns.\n\nWhen your kidneys are not working prope",
+      "content_token_estimate": 146,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Protein",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 14,
+      "line_end": 32,
+      "content_preview": "Protein is needed for the growth and repair of all body tissues. This includes maintaining your muscle strength.\n\nA small amount of protein is lost during the dialysis process. Therefore, to ensure th",
+      "content_token_estimate": 160,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Salt",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 32,
+      "line_end": 44,
+      "content_preview": "We would advise you to reduce salt in your diet. Reducing salt can help:\nReduce feelings of thirst (useful if you are on a fluid restriction).\nPrevent carrying extra fluid (oedema).\nReduce blood press",
+      "content_token_estimate": 150,
+      "ancestor_path": []
+    },
+    {
+      "heading": "List of high and lower salt alternative foods",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 44,
+      "line_end": 51,
+      "content_preview": "| MEAT, FISH AND VEGETARIAN ALTERNATIVES | MEAT, FISH AND VEGETARIAN ALTERNATIVES |\n|-------------------------------------------------------------------------------------------------------------------",
+      "content_token_estimate": 208,
+      "ancestor_path": []
+    },
+    {
+      "heading": "DAIRY Higher salt foods",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 51,
+      "line_end": 55,
+      "content_preview": "Cheese spread (such as Dairylea, Primula), hard cheeses (such as cheddar, edam, stilton, halloumi)",
+      "content_token_estimate": 24,
+      "ancestor_path": []
+    },
+    {
+      "heading": "SAVOURY SNACKS Higher salt foods",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 55,
+      "line_end": 59,
+      "content_preview": "Crisps, salted nuts, salted snacks (such as Twiglets, Pretzels), Ritz biscuits, TUC biscuits, mini cheddars",
+      "content_token_estimate": 26,
+      "ancestor_path": []
+    },
+    {
+      "heading": "MISCELLANEOUS Higher salt foods",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 59,
+      "line_end": 63,
+      "content_preview": "Marmite, Bovril, stock cubes, gravy granules, tinned or packet soups, Pot Noodles, bottled sauces such as soy sauce and tomato ketchup",
+      "content_token_estimate": 33,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Lower salt alternatives",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 63,
+      "line_end": 67,
+      "content_preview": "Cottage cheese, cream cheese (such as Philadelphia), mozzarella",
+      "content_token_estimate": 15,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Lower salt alternatives",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 67,
+      "line_end": 71,
+      "content_preview": "Plain popcorn, plain breadsticks, cream crackers, Ryvita, rice cakes",
+      "content_token_estimate": 17,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Lower salt alternatives",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 71,
+      "line_end": 77,
+      "content_preview": "Natex savoury spread, Meridian yeast extract, low or zero salt stock cubes, reduced salt gravy granules or homemade gravy, homemade soup, reduced salt sauces, vinegar\n\nIf you have been advised to foll",
+      "content_token_estimate": 80,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Understanding food labelling",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 77,
+      "line_end": 87,
+      "content_preview": "Approximately 75% of our salt intake comes from ready-made foods. It is important to look at food labels when making decisions about which foods to buy. Remember, food labels may show the salt content",
+      "content_token_estimate": 153,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Fluid",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 87,
+      "line_end": 93,
+      "content_preview": "When your kidneys are not working properly you are not able to get rid of all the fluid that you drink. Haemodialysis helps to remove fluid from the body, but if you drink more than is being removed y",
+      "content_token_estimate": 102,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Your fluid allowance = 500ml + previous days 24-hour urine output",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 93,
+      "line_end": 97,
+      "content_preview": "Most people on dialysis pass less urine over time; if this happens you will need to have your fluid allowance reassessed and will need to reduce your fluid intake. Ask your haemodialysis nurse or diet",
+      "content_token_estimate": 56,
+      "ancestor_path": []
+    },
+    {
+      "heading": "What counts as fluid?",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 97,
+      "line_end": 105,
+      "content_preview": "all hot and cold drinks\nsoup, gravy, thin sauces\njelly, ice lollies\nice cubes.\n\nFluid rich foods such as custard, yoghurt and ice cream count as half the volume of fluid, for example 120ml yoghurt = 6",
+      "content_token_estimate": 52,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Tips to help you keep to your fluid allowance:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 105,
+      "line_end": 116,
+      "content_preview": "Use a measuring jug or water bottle to help manage your allowance.\nUse a smaller cup or only fill your cup or mug to halfway.\nT ry to drink only when you are thirsty rather than out of habit or to be ",
+      "content_token_estimate": 157,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Potassium",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 116,
+      "line_end": 120,
+      "content_preview": "Potassium is a mineral found naturally in foods. Haemodialysis removes potassium from the blood, but levels build up between dialysis sessions. It is therefore often necessary to restrict dietary pota",
+      "content_token_estimate": 60,
+      "ancestor_path": []
+    },
+    {
+      "heading": "The target potassium level is 3.5-5.9 mmol/ L.",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 120,
+      "line_end": 126,
+      "content_preview": "A high level of potassium in your blood can be dangerous for your heart. However, the amount of potassium you can include in your diet is very individual and not everyone on haemodialysis needs to fol",
+      "content_token_estimate": 102,
+      "ancestor_path": []
+    },
+    {
+      "heading": "List of foods that are high in potassium",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 126,
+      "line_end": 135,
+      "content_preview": "| Potato | Non-boiled potatoes, such as chips, jacket potato, hash browns, potato waffles |\n|------------|------------------------------------------------------------------------------------|\n| Vegeta",
+      "content_token_estimate": 113,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Phosphate",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 135,
+      "line_end": 143,
+      "content_preview": "Phosphate is a mineral found naturally in foods and is also used as a food additive.\n\nPhosphate levels in the blood can increase when the kidneys are not working properly.\n\nOver time, this can lead to",
+      "content_token_estimate": 78,
+      "ancestor_path": []
+    },
+    {
+      "heading": "The target phosphate level is 1.1-1.7mmol/L.",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 143,
+      "line_end": 149,
+      "content_preview": "Haemodialysis removes some phosphate from the blood, but it may be necessary to have less phosphate in your diet as well. You may also have been prescribed a medicine called a phosphate binder, which ",
+      "content_token_estimate": 98,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Fibre",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 149,
+      "line_end": 160,
+      "content_preview": "Fibre is important to prevent constipation and keep your bowels regular.\n\nFoods high in fibre that are good for you to eat are:\nWholemeal or granary bread instead of white bread.\nWhole wheat breakfast",
+      "content_token_estimate": 111,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Eating when on Dialysis",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 160,
+      "line_end": 168,
+      "content_preview": "During haemodialysis, it is still important to follow your individual diet. It is a good idea to eat a sandwich or other protein containing snack on dialysis if you can.\n\nIf you eat foods that are hig",
+      "content_token_estimate": 123,
+      "ancestor_path": []
+    },
+    {
+      "heading": "If you have a poor appetite",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 168,
+      "line_end": 175,
+      "content_preview": "Eat little and often, have small meals with nourishing snacks in between.\nCold foods can sometimes be more appetising, try a sandwich or chilled dessert.\nIf there are times of the day when your appeti",
+      "content_token_estimate": 86,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Keeping Active",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 175,
+      "line_end": 194,
+      "content_preview": "When you first start haemodialysis, you may feel tired and lack energy. However, dialysis should not prevent you from being physically active. In fact, it can help with your overall health. Benefits i",
+      "content_token_estimate": 342,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Meal suggestions",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 194,
+      "line_end": 196,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Breakfast",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 196,
+      "line_end": 203,
+      "content_preview": "Porridge\nWeetabix, Shredded Wheat, Shreddies, Rice Krispies or Cornflakes\nBread or toast with butter/spread and jam/marmalade\nBoiled/scrambled or poached egg with bread or toast\nEnglish muffin with bu",
+      "content_token_estimate": 55,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Light meal",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 203,
+      "line_end": 211,
+      "content_preview": "Sandwiches, rolls, pitta bread or bagels\nSandwich fillings - fresh chicken, turkey, beef, lamb, pork, cottage cheese, cream cheese, egg, tuna, salmon (fresh or tinned boneless in oil or spring water),",
+      "content_token_estimate": 97,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Main meal",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 211,
+      "line_end": 225,
+      "content_preview": "Chicken or mixed bean casserole with mashed potato and broccoli\nSpaghetti Bolognese (prepared with 400g tinned tomatoes to serve 4)\nLamb, beef, chicken, lentil, chickpea curry with rice or chapatti\nRo",
+      "content_token_estimate": 166,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Desserts",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 225,
+      "line_end": 230,
+      "content_preview": "Fruit pie, fruit crumble, tinned fruit (juice drained off), fresh fruit, pavlova\nY oghurt or fromage frais, ice cream, custard, rice pudding, trifle, crème caramel\nSoya yogurts.",
+      "content_token_estimate": 44,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Snack foods",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 230,
+      "line_end": 240,
+      "content_preview": "Cucumber, carrot, pepper sticks with hummus, cream cheese or tzatziki\nBreadsticks, cream crackers, water biscuits, oat cakes, crispbread, rice cakes\nBread, toast, English muffin, croissant\nVegetable o",
+      "content_token_estimate": 100,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Drinks",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 240,
+      "line_end": 250,
+      "content_preview": "Water, tonic water, soda water, flavoured water\nTea, 1x weak instant coffee per day\nSquash, cordial\nLight coloured fizzy drinks - e.g. lemonade, Fanta, Sprite.\n\nIf you have diabetes, limit or avoid su",
+      "content_token_estimate": 139,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Contacts",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 250,
+      "line_end": 252,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Renal Dietitians",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 252,
+      "line_end": 260,
+      "content_preview": "Tel:\n\n01865 225 061\n\nPlease leave a message on the answerphone and one of the team will call you back.",
+      "content_token_estimate": 25,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Further information",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 260,
+      "line_end": 262,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Oxford Kidney Unit",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 262,
+      "line_end": 268,
+      "content_preview": "The website has lots of information about the Oxford Kidney Unit for patients and carers.\n\nWebsite: www.ouh.nhs.uk/oku",
+      "content_token_estimate": 29,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Kidney Care UK",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 268,
+      "line_end": 274,
+      "content_preview": "A charity which has lots of practical support and information for people with kidney disease.\n\nWebsite: www.kidneycareuk.org",
+      "content_token_estimate": 31,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Six Counties Kidney Patients Association",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 274,
+      "line_end": 282,
+      "content_preview": "The SCKPA is run for patients by patients or family members.\n\nThey offer support to people suffering from kidney disease or who are on dialysis. They work closely with the Oxford Kidney Unit and have ",
+      "content_token_estimate": 92,
+      "ancestor_path": []
+    },
+    {
+      "heading": "National Kidney Federation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 282,
+      "line_end": 290,
+      "content_preview": "A charity which has lots of practical support and information for people with kidney disease.\n\nWebsite:\n\nwww.kidney.org.uk",
+      "content_token_estimate": 30,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Health for Me (patient portal)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 290,
+      "line_end": 298,
+      "content_preview": "Health for Me enables you to access to your digital health record via the OUH Patient Portal. It is an online system that allows you to easily view parts of your digital health record safely and secur",
+      "content_token_estimate": 134,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Further information",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 298,
+      "line_end": 315,
+      "content_preview": "If you would like an interpreter, please speak to the department where you are being seen.\n\nPlease also tell them if you would like this information in another format, such as:\nEasy Read\nlarge print\nb",
+      "content_token_estimate": 165,
+      "ancestor_path": []
+    }
+  ]
+}

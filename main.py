@@ -106,7 +106,7 @@ def init_components():
     embeddings = get_embeddings()
 
     log_tool("vectorstore", "loading ChromaDB...")
-    rag_pkg = import_package("rag_pkg", PROJECT_ROOT / "1_Retrieval_Augmented_Generation")
+    rag_pkg = import_package("rag_pkg", PROJECT_ROOT / "simple_rag")
     vectorstore = rag_pkg.CKDVectorStore(embeddings)
 
     # If vectorstore is empty, load processed chunks
@@ -124,8 +124,12 @@ def init_components():
     else:
         log_info(f"vectorstore has {stats['document_count']} documents")
 
-    log_tool("retriever", "initializing CKD retriever...")
-    retriever = rag_pkg.CKDRetriever(vectorstore=vectorstore)
+    log_tool("retriever", "initializing tree-based retriever...")
+    tree_retriever = rag_pkg.TreeRetriever(
+        vectorstore=vectorstore,
+        embedding_function=embeddings,
+    )
+    flat_retriever = rag_pkg.CKDRetriever(vectorstore=vectorstore)
 
     log_tool("llm", "loading LLM...")
     llm = get_llm()
@@ -133,7 +137,8 @@ def init_components():
     return {
         "embeddings": embeddings,
         "vectorstore": vectorstore,
-        "retriever": retriever,
+        "retriever": tree_retriever,
+        "flat_retriever": flat_retriever,
         "llm": llm,
         "rag_pkg": rag_pkg,
     }
@@ -236,13 +241,13 @@ def chat_simple(comps: dict):
 # ---------------------------------------------------------------------------
 def chat_agentic(comps: dict):
     log_tool("pii_handler", "initializing Presidio PII handler...")
-    agentic_pkg = import_package("agentic_pkg", PROJECT_ROOT / "2_Agentic_RAG")
+    agentic_pkg = import_package("agentic_pkg", PROJECT_ROOT / "agentic_rag")
     pii_handler = agentic_pkg.PIIHandler()
 
     log_tool("agentic_graph", "building LangGraph workflow...")
     graph = agentic_pkg.AgenticRAGGraph(
         pii_handler=pii_handler,
-        retriever=comps["retriever"],
+        retriever=comps["flat_retriever"],
         llm=comps["llm"],
     )
 
@@ -324,15 +329,15 @@ def chat_agentic(comps: dict):
 # ---------------------------------------------------------------------------
 def chat_multi(comps: dict):
     log_tool("pii_handler", "initializing Presidio PII handler...")
-    agentic_pkg = import_package("agentic_pkg", PROJECT_ROOT / "2_Agentic_RAG")
+    agentic_pkg = import_package("agentic_pkg", PROJECT_ROOT / "agentic_rag")
     pii_handler = agentic_pkg.PIIHandler()
 
     log_tool("orchestrator", "initializing multi-agent system...")
-    import_package("multi_pkg", PROJECT_ROOT / "3_MultiAgent_RAG")
-    import_package("multi_pkg.agents", PROJECT_ROOT / "3_MultiAgent_RAG" / "agents")
+    import_package("multi_pkg", PROJECT_ROOT / "multi_agent_rag")
+    import_package("multi_pkg.agents", PROJECT_ROOT / "multi_agent_rag" / "agents")
     multi_pkg = sys.modules["multi_pkg"]
     orchestrator = multi_pkg.MultiAgentOrchestrator(
-        retriever=comps["retriever"],
+        retriever=comps["flat_retriever"],
         llm=comps["llm"],
         pii_handler=pii_handler,
     )

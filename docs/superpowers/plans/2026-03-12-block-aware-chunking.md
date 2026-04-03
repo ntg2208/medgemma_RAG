@@ -948,11 +948,11 @@ These items are out of scope for this plan but should be addressed in a follow-u
 **Downstream consumers of removed metadata fields:**
 The following files reference `ckd_stages`, `page_number`, or `document_type` in chunk metadata. After this change, `.get()` calls will return `None`/`[]` (no runtime errors), but filtering methods like `search_by_ckd_stage()` and `search_by_document_type()` in `vectorstore.py` will return empty results for newly-indexed documents.
 
-- `1_Retrieval_Augmented_Generation/vectorstore.py` — `search_by_ckd_stage`, `search_by_document_type` methods
-- `1_Retrieval_Augmented_Generation/retriever.py` — `document_type` and `ckd_stages` filter params
-- `1_Retrieval_Augmented_Generation/chain.py:232` — references `page_number`
-- `2_Agentic_RAG/nodes.py:208` — references `page_number`
-- `3_MultiAgent_RAG/agents/rag_agent.py:111-130` — references `page_number` and `ckd_stages`
+- `simple_rag/vectorstore.py` — `search_by_ckd_stage`, `search_by_document_type` methods
+- `simple_rag/retriever.py` — `document_type` and `ckd_stages` filter params
+- `simple_rag/chain.py:232` — references `page_number`
+- `agentic_rag/nodes.py:208` — references `page_number`
+- `multi_agent_rag/agents/rag_agent.py:111-130` — references `page_number` and `ckd_stages`
 - `tests/conftest.py:35-37` — mock `MockDocument` includes removed fields (cosmetic, no test failures)
 
 **`test_docling_preprocessing.py`:** This root-level file imports the old `DocumentPreprocessor` API and will break after the rewrite. It is not in `tests/` so `uv run pytest` won't pick it up. It should be updated or removed in a follow-up.

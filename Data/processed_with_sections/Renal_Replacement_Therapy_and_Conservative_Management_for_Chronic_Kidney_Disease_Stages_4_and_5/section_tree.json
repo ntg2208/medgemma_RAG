@@ -1,0 +1,807 @@
+{
+  "doc_name": "Renal_Replacement_Therapy_and_Conservative_Management_for_Chronic_Kidney_Disease_Stages_4_and_5",
+  "total_sections": 76,
+  "total_lines": 582,
+  "tree": [
+    {
+      "heading": "Overview",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 0,
+      "line_end": 6,
+      "content_preview": "This guideline covers renal replacement therapy (dialysis and transplantation) and conservative management for people with chronic kidney disease stages 4 and 5. It aims to improve quality of life by ",
+      "content_token_estimate": 89,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Who is it for?",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 6,
+      "line_end": 11,
+      "content_preview": "Healthcare professionals\nProviders of renal replacement therapy and conservative management\nPeople with chronic kidney disease stages 4 and 5, their families and carers",
+      "content_token_estimate": 42,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 11,
+      "line_end": 17,
+      "content_preview": "People have the right to be involved in discussions and make informed decisions about their care, as described in NICE's information on making decisions about your care.\n\nMaking decisions using NICE g",
+      "content_token_estimate": 119,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.1 Indications for starting dialysis",
+          "depth": 1,
+          "numbering": "1.1",
+          "line_start": 17,
+          "line_end": 27,
+          "content_preview": "1.1.1 Follow the recommendations on referral criteria in NICE's guideline on chronic kidney disease.\n1.1.2 Consider starting dialysis when indicated by the impact of symptoms of uraemia on daily livin",
+          "content_token_estimate": 244,
+          "ancestor_path": [
+            "Recommendations"
+          ]
+        },
+        {
+          "heading": "1.2 Preparing for renal replacement therapy or conservative management",
+          "depth": 1,
+          "numbering": "1.2",
+          "line_start": 27,
+          "line_end": 29,
+          "content_preview": "",
+          "content_token_estimate": 0,
+          "ancestor_path": [
+            "Recommendations"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "When to assess",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 29,
+      "line_end": 36,
+      "content_preview": "1.2.1 Start assessment for renal replacement therapy (RRT) or conservative management at least 1 year before therapy is likely to be needed, including for those with a failing transplant.\n\nFor a short",
+      "content_token_estimate": 137,
+      "ancestor_path": []
+    },
+    {
+      "heading": "How to assess",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 36,
+      "line_end": 56,
+      "content_preview": "1.2.2 Involve the person and their family members or carers (as appropriate) in shared decision-making over the course of assessment to include:\nclinical preparation\npsychosocial evaluation, preparati",
+      "content_token_estimate": 310,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.3 Choosing modalities of renal replacement therapy or conservative management",
+          "depth": 1,
+          "numbering": "1.3",
+          "line_start": 56,
+          "line_end": 64,
+          "content_preview": "1.3.1 Offer a choice of RRT or conservative management to people who are likely to need RRT. Conservative management for children should only be considered within appropriate regulatory frameworks. Se",
+          "content_token_estimate": 179,
+          "ancestor_path": [
+            "How to assess"
+          ],
+          "children": [
+            {
+              "heading": "1.3.3 Offer people (and their family members or carers, as appropriate) regular opportunities:",
+              "depth": 2,
+              "numbering": "1.3.3",
+              "line_start": 64,
+              "line_end": 68,
+              "content_preview": "to review the decision regarding RRT modalities or conservative management\nto discuss any concerns or changes in their preferences.",
+              "content_token_estimate": 32,
+              "ancestor_path": [
+                "How to assess",
+                "1.3 Choosing modalities of renal replacement therapy or conservative management"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Transplantation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 68,
+      "line_end": 74,
+      "content_preview": "1.3.4 Discuss the individual factors that affect the risks and benefits of transplantation with all people who are likely to need RRT, and their family members or carers (as appropriate).\n1.3.5 Includ",
+      "content_token_estimate": 142,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Choice of dialysis modalities",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 74,
+      "line_end": 86,
+      "content_preview": "1.3.8 Offer a choice of dialysis modalities at home or in centre ensuring that the decision is informed by clinical considerations and patient preferences (see recommendation 1.3.2).\n1.3.9 Offer all p",
+      "content_token_estimate": 280,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.4 Planning dialysis access formation",
+          "depth": 1,
+          "numbering": "1.4",
+          "line_start": 86,
+          "line_end": 96,
+          "content_preview": "1.4.1 Discuss with the person, their family members and carers (as appropriate) the risk and benefits of the different types of dialysis access, for example, fistula, graft, central venous or peritone",
+          "content_token_estimate": 307,
+          "ancestor_path": [
+            "Choice of dialysis modalities"
+          ]
+        },
+        {
+          "heading": "1.5 Indications for switching or stopping renal replacement therapy",
+          "depth": 1,
+          "numbering": "1.5",
+          "line_start": 96,
+          "line_end": 107,
+          "content_preview": "1.5.1 Offer information on all medically appropriate treatment options when discussing switching RRT modality.\n1.5.2 Consider switching treatment modality or stopping RRT if medically indicated or if ",
+          "content_token_estimate": 278,
+          "ancestor_path": [
+            "Choice of dialysis modalities"
+          ]
+        },
+        {
+          "heading": "1.6 Recognising symptoms",
+          "depth": 1,
+          "numbering": "1.6",
+          "line_start": 107,
+          "line_end": 110,
+          "content_preview": "1.6.1 Recognise that people on RRT or receiving conservative management may have the symptoms in box 1 and that these may affect their day-to-day life.",
+          "content_token_estimate": 37,
+          "ancestor_path": [
+            "Choice of dialysis modalities"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Box 1 Possible symptoms in people on renal replacement therapy or conservative management",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 110,
+      "line_end": 147,
+      "content_preview": "General symptoms:\nbreathlessness\nfatigue\ninsomnia\nitching\nlethargy\npain\npoor appetite\nswelling\ntaste changes\nthirst\nweakness\nweight loss/gain.\n\nGastro-intestinal/urological symptoms:\nabdominal cramps\n",
+      "content_token_estimate": 122,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.6.2 Throughout the course of RRT and conservative management:",
+          "depth": 2,
+          "numbering": "1.6.2",
+          "line_start": 147,
+          "line_end": 156,
+          "content_preview": "Ask people about any symptoms they have.\nExplore whether symptoms are due to the renal condition, treatment or another cause.\nExplain the likely cause of the symptoms and how well treatment may be exp",
+          "content_token_estimate": 125,
+          "ancestor_path": [
+            "Box 1 Possible symptoms in people on renal replacement therapy or conservative management"
+          ]
+        },
+        {
+          "heading": "1.7 Diet and fluids",
+          "depth": 1,
+          "numbering": "1.7",
+          "line_start": 156,
+          "line_end": 178,
+          "content_preview": "1.7.1 Offer a full dietary assessment by a specialist renal dietitian to people starting dialysis or conservative management. This should include:\nweight history\nfluid intake\nsodium\npotassium\nphosphat",
+          "content_token_estimate": 350,
+          "ancestor_path": [
+            "Box 1 Possible symptoms in people on renal replacement therapy or conservative management"
+          ]
+        },
+        {
+          "heading": "1.8 Information, education and support",
+          "depth": 1,
+          "numbering": "1.8",
+          "line_start": 178,
+          "line_end": 185,
+          "content_preview": "1.8.1 To enable people, and their families and carers (as appropriate), to make informed decisions, offer balanced and accurate information about:\nall treatments available to them (including RRT modal",
+          "content_token_estimate": 77,
+          "ancestor_path": [
+            "Box 1 Possible symptoms in people on renal replacement therapy or conservative management"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Box 2 Information about treatments and how they may affect lifestyle",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 185,
+      "line_end": 228,
+      "content_preview": "Information about treatments, including RRT, conservative management and dietary intervention:\nWhat they involve, for example, availability of assistance, time that treatment takes place, and number o",
+      "content_token_estimate": 968,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.9 Coordinating care",
+          "depth": 1,
+          "numbering": "1.9",
+          "line_start": 228,
+          "line_end": 234,
+          "content_preview": "1.9.1 Provide the person with the contact details of the healthcare professional responsible for their overall renal care:\nbefore they start RRT or conservative management, and\nwhen they switch from o",
+          "content_token_estimate": 118,
+          "ancestor_path": [
+            "Box 2 Information about treatments and how they may affect lifestyle"
+          ],
+          "children": [
+            {
+              "heading": "1.9.3 Follow the recommendations on:",
+              "depth": 2,
+              "numbering": "1.9.3",
+              "line_start": 234,
+              "line_end": 242,
+              "content_preview": "delivering an approach to care that takes account of multimorbidity in NICE's guideline on multimorbidity, and\ncontinuity of care and relationships, and enabling patients to actively participate in th",
+              "content_token_estimate": 136,
+              "ancestor_path": [
+                "Box 2 Information about treatments and how they may affect lifestyle",
+                "1.9 Coordinating care"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Recommendations for research",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 242,
+      "line_end": 246,
+      "content_preview": "The guideline committee has made the following recommendations for research .",
+      "content_token_estimate": 19,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Key recommendations for research",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 246,
+      "line_end": 248,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "1 Cardiac assessment",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 248,
+      "line_end": 256,
+      "content_preview": "What is the clinical and cost effectiveness of cardiac assessment before transplantation?\n\nFor a short explanation of why the committee made the recommendation for research, see the rationale section ",
+      "content_token_estimate": 106,
+      "ancestor_path": []
+    },
+    {
+      "heading": "2 Timing of pre-emptive transplant",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 256,
+      "line_end": 264,
+      "content_preview": "What is the most clinical and cost-effective strategy for timing of pre-emptive transplantation?\n\nFor a short explanation of why the committee made the recommendation for research, see the rationale s",
+      "content_token_estimate": 96,
+      "ancestor_path": []
+    },
+    {
+      "heading": "3 Acute haemodialysis versus acute peritoneal dialysis",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 264,
+      "line_end": 272,
+      "content_preview": "What is the clinical and cost effectiveness of initial haemodialysis versus initial peritoneal dialysis for people who start dialysis in an unplanned way?\n\nFor a short explanation of why the committee",
+      "content_token_estimate": 136,
+      "ancestor_path": []
+    },
+    {
+      "heading": "4 Frequency of review",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 272,
+      "line_end": 280,
+      "content_preview": "What is the most clinical and cost-effective frequency of review for people on peritoneal dialysis, haemodiafiltration, haemodialysis or conservative management?\n\nFor a short explanation of why the co",
+      "content_token_estimate": 100,
+      "ancestor_path": []
+    },
+    {
+      "heading": "5 Coordinating care",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 280,
+      "line_end": 288,
+      "content_preview": "What is the clinical and cost effectiveness of having keyworkers present in the context of renal replacement therapy (RRT)?\n\nFor a short explanation of why the committee made the recommendation for re",
+      "content_token_estimate": 90,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Other recommendations for research",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 288,
+      "line_end": 290,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "6 Switching RRT modality",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 290,
+      "line_end": 294,
+      "content_preview": "What is the clinical and cost effectiveness of strategies for switching RRT modality?",
+      "content_token_estimate": 21,
+      "ancestor_path": []
+    },
+    {
+      "heading": "7 Decision aids for RRT",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 294,
+      "line_end": 302,
+      "content_preview": "What is the clinical and cost effectiveness of using decision aids in the context of RRT?\n\nFor a short explanation of why the committee made the recommendation for research, see the rationale section ",
+      "content_token_estimate": 88,
+      "ancestor_path": []
+    },
+    {
+      "heading": "8 Laparoscopic and percutaneous peritoneal dialysis access creation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 302,
+      "line_end": 306,
+      "content_preview": "What is the optimum timing of laparoscopic and percutaneous peritoneal dialysis access creation?",
+      "content_token_estimate": 24,
+      "ancestor_path": []
+    },
+    {
+      "heading": "9 Conservative management",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 306,
+      "line_end": 310,
+      "content_preview": "What is the clinical and cost effectiveness of conservative management versus dialysis in frail, older people?",
+      "content_token_estimate": 27,
+      "ancestor_path": []
+    },
+    {
+      "heading": "10 Home haemodiafiltration",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 310,
+      "line_end": 314,
+      "content_preview": "What is the clinical and cost effectiveness of home haemodiafiltration versus home haemodialysis, taking into account the impact of frequency?",
+      "content_token_estimate": 35,
+      "ancestor_path": []
+    },
+    {
+      "heading": "11 haemodialysis/haemodiafiltration before peritoneal dialysis",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 314,
+      "line_end": 320,
+      "content_preview": "What is the clinical and cost effectiveness of haemodialysis/haemodiafiltration before\n\nperitoneal dialysis versus peritoneal dialysis before haemodialysis/haemodiafiltration?",
+      "content_token_estimate": 43,
+      "ancestor_path": []
+    },
+    {
+      "heading": "12 Listing for transplantation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 320,
+      "line_end": 324,
+      "content_preview": "What is the optimum timing of listing for transplantation?",
+      "content_token_estimate": 14,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale and impact",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 324,
+      "line_end": 326,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Indications for starting renal replacement therapy",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 326,
+      "line_end": 330,
+      "content_preview": "Recommendations 1.1.1 to 1.1.4",
+      "content_token_estimate": 7,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Why the committee made the recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 330,
+      "line_end": 338,
+      "content_preview": "The committee agreed that when to start dialysis is a complex decision that should take into account a number of factors (symptoms, patient preference, biochemistry, fluid overload and estimated glome",
+      "content_token_estimate": 396,
+      "ancestor_path": []
+    },
+    {
+      "heading": "How the recommendations might affect practice",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 338,
+      "line_end": 348,
+      "content_preview": "The recommendations reflect common practice for adults and children, and so are not likely to involve a change of practice for most NHS providers or have a substantial resource impact for the NHS in E",
+      "content_token_estimate": 127,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Preparing for renal replacement therapy or conservative management - when to assess",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 348,
+      "line_end": 352,
+      "content_preview": "Recommendation 1.2.1",
+      "content_token_estimate": 5,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Why the committee made the recommendation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 352,
+      "line_end": 356,
+      "content_preview": "Some evidence indicated that earlier referral to nephrology services improved survival on RRT at 90 days. The committee were interested in the timing of referral for assessment for RRT and used their ",
+      "content_token_estimate": 184,
+      "ancestor_path": []
+    },
+    {
+      "heading": "How the recommendation might affect practice",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 356,
+      "line_end": 364,
+      "content_preview": "The recommendation generally reflects current practice so there should be no significant change in practice or substantial resource impact to the NHS in England.\n\nFull details of the evidence and the ",
+      "content_token_estimate": 81,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Preparing for renal replacement therapy or conservative management - how to assess",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 364,
+      "line_end": 366,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Why the committee made the recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 366,
+      "line_end": 368,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Recommendations 1.2.2 to 1.2.3",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 368,
+      "line_end": 376,
+      "content_preview": "The committee recognised that an assessment should involve preparing people for RRT, for example, by explaining the procedures to create vascular access and checking heart function and immunity. Psych",
+      "content_token_estimate": 297,
+      "ancestor_path": []
+    },
+    {
+      "heading": "How the recommendations might affect practice",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 376,
+      "line_end": 384,
+      "content_preview": "Psychological assessment in people at high risk of non-adherence or morbidity is current practice in many areas. The recommendation is likely to lead to better targeting of psychological assessment in",
+      "content_token_estimate": 118,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Choosing modalities of renal replacement therapy or conservative management",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 384,
+      "line_end": 388,
+      "content_preview": "Recommendations 1.3.1 to 1.3.11",
+      "content_token_estimate": 7,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Why the committee made the recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 388,
+      "line_end": 390,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Renal replacement therapy or conservative management",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 390,
+      "line_end": 394,
+      "content_preview": "People who are likely to need RRT should be supported to make decisions about treatment options, including conservative management. There was no evidence of differential benefits or harms in any speci",
+      "content_token_estimate": 96,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Choice of renal replacement therapy",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 394,
+      "line_end": 414,
+      "content_preview": "Evidence showed that if RRT is chosen, transplantation offers a clear advantage over dialysis in terms of extending life. This benefit was observed in each age group. In the committee's experience, qu",
+      "content_token_estimate": 959,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Sequencing",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 414,
+      "line_end": 418,
+      "content_preview": "There was not enough evidence to recommend any particular sequence of RRT modalities. The committee agreed that decisions about sequence would mostly be guided by personal circumstances.",
+      "content_token_estimate": 46,
+      "ancestor_path": []
+    },
+    {
+      "heading": "How the recommendations might affect practice",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 418,
+      "line_end": 430,
+      "content_preview": "Currently there is a mix of HDF and HD provision in the NHS in England. The recommendation to consider HDF over HD for in-centre dialysis may affect resource use in areas where this is a change in pra",
+      "content_token_estimate": 486,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Planning dialysis access formation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 430,
+      "line_end": 434,
+      "content_preview": "Recommendations 1.4.1 to 1.4.4",
+      "content_token_estimate": 7,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Why the committee made the recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 434,
+      "line_end": 446,
+      "content_preview": "The committee highlighted the importance of discussing with the person the different types of dialysis and their access and the impacts of these on everyday life.\n\nEvidence suggested that the best tim",
+      "content_token_estimate": 469,
+      "ancestor_path": []
+    },
+    {
+      "heading": "How the recommendations might affect practice",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 446,
+      "line_end": 460,
+      "content_preview": "Current practice for creating vascular access is variable. A minimum timing from creation to use of 6 weeks has been suggested - however, the committee agreed that creation\n\naround 6 months reflected ",
+      "content_token_estimate": 334,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Indications for switching or stopping renal replacement therapy",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 460,
+      "line_end": 464,
+      "content_preview": "Recommendations 1.5.1 to 1.5.5",
+      "content_token_estimate": 7,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Why the committee made the recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 464,
+      "line_end": 472,
+      "content_preview": "There was no evidence on indications for switching treatment and the committee agreed to make recommendations for research on possible indicators to inform future guidance. There was no evidence that ",
+      "content_token_estimate": 223,
+      "ancestor_path": []
+    },
+    {
+      "heading": "How the recommendations might affect practice",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 472,
+      "line_end": 480,
+      "content_preview": "The recommendations broadly reflect current good practice and are not expected to have a resource impact to the NHS in England.\n\nFull details of the evidence and the committee's discussion are in evid",
+      "content_token_estimate": 79,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Recognising symptoms",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 480,
+      "line_end": 484,
+      "content_preview": "Recommendations 1.6.1 to 1.6.2",
+      "content_token_estimate": 7,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Why the committee made the recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 484,
+      "line_end": 488,
+      "content_preview": "Evidence identified symptoms that people approaching the need for RRT or receiving RRT or conservative management frequently report as affecting their lives. The committee also identified others (for ",
+      "content_token_estimate": 163,
+      "ancestor_path": []
+    },
+    {
+      "heading": "How the recommendations might affect practice",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 488,
+      "line_end": 496,
+      "content_preview": "Currently, not all healthcare professionals ask people about all of the symptoms they are experiencing. They may only ask about specific symptoms and not explore all of them. Healthcare professionals ",
+      "content_token_estimate": 142,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Diet and fluids",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 496,
+      "line_end": 500,
+      "content_preview": "Recommendations 1.7.1 to 1.7.5",
+      "content_token_estimate": 7,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Why the committee made the recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 500,
+      "line_end": 510,
+      "content_preview": "Limited evidence, including in people with a transplant, indicated that people receiving RRT or conservative management may benefit from dietary and/or fluid management. The committee agreed that curr",
+      "content_token_estimate": 613,
+      "ancestor_path": []
+    },
+    {
+      "heading": "How the recommendations might affect practice",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 510,
+      "line_end": 518,
+      "content_preview": "The recommendations made reflect current practice and are not expected to result in a substantial resource impact to the NHS in England.\n\nFull details of the evidence and the committee's discussion ar",
+      "content_token_estimate": 74,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Frequency of review",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 518,
+      "line_end": 520,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Why the committee made the recommendation for research",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 520,
+      "line_end": 526,
+      "content_preview": "No evidence was identified to support any particular strategy for timing of review for people on RRT or conservative management. Because of the lack of evidence, considerable variation in current prac",
+      "content_token_estimate": 113,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Information, education and support",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 526,
+      "line_end": 528,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Why the committee made the recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 528,
+      "line_end": 536,
+      "content_preview": "Recommendations 1.8.1 to 1.8.11\n\nThe committee used the evidence and their own experience to update the recommendations on information and support from NICE's 2011 guideline on peritoneal\n\ndialysis (C",
+      "content_token_estimate": 148,
+      "ancestor_path": []
+    },
+    {
+      "heading": "How the recommendations might affect practice",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 536,
+      "line_end": 544,
+      "content_preview": "The recommendations broadly reflect current practice and therefore are unlikely to have a resource impact. They focus mainly on the principles of information and support rather than on specific interv",
+      "content_token_estimate": 90,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Decision support interventions",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 544,
+      "line_end": 546,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Why the committee made the recommendation for research",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 546,
+      "line_end": 552,
+      "content_preview": "Limited evidence suggested a benefit of structured education programmes although results were inconsistent. The committee noted that decision aids are used in clinical practice but do not replace disc",
+      "content_token_estimate": 189,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Coordinating care",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 552,
+      "line_end": 556,
+      "content_preview": "Recommendations 1.9.1 to 1.9.3",
+      "content_token_estimate": 7,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Why the committee made the recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 556,
+      "line_end": 560,
+      "content_preview": "There was limited evidence on the coordination of care but the committee agreed that people should know who to contact with questions about their condition or treatment. This is particularly important",
+      "content_token_estimate": 162,
+      "ancestor_path": []
+    },
+    {
+      "heading": "How the recommendations might affect practice",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 560,
+      "line_end": 568,
+      "content_preview": "Current practice is variable in terms of when a person is given the details of the person responsible for care. This recommendation will ensure that this is done before starting treatment or when swit",
+      "content_token_estimate": 152,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Context",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 568,
+      "line_end": 582,
+      "content_preview": "People with chronic kidney disease (CKD) have an irreversible and progressive deterioration in kidney function. Renal replacement therapy (RRT) is a treatment option in people with CKD whose condition",
+      "content_token_estimate": 885,
+      "ancestor_path": []
+    }
+  ]
+}

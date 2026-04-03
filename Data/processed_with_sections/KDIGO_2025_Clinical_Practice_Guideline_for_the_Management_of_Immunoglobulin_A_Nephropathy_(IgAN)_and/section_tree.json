@@ -1,0 +1,968 @@
+{
+  "doc_name": "KDIGO_2025_Clinical_Practice_Guideline_for_the_Management_of_Immunoglobulin_A_Nephropathy_(IgAN)_and",
+  "total_sections": 83,
+  "total_lines": 1318,
+  "tree": [
+    {
+      "heading": "METHODS LIAISON",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 0,
+      "line_end": 4,
+      "content_preview": "Marcello A. Tonelli, MD, SM, MSc, FRCPC University of Calgary Calgary, Alberta, Canada",
+      "content_token_estimate": 21,
+      "ancestor_path": []
+    },
+    {
+      "heading": "EVIDENCE REVIEW TEAM",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 4,
+      "line_end": 6,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Center for Evidence Synthesis in Health, Brown University School of Public Health, Providence, Rhode Island, USA",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 6,
+      "line_end": 10,
+      "content_preview": "Ethan M. Balk, MD, MPH, Project Director, Evidence Review Team Director Craig E. Gordon, MD, MS, Assistant Project Director, Evidence Review Team Associate Director; Professor of Medicine, Division of",
+      "content_token_estimate": 91,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Abstract",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 10,
+      "line_end": 16,
+      "content_preview": "The Kidney Disease: Improving Global Outcomes (KDIGO) 2025 Clinical Practice Guideline for the Management of Immunoglobulin A Nephropathy (IgAN) and Immunoglobulin A Vasculitis (IgAV) represents a foc",
+      "content_token_estimate": 344,
+      "ancestor_path": []
+    },
+    {
+      "heading": "CITATION",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 16,
+      "line_end": 20,
+      "content_preview": "In citing this document, the following format should be used: Kidney Disease: Improving Global Outcomes (KDIGO) IgAN and IgAV Work Group. KDIGO 2025 Clinical Practice Guideline for the Management of I",
+      "content_token_estimate": 77,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Summary of recommendation statements and practice points",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 20,
+      "line_end": 22,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Immunoglobulin A nephropathy",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 22,
+      "line_end": 24,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.1 Global implementation of the KDIGO 2025 IgAN Guideline",
+          "depth": 1,
+          "numbering": "1.1",
+          "line_start": 24,
+          "line_end": 28,
+          "content_preview": "[No recommendations or practice points]",
+          "content_token_estimate": 9,
+          "ancestor_path": [
+            "Immunoglobulin A nephropathy"
+          ]
+        },
+        {
+          "heading": "1.2 Diagnosis",
+          "depth": 1,
+          "numbering": "1.2",
+          "line_start": 28,
+          "line_end": 32,
+          "content_preview": "Practice Point 1.2.1:",
+          "content_token_estimate": 5,
+          "ancestor_path": [
+            "Immunoglobulin A nephropathy"
+          ]
+        },
+        {
+          "heading": "1.3 Prognosis",
+          "depth": 1,
+          "numbering": "1.3",
+          "line_start": 32,
+          "line_end": 56,
+          "content_preview": "Practice Point 1.3.1: Considerations regarding the prognosis of primary IgAN:\n/C15 Clinical and histologic data at the time of kidney biopsy can be used for risk strati /uniFB01 cation.\n/C15 The Inter",
+          "content_token_estimate": 680,
+          "ancestor_path": [
+            "Immunoglobulin A nephropathy"
+          ]
+        },
+        {
+          "heading": "1.4 Treatment",
+          "depth": 1,
+          "numbering": "1.4",
+          "line_start": 56,
+          "line_end": 81,
+          "content_preview": "1.4.1 De /uniFB01 ning patients with IgAN at risk of progressive loss of kidney function requiring treatment\n\nPractice Point 1.4.1.1: Because patients with IgAN are at risk of progressive loss of kidn",
+          "content_token_estimate": 1045,
+          "ancestor_path": [
+            "Immunoglobulin A nephropathy"
+          ],
+          "children": [
+            {
+              "heading": "Practice Point 1.4.2.3: Treatment selection in IgAN:",
+              "depth": 4,
+              "numbering": "1.4.2.3",
+              "line_start": 81,
+              "line_end": 156,
+              "content_preview": "/C15 The key factors to consider when making treatment choices are summarized in Tables 1 and 2.\n/C15 Issues related to accessibility and affordability of newly approved treatments for IgAN, alongside",
+              "content_token_estimate": 4252,
+              "ancestor_path": [
+                "Immunoglobulin A nephropathy",
+                "1.4 Treatment"
+              ]
+            },
+            {
+              "heading": "1.4.3 Managing the IgAN-speci /uniFB01 c drivers of nephron loss",
+              "depth": 2,
+              "numbering": "1.4.3",
+              "line_start": 156,
+              "line_end": 172,
+              "content_preview": "Recommendation 1.4.3.1: We suggest treatment with a 9-month course of Nefecon for patients who are at risk of progressive loss of kidney function with IgAN (2B) .\n\nPractice Point 1.4.3.1: Factors to c",
+              "content_token_estimate": 389,
+              "ancestor_path": [
+                "Immunoglobulin A nephropathy",
+                "1.4 Treatment"
+              ],
+              "children": [
+                {
+                  "heading": "Practice Point 1.4.3.3: Factors that increase the risk of toxicity of systemic glucocorticoids:",
+                  "depth": 4,
+                  "numbering": "1.4.3.3",
+                  "line_start": 172,
+                  "line_end": 206,
+                  "content_preview": "/C15 eGFR &lt; 30 ml/min per 1.73 m 2\n/C15 Obesity\n/C15 Diabetes and prediabetes\n/C15 Latent infections (e.g., viral hepatitis and tuberculosis)\n/C15 Uncontrolled psychiatric illness\n/C15 Active pepti",
+                  "content_token_estimate": 1599,
+                  "ancestor_path": [
+                    "Immunoglobulin A nephropathy",
+                    "1.4 Treatment",
+                    "1.4.3 Managing the IgAN-speci /uniFB01 c drivers of nephron loss"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "1.4.4 Managing the responses to IgAN-induced nephron loss",
+              "depth": 2,
+              "numbering": "1.4.4",
+              "line_start": 206,
+              "line_end": 228,
+              "content_preview": "Practice Point 1.4.4.1: For lifestyle and blood pressure targets for all patients with IgAN, please refer to Practice Point 1.4.2.2.\n\nRecommendation 1.4.4.1: We recommend that all patients with IgAN b",
+              "content_token_estimate": 621,
+              "ancestor_path": [
+                "Immunoglobulin A nephropathy",
+                "1.4 Treatment"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "1.5 Special situations",
+          "depth": 1,
+          "numbering": "1.5",
+          "line_start": 228,
+          "line_end": 230,
+          "content_preview": "",
+          "content_token_estimate": 0,
+          "ancestor_path": [
+            "Immunoglobulin A nephropathy"
+          ],
+          "children": [
+            {
+              "heading": "Practice Point 1.5.1:",
+              "depth": 3,
+              "numbering": "1.5.1",
+              "line_start": 230,
+              "line_end": 240,
+              "content_preview": "IgAN with nephrotic syndrome:\n/C15 Rarely, patients with IgAN present with nephrotic syndrome (including edema and both hypoalbuminemia and nephrotic-range proteinuria &gt; 3.5 g/d).\n/C15 In these cas",
+              "content_token_estimate": 342,
+              "ancestor_path": [
+                "Immunoglobulin A nephropathy",
+                "1.5 Special situations"
+              ]
+            },
+            {
+              "heading": "Practice Point 1.5.2: IgAN with acute kidney injury (AKI):",
+              "depth": 3,
+              "numbering": "1.5.2",
+              "line_start": 240,
+              "line_end": 244,
+              "content_preview": "/C15 AKI can occur in patients with IgAN in the context of severe visible hematuria, commonly in association with an upper respiratory tract infection. A repeat kidney biopsy should be considered in p",
+              "content_token_estimate": 233,
+              "ancestor_path": [
+                "Immunoglobulin A nephropathy",
+                "1.5 Special situations"
+              ]
+            },
+            {
+              "heading": "Practice Point 1.5.3: IgAN with RPGN:",
+              "depth": 3,
+              "numbering": "1.5.3",
+              "line_start": 244,
+              "line_end": 252,
+              "content_preview": "/C15 Rapidly progressive IgAN is de /uniFB01 ned as a ‡ 50% decline in eGFR over £ 3 months, where other causes of RPGN (e.g., AAV and anti-GBM disease) and reversible causes (e.g., drug toxicity and ",
+              "content_token_estimate": 351,
+              "ancestor_path": [
+                "Immunoglobulin A nephropathy",
+                "1.5 Special situations"
+              ]
+            },
+            {
+              "heading": "Practice Point 1.5.4: IgAN and pregnancy planning:",
+              "depth": 3,
+              "numbering": "1.5.4",
+              "line_start": 252,
+              "line_end": 260,
+              "content_preview": "/C15 IgAN is a disease predominantly of young adults, and all women of childbearing potential should be offered preconception counseling when appropriate.\n/C15 Preconception counseling should include ",
+              "content_token_estimate": 373,
+              "ancestor_path": [
+                "Immunoglobulin A nephropathy",
+                "1.5 Special situations"
+              ]
+            },
+            {
+              "heading": "Practice Point 1.5.5: IgAN in children:",
+              "depth": 3,
+              "numbering": "1.5.5",
+              "line_start": 260,
+              "line_end": 262,
+              "content_preview": "",
+              "content_token_estimate": 0,
+              "ancestor_path": [
+                "Immunoglobulin A nephropathy",
+                "1.5 Special situations"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "General considerations for children with IgAN",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 262,
+      "line_end": 268,
+      "content_preview": "/C15 A more extensive review of the management of IgAN in children can be found in the 2025 International Pediatric Nephrology Association clinical practice recommendations for the diagnosis and manag",
+      "content_token_estimate": 212,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Kidney biopsy in children with IgAN",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 268,
+      "line_end": 275,
+      "content_preview": "/C15 A kidney biopsy is usually performed at presentation of symptoms (hematuria, proteinuria, and normal C3) to con /uniFB01 rm the diagnosis (and rule out other diagnoses) and assess the degree of i",
+      "content_token_estimate": 251,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Treatment of children with IgAN",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 275,
+      "line_end": 290,
+      "content_preview": "/C15 There is strong evidence suggesting a bene /uniFB01 t of RAS blockade in children. 64 All children with IgAN and proteinuria &gt; 200 mg/d or PCR &gt; 200 mg/g ( &gt; 20 mg/mmol) should receive R",
+      "content_token_estimate": 1031,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Follow-up of children with IgAN",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 290,
+      "line_end": 295,
+      "content_preview": "/C15 Aim for SBP at &lt; 90th percentile for age, sex, and height.\n/C15 Aim for proteinuria £ 200 mg/d ( £ 400 mg/1.73 m 2 per day) or PCR £ 200 mg/g ( £ 20 mg/mmol).\n/C15 Continue to follow patients ",
+      "content_token_estimate": 99,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.6 Horizon scanning for future new drug approvals and updates to the guideline",
+          "depth": 1,
+          "numbering": "1.6",
+          "line_start": 295,
+          "line_end": 299,
+          "content_preview": "[No recommendations or practice points]",
+          "content_token_estimate": 9,
+          "ancestor_path": [
+            "Follow-up of children with IgAN"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Immunoglobulin A vasculitis",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 299,
+      "line_end": 301,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.7 Diagnosis",
+          "depth": 1,
+          "numbering": "1.7",
+          "line_start": 301,
+          "line_end": 305,
+          "content_preview": "Practice Point 1.7.1:",
+          "content_token_estimate": 5,
+          "ancestor_path": [
+            "Immunoglobulin A vasculitis"
+          ]
+        },
+        {
+          "heading": "1.8 Prognosis",
+          "depth": 1,
+          "numbering": "1.8",
+          "line_start": 305,
+          "line_end": 321,
+          "content_preview": "Practice Point 1.8.1:\n\nConsiderations for the diagnosis of immunoglobulin A vasculitis (IgAV) -associated nephritis (IgAVN):\n/C15 There are no internationally agreed upon criteria for the diagnosis of",
+          "content_token_estimate": 363,
+          "ancestor_path": [
+            "Immunoglobulin A vasculitis"
+          ]
+        },
+        {
+          "heading": "1.9 Treatment",
+          "depth": 1,
+          "numbering": "1.9",
+          "line_start": 321,
+          "line_end": 346,
+          "content_preview": "1.9.1 Prevention of nephritis in IgAV\n\nRecommendation 1.9.1.1: We recommend not using systemic glucocorticoids to prevent nephritis in patients with isolated extrarenal IgAV (1B) .\n\nPractice Point 1.9",
+          "content_token_estimate": 678,
+          "ancestor_path": [
+            "Immunoglobulin A vasculitis"
+          ]
+        },
+        {
+          "heading": "1.10 Special situations",
+          "depth": 1,
+          "numbering": "1.10",
+          "line_start": 346,
+          "line_end": 354,
+          "content_preview": "Practice Point 1.10.1: IgAV with RPGN:\n/C15 The potential risks and bene /uniFB01 ts of immunosuppression should be evaluated at the individual patient level and discussed with the patient.\n/C15 Patie",
+          "content_token_estimate": 243,
+          "ancestor_path": [
+            "Immunoglobulin A vasculitis"
+          ],
+          "children": [
+            {
+              "heading": "1.10.1 IgAVN in children",
+              "depth": 2,
+              "numbering": "1.10.1",
+              "line_start": 354,
+              "line_end": 360,
+              "content_preview": "Practice Point 1.10.1.1: In this guideline, we de /uniFB01 ne children as those aged &lt; 18 years, but it is acknowledged that postpubertal children in some respects may have a similar course and res",
+              "content_token_estimate": 160,
+              "ancestor_path": [
+                "Immunoglobulin A vasculitis",
+                "1.10 Special situations"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Brie /uniFB02 y:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 360,
+      "line_end": 372,
+      "content_preview": "/C15 The majority of children who will develop nephritis do so within 3 months of presentation. Urinary monitoring is necessary at the onset of vasculitis and then at least monthly for ‡ 6 months from",
+      "content_token_estimate": 540,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Immunoglobulin A nephropathy",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 372,
+      "line_end": 386,
+      "content_preview": "Immunoglobulin A (IgA) nephropathy (IgAN) is the most common pattern of primary glomerular disease worldwide and remains a leading cause of chronic kidney disease (CKD) and kidney failure. Although Ig",
+      "content_token_estimate": 902,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.1 Global implementation of the KDIGO 2025 IgAN Guideline",
+          "depth": 1,
+          "numbering": "1.1",
+          "line_start": 386,
+          "line_end": 400,
+          "content_preview": "At the time of /uniFB01 nalizing this guideline update, a number of new therapies for treating both CKD and IgAN had been approved in a limited number of countries, and these have been included in thi",
+          "content_token_estimate": 882,
+          "ancestor_path": [
+            "Immunoglobulin A nephropathy"
+          ]
+        },
+        {
+          "heading": "1.2 Diagnosis",
+          "depth": 1,
+          "numbering": "1.2",
+          "line_start": 400,
+          "line_end": 408,
+          "content_preview": "Practice Point 1.2.1: Considerations regarding the diagnosis of immunoglobulin A nephropathy (IgAN):\n/C15 IgAN can be diagnosed only with a kidney biopsy, as there are no validated serum or urine biom",
+          "content_token_estimate": 201,
+          "ancestor_path": [
+            "Immunoglobulin A nephropathy"
+          ]
+        },
+        {
+          "heading": "1.3 Prognosis",
+          "depth": 1,
+          "numbering": "1.3",
+          "line_start": 408,
+          "line_end": 444,
+          "content_preview": "Several prognostic scores have been developed to assist in predicting kidney outcomes in IgAN. Earlier scoring systems included a variety of pathologic classi /uniFB01 cation schemas in cohorts with u",
+          "content_token_estimate": 1009,
+          "ancestor_path": [
+            "Immunoglobulin A nephropathy"
+          ]
+        },
+        {
+          "heading": "1.4 Treatment",
+          "depth": 1,
+          "numbering": "1.4",
+          "line_start": 444,
+          "line_end": 450,
+          "content_preview": "With the development and recent approval of new therapies for treating IgAN, there has been a fundamental shift in the focus for treating this immune complex -mediated glomerular disease since the pub",
+          "content_token_estimate": 326,
+          "ancestor_path": [
+            "Immunoglobulin A nephropathy"
+          ],
+          "children": [
+            {
+              "heading": "1.4.1 De /uniFB01 ning patients with IgAN at risk of progressive loss of kidney function requiring treatment",
+              "depth": 2,
+              "numbering": "1.4.1",
+              "line_start": 450,
+              "line_end": 466,
+              "content_preview": "Practice Point 1.4.1.1: Because patients with IgAN are at risk of progressive loss of kidney function if they have proteinuria ‡ 0.5 g/d (or equivalent) while on or off treatment of IgAN, treatment or",
+              "content_token_estimate": 1105,
+              "ancestor_path": [
+                "Immunoglobulin A nephropathy",
+                "1.4 Treatment"
+              ]
+            },
+            {
+              "heading": "1.4.2 De /uniFB01 ning a treatment goal in patients with IgAN at risk of progressive loss of kidney function",
+              "depth": 2,
+              "numbering": "1.4.2",
+              "line_start": 466,
+              "line_end": 495,
+              "content_preview": "Practice Point 1.4.2.1: The treatment goal in patients with IgAN at risk of progressive loss of kidney function is to reduce the rate of loss of kidney function to the physiological state (i.e., &lt; ",
+              "content_token_estimate": 1416,
+              "ancestor_path": [
+                "Immunoglobulin A nephropathy",
+                "1.4 Treatment"
+              ],
+              "children": [
+                {
+                  "heading": "Practice Point 1.4.2.3: Treatment selection in IgAN:",
+                  "depth": 4,
+                  "numbering": "1.4.2.3",
+                  "line_start": 495,
+                  "line_end": 571,
+                  "content_preview": "/C15 The key factors to consider when making treatment choices are summarized in Tables 1 and 2.\n/C15 Issues related to accessibility and affordability of newly approved treatments for IgAN, alongside",
+                  "content_token_estimate": 4252,
+                  "ancestor_path": [
+                    "Immunoglobulin A nephropathy",
+                    "1.4 Treatment",
+                    "1.4.2 De /uniFB01 ning a treatment goal in patients with IgAN at risk of progressive loss of kidney function"
+                  ]
+                }
+              ]
+            },
+            {
+              "heading": "1.4.3 Managing the IgAN-speci /uniFB01 c drivers of nephron loss",
+              "depth": 2,
+              "numbering": "1.4.3",
+              "line_start": 571,
+              "line_end": 584,
+              "content_preview": "The key initiators of nephron loss in IgAN are as follows: (i) production of pathogenic forms of IgA and formation of IgAICs; mesangial deposition of these immune complexes and triggering of (ii) in /",
+              "content_token_estimate": 613,
+              "ancestor_path": [
+                "Immunoglobulin A nephropathy",
+                "1.4 Treatment"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Key information",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 584,
+      "line_end": 604,
+      "content_preview": "Balance of bene /uniFB01 ts and harms. Bene /uniFB01 ts. In the NefIgArd study, 364 adult patients with IgAN, eGFR 35 /C0 90 ml/min per 1.73 m 2 , and persistent proteinuria (urine protein-tocreatinin",
+      "content_token_estimate": 1488,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 604,
+      "line_end": 633,
+      "content_preview": "There is a large body of research evidence supporting a pathogenic link between mucosa-associated lymphoid tissue, and in particular gut-associated lymphoid tissue, and generation of pathogenic forms ",
+      "content_token_estimate": 1183,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Key information",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 633,
+      "line_end": 647,
+      "content_preview": "Balance of bene /uniFB01 ts and harms. Bene /uniFB01 ts. Participants on the reduced-dose methylprednisolone regimen in the TESTING study experienced a signi /uniFB01 cant reduction in the frequency o",
+      "content_token_estimate": 2032,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 647,
+      "line_end": 655,
+      "content_preview": "An initial series of small, placebo-controlled RCTs supported greater reduction in proteinuria with systemic glucocorticoids compared with supportive therapy alone, with or without the uniform use of ",
+      "content_token_estimate": 534,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "Practice Point 1.4.3.4: Other pharmacologic therapies evaluated in IgAN:",
+          "depth": 4,
+          "numbering": "1.4.3.4",
+          "line_start": 655,
+          "line_end": 679,
+          "content_preview": "/C15 Multiple agents have been evaluated, often in small studies in restricted populations, and they failed to show a consistent bene /uniFB01 t in IgAN (Figure 4).\n\n| Agent | Suggested usage | Remark",
+          "content_token_estimate": 1519,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        },
+        {
+          "heading": "1.4.4 Managing the responses to IgAN-induced nephron loss",
+          "depth": 2,
+          "numbering": "1.4.4",
+          "line_start": 679,
+          "line_end": 693,
+          "content_preview": "Progressive and signi /uniFB01 cant nephron loss from any cause leads to the initiation and propagation of a characteristic pattern of initially adaptive but ultimately maladaptive responses within th",
+          "content_token_estimate": 566,
+          "ancestor_path": [
+            "Rationale"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Key information",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 693,
+      "line_end": 709,
+      "content_preview": "Balance of bene /uniFB01 ts and harms. Bene /uniFB01 ts. Epidemiologic studies of large IgAN cohorts in North America, Asia, and Europe consistently identify sustained increases in proteinuria as an i",
+      "content_token_estimate": 1450,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 709,
+      "line_end": 721,
+      "content_preview": "The bulk of the evidence reviewed suggests that the use of RASi to control blood pressure and proteinuria in patients with proteinuric CKD provides bene /uniFB01 ts for long-term kidney survival. 67 -",
+      "content_token_estimate": 600,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Key information",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 721,
+      "line_end": 739,
+      "content_preview": "Balance of bene /uniFB01 ts and harms. Bene /uniFB01 ts. The PROTECT trial (A Study of the Effect and Safety of Sparsentan in the Treatment of Patients with IgA Nephropathy) 26,76 enrolled 406 patient",
+      "content_token_estimate": 1469,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 739,
+      "line_end": 757,
+      "content_preview": "In IgAN, the endothelin system is activated, inducing pathophysiological responses that augment those associated with the activation of the RAS. 77 Both systems mediate kidney injury through mechanism",
+      "content_token_estimate": 956,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Key information",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 757,
+      "line_end": 771,
+      "content_preview": "Balance of bene /uniFB01 ts and harms. Bene /uniFB01 ts. For the general population with CKD, bene /uniFB01 ts of SGLT2i include a reduction in the risk of kidney disease progression and a reduction i",
+      "content_token_estimate": 908,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 771,
+      "line_end": 775,
+      "content_preview": "There is a very clear rationale for the use of SGLT2i in CKD with and without diabetes based on data from large trials of individual SGLT2i and from meta-analyses of such trials. The use of SGLT2i is ",
+      "content_token_estimate": 231,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.5 Special situations",
+          "depth": 1,
+          "numbering": "1.5",
+          "line_start": 775,
+          "line_end": 789,
+          "content_preview": "Practice Point 1.5.1: IgAN with nephrotic syndrome:\n/C15 Rarely, patients with IgAN present with nephrotic syndrome (including edema and both hypoalbuminemia and nephrotic-range proteinuria &gt; 3.5 g",
+          "content_token_estimate": 594,
+          "ancestor_path": [
+            "Rationale"
+          ],
+          "children": [
+            {
+              "heading": "Practice Point 1.5.3: IgAN with RPGN:",
+              "depth": 3,
+              "numbering": "1.5.3",
+              "line_start": 789,
+              "line_end": 805,
+              "content_preview": "/C15 Rapidly progressive IgAN is de /uniFB01 ned as a ‡ 50% decline in eGFR over £ 3 months, where other causes of RPGN (e.g., AAV and anti-GBM disease) and reversible causes (e.g., drug toxicity and ",
+              "content_token_estimate": 736,
+              "ancestor_path": [
+                "Rationale",
+                "1.5 Special situations"
+              ]
+            },
+            {
+              "heading": "Practice Point 1.5.5: IgAN in children:",
+              "depth": 3,
+              "numbering": "1.5.5",
+              "line_start": 805,
+              "line_end": 807,
+              "content_preview": "",
+              "content_token_estimate": 0,
+              "ancestor_path": [
+                "Rationale",
+                "1.5 Special situations"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "General considerations for children with IgAN",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 807,
+      "line_end": 813,
+      "content_preview": "/C15 A more extensive review of the management of IgAN in children can be found in the 2025 International Pediatric Nephrology Association clinical practice recommendations for the diagnosis and manag",
+      "content_token_estimate": 212,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Kidney biopsy in children with IgAN",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 813,
+      "line_end": 820,
+      "content_preview": "/C15 A kidney biopsy is usually performed at presentation of symptoms (hematuria, proteinuria, and normal C3) to con /uniFB01 rm the diagnosis (and rule out other diagnoses) and assess the degree of i",
+      "content_token_estimate": 251,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Treatment of children with IgAN",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 820,
+      "line_end": 835,
+      "content_preview": "/C15 There is strong evidence suggesting a bene /uniFB01 t of RAS blockade in children. 64 All children with IgAN and proteinuria &gt; 200 mg/d or PCR &gt; 200 mg/g ( &gt; 20 mg/mmol) should receive R",
+      "content_token_estimate": 1031,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Follow-up of children with IgAN",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 835,
+      "line_end": 840,
+      "content_preview": "/C15 AimforSBPat &lt; 90th percentile for age, sex, and height.\n/C15 Aim for proteinuria £ 200 mg/d ( £ 400 mg/1.73 m 2 per day) or PCR £ 200 mg/g ( £ 20 mg/mmol).\n/C15 Continue to follow patients aft",
+      "content_token_estimate": 98,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.6 Horizon scanning for future new drug approvals and updates to the guideline",
+          "depth": 1,
+          "numbering": "1.6",
+          "line_start": 840,
+          "line_end": 864,
+          "content_preview": "A number of new therapeutic approaches are being tested in clinical trials in IgAN, supported by a greater understanding of the IgAN pathogenesis, including factors promoting generation of pathogenic ",
+          "content_token_estimate": 1105,
+          "ancestor_path": [
+            "Follow-up of children with IgAN"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Research recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 864,
+      "line_end": 886,
+      "content_preview": "The following areas are of high priority for future research to improve the treatment and outcomes of patients with IgAN:\n/C15 Risk strati /uniFB01 cation: This is important for both patient evaluatio",
+      "content_token_estimate": 1064,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Immunoglobulin A vasculitis",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 886,
+      "line_end": 892,
+      "content_preview": "IgA vasculitis (IgAV), formerly Henoch-Schönlein purpura, is a form of vasculitis marked by IgA deposition within the blood vessels of affected tissues. IgAV commonly affects the small blood vessels o",
+      "content_token_estimate": 380,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.7 Diagnosis",
+          "depth": 1,
+          "numbering": "1.7",
+          "line_start": 892,
+          "line_end": 901,
+          "content_preview": "Practice Point 1.7.1: Considerations for the diagnosis of immunoglobulin A vasculitis (IgAV) -associated nephritis (IgAVN):\n/C15 There are no internationally agreed upon criteria for the diagnosis of ",
+          "content_token_estimate": 186,
+          "ancestor_path": [
+            "Immunoglobulin A vasculitis"
+          ]
+        },
+        {
+          "heading": "1.8 Prognosis",
+          "depth": 1,
+          "numbering": "1.8",
+          "line_start": 901,
+          "line_end": 909,
+          "content_preview": "Practice Point 1.8.1: Considerations regarding the prognosis of IgAVN:\n/C15 Retrospective data from a limited number of small registries have identi /uniFB01 ed uncontrolled hypertension\nand the amoun",
+          "content_token_estimate": 181,
+          "ancestor_path": [
+            "Immunoglobulin A vasculitis"
+          ]
+        },
+        {
+          "heading": "1.9 Treatment",
+          "depth": 1,
+          "numbering": "1.9",
+          "line_start": 909,
+          "line_end": 917,
+          "content_preview": "1.9.1 Prevention of nephritis in IgAV\n\nRecommendation 1.9.1.1: We recommend not using systemic glucocorticoids to prevent nephritis in patients with isolated extrarenal IgAV (1B) .\n\nThis recommendatio",
+          "content_token_estimate": 92,
+          "ancestor_path": [
+            "Immunoglobulin A vasculitis"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Key information",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 917,
+      "line_end": 931,
+      "content_preview": "Balance of bene /uniFB01 ts and harms. There are no RCT data on the effectiveness of strategies to prevent IgAVN in adults with IgAV. There is, however, a signi /uniFB01 cant body of evidence in child",
+      "content_token_estimate": 540,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 931,
+      "line_end": 955,
+      "content_preview": "The lack of bene /uniFB01 t and the well-documented risks associated with systemic glucocorticoids meant the Work Group could not support their use in preventing nephritis in IgAV.\n\nPractice Point 1.9",
+      "content_token_estimate": 679,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.10 Special situations",
+          "depth": 1,
+          "numbering": "1.10",
+          "line_start": 955,
+          "line_end": 963,
+          "content_preview": "Practice Point 1.10.1: IgAV with RPGN:\n/C15 The potential risks and bene /uniFB01 ts of immunosuppression should be evaluated at the individual patient level and discussed with the patient.\n/C15 Patie",
+          "content_token_estimate": 243,
+          "ancestor_path": [
+            "Rationale"
+          ],
+          "children": [
+            {
+              "heading": "1.10.1 IgAVN in children",
+              "depth": 2,
+              "numbering": "1.10.1",
+              "line_start": 963,
+              "line_end": 969,
+              "content_preview": "Practice Point 1.10.1.1: In this guideline, we de /uniFB01 ne children as those aged &lt; 18 years, but it is acknowledged that postpubertal children in some respects may have a similar course and res",
+              "content_token_estimate": 160,
+              "ancestor_path": [
+                "Rationale",
+                "1.10 Special situations"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Brie /uniFB02 y:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 969,
+      "line_end": 982,
+      "content_preview": "/C15 The majority of children who will develop nephritis do so within 3 months of presentation. Urinary monitoring is necessary at the onset of vasculitis and then at least monthly for ‡ 6 months from",
+      "content_token_estimate": 540,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Research recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 982,
+      "line_end": 987,
+      "content_preview": "/C15 Unlike IgAN, there are currently few clinical trials of novel therapies in IgAVN. It is recommended that those agents currently being evaluated in patients with IgAN should also be tested for saf",
+      "content_token_estimate": 186,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Methods for guideline development",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 987,
+      "line_end": 989,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Aim",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 989,
+      "line_end": 995,
+      "content_preview": "This guideline is an update of Chapter 2: Immunoglobulin A Nephropathy (IgAN)/Immunoglobulin A Vasculitis (IgAV) from the KDIGO Clinical Practice Guideline for the Management of Glomerular Diseases pu",
+      "content_token_estimate": 129,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Overview of the process",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 995,
+      "line_end": 1170,
+      "content_preview": "This guideline adhered to international best practices for guideline development (Appendix B: Supplementary Tables S2 and S3). 121 This guideline has been developed and reported in accordance with the",
+      "content_token_estimate": 6081,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Practice points",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1170,
+      "line_end": 1176,
+      "content_preview": "In addition to graded recommendations, KDIGO guidelines now include ' practice points ' to help clinicians better evaluate and implement the guidance from the expert Work Group. Practice points are co",
+      "content_token_estimate": 252,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Format for guideline recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1176,
+      "line_end": 1180,
+      "content_preview": "Each guideline recommendation provides an assessment of the strength of the recommendation (Level 1 or Level 2) and the certainty of the evidence (A, B, C, D). The recommendation statements are follow",
+      "content_token_estimate": 124,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Limitations of the guideline development process",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1180,
+      "line_end": 1184,
+      "content_preview": "The evidence review prioritized RCTs as the primary source of evidence. Therefore, the reviews were not exhaustive, as specialty or regional databases were not searched and manual searching of journal",
+      "content_token_estimate": 143,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Biographic and disclosure information",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1184,
+      "line_end": 1270,
+      "content_preview": "Jürgen Floege, MD (Work Group Co-Chair), trained at the Hannover Medical School, Hannover, Germany; the Albert Einstein College of Medicine, Bronx, New York; and the University of Washington, Seattle,",
+      "content_token_estimate": 4198,
+      "ancestor_path": []
+    },
+    {
+      "heading": "KDIGO Chairs",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1270,
+      "line_end": 1288,
+      "content_preview": "Michel Jadoul, MD, chaired the Division of Nephrology of the Cliniques universitaires Saint-Luc for 20 years (2003 -2023) and is now a young emeritus full clinical professor at UCLouvain, both in Brus",
+      "content_token_estimate": 787,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Methods Chair",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1288,
+      "line_end": 1296,
+      "content_preview": "Marcello A. Tonelli, MD, SM, MSc, FRCPC, received a medical degree from the University of Western Ontario, London, Ontario, Canada; a Master of Science in epidemiology from Harvard University, Cambrid",
+      "content_token_estimate": 168,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Evidence Review Team",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 1296,
+      "line_end": 1318,
+      "content_preview": "Ethan M. Balk, MD, MPH, is Associate Director of the Center for Evidence Synthesis in Health and Professor of Health Services, Policy and Practice at the Brown University School of Public Health in Pr",
+      "content_token_estimate": 994,
+      "ancestor_path": []
+    }
+  ]
+}

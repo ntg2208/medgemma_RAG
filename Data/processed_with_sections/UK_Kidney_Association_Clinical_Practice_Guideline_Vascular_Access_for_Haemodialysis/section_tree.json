@@ -1,0 +1,467 @@
+{
+  "doc_name": "UK_Kidney_Association_Clinical_Practice_Guideline_Vascular_Access_for_Haemodialysis",
+  "total_sections": 46,
+  "total_lines": 801,
+  "tree": [
+    {
+      "heading": "Conflicts s of Interest Statement",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 0,
+      "line_end": 137,
+      "content_preview": "All authors made declarations of interest in line with the policy in the UK Kidney Association Clinical Practice Guidelines Development Manual. Further details can be obtained on request from The UK K",
+      "content_token_estimate": 5141,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 137,
+      "line_end": 145,
+      "content_preview": "Rather than the technology of membranes, pumps and water purification, the history of dialysis is most closely associated with the development of vascular access. It was not until Belding Scribner's d",
+      "content_token_estimate": 536,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Evidence comparing access types",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 145,
+      "line_end": 153,
+      "content_preview": "Studies of access type generally focus on one of three kinds of outcome: mortality, access complications (such as infection or bleeding) and patient experience (including access stability and satisfac",
+      "content_token_estimate": 262,
+      "ancestor_path": []
+    },
+    {
+      "heading": "A. Mortality",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 153,
+      "line_end": 172,
+      "content_preview": "A large number of studies observe that patients dialysing by fistula have longer survival than those dialysing by catheter. This wealth of data is perhaps best summarised by Ravani's meta analysis: in",
+      "content_token_estimate": 1288,
+      "ancestor_path": []
+    },
+    {
+      "heading": "B. Complications",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 172,
+      "line_end": 189,
+      "content_preview": "Complications may arise from all types of vascular access, though the nature, severity and frequency of complications varies between access types. The problems of catheter-related infection and venous",
+      "content_token_estimate": 2129,
+      "ancestor_path": []
+    },
+    {
+      "heading": "C. Patient experience and treatment burden",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 189,
+      "line_end": 200,
+      "content_preview": "Whilst patients' experiences of vascular access are less well studied than other outcomes, they are equally important, and there is a gradually increasing body of literature in this area. Experience d",
+      "content_token_estimate": 1516,
+      "ancestor_path": []
+    },
+    {
+      "heading": "D. Evidence summary",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 200,
+      "line_end": 206,
+      "content_preview": "If one were to generalise access outcomes (for a moment treating patients as a single group) then a wealth of literature associates achieved access with mortality, consistently suggesting quite a larg",
+      "content_token_estimate": 366,
+      "ancestor_path": []
+    },
+    {
+      "heading": "From evidence to decision making",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 206,
+      "line_end": 220,
+      "content_preview": "The concept of 'best access' informs standard clinician advice, but it is also an oversimplification which ignores knowledge uncertainties, patient variety and choice. This knowledge gap is increasing",
+      "content_token_estimate": 847,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Paediatric considerations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 220,
+      "line_end": 240,
+      "content_preview": "Children with end-stage kidney disease have a lifetime of kidney replacement therapy ahead of them. Whilst either pre-emptive transplantation or peritoneal dialysis is the initial modality in many, wi",
+      "content_token_estimate": 1686,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Conclusions",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 240,
+      "line_end": 248,
+      "content_preview": "Whilst summarising the evidence base we have deliberately highlighted its uncertainties, to allow a balanced dialogue acknowledging reasonable patient concerns, and allowing 'fistula advantage' to be ",
+      "content_token_estimate": 345,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 248,
+      "line_end": 274,
+      "content_preview": "Adequate time is required for the selection, formation, and maturation of dialysis access so that it is available when needed for dialysis initiation. In particular, when fistula access is planned, it",
+      "content_token_estimate": 2801,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 274,
+      "line_end": 288,
+      "content_preview": "Long-term vascular access for haemodialysis can be provided by a venous catheter or AV access: creation of a fistula or placement of a graft. Ideally AV access should be easy to cannulate, minimally s",
+      "content_token_estimate": 787,
+      "ancestor_path": []
+    },
+    {
+      "heading": "AV access location",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 288,
+      "line_end": 302,
+      "content_preview": "The majority of fistulas are formed in one of three conventional locations, named according to the vessels from which they are formed: radio-cephalic (forearm), brachio-cephalic (upper arm), and brach",
+      "content_token_estimate": 1592,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Grafts and thigh access",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 302,
+      "line_end": 314,
+      "content_preview": "When vessels for conventional fistula formation have been utilised or are not suitable, graft insertion may be appropriate and should be considered. Since the graft itself is the conduit, no vein is r",
+      "content_token_estimate": 1360,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Surgical and anaesthetic technique",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 314,
+      "line_end": 332,
+      "content_preview": "Surgical practice in fistula formation has evolved conservatively: although variation necessarily exists due to differences in patient anatomy, major divergences in practice are uncommon, and only a f",
+      "content_token_estimate": 1334,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Maturation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 332,
+      "line_end": 346,
+      "content_preview": "Once formed, regular assessment of AV access is important to detect complications, including dysfunction which may otherwise lead to access failure. Basic physical assessment using a 'look, feel and l",
+      "content_token_estimate": 1787,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Cannulation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 346,
+      "line_end": 383,
+      "content_preview": "Cannulation should begin with an assessment of the access: a 'look, feel and listen' assessment is easy to complete prior to each cannulation to ascertain if the access is healthy or if there is cause",
+      "content_token_estimate": 3577,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 383,
+      "line_end": 393,
+      "content_preview": "A proportion of fistulas and grafts develop dysfunction over time, which may manifest clinically as flow dysfunction, thrombosis, aneurysm, steal syndrome or a high flow state. The incidence of compli",
+      "content_token_estimate": 755,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Stenosis",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 393,
+      "line_end": 399,
+      "content_preview": "Significant AV access circuit stenosis can manifest broadly as disorders of inflow (presenting with needling difficulty, inability to achieve flow or inadequate dialysis) or of outflow (presenting wit",
+      "content_token_estimate": 288,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Selection for angiography",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 399,
+      "line_end": 407,
+      "content_preview": "Angiography is usually triggered when access stenosis is suspected due to clinical features (dialysis problems or examination findings) which may also be supported by haemodynamic monitoring (venous n",
+      "content_token_estimate": 473,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Angioplasty and outcome",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 407,
+      "line_end": 419,
+      "content_preview": "There is no clear definition of the anatomic criteria for stenosis, but a clinically relevant stenosis reduces the luminal diameter by at least half, and usually much more than this, since lesser degr",
+      "content_token_estimate": 907,
+      "ancestor_path": []
+    },
+    {
+      "heading": "The role of stents and drug-coated balloons",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 419,
+      "line_end": 433,
+      "content_preview": "Though balloon dilation alone is usually successful, subsequent stent insertion is helpful in cases where rapid elastic recoil occurs, and stents may be better at preventing recurrent stenosis, at lea",
+      "content_token_estimate": 1274,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Thrombosis",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 433,
+      "line_end": 447,
+      "content_preview": "The most important consequence of AV access stenosis is thrombotic occlusion, and in most cases of access circuit occlusion there is a haemodynamically significant culprit stenosis. Fistula salvage th",
+      "content_token_estimate": 1071,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Aneurysm",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 447,
+      "line_end": 465,
+      "content_preview": "AV access aneurysms may occur adjacent to the arterial anastomosis, or more commonly along the cannulation segment, and may be focal (with one or two rounded expansions in an otherwise normal fistula)",
+      "content_token_estimate": 1435,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Steal syndrome",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 465,
+      "line_end": 491,
+      "content_preview": "'Steal' is the clinical manifestation of distal ischaemia, developing as a consequence of the diversion of blood into the access, and therefore away from the hand and forearm, after access formation. ",
+      "content_token_estimate": 1529,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 491,
+      "line_end": 493,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Catheter insertion",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 493,
+      "line_end": 519,
+      "content_preview": "Tunnelled haemodialysis catheters are produced by multiple manufacturers and available in a variety of designs. Some are twin catheters, composed of two separate single lumen catheters which are inser",
+      "content_token_estimate": 2203,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Catheter care",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 519,
+      "line_end": 549,
+      "content_preview": "After insertion, catheter infection remains a constant risk, arising usually from contamination of the external or internal catheter surface, by organisms on the skin of patients or hands of staff. Nu",
+      "content_token_estimate": 2867,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 549,
+      "line_end": 553,
+      "content_preview": "A proportion of catheters may develop complications over time, of which the most common are dysfunction (poor flow) and infection. As with AV access, much of the literature on catheter complications i",
+      "content_token_estimate": 137,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Catheter dysfunction",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 553,
+      "line_end": 591,
+      "content_preview": "Tunnelled dialysis catheter dysfunction is a common problem, usually defined as inability of the catheter to deliver a blood flow of at least 300ml/min in adult patients. Dysfunction from the time of ",
+      "content_token_estimate": 2506,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Central vein thrombosis",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 591,
+      "line_end": 595,
+      "content_preview": "External catheter-related thrombosis, occluding flow through the central veins, is a less common problem. This may present as face or arm swelling, but is often asymptomatic, found incidentally when i",
+      "content_token_estimate": 300,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Catheter-related infection",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 595,
+      "line_end": 611,
+      "content_preview": "Tunnelled dialysis catheter infections are a significant cause of morbidity and mortality patients undergoing haemodialysis (14). Three clinical types of catheter infection are recognised: exit infect",
+      "content_token_estimate": 1356,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Central v venous stenosis",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 611,
+      "line_end": 620,
+      "content_preview": "| 7.CENTRAL VENOUS STENOSIS | 7.CENTRAL VENOUS STENOSIS | 7.CENTRAL VENOUS STENOSIS |\n|-----------------------------|-----------------------------------------------------------------------------------",
+      "content_token_estimate": 212,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 620,
+      "line_end": 644,
+      "content_preview": "Central venous stenosis (CVS) is defined as pathological narrowing or occlusion in one or more of the thoracic veins: subclavian, brachiocephalic (innominate) or superior vena cava (SVC), with simplif",
+      "content_token_estimate": 1440,
+      "ancestor_path": []
+    },
+    {
+      "heading": "1. Mild CVS: non-symptomatic, with functional access",
+      "depth": 0,
+      "numbering": "1",
+      "line_start": 644,
+      "line_end": 650,
+      "content_preview": "If CVS is clinically mild (no symptoms, with functional AV access) then no treatment is necessary, and may even be harmful. Most such CVS is not recognised and does not cause any detectable access dys",
+      "content_token_estimate": 293,
+      "ancestor_path": []
+    },
+    {
+      "heading": "2. Moderate CVS: symptoms or access dysfunction, but easy to open",
+      "depth": 0,
+      "numbering": "2",
+      "line_start": 650,
+      "line_end": 666,
+      "content_preview": "Moderate CVS refers to cases with clinical features (symptoms or access dysfunction) but without difficulty opening the lesion, though the anatomy and nature of the underlying lesion varies widely bet",
+      "content_token_estimate": 1301,
+      "ancestor_path": []
+    },
+    {
+      "heading": "3. Severe CVS: difficult to open, access usually dysfunctional",
+      "depth": 0,
+      "numbering": "3",
+      "line_start": 666,
+      "line_end": 670,
+      "content_preview": "In severe CVS symptoms are very common in the presence of ipsilateral AV access, but variable with catheter access. These lesions are usually hard to open and most studies focus on the method used to ",
+      "content_token_estimate": 68,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Opening the lesion",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 670,
+      "line_end": 684,
+      "content_preview": "In most studies of this type of CVS, the focus is on successfully opening the lesion by first crossing it with a wire (so that the lesion can be dilated), often termed recanalisation, though some rese",
+      "content_token_estimate": 699,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Subsequent access",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 684,
+      "line_end": 696,
+      "content_preview": "A common access after treatment of severe CVS is a catheter through the lesion. Subsequent symptoms are uncommon and the catheter facilitates opening the lesion in the event of a requirement for retre",
+      "content_token_estimate": 724,
+      "ancestor_path": []
+    },
+    {
+      "heading": "4. Occlusive CVS: non-SVC access required",
+      "depth": 0,
+      "numbering": "4",
+      "line_start": 696,
+      "line_end": 712,
+      "content_preview": "This section deals with thoracic CVS which is bilaterally occlusive, so that non-thoracic access is therefore required. Occlusive is a variably used term, since clearly some CVS is described as occlus",
+      "content_token_estimate": 897,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Unconventional and experimental options",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 712,
+      "line_end": 720,
+      "content_preview": "A number of less common approaches have also been described with reasonable outcome, though one should remember that small studies of uncommon treatments are particularly prone to publication bias. Th",
+      "content_token_estimate": 341,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Terms which quantify the effects of disease and treatments",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 720,
+      "line_end": 736,
+      "content_preview": "Significance . How sure we can be that this effect is 'real' and not just a chance observation. This depends mostly on the size (number of participants) of the study. For example, if you toss a coin 5",
+      "content_token_estimate": 688,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Other statistical concepts",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 736,
+      "line_end": 774,
+      "content_preview": "Bias . Any way in which a study is not 'fair'. This is not the same as 'noise' (unknowns which make the true effect hard to see) because bias refers to things which tend to push the effect artificiall",
+      "content_token_estimate": 806,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Audit measure 8: A yearly survey of cannulation practice and miscannulation.",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 774,
+      "line_end": 789,
+      "content_preview": "Data should be collected for one dialysis session for a random sample of patients, including:\n\nNeedling Technique (as per BRS VA/VASBI Definitions)\n\nNumber of patients using each needling technique fo",
+      "content_token_estimate": 287,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Missed Cannulation",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 789,
+      "line_end": 797,
+      "content_preview": "Number of patients for that haemodialysis session that experienced more than one attempt to insert a needle at one needling site.\n\nMore than one attempt is defined as either:\nComplete removal and the ",
+      "content_token_estimate": 85,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Aud it measure 9: A yearly survey of patients' experience of access.",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 797,
+      "line_end": 801,
+      "content_preview": "Questionnaires should be collected from a random sample of patients, for example using the VASQoL questionnaire, currently being updated by the authors.",
+      "content_token_estimate": 38,
+      "ancestor_path": []
+    }
+  ]
+}

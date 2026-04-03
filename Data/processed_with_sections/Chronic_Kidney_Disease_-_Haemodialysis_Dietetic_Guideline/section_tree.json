@@ -1,0 +1,594 @@
+{
+  "doc_name": "Chronic_Kidney_Disease_-_Haemodialysis_Dietetic_Guideline",
+  "total_sections": 52,
+  "total_lines": 452,
+  "tree": [
+    {
+      "heading": "1. SCOPE",
+      "depth": 0,
+      "numbering": "1",
+      "line_start": 0,
+      "line_end": 4,
+      "content_preview": "This guideline is intended for the renal multidisciplinary team (MDT) including consultant nephrologists, specialist registrars, specialist nurses, dietitians and pharmacists. This is a locally adapte",
+      "content_token_estimate": 82,
+      "ancestor_path": []
+    },
+    {
+      "heading": "2. INTRODUCTION",
+      "depth": 0,
+      "numbering": "2",
+      "line_start": 4,
+      "line_end": 12,
+      "content_preview": "All patients should be reviewed within one month of starting HD by a renal dietitian (Renal Association, 2010). All HD patients should have a nutritional review at least every three-six months, and pa",
+      "content_token_estimate": 216,
+      "ancestor_path": []
+    },
+    {
+      "heading": "3. STATEMENT OF INTENT",
+      "depth": 0,
+      "numbering": "3",
+      "line_start": 12,
+      "line_end": 54,
+      "content_preview": "During the dietary assessment of HD patients the following aspects should be considered:\n\nEnergy:\n\nAim 30-35Kcal /Kg/ IBW/d\n\n(EDTNA, 2002;K/DOQI, 2002)\n\nProtein:\n\nAim minimum 1.1g /Kg/ IBW/d\n\n(RNG, 20",
+      "content_token_estimate": 439,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Fluid: Aim for 500ml + previous days urine output (EDTNA, 2002)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 54,
+      "line_end": 58,
+      "content_preview": "Patients should be advised on a maximum weight gain of 2Kg or 4% of dry weight.",
+      "content_token_estimate": 19,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Vitamin and mineral intake:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 58,
+      "line_end": 62,
+      "content_preview": "The dietitian will advise on ways to achieve an adequate intake of vitamins and minerals.",
+      "content_token_estimate": 22,
+      "ancestor_path": []
+    },
+    {
+      "heading": "4.DEFINITIONS",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 62,
+      "line_end": 66,
+      "content_preview": "CKD- Chronic Kidney Disease HD- Haemodialysis IBW- Ideal body weight iPTH- Intact Parathyroid hormone MAC- Mid-arm circumference TSF- Tricep skinfold thickness IDWG- Intra-dialytic weight gain JVP - J",
+      "content_token_estimate": 73,
+      "ancestor_path": []
+    },
+    {
+      "heading": "5.DUTIES / RESPONSIBILITIES",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 66,
+      "line_end": 70,
+      "content_preview": "All renal dietitians should be aware and understand this guideline to assist with its implementation. This will ensure that all CKD HD patients that are referred to a renal dietitian are given dietary",
+      "content_token_estimate": 57,
+      "ancestor_path": []
+    },
+    {
+      "heading": "6. DETAILS OF THE DOCUMENT",
+      "depth": 0,
+      "numbering": "6",
+      "line_start": 70,
+      "line_end": 72,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Assessment",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 72,
+      "line_end": 76,
+      "content_preview": "The prioritisation and frequency of dietetic review will be decided by the patient's renal dietitian (NHS Commissioning Board, 2013). The frequency of monitoring may need to increase to monthly in pat",
+      "content_token_estimate": 95,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Nutrient intakes",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 76,
+      "line_end": 90,
+      "content_preview": "(i)\n\nAim:\n\nEnergy\n\nTo achieve/maintain an IBW and nitrogen balance To minimise morbidity and mortality risk associated with malnutrition\n\nEnergy requirement are increased in HD and CKD due to the acti",
+      "content_token_estimate": 127,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "(ii) Protein",
+          "depth": 1,
+          "numbering": null,
+          "line_start": 90,
+          "line_end": 102,
+          "content_preview": "Aim:\n\nTo maintain nitrogen balance To minimize morbidity and mortality risk associated with malnutrition\n\nProtein requirements in HD are increased due to the activation of cytokine release and complem",
+          "content_token_estimate": 207,
+          "ancestor_path": [
+            "Nutrient intakes"
+          ],
+          "children": [
+            {
+              "heading": "(iii) Potassium",
+              "depth": 2,
+              "numbering": null,
+              "line_start": 102,
+              "line_end": 104,
+              "content_preview": "",
+              "content_token_estimate": 0,
+              "ancestor_path": [
+                "Nutrient intakes",
+                "(ii) Protein"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Aim: Renal Association standards recommend pre-dialysis serum potassium levels are maintained between 4-6 mmol/l",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 104,
+      "line_end": 112,
+      "content_preview": " Where serum potassium levels are elevated non dietary causes of raised potassium should be considered before dietary restriction (Appendix D)\n Aim for a normal range of serum bicarbonate (22-29mmol",
+      "content_token_estimate": 243,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "(iv) Phosphate:",
+          "depth": 1,
+          "numbering": null,
+          "line_start": 112,
+          "line_end": 122,
+          "content_preview": "Aim: To maintain serum phosphate levels between 1.1-1.7mmol/l (Renal Association, 2010)\n Calcium levels should be maintained at 2.10-2.5 mmol/l (corrected for serum albumin)\n The dose of calcium bas",
+          "content_token_estimate": 349,
+          "ancestor_path": [
+            "Aim: Renal Association standards recommend pre-dialysis serum potassium levels are maintained between 4-6 mmol/l"
+          ],
+          "children": [
+            {
+              "heading": "(v) Intact Parathyroid Hormone: 8 - 38 pmol/L (2-9 times the upper laboratory target)",
+              "depth": 2,
+              "numbering": null,
+              "line_start": 122,
+              "line_end": 126,
+              "content_preview": "Treatment should be based on trends; patients with levels of iPTH above the target range should be assessed for hyperphosphataemia and hypocalcaemia (KDIGO, 2009). Active vitamin D analogues calcitrio",
+              "content_token_estimate": 159,
+              "ancestor_path": [
+                "Aim: Renal Association standards recommend pre-dialysis serum potassium levels are maintained between 4-6 mmol/l",
+                "(iv) Phosphate:"
+              ],
+              "children": [
+                {
+                  "heading": "(v) Sodium",
+                  "depth": 3,
+                  "numbering": null,
+                  "line_start": 126,
+                  "line_end": 128,
+                  "content_preview": "",
+                  "content_token_estimate": 0,
+                  "ancestor_path": [
+                    "Aim: Renal Association standards recommend pre-dialysis serum potassium levels are maintained between 4-6 mmol/l",
+                    "(iv) Phosphate:",
+                    "(v) Intact Parathyroid Hormone: 8 - 38 pmol/L (2-9 times the upper laboratory target)"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Aim: Control of Hypertension Support of fluid management",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 128,
+      "line_end": 134,
+      "content_preview": " Dietary salt intakes &gt;6g/d precipitate hypertension. Aim 100mmol/6g salt a day\n Reducing dietary salt intake and sodium dialysate concentration has been shown to reduce blood pressure (McMahon e",
+      "content_token_estimate": 117,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "(vi) Fluid and interdialytic weight gains (IDWG)",
+          "depth": 1,
+          "numbering": null,
+          "line_start": 134,
+          "line_end": 136,
+          "content_preview": "",
+          "content_token_estimate": 0,
+          "ancestor_path": [
+            "Aim: Control of Hypertension Support of fluid management"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Aim: To help maintain an even fluid balance and control IDWG's",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 136,
+      "line_end": 141,
+      "content_preview": " Patients should be advised on an appropriate level of IDWG. Large fluid weight gains are associated with symptomatic dialysis sessions and left ventricular hypertrophy (LVH)\n Patients should be adv",
+      "content_token_estimate": 94,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "(vii) Dry Weight",
+          "depth": 1,
+          "numbering": null,
+          "line_start": 141,
+          "line_end": 146,
+          "content_preview": " Changes in dry weight are an important consideration in the review of HD patients. Such changes are often subtle and difficult to identify. The dietitian should be informed if patients are losing dr",
+          "content_token_estimate": 92,
+          "ancestor_path": [
+            "Aim: To help maintain an even fluid balance and control IDWG's"
+          ],
+          "children": [
+            {
+              "heading": "(viii) Vitamin and mineral intake",
+              "depth": 2,
+              "numbering": null,
+              "line_start": 146,
+              "line_end": 148,
+              "content_preview": "",
+              "content_token_estimate": 0,
+              "ancestor_path": [
+                "Aim: To help maintain an even fluid balance and control IDWG's",
+                "(vii) Dry Weight"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Aim: To improve intake of vitamins and minerals",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 148,
+      "line_end": 155,
+      "content_preview": "The dietitian will advise on ways to achieve an adequate intake of vitamins and minerals is adequate.\n Water-soluble vitamins are routinely given to HD patients on the renal unit post dialysis, 2-3 x",
+      "content_token_estimate": 281,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Vitamin D",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 155,
+      "line_end": 160,
+      "content_preview": "NICE (2014) recommend the diagnosis and treatment of native vitamin D deficiency and insufficiency in those with a GFR &lt;30mls/min. This follows on from European guideline recommendations which reco",
+      "content_token_estimate": 186,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "(ix) Dialysis adequacy and changes in regime.",
+          "depth": 1,
+          "numbering": null,
+          "line_start": 160,
+          "line_end": 168,
+          "content_preview": " Aim URR &gt;65% for those patients dialysing three times per week (Renal Association, 2009)\n Aim URR &gt;85% for those patients dialysing two times per week. Twice weekly HD is not recommended unle",
+          "content_token_estimate": 228,
+          "ancestor_path": [
+            "Vitamin D"
+          ],
+          "children": [
+            {
+              "heading": "(x) Undernutrition",
+              "depth": 2,
+              "numbering": null,
+              "line_start": 168,
+              "line_end": 178,
+              "content_preview": " Nutritional support should be considered where patients are not achieving adequate nutrition (K/DOQI, 2000)\n Dietitians should ensure patients are not following any unnecessary dietary restrictions",
+              "content_token_estimate": 272,
+              "ancestor_path": [
+                "Vitamin D",
+                "(ix) Dialysis adequacy and changes in regime."
+              ],
+              "children": [
+                {
+                  "heading": "(xi) Documentation of dietary review",
+                  "depth": 3,
+                  "numbering": null,
+                  "line_start": 178,
+                  "line_end": 181,
+                  "content_preview": " When patients are reviewed outcomes should be discussed with the relevant nurse and documented in the nursing kardex in the nutritional care plan or medical notes for inpatients",
+                  "content_token_estimate": 44,
+                  "ancestor_path": [
+                    "Vitamin D",
+                    "(ix) Dialysis adequacy and changes in regime.",
+                    "(x) Undernutrition"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "7. DISSEMINATION AND IMPLEMENTATION",
+      "depth": 0,
+      "numbering": "7",
+      "line_start": 181,
+      "line_end": 185,
+      "content_preview": "These guidelines have been disseminated and implemented through the dietetic and renal QIPPS meetings, and are the e-library so that all members of the renal multi-disciplinary team has assess to them",
+      "content_token_estimate": 50,
+      "ancestor_path": []
+    },
+    {
+      "heading": "8.TRAINING",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 185,
+      "line_end": 189,
+      "content_preview": "All new renal dietitians have an introduction and training programme. Included within this training is the implementation of the renal dietetic guidelines.",
+      "content_token_estimate": 38,
+      "ancestor_path": []
+    },
+    {
+      "heading": "9.MONITORING COMPLIANCE",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 189,
+      "line_end": 193,
+      "content_preview": "(Make a short statement about monitoring and insert the 'monitoring table' to detail how the implementation and effectiveness of the clinical guideline will be monitored. For additional guidance on mo",
+      "content_token_estimate": 64,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "9.1 Monitoring Table (Do not delete this table - Must be Completed)",
+          "depth": 1,
+          "numbering": "9.1",
+          "line_start": 193,
+          "line_end": 200,
+          "content_preview": "| Aspect of compliance or effectiveness being monitored | Monitoring method | Individual department responsible for the monitoring | Frequency of the monitoring activity | Group / committee which will",
+          "content_token_estimate": 244,
+          "ancestor_path": [
+            "9.MONITORING COMPLIANCE"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "4. STAFF COMPLIANCE STATEMENT",
+      "depth": 0,
+      "numbering": "4",
+      "line_start": 200,
+      "line_end": 206,
+      "content_preview": "(Do not delete)\n\nClinical Guidelines assist in decision making; they do not replace clinical judgement. Regardless of the strength of evidence, it remains the responsibility of the clinician to interp",
+      "content_token_estimate": 114,
+      "ancestor_path": []
+    },
+    {
+      "heading": "5. EQUALITY &amp; DIVERSITY STATEMENT",
+      "depth": 0,
+      "numbering": "5",
+      "line_start": 206,
+      "line_end": 208,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "(Do not delete)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 208,
+      "line_end": 212,
+      "content_preview": "Throughout its activities, the Trust will seek to treat all people equally and fairly. This includes those seeking and using the services, employees and potential employees. No-one will receive less f",
+      "content_token_estimate": 177,
+      "ancestor_path": []
+    },
+    {
+      "heading": "6. UHCW ASSOCIATED RECORDS",
+      "depth": 0,
+      "numbering": "6",
+      "line_start": 212,
+      "line_end": 216,
+      "content_preview": "(List all UHCW referenced strategies, policies, procedures and Clinical Guidelines) (Delete upon insertion of text)",
+      "content_token_estimate": 28,
+      "ancestor_path": []
+    },
+    {
+      "heading": "8. EVIDENCE BASED REFERENCES",
+      "depth": 0,
+      "numbering": "8",
+      "line_start": 216,
+      "line_end": 222,
+      "content_preview": "(If there are none, write NONE)\n\nProperly reference sources of evidence that underpin the procedural document) (Delete upon insertion of text)",
+      "content_token_estimate": 35,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "14.1",
+          "depth": 1,
+          "numbering": "14.1",
+          "line_start": 222,
+          "line_end": 243,
+          "content_preview": "| References | Grade of evidence (See Table 1.) |\n|-----------------------------------------------------------------------------------------------------------------------------------------------------",
+          "content_token_estimate": 739,
+          "ancestor_path": [
+            "8. EVIDENCE BASED REFERENCES"
+          ],
+          "children": [
+            {
+              "heading": "Table 1",
+              "depth": 2,
+              "numbering": null,
+              "line_start": 243,
+              "line_end": 257,
+              "content_preview": "| Grade of evidence | Based on |\n|---------------------|--------------------------------------------------------------------------------------------------------------------|\n| 1 | Systematic review or",
+              "content_token_estimate": 163,
+              "ancestor_path": [
+                "8. EVIDENCE BASED REFERENCES",
+                "14.1"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "14.2",
+          "depth": 1,
+          "numbering": "14.2",
+          "line_start": 257,
+          "line_end": 273,
+          "content_preview": "| Evidence supporting recommendations | Evidence supporting recommendations | Evidence supporting recommendations |\n|--------------------------------------------------------------------------|--------",
+          "content_token_estimate": 231,
+          "ancestor_path": [
+            "8. EVIDENCE BASED REFERENCES"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "9. APPENDICES",
+      "depth": 0,
+      "numbering": "9",
+      "line_start": 273,
+      "line_end": 275,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix A",
+      "depth": 0,
+      "numbering": "Appendix A",
+      "line_start": 275,
+      "line_end": 281,
+      "content_preview": "Coventry renal dietitians\n\nOut patient referral criteria for renal dietetic review",
+      "content_token_estimate": 20,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Please refer the following patients for dietetic review:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 281,
+      "line_end": 283,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Dialysis patients:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 283,
+      "line_end": 306,
+      "content_preview": "If patients have not been seen by a dietitian since starting dialysis. If blood results are outside of the following and this is not a longstanding problem:\n\n| | HD | PD |\n|-----------|---------------",
+      "content_token_estimate": 175,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Transplant patients:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 306,
+      "line_end": 314,
+      "content_preview": "Patients have gained unwanted extra weight - BMI &gt;30\n\nNewly diagnosed diabetics\n\nRaised cholesterol - &gt; 5.5mmol/l",
+      "content_token_estimate": 29,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Pre-Dialysis patients:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 314,
+      "line_end": 330,
+      "content_preview": "Stage 4-5 CKD, and any of the following:\n\nPhosphate &gt; 1.40mmol/l\n\nPotassium &gt; 5.5mmol/l with a normal bicarbonate\n\nUraemic symptoms, including poor appetite or weight loss\n\nAny questions about d",
+      "content_token_estimate": 102,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix B:",
+      "depth": 0,
+      "numbering": "Appendix B",
+      "line_start": 330,
+      "line_end": 332,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Nutritional screening:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 332,
+      "line_end": 370,
+      "content_preview": "Subjective assessment Height (m) (first contact only)\n\nWeight (Kg)/\n\nDry weight\n\n(For peritoneal dialysis patients (PD) at UHCW NHS Trust this is the weight including the fluid from the bag)\n\n(For HD ",
+      "content_token_estimate": 296,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix C:",
+      "depth": 0,
+      "numbering": "Appendix C",
+      "line_start": 370,
+      "line_end": 372,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Renal Association Guidelines 2010; Screening for undernutrition in CKD",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 372,
+      "line_end": 374,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Screening methods for undernutrition in CKD",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 374,
+      "line_end": 384,
+      "content_preview": "We recommend that all patients with stage 4-5 CKD should have the following parameters measured as a minimum in order to identify undernutrition (1C):\n Actual Body Weight (ABW) (&lt; 85% of Ideal Bod",
+      "content_token_estimate": 128,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix D: Factors affecting serum potassium levels in renal failure",
+      "depth": 0,
+      "numbering": "Appendix D",
+      "line_start": 384,
+      "line_end": 424,
+      "content_preview": "Normal serum potassium levels: 3.5 - 5.5 mmol/l\n\nHD patients: 3.5 - 6.0 mmol/l\n\nPD patients : 3.5 - 5.5 mmol/l\n\nAn INCREASE in serum potassium could be due to :\n Diet\no High potassium foods\n Drugs\n",
+      "content_token_estimate": 363,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Treatment for high potassium:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 424,
+      "line_end": 436,
+      "content_preview": "1. Calcium gluconate\n\n2. Dextrose and insulin. This works by moving potassium into the cells; temporary measure\n\n3. Dialysis - haemodialysis, haemofiltration\n\n4. Ion exchanges resins e.g. calcium reso",
+      "content_token_estimate": 93,
+      "ancestor_path": []
+    },
+    {
+      "heading": "A DECREASE in serum potassium could be due to:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 436,
+      "line_end": 452,
+      "content_preview": " Diet\no Over enthusiastic dietary restriction\n Drugs\no Diuretics that cause potassium loss e.g. frusemide (note: potassium levels will rise when patient ceases these)\no Salbutamol - orally or high d",
+      "content_token_estimate": 131,
+      "ancestor_path": []
+    }
+  ]
+}

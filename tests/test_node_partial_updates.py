@@ -11,7 +11,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 def _make_nodes(pii_handler=None, retriever=None, llm=None):
     """Create RAGNodes with mocks."""
     import importlib
-    nodes_module = importlib.import_module("2_Agentic_RAG.nodes")
+    nodes_module = importlib.import_module("agentic_rag.nodes")
 
     if pii_handler is None:
         pii_handler = MagicMock()

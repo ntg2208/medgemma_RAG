@@ -7,7 +7,8 @@ A 3-tier Retrieval-Augmented Generation (RAG) system for Chronic Kidney Disease 
 This project provides an AI-powered assistant for CKD patients and healthcare providers, offering evidence-based information from:
 - **NICE NG203 Guidelines** - CKD assessment and management
 - **KidneyCareUK Resources** - Dietary and patient information
-- **UK Kidney Association** - Clinical guidance
+- **UK Kidney Association (UKKA)** - Clinical guidance
+- **KDIGO Guidelines** - International CKD, anemia, and IgAN guidelines
 
 ## Features
 
@@ -15,7 +16,7 @@ This project provides an AI-powered assistant for CKD patients and healthcare pr
 
 | Level | Description | Key Features |
 |-------|-------------|--------------|
-| **Level 1: Simple RAG** | Basic retrieval and generation | Source citations, Query expansion |
+| **Level 1: Simple RAG** | Basic retrieval and generation | Tree-based retrieval, source citations, query expansion |
 | **Level 2: Agentic RAG** | LangGraph workflow orchestration | PII detection, query routing, RAGAS evaluation |
 | **Level 3: Multi-Agent** | Specialized domain agents | Diet, Medication, Lifestyle, Knowledge retrieval |
 
@@ -30,129 +31,147 @@ This project provides an AI-powered assistant for CKD patients and healthcare pr
 
 | Component | Technology |
 |-----------|------------|
-| LLM | MedGemma 1.5 4B (`google/medgemma-4b-it`) |
-| Embeddings | EmbeddingGemma 300M (`google/embeddinggemma-300m`), MedEmbeddings (`google/medembeddings-300m`) |
-| Vector Store | ChromaDB, Wavier |
-| Framework | LangChain + LangGraph, Google ADK |
+| LLM | MedGemma 1.5 4B (`google/medgemma-1.5-4b-it`) |
+| Embeddings | EmbeddingGemma 300M (`google/embeddinggemma-300m`) |
+| Vector Store | ChromaDB (persistent) |
+| Framework | LangChain + LangGraph |
 | PII Detection | Microsoft Presidio |
-| Evaluation | RAGAS + Custom Metrics + LLM-as-a-Judge |
+| Evaluation | RAGAS 0.4.x + Custom CKD Metrics |
 | Tracing | LangSmith |
 | UI | Gradio |
+| Remote Inference | vLLM + HuggingFace TEI |
 
 ## Project Structure
 
 ```
 medgemma_RAG/
 ├── Data/
-│   ├── documents/           # PDF source documents
-│   ├── processed/           # Chunked documents
-│   └── preprocessing.py     # PDF extraction and chunking
+│   ├── documents/               # Source PDFs (9 clinical guidelines)
+│   ├── processed_ocr/           # OCR output from Docling (markdown + JSON)
+│   ├── cleaned_documents/       # LLM-cleaned markdown with metadata
+│   ├── processed_with_sections/ # Section-split docs (main_text.md, references.md, metadata.json)
+│   ├── processed/               # Exported chunk JSON files
+│   ├── vectorstore/             # ChromaDB persistent storage
+│   ├── preprocessing.py         # Block-aware chunking pipeline
+│   ├── split_sections.py        # Document section splitter (LLM + heuristic)
+│   ├── tree_builder.py          # Section tree construction from headings
+│   ├── export_chunks.py         # Chunk export to JSON
+│   └── test.py                  # OCR/cleaning test utilities
 │
-├── 1_Retrieval_Augmented_Generation/
-│   ├── embeddings.py        # EmbeddingGemma wrapper
-│   ├── vectorstore.py       # ChromaDB operations
-│   ├── retriever.py         # Document retrieval
-│   └── chain.py             # Simple RAG chain
+├── simple_rag/
+│   ├── embeddings.py            # EmbeddingGemma wrapper (MRL support)
+│   ├── vectorstore.py           # ChromaDB operations
+│   ├── retriever.py             # CKDRetriever + HybridRetriever
+│   ├── tree_retriever.py        # Section-route-then-chunk retrieval
+│   └── chain.py                 # Simple RAG chain with MedGemma
 │
-├── 2_Agentic_RAG/
-│   ├── pii_handler.py       # Presidio PII detection
-│   ├── nodes.py             # LangGraph node functions
-│   ├── graph.py             # Workflow definition
-│   └── evaluation/          # RAGAS + custom metrics
+├── agentic_rag/
+│   ├── pii_handler.py           # Presidio PII detection
+│   ├── nodes.py                 # LangGraph node functions
+│   ├── graph.py                 # Workflow definition with RetryPolicy
+│   └── evaluation/
+│       ├── ragas_eval.py        # RAGAS v0.4.x evaluation (Gemini/OpenRouter judge)
+│       ├── custom_metrics.py    # CKD-specific metrics (citations, disclaimers, etc.)
+│       └── langsmith_setup.py   # LangSmith tracing integration
 │
-├── 3_MultiAgent_RAG/
-│   ├── orchestrator.py      # Query routing
-│   └── agents/              # Specialized agents
+├── multi_agent_rag/
+│   ├── orchestrator.py          # Query routing
+│   └── agents/                  # Specialized agents (BaseAgent interface)
+│       ├── base.py              # Abstract BaseAgent + AgentResponse
+│       ├── diet_agent.py
+│       ├── medication_agent.py
+│       ├── lifestyle_agent.py
+│       └── rag_agent.py
 │
-├── app.py                   # Gradio UI
-├── config.py                # Configuration
-└── requirements.txt         # Dependencies
+├── tests/                       # Pytest test suite (36+ tests)
+├── app.py                       # Gradio UI entry point
+├── main.py                      # CLI terminal chat (all 3 levels)
+├── config.py                    # Central configuration
+└── requirements.txt             # Python dependencies
 ```
+
+## Data Pipeline
+
+The document processing pipeline has four stages:
+
+```
+PDF → Docling OCR → LLM Cleaning → Section Splitting → Block-Aware Chunking → ChromaDB
+```
+
+1. **OCR** (`scripts/ocr-process.sh`): Docling converts PDFs to markdown + JSON metadata
+2. **Cleaning** (`Data/test.py`): LLM-assisted title generation, summary, artifact removal
+3. **Section Splitting** (`Data/split_sections.py`): Separates front matter, main content, and references using LLM classification or heuristics
+4. **Chunking** (`Data/preprocessing.py`): Block-aware algorithm that preserves paragraphs, lists, and tables as atomic units
+5. **Tree Building** (`Data/tree_builder.py`): Constructs section hierarchy from heading numbering patterns
+6. **Export** (`Data/export_chunks.py`): Exports chunks to JSON with metadata and statistics
+
+## Retrieval Strategies
+
+| Strategy | Description | Use Case |
+|----------|-------------|----------|
+| **CKDRetriever** | Flat similarity search with medical term expansion | Default for Agentic/Multi-Agent |
+| **TreeRetriever** | Section-route-then-chunk (two-phase) | Default for Simple RAG |
+| **HybridRetriever** | Reciprocal rank fusion of semantic results | Experimental |
 
 ## Installation
 
 ### Prerequisites
 
-- Python 3.10+
+- Python 3.12+
 - CUDA-capable GPU (recommended) or Apple Silicon
 - HuggingFace account with access to MedGemma
+- `uv` package manager
 
 ### Setup
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd medgemma_RAG
-   ```
+```bash
+git clone <repository-url>
+cd medgemma_RAG
+uv sync
+```
 
-2. **Create virtual environment**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # Linux/Mac
-   # or
-   venv\Scripts\activate     # Windows
-   ```
-
-3. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   python -m spacy download en_core_web_sm  # For PII detection
-   ```
-
-4. **Configure environment**
-   ```bash
-   cp .env.example .env
-   # Edit .env with your HuggingFace token
-   ```
-
-5. **Add source documents**
-   - Place PDF files in `Data/documents/`
-   - Download NICE NG203 guidelines and KidneyCareUK resources
-
-6. **Process documents**
-   ```bash
-   python -c "from Data.preprocessing import preprocess_documents; preprocess_documents()"
-   ```
+Configure environment:
+```bash
+cp .env.example .env
+# Edit .env with:
+#   HF_TOKEN=your_huggingface_token
+#   RAGAS_JUDGE_API_KEY=your_openrouter_or_gemini_key  (for evaluation)
+```
 
 ## Usage
 
-### Launch the Gradio UI
+### Terminal Chat (CLI)
 
 ```bash
-python app.py
+uv run python main.py simple      # Level 1: Simple RAG
+uv run python main.py agentic     # Level 2: Agentic RAG (LangGraph)
+uv run python main.py multi       # Level 3: Multi-Agent
 ```
 
-Then open http://localhost:7860 in your browser.
+### Gradio Web UI
+
+```bash
+uv run python app.py  # Opens at localhost:7860
+```
 
 ### Programmatic Usage
 
 ```python
+from config import get_llm, get_embeddings
+
+# Initialize components
+embeddings = get_embeddings()
+llm = get_llm()
+
 # Level 1: Simple RAG
-from 1_Retrieval_Augmented_Generation.embeddings import EmbeddingGemmaWrapper
-from 1_Retrieval_Augmented_Generation.vectorstore import CKDVectorStore
-from 1_Retrieval_Augmented_Generation.chain import SimpleRAGChain, MedGemmaLLM
-from 1_Retrieval_Augmented_Generation.retriever import CKDRetriever
+from simple_rag.vectorstore import CKDVectorStore
+from simple_rag.tree_retriever import TreeRetriever
+from simple_rag.chain import SimpleRAGChain
 
-embeddings = EmbeddingGemmaWrapper()
-vectorstore = CKDVectorStore(embeddings)
-llm = MedGemmaLLM()
-retriever = CKDRetriever(vectorstore=vectorstore)
+store = CKDVectorStore(embeddings)
+retriever = TreeRetriever(vectorstore=store, embedding_function=embeddings)
 chain = SimpleRAGChain(retriever=retriever, llm=llm)
-
 response = chain.invoke("What are the dietary restrictions for CKD stage 3?")
-print(response.answer)
-
-# Level 3: Multi-Agent
-from 3_MultiAgent_RAG.orchestrator import MultiAgentOrchestrator
-
-orchestrator = MultiAgentOrchestrator(retriever=retriever, llm=llm)
-response = orchestrator.process(
-    query="What foods should I avoid and is ibuprofen safe?",
-    ckd_stage=3,
-    weight_kg=70
-)
-print(f"Answer: {response.answer}")
-print(f"Agents used: {response.agents_used}")
 ```
 
 ## Configuration
@@ -163,24 +182,52 @@ Key settings in `config.py`:
 |---------|-------------|---------|
 | `EMBEDDING_DIMENSION` | Embedding vector size | 768 |
 | `CHUNK_SIZE` | Document chunk size (tokens) | 800 |
+| `CHUNK_OVERLAP` | Trailing blocks to carry as overlap | 1 |
 | `TOP_K_RESULTS` | Documents to retrieve | 5 |
-| `SIMILARITY_THRESHOLD` | Minimum similarity score | 0.7 |
+| `SIMILARITY_THRESHOLD` | Minimum similarity score | 0.3 |
+| `SECTION_K` | Section headings to match (tree retrieval) | 8 |
+| `CHUNKS_PER_SECTION` | Max chunks per matched section | 3 |
+
+### RAGAS Evaluation Config
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| `RAGAS_JUDGE_MODEL` | Judge LLM model ID | `google/gemini-2.0-flash-001` |
+| `RAGAS_JUDGE_API_KEY` | API key for judge provider | (required) |
+| `RAGAS_JUDGE_BASE_URL` | OpenAI-compatible endpoint | `https://openrouter.ai/api/v1` |
+| `RAGAS_EMBEDDINGS_MODEL` | Embeddings for relevancy metric | `text-embedding-3-small` |
+
+### Remote Model Server Config
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| `USE_REMOTE_MODELS` | Use remote vLLM server | `false` |
+| `MODEL_SERVER_URL` | vLLM server URL | `http://localhost:8000` |
+| `REMOTE_MODEL_ID` | Model ID on remote server | `google/medgemma-1.5-4b-it` |
 
 ## Evaluation
 
-The system includes comprehensive evaluation:
-
-### RAGAS Metrics
+### RAGAS Metrics (v0.4.x)
 - **Faithfulness**: Is the answer grounded in context?
 - **Answer Relevancy**: Does it address the question?
 - **Context Precision**: Are retrieved docs relevant?
 - **Context Recall**: Are all relevant docs retrieved?
 
+RAGAS uses a separate judge LLM (Gemini, OpenRouter, or OpenAI) to score responses. Configure via `RAGAS_JUDGE_*` environment variables.
+
 ### Custom CKD Metrics
-- Citation accuracy
-- CKD stage appropriateness
+- Citation accuracy (regex-based source detection)
+- CKD stage appropriateness (stage-specific keyword presence)
 - Medical disclaimer presence
 - Actionability score
+- Medical accuracy indicators (NSAID avoidance, safe dosing)
+
+## Testing
+
+```bash
+uv run pytest -v                        # All tests
+uv run pytest -v tests/test_ragas_eval.py  # RAGAS tests only
+```
 
 ## Medical Disclaimer
 
@@ -203,4 +250,6 @@ This project is for competition submission purposes. See LICENSE file for detail
 - Google Health AI for MedGemma
 - NICE for clinical guidelines
 - KidneyCareUK for patient resources
+- KDIGO for international guidelines
+- UK Kidney Association for clinical guidance
 - LangChain and LangGraph teams

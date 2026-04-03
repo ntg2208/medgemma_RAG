@@ -1,0 +1,367 @@
+{
+  "doc_name": "The_management_of_complications_associated_with_lgA_vasculitis_(Henoch_Schonlein_Purpura)_in_childre",
+  "total_sections": 36,
+  "total_lines": 526,
+  "tree": [
+    {
+      "heading": "Section1:CLINICALLYSUSPECTED IGAVNEPHRITIS",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 0,
+      "line_end": 3,
+      "content_preview": "We recommend that a kidney biopsy is undertaken to confirm severe nephritis.",
+      "content_token_estimate": 19,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Section2:MANAGEMENTOFHISTOLOGICALLYPROVENIGAVNEPHRITIS",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 3,
+      "line_end": 10,
+      "content_preview": "Werecommend that thekidneyhistology is classified using ISkDC classificationcriteria.\nWe recommend that a combination of clinical features and the histological IskDC classification should guide treatm",
+      "content_token_estimate": 196,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Section3:MANAGEMENTOFACUTEGIBLEEDING",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 10,
+      "line_end": 13,
+      "content_preview": "We suggest corticosteroids within 3 days of onset of severe abdominal pain or acute Gl bleeding after exclusion of other causes including intussusception.",
+      "content_token_estimate": 38,
+      "ancestor_path": []
+    },
+    {
+      "heading": "SectiOn4:MANAGEMENTOFSUSPECTEDORPROVENINTUSSUSCEPTION",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 13,
+      "line_end": 16,
+      "content_preview": "We recommend that specialist surgical and [/or] radiological advice for abdominal symptoms suggestive of intussusception.",
+      "content_token_estimate": 30,
+      "ancestor_path": []
+    },
+    {
+      "heading": "SectiOn5:MANAGEMENTOFSUSPECTEDORPROVENTESTICULARINVOLVEMENT",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 16,
+      "line_end": 20,
+      "content_preview": "We suggest that testicular involvement (orchiditis) should be considered in boys who develop painful scrotal oedema associatedwithpalpablepurpuriclesions.\nWe suggest thattreatmentwith corticosteroids ",
+      "content_token_estimate": 79,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Section6:MANAGEMENTOFCASESWITHATYPICALFEATURES",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 20,
+      "line_end": 24,
+      "content_preview": "We suggest a skin biopsy in atypical purpuric/petechial rash or to exclude alternative diagnoses.\nWe suggest that the skin biopsy histological analysis should specifically include evaluation of IgA de",
+      "content_token_estimate": 71,
+      "ancestor_path": []
+    },
+    {
+      "heading": "SeCtiON7:DEFINITIONOFPERSISTINGORRECURRENTDISEASE",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 24,
+      "line_end": 28,
+      "content_preview": "We suggest that a typical purpuric/petechial rash persisting for more than 1 month should be defined as persisting disease.\nWe suggest that a reappearance of the typical purpuric/petechial rash after ",
+      "content_token_estimate": 69,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Section8:LONGTERMFOLLOWUPINIGAV",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 28,
+      "line_end": 192,
+      "content_preview": "We recommend long term follow up if they have evidence of nephritis or for 3 years if they have experienced biopsy proven nephritis.\n\nACEi\n\nAngiotensin converting enzyme inhibitor\n\nACR\n\nAmerican Colle",
+      "content_token_estimate": 2803,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 192,
+      "line_end": 200,
+      "content_preview": "A total of 31/33 (94%) of the papers [9-23,1,24-38] mentioned an investigation to confirm nephritis and these all used the kidney biopsy to define the histological disease activity. Of those suggestin",
+      "content_token_estimate": 516,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Absolute indications:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 200,
+      "line_end": 206,
+      "content_preview": "Persisting severe proteinuria (UP: UC &gt;250 mg/mmol for 4 weeks)\nPersisting moderate proteinuria (UP: UC 100-250 mg/mmol for 3 months)\nAcute kidney injury stage 1 or greater (serum creatinine &gt;1.",
+      "content_token_estimate": 98,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Relative indications:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 206,
+      "line_end": 216,
+      "content_preview": "Reproducible severe proteinuria (UP: UC &gt;250 mg/mmol) at any time point\nSerum creatinine above upper limit of normal\n\nThere were 26/33 (79%) nephritis studies that were included in the evidence reg",
+      "content_token_estimate": 839,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Audit measures",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 216,
+      "line_end": 221,
+      "content_preview": "i. The proportion of children and young people with suspected IgAV nephritis who had a kidney biopsy investigation performed to confirm a diagnosis of severe nephritis.\nii. The proportion of children ",
+      "content_token_estimate": 127,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Research recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 221,
+      "line_end": 237,
+      "content_preview": "i. In children and young people with IgA vasculitis, what is the benefit of additional kidney histology descriptors to accurately predict long term kidney outcomes?\nii. In children and young people wi",
+      "content_token_estimate": 673,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 237,
+      "line_end": 247,
+      "content_preview": "There were 23 papers identified (23/82; 28%) relevant to gastroenterology and urological involvement. Of these, 18 studies (18/23; 78%) included management for GI bleeding [43,16,17,44,21,45,26,46-56]",
+      "content_token_estimate": 885,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Audit measures",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 247,
+      "line_end": 250,
+      "content_preview": "i. The proportion of children and young people with IgAV and abdominal symptoms suggestive of intussusception who received a surgical and radiological opinion.",
+      "content_token_estimate": 39,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Research recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 250,
+      "line_end": 262,
+      "content_preview": "i. In children and young people with IgA vasculitis, does early treatment prevent GI complications?\nii. In children and young people with IgA vasculitis, what are the best tests to indicate GI involve",
+      "content_token_estimate": 352,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 262,
+      "line_end": 272,
+      "content_preview": "Three studies (3/83; 4%) included specific indications in children with IgAV. These studies suggested the use of a skin biopsy in atypical cases or in cases of diagnostic uncertainty. The SHARE recomm",
+      "content_token_estimate": 401,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 272,
+      "line_end": 276,
+      "content_preview": "Eight studies (8/82; 10%) included a definition for persisting disease. All studies agreed on the timing and definition of persisting disease as the presence of persisting skin lesions for &gt;1 month",
+      "content_token_estimate": 297,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Research recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 276,
+      "line_end": 285,
+      "content_preview": "i. In children and young people with IgA vasculitis, what is the best management for persisting or recurrent disease?\nii. In children and young people with IgA vasculitis, what is the threshold for fu",
+      "content_token_estimate": 219,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 285,
+      "line_end": 289,
+      "content_preview": "There were 22 studies (22/82; 27%) that suggested indications for long term follow up (follow up performed over years rather than the usual 6 months) in patients with IgAV but none of these studies di",
+      "content_token_estimate": 243,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Audit measures",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 289,
+      "line_end": 292,
+      "content_preview": "i. The proportion of children and young people with IgAV and severe or persisting nephritis who received long term follow up.",
+      "content_token_estimate": 31,
+      "ancestor_path": []
+    },
+    {
+      "heading": "audit measures",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 292,
+      "line_end": 301,
+      "content_preview": "The audit measures align with the strong recommendations (strength grade 1) suggested in this clinical practice guideline. A summary of the audit measures are as follows;\ni. The proportion of children",
+      "content_token_estimate": 244,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Summary of Research Recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 301,
+      "line_end": 350,
+      "content_preview": "The research recommendations suggested throughout the guideline are as follows;\ni. In children and young people with IgA vasculitis, what is the benefit of additional kidney histology descriptors to a",
+      "content_token_estimate": 1733,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 350,
+      "line_end": 352,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix 1: Lead organisations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 352,
+      "line_end": 360,
+      "content_preview": "| Name |\n|-------------------------------------------------------|\n| British Association of Paediatric Nephrology (BAPN) |\n| UK Kidney Association (UKKA) |\n| Royal College of Paediatrics and Child Hea",
+      "content_token_estimate": 53,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix 2: Stakeholders",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 360,
+      "line_end": 372,
+      "content_preview": "| Name |\n|--------------------------------------------------------------------------------------|\n| British society of Paediatric gastroenterology, hepatology and nutrition (BSPGHAN) |\n| British Socie",
+      "content_token_estimate": 120,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix 3: PICO domains",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 372,
+      "line_end": 378,
+      "content_preview": "| Population | Intervention | Comparison | Outcome |\n|-------------------------------------------------------------------------------|------------------------------------------------------------------",
+      "content_token_estimate": 157,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix 4: Search concepts",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 378,
+      "line_end": 422,
+      "content_preview": "| Search number | Search terms |\n|-----------------|----------------|\n\n| 1 | pediatric |\n|-----|-----------------------------|\n| 2 | paediatric |\n| 3 | child* |\n| 4 | Adolescen* |\n| 5 | 1 OR 2 OR 3 OR",
+      "content_token_estimate": 1047,
+      "ancestor_path": []
+    },
+    {
+      "heading": "IgAV associated nephritis",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 422,
+      "line_end": 428,
+      "content_preview": "1) In children and young people under the age of 18 years with IgAV, what are the best investigations to confirm a clinical diagnosis of nephritis?\n2) In children and young people under the age of 18 ",
+      "content_token_estimate": 167,
+      "ancestor_path": []
+    },
+    {
+      "heading": "IgAV associated gastrointestinal, urological involvement",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 428,
+      "line_end": 434,
+      "content_preview": "1) In children and young people under the age of 18 years with IgAV, what are acceptable treatments for gastrointestinal bleeding that would reduce the duration and/or severity of symptoms?\n2) In chil",
+      "content_token_estimate": 205,
+      "ancestor_path": []
+    },
+    {
+      "heading": "IgAV associated skin involvement",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 434,
+      "line_end": 437,
+      "content_preview": "1) In children and young people under the age of 18 years with IgAV, what clinical signs or symptoms would support for the need to perform a skin biopsy to support a diagnosis?",
+      "content_token_estimate": 44,
+      "ancestor_path": []
+    },
+    {
+      "heading": "IgAV persisting, prolonged, recurrent disease",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 437,
+      "line_end": 441,
+      "content_preview": "1) In children and young people under the age of 18 years with IgAV, what clinical signs or symptoms would support a diagnosis of persisting disease?\n2) In children and young people under the age of 1",
+      "content_token_estimate": 74,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Long term follow up",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 441,
+      "line_end": 444,
+      "content_preview": "1) In children and young people under the age of 18 years with IgAV, what clinical signs or symptoms would indicate the need for follow up after initial screening to detect long term complications?",
+      "content_token_estimate": 49,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix 9: PRISMA diagram of selected studies",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 444,
+      "line_end": 446,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix 10: Summary information poster: outline of methodology",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 446,
+      "line_end": 448,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix 1l: Summary information poster: recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 448,
+      "line_end": 526,
+      "content_preview": "Bestways tolook after complications in children and young peoplewith IgA vasculitis\n\n1. Kawasaki Y, Suyama K, Yugeta E, Katayose M, Suzuki S, Sakuma H, Nemoto K, Tsukagoshi A, Nagasawa K, Hosoya M (20",
+      "content_token_estimate": 4411,
+      "ancestor_path": []
+    }
+  ]
+}

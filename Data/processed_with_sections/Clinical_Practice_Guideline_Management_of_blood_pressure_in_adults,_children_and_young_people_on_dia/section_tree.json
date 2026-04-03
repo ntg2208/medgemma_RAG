@@ -1,0 +1,547 @@
+{
+  "doc_name": "Clinical_Practice_Guideline_Management_of_blood_pressure_in_adults,_children_and_young_people_on_dia",
+  "total_sections": 54,
+  "total_lines": 1032,
+  "tree": [
+    {
+      "heading": "Introduction",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 0,
+      "line_end": 20,
+      "content_preview": "The UK adult population receiving dialysis continues to increase. Between 2020 -2021, the annual increase was 1.5%, compared with 2 -2.5% seen prior to the COVID -19 pandemic. The average age of adult",
+      "content_token_estimate": 1235,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Summary of clinical practice guidelines",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 20,
+      "line_end": 22,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Measurement of blood pressure",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 22,
+      "line_end": 29,
+      "content_preview": "1. We recommend interdialytic ambulatory blood pressure monitoring (ABPM) as the gold standard to diagnose hypertension in people on haemodialysis . (1C)\n2. We suggest using either home blood pressure",
+      "content_token_estimate": 218,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Blood pressure targets",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 29,
+      "line_end": 38,
+      "content_preview": "5. We suggest, for those on haemodialysis where non-standardised incentre BP measurements are used, aiming for:\na. pre -dialysis systolic BP between 140 and 165 mmHg (2B) and pre -dialysis diastolic B",
+      "content_token_estimate": 229,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Lifestyle modification",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 38,
+      "line_end": 46,
+      "content_preview": "9. We recommend salt reduction to a maximum intake of 5 g daily. (1B)\n10. We suggest that fluid restriction, together with salt reduction, should be advised. Fluid restriction should be individualized",
+      "content_token_estimate": 190,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Dialysis and Dialysate",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 46,
+      "line_end": 57,
+      "content_preview": "14. We suggest that extended dialysis hours should be considered for individuals who fail to achieve adequate BP control or experience IDH during the standard thrice weekly dialysis if the resources a",
+      "content_token_estimate": 313,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Dry weight optimization",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 57,
+      "line_end": 63,
+      "content_preview": "22. We suggest that patients on dialysis (both haemo -and peritoneal dialysis) should avoid significant over or underhydration. (2A)\n23. We suggest that dialysis patients should be assessed regularly ",
+      "content_token_estimate": 170,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Medication",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 63,
+      "line_end": 75,
+      "content_preview": "25. We recommend BP lowering medication to reduce all -cause and CV mortality in adult dialysis patients . (1B)\n26. We suggest β -blockers (βBs) as first line and calcium channel blockers (CCBs) as se",
+      "content_token_estimate": 456,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Children &amp; Young People (CYP)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 75,
+      "line_end": 91,
+      "content_preview": "We suggest the following:\n\n34. W hen measuring BP in CYP on dialysis, the clinical setting and assessment method should be standardised . ( 2C )\n35. The best accepted practice for diagnosing hypertens",
+      "content_token_estimate": 527,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Practice Points",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 91,
+      "line_end": 95,
+      "content_preview": "1. We recognise that there may be circumstances in which a clinician and/or patient prefers to base BP management decisions on out -of -office (HBPM or ABPM) or standardized clinic BP readings. Whilst",
+      "content_token_estimate": 142,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Rationale for clinical practice guidelines",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 95,
+      "line_end": 97,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Measurement of blood pressure",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 97,
+      "line_end": 101,
+      "content_preview": "There is no universal agreement on the measurements that should be used to diagnose hypertension and monitor BP in people on dialysis, even though they have their BP checked more frequently than any o",
+      "content_token_estimate": 171,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Diagnosis",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 101,
+      "line_end": 109,
+      "content_preview": "For the minority of patients who may not already have hypertension diagnosed prior to starting dialysis, we recommend using ABPM as gold -standard to diagnose hypertension. Fagugli et al. compared 48 ",
+      "content_token_estimate": 384,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Monitoring",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 109,
+      "line_end": 133,
+      "content_preview": "Routine pre -and post -dialysis BP are poor estimates of average BP measured by ABPM . In a meta -analysis of 692 haemodialysis patients, SD of the difference of the pooled observations between ambula",
+      "content_token_estimate": 1152,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Blood Pressure Targets",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 133,
+      "line_end": 155,
+      "content_preview": "Numerous observational studies have described a 'U' or 'J' shaped relationship between pre -dialysis systolic BP and outcomes in people on haemodialysis where only low and, usually, very high BPs are ",
+      "content_token_estimate": 2124,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Lifestyle modification",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 155,
+      "line_end": 157,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Salt intake",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 157,
+      "line_end": 163,
+      "content_preview": "Volume expansion, net positive sodium balance, re ninangiotensin -aldosterone system ( RA AS ) and sympathetic nervous system activation contribute to high BP in people on dialysis (40) . Lifestyle in",
+      "content_token_estimate": 417,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Fluid restriction",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 163,
+      "line_end": 167,
+      "content_preview": "Volume overload is a risk factor for mortality amongst dialysis patients (54) . Efforts to achieve ideal target weight are discussed in other sections of this guideline, some of which will involve sal",
+      "content_token_estimate": 122,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Other dietary approaches",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 167,
+      "line_end": 175,
+      "content_preview": "There is good evidence in the general population that a diet high in fruits and vegetables such as the Dietary Approaches to Stop Hypertension (DASH) diet can help to lower BP (46, 56) . However, tria",
+      "content_token_estimate": 400,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Exercise",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 175,
+      "line_end": 185,
+      "content_preview": "A number of systematic reviews and meta -analyses have considered whether exercise reduces BP in dialysis. Most studies have focused on intra -dialytic exercise.\n\nIn a 2019 met aanalysis of intradialy",
+      "content_token_estimate": 683,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Self-care engagement",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 185,
+      "line_end": 191,
+      "content_preview": "Achieving BP targets is notoriously difficult for a combination of reasons. Some small studies have reported recently that explore the impact of interventions on adherence to diet, fluid and BP\n\nmedic",
+      "content_token_estimate": 277,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Dialysis and Dialysate",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 191,
+      "line_end": 215,
+      "content_preview": "Studies of extended duration of haemodialysis (beyond the conventional 3 to 5 hours three times a week) generally support improved BP control and or reduced BP medication burden, with inconsistent fin",
+      "content_token_estimate": 1869,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Dry weight optimization",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 215,
+      "line_end": 225,
+      "content_preview": "Optimum fluid volume management in people on dialysis is important for both patient experience and outcomes. Both volume overload and depletion are associated with poor outcomes (105 -109) . Therefore",
+      "content_token_estimate": 611,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Medication",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 225,
+      "line_end": 251,
+      "content_preview": "BP lowering with medication has been demonstrated to reduce all -cause and CV mortality in people on dialysis (134) . The pooled reduction in BP was -4.5/ -2.3 mmHg and relative risk (RR) of CV events",
+      "content_token_estimate": 2464,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Children and Young People (CYP)",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 251,
+      "line_end": 273,
+      "content_preview": "Hypertension (defined as SBP and DBP ≥95 th percentile for age, height and sex) is highly prevalent in CYP on dialysis (154 -156) . However, lack of BP measurement standardisation for CYP on dialysis ",
+      "content_token_estimate": 1925,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Summary of audit measures",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 273,
+      "line_end": 286,
+      "content_preview": "1. Proportion of adult dialysis patients having ABPM for diagnosis of de novo hypertension.\n2. Proportion of adult dialysis patients using HBPM or standardized out -of -dialysis unit BP measurements t",
+      "content_token_estimate": 260,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Summary of research recommendations",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 286,
+      "line_end": 297,
+      "content_preview": "1. Pragmatic RCT comparing management of hypertension using routine (including 'usual' dialysis unit BP in in -centre haemodialysis patients) BP, HBPM and ABPM in dialysis patients.\n2. P ragmatic RCT ",
+      "content_token_estimate": 345,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Lay summary",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 297,
+      "line_end": 299,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Background",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 299,
+      "line_end": 303,
+      "content_preview": "High blood pressure (BP) is very common in people with end stage kidney disease (ESKD) on dialysis. It is a risk factor for heart disease, which is the most common cause of death in people on dialysis",
+      "content_token_estimate": 123,
+      "ancestor_path": []
+    },
+    {
+      "heading": "How did we develop these guidelines?",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 303,
+      "line_end": 307,
+      "content_preview": "These guidelines were developed by a broad group of experienced kidney care professionals. They went through existing research evidence to give guidance on how best to manage BP in people on dialysis.",
+      "content_token_estimate": 85,
+      "ancestor_path": []
+    },
+    {
+      "heading": "The topic areas were:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 307,
+      "line_end": 315,
+      "content_preview": "How to measure BP\nWhat BP we should be aiming for\nLifestyle measures and medications to help with BP control\nModifications to dialysis and dialysate fluid\nAssessment of dry weight\nConsiderations that ",
+      "content_token_estimate": 60,
+      "ancestor_path": []
+    },
+    {
+      "heading": "How should we measure blood pressure and what blood pressure should we be aiming for in adults on dialysis?",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 315,
+      "line_end": 321,
+      "content_preview": "We found limited good quality information to tell us which BP measurement should be used in people on dialysis. Most research studies in haemodialysis patients have used 'usual' pre- and post-dialysis",
+      "content_token_estimate": 245,
+      "ancestor_path": []
+    },
+    {
+      "heading": "These are:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 321,
+      "line_end": 332,
+      "content_preview": "Aim for a pre -dialysis systolic (upper) reading of between 140 and 165 mmHg.\nFor patients whose BP is stable during dialysis try to aim for the lower end of this range.\nFor those with few or no other",
+      "content_token_estimate": 332,
+      "ancestor_path": []
+    },
+    {
+      "heading": "What lifestyle measures help control BP?",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 332,
+      "line_end": 338,
+      "content_preview": "We recommend that dialysis patients restrict their salt intake to no more than 5 grams (less than a level teaspoon full) per day. Renal dieticians can assist patients in how to calculate the salt cont",
+      "content_token_estimate": 82,
+      "ancestor_path": []
+    },
+    {
+      "heading": "How may modifications of dialysis and dialysate fluid help?",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 338,
+      "line_end": 344,
+      "content_preview": "Changing the type and duration of dialysis treatment or changing the composition of dialysis fluid may help to improve BP control. We suggest that those with high BP, increasing the duration of haemod",
+      "content_token_estimate": 178,
+      "ancestor_path": []
+    },
+    {
+      "heading": "How should dry weight be determined?",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 344,
+      "line_end": 352,
+      "content_preview": "Dialysis patients who have too much (overloaded) or too little fluid (dehydrated) in their circulation have worse outcomes. So it is important for dialysis staff to correctly assess each patient's 'fl",
+      "content_token_estimate": 296,
+      "ancestor_path": []
+    },
+    {
+      "heading": "What medications help with blood pressure on dialysis?",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 352,
+      "line_end": 358,
+      "content_preview": "Many people having dialysis will require BP lowering medications. The pros and cons of the various types of medications are beyond the scope of this summary. In brief, we suggest beta -blockers (e.g. ",
+      "content_token_estimate": 201,
+      "ancestor_path": []
+    },
+    {
+      "heading": "What is particularly important in Children &amp; Young People (CYP)?",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 358,
+      "line_end": 368,
+      "content_preview": "High BP is common in CYP on dialysis, and this can lead to long term changes to the heart. Unlike in the adult population, we do not have clear information from research that high BP directly leads to",
+      "content_token_estimate": 488,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix A: Topic group membership",
+      "depth": 0,
+      "numbering": "Appendix A",
+      "line_start": 368,
+      "line_end": 402,
+      "content_preview": "BP Measurement :\n\nMariyam Adam, Indranil Dasgupta\n\nBlood pressure targets :\n\nInd ranil Dasgupta, Douglas Stewart, Kieran McCafferty, Tim Doulton\n\nLifestyle modification :\n\nKatie Durman, Pauline Swift\n",
+      "content_token_estimate": 123,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix B: PICOS for literature search, search strategies &amp; PRISMA flowchart",
+      "depth": 0,
+      "numbering": "Appendix B",
+      "line_start": 402,
+      "line_end": 404,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "PICOS",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 404,
+      "line_end": 406,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Eligibility Criteria:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 406,
+      "line_end": 410,
+      "content_preview": "P opulation: Adults, children and young people receiving dialysis (haemodialysis, haemodiafiltration and peritoneal dialysis) for end stage renal disease",
+      "content_token_estimate": 38,
+      "ancestor_path": []
+    },
+    {
+      "heading": "I ntervention:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 410,
+      "line_end": 425,
+      "content_preview": "Any intervention intended to reduce blood pressure (BP), to include but not limited to: blood pressure lowering medication; target/dry weight reduction or optimization; dialysis prescription, includin",
+      "content_token_estimate": 472,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Exclusion Criteria:",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 425,
+      "line_end": 433,
+      "content_preview": "The search strategy will eliminate studies solely focusing on:\nAcute haemodialysis\nAcute peritoneal dialysis\nContinuous veno -venous haemofiltration (CVVHF) and other acute renal replacement modalitie",
+      "content_token_estimate": 69,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Search Strategies",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 433,
+      "line_end": 435,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "PubMed",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 435,
+      "line_end": 453,
+      "content_preview": "((\"end stage\" OR chronic) AND (kidney OR renal) AND (disease OR failure))\n\nAND\n\n(dialysis OR haemodialysis OR haemodiafiltration OR \"peritoneal dialysis\"))\n\nAND\n\n((hypertension OR hypotension OR \"bloo",
+      "content_token_estimate": 358,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Embase",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 453,
+      "line_end": 479,
+      "content_preview": "1 exp end stage renal disease/\n2 ((\"end stage\" or chronic) and (kidney or renal) and (disease or failure)).mp. [mp=title, abstract, heading word, drug trade name, original title, device manufacturer, ",
+      "content_token_estimate": 819,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Cochrane",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 479,
+      "line_end": 498,
+      "content_preview": "#1 MeSH descriptor: [Kidney Failure, Chronic] explode all trees\n#2 (\"end stage\" or chronic) and (kidney or renal) and (disease or failure):ti,ab,kw\n#3 #1 OR #2\n#4 MeSH descriptor: [Dialysis] explode a",
+      "content_token_estimate": 365,
+      "ancestor_path": []
+    },
+    {
+      "heading": "CINAHL",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 498,
+      "line_end": 511,
+      "content_preview": "S1 (MH \"Kidney Failure, Chronic+\")\nS2 (kidney OR renal) AND (end stage OR chronic) AND (failure OR disease OR injury)\nS3 S1 OR S2\nS4 (MH \"Hemodialysis+\") OR (MH \"Dialysis+\")\nS5 dialysis OR haemodialys",
+      "content_token_estimate": 315,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Medline",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 511,
+      "line_end": 533,
+      "content_preview": "1 exp Renal Insufficiency, Chronic/\n2 ((\"end stage\" or chronic) and (kidney or renal) and (disease or failure)).mp. [mp=title, book title, abstract, original title, name of substance word, subject hea",
+      "content_token_estimate": 1042,
+      "ancestor_path": []
+    },
+    {
+      "heading": "PRISMA flowchart",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 533,
+      "line_end": 535,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix C: Evidence tables",
+      "depth": 0,
+      "numbering": "Appendix C",
+      "line_start": 535,
+      "line_end": 784,
+      "content_preview": "| 1 st author Year of publication Reference | Aim of the study | Study design Method of BP measurement Follow-up period | Number Population (Country, RRT modality) | Primary analysis | Results/Conclus",
+      "content_token_estimate": 34678,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix D: Dialysability of blood pressure lowering medication",
+      "depth": 0,
+      "numbering": "Appendix D",
+      "line_start": 784,
+      "line_end": 824,
+      "content_preview": "| | Dialysed in HDF/High Flux | Dialysed in PD | Half life (hrs) | Half life in ESRF (hrs) |\n|--------------------------|-----------------------------|------------------|------------------------------",
+      "content_token_estimate": 544,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Appendix E: References",
+      "depth": 0,
+      "numbering": "Appendix E",
+      "line_start": 824,
+      "line_end": 1032,
+      "content_preview": "1. Ashby D, Borman N, Burton J, Corbett R, Davenport A, Farrington K, et al. Renal Association Clinical Practice Guideline on Haemodialysis. BMC Nephrol. 2019;20(1):379.\n2. Registry UR. UK Renal Regis",
+      "content_token_estimate": 10917,
+      "ancestor_path": []
+    }
+  ]
+}

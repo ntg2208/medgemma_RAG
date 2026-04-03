@@ -64,7 +64,7 @@ def main():
     import importlib.util
     spec = importlib.util.spec_from_file_location(
         "rag_pkg.vectorstore",
-        PROJECT_ROOT / "1_Retrieval_Augmented_Generation" / "vectorstore.py",
+        PROJECT_ROOT / "simple_rag" / "vectorstore.py",
     )
     vs_module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(vs_module)

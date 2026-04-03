@@ -6,28 +6,28 @@ from pathlib import Path
 
 def test_medication_agent_extends_base_agent():
     """Verify MedicationAgent extends BaseAgent."""
-    agents_path = Path(__file__).parent.parent / "3_MultiAgent_RAG" / "agents"
+    agents_path = Path(__file__).parent.parent / "multi_agent_rag" / "agents"
     diet_path = agents_path / "diet_agent.py"
 
     # Clean start - remove from sys.modules
     import sys
-    sys.modules.pop("3_MultiAgent_RAG.agents.base", None)
-    sys.modules.pop("3_MultiAgent_RAG.agents.diet_agent", None)
-    sys.modules.pop("3_MultiAgent_RAG.agents.medication_agent", None)
+    sys.modules.pop("multi_agent_rag.agents.base", None)
+    sys.modules.pop("multi_agent_rag.agents.diet_agent", None)
+    sys.modules.pop("multi_agent_rag.agents.medication_agent", None)
 
     # Load diet_agent first (to prime base module)
-    diet_spec = importlib.util.spec_from_file_location("3_MultiAgent_RAG.agents.diet_agent", diet_path)
+    diet_spec = importlib.util.spec_from_file_location("multi_agent_rag.agents.diet_agent", diet_path)
     diet_module = importlib.util.module_from_spec(diet_spec)  # type: ignore[assignment]
-    sys.modules["3_MultiAgent_RAG.agents.diet_agent"] = diet_module
+    sys.modules["multi_agent_rag.agents.diet_agent"] = diet_module
     diet_spec.loader.exec_module(diet_module)  # type: ignore[attr-defined]
 
     # Now load medication_agent
     medication_path = agents_path / "medication_agent.py"
-    medication_spec = importlib.util.spec_from_file_location("3_MultiAgent_RAG.agents.medication_agent", medication_path)
+    medication_spec = importlib.util.spec_from_file_location("multi_agent_rag.agents.medication_agent", medication_path)
     if medication_spec is None or medication_spec.loader is None:
         raise RuntimeError("Failed to load medication_agent module")
     medication_module = importlib.util.module_from_spec(medication_spec)  # type: ignore[assignment]
-    sys.modules["3_MultiAgent_RAG.agents.medication_agent"] = medication_module
+    sys.modules["multi_agent_rag.agents.medication_agent"] = medication_module
     medication_spec.loader.exec_module(medication_module)  # type: ignore[attr-defined]
     MedicationAgent = medication_module.MedicationAgent
     BaseAgent = medication_module.BaseAgent
@@ -37,19 +37,19 @@ def test_medication_agent_extends_base_agent():
 
 def test_medication_agent_has_can_handle():
     """Verify MedicationAgent implements can_handle method."""
-    agents_path = Path(__file__).parent.parent / "3_MultiAgent_RAG" / "agents"
+    agents_path = Path(__file__).parent.parent / "multi_agent_rag" / "agents"
     medication_path = agents_path / "medication_agent.py"
 
     # Clean start
     import sys
-    sys.modules.pop("3_MultiAgent_RAG.agents.base", None)
-    sys.modules.pop("3_MultiAgent_RAG.agents.diet_agent", None)
-    sys.modules.pop("3_MultiAgent_RAG.agents.medication_agent", None)
+    sys.modules.pop("multi_agent_rag.agents.base", None)
+    sys.modules.pop("multi_agent_rag.agents.diet_agent", None)
+    sys.modules.pop("multi_agent_rag.agents.medication_agent", None)
 
     # Load medication_agent
-    medication_spec = importlib.util.spec_from_file_location("3_MultiAgent_RAG.agents.medication_agent", medication_path)
+    medication_spec = importlib.util.spec_from_file_location("multi_agent_rag.agents.medication_agent", medication_path)
     medication_module = importlib.util.module_from_spec(medication_spec)  # type: ignore[assignment]
-    sys.modules["3_MultiAgent_RAG.agents.medication_agent"] = medication_module
+    sys.modules["multi_agent_rag.agents.medication_agent"] = medication_module
     medication_spec.loader.exec_module(medication_module)  # type: ignore[attr-defined]
     MedicationAgent = medication_module.MedicationAgent
 
@@ -65,19 +65,19 @@ def test_medication_agent_has_can_handle():
 
 def test_medication_agent_answer_returns_agent_response():
     """Verify answer() returns AgentResponse with correct fields."""
-    agents_path = Path(__file__).parent.parent / "3_MultiAgent_RAG" / "agents"
+    agents_path = Path(__file__).parent.parent / "multi_agent_rag" / "agents"
     medication_path = agents_path / "medication_agent.py"
 
     # Clean start
     import sys
-    sys.modules.pop("3_MultiAgent_RAG.agents.base", None)
-    sys.modules.pop("3_MultiAgent_RAG.agents.diet_agent", None)
-    sys.modules.pop("3_MultiAgent_RAG.agents.medication_agent", None)
+    sys.modules.pop("multi_agent_rag.agents.base", None)
+    sys.modules.pop("multi_agent_rag.agents.diet_agent", None)
+    sys.modules.pop("multi_agent_rag.agents.medication_agent", None)
 
     # Load medication_agent
-    medication_spec = importlib.util.spec_from_file_location("3_MultiAgent_RAG.agents.medication_agent", medication_path)
+    medication_spec = importlib.util.spec_from_file_location("multi_agent_rag.agents.medication_agent", medication_path)
     medication_module = importlib.util.module_from_spec(medication_spec)  # type: ignore[assignment]
-    sys.modules["3_MultiAgent_RAG.agents.medication_agent"] = medication_module
+    sys.modules["multi_agent_rag.agents.medication_agent"] = medication_module
     medication_spec.loader.exec_module(medication_module)  # type: ignore[attr-defined]
     MedicationAgent = medication_module.MedicationAgent
     AgentResponse = medication_module.AgentResponse
@@ -94,19 +94,19 @@ def test_medication_agent_answer_returns_agent_response():
 
 def test_medication_agent_check_preserved():
     """Verify check() method is preserved for direct access."""
-    agents_path = Path(__file__).parent.parent / "3_MultiAgent_RAG" / "agents"
+    agents_path = Path(__file__).parent.parent / "multi_agent_rag" / "agents"
     medication_path = agents_path / "medication_agent.py"
 
     # Clean start
     import sys
-    sys.modules.pop("3_MultiAgent_RAG.agents.base", None)
-    sys.modules.pop("3_MultiAgent_RAG.agents.diet_agent", None)
-    sys.modules.pop("3_MultiAgent_RAG.agents.medication_agent", None)
+    sys.modules.pop("multi_agent_rag.agents.base", None)
+    sys.modules.pop("multi_agent_rag.agents.diet_agent", None)
+    sys.modules.pop("multi_agent_rag.agents.medication_agent", None)
 
     # Load medication_agent
-    medication_spec = importlib.util.spec_from_file_location("3_MultiAgent_RAG.agents.medication_agent", medication_path)
+    medication_spec = importlib.util.spec_from_file_location("multi_agent_rag.agents.medication_agent", medication_path)
     medication_module = importlib.util.module_from_spec(medication_spec)  # type: ignore[assignment]
-    sys.modules["3_MultiAgent_RAG.agents.medication_agent"] = medication_module
+    sys.modules["multi_agent_rag.agents.medication_agent"] = medication_module
     medication_spec.loader.exec_module(medication_module)  # type: ignore[attr-defined]
     MedicationAgent = medication_module.MedicationAgent
 

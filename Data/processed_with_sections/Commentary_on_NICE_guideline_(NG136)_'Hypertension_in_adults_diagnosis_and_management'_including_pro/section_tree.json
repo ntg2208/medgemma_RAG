@@ -1,0 +1,191 @@
+{
+  "doc_name": "Commentary_on_NICE_guideline_(NG136)_'Hypertension_in_adults_diagnosis_and_management'_including_pro",
+  "total_sections": 18,
+  "total_lines": 645,
+  "tree": [
+    {
+      "heading": "Conflicts of Interest Statement",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 0,
+      "line_end": 4,
+      "content_preview": "All authors made declarations of interest in line with the policy in the Renal Association Clinical Practice Guidelines Development Manual. Further details can be obtained on request from the Renal As",
+      "content_token_estimate": 52,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Summary of Renal Association Proposals",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 4,
+      "line_end": 6,
+      "content_preview": "",
+      "content_token_estimate": 0,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Measuring Blood Pressure",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 6,
+      "line_end": 57,
+      "content_preview": "1.1 We propose that office-based blood pressure measurements using a standardized technique (e.g. https://bihsoc.org/resources/bp-measurement/measure-blood-pressure) should guide all treatment decisio",
+      "content_token_estimate": 362,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Blood Pressure Target for Individuals With Chronic Kidney Disease",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 57,
+      "line_end": 132,
+      "content_preview": "5.1 We propose aiming for a blood pressure target of &lt;130/80 mmHg for patients with chronic kidney disease to improve cardiovascular outcomes if, following a shared-decision making discussion, it i",
+      "content_token_estimate": 91,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Introduction",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 132,
+      "line_end": 136,
+      "content_preview": "The publication last year of NICE guideline NG136 'Hypertension in adults: diagnosis and management' 1 followed the updated guidance for the management of hypertension from the American College of Car",
+      "content_token_estimate": 436,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Hypertension management for individuals without CKD",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 136,
+      "line_end": 140,
+      "content_preview": "The Renal Association supports the majority of recommendations in NICE guideline NG136 and considers the document pragmatic and clinically useful. Of the updated recommendations it is perhaps number 1",
+      "content_token_estimate": 60,
+      "ancestor_path": [],
+      "children": [
+        {
+          "heading": "1.4.20 Reduce clinic BP to below 140/90 mmHg and maintain that level in adults with hypertension aged under 80. [NICE, 2019]",
+          "depth": 2,
+          "numbering": "1.4.20",
+          "line_start": 140,
+          "line_end": 218,
+          "content_preview": "This recommendation is in contrast to that in both the American and European guidelines which generally advocate (if tolerated) a BP target of under 130/80 mmHg. The guidance issued by these two bodie",
+          "content_token_estimate": 516,
+          "ancestor_path": [
+            "Hypertension management for individuals without CKD"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Measurement of BP - translating the evidence into clinical practice",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 218,
+      "line_end": 300,
+      "content_preview": "In SPRINT, BP was measured using an automated device following five minutes of quiet rest and taking the mean of three readings. The SPRINT protocol did not specify whether BP readings were taken with",
+      "content_token_estimate": 728,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Renal Association Proposals - Measuring Blood Pressure",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 300,
+      "line_end": 304,
+      "content_preview": "1.1 We propose that office-based blood pressure measurements using a standardized technique (e.g. https://bihsoc.org/resources/bp-measurement/measure-blood-pressure) should guide all treatment decisio",
+      "content_token_estimate": 107,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Potential adverse effects associated with intensive BP lowering",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 304,
+      "line_end": 312,
+      "content_preview": "It is perhaps unsurprising that in SPRINT, intensive BP lowering was associated with a greater risk of syncope, hypokalaemia and acute kidney injury (AKI). The risk of incident CKD (defined as a decli",
+      "content_token_estimate": 324,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Renal Association Proposals - Blood Pressure Targets for Individuals Without CKD",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 312,
+      "line_end": 317,
+      "content_preview": "2.1 We propose adopting a shared-decision making approach when considering blood pressure treatment and targets for any patient whenever possible.\n2.2 We propose aiming for a blood pressure target of ",
+      "content_token_estimate": 141,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Adherence testing",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 317,
+      "line_end": 378,
+      "content_preview": "The Renal Association fully supports the emphasis NG136 places on assessment of medicines optimisation and adherence at all stages of hypertension treatment and in particular the reassessment of adher",
+      "content_token_estimate": 374,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Renal Association Proposal - Adherence Testing",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 378,
+      "line_end": 381,
+      "content_preview": "3.1 We propose objective testing of medication adherence in those with resistant hypertension.",
+      "content_token_estimate": 23,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Lifestyle modifications",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 381,
+      "line_end": 460,
+      "content_preview": "The lifestyle recommendations in NG136 remain essentially unchanged from the previous NICE guideline. Specifically, in terms of salt intake NICE recommendation 1.4.5 states:\n1.4.5 Encourage people to ",
+      "content_token_estimate": 457,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Renal Association Proposals - Lifestyle Modifications",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 460,
+      "line_end": 464,
+      "content_preview": "4.1 We propose reducing dietary salt intake to a maximum of 6g/day and 3g/day by 2025.\n4.2 We propose not using salt substitutes in place of dietary salt reduction.",
+      "content_token_estimate": 41,
+      "ancestor_path": []
+    },
+    {
+      "heading": "BP targets for individuals with pre-existing CKD",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 464,
+      "line_end": 558,
+      "content_preview": "NICE guideline NG136 specifically excludes patients with CKD and readers are instead referred back to the 2014 NICE recommendations 4 for general CKD management. This 2014 guideline offers two recomme",
+      "content_token_estimate": 1201,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Renal Association Proposal - Blood Pressure Target for Individuals With Chronic Kidney Disease",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 558,
+      "line_end": 639,
+      "content_preview": "5.1 We propose aiming for a blood pressure target of &lt;130/80 mmHg for patients with chronic kidney disease to improve cardiovascular outcomes if, following a shared-decision making discussion, it i",
+      "content_token_estimate": 94,
+      "ancestor_path": []
+    },
+    {
+      "heading": "Implementing these proposals in a post-COVID-19 world",
+      "depth": 0,
+      "numbering": null,
+      "line_start": 639,
+      "line_end": 645,
+      "content_preview": "COVID-19 has thrown us into a clinical environment where the majority of outpatient services had to be reconfigured overnight into virtual clinics. This model of working was new for many clinicians, a",
+      "content_token_estimate": 511,
+      "ancestor_path": []
+    }
+  ]
+}

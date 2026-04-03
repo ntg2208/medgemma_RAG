@@ -78,17 +78,18 @@ def initialize_components():
         from config import EMBEDDING_DIMENSION, get_llm, get_embeddings
 
         # Register packages with numeric prefixes so relative imports work
-        rag_pkg = import_package("rag_pkg", PROJECT_ROOT / "1_Retrieval_Augmented_Generation")
-        agentic_pkg = import_package("agentic_pkg", PROJECT_ROOT / "2_Agentic_RAG")
-        multi_pkg = import_package("multi_pkg", PROJECT_ROOT / "3_MultiAgent_RAG")
+        rag_pkg = import_package("rag_pkg", PROJECT_ROOT / "simple_rag")
+        agentic_pkg = import_package("agentic_pkg", PROJECT_ROOT / "agentic_rag")
+        multi_pkg = import_package("multi_pkg", PROJECT_ROOT / "multi_agent_rag")
         # Register sub-packages
-        import_package("multi_pkg.agents", PROJECT_ROOT / "3_MultiAgent_RAG" / "agents")
+        import_package("multi_pkg.agents", PROJECT_ROOT / "multi_agent_rag" / "agents")
 
         # Extract classes
         EmbeddingGemmaWrapper = rag_pkg.EmbeddingGemmaWrapper
         CKDVectorStore = rag_pkg.CKDVectorStore
         SimpleRAGChain = rag_pkg.SimpleRAGChain
         CKDRetriever = rag_pkg.CKDRetriever
+        TreeRetriever = rag_pkg.TreeRetriever
         PIIHandler = agentic_pkg.PIIHandler
         AgenticRAGGraph = agentic_pkg.AgenticRAGGraph
         MultiAgentOrchestrator = multi_pkg.MultiAgentOrchestrator
@@ -109,25 +110,32 @@ def initialize_components():
         logger.info("Initializing PII handler...")
         _components["pii_handler"] = PIIHandler()
 
-        # Initialize retriever
-        retriever = CKDRetriever(vectorstore=_components["vectorstore"])
+        # Initialize tree-based retriever for Simple RAG (Level 1)
+        logger.info("Initializing tree-based retriever...")
+        tree_retriever = TreeRetriever(
+            vectorstore=_components["vectorstore"],
+            embedding_function=_components["embeddings"],
+        )
 
-        # Initialize Simple RAG
+        # Flat retriever for Agentic/Multi-Agent layers (unchanged)
+        flat_retriever = CKDRetriever(vectorstore=_components["vectorstore"])
+
+        # Initialize Simple RAG with tree-based retrieval
         _components["simple_rag"] = SimpleRAGChain(
-            retriever=retriever,
+            retriever=tree_retriever,
             llm=_components["llm"]
         )
 
         # Initialize Agentic RAG
         _components["agentic_rag"] = AgenticRAGGraph(
             pii_handler=_components["pii_handler"],
-            retriever=retriever,
+            retriever=flat_retriever,
             llm=_components["llm"]
         )
 
         # Initialize Multi-Agent Orchestrator
         _components["orchestrator"] = MultiAgentOrchestrator(
-            retriever=retriever,
+            retriever=flat_retriever,
             llm=_components["llm"],
             pii_handler=_components["pii_handler"]
         )

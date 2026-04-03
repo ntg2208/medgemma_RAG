@@ -28,12 +28,15 @@ VALID_TYPES = {"front_matter", "main_content", "references", "end_matter"}
 # Heading extraction
 # ---------------------------------------------------------------------------
 
+_HEADING_LINE_RE = re.compile(r"^#{1,6}\s+")
+
+
 def extract_headings(lines: list[str]) -> list[dict]:
-    """Extract all ## headings with 1-based line numbers."""
+    """Extract all markdown headings (any level) with 1-based line numbers."""
     headings = []
     for i, line in enumerate(lines):
         stripped = line.strip()
-        if stripped.startswith("## ") or stripped.startswith("# "):
+        if _HEADING_LINE_RE.match(stripped):
             headings.append({"line": i + 1, "text": stripped})
     return headings
 
@@ -121,7 +124,7 @@ def parse_llm_response(response: str, headings: list[dict]) -> list[dict] | None
 # ## REFERENCES, ## Reference, ## References:, ## Useful websites and reading,
 # ## Acknowledgments, ## Acknowledgements, ## Further reading, ## Bibliography
 REFERENCES_KEYWORD = re.compile(
-    r"^##\s*(?:\d+[\.\)]\s*)?"  # optional numbered prefix like "7. "
+    r"^#{1,6}\s*(?:\d+[\.\)]\s*)?"  # any heading level + optional numbered prefix
     r"(?:"
     r"references?(?:\s*:|\s*\(.*\))?"  # References, Reference, References:, References (...)
     r"|useful\s+websites"               # Useful websites and reading
@@ -134,20 +137,20 @@ REFERENCES_KEYWORD = re.compile(
 
 # Acknowledgments — separate pattern so we can detect but not mix with main refs
 _ACKNOWLEDGMENTS_KEYWORD = re.compile(
-    r"^##\s*(?:\d+[\.\)]\s*)?acknowledge?ments?\s*$",
+    r"^#{1,6}\s*(?:\d+[\.\)]\s*)?acknowledge?ments?\s*$",
     re.IGNORECASE,
 )
 
 # Headings that signal "end of front matter — main content starts at NEXT heading"
 _FRONT_MATTER_BOUNDARY = re.compile(
-    r"^##\s*(contents?|table\s+of\s+contents?|guideline\s+clinical\s+content)",
+    r"^#{1,6}\s*(contents?|table\s+of\s+contents?|guideline\s+clinical\s+content)",
     re.IGNORECASE,
 )
 
 # Headings that are definitively the LAST front-matter section
 # (when no TOC is present, main content starts at the next heading after the last of these)
 _LAST_FRONT_MATTER = re.compile(
-    r"^##\s*(conflicts?\s+of\s+interest|acknowledgements?|"
+    r"^#{1,6}\s*(conflicts?\s+of\s+interest|acknowledgements?|"
     r"method\s+used|endorsements?|grading\s+the\s+evidence|"
     r"notice\s*$|work\s+group|public\s+review)",
     re.IGNORECASE,
@@ -155,7 +158,7 @@ _LAST_FRONT_MATTER = re.compile(
 
 # End matter patterns (only checked near end of document)
 _END_MATTER = re.compile(
-    r"^##\s*(finding\s+more\s+information|update\s+information|"
+    r"^#{1,6}\s*(finding\s+more\s+information|update\s+information|"
     r"abbreviations?\s+and\s+acronyms?\s*$|abbreviations?\s*$)",
     re.IGNORECASE,
 )
@@ -284,7 +287,7 @@ def strip_reference_blocks(lines: list[str]) -> tuple[list[str], list[str]]:
             i += 1
             while i < len(lines):
                 curr = lines[i].strip()
-                if curr.startswith("## ") or curr.startswith("# "):
+                if _HEADING_LINE_RE.match(curr):
                     break
                 stripped.append(lines[i])
                 i += 1
@@ -453,7 +456,7 @@ def main():
         logger.info("Loading MedGemma LLM...")
         try:
             import importlib
-            chain_mod = importlib.import_module("1_Retrieval_Augmented_Generation.chain")
+            chain_mod = importlib.import_module("simple_rag.chain")
             llm = chain_mod.MedGemmaLLM(max_new_tokens=1024, temperature=0.1)
             logger.info("MedGemma loaded successfully")
         except Exception as e:
