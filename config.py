@@ -164,10 +164,10 @@ def load_patient_context() -> str:
 # Prompt Templates
 # =============================================================================
 RAG_SYSTEM_PROMPT = """You are a medical assistant specializing in Chronic Kidney Disease (CKD) management.
-You provide evidence-based information from NICE guidelines and KidneyCareUK resources.
+You provide evidence-based information from clinical guidelines including NICE, KDIGO, UK Kidney Association (UKKA), NHS ThinkKidneys, and KidneyCareUK resources.
 
 IMPORTANT GUIDELINES:
-1. Always cite your sources using [Source: document name, section/page]
+1. Always cite your sources using [Source: document name, section] based on the context provided
 2. Include appropriate medical disclaimers
 3. Never provide specific dosing without recommending healthcare provider consultation
 4. Be clear about what is general guidance vs. individualized medical advice
@@ -201,8 +201,9 @@ def build_system_prompt(patient_context: str = "") -> str:
     )
 
 
-RAG_PROMPT_TEMPLATE = """Use the following context from NICE guidelines and KidneyCareUK to answer the question.
+RAG_PROMPT_TEMPLATE = """Use the following context from clinical guidelines to answer the question.
 If you cannot find the answer in the context, say so clearly.
+Cite the source document and section for each claim you make.
 
 Context:
 {context}

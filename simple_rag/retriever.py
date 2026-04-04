@@ -42,22 +42,68 @@ class CKDRetriever(BaseRetriever):
     class Config:
         arbitrary_types_allowed = True
 
-    # Medical term expansions for query enhancement
+    # Medical term expansions for query enhancement.
+    # Each term maps to a list of related terms. All matching expansions
+    # (not already in the query) are appended.
     TERM_EXPANSIONS: ClassVar[dict[str, list[str]]] = {
-        "ckd": ["chronic kidney disease", "kidney disease", "renal disease"],
-        "egfr": ["estimated glomerular filtration rate", "gfr", "kidney function"],
-        "potassium": ["K+", "hyperkalemia", "hypokalemia"],
+        # Core CKD terms
+        "ckd": ["chronic kidney disease", "renal disease"],
+        "egfr": ["estimated glomerular filtration rate", "kidney function"],
+        "gfr": ["glomerular filtration rate", "egfr"],
+        "aki": ["acute kidney injury", "acute renal failure"],
+        # Electrolytes & diet
+        "potassium": ["hyperkalemia", "hyperkalaemia", "K+"],
+        "hyperkalemia": ["hyperkalaemia", "potassium", "K+"],
+        "hyperkalaemia": ["hyperkalemia", "potassium", "K+"],
         "phosphorus": ["phosphate", "hyperphosphatemia"],
+        "sodium": ["salt", "hyponatremia", "Na+"],
         "protein": ["proteinuria", "albuminuria", "dietary protein"],
-        "ace": ["ace inhibitor", "angiotensin converting enzyme"],
-        "arb": ["angiotensin receptor blocker"],
-        "bp": ["blood pressure", "hypertension"],
-        "dialysis": ["hemodialysis", "peritoneal dialysis", "renal replacement"],
+        "diet": ["dietary", "nutrition", "nutritional"],
+        "nutrition": ["dietary", "nutritional", "diet"],
+        # Anemia & related
+        "anemia": ["anaemia", "hemoglobin", "haemoglobin", "iron"],
+        "anaemia": ["anemia", "haemoglobin", "hemoglobin", "iron"],
+        "esa": ["erythropoiesis stimulating agent", "epoetin", "darbepoetin"],
+        "epo": ["erythropoietin", "epoetin", "esa"],
+        "iron": ["ferritin", "transferrin", "iron deficiency"],
+        "hemoglobin": ["haemoglobin", "hb", "anaemia"],
+        "haemoglobin": ["hemoglobin", "hb", "anaemia"],
+        # Medications
+        "ace inhibitor": ["angiotensin converting enzyme", "ramipril", "enalapril"],
+        "arb": ["angiotensin receptor blocker", "losartan", "valsartan"],
+        "nsaid": ["ibuprofen", "naproxen", "nephrotoxic"],
+        # Blood pressure
+        "hypertension": ["blood pressure", "antihypertensive", "target bp"],
+        "blood pressure": ["hypertension", "antihypertensive"],
+        # Dialysis & RRT
+        "dialysis": ["haemodialysis", "hemodialysis", "peritoneal dialysis"],
+        "haemodialysis": ["hemodialysis", "dialysis", "HD"],
+        "hemodialysis": ["haemodialysis", "dialysis", "HD"],
+        "peritoneal": ["peritoneal dialysis", "PD", "CAPD"],
+        "rrt": ["renal replacement therapy", "dialysis", "transplant"],
+        "conservative": ["conservative management", "non-dialysis", "supportive care"],
+        # Vascular access
+        "fistula": ["arteriovenous fistula", "AVF", "vascular access"],
+        "vascular access": ["fistula", "catheter", "AVF", "AVG"],
+        # IgA nephropathy
+        "igan": ["IgA nephropathy", "immunoglobulin A nephropathy"],
+        "igav": ["IgA vasculitis", "Henoch Schonlein purpura", "HSP"],
+        "hsp": ["Henoch Schonlein purpura", "IgA vasculitis", "IgAV"],
+        # Exercise & lifestyle
+        "exercise": ["physical activity", "lifestyle", "fitness"],
+        "lifestyle": ["exercise", "physical activity", "smoking", "weight"],
     }
+
+    # Pre-compiled word boundary pattern (built once at class level)
+    _WORD_BOUNDARY_RE: ClassVar[Any] = None
 
     def _expand_query(self, query: str) -> str:
         """
         Expand query with related medical terms.
+
+        Uses word boundary matching to avoid substring false positives
+        (e.g. "ace" should not match inside "surface"). Adds all matching
+        expansions that are not already present in the query.
 
         Args:
             query: Original query text
@@ -65,6 +111,8 @@ class CKDRetriever(BaseRetriever):
         Returns:
             Expanded query with additional terms
         """
+        import re
+
         if not self.expand_queries:
             return query
 
@@ -72,15 +120,25 @@ class CKDRetriever(BaseRetriever):
         expansions = []
 
         for term, related in self.TERM_EXPANSIONS.items():
-            if term in query_lower:
-                # Add first expansion term that's not already in query
-                for expansion in related:
-                    if expansion.lower() not in query_lower:
-                        expansions.append(expansion)
-                        break
+            # Word boundary match to avoid substring hits
+            pattern = rf'\b{re.escape(term)}\b'
+            if not re.search(pattern, query_lower):
+                continue
+
+            for expansion in related:
+                if expansion.lower() not in query_lower:
+                    expansions.append(expansion)
 
         if expansions:
-            expanded = f"{query} ({', '.join(expansions)})"
+            # Deduplicate while preserving order
+            seen = set()
+            unique = []
+            for exp in expansions:
+                key = exp.lower()
+                if key not in seen:
+                    seen.add(key)
+                    unique.append(exp)
+            expanded = f"{query} ({', '.join(unique)})"
             logger.debug(f"Query expanded: {query} -> {expanded}")
             return expanded
 
