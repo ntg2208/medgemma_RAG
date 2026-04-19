@@ -288,6 +288,8 @@ def create_retriever(
     k: int = TOP_K_RESULTS,
     use_hybrid: bool = False,
     use_tree: bool = False,
+    use_raptor: bool = False,
+    use_contextual: bool = False,
     embedding_function: Any = None,
 ) -> BaseRetriever:
     """
@@ -298,11 +300,31 @@ def create_retriever(
         k: Number of results to return
         use_hybrid: Whether to use hybrid retrieval
         use_tree: Whether to use tree-based section routing
-        embedding_function: Required when use_tree=True (for section heading search)
+        use_raptor: Whether to use RAPTOR collapsed retrieval
+        use_contextual: Whether to use contextual hybrid retrieval
+        embedding_function: Required when use_tree=True or use_raptor=True
 
     Returns:
         Configured retriever instance
     """
+    if use_raptor:
+        from .raptor_retriever import create_raptor_retriever
+        if embedding_function is None:
+            raise ValueError("embedding_function is required for RAPTOR retrieval")
+        return create_raptor_retriever(
+            embedding_function=embedding_function,
+            k=k,
+        )
+
+    if use_contextual:
+        from .contextual_retriever import create_contextual_retriever
+        if embedding_function is None:
+            raise ValueError("embedding_function is required for contextual retrieval")
+        return create_contextual_retriever(
+            embedding_function=embedding_function,
+            k=k,
+        )
+
     if use_tree:
         from .tree_retriever import TreeRetriever
         if embedding_function is None:

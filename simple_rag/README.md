@@ -48,10 +48,11 @@ results = store.search("potassium restrictions", k=5)
 
 ### retriever.py - Document Retrievers
 
-Two retriever implementations:
+Four retriever implementations, selectable through `create_retriever(...)`:
 
 **CKDRetriever** (default for Agentic/Multi-Agent layers):
 - Medical term expansion (CKD→chronic kidney disease, etc.)
+- Word-boundary matching to avoid substring false positives
 - Configurable similarity thresholds
 - LangChain `BaseRetriever` interface
 
@@ -59,14 +60,24 @@ Two retriever implementations:
 - Reciprocal rank fusion of semantic search results
 - Configurable semantic vs keyword weights
 
+**RaptorRetriever** (see `raptor_retriever.py`): flat top-k search over a
+separate ChromaDB collection containing both leaf chunks and LLM-generated
+multi-layer cluster summaries.
+
+**ContextualRetriever** (see `contextual_retriever.py`): hybrid semantic + BM25
+retrieval over chunks that have been prepended with an LLM-generated
+situating context.
+
 ```python
 from simple_rag.retriever import CKDRetriever, create_retriever
 
 retriever = CKDRetriever(vectorstore=store, k=5, score_threshold=0.3)
 docs = retriever.invoke("dietary restrictions for CKD stage 3")
 
-# Or use factory function:
+# Or use the factory function — pick exactly one strategy flag:
 retriever = create_retriever(store, use_tree=True, embedding_function=embeddings)
+retriever = create_retriever(store, use_raptor=True, embedding_function=embeddings)
+retriever = create_retriever(store, use_contextual=True, embedding_function=embeddings)
 ```
 
 ### tree_retriever.py - Tree-Based Section Routing
@@ -92,6 +103,74 @@ retriever = TreeRetriever(
 )
 docs = retriever.invoke("ESA dosing for hemodialysis")
 ```
+
+### raptor_builder.py / raptor_retriever.py - RAPTOR
+
+Recursive Abstractive Processing for Tree-Organized Retrieval (Sarthi et al.,
+ICLR 2024). Build time:
+
+1. Embed leaf chunks.
+2. UMAP-reduce embeddings, then GMM-cluster with soft (multi-cluster) assignment
+   and BIC-selected cluster count.
+3. Summarise each cluster with the LLM → a new layer of nodes.
+4. Recurse until `RAPTOR_MAX_DEPTH` or the layer collapses to a single node.
+
+Query time: collapsed retrieval — a single flat top-k search over all layers
+(leaves + summaries) in the `ckd_raptor` collection. High-level queries tend to
+match summary nodes; specific queries tend to match leaves.
+
+```python
+from simple_rag.raptor_builder import RaptorBuilder
+from simple_rag.raptor_retriever import create_raptor_retriever
+
+# Build (one-off)
+builder = RaptorBuilder(embedding_function=embeddings, llm=llm)
+tree = builder.build(chunks)
+
+# Query
+retriever = create_raptor_retriever(embedding_function=embeddings, k=5)
+docs = retriever.invoke("What drives CKD progression?")
+```
+
+Build via CLI: `uv run python scripts/build_raptor_index.py [--max-depth 3]`.
+
+Visualise the tree (Pyvis HTML, optionally highlight a query's top-k hits):
+
+```bash
+uv run python scripts/visualize_raptor.py --output raptor_tree.html
+uv run python scripts/visualize_raptor.py --query "potassium limits CKD"
+```
+
+### contextual_builder.py / contextual_retriever.py - Contextual RAG
+
+Implements Anthropic's Contextual Retrieval technique. Build time:
+
+1. For each chunk, the LLM generates a short paragraph explaining where the
+   chunk sits inside the full document.
+2. The context is prepended to the chunk body before embedding and BM25
+   tokenisation.
+
+Query time: hybrid retrieval with reciprocal rank fusion (RRF) combining
+semantic similarity over contextualised embeddings and BM25 keyword matching
+(`CONTEXTUAL_SEMANTIC_WEIGHT`, `CONTEXTUAL_BM25_WEIGHT`).
+
+```python
+from simple_rag.contextual_builder import ContextualBuilder
+from simple_rag.contextual_retriever import create_contextual_retriever
+
+builder = ContextualBuilder(embedding_function=embeddings, llm=llm)
+ctx_chunks = builder.build(chunks, document_texts)  # {source_name: full_text}
+
+retriever = create_contextual_retriever(embedding_function=embeddings, k=5)
+docs = retriever.invoke("high potassium foods")
+```
+
+Build via CLI: `uv run python scripts/build_contextual_index.py`.
+
+> **Cost note.** The context prompt includes the *entire source document* for
+> every chunk (see `CONTEXT_PROMPT` in `contextual_builder.py`). Anthropic's
+> original technique relies on prompt caching; a local vLLM run has no such
+> cache, so expect build time to scale as O(chunks × doc_tokens).
 
 ### chain.py - RAG Chain
 
@@ -155,3 +234,11 @@ See `config.py` for settings:
 | `SIMILARITY_THRESHOLD` | Minimum similarity | 0.3 |
 | `SECTION_K` | Section headings to match | 8 |
 | `CHUNKS_PER_SECTION` | Chunks per matched section | 3 |
+| `RAPTOR_COLLECTION_NAME` | ChromaDB collection for RAPTOR nodes | `ckd_raptor` |
+| `RAPTOR_MAX_DEPTH` | Maximum tree depth | 3 |
+| `RAPTOR_CLUSTER_DIM` | UMAP target dimensions | 10 |
+| `RAPTOR_MIN_CLUSTER_PROB` | Min GMM probability for soft assignment | 0.1 |
+| `CONTEXTUAL_COLLECTION_NAME` | ChromaDB collection for contextualised chunks | `ckd_contextual` |
+| `CONTEXTUAL_BM25_PATH` | BM25 index persistence file | `Data/vectorstore/bm25_contextual.json` |
+| `CONTEXTUAL_SEMANTIC_WEIGHT` | RRF weight for semantic hits | 0.7 |
+| `CONTEXTUAL_BM25_WEIGHT` | RRF weight for BM25 hits | 0.3 |

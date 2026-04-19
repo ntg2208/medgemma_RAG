@@ -39,18 +39,25 @@ fi
 EC2_HOST="$1"
 if [ -z "$EC2_HOST" ]; then
   REGION=$(terraform -chdir=infrastructure/terraform output -raw region 2>/dev/null || echo "us-east-1")
-  EC2_HOST=$(aws ec2 describe-instances \
-    --region "$REGION" \
-    --filters "Name=tag:Name,Values=medgemma-model-server" \
-              "Name=instance-state-name,Values=running" \
-    --query 'Reservations[0].Instances[0].PublicIpAddress' \
-    --output text 2>/dev/null)
-  if [ -z "$EC2_HOST" ] || [ "$EC2_HOST" = "None" ]; then
+  # Check both model-server and data-inspect instances
+  for NAME in medgemma-model-server medgemma-data-inspect; do
+    EC2_HOST=$(aws ec2 describe-instances \
+      --region "$REGION" \
+      --filters "Name=tag:Name,Values=$NAME" \
+                "Name=instance-state-name,Values=running" \
+      --query 'Reservations[0].Instances[0].PublicIpAddress' \
+      --output text 2>/dev/null)
+    if [ -n "$EC2_HOST" ] && [ "$EC2_HOST" != "None" ]; then
+      echo "Found running instance: $NAME ($EC2_HOST)"
+      break
+    fi
+    EC2_HOST=""
+  done
+  if [ -z "$EC2_HOST" ]; then
     echo "Error: No running instance found. Run ./scripts/start.sh first."
     echo "Usage: ./scripts/sync.sh [--pull] <ec2-ip>"
     exit 1
   fi
-  echo "Using IP from AWS: $EC2_HOST"
 fi
 
 if [ ! -f "$KEY_FILE" ]; then

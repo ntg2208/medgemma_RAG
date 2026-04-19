@@ -1,0 +1,65 @@
+{
+  "description": "CKD test queries for RAGAS retriever comparison evaluation",
+  "queries": [
+    {
+      "id": "diet_potassium",
+      "query": "What are the potassium restrictions for CKD stage 3 patients?",
+      "reference": "CKD stage 3 patients should limit potassium intake to 2000-3000mg per day. High potassium foods to avoid include bananas, oranges, potatoes, and tomatoes.",
+      "category": "diet"
+    },
+    {
+      "id": "diet_phosphorus",
+      "query": "What foods are high in phosphorus and should be avoided in CKD?",
+      "reference": "High phosphorus foods to avoid include dairy products, nuts, seeds, cola drinks, processed meats, and chocolate. Phosphorus intake should be limited to 800-1000mg per day in CKD stages 3-5.",
+      "category": "diet"
+    },
+    {
+      "id": "diet_sodium",
+      "query": "How much sodium should a CKD patient consume daily?",
+      "reference": "CKD patients in stages 3-5 should limit sodium intake to less than 2000mg per day. This involves avoiding processed foods, canned soups, and adding salt to meals.",
+      "category": "diet"
+    },
+    {
+      "id": "medication_nsaids",
+      "query": "Why should CKD patients avoid NSAIDs like ibuprofen?",
+      "reference": "NSAIDs such as ibuprofen and naproxen are nephrotoxic and can worsen kidney function. They reduce blood flow to the kidneys and should be avoided in CKD patients. Paracetamol is a safer alternative for pain relief.",
+      "category": "medication"
+    },
+    {
+      "id": "medication_ace",
+      "query": "When are ACE inhibitors recommended for kidney disease?",
+      "reference": "ACE inhibitors and ARBs are recommended as first-line treatment for CKD patients with proteinuria. They reduce proteinuria and slow progression of kidney disease.",
+      "category": "medication"
+    },
+    {
+      "id": "lifestyle_exercise",
+      "query": "What exercise recommendations exist for CKD patients?",
+      "reference": "CKD patients are encouraged to engage in regular moderate-intensity exercise such as walking, cycling, or swimming for at least 150 minutes per week. Exercise improves cardiovascular health and quality of life.",
+      "category": "lifestyle"
+    },
+    {
+      "id": "stages_egfr",
+      "query": "What eGFR level indicates CKD stage 4?",
+      "reference": "CKD stage 4 is defined by an eGFR of 15-29 mL/min/1.73m2, indicating severely reduced kidney function. At this stage, preparation for renal replacement therapy should begin.",
+      "category": "stages"
+    },
+    {
+      "id": "dialysis_preparation",
+      "query": "When should dialysis preparation begin for CKD patients?",
+      "reference": "Dialysis preparation should begin in CKD stage 4 (eGFR 15-29) and typically includes creating vascular access, patient education about dialysis modalities, and referral to a nephrologist.",
+      "category": "dialysis"
+    },
+    {
+      "id": "anemia_esa",
+      "query": "How are erythropoiesis-stimulating agents used in CKD anemia?",
+      "reference": null,
+      "category": "anemia"
+    },
+    {
+      "id": "protein_intake",
+      "query": "What is the recommended protein intake for pre-dialysis CKD patients?",
+      "reference": "Pre-dialysis CKD patients in stages 3-5 should consume 0.6-0.8 g protein per kg body weight per day. Protein intake may increase once dialysis begins.",
+      "category": "diet"
+    }
+  ]
+}

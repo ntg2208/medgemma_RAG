@@ -69,8 +69,12 @@ def _get_judge_llm():
 
     Uses config values: RAGAS_JUDGE_MODEL, RAGAS_JUDGE_API_KEY, RAGAS_JUDGE_BASE_URL.
     Works with OpenRouter, Gemini, OpenAI, or any OpenAI-compatible endpoint.
+
+    Set RAGAS_STREAM_JUDGE=true to stream judge tokens to stdout.
     """
+    import os
     from langchain_openai import ChatOpenAI
+    from langchain_core.callbacks import StreamingStdOutCallbackHandler
     from config import RAGAS_JUDGE_MODEL, RAGAS_JUDGE_API_KEY, RAGAS_JUDGE_BASE_URL
 
     if not RAGAS_JUDGE_API_KEY:
@@ -79,11 +83,15 @@ def _get_judge_llm():
             "Get a free key at https://openrouter.ai/ or use your Gemini/OpenAI key."
         )
 
+    stream_judge = os.getenv("RAGAS_STREAM_JUDGE", "false").lower() == "true"
+
     return ChatOpenAI(
         model=RAGAS_JUDGE_MODEL,
         api_key=RAGAS_JUDGE_API_KEY,
         base_url=RAGAS_JUDGE_BASE_URL,
         temperature=0,
+        streaming=stream_judge,
+        callbacks=[StreamingStdOutCallbackHandler()] if stream_judge else None,
     )
 
 
@@ -99,6 +107,7 @@ def _get_judge_embeddings():
         model=RAGAS_EMBEDDINGS_MODEL,
         api_key=RAGAS_JUDGE_API_KEY,
         base_url=RAGAS_JUDGE_BASE_URL,
+        check_embedding_ctx_length=False,
     )
 
 

@@ -61,8 +61,13 @@ medgemma_RAG/
 ├── simple_rag/
 │   ├── embeddings.py            # EmbeddingGemma wrapper (MRL support)
 │   ├── vectorstore.py           # ChromaDB operations
-│   ├── retriever.py             # CKDRetriever + HybridRetriever
+│   ├── retriever.py             # CKDRetriever + HybridRetriever + factory
 │   ├── tree_retriever.py        # Section-route-then-chunk retrieval
+│   ├── raptor_builder.py        # RAPTOR tree builder (UMAP + GMM + LLM summary)
+│   ├── raptor_retriever.py      # RAPTOR collapsed retrieval over all layers
+│   ├── raptor_viz.py            # Pyvis interactive tree visualisation
+│   ├── contextual_builder.py    # Anthropic Contextual Retrieval: per-chunk context + BM25
+│   ├── contextual_retriever.py  # Hybrid semantic+BM25 retriever with RRF fusion
 │   └── chain.py                 # Simple RAG chain with MedGemma
 │
 ├── agentic_rag/
@@ -83,7 +88,22 @@ medgemma_RAG/
 │       ├── lifestyle_agent.py
 │       └── rag_agent.py
 │
-├── tests/                       # Pytest test suite (36+ tests)
+├── eval/
+│   ├── run_retriever_comparison.py  # RAGAS comparison (flat vs tree)
+│   └── test_queries.json             # Hand-authored eval queries
+│
+├── scripts/
+│   ├── build_raptor_index.py        # Build RAPTOR tree + index into ChromaDB
+│   ├── build_contextual_index.py    # Contextualise chunks + build BM25 index
+│   ├── visualize_raptor.py          # Render RAPTOR tree as interactive HTML
+│   └── ...                          # OCR, EC2, S3, deployment scripts
+│
+├── tests/                       # Pytest test suite (50+ tests)
+│   ├── build_eval_ground_truth.py    # Keyword-based ground-truth builder
+│   ├── eval_retriever.py             # Confusion-matrix retriever evaluator
+│   ├── retriever_eval_dataset.json   # Generated ground-truth dataset
+│   └── retriever_eval_results.json   # Latest evaluation run output
+│
 ├── app.py                       # Gradio UI entry point
 ├── main.py                      # CLI terminal chat (all 3 levels)
 ├── config.py                    # Central configuration
@@ -107,11 +127,36 @@ PDF → Docling OCR → LLM Cleaning → Section Splitting → Block-Aware Chunk
 
 ## Retrieval Strategies
 
-| Strategy | Description | Use Case |
-|----------|-------------|----------|
-| **CKDRetriever** | Flat similarity search with medical term expansion | Default for Agentic/Multi-Agent |
-| **TreeRetriever** | Section-route-then-chunk (two-phase) | Default for Simple RAG |
-| **HybridRetriever** | Reciprocal rank fusion of semantic results | Experimental |
+| Strategy | Description | Collection | Use Case |
+|----------|-------------|------------|----------|
+| **CKDRetriever** (`flat`) | Semantic search with medical term expansion | `ckd_guidelines` | Default for Agentic/Multi-Agent |
+| **TreeRetriever** (`tree`) | Section-route-then-chunk (two-phase) | `ckd_guidelines` + `ckd_section_headings` | Default for Simple RAG |
+| **HybridRetriever** | Reciprocal rank fusion of semantic results | `ckd_guidelines` | Experimental |
+| **RaptorRetriever** (`raptor`) | Collapsed top-k over multi-layer summary tree | `ckd_raptor` | Hierarchical / thematic queries |
+| **ContextualRetriever** (`contextual`) | Hybrid semantic + BM25 over LLM-contextualised chunks | `ckd_contextual` | Mixed lexical + semantic recall |
+
+Select at runtime with `main.py --retriever {flat,tree,raptor,contextual}`.
+RAPTOR and Contextual require a one-off index build (see below) before use.
+
+### Building the RAPTOR and Contextual indices
+
+Both build steps read from `Data/processed/*_chunks.json` and require the LLM
+(`get_llm()`) plus embeddings (`get_embeddings()`), so you can point them at a
+local model or a remote vLLM instance via `USE_REMOTE_MODELS`.
+
+```bash
+# RAPTOR: tree of LLM-summarised clusters (UMAP + GMM soft clustering)
+uv run python scripts/build_raptor_index.py                # default max-depth=3
+uv run python scripts/visualize_raptor.py --query "potassium"  # interactive HTML
+
+# Contextual RAG: prepend per-chunk context + build BM25 index
+uv run python scripts/build_contextual_index.py
+```
+
+> Both scripts currently call `delete_collection()` before re-indexing, so a
+> rebuild fully replaces the previous index. Expect the Contextual build in
+> particular to be slow because the context prompt includes the full source
+> document for every chunk.
 
 ## Installation
 
@@ -143,9 +188,11 @@ cp .env.example .env
 ### Terminal Chat (CLI)
 
 ```bash
-uv run python main.py simple      # Level 1: Simple RAG
-uv run python main.py agentic     # Level 2: Agentic RAG (LangGraph)
-uv run python main.py multi       # Level 3: Multi-Agent
+uv run python main.py simple                        # Level 1, default tree retriever
+uv run python main.py simple --retriever raptor      # Level 1 with RAPTOR
+uv run python main.py agentic --retriever contextual # Level 2 with Contextual RAG
+uv run python main.py multi --retriever flat         # Level 3 with CKDRetriever
+uv run python main.py simple --show-context         # Print retrieved chunks before the answer
 ```
 
 ### Gradio Web UI
@@ -206,6 +253,41 @@ Key settings in `config.py`:
 | `REMOTE_MODEL_ID` | Model ID on remote server | `google/medgemma-1.5-4b-it` |
 
 ## Evaluation
+
+### Retriever confusion-matrix evaluation
+
+The source-level retriever evaluator (`tests/eval_retriever.py`) runs a fixed
+query set against a chosen retriever and reports TP/FP/FN/TN, precision,
+recall, F1 and accuracy per-query, per-topic and in aggregate. Ground truth is
+built from actual chunk content by keyword + density filtering (see
+`tests/build_eval_ground_truth.py`), so retrieval effectiveness is measured
+against sources that genuinely discuss each topic rather than filename guesses.
+
+```bash
+# (Re)generate ground truth from current chunks
+uv run python tests/build_eval_ground_truth.py
+
+# Evaluate a retriever (writes retriever_eval_results.json + confusion_matrix.png)
+uv run python tests/eval_retriever.py --retriever basic  --k 5
+uv run python tests/eval_retriever.py --retriever tree   --k 5
+uv run python tests/eval_retriever.py --retriever hybrid --k 5
+```
+
+> **Caveat.** Ground truth is built by keyword matching; the retrievers score
+> by semantic similarity. The metrics are a useful proxy but will systematically
+> understate recall for semantically-adjacent but lexically-distinct sources.
+
+### RAGAS retriever comparison
+
+`eval/run_retriever_comparison.py` runs the configured retrievers through the
+full chain (retrieval → MedGemma → RAGAS scoring) over the hand-authored queries
+in `eval/test_queries.json` and prints a side-by-side metric table.
+
+```bash
+uv run python eval/run_retriever_comparison.py --retriever both
+```
+
+Requires `RAGAS_JUDGE_API_KEY` in `.env`.
 
 ### RAGAS Metrics (v0.4.x)
 - **Faithfulness**: Is the answer grounded in context?

@@ -13,6 +13,7 @@ import argparse
 import importlib
 import importlib.util
 import logging
+import os
 import sys
 import time
 from pathlib import Path
@@ -99,7 +100,7 @@ def load_processed_chunks(processed_dir: Path) -> list:
     return docs, len(chunk_files)
 
 
-def init_components():
+def init_components(retriever_type: str = "tree"):
     from config import get_llm, get_embeddings
 
     log_tool("embeddings", "loading embedding model...")
@@ -124,12 +125,18 @@ def init_components():
     else:
         log_info(f"vectorstore has {stats['document_count']} documents")
 
-    log_tool("retriever", "initializing tree-based retriever...")
-    tree_retriever = rag_pkg.TreeRetriever(
+    # Create the selected retriever
+    log_tool("retriever", f"initializing {retriever_type} retriever...")
+    from simple_rag.retriever import create_retriever
+
+    retriever = create_retriever(
         vectorstore=vectorstore,
         embedding_function=embeddings,
+        use_tree=(retriever_type == "tree"),
+        use_raptor=(retriever_type == "raptor"),
+        use_contextual=(retriever_type == "contextual"),
+        use_hybrid=False,
     )
-    flat_retriever = rag_pkg.CKDRetriever(vectorstore=vectorstore)
 
     log_tool("llm", "loading LLM...")
     llm = get_llm()
@@ -137,8 +144,8 @@ def init_components():
     return {
         "embeddings": embeddings,
         "vectorstore": vectorstore,
-        "retriever": tree_retriever,
-        "flat_retriever": flat_retriever,
+        "retriever": retriever,
+        "retriever_type": retriever_type,
         "llm": llm,
         "rag_pkg": rag_pkg,
     }
@@ -147,12 +154,13 @@ def init_components():
 # ---------------------------------------------------------------------------
 # Level 1: Simple RAG
 # ---------------------------------------------------------------------------
-def chat_simple(comps: dict):
+def chat_simple(comps: dict, show_context: bool = False):
     rag_pkg = comps["rag_pkg"]
+    retriever_type = comps.get("retriever_type", "tree")
     log_tool("simple_rag", "building RAG chain...")
     chain = rag_pkg.SimpleRAGChain(retriever=comps["retriever"], llm=comps["llm"])
 
-    print(f"\n{C.BOLD}=== Simple RAG (Level 1) ==={C.RESET}")
+    print(f"\n{C.BOLD}=== Simple RAG (Level 1) [{retriever_type}] ==={C.RESET}")
     print(f"{C.GREY}Type 'quit' to exit.{C.RESET}\n")
 
     while True:
@@ -170,6 +178,33 @@ def chat_simple(comps: dict):
             src = doc.metadata.get("source", "?")
             section = doc.metadata.get("section", "")
             log_step("  \U0001f4c4", f"doc {i}", f"{src}" + (f" > {section}" if section else ""))
+
+        # Show retrieved context if requested
+        if show_context and docs:
+            print(f"\n{C.GREY}{'─' * 60}")
+            print(f"{C.BOLD}Retrieved Context ({len(docs)} chunks):{C.RESET}")
+            for i, doc in enumerate(docs, 1):
+                source = doc.metadata.get("source", "?")
+                section = doc.metadata.get("section", "")
+                layer = doc.metadata.get("raptor_layer", "")
+                ctx = doc.metadata.get("contextual_context", "")
+
+                header_parts = [f"{C.CYAN}[{i}]{C.RESET} {C.YELLOW}{source}{C.RESET}"]
+                if section:
+                    header_parts.append(f"§ {section}")
+                if layer != "":
+                    header_parts.append(f"(layer {layer})")
+                print(f"  {'  '.join(header_parts)}")
+
+                if ctx:
+                    print(f"  {C.GREY}Context: {ctx[:100]}{'...' if len(ctx) > 100 else ''}{C.RESET}")
+
+                preview = doc.page_content[:150].replace("\n", " ")
+                if len(doc.page_content) > 150:
+                    preview += "..."
+                print(f"  {C.GREY}{preview}{C.RESET}")
+                print()
+            print(f"{C.GREY}{'─' * 60}{C.RESET}\n")
 
         log_tool("llm", "generating response (streaming)...")
         # vLLM + MedGemma 1.5 renders <think> as <unused94>thought\n and </think> as <unused95>
@@ -240,6 +275,8 @@ def chat_simple(comps: dict):
 # Level 2: Agentic RAG
 # ---------------------------------------------------------------------------
 def chat_agentic(comps: dict):
+    os.environ["STREAM_LLM_OUTPUT"] = "true"
+
     log_tool("pii_handler", "initializing Presidio PII handler...")
     agentic_pkg = import_package("agentic_pkg", PROJECT_ROOT / "agentic_rag")
     pii_handler = agentic_pkg.PIIHandler()
@@ -247,11 +284,12 @@ def chat_agentic(comps: dict):
     log_tool("agentic_graph", "building LangGraph workflow...")
     graph = agentic_pkg.AgenticRAGGraph(
         pii_handler=pii_handler,
-        retriever=comps["flat_retriever"],
+        retriever=comps["retriever"],
         llm=comps["llm"],
     )
 
-    print(f"\n{C.BOLD}=== Agentic RAG (Level 2) ==={C.RESET}")
+    retriever_type = comps.get("retriever_type", "flat")
+    print(f"\n{C.BOLD}=== Agentic RAG (Level 2) [{retriever_type}] ==={C.RESET}")
     print(f"{C.GREY}Type 'quit' to exit. Prefix with 'stage:N ' to set CKD stage.{C.RESET}\n")
 
     while True:
@@ -328,6 +366,8 @@ def chat_agentic(comps: dict):
 # Level 3: Multi-Agent
 # ---------------------------------------------------------------------------
 def chat_multi(comps: dict):
+    os.environ["STREAM_LLM_OUTPUT"] = "true"
+
     log_tool("pii_handler", "initializing Presidio PII handler...")
     agentic_pkg = import_package("agentic_pkg", PROJECT_ROOT / "agentic_rag")
     pii_handler = agentic_pkg.PIIHandler()
@@ -337,12 +377,13 @@ def chat_multi(comps: dict):
     import_package("multi_pkg.agents", PROJECT_ROOT / "multi_agent_rag" / "agents")
     multi_pkg = sys.modules["multi_pkg"]
     orchestrator = multi_pkg.MultiAgentOrchestrator(
-        retriever=comps["flat_retriever"],
+        retriever=comps["retriever"],
         llm=comps["llm"],
         pii_handler=pii_handler,
     )
 
-    print(f"\n{C.BOLD}=== Multi-Agent RAG (Level 3) ==={C.RESET}")
+    retriever_type = comps.get("retriever_type", "flat")
+    print(f"\n{C.BOLD}=== Multi-Agent RAG (Level 3) [{retriever_type}] ==={C.RESET}")
     print(f"{C.GREY}Type 'quit' to exit. Prefix with 'stage:N ' to set CKD stage.{C.RESET}\n")
 
     while True:
@@ -409,16 +450,29 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 examples:
-  uv run python main.py simple      # Level 1: Simple RAG
-  uv run python main.py agentic     # Level 2: Agentic RAG (LangGraph)
-  uv run python main.py multi       # Level 3: Multi-Agent
-  uv run python main.py simple -v   # With debug logging
+  uv run python main.py simple                        # Level 1, default tree retriever
+  uv run python main.py simple --retriever raptor      # Level 1 with RAPTOR
+  uv run python main.py agentic --retriever contextual # Level 2 with Contextual RAG
+  uv run python main.py multi --retriever flat         # Level 3 with flat retriever
+  uv run python main.py simple --show-context          # Show retrieved chunks
+  uv run python main.py simple -v                      # With debug logging
         """,
     )
     parser.add_argument(
         "level",
         choices=["simple", "agentic", "multi"],
         help="RAG level to use",
+    )
+    parser.add_argument(
+        "--retriever", "-r",
+        choices=["flat", "tree", "raptor", "contextual"],
+        default="tree",
+        help="Retriever strategy (default: tree)",
+    )
+    parser.add_argument(
+        "--show-context", "-c",
+        action="store_true",
+        help="Show retrieved context chunks before the answer",
     )
     parser.add_argument(
         "-v", "--verbose",
@@ -438,25 +492,30 @@ examples:
     print(f"\n{C.BOLD}CKD Management RAG — Terminal Chat{C.RESET}")
     print(f"{C.GREY}{'─' * 40}{C.RESET}\n")
 
-    log_info("initializing components...")
+    log_info(f"initializing components (retriever={args.retriever})...")
     try:
-        comps = init_components()
+        comps = init_components(retriever_type=args.retriever)
     except Exception as e:
         log_error(f"initialization failed: {e}")
         sys.exit(1)
 
     log_info("ready!\n")
 
-    handlers = {
-        "simple": chat_simple,
-        "agentic": chat_agentic,
-        "multi": chat_multi,
-    }
-
-    try:
-        handlers[args.level](comps)
-    except KeyboardInterrupt:
-        pass
+    if args.level == "simple":
+        try:
+            chat_simple(comps, show_context=args.show_context)
+        except KeyboardInterrupt:
+            pass
+    elif args.level == "agentic":
+        try:
+            chat_agentic(comps)
+        except KeyboardInterrupt:
+            pass
+    elif args.level == "multi":
+        try:
+            chat_multi(comps)
+        except KeyboardInterrupt:
+            pass
 
     print(f"\n{C.GREY}Goodbye.{C.RESET}")
 

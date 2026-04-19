@@ -1,0 +1,851 @@
+{
+  "config": {
+    "retriever": "basic",
+    "k": 5
+  },
+  "aggregate": {
+    "tp": 58,
+    "fp": 51,
+    "fn": 154,
+    "tn": 1209,
+    "precision": 0.5321,
+    "recall": 0.2736,
+    "f1": 0.3614,
+    "accuracy": 0.8607
+  },
+  "per_query": [
+    {
+      "id": "diet_potassium_restriction",
+      "query": "potassium restriction CKD stage 3",
+      "topic": "diet",
+      "relevant_sources": [
+        "UKKA_Hyperkalaemia_Management_Guideline.pdf",
+        "NHS_ThinkKidneys_CKD_Nutritional_Guidelines.pdf",
+        "Dietary_Guidelines_for_Chronic_Kidney_Disease_Management.md",
+        "Clinical Practice Guideline Haemodialysis.pdf",
+        "UKKA_Commentary Hypertenssion.pdf",
+        "Chronic_Kidney_Disease_-_Haemodialysis_Dietetic_Guideline.md",
+        "7-Chronic-Kidney-disease-Hd-dietetic-CG-1750-V3-final.pdf",
+        "UKKA_Manage blood pressure for chidren and young adult on dialysis.pdf"
+      ],
+      "retrieved_sources": [
+        "UKKA_Hyperkalaemia_Management_Guideline.pdf",
+        "Clinical_Practice_Guidelines_Treatment_of_Acute_Hyperkalaemia_in_Adults.md",
+        "Chronic_Kidney_Disease_Assessment_and_Management_Guidelines.md"
+      ],
+      "tp": 1,
+      "fp": 2,
+      "fn": 7,
+      "tn": 36,
+      "precision": 0.3333,
+      "recall": 0.125,
+      "f1": 0.1818
+    },
+    {
+      "id": "diet_phosphorus_hd",
+      "query": "phosphorus intake haemodialysis daily limit",
+      "topic": "diet",
+      "relevant_sources": [
+        "NHS_ThinkKidneys_CKD_Nutritional_Guidelines.pdf",
+        "Dietary_Guidelines_for_Chronic_Kidney_Disease_Management.md",
+        "Clinical Practice Guideline Haemodialysis.pdf",
+        "Haemodialysis_Clinical_Practice_Guideline.md",
+        "UKKA_Anaemia_CKD_Guideline_Sept2024.pdf",
+        "Chronic_Kidney_Disease_-_Haemodialysis_Dietetic_Guideline.md",
+        "7-Chronic-Kidney-disease-Hd-dietetic-CG-1750-V3-final.pdf",
+        "Managing_your_food_and_fluid_intake_when_on_haemodialysis.md"
+      ],
+      "retrieved_sources": [
+        "Dietary_Guidelines_for_Chronic_Kidney_Disease_Management.md",
+        "Chronic_Kidney_Disease_-_Haemodialysis_Dietetic_Guideline.md",
+        "chronic-kidney-disease-assessment-and-management-pdf-66143713055173.pdf",
+        "Managing_your_food_and_fluid_intake_when_on_haemodialysis.md",
+        "CKD_Nutritional_Recommendations_for_Peritoneal_Dialysis.md"
+      ],
+      "tp": 3,
+      "fp": 2,
+      "fn": 5,
+      "tn": 36,
+      "precision": 0.6,
+      "recall": 0.375,
+      "f1": 0.4615
+    },
+    {
+      "id": "diet_protein_predialysis",
+      "query": "protein intake pre-dialysis CKD recommendation",
+      "topic": "diet",
+      "relevant_sources": [
+        "KDIGO_2025_IgAN_IgAV_Guideline.pdf",
+        "UKKA_AKI_Nutrition_Guide.pdf",
+        "KDIGO_2025_Clinical_Practice_Guideline_for_the_Management_of_Immunoglobulin_A_Nephropathy_(IgAN)_and.md",
+        "NHS_ThinkKidneys_CKD_Nutritional_Guidelines.pdf",
+        "Dietary_Guidelines_for_Chronic_Kidney_Disease_Management.md",
+        "Clinical Practice Guideline Haemodialysis.pdf",
+        "UKKA_Anaemia_CKD_Guideline_Sept2024.pdf",
+        "KDIGO_2024_CKD_Guideline_Draft.pdf",
+        "The_management_of_complications_associated_with_lgA_vasculitis_(Henoch_Schonlein_Purpura)_in_childre.md",
+        "Chronic_Kidney_Disease_-_Haemodialysis_Dietetic_Guideline.md",
+        "7-Chronic-Kidney-disease-Hd-dietetic-CG-1750-V3-final.pdf",
+        "Nutritional_Considerations_in_Adult_Patients_with_Acute_Kidney_Injury.md",
+        "KDIGO_2025_Anemia_Guideline_Draft.pdf",
+        "chronic-kidney-disease-assessment-and-management-pdf-66143713055173.pdf",
+        "UKKA_Management of IgAN in Young adult and Children.pdf",
+        "CKD_Nutritional_Recommendations_for_Peritoneal_Dialysis.md"
+      ],
+      "retrieved_sources": [
+        "Diet_and_Haemodialysis.md",
+        "Dietary_Guidelines_for_Chronic_Kidney_Disease_Management.md",
+        "Chronic_Kidney_Disease_-_Haemodialysis_Dietetic_Guideline.md",
+        "Diet_and_Haemodialysis_for_Patients_on_Haemodialysis.md",
+        "CKD_Nutritional_Recommendations_for_Peritoneal_Dialysis.md"
+      ],
+      "tp": 3,
+      "fp": 2,
+      "fn": 13,
+      "tn": 28,
+      "precision": 0.6,
+      "recall": 0.1875,
+      "f1": 0.2857
+    },
+    {
+      "id": "diet_fluid_haemodialysis",
+      "query": "fluid allowance haemodialysis management",
+      "topic": "diet",
+      "relevant_sources": [
+        "Diet_and_Haemodialysis.md",
+        "renal-replacement-therapy-and-conservative-management-pdf-66141542991301.pdf",
+        "Commentary-on-the-NICE-Guideline-on-RRT-and-conservative-management.pdf",
+        "NHS_ThinkKidneys_CKD_Nutritional_Guidelines.pdf",
+        "Dietary_Guidelines_for_Chronic_Kidney_Disease_Management.md",
+        "Clinical Practice Guideline Haemodialysis.pdf",
+        "Haemodialysis_Clinical_Practice_Guideline.md",
+        "LN000445.pdf",
+        "Chronic_Kidney_Disease_-_Haemodialysis_Dietetic_Guideline.md",
+        "7-Chronic-Kidney-disease-Hd-dietetic-CG-1750-V3-final.pdf",
+        "Diet_and_Haemodialysis_for_Patients_on_Haemodialysis.md",
+        "Clinical Practice Guideline Exercise and Lifestyle in Chronic Kidney Disease.pdf",
+        "Managing_your_food_and_fluid_intake_when_on_haemodialysis.md",
+        "Clinical_Practice_Guideline_Management_of_blood_pressure_in_adults,_children_and_young_people_on_dia.md",
+        "UKKA_Manage blood pressure for chidren and young adult on dialysis.pdf",
+        "Renal_Replacement_Therapy_and_Conservative_Management_for_Chronic_Kidney_Disease_Stages_4_and_5.md",
+        "CKD_Nutritional_Recommendations_for_Peritoneal_Dialysis.md"
+      ],
+      "retrieved_sources": [
+        "Clinical Practice Guideline Exercise and Lifestyle in Chronic Kidney Disease.pdf",
+        "LN000445.pdf",
+        "Exercise_and_Lifestyle_in_Chronic_Kidney_Disease.md"
+      ],
+      "tp": 2,
+      "fp": 1,
+      "fn": 15,
+      "tn": 28,
+      "precision": 0.6667,
+      "recall": 0.1176,
+      "f1": 0.2
+    },
+    {
+      "id": "diet_sodium_limit",
+      "query": "sodium salt daily limit CKD",
+      "topic": "diet",
+      "relevant_sources": [
+        "KDIGO_2025_IgAN_IgAV_Guideline.pdf",
+        "UKKA_Hyperkalaemia_Management_Guideline.pdf",
+        "Commentary_on_NICE_guideline_(NG136)_'Hypertension_in_adults_diagnosis_and_management'_including_pro.md",
+        "NHS_ThinkKidneys_CKD_Nutritional_Guidelines.pdf",
+        "Clinical Practice Guideline Haemodialysis.pdf",
+        "KDIGO_2024_CKD_Guideline_Draft.pdf",
+        "UKKA_Commentary Hypertenssion.pdf",
+        "7-Chronic-Kidney-disease-Hd-dietetic-CG-1750-V3-final.pdf",
+        "UK_Kidney_Association_Updated_commentary_on_NlCE_guideline_(NG136)_Hypertension_in_adults_diagnosis_.md",
+        "Clinical_Practice_Guideline_Management_of_blood_pressure_in_adults,_children_and_young_people_on_dia.md",
+        "UKKA_Manage blood pressure for chidren and young adult on dialysis.pdf",
+        "85089pfood.pdf"
+      ],
+      "retrieved_sources": [
+        "Chronic_Kidney_Disease_Management_Guidelines_for_Adults.md",
+        "Diet_and_Haemodialysis.md",
+        "Diet_and_Haemodialysis_for_Patients_on_Haemodialysis.md",
+        "Chronic_Kidney_Disease_Assessment_and_Management_Guidelines.md",
+        "Chronic_Kidney_Disease_Management_in_Primary_Care.md"
+      ],
+      "tp": 0,
+      "fp": 5,
+      "fn": 12,
+      "tn": 29,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "id": "diet_peritoneal_nutrition",
+      "query": "peritoneal dialysis nutrition recommendations",
+      "topic": "diet",
+      "relevant_sources": [
+        "renal-replacement-therapy-and-conservative-management-pdf-66141542991301.pdf",
+        "NHS_ThinkKidneys_CKD_Nutritional_Guidelines.pdf",
+        "UKKA_Anaemia_CKD_Guideline_Sept2024.pdf",
+        "Clinical_Practice_Guideline_Management_of_blood_pressure_in_adults,_children_and_young_people_on_dia.md",
+        "UKKA_Manage blood pressure for chidren and young adult on dialysis.pdf",
+        "CKD_Nutritional_Recommendations_for_Peritoneal_Dialysis.md"
+      ],
+      "retrieved_sources": [
+        "Diet_and_Haemodialysis_for_Patients_on_Haemodialysis.md",
+        "LN000445.pdf",
+        "Diet_and_Haemodialysis.md",
+        "CKD_Nutritional_Recommendations_for_Peritoneal_Dialysis.md"
+      ],
+      "tp": 1,
+      "fp": 3,
+      "fn": 5,
+      "tn": 37,
+      "precision": 0.25,
+      "recall": 0.1667,
+      "f1": 0.2
+    },
+    {
+      "id": "diet_high_potassium_foods",
+      "query": "high potassium foods avoid kidney",
+      "topic": "diet",
+      "relevant_sources": [
+        "UKKA_AKI_Nutrition_Guide.pdf",
+        "Commentary_on_NICE_guideline_(NG136)_'Hypertension_in_adults_diagnosis_and_management'_including_pro.md",
+        "LN000445.pdf",
+        "NHS_ThinkKidneys_CKD_Nutritional_Guidelines.pdf",
+        "UKKA_Commentary_NICE_Hypertension_NG136.pdf",
+        "UKKA_Commentary Hypertenssion.pdf",
+        "7-Chronic-Kidney-disease-Hd-dietetic-CG-1750-V3-final.pdf",
+        "Nutritional_Considerations_in_Adult_Patients_with_Acute_Kidney_Injury.md",
+        "UK_Kidney_Association_Updated_commentary_on_NlCE_guideline_(NG136)_Hypertension_in_adults_diagnosis_.md",
+        "Managing_your_food_and_fluid_intake_when_on_haemodialysis.md",
+        "85089pfood.pdf"
+      ],
+      "retrieved_sources": [
+        "Diet_and_Haemodialysis_for_Patients_on_Haemodialysis.md",
+        "Clinical_Practice_Guidelines_Treatment_of_Acute_Hyperkalaemia_in_Adults.md",
+        "Diet_and_Haemodialysis.md",
+        "Managing_your_food_and_fluid_intake_when_on_haemodialysis.md"
+      ],
+      "tp": 1,
+      "fp": 3,
+      "fn": 10,
+      "tn": 32,
+      "precision": 0.25,
+      "recall": 0.0909,
+      "f1": 0.1333
+    },
+    {
+      "id": "anaemia_esa_initiation",
+      "query": "ESA erythropoietin initiation CKD anaemia",
+      "topic": "anaemia",
+      "relevant_sources": [
+        "Clinical_Practice_Guideline_Anaemia_of_Chronic_Kidney_Disease.md",
+        "UKKA_Anaemia_CKD_Guideline_Sept2024.pdf",
+        "Chronic_Kidney_Disease_Assessment_and_Management_Guidelines.md",
+        "KDIGO_2025_Anemia_Guideline_Draft.pdf",
+        "KDIGO_2025_CLINICAL_PRACTICE_GUIDELINE_FOR_ANEMIA_IN_CHRONIC_KIDNEY_DISEASE.md",
+        "chronic-kidney-disease-assessment-and-management-pdf-66143713055173.pdf"
+      ],
+      "retrieved_sources": [
+        "Clinical_Practice_Guideline_Anaemia_of_Chronic_Kidney_Disease.md",
+        "UKKA_Anaemia_CKD_Guideline_Sept2024.pdf",
+        "Chronic_Kidney_Disease_Assessment_and_Management_Guidelines.md",
+        "KDIGO_2025_CLINICAL_PRACTICE_GUIDELINE_FOR_ANEMIA_IN_CHRONIC_KIDNEY_DISEASE.md"
+      ],
+      "tp": 4,
+      "fp": 0,
+      "fn": 2,
+      "tn": 40,
+      "precision": 1.0,
+      "recall": 0.6667,
+      "f1": 0.8
+    },
+    {
+      "id": "anaemia_iron_ferritin_tsat",
+      "query": "ferritin transferrin saturation iron target CKD",
+      "topic": "anaemia",
+      "relevant_sources": [
+        "UKKA_Anaemia_CKD_Guideline_Sept2024.pdf",
+        "Chronic_Kidney_Disease_Assessment_and_Management_Guidelines.md",
+        "KDIGO_2025_Anemia_Guideline_Draft.pdf",
+        "chronic-kidney-disease-assessment-and-management-pdf-66143713055173.pdf",
+        "KDIGO_2025_CLINICAL_PRACTICE_GUIDELINE_FOR_ANEMIA_IN_CHRONIC_KIDNEY_DISEASE.md"
+      ],
+      "retrieved_sources": [
+        "Clinical_Practice_Guideline_Anaemia_of_Chronic_Kidney_Disease.md",
+        "KDIGO_2025_Anemia_Guideline_Draft.pdf",
+        "KDIGO_2025_CLINICAL_PRACTICE_GUIDELINE_FOR_ANEMIA_IN_CHRONIC_KIDNEY_DISEASE.md"
+      ],
+      "tp": 2,
+      "fp": 1,
+      "fn": 3,
+      "tn": 40,
+      "precision": 0.6667,
+      "recall": 0.4,
+      "f1": 0.5
+    },
+    {
+      "id": "anaemia_haemoglobin_target",
+      "query": "haemoglobin target range anaemia CKD",
+      "topic": "anaemia",
+      "relevant_sources": [
+        "Clinical_Practice_Guideline_Anaemia_of_Chronic_Kidney_Disease.md",
+        "UKKA_Anaemia_CKD_Guideline_Sept2024.pdf",
+        "KDIGO_2025_Anemia_Guideline_Draft.pdf",
+        "chronic-kidney-disease-assessment-and-management-pdf-66143713055173.pdf",
+        "KDIGO_2025_CLINICAL_PRACTICE_GUIDELINE_FOR_ANEMIA_IN_CHRONIC_KIDNEY_DISEASE.md"
+      ],
+      "retrieved_sources": [
+        "UKKA_Anaemia_CKD_Guideline_Sept2024.pdf",
+        "Chronic_Kidney_Disease_Assessment_and_Management_Guidelines.md",
+        "chronic-kidney-disease-assessment-and-management-pdf-66143713055173.pdf",
+        "KDIGO_2025_CLINICAL_PRACTICE_GUIDELINE_FOR_ANEMIA_IN_CHRONIC_KIDNEY_DISEASE.md"
+      ],
+      "tp": 3,
+      "fp": 1,
+      "fn": 2,
+      "tn": 40,
+      "precision": 0.75,
+      "recall": 0.6,
+      "f1": 0.6667
+    },
+    {
+      "id": "anaemia_hif_phi",
+      "query": "HIF-PHI roxadustat daprodustat anaemia CKD",
+      "topic": "anaemia",
+      "relevant_sources": [
+        "Clinical_Practice_Guideline_Anaemia_of_Chronic_Kidney_Disease.md",
+        "UKKA_Anaemia_CKD_Guideline_Sept2024.pdf",
+        "KDIGO_2025_Anemia_Guideline_Draft.pdf",
+        "KDIGO_2025_CLINICAL_PRACTICE_GUIDELINE_FOR_ANEMIA_IN_CHRONIC_KIDNEY_DISEASE.md"
+      ],
+      "retrieved_sources": [
+        "Clinical_Practice_Guideline_Anaemia_of_Chronic_Kidney_Disease.md",
+        "UKKA_Anaemia_CKD_Guideline_Sept2024.pdf",
+        "KDIGO_2025_Anemia_Guideline_Draft.pdf",
+        "KDIGO_2025_CLINICAL_PRACTICE_GUIDELINE_FOR_ANEMIA_IN_CHRONIC_KIDNEY_DISEASE.md"
+      ],
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "tn": 42,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "id": "bp_target_dialysis",
+      "query": "blood pressure target dialysis adults",
+      "topic": "blood_pressure",
+      "relevant_sources": [
+        "UKKA_Anaemia_CKD_Guideline_Sept2024.pdf",
+        "Clinical Practice Guideline Haemodialysis.pdf",
+        "Clinical Practice Guideline Exercise and Lifestyle in Chronic Kidney Disease.pdf",
+        "KDIGO_2025_Anemia_Guideline_Draft.pdf",
+        "Clinical_Practice_Guideline_Management_of_blood_pressure_in_adults,_children_and_young_people_on_dia.md",
+        "UKKA_Manage blood pressure for chidren and young adult on dialysis.pdf"
+      ],
+      "retrieved_sources": [
+        "UKKA_Manage blood pressure for chidren and young adult on dialysis.pdf",
+        "Clinical_Practice_Guideline_Management_of_blood_pressure_in_adults,_children_and_young_people_on_dia.md"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 4,
+      "tn": 40,
+      "precision": 1.0,
+      "recall": 0.3333,
+      "f1": 0.5
+    },
+    {
+      "id": "bp_children_dialysis",
+      "query": "blood pressure children young people dialysis",
+      "topic": "blood_pressure",
+      "relevant_sources": [
+        "UKKA_Manage blood pressure for chidren and young adult on dialysis.pdf",
+        "KDIGO_2025_Anemia_Guideline_Draft.pdf",
+        "chronic-kidney-disease-assessment-and-management-pdf-66143713055173.pdf",
+        "Clinical_Practice_Guideline_Management_of_blood_pressure_in_adults,_children_and_young_people_on_dia.md"
+      ],
+      "retrieved_sources": [
+        "UKKA_Manage blood pressure for chidren and young adult on dialysis.pdf",
+        "Clinical_Practice_Guideline_Management_of_blood_pressure_in_adults,_children_and_young_people_on_dia.md"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 2,
+      "tn": 42,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6667
+    },
+    {
+      "id": "bp_hypertension_nice_ng136",
+      "query": "NICE NG136 hypertension CKD commentary",
+      "topic": "blood_pressure",
+      "relevant_sources": [
+        "UK_Kidney_Association_Updated_commentary_on_NlCE_guideline_(NG136)_Hypertension_in_adults_diagnosis_.md",
+        "Commentary_on_NICE_guideline_(NG136)_'Hypertension_in_adults_diagnosis_and_management'_including_pro.md",
+        "UKKA_Commentary Hypertenssion.pdf",
+        "UKKA_Commentary_NICE_Hypertension_NG136.pdf"
+      ],
+      "retrieved_sources": [
+        "UK_Kidney_Association_Updated_commentary_on_NlCE_guideline_(NG136)_Hypertension_in_adults_diagnosis_.md",
+        "Commentary_on_NICE_guideline_(NG136)_'Hypertension_in_adults_diagnosis_and_management'_including_pro.md",
+        "UKKA_Commentary Hypertenssion.pdf"
+      ],
+      "tp": 3,
+      "fp": 0,
+      "fn": 1,
+      "tn": 42,
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.8571
+    },
+    {
+      "id": "hyperkalaemia_acute_treatment",
+      "query": "acute hyperkalaemia emergency treatment protocol",
+      "topic": "hyperkalaemia",
+      "relevant_sources": [
+        "UKKA_Manage blood pressure for chidren and young adult on dialysis.pdf",
+        "UKKA_Hyperkalaemia_Management_Guideline.pdf",
+        "Clinical_Practice_Guidelines_Treatment_of_Acute_Hyperkalaemia_in_Adults.md"
+      ],
+      "retrieved_sources": [
+        "Clinical_Practice_Guidelines_Treatment_of_Acute_Hyperkalaemia_in_Adults.md"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "tn": 43,
+      "precision": 1.0,
+      "recall": 0.3333,
+      "f1": 0.5
+    },
+    {
+      "id": "hyperkalaemia_insulin_glucose",
+      "query": "insulin glucose infusion hyperkalaemia",
+      "topic": "hyperkalaemia",
+      "relevant_sources": [
+        "UKKA_Hyperkalaemia_Management_Guideline.pdf",
+        "Clinical_Practice_Guidelines_Treatment_of_Acute_Hyperkalaemia_in_Adults.md"
+      ],
+      "retrieved_sources": [
+        "UKKA_Hyperkalaemia_Management_Guideline.pdf",
+        "Clinical_Practice_Guidelines_Treatment_of_Acute_Hyperkalaemia_in_Adults.md"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "tn": 44,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "id": "hyperkalaemia_calcium_gluconate",
+      "query": "calcium gluconate IV hyperkalaemia cardiac protection",
+      "topic": "hyperkalaemia",
+      "relevant_sources": [
+        "UKKA_Hyperkalaemia_Management_Guideline.pdf",
+        "Clinical_Practice_Guidelines_Treatment_of_Acute_Hyperkalaemia_in_Adults.md"
+      ],
+      "retrieved_sources": [
+        "UKKA_Hyperkalaemia_Management_Guideline.pdf",
+        "Clinical_Practice_Guidelines_Treatment_of_Acute_Hyperkalaemia_in_Adults.md"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "tn": 44,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "id": "vascular_access_fistula",
+      "query": "arteriovenous fistula AVF creation haemodialysis",
+      "topic": "vascular_access",
+      "relevant_sources": [
+        "Clinical Practice Guideline Haemodialysis.pdf",
+        "UK_Kidney_Association_Clinical_Practice_Guideline_Vascular_Access_for_Haemodialysis.md",
+        "UKKA_Clinical Guildlines Vascular Access for Hemodialysis.pdf"
+      ],
+      "retrieved_sources": [
+        "Exercise_and_Lifestyle_in_Chronic_Kidney_Disease.md",
+        "UK_Kidney_Association_Clinical_Practice_Guideline_Vascular_Access_for_Haemodialysis.md",
+        "Renal_Replacement_Therapy_and_Conservative_Management_for_Chronic_Kidney_Disease_Stages_4_and_5.md"
+      ],
+      "tp": 1,
+      "fp": 2,
+      "fn": 2,
+      "tn": 41,
+      "precision": 0.3333,
+      "recall": 0.3333,
+      "f1": 0.3333
+    },
+    {
+      "id": "vascular_access_catheter",
+      "query": "central venous catheter dialysis access",
+      "topic": "vascular_access",
+      "relevant_sources": [
+        "UK_Kidney_Association_Clinical_Practice_Guideline_Vascular_Access_for_Haemodialysis.md",
+        "UKKA_Clinical Guildlines Vascular Access for Hemodialysis.pdf"
+      ],
+      "retrieved_sources": [
+        "Clinical Practice Guideline Exercise and Lifestyle in Chronic Kidney Disease.pdf",
+        "Exercise_and_Lifestyle_in_Chronic_Kidney_Disease.md",
+        "Clinical_Practice_Guidelines_Treatment_of_Acute_Hyperkalaemia_in_Adults.md",
+        "UKKA_Clinical Guildlines Vascular Access for Hemodialysis.pdf"
+      ],
+      "tp": 1,
+      "fp": 3,
+      "fn": 1,
+      "tn": 41,
+      "precision": 0.25,
+      "recall": 0.5,
+      "f1": 0.3333
+    },
+    {
+      "id": "hd_adequacy_kt_v",
+      "query": "haemodialysis adequacy Kt/V URR target",
+      "topic": "haemodialysis",
+      "relevant_sources": [
+        "NHS_ThinkKidneys_CKD_Nutritional_Guidelines.pdf",
+        "Dietary_Guidelines_for_Chronic_Kidney_Disease_Management.md",
+        "Clinical Practice Guideline Haemodialysis.pdf",
+        "Haemodialysis_Clinical_Practice_Guideline.md",
+        "7-Chronic-Kidney-disease-Hd-dietetic-CG-1750-V3-final.pdf",
+        "Chronic_Kidney_Disease_-_Haemodialysis_Dietetic_Guideline.md",
+        "Clinical_Practice_Guideline_Management_of_blood_pressure_in_adults,_children_and_young_people_on_dia.md",
+        "UKKA_Manage blood pressure for chidren and young adult on dialysis.pdf"
+      ],
+      "retrieved_sources": [
+        "Dietary_Guidelines_for_Chronic_Kidney_Disease_Management.md",
+        "Haemodialysis_Clinical_Practice_Guideline.md",
+        "Chronic_Kidney_Disease_-_Haemodialysis_Dietetic_Guideline.md"
+      ],
+      "tp": 3,
+      "fp": 0,
+      "fn": 5,
+      "tn": 38,
+      "precision": 1.0,
+      "recall": 0.375,
+      "f1": 0.5455
+    },
+    {
+      "id": "exercise_ckd_recommendation",
+      "query": "exercise physical activity CKD recommendation",
+      "topic": "exercise",
+      "relevant_sources": [
+        "Exercise_and_Lifestyle_in_Chronic_Kidney_Disease.md",
+        "Clinical Practice Guideline Haemodialysis.pdf",
+        "KDIGO_2024_CKD_Guideline_Draft.pdf",
+        "Clinical Practice Guideline Exercise and Lifestyle in Chronic Kidney Disease.pdf",
+        "Clinical_Practice_Guideline_Management_of_blood_pressure_in_adults,_children_and_young_people_on_dia.md",
+        "UKKA_Manage blood pressure for chidren and young adult on dialysis.pdf"
+      ],
+      "retrieved_sources": [
+        "Exercise_and_Lifestyle_in_Chronic_Kidney_Disease.md",
+        "Chronic_Kidney_Disease_Assessment_and_Management_Guidelines.md"
+      ],
+      "tp": 1,
+      "fp": 1,
+      "fn": 5,
+      "tn": 39,
+      "precision": 0.5,
+      "recall": 0.1667,
+      "f1": 0.25
+    },
+    {
+      "id": "exercise_intradialytic",
+      "query": "intradialytic exercise haemodialysis safety",
+      "topic": "exercise",
+      "relevant_sources": [
+        "Exercise_and_Lifestyle_in_Chronic_Kidney_Disease.md",
+        "Clinical Practice Guideline Haemodialysis.pdf",
+        "Haemodialysis_Clinical_Practice_Guideline.md",
+        "Clinical Practice Guideline Exercise and Lifestyle in Chronic Kidney Disease.pdf",
+        "Clinical_Practice_Guideline_Management_of_blood_pressure_in_adults,_children_and_young_people_on_dia.md",
+        "UKKA_Manage blood pressure for chidren and young adult on dialysis.pdf"
+      ],
+      "retrieved_sources": [
+        "Clinical Practice Guideline Exercise and Lifestyle in Chronic Kidney Disease.pdf",
+        "Exercise_and_Lifestyle_in_Chronic_Kidney_Disease.md"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 4,
+      "tn": 40,
+      "precision": 1.0,
+      "recall": 0.3333,
+      "f1": 0.5
+    },
+    {
+      "id": "smoking_ckd_progression",
+      "query": "smoking cessation CKD progression lifestyle",
+      "topic": "lifestyle",
+      "relevant_sources": [
+        "Exercise_and_Lifestyle_in_Chronic_Kidney_Disease.md",
+        "KDIGO_2025_IgAN_IgAV_Guideline.pdf",
+        "KDIGO_2025_Clinical_Practice_Guideline_for_the_Management_of_Immunoglobulin_A_Nephropathy_(IgAN)_and.md",
+        "KDIGO_2024_CKD_Guideline_Draft.pdf",
+        "Clinical Practice Guideline Exercise and Lifestyle in Chronic Kidney Disease.pdf",
+        "chronic-kidney-disease-assessment-and-management-pdf-66143713055173.pdf"
+      ],
+      "retrieved_sources": [
+        "Chronic_Kidney_Disease_Management_Guidelines_for_Adults.md",
+        "Exercise_and_Lifestyle_in_Chronic_Kidney_Disease.md",
+        "Chronic_Kidney_Disease_Assessment_and_Management_Guidelines.md",
+        "Chronic_Kidney_Disease_Management_in_Primary_Care.md"
+      ],
+      "tp": 1,
+      "fp": 3,
+      "fn": 5,
+      "tn": 37,
+      "precision": 0.25,
+      "recall": 0.1667,
+      "f1": 0.2
+    },
+    {
+      "id": "rrt_conservative_management",
+      "query": "renal replacement therapy conservative management stage 5",
+      "topic": "rrt",
+      "relevant_sources": [
+        "UKKA_Clinical Guildlines Vascular Access for Hemodialysis.pdf",
+        "renal-replacement-therapy-and-conservative-management-pdf-66141542991301.pdf",
+        "Commentary_on_the_NICE_Guideline_on_Renal_Replacement_Therapy_and_Conservative_Management.md",
+        "Commentary-on-the-NICE-Guideline-on-RRT-and-conservative-management.pdf",
+        "Clinical Practice Guideline Haemodialysis.pdf",
+        "UK_Kidney_Association_Clinical_Practice_Guideline_Vascular_Access_for_Haemodialysis.md",
+        "Renal_Replacement_Therapy_and_Conservative_Management_for_Chronic_Kidney_Disease_Stages_4_and_5.md"
+      ],
+      "retrieved_sources": [
+        "Clinical Practice Guideline Exercise and Lifestyle in Chronic Kidney Disease.pdf",
+        "Exercise_and_Lifestyle_in_Chronic_Kidney_Disease.md",
+        "Chronic_Kidney_Disease_Assessment_and_Management_Guidelines.md"
+      ],
+      "tp": 0,
+      "fp": 3,
+      "fn": 7,
+      "tn": 36,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "id": "ckd_staging_egfr_albuminuria",
+      "query": "CKD staging eGFR albuminuria classification",
+      "topic": "ckd_general",
+      "relevant_sources": [
+        "Chronic_Kidney_Disease_Management_Guidelines_for_Adults.md",
+        "UKKA_Hyperkalaemia_Management_Guideline.pdf",
+        "Notts_CKD_Management_Guidelines.pdf",
+        "UKKA_Anaemia_CKD_Guideline_Sept2024.pdf",
+        "KDIGO_2024_CKD_Guideline_Draft.pdf",
+        "UKKA_Commentary Hypertenssion.pdf",
+        "Chronic_Kidney_Disease_Management_in_Primary_Care.md",
+        "chronic-kidney-disease-assessment-and-management-pdf-66143713055173.pdf"
+      ],
+      "retrieved_sources": [
+        "Chronic_Kidney_Disease_Management_Guidelines_for_Adults.md",
+        "Chronic_Kidney_Disease_Management_in_Primary_Care.md",
+        "Chronic_Kidney_Disease_Assessment_and_Management_Guidelines.md",
+        "KDIGO_2025_CLINICAL_PRACTICE_GUIDELINE_FOR_ANEMIA_IN_CHRONIC_KIDNEY_DISEASE.md"
+      ],
+      "tp": 2,
+      "fp": 2,
+      "fn": 6,
+      "tn": 36,
+      "precision": 0.5,
+      "recall": 0.25,
+      "f1": 0.3333
+    },
+    {
+      "id": "ckd_referral_nephrology",
+      "query": "CKD referral nephrologist criteria",
+      "topic": "ckd_general",
+      "relevant_sources": [
+        "Chronic_Kidney_Disease_Management_Guidelines_for_Adults.md",
+        "UKKA_Hyperkalaemia_Management_Guideline.pdf",
+        "UKKA_Clinical Guildlines Vascular Access for Hemodialysis.pdf",
+        "Notts_CKD_Management_Guidelines.pdf",
+        "Chronic_Kidney_Disease_Management_in_Primary_Care.md",
+        "chronic-kidney-disease-assessment-and-management-pdf-66143713055173.pdf",
+        "UKKA_Initial Management of IgAN in Children and Young Adult.pdf",
+        "The_initial_management_of_IgA_vasculitis_(Henoch_Schonlein_Purpura)_in_children_and_young_people.md"
+      ],
+      "retrieved_sources": [
+        "Chronic_Kidney_Disease_Management_Guidelines_for_Adults.md",
+        "Chronic_Kidney_Disease_Assessment_and_Management_Guidelines.md",
+        "Chronic_Kidney_Disease_Management_in_Primary_Care.md"
+      ],
+      "tp": 2,
+      "fp": 1,
+      "fn": 6,
+      "tn": 37,
+      "precision": 0.6667,
+      "recall": 0.25,
+      "f1": 0.3636
+    },
+    {
+      "id": "igan_treatment_budesonide",
+      "query": "IgA nephropathy treatment immunosuppression budesonide",
+      "topic": "igan",
+      "relevant_sources": [
+        "KDIGO_2025_IgAN_IgAV_Guideline.pdf",
+        "KDIGO_2024_CKD_Guideline_Draft.pdf",
+        "KDIGO_2025_Clinical_Practice_Guideline_for_the_Management_of_Immunoglobulin_A_Nephropathy_(IgAN)_and.md"
+      ],
+      "retrieved_sources": [
+        "The_management_of_complications_associated_with_lgA_vasculitis_(Henoch_Schonlein_Purpura)_in_childre.md",
+        "Chronic_Kidney_Disease_Management_in_Primary_Care.md",
+        "Chronic_Kidney_Disease_Assessment_and_Management_Guidelines.md",
+        "KDIGO_2025_Clinical_Practice_Guideline_for_the_Management_of_Immunoglobulin_A_Nephropathy_(IgAN)_and.md"
+      ],
+      "tp": 1,
+      "fp": 3,
+      "fn": 2,
+      "tn": 40,
+      "precision": 0.25,
+      "recall": 0.3333,
+      "f1": 0.2857
+    },
+    {
+      "id": "igav_children_hsp",
+      "query": "IgA vasculitis Henoch Schonlein purpura children",
+      "topic": "igan",
+      "relevant_sources": [
+        "KDIGO_2025_IgAN_IgAV_Guideline.pdf",
+        "KDIGO_2025_Clinical_Practice_Guideline_for_the_Management_of_Immunoglobulin_A_Nephropathy_(IgAN)_and.md",
+        "The_management_of_complications_associated_with_lgA_vasculitis_(Henoch_Schonlein_Purpura)_in_childre.md",
+        "KDIGO_2024_CKD_Guideline_Draft.pdf",
+        "UKKA_Management of IgAN in Young adult and Children.pdf",
+        "UKKA_Initial Management of IgAN in Children and Young Adult.pdf",
+        "The_initial_management_of_IgA_vasculitis_(Henoch_Schonlein_Purpura)_in_children_and_young_people.md"
+      ],
+      "retrieved_sources": [
+        "KDIGO_2025_IgAN_IgAV_Guideline.pdf",
+        "The_initial_management_of_IgA_vasculitis_(Henoch_Schonlein_Purpura)_in_children_and_young_people.md",
+        "KDIGO_2025_Clinical_Practice_Guideline_for_the_Management_of_Immunoglobulin_A_Nephropathy_(IgAN)_and.md"
+      ],
+      "tp": 3,
+      "fp": 0,
+      "fn": 4,
+      "tn": 39,
+      "precision": 1.0,
+      "recall": 0.4286,
+      "f1": 0.6
+    },
+    {
+      "id": "aki_nutrition",
+      "query": "acute kidney injury nutrition feeding",
+      "topic": "aki",
+      "relevant_sources": [
+        "Nutritional_Considerations_in_Adult_Patients_with_Acute_Kidney_Injury.md",
+        "UKKA_AKI_Nutrition_Guide.pdf"
+      ],
+      "retrieved_sources": [
+        "UKKA_AKI_Nutrition_Guide.pdf",
+        "LN000445.pdf",
+        "Dietary_Guidelines_for_Chronic_Kidney_Disease_Management.md",
+        "Chronic_Kidney_Disease_-_Haemodialysis_Dietetic_Guideline.md",
+        "CKD_Nutritional_Recommendations_for_Peritoneal_Dialysis.md"
+      ],
+      "tp": 1,
+      "fp": 4,
+      "fn": 1,
+      "tn": 40,
+      "precision": 0.2,
+      "recall": 0.5,
+      "f1": 0.2857
+    },
+    {
+      "id": "nsaid_nephrotoxic",
+      "query": "NSAID ibuprofen nephrotoxic CKD avoid",
+      "topic": "medication",
+      "relevant_sources": [
+        "Chronic_Kidney_Disease_Management_Guidelines_for_Adults.md",
+        "UKKA_Hyperkalaemia_Management_Guideline.pdf",
+        "Notts_CKD_Management_Guidelines.pdf",
+        "Chronic_Kidney_Disease_Management_in_Primary_Care.md",
+        "chronic-kidney-disease-assessment-and-management-pdf-66143713055173.pdf"
+      ],
+      "retrieved_sources": [
+        "Clinical_Practice_Guideline_Anaemia_of_Chronic_Kidney_Disease.md",
+        "Clinical_Practice_Guidelines_Treatment_of_Acute_Hyperkalaemia_in_Adults.md",
+        "Chronic_Kidney_Disease_Assessment_and_Management_Guidelines.md",
+        "KDIGO_2025_Clinical_Practice_Guideline_for_the_Management_of_Immunoglobulin_A_Nephropathy_(IgAN)_and.md"
+      ],
+      "tp": 0,
+      "fp": 4,
+      "fn": 5,
+      "tn": 37,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "id": "ace_arb_proteinuria",
+      "query": "ACE inhibitor ARB proteinuria CKD",
+      "topic": "medication",
+      "relevant_sources": [
+        "KDIGO_2025_IgAN_IgAV_Guideline.pdf",
+        "KDIGO_2025_Clinical_Practice_Guideline_for_the_Management_of_Immunoglobulin_A_Nephropathy_(IgAN)_and.md",
+        "Notts_CKD_Management_Guidelines.pdf",
+        "The_management_of_complications_associated_with_lgA_vasculitis_(Henoch_Schonlein_Purpura)_in_childre.md",
+        "KDIGO_2024_CKD_Guideline_Draft.pdf",
+        "UKKA_Management of IgAN in Young adult and Children.pdf",
+        "chronic-kidney-disease-assessment-and-management-pdf-66143713055173.pdf"
+      ],
+      "retrieved_sources": [
+        "Chronic_Kidney_Disease_Management_Guidelines_for_Adults.md",
+        "KDIGO_2025_IgAN_IgAV_Guideline.pdf",
+        "KDIGO_2025_Anemia_Guideline_Draft.pdf",
+        "Chronic_Kidney_Disease_Management_in_Primary_Care.md",
+        "chronic-kidney-disease-assessment-and-management-pdf-66143713055173.pdf"
+      ],
+      "tp": 2,
+      "fp": 3,
+      "fn": 5,
+      "tn": 36,
+      "precision": 0.4,
+      "recall": 0.2857,
+      "f1": 0.3333
+    },
+    {
+      "id": "phosphate_binder",
+      "query": "phosphate binder CKD calcium sevelamer",
+      "topic": "medication",
+      "relevant_sources": [
+        "Diet_and_Haemodialysis.md",
+        "Commentary-on-the-NICE-Guideline-on-RRT-and-conservative-management.pdf",
+        "renal-replacement-therapy-and-conservative-management-pdf-66141542991301.pdf",
+        "Commentary_on_the_NICE_Guideline_on_Renal_Replacement_Therapy_and_Conservative_Management.md",
+        "NHS_ThinkKidneys_CKD_Nutritional_Guidelines.pdf",
+        "LN000445.pdf",
+        "Clinical Practice Guideline Haemodialysis.pdf",
+        "UKKA_Anaemia_CKD_Guideline_Sept2024.pdf",
+        "7-Chronic-Kidney-disease-Hd-dietetic-CG-1750-V3-final.pdf",
+        "Diet_and_Haemodialysis_for_Patients_on_Haemodialysis.md",
+        "Chronic_Kidney_Disease_Assessment_and_Management_Guidelines.md",
+        "Managing_your_food_and_fluid_intake_when_on_haemodialysis.md",
+        "chronic-kidney-disease-assessment-and-management-pdf-66143713055173.pdf",
+        "85089pfood.pdf",
+        "CKD_Nutritional_Recommendations_for_Peritoneal_Dialysis.md"
+      ],
+      "retrieved_sources": [
+        "Chronic_Kidney_Disease_Management_Guidelines_for_Adults.md",
+        "Chronic_Kidney_Disease_Assessment_and_Management_Guidelines.md",
+        "chronic-kidney-disease-assessment-and-management-pdf-66143713055173.pdf",
+        "Chronic_Kidney_Disease_Management_in_Primary_Care.md"
+      ],
+      "tp": 2,
+      "fp": 2,
+      "fn": 13,
+      "tn": 29,
+      "precision": 0.5,
+      "recall": 0.1333,
+      "f1": 0.2105
+    }
+  ]
+}

@@ -11,6 +11,8 @@ from .embeddings import EmbeddingGemmaWrapper
 from .vectorstore import CKDVectorStore
 from .retriever import CKDRetriever
 from .tree_retriever import TreeRetriever
+from .raptor_retriever import RaptorRetriever
+from .contextual_retriever import ContextualRetriever
 from .chain import SimpleRAGChain
 
 __all__ = [
@@ -18,5 +20,7 @@ __all__ = [
     "CKDVectorStore",
     "CKDRetriever",
     "TreeRetriever",
+    "RaptorRetriever",
+    "ContextualRetriever",
     "SimpleRAGChain",
 ]

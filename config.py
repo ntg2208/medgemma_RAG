@@ -39,8 +39,8 @@ EMBEDDING_DIMENSION = 768  # Full dimension for best quality
 # =============================================================================
 # Chunking Configuration
 # =============================================================================
-CHUNK_SIZE = 800  # tokens
-CHUNK_OVERLAP = 1  # number of trailing blocks to repeat (capped at 150 tokens)
+CHUNK_SIZE = 2000  # tokens (max per section-based chunk before sub-splitting)
+CHUNK_OVERLAP = 200  # characters of overlap between consecutive chunks
 
 # =============================================================================
 # Retrieval Configuration
@@ -62,6 +62,22 @@ SECTION_COLLECTION_NAME = "ckd_section_headings"
 # =============================================================================
 SECTION_K = 8               # Number of section headings to match in phase 1
 CHUNKS_PER_SECTION = 3       # Max chunks to retrieve per matched section
+
+# =============================================================================
+# RAPTOR Configuration
+# =============================================================================
+RAPTOR_COLLECTION_NAME = "ckd_raptor"
+RAPTOR_MAX_DEPTH = 3
+RAPTOR_CLUSTER_DIM = 10          # UMAP target dimensions
+RAPTOR_MIN_CLUSTER_PROB = 0.1    # GMM soft assignment threshold
+
+# =============================================================================
+# Contextual RAG Configuration
+# =============================================================================
+CONTEXTUAL_COLLECTION_NAME = "ckd_contextual"
+CONTEXTUAL_BM25_PATH = str(VECTORSTORE_DIR / "bm25_contextual.json")
+CONTEXTUAL_SEMANTIC_WEIGHT = 0.7
+CONTEXTUAL_BM25_WEIGHT = 0.3
 
 # =============================================================================
 # API Keys and External Services
@@ -255,12 +271,25 @@ class LLMAdapter:
     def generate(self, prompt: str) -> str:
         """Generate text from prompt (matches MedGemmaLLM.generate() interface).
 
+        Streams tokens to stdout when STREAM_LLM_OUTPUT=true.
+
         Args:
             prompt: Text prompt
 
         Returns:
             Generated text
         """
+        if os.getenv("STREAM_LLM_OUTPUT", "false").lower() == "true":
+            print("\n\033[90m── llm ──\033[0m", flush=True)
+            parts = []
+            for chunk in self._chat.stream(prompt):
+                text = getattr(chunk, "content", "") or ""
+                if text:
+                    print(text, end="", flush=True)
+                    parts.append(text)
+            print("\n\033[90m─────────\033[0m", flush=True)
+            return "".join(parts)
+
         response = self._chat.invoke(prompt)
         return response.content
 
@@ -340,5 +369,7 @@ def get_embeddings(dimension: int = None):
 
     from importlib import import_module
     embeddings_module = import_module("simple_rag.embeddings")
-    device = os.getenv("EMBEDDING_DEVICE", "cpu")
+    import torch
+    default_device = "cuda" if torch.cuda.is_available() else "cpu"
+    device = os.getenv("EMBEDDING_DEVICE", default_device)
     return embeddings_module.EmbeddingGemmaWrapper(dimension=dimension, device=device)

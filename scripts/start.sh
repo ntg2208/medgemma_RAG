@@ -1,6 +1,10 @@
 #!/bin/bash
 # Launch EC2 instance for MedGemma model server
-# Usage: ./scripts/start.sh [--on-demand]
+# Usage: ./scripts/start.sh [--on-demand] [--inspect]
+#
+# Flags:
+#   --inspect     Launch a cheap g4dn.xlarge (T4) for data inspection (no vLLM)
+#   --on-demand   Use on-demand pricing instead of spot
 #
 # Override with env vars:
 #   REGION=ap-northeast-2 ./scripts/start.sh
@@ -8,19 +12,31 @@
 
 set -e
 
-INSTANCE_NAME="medgemma-model-server"
 KEY_FILE="$HOME/.ssh/medgemma-key.pem"
-SSH_HOST="medgemma-gpu"
 SSH_CONFIG="$HOME/.ssh/config"
-
-# Instance config (override with env vars)
-INSTANCE_TYPE="${INSTANCE_TYPE:-g6.xlarge}"
 KEY_PAIR="${KEY_PAIR:-medgemma-key}"
 
 # Parse flags
 ON_DEMAND=false
-if [ "$1" = "--on-demand" ]; then
-  ON_DEMAND=true
+INSPECT=false
+for arg in "$@"; do
+  case "$arg" in
+    --on-demand) ON_DEMAND=true ;;
+    --inspect)   INSPECT=true ;;
+  esac
+done
+
+# Instance config — inspect mode uses cheaper g4dn (T4, no bfloat16)
+if [ "$INSPECT" = true ]; then
+  INSTANCE_TYPE="${INSTANCE_TYPE:-g4dn.xlarge}"
+  INSTANCE_NAME="medgemma-data-inspect"
+  SSH_HOST="medgemma-inspect"
+  EBS_SIZE=150
+else
+  INSTANCE_TYPE="${INSTANCE_TYPE:-g6.xlarge}"
+  INSTANCE_NAME="medgemma-model-server"
+  SSH_HOST="medgemma-gpu"
+  EBS_SIZE=150
 fi
 
 # ---------------------------------------------------------------------------
@@ -89,7 +105,7 @@ else
   REGION=$(terraform -chdir="$TF_DIR" output -raw region 2>/dev/null)
   SG_ID=$(terraform -chdir="$TF_DIR" output -raw security_group_id 2>/dev/null)
   INSTANCE_PROFILE=$(terraform -chdir="$TF_DIR" output -raw instance_profile_name 2>/dev/null)
-  AMI_ID="${AMI_ID:-ami-01bc785757b863550}"
+  AMI_ID="${AMI_ID:-ami-0223098712feea80c}"
 
   if [ -z "$SG_ID" ] || [ -z "$INSTANCE_PROFILE" ]; then
     echo "Error: Could not read Terraform outputs."
@@ -165,7 +181,7 @@ INSTANCE_ID=$(aws ec2 run-instances \
   --security-group-ids "$SG_ID" \
   $IAM_FLAG \
   $SPOT_FLAG \
-  --block-device-mappings '[{"DeviceName":"/dev/sda1","Ebs":{"VolumeSize":150,"VolumeType":"gp3","DeleteOnTermination":true}}]' \
+  --block-device-mappings "[{\"DeviceName\":\"/dev/sda1\",\"Ebs\":{\"VolumeSize\":$EBS_SIZE,\"VolumeType\":\"gp3\",\"DeleteOnTermination\":true}}]" \
   --user-data "$USER_DATA" \
   --tag-specifications \
     "ResourceType=instance,Tags=[{Key=Name,Value=$INSTANCE_NAME},{Key=Project,Value=medgemma-rag},{Key=Type,Value=$INSTANCE_MODE}]" \
@@ -209,10 +225,17 @@ fi
 echo ""
 echo "Instance running!"
 echo "  ID:     $INSTANCE_ID"
+echo "  Type:   $INSTANCE_TYPE ($INSTANCE_MODE)"
 echo "  Region: $REGION"
 echo "  IP:     $PUBLIC_IP"
 echo "  SSH:    ssh $SSH_HOST"
-echo "  LLM:    http://$PUBLIC_IP:8000"
-echo ""
 
-echo "Next: ssh $SSH_HOST  then  bash scripts/startup.sh --start"
+if [ "$INSPECT" = true ]; then
+  echo ""
+  echo "Data inspection instance (g4dn/T4 — no bfloat16, no vLLM)."
+  echo "Next: ssh $SSH_HOST"
+else
+  echo "  LLM:    http://$PUBLIC_IP:8000"
+  echo ""
+  echo "Next: ssh $SSH_HOST  then  bash scripts/startup.sh --start"
+fi
