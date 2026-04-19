@@ -52,6 +52,7 @@ htmlcov/
 # Claude Code / agent tooling
 .claude/
 .mcp.json
+CLAUDE.md
 .agents/
 .claude-code/
 .continue/
