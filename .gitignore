@@ -49,6 +49,19 @@ logs/
 htmlcov/
 .pytest_cache/
 
-# Claude Code
+# Claude Code / agent tooling
 .claude/
 .mcp.json
+.agents/
+.claude-code/
+.continue/
+.qwen/
+
+# Personal context (not for commit)
+personal_context*.txt
+
+# Vendored visualization libs
+lib/
+
+# Evaluation results (generated, not committed)
+eval/results/
