@@ -70,6 +70,15 @@ Things to do once before the next public update.
 - [ ] **Verify pytest test count.** Run `uv run pytest --collect-only -q`
       and add the actual function count back to `README.md` if you want a
       concrete figure.
+- [ ] **Re-run retriever evals across all four retrievers.** The committed
+      results currently only cover `CKDRetriever` (basic):
+      - `tests/eval_retriever.py` supports `--retriever {basic,tree,hybrid}`
+        but the published confusion matrix is basic-only. Re-run for tree
+        and hybrid (and add raptor / contextual support if missing) and
+        publish a comparison table in `docs/evaluation.md`.
+      - `eval/run_retriever_comparison.py` was last run with `--retriever flat`
+        (2026-04-16). Re-run with `--retriever both` (and extend to RAPTOR /
+        Contextual) to populate the side-by-side RAGAS table.
 
 ---
 

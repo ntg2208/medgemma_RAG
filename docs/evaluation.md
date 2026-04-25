@@ -311,6 +311,90 @@ Results are saved as JSON in `eval/results/` (gitignored). Schema:
 
 ---
 
+## Retriever Evaluation Results
+
+The retriever is evaluated separately from the end-to-end pipeline through
+two complementary harnesses.
+
+### A. Source-level confusion matrix (`tests/eval_retriever.py`)
+
+Ground truth is built from actual chunk content by keyword + density
+filtering (see `tests/build_eval_ground_truth.py`), so retrieval is
+measured against sources that genuinely discuss each topic rather than
+filename guesses. Saved to `tests/retriever_eval_results.json` (committed)
+and `tests/retriever_confusion_matrix.png`.
+
+**Latest run** — retriever `basic` (`CKDRetriever`), `k=5`, 32 queries
+across 13 topics:
+
+| | TP | FP | FN | TN | Precision | Recall | F1 | Accuracy |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| Aggregate | 58 | 51 | 154 | 1209 | **0.532** | **0.274** | **0.361** | **0.861** |
+
+**Per-topic F1 (selected):**
+
+| Topic | n | Precision | Recall | F1 |
+|-------|--:|---:|---:|---:|
+| Hyperkalaemia | 3 | 1.000 | 0.778 | **0.833** |
+| Anaemia | 4 | 0.854 | 0.667 | 0.742 |
+| Blood pressure | 3 | 1.000 | 0.528 | 0.675 |
+| Haemodialysis | 1 | 1.000 | 0.375 | 0.545 |
+| IgAN | 2 | 0.625 | 0.381 | 0.443 |
+| Exercise | 2 | 0.750 | 0.250 | 0.375 |
+| CKD general | 2 | 0.583 | 0.250 | 0.348 |
+| Vascular access | 2 | 0.292 | 0.417 | 0.333 |
+| AKI | 1 | 0.200 | 0.500 | 0.286 |
+| Diet | 7 | 0.386 | 0.152 | 0.209 |
+| Lifestyle | 1 | 0.250 | 0.167 | 0.200 |
+| Medication | 3 | 0.300 | 0.140 | 0.181 |
+| RRT | 1 | 0.000 | 0.000 | 0.000 |
+
+> **Caveat.** Ground truth is built by keyword matching; retrievers score
+> by semantic similarity. The metrics are a useful proxy but will
+> systematically understate recall for semantically-adjacent but
+> lexically-distinct sources. The "diet", "medication", and "lifestyle"
+> topics are particularly affected because their relevant sources span
+> many filename variants.
+
+```bash
+# Regenerate ground truth from current chunks
+uv run python tests/build_eval_ground_truth.py
+
+# Re-evaluate (writes retriever_eval_results.json + confusion_matrix.png)
+uv run python tests/eval_retriever.py --retriever basic  --k 5
+uv run python tests/eval_retriever.py --retriever tree   --k 5
+uv run python tests/eval_retriever.py --retriever hybrid --k 5
+```
+
+### B. End-to-end RAGAS retriever comparison (`eval/run_retriever_comparison.py`)
+
+Runs the full chain (retrieval → MedGemma → RAGAS scoring) over the 10
+hand-authored queries in `eval/test_queries.json`.
+
+**Latest run** — `eval/results/comparison_20260416_120050.json` (2026-04-16),
+flat retriever only, 10 queries:
+
+| Metric | Score |
+|--------|------:|
+| Faithfulness | 0.568 |
+| Answer relevancy | 0.775 |
+| Context precision | 0.485 |
+| Context recall | 0.283 |
+| **Average** | **0.528** |
+
+Tree / RAPTOR / Contextual were not yet wired into this harness when the
+run was taken; comparing them is a TODO (see [`docs/TODO.md`](TODO.md)).
+
+```bash
+uv run python eval/run_retriever_comparison.py --retriever flat   # default
+uv run python eval/run_retriever_comparison.py --retriever both   # flat + tree
+```
+
+Requires `RAGAS_JUDGE_API_KEY` in `.env`. Eval results land in
+`eval/results/` (gitignored).
+
+---
+
 ## Latest Run Summary (2026-04-24, ship snapshot)
 
 File: `eval/results/agentic_eval_20260424_204001.json` (20 queries → 17 in

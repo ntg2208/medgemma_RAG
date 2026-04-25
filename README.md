@@ -346,6 +346,33 @@ RAGAS uses a separate judge LLM (Gemini, OpenRouter, or OpenAI) to score respons
 - Actionability score
 - Medical accuracy indicators (NSAID avoidance, safe dosing)
 
+### Retriever evaluation (latest)
+
+Two retriever-only harnesses sit upstream of the end-to-end eval. Numbers
+below are the latest runs; full per-topic and per-query breakdowns live in
+[`docs/evaluation.md`](docs/evaluation.md).
+
+**Source-level confusion matrix** (`tests/eval_retriever.py`, `CKDRetriever`,
+`k=5`, 32 queries × 13 topics; ground truth in
+`tests/retriever_eval_dataset.json`):
+
+| Precision | Recall | F1 | Accuracy |
+|---:|---:|---:|---:|
+| 0.532 | 0.274 | 0.361 | 0.861 |
+
+Per-topic F1 ranges from **0.833** (hyperkalaemia) down to **0.000** (RRT) —
+keyword-based topics with broad source coverage (diet, medication,
+lifestyle) systematically underperform here because ground truth is built
+by lexical matching while the retriever scores semantically.
+
+**End-to-end RAGAS retriever comparison** (`eval/run_retriever_comparison.py`,
+flat retriever, 10 queries from `eval/test_queries.json`, run
+2026-04-16):
+
+| Faithfulness | Answer relevancy | Context precision | Context recall | Average |
+|---:|---:|---:|---:|---:|
+| 0.568 | 0.775 | 0.485 | 0.283 | 0.528 |
+
 ### Latest evaluation run (2026-04-24, ship snapshot)
 
 Run: `eval/results/agentic_eval_20260424_204001.json` — 17 in-scope queries per
