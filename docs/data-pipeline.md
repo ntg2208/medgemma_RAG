@@ -3,7 +3,7 @@
 ## Overview
 
 ```
-PDF (24 clinical guidelines)
+PDF (22 clinical guidelines)
  |
  |  Docling v2.72.0 (OCR + table recognition)
  v
@@ -34,7 +34,7 @@ ChromaDB                Data/vectorstore/, collection "ckd_guidelines"
 
 **Tool:** IBM Docling v2.72.0
 **Scripts:** `scripts/ocr-process.sh` (batch), `scripts/ocr-single.py` (single file)
-**Input:** `Data/documents/` (24 PDFs, ~28MB)
+**Input:** `Data/documents/` (22 PDFs, ~28MB)
 **Output:** `Data/processed_ocr/` (MD + JSON per document, ~35MB)
 
 Docling settings:
@@ -135,9 +135,9 @@ Each block tracks its nearest parent heading for section metadata.
 
 ### Chunk Packing (Greedy Bin Packing)
 
-- **Chunk size:** 800 tokens (configurable in `config.py`)
+- **Chunk size:** `CHUNK_SIZE = 2000` tokens (configurable in `config.py`)
 - **Token estimation:** `len(text) // 4` (~4 chars per token)
-- **Overlap:** 1 trailing block from previous chunk (capped at 150 tokens)
+- **Overlap:** `CHUNK_OVERLAP = 200` trailing blocks from previous chunk, capped at 150 tokens via `overlap_token_cap` in `Data/preprocessing.py:153` (so the cap, not the block count, is the binding constraint in practice). The comment in `config.py:43` is currently stale — see [`docs/TODO.md`](TODO.md).
 - **Atomic rule:** Blocks are never split across chunks
 - **Heading binding:** Heading + following block are paired to prevent orphaned headings
 
@@ -169,21 +169,24 @@ Each chunk carries:
 ## Stage 6: Retrieval
 
 **CKDRetriever** (primary):
-- Semantic similarity search with score threshold (default 0.7)
+- Semantic similarity search with score threshold (default `SIMILARITY_THRESHOLD = 0.3`)
 - Medical synonym expansion (e.g. "ckd" -> ["chronic kidney disease", "renal disease"])
 
 **HybridRetriever** (alternative):
-- Reciprocal rank fusion: semantic (0.7 weight) + keyword (0.3 weight)
+- Reciprocal rank fusion: semantic + keyword search
+
+For the full retriever inventory (flat / tree / RAPTOR / contextual) see
+[`docs/modules/simple-rag.md`](modules/simple-rag.md).
 
 ---
 
 ## Configuration (`config.py`)
 
 ```python
-CHUNK_SIZE = 800          # tokens
-CHUNK_OVERLAP = 1         # trailing blocks (max 150 tokens)
+CHUNK_SIZE = 2000         # tokens
+CHUNK_OVERLAP = 200       # trailing blocks (capped at 150 tokens)
 TOP_K_RESULTS = 5
-SIMILARITY_THRESHOLD = 0.7
+SIMILARITY_THRESHOLD = 0.3
 CHROMA_COLLECTION_NAME = "ckd_guidelines"
 CHROMA_PERSIST_DIRECTORY = "Data/vectorstore"
 ```
@@ -192,7 +195,7 @@ CHROMA_PERSIST_DIRECTORY = "Data/vectorstore"
 
 ## Source Documents
 
-24 clinical guidelines covering CKD management:
+22 clinical guidelines covering CKD management:
 - KDIGO guidelines (CKD, Anemia, IgAN/IgAV)
 - NICE guidelines (CKD assessment, Hypertension)
 - UK Kidney Association clinical practice guidelines

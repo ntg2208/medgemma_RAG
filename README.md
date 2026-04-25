@@ -5,10 +5,15 @@ A 3-tier Retrieval-Augmented Generation (RAG) system for Chronic Kidney Disease 
 ## Overview
 
 This project provides an AI-powered assistant for CKD patients and healthcare providers, offering evidence-based information from:
-- **NICE NG203 Guidelines** - CKD assessment and management
-- **KidneyCareUK Resources** - Dietary and patient information
-- **UK Kidney Association (UKKA)** - Clinical guidance
-- **KDIGO Guidelines** - International CKD, anemia, and IgAN guidelines
+- **NICE NG203 Guidelines** — CKD assessment and management
+- **KidneyCareUK Resources** — Dietary and patient information
+- **UK Kidney Association (UKKA)** — Clinical guidance
+- **KDIGO Guidelines** — International CKD, anemia, and IgAN guidelines
+
+22 clinical-guideline PDFs in total. The full document index is in
+[`docs/data-pipeline.md`](docs/data-pipeline.md).
+
+> 📚 **Looking for deeper docs?** Start with [`docs/README.md`](docs/README.md) — the documentation index.
 
 ## Features
 
@@ -46,7 +51,7 @@ This project provides an AI-powered assistant for CKD patients and healthcare pr
 ```
 medgemma_RAG/
 ├── Data/
-│   ├── documents/               # Source PDFs (9 clinical guidelines)
+│   ├── documents/               # Source PDFs (22 clinical guidelines)
 │   ├── processed_ocr/           # OCR output from Docling (markdown + JSON)
 │   ├── cleaned_documents/       # LLM-cleaned markdown with metadata
 │   ├── processed_with_sections/ # Section-split docs (main_text.md, references.md, metadata.json)
@@ -89,8 +94,11 @@ medgemma_RAG/
 │       └── rag_agent.py
 │
 ├── eval/
-│   ├── run_retriever_comparison.py  # RAGAS comparison (flat vs tree)
-│   └── test_queries.json             # Hand-authored eval queries
+│   ├── run_retriever_comparison.py   # RAGAS comparison (flat vs tree retriever)
+│   ├── run_agentic_eval.py           # End-to-end RAGAS + CKD + system metrics
+│   ├── test_queries.json             # 10 retriever-comparison queries
+│   ├── test_queries_agentic.json     # 20 agentic / multi-agent queries
+│   └── results/                      # Timestamped JSON output (gitignored)
 │
 ├── scripts/
 │   ├── build_raptor_index.py        # Build RAPTOR tree + index into ChromaDB
@@ -98,11 +106,24 @@ medgemma_RAG/
 │   ├── visualize_raptor.py          # Render RAPTOR tree as interactive HTML
 │   └── ...                          # OCR, EC2, S3, deployment scripts
 │
-├── tests/                       # Pytest test suite (50+ tests)
+├── tests/                       # Pytest test suite
 │   ├── build_eval_ground_truth.py    # Keyword-based ground-truth builder
 │   ├── eval_retriever.py             # Confusion-matrix retriever evaluator
 │   ├── retriever_eval_dataset.json   # Generated ground-truth dataset
 │   └── retriever_eval_results.json   # Latest evaluation run output
+│
+├── docs/                        # Documentation (see docs/README.md for index)
+│   ├── README.md                # Documentation index / TOC
+│   ├── architecture.md          # System architecture (3 levels, deployment)
+│   ├── data-pipeline.md         # PDF → ChromaDB pipeline detail
+│   ├── evaluation.md            # RAGAS concepts, run guide, latest results
+│   ├── usage.md                 # Terminal demo + Gradio UI walkthrough
+│   ├── TODO.md                  # Outstanding fix / update / upgrade items
+│   ├── modules/                 # Per-tier deep dives
+│   │   ├── simple-rag.md
+│   │   ├── agentic-rag.md
+│   │   └── multi-agent-rag.md
+│   └── deployment/              # EC2 + vLLM operational docs
 │
 ├── app.py                       # Gradio UI entry point
 ├── main.py                      # CLI terminal chat (all 3 levels)
@@ -228,8 +249,8 @@ Key settings in `config.py`:
 | Setting | Description | Default |
 |---------|-------------|---------|
 | `EMBEDDING_DIMENSION` | Embedding vector size | 768 |
-| `CHUNK_SIZE` | Document chunk size (tokens) | 800 |
-| `CHUNK_OVERLAP` | Trailing blocks to carry as overlap | 1 |
+| `CHUNK_SIZE` | Document chunk size (tokens) | 2000 |
+| `CHUNK_OVERLAP` | Trailing blocks to carry as overlap (capped at 150 tokens) | 200 |
 | `TOP_K_RESULTS` | Documents to retrieve | 5 |
 | `SIMILARITY_THRESHOLD` | Minimum similarity score | 0.3 |
 | `SECTION_K` | Section headings to match (tree retrieval) | 8 |
@@ -242,7 +263,11 @@ Key settings in `config.py`:
 | `RAGAS_JUDGE_MODEL` | Judge LLM model ID | `google/gemini-2.0-flash-001` |
 | `RAGAS_JUDGE_API_KEY` | API key for judge provider | (required) |
 | `RAGAS_JUDGE_BASE_URL` | OpenAI-compatible endpoint | `https://openrouter.ai/api/v1` |
-| `RAGAS_EMBEDDINGS_MODEL` | Embeddings for relevancy metric | `text-embedding-3-small` |
+| `RAGAS_JUDGE_TIMEOUT` | Per-call timeout (seconds) | `600` |
+| `RAGAS_JUDGE_MAX_RETRIES` | Per-call retries on failure | `3` |
+| `RAGAS_EMBEDDINGS_MODEL` | Embeddings for relevancy metric | `gemini-embedding-2` |
+| `RAGAS_EMBEDDINGS_BASE_URL` | Embeddings endpoint | `https://generativelanguage.googleapis.com/v1beta/openai/` |
+| `RAGAS_EMBEDDINGS_API_KEY` | Falls back to `GOOGLE_API_KEY` | (required) |
 
 ### Remote Model Server Config
 
@@ -289,13 +314,30 @@ uv run python eval/run_retriever_comparison.py --retriever both
 
 Requires `RAGAS_JUDGE_API_KEY` in `.env`.
 
+### Agentic + Multi-Agent end-to-end evaluation
+
+`eval/run_agentic_eval.py` runs the Agentic RAG (LangGraph) and Multi-Agent
+orchestrator over `eval/test_queries_agentic.json` (20 queries spanning diet,
+medication, lifestyle, stages, dialysis, OOS, clarification, multi-domain, and
+PII handling). It scores RAGAS, CKD-specific, and system-level metrics
+(intent routing, PII detection, agent routing) and writes a timestamped JSON to
+`eval/results/`.
+
+```bash
+uv run python eval/run_agentic_eval.py                 # both systems
+uv run python eval/run_agentic_eval.py --system agentic
+uv run python eval/run_agentic_eval.py --skip-ragas    # CKD + system only (no judge)
+```
+
+See [`docs/evaluation.md`](docs/evaluation.md) for the full guide and the latest run summary.
+
 ### RAGAS Metrics (v0.4.x)
 - **Faithfulness**: Is the answer grounded in context?
 - **Answer Relevancy**: Does it address the question?
 - **Context Precision**: Are retrieved docs relevant?
 - **Context Recall**: Are all relevant docs retrieved?
 
-RAGAS uses a separate judge LLM (Gemini, OpenRouter, or OpenAI) to score responses. Configure via `RAGAS_JUDGE_*` environment variables.
+RAGAS uses a separate judge LLM (Gemini, OpenRouter, or OpenAI) to score responses. Configure via `RAGAS_JUDGE_*` environment variables. Embeddings for the answer-relevancy metric are configured separately via `RAGAS_EMBEDDINGS_*` (defaults to Google AI Studio's `gemini-embedding-2`, since OpenRouter does not serve embeddings).
 
 ### Custom CKD Metrics
 - Citation accuracy (regex-based source detection)
@@ -303,6 +345,66 @@ RAGAS uses a separate judge LLM (Gemini, OpenRouter, or OpenAI) to score respons
 - Medical disclaimer presence
 - Actionability score
 - Medical accuracy indicators (NSAID avoidance, safe dosing)
+
+### Latest evaluation run (2026-04-24, ship snapshot)
+
+Run: `eval/results/agentic_eval_20260424_204001.json` — 17 in-scope queries per
+system.
+
+**Run parameters (as-run, baseline configuration):**
+
+| Component | Value |
+|-----------|-------|
+| Generator LLM | MedGemma 1.5 4B (`google/medgemma-1.5-4b-it`) on EC2 vLLM |
+| Generation `temperature` | 0.7 (lowered to 0.3 in `scripts/startup.sh` after this run) |
+| Embeddings | EmbeddingGemma 300M, dim 768 |
+| Retriever (Agentic RAG) | `CKDRetriever` (flat semantic + medical-term expansion), `TOP_K_RESULTS=5`, `SIMILARITY_THRESHOLD=0.3` |
+| Retriever (Multi-Agent → RAG agent) | Same `CKDRetriever` |
+| Prompts | Baseline `RAG_SYSTEM_PROMPT` + `RAG_PROMPT_TEMPLATE` from `config.py` |
+| Architecture | Default LangGraph pipeline + default orchestrator (no overrides) |
+| Judge LLM | `google/gemini-2.0-flash-001` via OpenRouter |
+| Judge embeddings (RAGAS relevancy) | `gemini-embedding-2` via Google AI Studio |
+| Test queries | `eval/test_queries_agentic.json` (20 total, 17 in scope per system) |
+
+| Metric | Agentic RAG | Multi-Agent RAG |
+|--------|------------:|----------------:|
+| Intent routing accuracy | **0.882** (15/17) | — |
+| PII detection accuracy | **1.000** | — |
+| Agent routing precision | — | 0.598 |
+| Agent routing recall | — | 0.794 |
+| RAGAS faithfulness | 0.448 | n/a* |
+| RAGAS answer relevancy | 0.579 | n/a* |
+| RAGAS context precision | 0.680 | n/a* |
+| RAGAS context recall | 0.256 | n/a* |
+| Citation score | 0.588 | 0.635 |
+| Stage appropriateness | 0.537 | 0.584 |
+| Disclaimer present | 0.765 | 0.529 |
+| Actionability | 0.624 | 0.682 |
+| Mean response time | 9.6 s | 10.5 s |
+
+\* RAGAS scoring is not yet wired into the multi-agent path because the
+synthesized response does not surface per-agent contexts — see "Known
+limitations" below.
+
+**Known limitations (planned for the next iteration):**
+
+- **Faithfulness 0.45** is below the "Needs Work" threshold (0.50). MedGemma
+  occasionally adds clinical reasoning beyond the retrieved chunks; tightening
+  the prompt and lowering temperature (already changed to 0.3 in
+  `scripts/startup.sh`, not yet re-evaluated) is the next experiment.
+- **Context recall 0.26** mostly reflects sparse `reference` answers in
+  `test_queries_agentic.json` rather than retriever miss — this metric needs
+  more curated ground-truth references.
+- **Two intent-routing misses**: `agentic_direct_02` ("What does eGFR stand
+  for?") routes to RETRIEVAL instead of DIRECT; `clarification_01` ("What
+  should I do about my levels?") routes to OUT_OF_SCOPE instead of
+  CLARIFICATION. Both indicate the keyword-based classifier in
+  `agentic_rag/nodes.py` needs broader coverage.
+- **Multi-agent over-fans-out to RAG**: 9 of 17 queries triggered the
+  `multi` route with the RAG agent included, hurting routing precision.
+  Threshold tuning in `multi_agent_rag/orchestrator.py` is the obvious lever.
+- **Multi-agent RAGAS scoring** is empty in this run — the orchestrator does
+  not currently propagate retrieved contexts into the eval harness.
 
 ## Testing
 

@@ -1,0 +1,186 @@
+{
+  "description": "Test queries for evaluating Agentic RAG and Multi-Agent RAG systems on CKD domain",
+  "queries": [
+    {
+      "id": "agentic_retrieval_01",
+      "query": "What are the potassium restrictions for CKD stage 3 patients?",
+      "reference": "CKD stage 3 patients should limit potassium intake to 2000-3000mg per day. High potassium foods to avoid include bananas, oranges, potatoes, and tomatoes.",
+      "category": "diet",
+      "expected_intent": "RETRIEVAL",
+      "ckd_stage": 3,
+      "expected_agents": ["diet"]
+    },
+    {
+      "id": "agentic_retrieval_02",
+      "query": "Why should CKD patients avoid NSAIDs like ibuprofen?",
+      "reference": "NSAIDs such as ibuprofen and naproxen are nephrotoxic and can worsen kidney function. They reduce blood flow to the kidneys and should be avoided in CKD patients. Paracetamol is a safer alternative for pain relief.",
+      "category": "medication",
+      "expected_intent": "RETRIEVAL",
+      "ckd_stage": null,
+      "expected_agents": ["medication"]
+    },
+    {
+      "id": "agentic_retrieval_03",
+      "query": "When are ACE inhibitors recommended for kidney disease?",
+      "reference": "ACE inhibitors and ARBs are recommended as first-line treatment for CKD patients with proteinuria. They reduce proteinuria and slow progression of kidney disease.",
+      "category": "medication",
+      "expected_intent": "RETRIEVAL",
+      "ckd_stage": null,
+      "expected_agents": ["medication", "rag"]
+    },
+    {
+      "id": "agentic_retrieval_04",
+      "query": "What exercise recommendations exist for CKD patients?",
+      "reference": "CKD patients are encouraged to engage in regular moderate-intensity exercise such as walking, cycling, or swimming for at least 150 minutes per week. Exercise improves cardiovascular health and quality of life.",
+      "category": "lifestyle",
+      "expected_intent": "RETRIEVAL",
+      "ckd_stage": null,
+      "expected_agents": ["lifestyle"]
+    },
+    {
+      "id": "agentic_retrieval_05",
+      "query": "What eGFR level indicates CKD stage 4?",
+      "reference": "CKD stage 4 is defined by an eGFR of 15-29 mL/min/1.73m2, indicating severely reduced kidney function. At this stage, preparation for renal replacement therapy should begin.",
+      "category": "stages",
+      "expected_intent": "RETRIEVAL",
+      "ckd_stage": null,
+      "expected_agents": ["rag"]
+    },
+    {
+      "id": "agentic_retrieval_06",
+      "query": "When should dialysis preparation begin for CKD patients?",
+      "reference": "Dialysis preparation should begin in CKD stage 4 (eGFR 15-29) and typically includes creating vascular access, patient education about dialysis modalities, and referral to a nephrologist.",
+      "category": "dialysis",
+      "expected_intent": "RETRIEVAL",
+      "ckd_stage": null,
+      "expected_agents": ["rag"]
+    },
+    {
+      "id": "agentic_retrieval_07",
+      "query": "What is the recommended protein intake for pre-dialysis CKD patients?",
+      "reference": "Pre-dialysis CKD patients in stages 3-5 should consume 0.6-0.8 g protein per kg body weight per day. Protein intake may increase once dialysis begins.",
+      "category": "diet",
+      "expected_intent": "RETRIEVAL",
+      "ckd_stage": 4,
+      "expected_agents": ["diet"]
+    },
+    {
+      "id": "agentic_retrieval_08",
+      "query": "How much sodium should a CKD patient consume daily?",
+      "reference": "CKD patients in stages 3-5 should limit sodium intake to less than 2000mg per day. This involves avoiding processed foods, canned soups, and adding salt to meals.",
+      "category": "diet",
+      "expected_intent": "RETRIEVAL",
+      "ckd_stage": 3,
+      "expected_agents": ["diet"]
+    },
+    {
+      "id": "agentic_direct_01",
+      "query": "What is CKD?",
+      "reference": "Chronic Kidney Disease (CKD) is a long-term condition where the kidneys do not work as well as they should. It is characterized by a gradual loss of kidney function over time.",
+      "category": "general",
+      "expected_intent": "DIRECT",
+      "ckd_stage": null,
+      "expected_agents": ["rag"]
+    },
+    {
+      "id": "agentic_direct_02",
+      "query": "What does eGFR stand for?",
+      "reference": "eGFR stands for estimated Glomerular Filtration Rate. It measures how well the kidneys filter blood and is used to classify CKD stages.",
+      "category": "general",
+      "expected_intent": "DIRECT",
+      "ckd_stage": null,
+      "expected_agents": ["rag"]
+    },
+    {
+      "id": "agentic_oos_01",
+      "query": "What is the best recipe for chocolate cake?",
+      "reference": null,
+      "category": "out_of_scope",
+      "expected_intent": "OUT_OF_SCOPE",
+      "ckd_stage": null,
+      "expected_agents": []
+    },
+    {
+      "id": "agentic_oos_02",
+      "query": "Who won the football world cup in 2022?",
+      "reference": null,
+      "category": "out_of_scope",
+      "expected_intent": "OUT_OF_SCOPE",
+      "ckd_stage": null,
+      "expected_agents": []
+    },
+    {
+      "id": "multi_agent_01",
+      "query": "What diet and exercise recommendations should a stage 3 CKD patient follow?",
+      "reference": "CKD stage 3 patients should limit potassium to 2000-3000mg, phosphorus to 800-1000mg, and sodium to under 2000mg daily. Exercise should include 150 minutes of moderate activity per week.",
+      "category": "multi_domain",
+      "expected_intent": "RETRIEVAL",
+      "ckd_stage": 3,
+      "expected_agents": ["diet", "lifestyle"]
+    },
+    {
+      "id": "multi_agent_02",
+      "query": "I have stage 4 CKD and take ibuprofen for pain. What medication changes and dietary adjustments should I make?",
+      "reference": "Ibuprofen (NSAID) should be avoided in CKD as it is nephrotoxic. Paracetamol is a safer alternative. Stage 4 dietary restrictions include potassium 2000-2500mg, phosphorus 800-1000mg, sodium under 2000mg, and protein 0.6-0.8 g/kg/day.",
+      "category": "multi_domain",
+      "expected_intent": "RETRIEVAL",
+      "ckd_stage": 4,
+      "expected_agents": ["medication", "diet"]
+    },
+    {
+      "id": "multi_agent_03",
+      "query": "What lifestyle changes including diet, exercise, and blood pressure management are important for early CKD?",
+      "reference": "Early CKD management includes monitoring blood pressure (target <130/80), regular exercise (150 min/week), limiting sodium intake, and maintaining a healthy weight. ACE inhibitors or ARBs may be prescribed for blood pressure and kidney protection.",
+      "category": "multi_domain",
+      "expected_intent": "RETRIEVAL",
+      "ckd_stage": 2,
+      "expected_agents": ["lifestyle", "diet", "rag"]
+    },
+    {
+      "id": "pii_test_01",
+      "query": "My name is John Smith and my NHS number is 943 476 5919. What potassium foods should I avoid with stage 3 CKD?",
+      "reference": "CKD stage 3 patients should limit potassium intake to 2000-3000mg per day. High potassium foods to avoid include bananas, oranges, potatoes, and tomatoes.",
+      "category": "pii_handling",
+      "expected_intent": "RETRIEVAL",
+      "ckd_stage": 3,
+      "expected_agents": ["diet"],
+      "contains_pii": true
+    },
+    {
+      "id": "stage_specific_01",
+      "query": "What are the specific dietary limits for CKD stage 5 patients on dialysis?",
+      "reference": "CKD stage 5 patients should limit potassium to 1500-2000mg, phosphorus to 800-1000mg, sodium to under 2000mg, and adjust protein to 0.6-0.8 g/kg/day pre-dialysis (may increase on dialysis).",
+      "category": "diet",
+      "expected_intent": "RETRIEVAL",
+      "ckd_stage": 5,
+      "expected_agents": ["diet"]
+    },
+    {
+      "id": "medication_safety_01",
+      "query": "Is metformin safe for a CKD stage 3 patient with diabetes?",
+      "reference": "Metformin requires caution in CKD. Dose adjustment is needed when eGFR is 30-45, and it should be stopped if eGFR falls below 30 due to risk of lactic acidosis.",
+      "category": "medication",
+      "expected_intent": "RETRIEVAL",
+      "ckd_stage": 3,
+      "expected_agents": ["medication"]
+    },
+    {
+      "id": "lifestyle_bp_01",
+      "query": "How should CKD patients manage their blood pressure at home?",
+      "reference": "CKD patients should monitor blood pressure regularly, aiming for targets set by their healthcare provider. Lifestyle measures include reducing sodium intake, regular exercise, stress management, and medication adherence.",
+      "category": "lifestyle",
+      "expected_intent": "RETRIEVAL",
+      "ckd_stage": null,
+      "expected_agents": ["lifestyle"]
+    },
+    {
+      "id": "clarification_01",
+      "query": "What should I do about my levels?",
+      "reference": null,
+      "category": "clarification",
+      "expected_intent": "CLARIFICATION",
+      "ckd_stage": null,
+      "expected_agents": []
+    }
+  ]
+}

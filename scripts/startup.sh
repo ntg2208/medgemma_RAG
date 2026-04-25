@@ -62,7 +62,7 @@ if [ "$1" = "--start" ]; then
     vllm/vllm-openai:latest \
     --model google/medgemma-1.5-4b-it \
     --dtype bfloat16 \
-    --override-generation-config '{"temperature":0.7,"top_p":0.9,"frequency_penalty":0.4,"presence_penalty":0.3}' \
+    --override-generation-config '{"temperature":0.3,"top_p":0.9,"frequency_penalty":0.4,"presence_penalty":0.3}' \
     --max-model-len 65536 \
     --max-num-seqs 8 \
     --gpu-memory-utilization 0.85 \

@@ -350,9 +350,23 @@ RAGAS_JUDGE_BASE_URL = os.getenv(
     "https://openrouter.ai/api/v1",  # Default to OpenRouter (free tier available)
 )
 
-# Embeddings for RAGAS answer relevancy metric
-# Uses the same judge provider by default
-RAGAS_EMBEDDINGS_MODEL = os.getenv("RAGAS_EMBEDDINGS_MODEL", "text-embedding-3-small")
+# Embeddings for RAGAS answer relevancy metric.
+# Defaults to Google AI Studio's OpenAI-compatible endpoint with gemini-embedding-2.
+# OpenRouter (the default judge) does not serve embeddings, so this is split out.
+RAGAS_EMBEDDINGS_MODEL = os.getenv("RAGAS_EMBEDDINGS_MODEL", "gemini-embedding-2")
+RAGAS_EMBEDDINGS_BASE_URL = os.getenv(
+    "RAGAS_EMBEDDINGS_BASE_URL",
+    "https://generativelanguage.googleapis.com/v1beta/openai/",
+)
+RAGAS_EMBEDDINGS_API_KEY = os.getenv(
+    "RAGAS_EMBEDDINGS_API_KEY",
+    os.getenv("GOOGLE_API_KEY", ""),
+)
+
+# Timeout (seconds) for each judge LLM call and each RAGAS job.
+# Bump this when the judge endpoint is slow (free tier, local vLLM, long prompts).
+RAGAS_JUDGE_TIMEOUT = int(os.getenv("RAGAS_JUDGE_TIMEOUT", "600"))
+RAGAS_JUDGE_MAX_RETRIES = int(os.getenv("RAGAS_JUDGE_MAX_RETRIES", "3"))
 
 
 def get_embeddings(dimension: int = None):

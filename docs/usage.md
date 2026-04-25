@@ -96,7 +96,7 @@ You: What potassium foods should a CKD stage 3 patient avoid?
 
 ## Level 2: Agentic RAG (`agentic`)
 
-See `docs/agentic_rag_notes.md` for the full architecture. In the terminal you see each LangGraph node fire in sequence:
+See [`docs/modules/agentic-rag.md`](modules/agentic-rag.md) for the full architecture. In the terminal you see each LangGraph node fire in sequence:
 
 ```
   12:34:01 pii_check         pii_check

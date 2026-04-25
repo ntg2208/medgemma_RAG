@@ -19,6 +19,7 @@ from dataclasses import dataclass
 from typing import Optional
 
 from ragas import evaluate
+from ragas.run_config import RunConfig
 from ragas.dataset_schema import EvaluationDataset, SingleTurnSample
 from ragas.llms import LangchainLLMWrapper
 from ragas.embeddings.base import LangchainEmbeddingsWrapper
@@ -75,7 +76,13 @@ def _get_judge_llm():
     import os
     from langchain_openai import ChatOpenAI
     from langchain_core.callbacks import StreamingStdOutCallbackHandler
-    from config import RAGAS_JUDGE_MODEL, RAGAS_JUDGE_API_KEY, RAGAS_JUDGE_BASE_URL
+    from config import (
+        RAGAS_JUDGE_MODEL,
+        RAGAS_JUDGE_API_KEY,
+        RAGAS_JUDGE_BASE_URL,
+        RAGAS_JUDGE_TIMEOUT,
+        RAGAS_JUDGE_MAX_RETRIES,
+    )
 
     if not RAGAS_JUDGE_API_KEY:
         raise ValueError(
@@ -90,6 +97,8 @@ def _get_judge_llm():
         api_key=RAGAS_JUDGE_API_KEY,
         base_url=RAGAS_JUDGE_BASE_URL,
         temperature=0,
+        timeout=RAGAS_JUDGE_TIMEOUT,
+        max_retries=RAGAS_JUDGE_MAX_RETRIES,
         streaming=stream_judge,
         callbacks=[StreamingStdOutCallbackHandler()] if stream_judge else None,
     )
@@ -98,15 +107,26 @@ def _get_judge_llm():
 def _get_judge_embeddings():
     """Create embeddings for RAGAS answer relevancy metric.
 
-    Uses OpenAI-compatible embedding endpoint from the same provider.
+    Uses its own OpenAI-compatible endpoint (defaults to Google AI Studio's
+    gemini-embedding-2) since the judge provider may not serve embeddings.
     """
     from langchain_openai import OpenAIEmbeddings
-    from config import RAGAS_EMBEDDINGS_MODEL, RAGAS_JUDGE_API_KEY, RAGAS_JUDGE_BASE_URL
+    from config import (
+        RAGAS_EMBEDDINGS_MODEL,
+        RAGAS_EMBEDDINGS_API_KEY,
+        RAGAS_EMBEDDINGS_BASE_URL,
+    )
+
+    if not RAGAS_EMBEDDINGS_API_KEY:
+        raise ValueError(
+            "RAGAS_EMBEDDINGS_API_KEY (or GOOGLE_API_KEY) is required for the "
+            "answer_relevancy metric. Get one at https://aistudio.google.com/apikey."
+        )
 
     return OpenAIEmbeddings(
         model=RAGAS_EMBEDDINGS_MODEL,
-        api_key=RAGAS_JUDGE_API_KEY,
-        base_url=RAGAS_JUDGE_BASE_URL,
+        api_key=RAGAS_EMBEDDINGS_API_KEY,
+        base_url=RAGAS_EMBEDDINGS_BASE_URL,
         check_embedding_ctx_length=False,
     )
 
@@ -195,6 +215,15 @@ class RAGASEvaluator:
             self._embeddings_raw = _get_judge_embeddings()
         return LangchainEmbeddingsWrapper(self._embeddings_raw)
 
+    def _run_config(self) -> RunConfig:
+        """Build a RunConfig so RAGAS's per-job timeout matches the judge LLM timeout."""
+        from config import RAGAS_JUDGE_TIMEOUT, RAGAS_JUDGE_MAX_RETRIES
+
+        return RunConfig(
+            timeout=RAGAS_JUDGE_TIMEOUT,
+            max_retries=RAGAS_JUDGE_MAX_RETRIES,
+        )
+
     def evaluate(
         self,
         query: str,
@@ -222,6 +251,7 @@ class RAGASEvaluator:
                 metrics=self.metrics,
                 llm=self._ensure_llm(),
                 embeddings=self._ensure_embeddings(),
+                run_config=self._run_config(),
                 show_progress=False,
             )
 
@@ -282,6 +312,7 @@ class RAGASEvaluator:
                 metrics=self.metrics,
                 llm=self._ensure_llm(),
                 embeddings=self._ensure_embeddings(),
+                run_config=self._run_config(),
                 show_progress=True,
             )
 

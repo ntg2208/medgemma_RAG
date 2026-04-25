@@ -91,7 +91,7 @@ flowchart LR
     subgraph Retrieve["Retrieval"]
         QV --> EX[CKDRetriever\n._expand_query\nmedical term expansion]
         EX --> CS[ChromaDB\ncosine similarity]
-        CS -->|top-k docs\nscore ≥ 0.7| RD[Retrieved\nDocuments]
+        CS -->|top-k docs\nscore ≥ 0.3| RD[Retrieved\nDocuments]
     end
 
     subgraph Generate["Generation"]
@@ -356,9 +356,9 @@ classDiagram
     class config {
         +MEDGEMMA_MODEL_ID
         +EMBEDDING_MODEL_ID
-        +CHUNK_SIZE = 800
+        +CHUNK_SIZE = 2000
         +TOP_K_RESULTS = 5
-        +SIMILARITY_THRESHOLD = 0.7
+        +SIMILARITY_THRESHOLD = 0.3
         +CKD_STAGES dict
         +DIETARY_LIMITS dict
         +get_llm() LLM

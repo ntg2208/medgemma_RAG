@@ -23,7 +23,6 @@ RSYNC_EXCLUDES=(
   --exclude 'Data/cleaned_documents/'
   --exclude 'Data/test_output/'
   --exclude '*.log'
-  --exclude '.env'
   --exclude '.terraform/'
   --exclude '*.tfstate*'
   --exclude 'experiments.ipynb'
